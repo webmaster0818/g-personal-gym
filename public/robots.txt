@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://g-personal-gym.com/sitemap.xml
