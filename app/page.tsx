@@ -17,7 +17,17 @@ const areas = [
   { name: '池袋', slug: 'ikebukuro', desc: 'コスパ充実' },
   { name: '銀座', slug: 'ginza', desc: '高級感あり' },
   { name: '六本木', slug: 'roppongi', desc: '駅近好立地' },
+  { name: '恵比寿', slug: 'ebisu', desc: 'おしゃれ街' },
+  { name: '自由が丘', slug: 'jiyugaoka', desc: '子連れ充実' },
+  { name: '表参道', slug: 'omotesando', desc: '美容特化' },
+  { name: '吉祥寺', slug: 'kichijoji', desc: '住みたい街' },
+  { name: '二子玉川', slug: 'futakotamagawa', desc: 'ママに人気' },
+  { name: '立川', slug: 'tachikawa', desc: '多摩の中心' },
+  { name: '町田', slug: 'machida', desc: '相場安め' },
   { name: '横浜', slug: 'yokohama', desc: '神奈川No.1' },
+  { name: '川崎', slug: 'kawasaki', desc: '通勤途中に' },
+  { name: '藤沢', slug: 'fujisawa', desc: '湘南エリア' },
+  { name: '大宮', slug: 'omiya', desc: '埼玉の中心' },
   { name: '大阪', slug: 'osaka', desc: '梅田・心斎橋' },
   { name: '名古屋', slug: 'nagoya', desc: '名駅・栄' },
   { name: '福岡', slug: 'fukuoka', desc: '天神・博多' },
@@ -104,7 +114,7 @@ export default function Home() {
         <section className="py-16 bg-rose-50" id="areas">
           <div className="max-w-5xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-2 text-center">エリアから探す</h2>
-            <p className="text-brand-muted text-sm text-center mb-8">全国10エリアの女性向けパーソナルジム情報</p>
+            <p className="text-brand-muted text-sm text-center mb-8">全国20エリアの女性向けパーソナルジム情報</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
               {areas.map((area) => (
                 <Link

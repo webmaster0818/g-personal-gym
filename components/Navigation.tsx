@@ -76,8 +76,8 @@ export function Navigation() {
             <div className="border-t border-rose-100 pt-6 mt-2">
               <p className="text-brand-light text-xs mb-3">エリアから探す</p>
               <div className="grid grid-cols-2 gap-2">
-                {['渋谷', '新宿', '池袋', '銀座', '六本木', '横浜', '大阪', '名古屋', '福岡', '札幌'].map((area, i) => {
-                  const slugs = ['shibuya', 'shinjuku', 'ikebukuro', 'ginza', 'roppongi', 'yokohama', 'osaka', 'nagoya', 'fukuoka', 'sapporo']
+                {['渋谷', '新宿', '池袋', '銀座', '六本木', '恵比寿', '自由が丘', '表参道', '吉祥寺', '二子玉川', '立川', '町田', '横浜', '川崎', '藤沢', '大宮', '大阪', '名古屋', '福岡', '札幌'].map((area, i) => {
+                  const slugs = ['shibuya', 'shinjuku', 'ikebukuro', 'ginza', 'roppongi', 'ebisu', 'jiyugaoka', 'omotesando', 'kichijoji', 'futakotamagawa', 'tachikawa', 'machida', 'yokohama', 'kawasaki', 'fujisawa', 'omiya', 'osaka', 'nagoya', 'fukuoka', 'sapporo']
                   return (
                     <Link key={i} href={`/areas/${slugs[i]}/`} className="text-brand-muted text-sm hover:text-rose-500 transition py-1" onClick={toggleMenu}>{area}</Link>
                   )
