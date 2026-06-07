@@ -12,16 +12,16 @@ export default function GuidePage() {
   return (
     <>
       <Navigation />
-      <main className="pt-16">
-        <section className="bg-gradient-to-br from-rose-100 via-rose-50 to-purple-50 py-12 md:py-16">
+      <main data-reveal className="pt-16">
+        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-rose-500 text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-4xl font-bold text-brand-text mb-4">パーソナルジムの選び方ガイド<br />【女性のための5つのポイント】</h1>
           </div>
         </section>
-        <section className="py-3 bg-white border-b border-rose-100">
+        <section className="py-3 bg-white border-b border-line">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
-            <nav className="text-sm text-brand-light"><Link href="/" className="hover:text-rose-500 transition">ホーム</Link>{' > '}<span className="text-brand-muted">選び方ガイド</span></nav>
+            <nav className="text-sm text-brand-light"><Link href="/" className="hover:text-accent transition">ホーム</Link>{' > '}<span className="text-brand-muted">選び方ガイド</span></nav>
           </div>
         </section>
 
@@ -64,21 +64,21 @@ export default function GuidePage() {
                   tips: ['卒業後のサポート期間と内容', '食事指導のフォローアップ', 'リバウンドした場合の対応'],
                 },
               ].map((point) => (
-                <div key={point.num} className="bg-white border border-rose-200 rounded-xl overflow-hidden">
-                  <div className="bg-gradient-to-r from-rose-500 to-purple-500 text-white px-6 py-4">
+                <div key={point.num} className="bg-white border border-line rounded-xl overflow-hidden">
+                  <div className="bg-gradient-to-r from-accent to-accent-dark text-white px-6 py-4">
                     <h2 className="text-xl font-bold flex items-center gap-3">
-                      <span className="bg-white text-rose-500 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">{point.num}</span>
+                      <span className="bg-white text-accent w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">{point.num}</span>
                       {point.title}
                     </h2>
                   </div>
                   <div className="p-6">
                     <p className="text-brand-muted leading-relaxed mb-4">{point.content}</p>
-                    <div className="bg-rose-50 rounded-lg p-4">
+                    <div className="bg-ivory rounded-lg p-4">
                       <p className="text-sm font-bold text-brand-text mb-2">チェックポイント</p>
                       <ul className="space-y-1">
                         {point.tips.map((tip, i) => (
                           <li key={i} className="text-brand-muted text-sm flex items-start">
-                            <span className="text-rose-400 mr-2">✓</span>
+                            <span className="text-accent mr-2">✓</span>
                             <span>{tip}</span>
                           </li>
                         ))}
@@ -89,7 +89,7 @@ export default function GuidePage() {
               ))}
             </div>
 
-            <div className="mt-12 bg-gradient-to-br from-rose-50 to-purple-50 border border-rose-200 rounded-xl p-8">
+            <div className="mt-12 bg-gradient-to-br from-ivory to-sand border border-line rounded-xl p-8">
               <h2 className="text-xl font-bold text-brand-text mb-4">最も大切なこと：体験レッスンに行くこと</h2>
               <p className="text-brand-muted leading-relaxed mb-4">
                 ネットの情報だけでは分からないことが多いです。雰囲気・トレーナーとの相性・設備の清潔感など、実際に体験して初めて分かることがあります。最低でも2〜3ジムの体験に行って比較することをおすすめします。
@@ -101,11 +101,11 @@ export default function GuidePage() {
           </div>
         </section>
 
-        <section className="py-16 bg-gradient-to-r from-rose-500 to-purple-500 text-white">
+        <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">気になるジムをチェック</h2>
             <p className="text-white/80 mb-8">まずはランキングから気になるジムを見つけましょう。</p>
-            <Link href="/ranking/" className="inline-block bg-white text-rose-500 px-10 py-4 text-sm font-bold rounded-full hover:bg-rose-50 transition-all">おすすめランキングを見る</Link>
+            <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>
       </main>

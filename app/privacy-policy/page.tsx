@@ -12,15 +12,15 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <Navigation />
-      <main className="pt-16">
-        <section className="bg-gradient-to-br from-rose-100 via-rose-50 to-purple-50 py-12">
+      <main data-reveal className="pt-16">
+        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h1 className="text-2xl md:text-3xl font-bold text-brand-text">プライバシーポリシー</h1>
           </div>
         </section>
-        <section className="py-3 bg-white border-b border-rose-100">
+        <section className="py-3 bg-white border-b border-line">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
-            <nav className="text-sm text-brand-light"><Link href="/" className="hover:text-rose-500 transition">ホーム</Link>{' > '}<span className="text-brand-muted">プライバシーポリシー</span></nav>
+            <nav className="text-sm text-brand-light"><Link href="/" className="hover:text-accent transition">ホーム</Link>{' > '}<span className="text-brand-muted">プライバシーポリシー</span></nav>
           </div>
         </section>
         <section className="py-12 bg-white">
@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-lg font-bold text-brand-text mb-3">7. プライバシーポリシーの変更</h2>
               <p className="text-brand-muted text-sm leading-relaxed">当サイトは、必要に応じてプライバシーポリシーを変更することがあります。変更後のプライバシーポリシーは、当サイトに掲載した時点から効力を生じるものとします。</p>
             </div>
-            <div className="border-t border-rose-100 pt-6">
+            <div className="border-t border-line pt-6">
               <p className="text-brand-light text-xs">制定日：2026年4月13日</p>
               <p className="text-brand-light text-xs">G-PersonalGym編集部</p>
             </div>

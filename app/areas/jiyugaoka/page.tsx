@@ -154,20 +154,20 @@ export default function JiyugaokaPage() {
     <>
       <FAQSchema faqs={faqs} />
       <Navigation />
-      <main className="pt-16 bg-white">
-        <section className="bg-gradient-to-br from-rose-100 via-rose-50 to-purple-50 py-12 md:py-16">
+      <main data-reveal className="pt-16 bg-white">
+        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-rose-500 text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               【2026最新】自由が丘の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>
 
-        <section className="bg-white py-3 border-b border-rose-100">
+        <section className="bg-white py-3 border-b border-line">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <nav className="text-sm text-brand-light">
-              <Link href="/" className="hover:text-rose-500 transition">ホーム</Link>{' > '}
+              <Link href="/" className="hover:text-accent transition">ホーム</Link>{' > '}
               <span className="text-brand-muted">自由が丘</span>
             </nav>
           </div>
@@ -177,14 +177,14 @@ export default function JiyugaokaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「自由が丘で女性専用のパーソナルジムを探している」「おしゃれな街で通いやすいジムが知りたい」という方のために、自由が丘エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
-            <div className="bg-rose-50 border-l-4 border-rose-400 p-6 mb-8">
+            <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>自由が丘で女性専用パーソナルジムを探している</span></li>
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>子連れで通えるジムを探している</span></li>
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>料金を比較して選びたい</span></li>
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>産後ダイエットしたい</span></li>
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>食事指導も受けたい</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>自由が丘で女性専用パーソナルジムを探している</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>子連れで通えるジムを探している</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>料金を比較して選びたい</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>産後ダイエットしたい</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>食事指導も受けたい</span></li>
               </ul>
             </div>
           </div>
@@ -192,7 +192,7 @@ export default function JiyugaokaPage() {
 
         <PriceComparisonTable gyms={gyms} areaName="自由が丘" />
 
-        <section className="py-16 bg-rose-50" id="gyms">
+        <section className="py-16 bg-ivory" id="gyms">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">自由が丘のおすすめ女性向けパーソナルジム{gyms.length}選</h2>
             <div className="space-y-8">{gyms.map((gym, index) => (<GymCard key={index} gym={gym} index={index} />))}</div>
@@ -203,15 +203,15 @@ export default function JiyugaokaPage() {
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="border border-rose-200 rounded-xl p-6 hover:shadow-lg transition">
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・NICO（月4回 35,200円〜）</li></ul>
               </div>
-              <div className="border border-rose-200 rounded-xl p-6 hover:shadow-lg transition">
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（キッズスペース）</li><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li><li className="text-brand-muted">・NICO（お子様連れOK）</li></ul>
               </div>
-              <div className="border border-rose-200 rounded-xl p-6 hover:shadow-lg transition">
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・Bodyke（食べて痩せるメソッド）</li><li className="text-brand-muted">・リボーンマイセルフ（食事指導充実）</li></ul>
               </div>
@@ -219,18 +219,18 @@ export default function JiyugaokaPage() {
           </div>
         </section>
 
-        <section className="py-16 bg-rose-50">
+        <section className="py-16 bg-ivory">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">自由が丘の料金相場【2026年4月】</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6 border border-rose-200">
+              <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
-                <p className="text-3xl font-bold text-rose-500 mb-2">18万〜22万円</p>
+                <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
                 <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安。UNDEUX 220,000円〜が最高。都心より若干落ち着いた価格帯。</p>
               </div>
-              <div className="bg-white rounded-xl p-6 border border-rose-200">
+              <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
-                <p className="text-3xl font-bold text-rose-500 mb-2">3.5万円〜/月</p>
+                <p className="text-3xl font-bold text-accent mb-2">3.5万円〜/月</p>
                 <p className="text-sm text-brand-muted">NICO 月4回35,200円〜。継続しやすい月額プランも充実。</p>
               </div>
             </div>
@@ -241,11 +241,11 @@ export default function JiyugaokaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">自由が丘で選ぶ際の注意点</h2>
             <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6 border border-rose-200">
+              <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">正面口と南口で雰囲気が異なる</h3>
                 <p className="text-brand-muted leading-relaxed">自由が丘駅は正面口側がメインの商業エリア、南口側は住宅街寄り。ジムの場所によって駅からのルートが異なるので、事前に確認しておきましょう。</p>
               </div>
-              <div className="bg-white rounded-xl p-6 border border-rose-200">
+              <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">子連れ対応のジムが多い穴場エリア</h3>
                 <p className="text-brand-muted leading-relaxed">自由が丘はファミリー層も多く、キッズスペースやベビーサークルを完備したジムが充実。産後ダイエットを考えているママには特におすすめのエリアです。</p>
               </div>
@@ -253,16 +253,16 @@ export default function JiyugaokaPage() {
           </div>
         </section>
 
-        <section className="py-16 bg-rose-50">
+        <section className="py-16 bg-ivory">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">よくある質問</h2>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
-                <div key={index} className="border border-rose-200 rounded-xl overflow-hidden">
+                <div key={index} className="border border-line rounded-xl overflow-hidden">
                   <details className="group">
-                    <summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-rose-50 transition">
+                    <summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-accent-tint transition">
                       <h3 className="font-bold text-brand-text pr-4 text-sm">Q{index + 1}. {faq.question}</h3>
-                      <svg className="w-5 h-5 text-rose-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg>
+                      <svg className="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
                     <div className="px-5 pb-5 text-brand-muted leading-relaxed text-sm">{faq.answer}</div>
                   </details>
@@ -281,11 +281,11 @@ export default function JiyugaokaPage() {
           </div>
         </section>
 
-        <section className="py-16 bg-gradient-to-r from-rose-500 to-purple-500 text-white">
+        <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
             <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
-            <Link href="/ranking/" className="inline-block bg-white text-rose-500 px-10 py-4 text-sm font-bold rounded-full hover:bg-rose-50 transition-all">おすすめランキングを見る</Link>
+            <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>
       </main>

@@ -134,19 +134,19 @@ export default function FutakotamagawaPage() {
     <>
       <FAQSchema faqs={faqs} />
       <Navigation />
-      <main className="pt-16 bg-white">
-        <section className="bg-gradient-to-br from-rose-100 via-rose-50 to-purple-50 py-12 md:py-16">
+      <main data-reveal className="pt-16 bg-white">
+        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-rose-500 text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               【2026最新】二子玉川の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>
-        <section className="bg-white py-3 border-b border-rose-100">
+        <section className="bg-white py-3 border-b border-line">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <nav className="text-sm text-brand-light">
-              <Link href="/" className="hover:text-rose-500 transition">ホーム</Link>{' > '}
+              <Link href="/" className="hover:text-accent transition">ホーム</Link>{' > '}
               <span className="text-brand-muted">二子玉川</span>
             </nav>
           </div>
@@ -155,20 +155,20 @@ export default function FutakotamagawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「二子玉川で女性専用のパーソナルジムを探している」「ニコタマの買い物ついでに通いたい」という方のために、二子玉川エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
-            <div className="bg-rose-50 border-l-4 border-rose-400 p-6 mb-8">
+            <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>二子玉川で女性専用パーソナルジムを探している</span></li>
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>産後ダイエットしたい</span></li>
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>子連れで通いたい</span></li>
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>料金を比較して選びたい</span></li>
-                <li className="flex items-start"><span className="text-rose-400 mr-2">✓</span><span>ショッピングついでに通いたい</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>二子玉川で女性専用パーソナルジムを探している</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>産後ダイエットしたい</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>子連れで通いたい</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>料金を比較して選びたい</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>ショッピングついでに通いたい</span></li>
               </ul>
             </div>
           </div>
         </section>
         <PriceComparisonTable gyms={gyms} areaName="二子玉川" />
-        <section className="py-16 bg-rose-50" id="gyms">
+        <section className="py-16 bg-ivory" id="gyms">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">二子玉川のおすすめ女性向けパーソナルジム{gyms.length}選</h2>
             <div className="space-y-8">{gyms.map((gym, index) => (<GymCard key={index} gym={gym} index={index} />))}</div>
@@ -178,33 +178,33 @@ export default function FutakotamagawaPage() {
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="border border-rose-200 rounded-xl p-6 hover:shadow-lg transition">
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・Bodyke（16回 215,600円〜）</li></ul>
               </div>
-              <div className="border border-rose-200 rounded-xl p-6 hover:shadow-lg transition">
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">産後ママ向け</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（産後コース）</li><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul>
               </div>
-              <div className="border border-rose-200 rounded-xl p-6 hover:shadow-lg transition">
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・Bodyke（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
               </div>
             </div>
           </div>
         </section>
-        <section className="py-16 bg-rose-50">
+        <section className="py-16 bg-ivory">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">二子玉川の料金相場【2026年4月】</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6 border border-rose-200">
+              <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
-                <p className="text-3xl font-bold text-rose-500 mb-2">18万〜22万円</p>
+                <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
                 <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安。世田谷エリアの中では標準的な価格帯。</p>
               </div>
-              <div className="bg-white rounded-xl p-6 border border-rose-200">
+              <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">入会金</h3>
-                <p className="text-3xl font-bold text-rose-500 mb-2">0〜5万円</p>
+                <p className="text-3xl font-bold text-accent mb-2">0〜5万円</p>
                 <p className="text-sm text-brand-muted">キャンペーンで入会金無料のジムも。体験時に要確認。</p>
               </div>
             </div>
@@ -214,27 +214,27 @@ export default function FutakotamagawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">二子玉川で選ぶ際の注意点</h2>
             <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6 border border-rose-200">
+              <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">ファミリー層が多く週末は混雑しやすい</h3>
                 <p className="text-brand-muted leading-relaxed">二子玉川は子育てファミリーに人気のエリア。週末は二子玉川ライズ周辺が混雑するため、平日に通えるなら予約が取りやすい。ジムの予約状況は事前に確認を。</p>
               </div>
-              <div className="bg-white rounded-xl p-6 border border-rose-200">
+              <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">産後ダイエット需要が高いエリア</h3>
                 <p className="text-brand-muted leading-relaxed">二子玉川は30〜40代の子育てママが多いエリア。そのため産後ダイエットに対応したジムが充実しています。キッズスペースや託児所費用補助の有無をチェックしましょう。</p>
               </div>
             </div>
           </div>
         </section>
-        <section className="py-16 bg-rose-50">
+        <section className="py-16 bg-ivory">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">よくある質問</h2>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
-                <div key={index} className="border border-rose-200 rounded-xl overflow-hidden">
+                <div key={index} className="border border-line rounded-xl overflow-hidden">
                   <details className="group">
-                    <summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-rose-50 transition">
+                    <summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-accent-tint transition">
                       <h3 className="font-bold text-brand-text pr-4 text-sm">Q{index + 1}. {faq.question}</h3>
-                      <svg className="w-5 h-5 text-rose-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg>
+                      <svg className="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
                     <div className="px-5 pb-5 text-brand-muted leading-relaxed text-sm">{faq.answer}</div>
                   </details>
@@ -251,11 +251,11 @@ export default function FutakotamagawaPage() {
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>
-        <section className="py-16 bg-gradient-to-r from-rose-500 to-purple-500 text-white">
+        <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
             <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
-            <Link href="/ranking/" className="inline-block bg-white text-rose-500 px-10 py-4 text-sm font-bold rounded-full hover:bg-rose-50 transition-all">おすすめランキングを見る</Link>
+            <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>
       </main>

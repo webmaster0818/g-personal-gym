@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_JP, Shippori_Mincho, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
+import ContentReveal from '@/components/ContentReveal'
 
 const notoSansJP = Noto_Sans_JP({
   weight: ['300', '400', '500', '600', '700'],
@@ -131,6 +132,7 @@ export default function RootLayout({
       </head>
       <body className="bg-white font-sans text-ink antialiased">
         {children}
+        <ContentReveal />
       </body>
     </html>
   )

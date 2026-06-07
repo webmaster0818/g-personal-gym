@@ -105,10 +105,10 @@ export default function RankingPage() {
   return (
     <>
       <Navigation />
-      <main className="pt-16">
-        <section className="bg-gradient-to-br from-rose-100 via-rose-50 to-purple-50 py-12 md:py-16">
+      <main data-reveal className="pt-16">
+        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-rose-500 text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-4xl font-bold text-brand-text mb-4">
               【2026年最新】女性専用パーソナルジム<br className="hidden md:block" />
               おすすめランキングTOP10
@@ -119,10 +119,10 @@ export default function RankingPage() {
           </div>
         </section>
 
-        <section className="py-3 bg-white border-b border-rose-100">
+        <section className="py-3 bg-white border-b border-line">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <nav className="text-sm text-brand-light">
-              <Link href="/" className="hover:text-rose-500 transition">ホーム</Link>
+              <Link href="/" className="hover:text-accent transition">ホーム</Link>
               {' > '}
               <span className="text-brand-muted">ランキング</span>
             </nav>
@@ -133,29 +133,29 @@ export default function RankingPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <div className="space-y-8">
               {rankings.map((gym) => (
-                <div key={gym.rank} className="bg-white border border-rose-200 rounded-xl overflow-hidden hover:shadow-lg transition">
-                  <div className={`px-6 py-3 ${gym.rank <= 3 ? 'bg-gradient-to-r from-rose-500 to-purple-500 text-white' : 'bg-rose-50 text-brand-text'}`}>
+                <div key={gym.rank} className="bg-white border border-line rounded-xl overflow-hidden hover:shadow-lg transition">
+                  <div className={`px-6 py-3 ${gym.rank <= 3 ? 'bg-gradient-to-r from-accent to-accent-dark text-white' : 'bg-ivory text-brand-text'}`}>
                     <span className="font-bold text-lg">第{gym.rank}位</span>
                     <span className="ml-3 font-bold text-lg">{gym.name}</span>
                   </div>
                   <div className="p-6">
-                    <p className="text-rose-500 font-medium text-sm mb-3">{gym.tagline}</p>
+                    <p className="text-accent font-medium text-sm mb-3">{gym.tagline}</p>
                     <p className="text-brand-muted text-sm leading-relaxed mb-4">{gym.description}</p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {gym.features.map((f, i) => (
-                        <span key={i} className="bg-rose-50 text-rose-600 px-3 py-1 rounded-full text-xs font-medium border border-rose-200">{f}</span>
+                        <span key={i} className="bg-ivory text-accent-dark px-3 py-1 rounded-full text-xs font-medium border border-line">{f}</span>
                       ))}
                     </div>
-                    <div className="bg-rose-50 rounded-lg p-4 mb-4">
+                    <div className="bg-ivory rounded-lg p-4 mb-4">
                       <p className="text-sm font-bold text-brand-text mb-1">料金目安</p>
-                      <p className="text-rose-600 font-bold text-lg">{gym.price}</p>
+                      <p className="text-accent-dark font-bold text-lg">{gym.price}</p>
                     </div>
                     <div>
                       <p className="text-sm font-bold text-brand-text mb-2">こんな人におすすめ</p>
                       <ul className="space-y-1">
                         {gym.points.map((p, i) => (
                           <li key={i} className="text-brand-muted text-sm flex items-start">
-                            <span className="text-rose-400 mr-2">✓</span>
+                            <span className="text-accent mr-2">✓</span>
                             <span>{p}</span>
                           </li>
                         ))}
@@ -168,11 +168,11 @@ export default function RankingPage() {
           </div>
         </section>
 
-        <section className="py-16 bg-gradient-to-r from-rose-500 to-purple-500 text-white">
+        <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">気になるジムの体験に行こう</h2>
             <p className="text-white/80 mb-8">まずは無料カウンセリング・体験レッスンから。<br />複数のジムを比較して、あなたに合うジムを見つけてください。</p>
-            <Link href="/guide/" className="inline-block bg-white text-rose-500 px-10 py-4 text-sm font-bold rounded-full hover:bg-rose-50 transition-all">
+            <Link href="/guide/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">
               選び方ガイドを読む
             </Link>
           </div>
