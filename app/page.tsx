@@ -110,9 +110,9 @@ export default function Home() {
             sizes="100vw"
             className="object-cover object-[70%_center] -z-20"
           />
-          {/* 清潔感を保つ白の透明グラデーション（暗い被せはしない・文字の可読性確保） */}
-          <div className="absolute inset-0 -z-10 bg-white/45 md:hidden" />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-white via-white/55 to-white/35 md:bg-gradient-to-r md:from-white md:via-white/80 md:to-transparent" />
+          {/* 清潔感を保つ白の透明グラデーション（やや薄め・暗い被せなし・文字の可読性は確保） */}
+          <div className="absolute inset-0 -z-10 bg-white/25 md:hidden" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-white via-white/35 to-white/25 md:bg-gradient-to-r md:from-white md:via-white/55 md:to-transparent" />
           <div className="relative max-w-6xl mx-auto px-6 lg:px-8 w-full pt-28 pb-14 md:py-32">
             <div className="max-w-xl fade-up">
               <p className="eyebrow mb-5">Women&rsquo;s Personal Gym Guide</p>
@@ -121,7 +121,7 @@ export default function Home() {
                 <span className="text-accent">一緒に</span>叶える場所へ。
               </h1>
               <p className="text-ink-soft text-[0.95rem] md:text-base leading-loose mb-9 max-w-lg">
-                女性専用パーソナルジムだけを集めた比較サイト。料金・口コミ・特徴を、清潔感のある視点でていねいに比較します。あなたに合う一つが、きっと見つかります。
+                女性専用パーソナルジムだけを厳選しご紹介しております。料金・口コミ・特徴を、清潔感のある視点でていねいに比較します。あなたに合う一つが、きっと見つかります。
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/ranking/" className="btn-primary text-sm md:text-base !px-9 !py-4 text-center">
