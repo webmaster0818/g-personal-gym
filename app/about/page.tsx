@@ -29,7 +29,7 @@ export default function AboutPage() {
               <table className="w-full text-sm">
                 <tbody>
                   <tr className="border-b border-rose-100"><th className="px-6 py-4 bg-rose-50 text-left font-bold text-brand-text w-1/3">サイト名</th><td className="px-6 py-4 text-brand-muted">G-PersonalGym</td></tr>
-                  <tr className="border-b border-rose-100"><th className="px-6 py-4 bg-rose-50 text-left font-bold text-brand-text">URL</th><td className="px-6 py-4 text-brand-muted">https://g-personal-gym.com</td></tr>
+                  <tr className="border-b border-rose-100"><th className="px-6 py-4 bg-rose-50 text-left font-bold text-brand-text">URL</th><td className="px-6 py-4 text-brand-muted">https://woman-gym.com</td></tr>
                   <tr className="border-b border-rose-100"><th className="px-6 py-4 bg-rose-50 text-left font-bold text-brand-text">運営者</th><td className="px-6 py-4 text-brand-muted">G-PersonalGym編集部</td></tr>
                   <tr className="border-b border-rose-100"><th className="px-6 py-4 bg-rose-50 text-left font-bold text-brand-text">コンテンツ</th><td className="px-6 py-4 text-brand-muted">女性専用パーソナルジムの比較・ランキング・口コミ情報</td></tr>
                   <tr><th className="px-6 py-4 bg-rose-50 text-left font-bold text-brand-text">お問い合わせ</th><td className="px-6 py-4 text-brand-muted">サイト内のお問い合わせフォームよりご連絡ください</td></tr>

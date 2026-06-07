@@ -1,7 +1,9 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
 import { FAQSchema } from '@/components/FAQSchema'
+import ScrollReveal from '@/components/ScrollReveal'
 
 const topGyms = [
   { name: 'ビーコンセプト（B CONCEPT）', feature: '下半身・太もも痩せ特化', price: '月々5,545円〜（税込・分割）', badge: '女性専用' },
@@ -9,6 +11,40 @@ const topGyms = [
   { name: 'UNDEUX SUPERBODY', feature: '食事管理・宅配食付き', price: '2ヶ月16回 220,000円〜', badge: '女性専用' },
   { name: 'OUTLINE（アウトライン）', feature: '完全個室・生涯サポート', price: '16回 184,800円〜（税込）', badge: '女性専用' },
   { name: 'Bodyke（ボディーク）', feature: '糖質制限なしボディメイク', price: '2ヶ月 215,600円〜（税込）', badge: 'ボディメイク特化' },
+]
+
+const strengths = [
+  {
+    title: '女性専用のプライベート空間',
+    desc: '完全個室や女性専用フロアで、人目を気にせずトレーニングに集中できます。清潔感のある空間で、はじめての方も安心です。',
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M10 20 L24 9 L38 20 V39 H10 Z" />
+        <path d="M19 39 V28 h10 v11" />
+      </svg>
+    ),
+  },
+  {
+    title: '女性トレーナーが多数在籍',
+    desc: '体型や産後のデリケートな悩みも、同じ目線で相談できます。マンツーマンで一人ひとりに寄り添い、丁寧に伴走します。',
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="24" cy="16" r="7" />
+        <path d="M11 39 c0-8 6-13 13-13 s13 5 13 13" />
+      </svg>
+    ),
+  },
+  {
+    title: '目的別の専用プログラム',
+    desc: '下半身痩せ・産後ダイエット・ブライダルなど、なりたい姿から逆算した設計。無理のない食事サポートまで含めて整えます。',
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="24" cy="24" r="14" />
+        <circle cx="24" cy="24" r="6" />
+        <path d="M24 10 V4 M24 44 V38 M10 24 H4 M44 24 H38" />
+      </svg>
+    ),
+  },
 ]
 
 const areas = [
@@ -35,162 +71,240 @@ const areas = [
 ]
 
 const faqs = [
-  { question: '女性専用パーソナルジムとは？', answer: '女性専用パーソナルジムは、女性のみが利用できるパーソナルトレーニングジムです。女性トレーナーのみが在籍している場合も多く、女性特有の悩み（下半身太り、産後ダイエット、ブライダルダイエットなど）に特化したプログラムを提供しています。完全個室で人目を気にせずトレーニングに集中��きます。' },
-  { question: 'パーソナルジムの料金相場はどのくらい？', answer: '女性専用パ���ソナルジムの2ヶ月コース（16回）の料金相場は約18万〜25万円（税込）です。入会金は2万〜5万円程度。月額制のジムでは月1万〜6万円程度から通えるプランもあります。体験レッスンは無料〜5,000円程度で受けられます。' },
+  { question: '女性専用パーソナルジムとは？', answer: '女性専用パーソナルジムは、女性のみが利用できるパーソナルトレーニングジムです。女性トレーナーのみが在籍している場合も多く、女性特有の悩み（下半身太り、産後ダイエット、ブライダルダイエットなど）に特化したプログラムを提供しています。完全個室で人目を気にせずトレーニングに集中できます。' },
+  { question: 'パーソナルジムの料金相場はどのくらい？', answer: '女性専用パーソナルジムの2ヶ月コース（16回）の料金相場は約18万〜25万円（税込）です。入会金は2万〜5万円程度。月額制のジムでは月1万〜6万円程度から通えるプランもあります。体験レッスンは無料〜5,000円程度で受けられます。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、大丈夫です。パーソナルジムは一人ひとりのレベルに合わせてトレーニングメニューを組むため、運動が苦手な方や初心者の方こそおすすめです。トレーナーがマンツーマンで丁寧に指導してくれるので安心です。' },
   { question: 'どのくらいの期間で効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）のコースで平均5〜8kgの減量効果が期待できます。見た目の変化（ウエストダウン、ヒップアップなど）は1ヶ月目から感じる方が多いです。' },
   { question: '食事制限は厳しいですか？', answer: 'ジムによって異なります。ビーコンセプトは医師監修の食事指導、UNDEUX SUPERBODYは糖質オフ宅配食を提供。Bodykeは糖質制限なしで好きなものを食べながらダイエットを目指します。無理な食事制限ではなく、栄養バランスの取れた食生活を指導するジムがほとんどです。' },
-  { question: '子連れでも通えるジムはありますか？', answer: 'はい、あります。ビーコンセプトは託児所費用を最大1,000円/回まで補助。OUTLINEは全店にベビーサークルを完備し、子連れOKです。リボーンマイセルフも一部店舗で託児サービスを提供していま��。' },
+  { question: '子連れでも通えるジムはありますか？', answer: 'はい、あります。ビーコンセプトは託児所費用を最大1,000円/回まで補助。OUTLINEは全店にベビーサークルを完備し、子連れOKです。リボーンマイセルフも一部店舗で託児サービスを提供しています。' },
   { question: 'リバウンドしないか心配です', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」を提供しており、卒業後もずっと無料でサポートが受けられます。多くのジムでは卒業後のリバウンド防止プログラムや、食事管理のフォローアップが含まれています。' },
   { question: '体験レッスンでは何をしますか？', answer: 'カウンセリング（目標・悩みのヒアリング）→ 体組成測定 → 実際のトレーニング体験 → 今後のプラン提案、という流れが一般的です。所要時間は60〜90分程度。無料カウンセリングのみのジムもあります。' },
-  { question: 'ウェアやシューズは必要ですか？', answer: 'ほとんどの女性専用パーソナルジムでは、ウェア・タオル・シューズなどのレンタルが無料です。手ぶらで通えるジムがほとんどなので、仕事帰りにも気軽に立���寄れます。' },
-  { question: '産後ダイエットにも対応していますか？', answer: 'はい。ビーコンセプト、リ���ーンマイセルフ、UNDEUX SUPERBODYなど多くの女性専用ジムが産後ダイエットコースを用意しています。産後の体の回復に配慮したプログラムで、骨盤矯正や体型戻しをサポートします。' },
+  { question: 'ウェアやシューズは必要ですか？', answer: 'ほとんどの女性専用パーソナルジムでは、ウェア・タオル・シューズなどのレンタルが無料です。手ぶらで通えるジムがほとんどなので、仕事帰りにも気軽に立ち寄れます。' },
+  { question: '産後ダイエットにも対応していますか？', answer: 'はい。ビーコンセプト、リボーンマイセルフ、UNDEUX SUPERBODYなど多くの女性専用ジムが産後ダイエットコースを用意しています。産後の体の回復に配慮したプログラムで、骨盤矯正や体型戻しをサポートします。' },
 ]
+
+function SectionHeading({ en, title, lead }: { en: string; title: string; lead?: string }) {
+  return (
+    <div className="text-center max-w-2xl mx-auto mb-12 fade-up">
+      <p className="eyebrow mb-4">{en}</p>
+      <h2 className="font-serif text-2xl md:text-[2rem] leading-snug text-ink">{title}</h2>
+      {lead && <p className="text-ink-soft text-sm md:text-[0.95rem] leading-relaxed mt-4">{lead}</p>}
+    </div>
+  )
+}
 
 export default function Home() {
   return (
     <>
       <FAQSchema faqs={faqs} />
       <Navigation />
-      <main className="pt-16">
+      <main>
         {/* Hero */}
-        <section className="bg-gradient-to-br from-rose-100 via-rose-50 to-purple-50 py-20 md:py-28">
-          <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
-            <p className="text-rose-500 text-sm font-medium mb-4 tracking-wider">2026年最新 女性専用パーソナルジム比較</p>
-            <h1 className="text-3xl md:text-5xl font-bold text-brand-text mb-6 leading-tight">
-              あなたにぴったりの<br className="md:hidden" />
-              <span className="text-rose-500">女性専用パ���ソナルジム</span>が<br />
-              きっと見つかる
-            </h1>
-            <p className="text-brand-muted text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
-              女性のための比較サイト「G-PersonalGym」。<br />
-              料金・口コミ・特徴を徹底比較して、理想のジムを見つけましょう。
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/ranking/" className="btn-primary text-base !px-8 !py-4 !rounded-full inline-block">
-                おすすめランキングを見��
-              </Link>
-              <Link href="/guide/" className="btn-secondary text-base !px-8 !py-4 !rounded-full inline-block">
-                選び方ガイドを読む
-              </Link>
+        <section className="relative overflow-hidden bg-white pt-28 pb-16 md:pt-36 md:pb-24">
+          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-accent-tint/60 to-white" />
+          <div className="max-w-6xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+            <div className="fade-up">
+              <p className="eyebrow mb-5">Women&rsquo;s Personal Gym Guide</p>
+              <h1 className="font-serif text-[2.1rem] sm:text-4xl md:text-[3rem] leading-[1.3] text-ink mb-6">
+                「変わりたい」を、<br />
+                <span className="text-accent">一緒に</span>叶える場所へ。
+              </h1>
+              <p className="text-ink-soft text-[0.95rem] md:text-base leading-loose mb-9 max-w-lg">
+                女性専用パーソナルジムだけを集めた比較サイト。料金・口コミ・特徴を、清潔感のある視点でていねいに比較します。あなたに合う一つが、きっと見つかります。
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/ranking/" className="btn-primary text-sm md:text-base !px-9 !py-4 text-center">
+                  おすすめランキングを見る
+                </Link>
+                <Link href="/guide/" className="btn-secondary text-sm md:text-base !px-9 !py-4 text-center">
+                  選び方ガイドを読む
+                </Link>
+              </div>
+              <div className="flex items-center gap-7 mt-10 text-ink-soft">
+                <div>
+                  <span className="font-display text-3xl text-accent leading-none">20</span>
+                  <span className="text-xs ml-1.5">エリア対応</span>
+                </div>
+                <span className="w-px h-8 bg-line" />
+                <div>
+                  <span className="font-display text-3xl text-accent leading-none">100</span>
+                  <span className="text-xs ml-1.5">%女性専用で厳選</span>
+                </div>
+              </div>
+            </div>
+            <div className="fade-up">
+              <div className="relative">
+                <div className="absolute -top-4 -right-4 w-28 h-28 rounded-full bg-accent-soft/50 -z-10 hidden md:block" />
+                <div className="absolute -bottom-5 -left-5 w-20 h-20 rounded-full border border-accent-soft -z-10 hidden md:block" />
+                <Image
+                  src="/images/hero-trainer.webp"
+                  alt="女性トレーナーが笑顔で女性トレーニーを指導している様子"
+                  width={1280}
+                  height={896}
+                  priority
+                  className="w-full h-auto rounded-[1.4rem] shadow-[0_30px_60px_-24px_rgba(38,34,30,0.28)]"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Strengths */}
+        <section className="py-20 md:py-24 bg-ivory">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8">
+            <SectionHeading
+              en="Why Choose Us"
+              title="女性が安心して続けられる理由"
+              lead="清潔感のある環境と、女性に寄り添う設計。はじめての一歩を、気持ちよく踏み出せます。"
+            />
+            <div className="grid md:grid-cols-3 gap-8 md:gap-6">
+              {strengths.map((s, i) => (
+                <div key={i} className="fade-up text-center md:px-6">
+                  <div className="w-14 h-14 mx-auto mb-6 text-accent">{s.icon}</div>
+                  <h3 className="font-serif text-lg text-ink mb-3">{s.title}</h3>
+                  <p className="text-ink-soft text-sm leading-loose">{s.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
         {/* Gym Comparison */}
-        <section className="py-16 bg-white" id="comparison">
+        <section className="py-20 md:py-24 bg-white" id="comparison">
           <div className="max-w-5xl mx-auto px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-2 text-center">人気ジム比較表</h2>
-            <p className="text-brand-muted text-sm text-center mb-8">女性専用の主要パーソナルジム5社を比較</p>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse text-sm">
+            <SectionHeading
+              en="Comparison"
+              title="人気の女性専用ジムを比較"
+              lead="主要な女性専用パーソナルジム5社を、特徴と料金の目安で一覧にしました。"
+            />
+            <div className="fade-up overflow-x-auto rounded-2xl border border-line shadow-[0_18px_40px_-30px_rgba(38,34,30,0.3)]">
+              <table className="w-full border-collapse text-sm bg-white min-w-[640px]">
                 <thead>
-                  <tr className="bg-rose-500 text-white">
-                    <th className="px-4 py-3 text-left font-bold whitespace-nowrap">ジム名</th>
-                    <th className="px-4 py-3 text-left font-bold whitespace-nowrap">特徴</th>
-                    <th className="px-4 py-3 text-left font-bold whitespace-nowrap">料金目安</th>
-                    <th className="px-4 py-3 text-center font-bold whitespace-nowrap">タイプ</th>
+                  <tr className="border-b-2 border-accent/30">
+                    <th className="px-5 py-4 text-left font-semibold text-ink whitespace-nowrap">ジム名</th>
+                    <th className="px-5 py-4 text-left font-semibold text-ink whitespace-nowrap">特徴</th>
+                    <th className="px-5 py-4 text-left font-semibold text-ink whitespace-nowrap">料金目安</th>
+                    <th className="px-5 py-4 text-center font-semibold text-ink whitespace-nowrap">タイプ</th>
                   </tr>
                 </thead>
                 <tbody>
                   {topGyms.map((gym, i) => (
-                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-rose-50/50'}>
-                      <td className="px-4 py-3 font-bold text-brand-text whitespace-nowrap">{gym.name}</td>
-                      <td className="px-4 py-3 text-brand-muted">{gym.feature}</td>
-                      <td className="px-4 py-3 text-brand-muted whitespace-nowrap">{gym.price}</td>
-                      <td className="px-4 py-3 text-center">
-                        <span className="inline-block bg-rose-100 text-rose-600 text-xs px-2 py-1 rounded-full">{gym.badge}</span>
+                    <tr key={i} className={`border-b border-line last:border-0 ${i % 2 === 1 ? 'bg-ivory/60' : 'bg-white'}`}>
+                      <td className="px-5 py-4 font-medium text-ink whitespace-nowrap">{gym.name}</td>
+                      <td className="px-5 py-4 text-ink-soft">{gym.feature}</td>
+                      <td className="px-5 py-4 text-ink-soft whitespace-nowrap">{gym.price}</td>
+                      <td className="px-5 py-4 text-center">
+                        <span className="inline-block bg-accent-tint text-accent-dark text-xs px-3 py-1 rounded-full whitespace-nowrap">{gym.badge}</span>
                       </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-brand-light text-xs mt-3 text-right">※料金は税込。最新情報は各公式���イトでご確認ください。</p>
+            <p className="text-ink-faint text-xs mt-4 text-right">※料金は税込・目安です。最新情報は各公式サイトでご確認ください。</p>
           </div>
         </section>
 
-        {/* Area Links */}
-        <section className="py-16 bg-rose-50" id="areas">
-          <div className="max-w-5xl mx-auto px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-2 text-center">エリアから探す</h2>
-            <p className="text-brand-muted text-sm text-center mb-8">全国20エリアの女性向けパーソナルジム情報</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+        {/* Areas */}
+        <section className="py-20 md:py-24 bg-ivory" id="areas">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8">
+            <SectionHeading en="Area" title="エリアから探す" lead="全国20エリアの女性専用パーソナルジム情報をまとめています。" />
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 fade-up">
               {areas.map((area) => (
                 <Link
                   key={area.slug}
                   href={`/areas/${area.slug}/`}
-                  className="block bg-white border border-rose-200 rounded-xl p-5 text-center hover:shadow-lg hover:border-rose-400 transition card-hover"
+                  className="group block bg-white border border-line rounded-xl px-4 py-5 text-center transition card-hover hover:border-accent/50"
                 >
-                  <span className="text-lg font-bold text-brand-text block mb-1">{area.name}</span>
-                  <span className="text-brand-light text-xs">{area.desc}</span>
+                  <span className="text-base font-medium text-ink block mb-1 group-hover:text-accent transition-colors">{area.name}</span>
+                  <span className="text-ink-faint text-xs">{area.desc}</span>
                 </Link>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Guide Sections */}
-        <section className="py-16 bg-white">
-          <div className="max-w-5xl mx-auto px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-2 text-center">コンテンツ</h2>
-            <p className="text-brand-muted text-sm text-center mb-8">パーソナルジム選びに役立つ情報</p>
+        {/* Content */}
+        <section className="py-20 md:py-24 bg-white">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8">
+            <SectionHeading en="Contents" title="ジム選びに役立つ情報" lead="はじめてでも迷わないためのガイドをご用意しています。" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link href="/ranking/" className="block bg-gradient-to-br from-rose-50 to-purple-50 border border-rose-200 rounded-xl p-8 hover:shadow-lg transition card-hover">
-                <div className="text-rose-500 text-3xl mb-4">1</div>
-                <h3 className="text-lg font-bold text-brand-text mb-2">ランキングTOP10</h3>
-                <p className="text-brand-muted text-sm">女性専用パーソナルジムの人気ランキング。料金・口コミ・特徴を比較。</p>
-              </Link>
-              <Link href="/cost/" className="block bg-gradient-to-br from-rose-50 to-purple-50 border border-rose-200 rounded-xl p-8 hover:shadow-lg transition card-hover">
-                <div className="text-purple-500 text-3xl mb-4">2</div>
-                <h3 className="text-lg font-bold text-brand-text mb-2">料金相場ガイド</h3>
-                <p className="text-brand-muted text-sm">2ヶ月コース・月額制・都度払いの料金を徹底解説。</p>
-              </Link>
-              <Link href="/guide/" className="block bg-gradient-to-br from-rose-50 to-purple-50 border border-rose-200 rounded-xl p-8 hover:shadow-lg transition card-hover">
-                <div className="text-rose-500 text-3xl mb-4">3</div>
-                <h3 className="text-lg font-bold text-brand-text mb-2">選び方ガイド</h3>
-                <p className="text-brand-muted text-sm">失敗しないパーソナルジムの選び方を5つのポイントで解説。</p>
-              </Link>
+              {[
+                { href: '/ranking/', n: '01', title: 'ランキングTOP10', desc: '女性専用パーソナルジムの人気ランキング。料金・口コミ・特徴を比較。' },
+                { href: '/cost/', n: '02', title: '料金相場ガイド', desc: '2ヶ月コース・月額制・都度払いの料金を、わかりやすく徹底解説。' },
+                { href: '/guide/', n: '03', title: '選び方ガイド', desc: '失敗しないパーソナルジムの選び方を、5つのポイントで解説。' },
+              ].map((c) => (
+                <Link key={c.href} href={c.href} className="group fade-up block bg-ivory border border-line rounded-2xl p-8 transition card-hover hover:border-accent/40">
+                  <span className="font-display text-4xl text-accent/70 leading-none block mb-5">{c.n}</span>
+                  <h3 className="font-serif text-lg text-ink mb-2.5 group-hover:text-accent transition-colors">{c.title}</h3>
+                  <p className="text-ink-soft text-sm leading-loose">{c.desc}</p>
+                  <span className="inline-flex items-center gap-1.5 text-accent text-xs mt-5 tracking-wide">
+                    詳しく見る
+                    <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" /></svg>
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="py-16 bg-rose-50" id="faq">
-          <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-2 text-center">よくある質問</h2>
-            <p className="text-brand-muted text-sm text-center mb-8">パーソナルジムに関するよくある疑問にお答えします</p>
-            <div className="space-y-4">
+        <section className="py-20 md:py-24 bg-ivory" id="faq">
+          <div className="max-w-3xl mx-auto px-6 lg:px-8">
+            <SectionHeading en="FAQ" title="よくある質問" lead="パーソナルジム選びの疑問に、ていねいにお答えします。" />
+            <div className="space-y-3">
               {faqs.slice(0, 5).map((faq, index) => (
-                <div key={index} className="bg-white border border-rose-200 rounded-xl overflow-hidden">
-                  <details className="group">
-                    <summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-rose-50 transition">
-                      <h3 className="font-bold text-brand-text pr-4 text-sm md:text-base">{faq.question}</h3>
-                      <svg className="w-5 h-5 text-rose-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg>
-                    </summary>
-                    <div className="px-5 pb-5 text-brand-muted leading-relaxed text-sm">{faq.answer}</div>
-                  </details>
-                </div>
+                <details key={index} className="group fade-up bg-white border border-line rounded-xl overflow-hidden">
+                  <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer">
+                    <h3 className="font-medium text-ink text-sm md:text-[0.95rem]">{faq.question}</h3>
+                    <svg className="w-4 h-4 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  </summary>
+                  <div className="px-5 pb-5 text-ink-soft leading-loose text-sm">{faq.answer}</div>
+                </details>
               ))}
             </div>
-            <div className="text-center mt-8">
-              <Link href="/faq/" className="text-rose-500 hover:text-rose-600 font-medium text-sm underline">すべてのFAQを見る →</Link>
+            <div className="text-center mt-10 fade-up">
+              <Link href="/faq/" className="inline-flex items-center gap-1.5 text-accent hover:text-accent-dark font-medium text-sm tracking-wide">
+                すべての質問を見る
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </Link>
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-r from-rose-500 to-purple-500 text-white">
-          <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8 leading-relaxed">気になるジムの体験レッスンに行ってみましょう。<br />複数のジムを比較して、あなたに合うジムを見つけてください。</p>
-            <Link href="/ranking/" className="inline-block bg-white text-rose-500 px-10 py-4 text-sm font-bold rounded-full hover:bg-rose-50 transition-all">
-              おすすめランキングを見る
-            </Link>
+        <section className="py-20 md:py-24 bg-white">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8">
+            <div className="fade-up grid md:grid-cols-2 rounded-[1.6rem] overflow-hidden border border-line shadow-[0_30px_60px_-36px_rgba(38,34,30,0.3)]">
+              <div className="bg-accent-tint px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center">
+                <p className="eyebrow mb-4">Start Today</p>
+                <h2 className="font-serif text-2xl md:text-[1.85rem] leading-snug text-ink mb-5">
+                  まずは、無料カウンセリングから。
+                </h2>
+                <p className="text-ink-soft text-sm leading-loose mb-8">
+                  気になるジムの体験から始めてみましょう。いくつか比べてみると、あなたに合う一つが見えてきます。
+                </p>
+                <div>
+                  <Link href="/ranking/" className="btn-primary text-sm md:text-base !px-9 !py-4 inline-block">
+                    おすすめランキングを見る
+                  </Link>
+                </div>
+              </div>
+              <div className="relative min-h-[260px] md:min-h-0">
+                <Image
+                  src="/images/cta-woman.webp"
+                  alt="明るく清潔感のあるスタジオに立つ女性"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
         </section>
       </main>
       <SiteFooter />
+      <ScrollReveal />
     </>
   )
 }

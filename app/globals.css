@@ -10,10 +10,11 @@
   body {
     @apply font-sans;
     font-size: 16px;
-    color: #2D2A26;
-    background: #FFF5F8;
+    color: #26221E;
+    background: #FFFFFF;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
   }
 
   @media (max-width: 768px) {
@@ -32,9 +33,9 @@
   }
 
   .navbar.scrolled {
-    background: rgba(255, 245, 248, 0.95);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(20px);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 0 rgba(38, 34, 30, 0.06);
   }
 
   .card-hover {
@@ -43,18 +44,35 @@
 
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(201, 76, 124, 0.1);
+    box-shadow: 0 24px 48px rgba(38, 34, 30, 0.08);
   }
 
-  .fade-up {
+  /* JS有効時のみ初期非表示（no-JS/クローラはそのまま表示＝チラつき・非表示リスク回避） */
+  html.js .fade-up {
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(26px);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
   }
 
-  .fade-up.visible {
+  html.js .fade-up.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html.js .fade-up {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+  }
+
+  /* セクション共通の小見出し（欧文エンブレム） */
+  .eyebrow {
+    @apply font-display text-accent uppercase;
+    letter-spacing: 0.28em;
+    font-size: 0.82rem;
   }
 
   .mobile-menu {
@@ -89,7 +107,7 @@
     left: 0;
     width: 0;
     height: 1px;
-    background: #C94C7C;
+    background: #B26A82;
     transition: width 0.3s;
   }
 
@@ -98,11 +116,11 @@
   }
 
   .btn-primary {
-    @apply bg-rose-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-rose-600 transition-all;
+    @apply bg-accent text-white px-6 py-3 rounded-full font-medium tracking-wide hover:bg-accent-dark transition-all;
   }
 
   .btn-secondary {
-    @apply border-2 border-rose-500 text-rose-500 px-6 py-3 rounded-lg font-medium hover:bg-rose-500 hover:text-white transition-all;
+    @apply border border-accent text-accent px-6 py-3 rounded-full font-medium tracking-wide hover:bg-accent hover:text-white transition-all;
   }
 
   .faq-content {
