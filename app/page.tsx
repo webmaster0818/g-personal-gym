@@ -99,11 +99,22 @@ export default function Home() {
       <FAQSchema faqs={faqs} />
       <Navigation />
       <main>
-        {/* Hero */}
-        <section className="relative overflow-hidden bg-white pt-28 pb-16 md:pt-36 md:pb-24">
-          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-accent-tint/60 to-white" />
-          <div className="max-w-6xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-            <div className="fade-up">
+        {/* Hero（画像を背景に敷き、その上にテキストを重ねるフルブリード構成） */}
+        <section className="relative overflow-hidden flex items-center min-h-[78vh] md:min-h-[680px]">
+          {/* 背景画像 */}
+          <Image
+            src="/images/hero-trainer.webp"
+            alt="女性トレーナーが笑顔で女性トレーニーを指導している様子"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[70%_center] -z-20"
+          />
+          {/* 清潔感を保つ白の透明グラデーション（暗い被せはしない・文字の可読性確保） */}
+          <div className="absolute inset-0 -z-10 bg-white/45 md:hidden" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-white via-white/55 to-white/35 md:bg-gradient-to-r md:from-white md:via-white/80 md:to-transparent" />
+          <div className="relative max-w-6xl mx-auto px-6 lg:px-8 w-full pt-28 pb-14 md:py-32">
+            <div className="max-w-xl fade-up">
               <p className="eyebrow mb-5">Women&rsquo;s Personal Gym Guide</p>
               <h1 className="font-serif text-[2.1rem] sm:text-4xl md:text-[3rem] leading-[1.3] text-ink mb-6">
                 「変わりたい」を、<br />
@@ -130,20 +141,6 @@ export default function Home() {
                   <span className="font-display text-3xl text-accent leading-none">100</span>
                   <span className="text-xs ml-1.5">%女性専用で厳選</span>
                 </div>
-              </div>
-            </div>
-            <div className="fade-up">
-              <div className="relative">
-                <div className="absolute -top-4 -right-4 w-28 h-28 rounded-full bg-accent-soft/50 -z-10 hidden md:block" />
-                <div className="absolute -bottom-5 -left-5 w-20 h-20 rounded-full border border-accent-soft -z-10 hidden md:block" />
-                <Image
-                  src="/images/hero-trainer.webp"
-                  alt="女性トレーナーが笑顔で女性トレーニーを指導している様子"
-                  width={1280}
-                  height={896}
-                  priority
-                  className="w-full h-auto rounded-[1.4rem] shadow-[0_30px_60px_-24px_rgba(38,34,30,0.28)]"
-                />
               </div>
             </div>
           </div>
