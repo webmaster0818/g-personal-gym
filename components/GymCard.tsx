@@ -48,7 +48,7 @@ export function GymCard({ gym, index }: GymCardProps) {
   const [showReviews, setShowReviews] = useState(false)
 
   return (
-    <div id={`gym-${index + 1}`} className="bg-white border border-rose-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow scroll-mt-24">
+    <div id={`gym-${index + 1}`} className="bg-white border border-line rounded-xl overflow-hidden hover:shadow-lg transition-shadow scroll-mt-24">
       <div className="p-6">
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-xl font-bold text-brand-text">{index + 1}. {gym.name}</h3>
@@ -65,14 +65,14 @@ export function GymCard({ gym, index }: GymCardProps) {
         </div>
 
         {showReviews && gym.reviews && gym.reviews.length > 0 && (
-          <div className="mb-4 bg-rose-50 border border-rose-200 rounded-lg p-4">
+          <div className="mb-4 bg-ivory border border-line rounded-lg p-4">
             <div className="flex items-center justify-between mb-3">
               <h4 className="font-bold text-brand-text text-sm">利用者の口コミ</h4>
               <button onClick={() => setShowReviews(false)} className="text-brand-light hover:text-brand-text text-xs">閉じる</button>
             </div>
             <div className="space-y-3">
               {gym.reviews.slice(0, 3).map((review, i) => (
-                <div key={i} className="bg-white border border-rose-100 rounded p-3">
+                <div key={i} className="bg-white border border-line rounded p-3">
                   <div className="flex items-center mb-2">
                     <div className="flex">
                       {[...Array(5)].map((_, starIndex) => (
@@ -91,7 +91,7 @@ export function GymCard({ gym, index }: GymCardProps) {
 
         <div className="flex flex-wrap gap-2 mb-4">
           {gym.features.map((feature, i) => (
-            <span key={i} className="bg-rose-50 text-rose-600 px-3 py-1 rounded-full text-xs font-medium border border-rose-200">
+            <span key={i} className="bg-ivory text-accent-dark px-3 py-1 rounded-full text-xs font-medium border border-line">
               {feature}
             </span>
           ))}
@@ -109,8 +109,8 @@ export function GymCard({ gym, index }: GymCardProps) {
                   onClick={() => setActiveTab(tab)}
                   className={`px-4 py-2 text-sm font-medium whitespace-nowrap rounded-full transition-colors ${
                     activeTab === tab
-                      ? 'bg-rose-500 text-white'
-                      : 'bg-rose-50 text-brand-muted hover:bg-rose-100'
+                      ? 'bg-accent text-white'
+                      : 'bg-ivory text-brand-muted hover:bg-accent-tint'
                   }`}
                 >
                   {labels[tab]}
@@ -121,7 +121,7 @@ export function GymCard({ gym, index }: GymCardProps) {
         </div>
 
         {/* Tab Content */}
-        <div className="bg-rose-50 border border-rose-100 rounded-lg p-4 min-h-[160px]">
+        <div className="bg-ivory border border-line rounded-lg p-4 min-h-[160px]">
           {activeTab === 'plan' && (
             <div>
               <h4 className="font-bold text-brand-text mb-2">{gym.popularPlan?.name || '基本コース'}</h4>
@@ -145,7 +145,7 @@ export function GymCard({ gym, index }: GymCardProps) {
               <ul className="space-y-2 text-sm text-brand-muted">
                 {(gym.options || ['ウェアレンタル無料', 'タオル完備', 'シャワー完備', '食事指導あり']).map((option, i) => (
                   <li key={i} className="flex items-start">
-                    <span className="text-rose-400 mr-2">・</span>
+                    <span className="text-accent mr-2">・</span>
                     <span>{option}</span>
                   </li>
                 ))}
@@ -169,7 +169,7 @@ export function GymCard({ gym, index }: GymCardProps) {
                   <span className="text-brand-light font-medium">目的：</span>
                   <div className="mt-2 flex flex-wrap gap-2">
                     {(gym.userProfile?.purpose || ['ダイエット', 'ボディメイク', '姿勢改善']).map((purpose, i) => (
-                      <span key={i} className="bg-white text-brand-muted px-3 py-1 rounded-full text-xs border border-rose-200">{purpose}</span>
+                      <span key={i} className="bg-white text-brand-muted px-3 py-1 rounded-full text-xs border border-line">{purpose}</span>
                     ))}
                   </div>
                 </div>
@@ -197,7 +197,7 @@ export function GymCard({ gym, index }: GymCardProps) {
                   <span className="text-brand-light font-medium">設備：</span>
                   <div className="mt-2 flex flex-wrap gap-2">
                     {(gym.basicInfo?.facilities || ['完全個室', 'シャワー', 'ロッカー']).map((f, i) => (
-                      <span key={i} className="bg-white text-brand-muted px-3 py-1 rounded-full text-xs border border-rose-200">{f}</span>
+                      <span key={i} className="bg-white text-brand-muted px-3 py-1 rounded-full text-xs border border-line">{f}</span>
                     ))}
                   </div>
                 </div>
@@ -223,7 +223,7 @@ export function GymCard({ gym, index }: GymCardProps) {
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${gym.name} ${gym.address}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-full bg-rose-500 text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-rose-600 transition"
+                  className="inline-flex items-center justify-center w-full bg-accent text-white px-4 py-3 rounded-lg text-sm font-medium hover:bg-accent-dark transition"
                 >
                   Google Mapで見る
                 </a>
@@ -233,7 +233,7 @@ export function GymCard({ gym, index }: GymCardProps) {
         </div>
 
         <div className="mt-4">
-          <a href={`https://www.google.com/search?q=${encodeURIComponent(gym.name + ' 公式')}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-rose-500 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-rose-600 transition">
+          <a href={`https://www.google.com/search?q=${encodeURIComponent(gym.name + ' 公式')}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-accent text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-accent-dark transition">
             公式サイトを見る
           </a>
         </div>

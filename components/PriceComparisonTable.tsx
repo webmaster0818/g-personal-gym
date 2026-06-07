@@ -14,7 +14,7 @@ function hasFeature(features: string[], pattern: RegExp): boolean {
 function Badge({ active, label }: { active: boolean; label: string }) {
   if (!active) return null
   return (
-    <span className="inline-block bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-medium border border-rose-200">
+    <span className="inline-block bg-ivory text-accent-dark text-[10px] px-1.5 py-0.5 rounded font-medium border border-line">
       {label}
     </span>
   )
@@ -41,9 +41,9 @@ export function PriceComparisonTable({ gyms, areaName }: Props) {
             <a
               key={i}
               href={`#gym-${i + 1}`}
-              className="flex items-center gap-3 px-3 py-2.5 rounded-lg border border-rose-100 hover:border-rose-300 transition bg-white"
+              className="flex items-center gap-3 px-3 py-2.5 rounded-lg border border-line hover:border-accent-soft transition bg-white"
             >
-              <span className="text-rose-400 text-xs font-bold w-5 shrink-0">{i + 1}</span>
+              <span className="text-accent text-xs font-bold w-5 shrink-0">{i + 1}</span>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1.5">
                   <span className="font-bold text-brand-text text-sm truncate">{gym.name}</span>
@@ -64,7 +64,7 @@ export function PriceComparisonTable({ gyms, areaName }: Props) {
                   <Badge active={hasMealGuide(gym.features)} label="食事指導" />
                 </div>
               </div>
-              <svg className="w-4 h-4 text-rose-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-accent-soft shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </a>
@@ -75,7 +75,7 @@ export function PriceComparisonTable({ gyms, areaName }: Props) {
         <div className="hidden md:block overflow-x-auto">
           <table className="w-full border-collapse text-sm">
             <thead>
-              <tr className="bg-rose-500 text-white">
+              <tr className="bg-accent text-white">
                 <th className="px-3 py-2.5 text-left font-bold whitespace-nowrap">ジム名</th>
                 <th className="px-3 py-2.5 text-left font-bold whitespace-nowrap">料金</th>
                 <th className="px-3 py-2.5 text-center font-bold whitespace-nowrap">評価</th>
@@ -87,9 +87,9 @@ export function PriceComparisonTable({ gyms, areaName }: Props) {
             </thead>
             <tbody>
               {gyms.map((gym, i) => (
-                <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-rose-50/50'}>
+                <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-ivory/50'}>
                   <td className="px-3 py-2 font-medium text-brand-text whitespace-nowrap">
-                    <a href={`#gym-${i + 1}`} className="hover:text-rose-500 transition underline decoration-dotted underline-offset-2">
+                    <a href={`#gym-${i + 1}`} className="hover:text-accent transition underline decoration-dotted underline-offset-2">
                       {i + 1}. {gym.name}
                     </a>
                   </td>
@@ -103,8 +103,8 @@ export function PriceComparisonTable({ gyms, areaName }: Props) {
                     ) : <span className="text-gray-300">-</span>}
                   </td>
                   <td className="px-3 py-2 text-center text-brand-muted text-xs">{gym.trial}</td>
-                  <td className="px-3 py-2 text-center">{isWomenOnly(gym.features) ? <span className="text-rose-500 font-bold">○</span> : <span className="text-gray-300">-</span>}</td>
-                  <td className="px-3 py-2 text-center">{isPrivateRoom(gym.features) ? <span className="text-purple-500 font-bold">○</span> : <span className="text-gray-300">-</span>}</td>
+                  <td className="px-3 py-2 text-center">{isWomenOnly(gym.features) ? <span className="text-accent font-bold">○</span> : <span className="text-gray-300">-</span>}</td>
+                  <td className="px-3 py-2 text-center">{isPrivateRoom(gym.features) ? <span className="text-accent-dark font-bold">○</span> : <span className="text-gray-300">-</span>}</td>
                   <td className="px-3 py-2 text-center">{hasMealGuide(gym.features) ? <span className="text-green-500 font-bold">○</span> : <span className="text-gray-300">-</span>}</td>
                 </tr>
               ))}

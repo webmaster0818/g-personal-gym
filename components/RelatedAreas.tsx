@@ -41,7 +41,7 @@ export function RelatedAreas({ currentSlug }: RelatedAreasProps) {
   const relatedAreas = allAreas.filter((area) => area.slug !== currentSlug)
 
   return (
-    <section className="py-16 bg-rose-50">
+    <section className="py-16 bg-ivory">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">
           他のエリアも見る
@@ -54,7 +54,7 @@ export function RelatedAreas({ currentSlug }: RelatedAreasProps) {
             <Link
               key={area.slug}
               href={`/areas/${area.slug}/`}
-              className="block bg-white border border-rose-200 rounded-lg p-4 text-center hover:shadow-lg hover:border-rose-400 transition"
+              className="block bg-white border border-line rounded-lg p-4 text-center hover:shadow-lg hover:border-accent transition"
             >
               <span className="text-sm font-medium text-brand-text">{area.name}</span>
             </Link>
