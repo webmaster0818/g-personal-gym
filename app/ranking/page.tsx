@@ -1,12 +1,21 @@
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
+import { FAQSchema } from '@/components/FAQSchema'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '【2026年最新】女性専用パーソナルジムおすすめランキングTOP10',
-  description: '女性専用パーソナルジムのおすすめランキングTOP10を発表。ビーコンセプト・リボーンマイセルフ・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を徹底比較。',
+  title: '女性専用パーソナルジムおすすめランキングTOP10【2026年最新】料金・特徴を徹底比較',
+  description: '女性専用パーソナルジムのおすすめランキングTOP10。OUTLINE・ビーコンセプト・UNDEUX SUPERBODY・リボーンマイセルフなど人気ジムの料金・特徴・選び方を、目的別に徹底比較。あなたに合う一社が見つかります。',
 }
+
+const faqs = [
+  { question: '女性専用パーソナルジムのおすすめはどこですか？', answer: '総合的なバランスではOUTLINE（完全個室・生涯サポート）、下半身痩せならビーコンセプト、食事も任せたいならUNDEUX SUPERBODY（宅配食無料）が人気です。重視する条件（料金・目的・通いやすさ）によって最適なジムは変わるため、気になる2〜3社の無料カウンセリングで比較するのがおすすめです。' },
+  { question: 'ランキングは何を基準に決めていますか？', answer: '「女性向けの環境（女性専用・個室・女性トレーナー）」「料金の分かりやすさ・総額」「サポート（食事指導・アフターフォロー）」「通いやすさ（店舗数・立地）」「実績・口コミ」の5軸を総合して評価しています。料金や店舗情報は各社の公開情報をもとにした目安です。' },
+  { question: '安い女性専用パーソナルジムはどこですか？', answer: '月額制ならエクササイズコーチ（月4回12,000円〜）やかたぎり塾（月4回30,800円〜）が始めやすい価格帯です。2ヶ月コースではクレビック（149,800円〜）やLastyle（158,400円〜）が比較的リーズナブル。入会金無料キャンペーンを併用するとさらに抑えられます。' },
+  { question: '産後ダイエットに対応したジムはありますか？', answer: 'ビーコンセプト（託児所費用を最大1,000円/回補助）、OUTLINE（全店ベビーサークル完備）、リボーンマイセルフ（産後ダイエットコース）などが産後ママ向けの環境を整えています。産後は体の回復を最優先に、医師の許可を得てから始めましょう。' },
+  { question: 'まず何社くらい比較すべきですか？', answer: '2〜3社の無料カウンセリング・体験を受けて比較するのがおすすめです。料金・トレーナーとの相性・雰囲気・通いやすさは実際に行って初めて分かります。複数社を見ると相場感も掴め、納得して選べます。' },
+]
 
 const rankings = [
   {
@@ -23,7 +32,7 @@ const rankings = [
     name: 'ビーコンセプト（B CONCEPT）',
     tagline: '下半身・太もも痩せ特化の女性専用ジム',
     price: '2ヶ月18回 179,685円〜（税込）',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全���室'],
+    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
     description: '医師とトレーナーが共同開発した独自の脚やせメソッドが人気。太もも痩せ・ヒップアップに特化し、2ヶ月でヒップアップ・美脚・くびれ・美姿勢を目指します。託児所費用を最大1,000円/回補助する産後ママ応援制度も。月々5,545円〜の分割払いに対応。',
     points: ['下半身痩せに悩む方に最適', '産後ダイエットにも対応', '分割払いで始めやすい'],
   },
@@ -43,7 +52,7 @@ const rankings = [
     price: '入会金38,000円＋コース料金',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '2万人以上の指導実績', '産後ダイエットコース'],
     description: '2010年創業、日本初の女性専用ダイエットジム。トレーナーも全員女性で、男性の目を気にせずトレーニングに集中できます。10年以上の指導実績と2万人以上のクライアントデータをもとにしたオリジナルメソッドで、女性本来の柔らかさを残したボディメイクを実現。',
-    points: ['男性トレーナーに��抗がある方に', '実績と信頼のある大手を選びたい方に', '全国30店舗以上'],
+    points: ['男性トレーナーに抵抗がある方に', '実績と信頼のある大手を選びたい方に', '全国30店舗以上'],
   },
   {
     rank: 5,
@@ -85,7 +94,7 @@ const rankings = [
     rank: 9,
     name: 'BEYOND（ビヨンド）',
     tagline: 'コンテスト入賞者多数の高品質ジム',
-    price: '16回 281,600円〜（税込��',
+    price: '16回 281,600円〜（税込）',
     features: ['ハイクオリティ', 'コンテスト入賞トレーナー', '完全個室', '食事指導あり', '全国展開'],
     description: '倍率50倍以上の厳しい選考を突破したトレーナーのみが在籍。全トレーナーがフィジーク大会やボディコンテストの受賞経験を持つハイクオリティなパーソナルジム。女性利用者も多く、本格的なボディメイクを目指す方に人気。',
     points: ['トレーナーの質にこだわりたい方に', '本格的なボディメイクに', '全国に店舗あり'],
@@ -104,39 +113,71 @@ const rankings = [
 export default function RankingPage() {
   return (
     <>
+      <FAQSchema faqs={faqs} />
       <Navigation />
       <main data-reveal className="pt-16">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-brand-text mb-4">
-              【2026年最新】女性専用パーソナルジム<br className="hidden md:block" />
-              おすすめランキングTOP10
+            <p className="eyebrow mb-3">Ranking</p>
+            <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">
+              女性専用パーソナルジムおすすめランキングTOP10【2026年最新】
             </h1>
-            <p className="text-brand-muted text-sm leading-relaxed">
-              女性専用パーソナルジムを料金・サービス・口コミから総合的に評価し、おすすめ順にランキング。あなたにぴったりのジムが見つかります。
+            <p className="text-ink-soft text-sm md:text-base leading-relaxed">
+              女性専用パーソナルジムを「環境・料金・サポート・通いやすさ・実績」の5軸で総合評価し、おすすめ順にランキング。目的別に、あなたに合う一社が見つかります。
             </p>
+            <p className="text-ink-faint text-xs mt-3">更新日 2026年4月13日</p>
           </div>
         </section>
 
         <section className="py-3 bg-white border-b border-line">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
-            <nav className="text-sm text-brand-light">
+            <nav className="text-sm text-ink-faint">
               <Link href="/" className="hover:text-accent transition">ホーム</Link>
               {' > '}
-              <span className="text-brand-muted">ランキング</span>
+              <span className="text-ink-soft">ランキング</span>
             </nav>
           </div>
         </section>
 
-        <section className="py-12">
+        {/* 選定基準 + 早見表 */}
+        <section className="py-12 bg-white">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <div className="bg-accent-tint border border-accent-soft rounded-xl p-6 mb-8">
+              <p className="font-bold text-ink mb-2">ランキングの評価基準</p>
+              <p className="text-sm text-ink-soft leading-relaxed">女性向けの<strong>環境</strong>（女性専用・個室・女性トレーナー）／<strong>料金</strong>の分かりやすさ・総額／<strong>サポート</strong>（食事指導・アフターフォロー）／<strong>通いやすさ</strong>（店舗数・立地）／<strong>実績・口コミ</strong>の5軸で総合評価しています。料金・店舗情報は各社の公開情報をもとにした目安です。</p>
+            </div>
+            <p className="font-bold text-ink mb-3">上位3社の早見比較</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-accent text-white">
+                    <th className="px-4 py-3 text-left">順位・ジム</th>
+                    <th className="px-4 py-3 text-left">特徴</th>
+                    <th className="px-4 py-3 text-left">料金目安</th>
+                    <th className="px-4 py-3 text-left">こんな人に</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white"><td className="px-4 py-3 border-b border-line font-medium">1位 OUTLINE</td><td className="px-4 py-3 border-b border-line">完全個室・生涯サポート</td><td className="px-4 py-3 border-b border-line">16回 184,800円〜</td><td className="px-4 py-3 border-b border-line">リバウンド防止・子連れ</td></tr>
+                  <tr className="bg-ivory/50"><td className="px-4 py-3 border-b border-line font-medium">2位 ビーコンセプト</td><td className="px-4 py-3 border-b border-line">下半身・脚やせ特化</td><td className="px-4 py-3 border-b border-line">2ヶ月 179,685円〜</td><td className="px-4 py-3 border-b border-line">下半身痩せ・産後</td></tr>
+                  <tr className="bg-white"><td className="px-4 py-3 font-medium">3位 UNDEUX SUPERBODY</td><td className="px-4 py-3">食事管理・宅配食無料</td><td className="px-4 py-3">2ヶ月 220,000円〜</td><td className="px-4 py-3">食事も任せたい</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-ink-faint text-xs mt-3">※詳細は各社の無料カウンセリングでご確認ください。以下で全10社を詳しく解説します。</p>
+          </div>
+        </section>
+
+        <section className="py-4 pb-12">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <div className="space-y-8">
               {rankings.map((gym) => (
                 <div key={gym.rank} className="bg-white border border-line rounded-xl overflow-hidden hover:shadow-lg transition">
-                  <div className={`px-6 py-3 ${gym.rank <= 3 ? 'bg-gradient-to-r from-accent to-accent-dark text-white' : 'bg-ivory text-brand-text'}`}>
-                    <span className="font-bold text-lg">第{gym.rank}位</span>
-                    <span className="ml-3 font-bold text-lg">{gym.name}</span>
+                  <div className={`px-6 py-3 ${gym.rank <= 3 ? 'bg-gradient-to-r from-accent to-accent-dark text-white' : 'bg-ivory text-ink'}`}>
+                    <h2 className="font-bold text-lg">
+                      <span>第{gym.rank}位</span>
+                      <span className="ml-3">{gym.name}</span>
+                    </h2>
                   </div>
                   <div className="p-6">
                     <p className="text-accent font-medium text-sm mb-3">{gym.tagline}</p>
@@ -164,6 +205,36 @@ export default function RankingPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 選び方の補足 + FAQ + 関連リンク */}
+        <section className="py-12 bg-white border-t border-line">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 className="text-xl md:text-2xl font-bold text-ink mb-4">自分に合うジムの選び方</h2>
+            <p className="text-ink-soft text-sm leading-relaxed mb-8">ランキングは目安です。最後は「目的（ダイエット／下半身／産後／ボディメイク）」「料金の総額」「通いやすさ」「トレーナーとの相性」で選ぶと失敗しません。詳しくは<Link href="/guide/" className="text-accent hover:underline">選び方ガイド</Link>、料金は<Link href="/cost/" className="text-accent hover:underline">料金相場ガイド</Link>をご覧ください。気になる2〜3社の無料カウンセリングを比較するのがおすすめです。</p>
+
+            <h2 className="text-xl md:text-2xl font-bold text-ink mb-6">よくある質問</h2>
+            <div className="space-y-3 mb-10">
+              {faqs.map((faq, index) => (
+                <details key={index} className="group bg-white border border-line rounded-xl overflow-hidden">
+                  <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer">
+                    <h3 className="font-medium text-ink text-sm md:text-base">{faq.question}</h3>
+                    <svg className="w-4 h-4 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  </summary>
+                  <div className="px-5 pb-5 text-ink-soft leading-relaxed text-sm">{faq.answer}</div>
+                </details>
+              ))}
+            </div>
+
+            <div className="bg-ivory border border-line rounded-xl p-6">
+              <p className="font-bold text-ink text-sm mb-3">あわせて読みたい</p>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/guide/" className="text-accent hover:text-accent-dark hover:underline">失敗しないパーソナルジムの選び方</Link></li>
+                <li><Link href="/cost/" className="text-accent hover:text-accent-dark hover:underline">女性専用パーソナルジムの料金相場</Link></li>
+                <li><Link href="/faq/" className="text-accent hover:text-accent-dark hover:underline">よくある質問をもっと見る</Link></li>
+              </ul>
             </div>
           </div>
         </section>
