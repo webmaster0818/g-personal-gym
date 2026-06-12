@@ -5,10 +5,12 @@ import { GymCard } from '@/components/GymCard'
 import { PriceComparisonTable } from '@/components/PriceComparisonTable'
 import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
+import { AreaContext } from '@/components/AreaContext'
+import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '【2026最新】自由が丘の女性専用パーソナルジムおすすめ6選！料金比較',
+  title: '【2026年6月最新】自由が丘の女性専用パーソナルジムおすすめ6選！料金比較',
   description: '【2026年4月最新】自由が丘のおすすめ女性専用パーソナルジム6選を徹底比較。UNDEUX SUPERBODY・OUTLINE・リボーンマイセルフなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,自由が丘,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'UNDEUX SUPERBODY 自由が丘スタジオ',
+    officialUrl: 'https://www.diet-undeux.jp/',
     rating: 4.8,
     reviewCount: 20,
     reviews: [
@@ -36,6 +39,7 @@ const gyms = [
   },
   {
     name: 'リボーンマイセルフ 自由が丘店',
+    officialUrl: 'https://reborn-myself.com/',
     rating: 4.7,
     reviewCount: 15,
     reviews: [
@@ -56,6 +60,7 @@ const gyms = [
   },
   {
     name: 'OUTLINE 自由が丘店',
+    officialUrl: 'https://www.outline-gym.com/',
     rating: 4.7,
     reviewCount: 13,
     reviews: [
@@ -76,6 +81,7 @@ const gyms = [
   },
   {
     name: 'ビーコンセプト 自由が丘店',
+    officialUrl: 'https://b-concept.tokyo/',
     rating: 4.6,
     reviewCount: 14,
     reviews: [
@@ -115,24 +121,25 @@ const gyms = [
     basicInfo: { hours: '9:00〜21:00', closed: '日曜', facilities: ['トレーニングルーム', 'ロッカー'] },
   },
   {
-    name: 'Bodyke 自由が丘店',
-    rating: 4.5,
-    reviewCount: 12,
+    name: 'エクササイズコーチ 自由が丘',
+    officialUrl: 'https://exercisecoach.co.jp/',
+    rating: 4.4,
+    reviewCount: 8,
     reviews: [
-      { author: 'L.K', rating: 5, date: '2週間前', text: '食べて痩せるメソッドが最高。糖質制限なしで-5kg。食事を楽しみながらダイエットできました。' },
-      { author: 'P.S', rating: 4, date: '1ヶ月前', text: '自由が丘の街でおしゃれにジム通い。トレーナーの知識が豊富で信頼できます。' },
-      { author: 'D.M', rating: 4, date: '3週間前', text: '食事指導が実践的で日常生活に活かせる。リバウンドしにくい体質になれました。' },
+      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
+      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
+      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
     ],
-    price: '2ヶ月16回 215,600円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['食べて痩せる', '糖質制限なし', '完全個室', '食事指導充実', '自由が丘駅近'],
-    description: '「食べて痩せる」がコンセプト。糖質制限に頼らない独自メソッドで食事を楽しみながらダイエット。自由が丘のおしゃれな環境で通いやすい。',
-    access: '東急「自由が丘駅」徒歩5分',
-    address: '東京都目黒区自由が丘（自由が丘駅徒歩5分）',
-    popularPlan: { name: 'スタンダードコース', description: '食べて痩せるメソッドによるマンツーマントレーニング＋食事指導。', price: '2ヶ月16回 215,600円〜（税込）' },
-    options: ['糖質制限なしの食事指導', 'ウェアレンタル無料', '完全個室', '食事報告サポート'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', 'ボディメイク', '食事改善', '健康管理'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    price: '月額制（プラン・店舗により異なる）',
+    trial: '無料体験あり',
+    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
+    description: '米国発のAIパーソナルジム。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
+    access: '「自由が丘」駅周辺',
+    address: '自由が丘エリア（最寄り店舗は公式サイトでご確認ください）',
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニング。月額制で継続しやすい。', price: '月額制（プラン・店舗により異なる）' },
+    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
+    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
+    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
   },
 ]
 
@@ -141,12 +148,12 @@ const faqs = [
   { question: '自由が丘のパーソナルジムの料金相場は？', answer: '自由が丘の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円。ビーコンセプトが179,685円〜と最もリーズナブル。月額制ならNICOの月4回35,200円〜も人気。' },
   { question: '自由が丘駅から最も近いジムは？', answer: 'UNDEUX SUPERBODY自由が丘スタジオが徒歩1分で最も駅近。NICO自由が丘は徒歩3分、リボーンマイセルフは徒歩4分です。' },
   { question: '子連れで通えるジムは？', answer: 'リボーンマイセルフ自由が丘店はキッズスペース併設。OUTLINEはベビーサークル完備。NICOもお子様連れOK。ビーコンセプトは託児所費用補助があります。自由が丘は子連れ対応のジムが充実しています。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、ビーコンセプト、リボーンマイセルフ、Bodykeは無料カウンセリングを実施。NICOも体験レッスンあり。' },
+  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、ビーコンセプト、リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施。NICOも体験レッスンあり。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても安心。自由が丘のジムはアットホームな雰囲気が多く、初めての方も通いやすいです。' },
   { question: '自由が丘はどんな雰囲気のエリア？', answer: '自由が丘はおしゃれなカフェやスイーツ店が並ぶ落ち着いた街。30〜40代の女性に人気のエリアで、トレーニング前後にカフェでリフレッシュするのもおすすめです。' },
-  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは管理栄養士監修の宅配食20食が無料。Bodykeは糖質制限なしの「食べて痩せる」メソッド。リボーンマイセルフも食事指導が充実しています。' },
+  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは管理栄養士監修の宅配食20食が無料。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。リボーンマイセルフも食事指導が充実しています。' },
   { question: 'ピラティスも受けたい場合は？', answer: 'NICOは加圧トレーニングとピラティスを組み合わせたプログラムを提供。筋トレとピラティスの両方を受けたい方におすすめです。' },
-  { question: 'リバウンド防止のサポートがあるジムは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。Bodykeも食習慣の改善を重視しておりリバウンドしにくい体質づくりをサポートします。' },
+  { question: 'リバウンド防止のサポートがあるジムは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。エクササイズコーチも食習慣の改善を重視しておりリバウンドしにくい体質づくりをサポートします。' },
 ]
 
 export default function JiyugaokaPage() {
@@ -159,7 +166,7 @@ export default function JiyugaokaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026最新】自由が丘の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年6月最新】自由が丘の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>
@@ -190,6 +197,10 @@ export default function JiyugaokaPage() {
           </div>
         </section>
 
+        <AreaContext slug="jiyugaoka" />
+
+        <WhyWomenOnly area="自由が丘" />
+
         <PriceComparisonTable gyms={gyms} areaName="自由が丘" />
 
         <section className="py-16 bg-ivory" id="gyms">
@@ -213,7 +224,7 @@ export default function JiyugaokaPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・Bodyke（食べて痩せるメソッド）</li><li className="text-brand-muted">・リボーンマイセルフ（食事指導充実）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・リボーンマイセルフ（食事指導充実）</li></ul>
               </div>
             </div>
           </div>

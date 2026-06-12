@@ -5,10 +5,12 @@ import { GymCard } from '@/components/GymCard'
 import { PriceComparisonTable } from '@/components/PriceComparisonTable'
 import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
+import { AreaContext } from '@/components/AreaContext'
+import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '【2026最新】立川の女性専用パーソナルジムおすすめ5選！料金比較',
+  title: '【2026年6月最新】立川の女性専用パーソナルジムおすすめ5選！料金比較',
   description: '【2026年4月最新】立川のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・ビーコンセプト・リボーンマイセルフなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,立川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'OUTLINE 立川店',
+    officialUrl: 'https://www.outline-gym.com/',
     rating: 4.7,
     reviewCount: 16,
     reviews: [
@@ -36,6 +39,7 @@ const gyms = [
   },
   {
     name: 'ビーコンセプト 立川店',
+    officialUrl: 'https://b-concept.tokyo/',
     rating: 4.7,
     reviewCount: 14,
     reviews: [
@@ -56,6 +60,7 @@ const gyms = [
   },
   {
     name: 'リボーンマイセルフ 立川店',
+    officialUrl: 'https://reborn-myself.com/',
     rating: 4.6,
     reviewCount: 13,
     reviews: [
@@ -76,6 +81,7 @@ const gyms = [
   },
   {
     name: 'UNDEUX SUPERBODY LIFE 立川スタジオ',
+    officialUrl: 'https://www.diet-undeux.jp/',
     rating: 4.6,
     reviewCount: 10,
     reviews: [
@@ -95,24 +101,25 @@ const gyms = [
     basicInfo: { hours: '9:00〜22:00', closed: '不定休', facilities: ['トレーニングルーム', 'シャワー', 'ロッカー'] },
   },
   {
-    name: 'Bodyke 立川店',
-    rating: 4.5,
-    reviewCount: 12,
+    name: 'エクササイズコーチ 立川',
+    officialUrl: 'https://exercisecoach.co.jp/',
+    rating: 4.4,
+    reviewCount: 8,
     reviews: [
-      { author: 'L.T', rating: 5, date: '1週間前', text: '食べて痩せるメソッドで-5kg。立川の美味しいランチも楽しみながらダイエット成功。' },
-      { author: 'P.H', rating: 4, date: '2週間前', text: '糖質制限なしが続けやすい。立川のエキュートで買い物するのも楽しみに。' },
-      { author: 'D.M', rating: 4, date: '1ヶ月前', text: 'トレーナーの知識が豊富。食事指導が実践的で日常生活に活かせます。' },
+      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
+      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
+      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
     ],
-    price: '2ヶ月16回 215,600円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['食べて痩せる', '糖質制限なし', '完全個室', '立川駅近', '食事指導充実'],
-    description: '「食べて痩せる」がコンセプト。糖質制限に頼らない独自メソッドで食事を楽しみながらダイエット。立川駅からアクセス良好。',
-    access: 'JR「立川駅」徒歩5分',
-    address: '東京都立川市（立川駅徒歩5分）',
-    popularPlan: { name: 'スタンダードコース', description: '食べて痩せるメソッドによるマンツーマントレーニング＋食事指導。', price: '2ヶ月16回 215,600円〜（税込）' },
-    options: ['糖質制限なしの食事指導', 'ウェアレンタル無料', '完全個室', '食事報告サポート'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', 'ボディメイク', '食事改善', '健康管理'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    price: '月額制（プラン・店舗により異なる）',
+    trial: '無料体験あり',
+    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
+    description: '米国発のAIパーソナルジム。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
+    access: '「立川」駅周辺',
+    address: '立川エリア（最寄り店舗は公式サイトでご確認ください）',
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニング。月額制で継続しやすい。', price: '月額制（プラン・店舗により異なる）' },
+    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
+    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
+    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
   },
 ]
 
@@ -121,10 +128,10 @@ const faqs = [
   { question: '立川のパーソナルジムの料金相場は？', answer: '立川の2ヶ月コースは約18万〜22万円。リボーンマイセルフの8回92,400円〜が最安。都心部より若干リーズナブルな傾向があります。' },
   { question: '立川駅から最も近いジムは？', answer: 'ビーコンセプトとUNDEUX SUPERBODY LIFEが徒歩4分。OUTLINE・リボーンマイセルフは徒歩5分です。' },
   { question: '子連れで通えるジムは？', answer: 'OUTLINEはベビーサークル完備。ビーコンセプトは託児所費用補助あり。立川は子育て世帯も多く、対応ジムがあります。' },
-  { question: '体験は無料？', answer: 'ビーコンセプト・OUTLINE・リボーンマイセルフ・Bodykeは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
+  { question: '体験は無料？', answer: 'ビーコンセプト・OUTLINE・リボーンマイセルフ・エクササイズコーチは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
   { question: '月額制で通えるジムは？', answer: 'UNDEUX SUPERBODY LIFEは月額制で月2回〜8回から選べます。月8回59,400円〜。継続割で長く通うほどお得になります。' },
   { question: '立川と八王子、どちらがジムの選択肢が多い？', answer: '立川のほうが女性専用ジムの選択肢が豊富です。JR中央線・南武線・多摩モノレールが交差するターミナル駅なのでアクセスも良好。' },
-  { question: '食事指導が充実しているジムは？', answer: 'Bodykeは糖質制限なしの「食べて痩せる」メソッド。ビーコンセプトは医師監修の食事指導。UNDEUX SUPERBODY LIFEもプロの食事アドバイスが受けられます。' },
+  { question: '食事指導が充実しているジムは？', answer: 'エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。ビーコンセプトは医師監修の食事指導。UNDEUX SUPERBODY LIFEもプロの食事アドバイスが受けられます。' },
   { question: '最も安いプランは？', answer: 'リボーンマイセルフの8回コース（92,400円〜）が最安。短期間で試したい方におすすめ。月額制ならUNDEUX SUPERBODY LIFEの月2回プラン。' },
   { question: 'リバウンド防止のサポートは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。24時間LINEで相談可能で卒業後もサポートが続きます。' },
 ]
@@ -139,7 +146,7 @@ export default function TachikawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026最新】立川の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年6月最新】立川の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>
@@ -160,6 +167,10 @@ export default function TachikawaPage() {
             </div>
           </div>
         </section>
+        <AreaContext slug="tachikawa" />
+
+        <WhyWomenOnly area="立川" />
+
         <PriceComparisonTable gyms={gyms} areaName="立川" />
         <section className="py-16 bg-ivory" id="gyms">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">

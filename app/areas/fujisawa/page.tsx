@@ -5,10 +5,12 @@ import { GymCard } from '@/components/GymCard'
 import { PriceComparisonTable } from '@/components/PriceComparisonTable'
 import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
+import { AreaContext } from '@/components/AreaContext'
+import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '【2026最新】藤沢の女性専用パーソナルジムおすすめ5選！料金比較',
+  title: '【2026年6月最新】藤沢の女性専用パーソナルジムおすすめ5選！料金比較',
   description: '【2026年4月最新】藤沢のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・リボーンマイセルフ・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,藤沢,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'OUTLINE 藤沢駅前店',
+    officialUrl: 'https://www.outline-gym.com/',
     rating: 4.7,
     reviewCount: 14,
     reviews: [
@@ -36,6 +39,7 @@ const gyms = [
   },
   {
     name: 'UNDEUX SUPERBODY LIFE 藤沢店',
+    officialUrl: 'https://www.diet-undeux.jp/',
     rating: 4.6,
     reviewCount: 11,
     reviews: [
@@ -56,6 +60,7 @@ const gyms = [
   },
   {
     name: 'リボーンマイセルフ 藤沢店',
+    officialUrl: 'https://reborn-myself.com/',
     rating: 4.6,
     reviewCount: 12,
     reviews: [
@@ -76,6 +81,7 @@ const gyms = [
   },
   {
     name: 'ビーコンセプト 藤沢店',
+    officialUrl: 'https://b-concept.tokyo/',
     rating: 4.5,
     reviewCount: 10,
     reviews: [
@@ -95,24 +101,25 @@ const gyms = [
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
   {
-    name: 'Bodyke 藤沢店',
-    rating: 4.5,
-    reviewCount: 9,
+    name: 'エクササイズコーチ 藤沢',
+    officialUrl: 'https://exercisecoach.co.jp/',
+    rating: 4.4,
+    reviewCount: 8,
     reviews: [
-      { author: 'L.K', rating: 5, date: '1週間前', text: '食べて痩せるメソッドが湘南ライフにぴったり。地元のグルメも楽しめます。' },
-      { author: 'P.S', rating: 4, date: '2週間前', text: '糖質制限なしで続けやすい。藤沢駅から近くて通いやすいです。' },
-      { author: 'D.M', rating: 4, date: '1ヶ月前', text: 'トレーナーの食事アドバイスが実践的。日常生活に活かせるので助かります。' },
+      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
+      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
+      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
     ],
-    price: '2ヶ月16回 215,600円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['食べて痩せる', '糖質制限なし', '完全個室', '藤沢駅近', '食事指導充実'],
-    description: '「食べて痩せる」がコンセプト。湘南の食を楽しみながらダイエット。糖質制限なしの独自メソッド。',
-    access: 'JR「藤沢駅」徒歩5分',
-    address: '神奈川県藤沢市（藤沢駅徒歩5分）',
-    popularPlan: { name: 'スタンダードコース', description: '食べて痩せるメソッドによるマンツーマントレーニング＋食事指導。', price: '2ヶ月16回 215,600円〜（税込）' },
-    options: ['糖質制限なしの食事指導', 'ウェアレンタル無料', '完全個室', '食事報告サポート'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', 'ボディメイク', '食事改善', '健康管理'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    price: '月額制（プラン・店舗により異なる）',
+    trial: '無料体験あり',
+    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
+    description: '米国発のAIパーソナルジム。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
+    access: '「藤沢」駅周辺',
+    address: '藤沢エリア（最寄り店舗は公式サイトでご確認ください）',
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニング。月額制で継続しやすい。', price: '月額制（プラン・店舗により異なる）' },
+    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
+    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
+    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
   },
 ]
 
@@ -121,11 +128,11 @@ const faqs = [
   { question: '藤沢のパーソナルジムの料金相場は？', answer: '藤沢の2ヶ月コースは約18万〜22万円。月額制ならUNDEUX LIFE月額19,800円〜。横浜・川崎と同等か若干安い傾向。' },
   { question: '藤沢駅から最も近いジムは？', answer: 'UNDEUX SUPERBODY LIFE藤沢店が徒歩2分で最寄り。OUTLINE・リボーンマイセルフは徒歩4分。' },
   { question: '子連れで通えるジムは？', answer: 'OUTLINE藤沢駅前店はベビーサークル完備。ビーコンセプトは託児所費用補助あり。' },
-  { question: '体験は無料？', answer: 'OUTLINE・リボーンマイセルフ・ビーコンセプト・Bodykeは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
+  { question: '体験は無料？', answer: 'OUTLINE・リボーンマイセルフ・ビーコンセプト・エクササイズコーチは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
   { question: '湘南エリアで他に選択肢は？', answer: '藤沢は湘南エリアで最も女性専用パーソナルジムが充実しています。辻堂や茅ヶ崎からも藤沢駅は東海道線で数分なのでアクセス良好。' },
   { question: 'マシンピラティスも受けたい場合は？', answer: 'UNDEUX SUPERBODY LIFE藤沢店はマシンピラティスの設備も完備。筋トレとピラティスの両方を楽しめます。' },
   { question: '夏のビーチシーズンに向けて通いたい', answer: 'ビーコンセプトの脚やせメソッドは2ヶ月で美脚を目指せます。湘南のビーチに自信を持って行きたい方におすすめ。4〜5月に始めれば夏に間に合います。' },
-  { question: '食事指導が充実しているジムは？', answer: 'Bodykeは糖質制限なしの「食べて痩せる」メソッド。湘南の新鮮な海鮮やグルメを楽しみながらダイエットが可能です。' },
+  { question: '食事指導が充実しているジムは？', answer: 'エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。湘南の新鮮な海鮮やグルメを楽しみながらダイエットが可能です。' },
   { question: 'リバウンド防止のサポートは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。卒業後もずっとサポートが続きます。' },
 ]
 
@@ -135,9 +142,13 @@ export default function FujisawaPage() {
       <FAQSchema faqs={faqs} />
       <Navigation />
       <main data-reveal className="pt-16 bg-white">
-        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16"><div className="max-w-4xl mx-auto px-6 lg:px-8"><p className="text-accent text-xs mb-2">更新日 2026年04月13日</p><h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">【2026最新】藤沢の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較</h1></div></section>
+        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16"><div className="max-w-4xl mx-auto px-6 lg:px-8"><p className="text-accent text-xs mb-2">更新日 2026年04月13日</p><h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">【2026年6月最新】藤沢の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較</h1></div></section>
         <section className="bg-white py-3 border-b border-line"><div className="max-w-6xl mx-auto px-6 lg:px-8"><nav className="text-sm text-brand-light"><Link href="/" className="hover:text-accent transition">ホーム</Link>{' > '}<span className="text-brand-muted">藤沢</span></nav></div></section>
         <section className="py-12 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p><p className="text-brand-muted leading-relaxed mb-6">「藤沢・湘南エリアで女性専用のパーソナルジムを探している」「ビーチシーズンに向けて体を引き締めたい」という方のために、藤沢エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p><div className="bg-ivory border-l-4 border-accent p-6 mb-8"><h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2><ul className="space-y-2 text-brand-muted"><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>藤沢・湘南エリアで女性専用ジムを探している</span></li><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>夏に向けて美脚を目指したい</span></li><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>月額制で気軽に始めたい</span></li><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>料金を比較して選びたい</span></li><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>子連れで通いたい</span></li></ul></div></div></section>
+        <AreaContext slug="fujisawa" />
+
+        <WhyWomenOnly area="藤沢" />
+
         <PriceComparisonTable gyms={gyms} areaName="藤沢" />
         <section className="py-16 bg-ivory" id="gyms"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">藤沢のおすすめ女性向けパーソナルジム{gyms.length}選</h2><div className="space-y-8">{gyms.map((gym, index) => (<GymCard key={index} gym={gym} index={index} />))}</div></div></section>
         <section className="py-16 bg-white"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2><div className="grid grid-cols-1 md:grid-cols-3 gap-8"><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・UNDEUX LIFE（月額19,800円〜）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">美脚・ビーチボディ</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（脚やせメソッド）</li><li className="text-brand-muted">・OUTLINE（全身ボディメイク）</li><li className="text-brand-muted">・UNDEUX LIFE（ピラティスも可）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul></div></div></div></section>

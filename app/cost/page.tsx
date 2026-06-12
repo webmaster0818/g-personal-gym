@@ -5,7 +5,7 @@ import { FAQSchema } from '@/components/FAQSchema'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '女性専用パーソナルジムの料金相場【2026年最新】2ヶ月・月額・都度払いを徹底比較',
+  title: '女性専用パーソナルジムの料金相場【2026年6月最新】2ヶ月・月額・都度払いを徹底比較',
   description:
     '女性専用パーソナルジムの料金相場を、2ヶ月集中コース・月額制・都度払い別に徹底解説。入会金や食事指導などの追加費用、総額の目安、安く抑えるコツ、他の運動施設との料金比較まで、公開情報ベースでまとめました。',
 }
@@ -29,7 +29,7 @@ export default function CostPage() {
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="eyebrow mb-3">Price Guide</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">女性専用パーソナルジムの料金相場【2026年最新】</h1>
+            <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">女性専用パーソナルジムの料金相場【2026年6月最新】</h1>
             <p className="text-ink-soft text-sm md:text-base leading-relaxed">2ヶ月集中コース・月額制・都度払い、入会金や追加費用まで。総額の目安と、賢く安く通うコツを徹底解説します。</p>
             <p className="text-ink-faint text-xs mt-3">更新日 2026年4月13日</p>
           </div>

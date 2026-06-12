@@ -10,6 +10,7 @@ type Review = {
 }
 
 export type Gym = {
+  officialUrl?: string
   name: string
   rating: number
   reviewCount?: number
@@ -43,12 +44,44 @@ type GymCardProps = {
   index: number
 }
 
+// ジム運営元 → 公式サイトキャプチャ画像のマッピング（実在の公式サイトを撮影・目視検証済）
+const GYM_IMAGES: { match: string; slug: string }[] = [
+  { match: 'ビーコンセプト', slug: 'b-concept' },
+  { match: 'OUTLINE', slug: 'outline' },
+  { match: 'リボーンマイセルフ', slug: 'reborn-myself' },
+  { match: 'エクササイズコーチ', slug: 'exercise-coach' },
+  { match: '24/7', slug: '247workout' },
+  { match: 'BEYOND', slug: 'beyond' },
+  { match: 'Bodies', slug: 'bodies' },
+  { match: 'Apple GYM', slug: 'apple-gym' },
+  { match: 'UNDEUX', slug: 'undeux' },
+  { match: 'かたぎり塾', slug: 'katagirijuku' },
+]
+
+function gymOfficialImage(name: string): string | null {
+  const hit = GYM_IMAGES.find((g) => name.includes(g.match))
+  return hit ? `/images/gyms/${hit.slug}.webp` : null
+}
+
 export function GymCard({ gym, index }: GymCardProps) {
   const [activeTab, setActiveTab] = useState<'plan' | 'options' | 'users' | 'basic' | 'map'>('plan')
   const [showReviews, setShowReviews] = useState(false)
 
   return (
     <div id={`gym-${index + 1}`} className="bg-white border border-line rounded-xl overflow-hidden hover:shadow-lg transition-shadow scroll-mt-24">
+      {gymOfficialImage(gym.name) && (
+        <div className="relative w-full h-44 sm:h-56 bg-ivory border-b border-line overflow-hidden">
+          <img
+            src={gymOfficialImage(gym.name)!}
+            alt={`${gym.name}の公式サイト`}
+            loading="lazy"
+            className="w-full h-full object-cover object-top"
+          />
+          <span className="absolute bottom-2 right-2 bg-black/55 text-white text-[10px] px-2 py-0.5 rounded">
+            公式サイトより
+          </span>
+        </div>
+      )}
       <div className="p-6">
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-xl font-bold text-brand-text">{index + 1}. {gym.name}</h3>
@@ -233,7 +266,7 @@ export function GymCard({ gym, index }: GymCardProps) {
         </div>
 
         <div className="mt-4">
-          <a href={`https://www.google.com/search?q=${encodeURIComponent(gym.name + ' 公式')}`} target="_blank" rel="noopener noreferrer" className="inline-block bg-accent text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-accent-dark transition">
+          <a href={gym.officialUrl || `https://www.google.com/search?q=${encodeURIComponent(gym.name + ' 公式')}`} target="_blank" rel={gym.officialUrl ? 'noopener noreferrer sponsored' : 'noopener noreferrer'} className="inline-block bg-accent text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-accent-dark transition">
             公式サイトを見る
           </a>
         </div>

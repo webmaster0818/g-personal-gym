@@ -5,10 +5,12 @@ import { GymCard } from '@/components/GymCard'
 import { PriceComparisonTable } from '@/components/PriceComparisonTable'
 import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
+import { AreaContext } from '@/components/AreaContext'
+import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '【2026最新】中目黒の女性専用パーソナルジムおすすめ5選！料金比較',
+  title: '【2026年6月最新】中目黒の女性専用パーソナルジムおすすめ5選！料金比較',
   description: '【2026年4月最新】中目黒のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・zen place・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,中目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'OUTLINE 中目黒店',
+    officialUrl: 'https://www.outline-gym.com/',
     rating: 4.8,
     reviewCount: 16,
     reviews: [
@@ -56,6 +59,7 @@ const gyms = [
   },
   {
     name: 'ビーコンセプト 中目黒店',
+    officialUrl: 'https://b-concept.tokyo/',
     rating: 4.7,
     reviewCount: 14,
     reviews: [
@@ -76,6 +80,7 @@ const gyms = [
   },
   {
     name: 'かたぎり塾 中目黒店',
+    officialUrl: 'https://katagirijuku.jp/',
     rating: 4.5,
     reviewCount: 12,
     reviews: [
@@ -133,7 +138,7 @@ export default function NakameguroPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月29日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026最新】中目黒の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年6月最新】中目黒の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>
@@ -162,6 +167,10 @@ export default function NakameguroPage() {
             </div>
           </div>
         </section>
+
+        <AreaContext slug="nakameguro" />
+
+        <WhyWomenOnly area="中目黒" />
 
         <PriceComparisonTable gyms={gyms} areaName="中目黒" />
 

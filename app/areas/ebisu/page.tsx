@@ -5,10 +5,12 @@ import { GymCard } from '@/components/GymCard'
 import { PriceComparisonTable } from '@/components/PriceComparisonTable'
 import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
+import { AreaContext } from '@/components/AreaContext'
+import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '【2026最新】恵比寿の女性専用パーソナルジムおすすめ6選！料金比較',
+  title: '【2026年6月最新】恵比寿の女性専用パーソナルジムおすすめ6選！料金比較',
   description: '【2026年4月最新】恵比寿のおすすめ女性専用パーソナルジム6選を徹底比較。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,恵比寿,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'UNDEUX SUPERBODY 恵比寿スタジオ',
+    officialUrl: 'https://www.diet-undeux.jp/',
     rating: 4.8,
     reviewCount: 22,
     reviews: [
@@ -36,6 +39,7 @@ const gyms = [
   },
   {
     name: 'OUTLINE 恵比寿・広尾店',
+    officialUrl: 'https://www.outline-gym.com/',
     rating: 4.7,
     reviewCount: 16,
     reviews: [
@@ -56,6 +60,7 @@ const gyms = [
   },
   {
     name: 'ビーコンセプト 恵比寿店',
+    officialUrl: 'https://b-concept.tokyo/',
     rating: 4.7,
     reviewCount: 19,
     reviews: [
@@ -76,6 +81,7 @@ const gyms = [
   },
   {
     name: 'リボーンマイセルフ 恵比寿店',
+    officialUrl: 'https://reborn-myself.com/',
     rating: 4.6,
     reviewCount: 14,
     reviews: [
@@ -115,24 +121,25 @@ const gyms = [
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー'] },
   },
   {
-    name: 'Bodyke 恵比寿店',
-    rating: 4.5,
-    reviewCount: 17,
+    name: 'エクササイズコーチ 恵比寿',
+    officialUrl: 'https://exercisecoach.co.jp/',
+    rating: 4.4,
+    reviewCount: 8,
     reviews: [
-      { author: 'L.T', rating: 5, date: '1週間前', text: '食べて痩せるメソッドが画期的。無理な食事制限なしで-6kg達成できました。' },
-      { author: 'P.M', rating: 4, date: '2週間前', text: '糖質制限なしのダイエット法が続けやすい。トレーナーの知識が豊富で安心です。' },
-      { author: 'D.Y', rating: 4, date: '1ヶ月前', text: '恵比寿駅から近くて通いやすい。食事指導がとても参考になります。' },
+      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
+      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
+      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
     ],
-    price: '2ヶ月16回 215,600円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['食べて痩せる', '糖質制限なし', '完全個室', '恵比寿駅近', '食事指導充実'],
-    description: '「食べて痩せる」をコンセプトにしたパーソナルジム。糖質制限に頼らない独自のダイエットメソッドで、食事を楽しみながらボディメイクが可能。恵比寿駅からアクセス良好。',
-    access: 'JR「恵比寿駅」徒歩5分',
-    address: '東京都渋谷区恵比寿（恵比寿駅徒歩5分）',
-    popularPlan: { name: 'スタンダードコース', description: '食べて痩せるメソッドによるマンツーマントレーニング＋食事指導。', price: '2ヶ月16回 215,600円〜（税込）' },
-    options: ['糖質制限なしの食事指導', 'ウェアレンタル無料', '完全個室', '食事報告サポート'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', 'ボディメイク', '食事改善', '健康管理'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    price: '月額制（プラン・店舗により異なる）',
+    trial: '無料体験あり',
+    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
+    description: '米国発のAIパーソナルジム。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
+    access: '「恵比寿」駅周辺',
+    address: '恵比寿エリア（最寄り店舗は公式サイトでご確認ください）',
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニング。月額制で継続しやすい。', price: '月額制（プラン・店舗により異なる）' },
+    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
+    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
+    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
   },
 ]
 
@@ -144,7 +151,7 @@ const faqs = [
   { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、ビーコンセプト、リボーンマイセルフ、LIMは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
   { question: '恵比寿で最も安いパーソナルジムは？', answer: 'ビーコンセプト（2ヶ月18回 179,685円〜）が最安クラス。OUTLINE（16回 184,800円〜）もコスパ良好。分割払いなら月々5,545円〜で始められます。' },
-  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料提供。Bodykeは「食べて痩せる」メソッドで糖質制限なしの食事指導が好評です。' },
+  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料提供。エクササイズコーチは「食べて痩せる」メソッドで糖質制限なしの食事指導が好評です。' },
   { question: '恵比寿と渋谷のジム、どちらがおすすめ？', answer: '恵比寿は落ち着いた雰囲気で大人の女性に人気。渋谷は選択肢が多く低価格帯のジムも。どちらも駅近のジムが多いので、通いやすさで選ぶのがおすすめです。' },
   { question: 'リバウンドが心配な場合は？', answer: 'OUTLINEは「生涯無料アフターサポート」で卒業後もずっとサポート。LIMは卒業後も毎月1回無料セッションが受けられます。' },
 ]
@@ -159,7 +166,7 @@ export default function EbisuPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026最新】恵比寿の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年6月最新】恵比寿の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>
@@ -190,6 +197,10 @@ export default function EbisuPage() {
           </div>
         </section>
 
+        <AreaContext slug="ebisu" />
+
+        <WhyWomenOnly area="恵比寿" />
+
         <PriceComparisonTable gyms={gyms} areaName="恵比寿" />
 
         <section className="py-16 bg-ivory" id="gyms">
@@ -205,11 +216,11 @@ export default function EbisuPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・Bodyke（16回 215,600円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・Bodyke（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">アフターサポート重視</h3>

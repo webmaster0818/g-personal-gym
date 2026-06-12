@@ -5,10 +5,12 @@ import { GymCard } from '@/components/GymCard'
 import { PriceComparisonTable } from '@/components/PriceComparisonTable'
 import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
+import { AreaContext } from '@/components/AreaContext'
+import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '【2026最新】二子玉川の女性専用パーソナルジムおすすめ5選！料金比較',
+  title: '【2026年6月最新】二子玉川の女性専用パーソナルジムおすすめ5選！料金比較',
   description: '【2026年4月最新】二子玉川のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・ビーコンセプト・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,二子玉川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'UNDEUX SUPERBODY 二子玉川スタジオ',
+    officialUrl: 'https://www.diet-undeux.jp/',
     rating: 4.8,
     reviewCount: 18,
     reviews: [
@@ -36,6 +39,7 @@ const gyms = [
   },
   {
     name: 'ビーコンセプト 二子玉川店',
+    officialUrl: 'https://b-concept.tokyo/',
     rating: 4.7,
     reviewCount: 15,
     reviews: [
@@ -56,6 +60,7 @@ const gyms = [
   },
   {
     name: 'OUTLINE 二子玉川店',
+    officialUrl: 'https://www.outline-gym.com/',
     rating: 4.6,
     reviewCount: 12,
     reviews: [
@@ -76,6 +81,7 @@ const gyms = [
   },
   {
     name: 'リボーンマイセルフ 二子玉川店',
+    officialUrl: 'https://reborn-myself.com/',
     rating: 4.6,
     reviewCount: 11,
     reviews: [
@@ -95,24 +101,25 @@ const gyms = [
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['ロッカー', 'ウェアレンタル'] },
   },
   {
-    name: 'Bodyke 二子玉川店',
-    rating: 4.5,
-    reviewCount: 10,
+    name: 'エクササイズコーチ 二子玉川',
+    officialUrl: 'https://exercisecoach.co.jp/',
+    rating: 4.4,
+    reviewCount: 8,
     reviews: [
-      { author: 'L.K', rating: 5, date: '1週間前', text: '食べて痩せるメソッドで-6kg。ニコタマのレストランも楽しみながらダイエットできました。' },
-      { author: 'P.M', rating: 4, date: '2週間前', text: '糖質制限なしが続けやすい。ライズの買い物帰りに通えて便利です。' },
-      { author: 'D.S', rating: 4, date: '1ヶ月前', text: 'トレーナーの知識が豊富で信頼できる。食事の相談にも気軽に乗ってくれます。' },
+      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
+      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
+      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
     ],
-    price: '2ヶ月16回 215,600円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['食べて痩せる', '糖質制限なし', '完全個室', '二子玉川駅近', '食事指導充実'],
-    description: '「食べて痩せる」がコンセプト。二子玉川ライズでのショッピングついでに通える好立地。糖質制限に頼らない独自メソッド。',
-    access: '東急「二子玉川駅」徒歩5分',
-    address: '東京都世田谷区玉川（二子玉川駅徒歩5分）',
-    popularPlan: { name: 'スタンダードコース', description: '食べて痩せるメソッドによるマンツーマントレーニング＋食事指導。', price: '2ヶ月16回 215,600円〜（税込）' },
-    options: ['糖質制限なしの食事指導', 'ウェアレンタル無料', '完全個室', '食事報告サポート'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', 'ボディメイク', '食事改善', '健康管理'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    price: '月額制（プラン・店舗により異なる）',
+    trial: '無料体験あり',
+    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
+    description: '米国発のAIパーソナルジム。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
+    access: '「二子玉川」駅周辺',
+    address: '二子玉川エリア（最寄り店舗は公式サイトでご確認ください）',
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニング。月額制で継続しやすい。', price: '月額制（プラン・店舗により異なる）' },
+    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
+    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
+    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
   },
 ]
 
@@ -121,11 +128,11 @@ const faqs = [
   { question: '二子玉川のパーソナルジムの料金相場は？', answer: '2ヶ月コースは約18万〜22万円。ビーコンセプトが179,685円〜と最安。都心部と同等かやや割安な傾向があります。' },
   { question: '二子玉川駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYが徒歩3分で最も近い。ビーコンセプト・OUTLINE・リボーンマイセルフは徒歩5分程度です。' },
   { question: '子連れで通えるジムは？', answer: 'OUTLINEはベビーサークル完備。ビーコンセプトは託児所費用補助あり。二子玉川は子育てファミリーが多いエリアで、子連れ対応のジムが揃っています。' },
-  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。ビーコンセプト・OUTLINE・リボーンマイセルフ・Bodykeは無料カウンセリング。' },
+  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。ビーコンセプト・OUTLINE・リボーンマイセルフ・エクササイズコーチは無料カウンセリング。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎。マンツーマン指導なので運動経験がなくても安心です。' },
   { question: '二子玉川ライズでのショッピングと両立できる？', answer: 'ほとんどのジムが二子玉川駅から徒歩5分圏内。ショッピング前後にトレーニングを組み込めます。ウェアレンタルありのジムなら手ぶらでOK。' },
   { question: '産後ダイエットに対応しているジムは？', answer: 'リボーンマイセルフは産後ダイエットコースあり。ビーコンセプトは託児所費用補助。OUTLINEはベビーサークル完備。二子玉川は産後ママ向けサービスが充実。' },
-  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択可。Bodykeは糖質制限なしの「食べて痩せる」メソッド。' },
+  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択可。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。' },
   { question: 'リバウンド防止のサポートは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。卒業後もずっとサポートが受けられます。' },
 ]
 
@@ -139,7 +146,7 @@ export default function FutakotamagawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026最新】二子玉川の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年6月最新】二子玉川の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>
@@ -167,6 +174,10 @@ export default function FutakotamagawaPage() {
             </div>
           </div>
         </section>
+        <AreaContext slug="futakotamagawa" />
+
+        <WhyWomenOnly area="二子玉川" />
+
         <PriceComparisonTable gyms={gyms} areaName="二子玉川" />
         <section className="py-16 bg-ivory" id="gyms">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -180,7 +191,7 @@ export default function FutakotamagawaPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・Bodyke（16回 215,600円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">産後ママ向け</h3>
@@ -188,7 +199,7 @@ export default function FutakotamagawaPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・Bodyke（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
               </div>
             </div>
           </div>
