@@ -15,3 +15,9 @@ GSC実数診断（URL-prefix https://woman-gym.com/）:
 - Phase 1 = エリア面拡大（東京残り駅＋横浜大阪名古屋の区、週20-30、実在ジム2-4件/エリア）
 - Phase 2 = ニッチKnow記事クラスタ＋独自データ比較
 - KPI: 8月末 月50クリック・エリア100本
+
+### 2026-06-12 Phase 0実行（MediaXAI承認）
+- タイトル鮮度32ページ／GymCardにofficialUrl対応（無ければGoogle検索フォールバック・rel sponsored）／6ブランドの公式URL（全てfetch実在確認）を131件注入／Indexing API 37/37成功
+- ⚠️注意: クレビック公式が521停止中（閉業疑い・リンク未設定）。リボーンマイセルフは店舗一覧が3店舗に縮小（掲載整合の確認要）
+- ⚠️教訓: deployの .txt 一括削除が **robots.txt を消した**（即復元済み）。今後は `-name '*.txt' ! -name 'robots.txt'` で除外すること
+- レビュー/評価データの出所が未検証（pilatesはGoogleマップ実数に更新した経緯あり）→Phase 1で要確認
