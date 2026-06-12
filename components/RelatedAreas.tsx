@@ -31,6 +31,24 @@ const allAreas = [
   { name: '名古屋', slug: 'nagoya' },
   { name: '福岡', slug: 'fukuoka' },
   { name: '札幌', slug: 'sapporo' },
+  { name: '中野', slug: 'nakano' },
+  { name: '荻窪', slug: 'ogikubo' },
+  { name: '赤羽', slug: 'akabane' },
+  { name: '練馬', slug: 'nerima' },
+  { name: '蒲田', slug: 'kamata' },
+  { name: '豊洲', slug: 'toyosu' },
+  { name: '八王子', slug: 'hachioji' },
+  { name: '武蔵小杉', slug: 'musashikosugi' },
+  { name: '仙台', slug: 'sendai' },
+  { name: '梅田', slug: 'umeda' },
+  { name: '心斎橋', slug: 'shinsaibashi' },
+  { name: '難波', slug: 'namba' },
+  { name: '天王寺', slug: 'tennoji' },
+  { name: '栄', slug: 'sakae' },
+  { name: '名古屋駅', slug: 'meieki' },
+  { name: '京都', slug: 'kyoto' },
+  { name: '神戸三宮', slug: 'sannomiya' },
+  { name: '広島', slug: 'hiroshima' },
 ]
 
 interface RelatedAreasProps {
@@ -47,7 +65,7 @@ export function RelatedAreas({ currentSlug }: RelatedAreasProps) {
           他のエリアも見る
         </h2>
         <p className="text-center text-brand-muted text-sm mb-8">
-          全国の女性専用パ���ソナルジム情報をチェック
+          全国の女性専用パーソナルジム情報をチェック
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {relatedAreas.map((area) => (

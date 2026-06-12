@@ -12,7 +12,7 @@ type Review = {
 export type Gym = {
   officialUrl?: string
   name: string
-  rating: number
+  rating?: number
   reviewCount?: number
   reviews?: Review[]
   price: string
@@ -85,7 +85,7 @@ export function GymCard({ gym, index }: GymCardProps) {
       <div className="p-6">
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-xl font-bold text-brand-text">{index + 1}. {gym.name}</h3>
-          <button
+          {gym.rating != null && <button
             onClick={() => setShowReviews(!showReviews)}
             className="flex items-center cursor-pointer hover:opacity-70 transition-opacity"
             title="口コミを表示"
@@ -94,7 +94,7 @@ export function GymCard({ gym, index }: GymCardProps) {
             <span className="font-bold text-brand-text">{gym.rating}</span>
             {gym.reviewCount && <span className="text-brand-light text-xs ml-1">({gym.reviewCount})</span>}
             <svg className={`w-3 h-3 ml-1 text-brand-light transition-transform ${showReviews ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-          </button>
+          </button>}
         </div>
 
         {showReviews && gym.reviews && gym.reviews.length > 0 && (
