@@ -1,0 +1,233 @@
+import Link from 'next/link'
+import { Navigation } from '@/components/Navigation'
+import { SiteFooter } from '@/components/SiteFooter'
+import { GymCard } from '@/components/GymCard'
+import { PriceComparisonTable } from '@/components/PriceComparisonTable'
+import { FAQSchema } from '@/components/FAQSchema'
+import { RelatedAreas } from '@/components/RelatedAreas'
+import { AreaContext } from '@/components/AreaContext'
+import { WhyWomenOnly } from '@/components/WhyWomenOnly'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: '【2026年6月最新】高崎の女性向けパーソナルジムおすすめ3選！料金比較',
+  description: '【2026年6月最新】高崎のおすすめ女性向けパーソナルジム3選を比較。リボーンマイセルフ・Tryangle・パーソナルジムRatなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  keywords: '女性専用パーソナルジム,高崎,群馬,おすすめ,料金,比較,ダイエット,ボディメイク',
+}
+
+const gyms = [
+  {
+    name: 'リボーンマイセルフ 高崎店',
+    officialUrl: 'https://www.shapes-international.co.jp/store/takasaki/',
+    price: 'ショートコース（2ヶ月16回）220,000円（入会金22,000円）',
+    trial: '無料カウンセリング・無料体験あり',
+    features: ['女性専用', 'トレーナー全員女性', '専属トレーナー制', '無料駐車場'],
+    description: '女性専用・トレーナー全員女性のジム。専属トレーナー制で食事指導つき（宅食付きプランも選択可）。個室パウダールームと無料駐車場があります。',
+    access: '高崎駅西口 徒歩8分（無料駐車場完備）',
+    options: ['ベーシックコース（3ヶ月24回）303,600円', 'チケット8回101,200円〜'],
+    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'ブライダル'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['無料駐車場'] },
+  },
+  {
+    name: 'Tryangle（トライアングル）パーソナルジム高崎店',
+    officialUrl: 'https://tryangle0301.jp/',
+    price: '60分 13,000円／2ヶ月16回 264,000円（入会金33,000円・キャンペーンで16,500円）',
+    trial: 'パーソナル体験あり（料金は公式サイトでご確認ください）',
+    features: ['個室', '女性向けメニューあり', 'オーダーメイド食事指導'],
+    description: '個室のパーソナルジム。女性専用ではありませんが「女性も安心」を掲げ、ヒップアップなど女性向けメニューと食事＋トレーニングのオーダーメイド指導があります。',
+    access: '高崎駅東口 徒歩5分',
+    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性向けメニューあり）', purpose: ['ボディメイク', 'ダイエット', 'ヒップアップ'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室'] },
+  },
+  {
+    name: 'パーソナルジムRat 高崎店',
+    officialUrl: 'https://ratgym.jp/shop/gunma/takasaki/',
+    price: 'シェイプアップコース8回 121,440円',
+    trial: '無料カウンセリング・体験あり（30日間全額返金保証）',
+    features: ['完全個室', '女性トレーナー在籍', '食べて痩せる食事指導'],
+    description: '完全個室のパーソナルジム。女性トレーナーが在籍し、「食べて痩せる」食事指導と30日間全額返金保証が特徴です。',
+    access: '高崎駅 徒歩12分（駐車場1台）',
+    options: ['美ボディメイク8回121,440円', '短期集中8回136,840円', '分割可'],
+    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性トレーナー在籍）', purpose: ['ダイエット', 'ボディメイク'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+  },
+]
+
+const faqs = [
+  { question: '高崎で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 高崎店です（2026年6月調査時点）。' },
+  { question: '高崎のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 高崎店はショートコース（2ヶ月16回）220,000円（入会金22,000円）。Tryangle（トライアングル）パーソナルジム高崎店は60分 13,000円／2ヶ月16回 264,000円（入会金33,000円・キャンペーンで16,500円）。パーソナルジムRat 高崎店はシェイプアップコース8回 121,440円。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられる？', answer: 'リボーンマイセルフ 高崎店、パーソナルジムRat 高崎店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+]
+
+export default function TakasakiPage() {
+  return (
+    <>
+      <FAQSchema faqs={faqs} />
+      <Navigation />
+      <main data-reveal className="pt-16 bg-white">
+        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
+              【2026年6月最新】高崎の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+            </h1>
+          </div>
+        </section>
+
+        <section className="bg-white py-3 border-b border-line">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8">
+            <nav className="text-sm text-brand-light">
+              <Link href="/" className="hover:text-accent transition">ホーム</Link>{' > '}
+              <span className="text-brand-muted">高崎</span>
+            </nav>
+          </div>
+        </section>
+
+        <section className="py-12 bg-white">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">「高崎で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、高崎エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
+            <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
+              <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、高崎駅徒歩圏で「完全女性専用」を公式に確認できたのはリボーンマイセルフのみでした。あわせて女性向けに強いジムを掲載しています。</p>
+            </div>
+            <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
+              <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
+              <ul className="space-y-2 text-brand-muted">
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>高崎で女性向けのパーソナルジムを探している</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>駅近で通いやすいジムが良い</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>料金を比較して選びたい</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>体験を受けてから決めたい</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <AreaContext slug="takasaki" />
+
+        <WhyWomenOnly area="高崎" />
+
+        <PriceComparisonTable gyms={gyms} areaName="高崎" />
+
+        <section className="py-16 bg-ivory" id="gyms">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">高崎のおすすめ女性向けパーソナルジム{gyms.length}選</h2>
+            <div className="space-y-8">{gyms.map((gym, index) => (<GymCard key={index} gym={gym} index={index} />))}</div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別の選び方</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
+                <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ 高崎店</li></ul>
+              </div>
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
+                <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ 高崎店</li><li className="text-brand-muted">・Tryangle（トライアングル）パーソナルジム高崎店</li></ul>
+              </div>
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
+                <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・パーソナルジムRat 高崎店</li></ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-ivory">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">高崎の料金一覧【2026年6月・公式サイト調べ】</h2>
+            <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
+            <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 高崎店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）220,000円（入会金22,000円）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Tryangle（トライアングル）パーソナルジム高崎店</span><span className="text-brand-muted text-sm">60分 13,000円／2ヶ月16回 264,000円（入会金33,000円・キャンペーンで16,500円）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">パーソナルジムRat 高崎店</span><span className="text-brand-muted text-sm">シェイプアップコース8回 121,440円</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">高崎で選ぶ際の注意点</h2>
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl p-6 border border-line">
+                <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-line">
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-ivory">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">体験時の持ち物ガイド</h2>
+            <div className="bg-white rounded-xl p-8 border border-line">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
+                  <ul className="space-y-3 text-brand-muted text-sm">
+                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>水分（500ml以上）</strong></li>
+                    <li>・<strong>フェイスタオル</strong></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-brand-text mb-4">あると便利なもの</h3>
+                  <ul className="space-y-3 text-brand-muted text-sm">
+                    <li>・着替え（仕事帰りの場合）</li>
+                    <li>・メイク道具（シャワー後用）</li>
+                    <li>・目標の体型のイメージ写真</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">よくある質問</h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="border border-line rounded-xl overflow-hidden">
+                  <details className="group">
+                    <summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-accent-tint transition">
+                      <h3 className="font-bold text-brand-text pr-4 text-sm">Q{index + 1}. {faq.question}</h3>
+                      <svg className="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div className="px-5 pb-5 text-brand-muted leading-relaxed text-sm">{faq.answer}</div>
+                  </details>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
+            <p className="text-brand-muted leading-relaxed mb-4">高崎エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。掲載内容はすべて各ジムの公式サイトで確認した情報です（2026年6月時点）。</p>
+            <p className="text-brand-muted leading-relaxed">料金やキャンペーンは変動するため、気になるジムが見つかったら公式サイトで最新情報を確認し、まずは体験・カウンセリングを受けてみてください。</p>
+          </div>
+        </section>
+
+        <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
+            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
+          </div>
+        </section>
+      </main>
+      <RelatedAreas currentSlug="takasaki" />
+      <SiteFooter />
+    </>
+  )
+}
