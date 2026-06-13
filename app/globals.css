@@ -175,3 +175,43 @@
     transform: translateY(0);
   }
 }
+
+/* 記事本文（Phase2 Know記事クラスタ） */
+.article-body h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-ink, #26221e);
+  margin: 2.2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-accent, #b26a82);
+}
+.article-body h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-ink, #26221e);
+  margin: 1.6rem 0 0.7rem;
+  padding-left: 0.6rem;
+  border-left: 3px solid var(--color-accent, #b26a82);
+}
+.article-body p { color: #4a4540; line-height: 1.9; margin-bottom: 1.1rem; font-size: 0.95rem; }
+.article-body ul, .article-body ol { margin: 0 0 1.3rem 0; padding-left: 1.3rem; }
+.article-body li { color: #4a4540; line-height: 1.85; margin-bottom: 0.5rem; font-size: 0.95rem; }
+.article-body ul li { list-style: disc; }
+.article-body ol li { list-style: decimal; }
+.article-body strong { color: var(--color-ink, #26221e); font-weight: 700; }
+.article-body a { color: var(--color-accent, #b26a82); text-decoration: underline; }
+.article-body .callout {
+  background: var(--color-accent-tint, #f7edf0);
+  border: 1px solid var(--color-accent-soft, #e6c9d4);
+  border-radius: 0.75rem;
+  padding: 1.3rem 1.5rem;
+  margin: 1.5rem 0;
+}
+.article-body .callout p:last-child { margin-bottom: 0; }
+.article-body table { width: 100%; border-collapse: collapse; margin: 1.3rem 0; font-size: 0.88rem; }
+.article-body th, .article-body td { border: 1px solid #e8e0d8; padding: 0.6rem 0.8rem; text-align: left; }
+.article-body th { background: #f7edf0; font-weight: 700; color: #26221e; }
+.article-body .data-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.8rem; margin: 1.5rem 0; }
+.article-body .data-card { background: #fff; border: 1px solid #e8e0d8; border-radius: 0.75rem; padding: 1.1rem; text-align: center; }
+.article-body .data-card .num { font-size: 1.8rem; font-weight: 700; color: var(--color-accent, #b26a82); line-height: 1.2; }
+.article-body .data-card .label { font-size: 0.78rem; color: #6b645c; margin-top: 0.3rem; }
