@@ -19,5 +19,6 @@ export const GYM_SURVEY = {
     mealGuide: { count: 142, pct: 26 }, // 食事指導あり
     kidsOk: { count: 93, pct: 17 }, // 子連れ・託児・キッズスペース
     trialFree: { count: 325, pct: 60 }, // 体験・カウンセリング無料
+    expertBacked: { count: 77, pct: 14 }, // 理学療法士・医師など専門家監修/医療連携（特徴＋紹介文ベース）
   },
 } as const

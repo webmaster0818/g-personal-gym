@@ -39,13 +39,14 @@ export default function Page() {
         <p><strong>調査概要</strong>／対象: 全国{GYM_SURVEY.areas}エリア・のべ{GYM_SURVEY.listings}ジム掲載枠（各公式サイトで実在確認）／集計時点: {GYM_SURVEY.period}／調査主体: woman-gym.com編集部。割合は各ジムの掲載特徴（公式記載ベース）の集計で、同一ブランドが複数エリアに登場するため「のべ掲載数での割合」です。</p>
       </div>
 
-      <h2>主要データ（5指標）</h2>
+      <h2>主要データ（6指標）</h2>
       <div className="data-grid">
         <div className="data-card"><div className="num">{S.womenOnly.pct}%</div><div className="label">女性専用を明記</div></div>
         <div className="data-card"><div className="num">{S.trialFree.pct}%</div><div className="label">体験・カウンセリング無料</div></div>
         <div className="data-card"><div className="num">{S.privateRoom.pct}%</div><div className="label">完全個室・個室対応</div></div>
         <div className="data-card"><div className="num">{S.mealGuide.pct}%</div><div className="label">食事指導あり</div></div>
         <div className="data-card"><div className="num">{S.kidsOk.pct}%</div><div className="label">子連れ・託児対応</div></div>
+        <div className="data-card"><div className="num">{S.expertBacked.pct}%</div><div className="label">専門家監修・医療連携</div></div>
       </div>
 
       <h2>① 女性専用は約半数。残りも「女性向けに強い」が多い</h2>
@@ -66,9 +67,10 @@ export default function Page() {
           <tr><td>完全個室・個室対応</td><td>{S.privateRoom.count}件</td><td>{S.privateRoom.pct}%</td><td>人目が気になる・集中したい</td></tr>
           <tr><td>食事指導あり</td><td>{S.mealGuide.count}件</td><td>{S.mealGuide.pct}%</td><td>ダイエット目的・自己流に不安</td></tr>
           <tr><td>子連れ・託児対応</td><td>{S.kidsOk.count}件</td><td>{S.kidsOk.pct}%</td><td>産後・小さな子どもがいる</td></tr>
+          <tr><td>専門家監修・医療連携</td><td>{S.expertBacked.count}件</td><td>{S.expertBacked.pct}%</td><td>腰痛・膝痛・体に不安がある</td></tr>
         </tbody>
       </table>
-      <p>子連れ対応は17%とまだ少数派のため、産後で子連れ通いを考えている方は<strong>対応ジムを早めに絞り込む</strong>のが効率的です。詳しくは<a href="/articles/sango-diet/">産後ダイエット向けパーソナルジムの選び方</a>をご覧ください。</p>
+      <p>子連れ対応は17%とまだ少数派のため、産後で子連れ通いを考えている方は<strong>対応ジムを早めに絞り込む</strong>のが効率的です。詳しくは<a href="/articles/sango-diet/">産後ダイエット向けパーソナルジムの選び方</a>をご覧ください。また、理学療法士・医師など専門家の監修や医療連携に言及するジムは{S.expertBacked.pct}%（{S.expertBacked.count}件）。腰痛・膝痛など体に不安がある方は<a href="/articles/iryo-renkei/">専門家監修ジムの選び方</a>を参考にしてください。</p>
 
       <h2>データから言える「賢い選び方」</h2>
       <ol>
