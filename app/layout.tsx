@@ -47,9 +47,6 @@ export const metadata: Metadata = {
   description: '【2026年最新】女性専用パーソナルジムを徹底比較。ビーコンセプト・リボーンマイセルフ・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を網羅。あなたにぴったりのパーソナルジムが見つかります。',
   keywords: ['女性専用パーソナルジム', 'パーソナルジム', '比較', 'おすすめ', 'ランキング', '料金', '口コミ', '2026'],
   authors: [{ name: 'G-PersonalGym編集部' }],
-  alternates: {
-    canonical: 'https://woman-gym.com/',
-  },
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
