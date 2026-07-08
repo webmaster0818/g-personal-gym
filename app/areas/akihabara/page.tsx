@@ -10,6 +10,7 @@ import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/areas/akihabara/' },
   title: '【2026年6月最新】秋葉原の女性専用パーソナルジムおすすめ5選！料金比較',
   description: '【2026年4月最新】秋葉原のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・Bodies・24/7 Workoutなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,秋葉原,おすすめ,料金,比較,ダイエット,ボディメイク',

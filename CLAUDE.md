@@ -58,3 +58,6 @@ GSC実数診断（URL-prefix https://woman-gym.com/）:
 - 除外: RITA-STYLE那覇/佐賀(404閉店)・FURDI松戸(一覧消滅)・リボーンマイセルフ長野/和歌山(404)・ビーコンセプト岐阜(404)・カーブス/B-line!等サーキット型・公式確認不可のジム多数（C/D調査の補足参照=/tmp/wg-batch4/）
 - デプロイ: deploy=56e8df8 / source=7cf2d79。全18URL本番200・sitemap204(109URL)・Indexing 18/18成功
 - **エリア計102ページ・Phase1のエリア面拡大はKPI（エリア100本）を達成**。第5陣候補: 高知/徳島/山形/秋田/青森/盛岡/福島/前橋/つくば/八戸/下関/倉敷/福山など（需要は薄くなるため要相談）
+
+### 2026-07-01 🚨canonical継承バグ緊急修正（pilates横展開チェックで発見）
+ルートlayout(app/layout.tsx)の`alternates.canonical`が固定URL(トップ)で、全ページが継承→トップにcanonical集約していた。自前canonical未設定ページが個別評価されずトップに集約される重大バグ。**layoutのcanonical削除→自己canonical化**で修正・ビルド・デプロイ・本番確認済。教訓: ルートlayoutに静的canonicalを書かない(継承で全ページ誤canonical化)。

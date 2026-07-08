@@ -10,6 +10,7 @@ import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/areas/yokkaichi/' },
   title: '【2026年6月最新】四日市の女性向けパーソナルジムおすすめ4選！料金比較',
   description: '【2026年6月最新】四日市のおすすめ女性向けパーソナルジム4選を比較。CACHIE・Private・アレスコなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,四日市,三重,おすすめ,料金,比較,ダイエット,ボディメイク',

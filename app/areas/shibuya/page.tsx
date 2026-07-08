@@ -10,6 +10,7 @@ import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/areas/shibuya/' },
   title: '【2026年6月最新】渋谷の女性専用パーソナルジムおすすめ7選！料金比較',
   description: '【2026年4月最新】渋谷のおすすめ女性専用パーソナルジム7選を徹底比較。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,渋谷,おすすめ,料金,比較,ダイエット,ボディメイク',

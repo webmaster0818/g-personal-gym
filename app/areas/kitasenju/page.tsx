@@ -10,6 +10,7 @@ import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/areas/kitasenju/' },
   title: '【2026年6月最新】北千住の女性専用パーソナルジムおすすめ5選！料金比較',
   description: '【2026年4月最新】北千住のおすすめ女性専用パーソナルジム5選を徹底比較。B-CONCEPT・OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,北千住,おすすめ,料金,比較,ダイエット,ボディメイク',

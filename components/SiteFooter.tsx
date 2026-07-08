@@ -51,6 +51,9 @@ export function SiteFooter() {
                   <Link href={`/areas/${area.slug}/`} className="text-white/55 hover:text-white transition">{area.name}</Link>
                 </li>
               ))}
+              <li className="pt-1">
+                <Link href="/areas/" className="text-accent-soft hover:text-white transition font-medium">全エリアを見る →</Link>
+              </li>
             </ul>
           </div>
           <div>

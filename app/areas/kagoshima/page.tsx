@@ -10,6 +10,7 @@ import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/areas/kagoshima/' },
   title: '【2026年6月最新】鹿児島の女性向けパーソナルジムおすすめ3選！料金比較',
   description: '【2026年6月最新】鹿児島のおすすめ女性向けパーソナルジム3選を比較。女性専門パーソナルトレーニングジムGROW・RITA-STYLE・BELLOパーソナルトレーニングジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,鹿児島,鹿児島,おすすめ,料金,比較,ダイエット,ボディメイク',

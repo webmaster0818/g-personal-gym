@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/SiteFooter'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/privacy-policy/' },
   title: 'プライバシーポリシー',
   description: 'G-PersonalGymのプライバシーポリシーです。',
 }

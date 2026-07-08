@@ -10,6 +10,7 @@ import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/areas/ueno/' },
   title: '【2026年6月最新】上野の女性専用パーソナルジムおすすめ6選！料金比較',
   description: '【2026年4月最新】上野のおすすめ女性専用パーソナルジム6選を徹底比較。OUTLINE・B-CONCEPT・CREBIQなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,上野,おすすめ,料金,比較,ダイエット,ボディメイク',

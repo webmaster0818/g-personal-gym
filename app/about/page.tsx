@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/SiteFooter'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about/' },
   title: '運営者情報',
   description: 'G-PersonalGymの運営者情報ページです。',
 }

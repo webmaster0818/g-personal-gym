@@ -5,6 +5,7 @@ import { FAQSchema } from '@/components/FAQSchema'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/ranking/' },
   title: '女性専用パーソナルジムおすすめランキングTOP10【2026年6月最新】料金・特徴を徹底比較',
   description: '女性専用パーソナルジムのおすすめランキングTOP10。OUTLINE・ビーコンセプト・UNDEUX SUPERBODY・リボーンマイセルフなど人気ジムの料金・特徴・選び方を、目的別に徹底比較。あなたに合う一社が見つかります。',
 }

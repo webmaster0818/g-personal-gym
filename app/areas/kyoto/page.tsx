@@ -10,6 +10,7 @@ import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/areas/kyoto/' },
   title: '【2026年6月最新】京都の女性向けパーソナルジムおすすめ2選！料金比較',
   description: '【2026年6月最新】京都のおすすめ女性向けパーソナルジム2選を比較。UNDEUX・リボーンマイセルフなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,京都,京都,おすすめ,料金,比較,ダイエット,ボディメイク',

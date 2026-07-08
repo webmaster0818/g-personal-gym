@@ -10,6 +10,7 @@ import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/areas/kinshicho/' },
   title: '【2026年6月最新】錦糸町の女性専用パーソナルジムおすすめ5選！料金比較',
   description: '【2026年4月最新】錦糸町のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・B-CONCEPT・かたぎり塾など人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,錦糸町,おすすめ,料金,比較,ダイエット,ボディメイク',

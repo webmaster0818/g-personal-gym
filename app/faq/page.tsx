@@ -5,6 +5,7 @@ import { FAQSchema } from '@/components/FAQSchema'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/faq/' },
   title: '女性専用パーソナルジムに関するよくある質問（FAQ）15問',
   description: '女性専用パーソナルジムに関する疑問を15問にまとめて回答。料金・効果・食事制限・子連れOK・リバウンドなど、よくある質問に詳しくお答えします。',
 }

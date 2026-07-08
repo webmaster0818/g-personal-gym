@@ -43,6 +43,7 @@ export function Navigation() {
               <Link href="/ranking/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">ランキング</Link>
               <Link href="/cost/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">料金相場</Link>
               <Link href="/guide/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">選び方</Link>
+              <Link href="/areas/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">エリア</Link>
               <Link href="/articles/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">記事</Link>
               <Link href="/faq/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">FAQ</Link>
               <Link href="/ranking/" className="btn-primary text-sm !py-2 !px-5 !rounded-full">おすすめを見る</Link>
@@ -76,7 +77,7 @@ export function Navigation() {
             <Link href="/faq/" className="text-brand-text text-base font-medium hover:text-accent transition" onClick={toggleMenu}>FAQ</Link>
             <Link href="/about/" className="text-brand-text text-base font-medium hover:text-accent transition" onClick={toggleMenu}>運営者情報</Link>
             <div className="border-t border-line pt-6 mt-2">
-              <p className="text-brand-light text-xs mb-3">エリアから探す</p>
+              <Link href="/areas/" className="text-brand-text text-base font-medium hover:text-accent transition block mb-4" onClick={toggleMenu}>エリアから探す（全国102エリア）</Link>
               <div className="grid grid-cols-2 gap-2">
                 {['渋谷', '新宿', '池袋', '銀座', '六本木', '恵比寿', '自由が丘', '表参道', '吉祥寺', '二子玉川', '立川', '町田', '横浜', '川崎', '藤沢', '大宮', '大阪', '名古屋', '福岡', '札幌'].map((area, i) => {
                   const slugs = ['shibuya', 'shinjuku', 'ikebukuro', 'ginza', 'roppongi', 'ebisu', 'jiyugaoka', 'omotesando', 'kichijoji', 'futakotamagawa', 'tachikawa', 'machida', 'yokohama', 'kawasaki', 'fujisawa', 'omiya', 'osaka', 'nagoya', 'fukuoka', 'sapporo']

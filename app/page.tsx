@@ -4,6 +4,11 @@ import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
 import { FAQSchema } from '@/components/FAQSchema'
 import ScrollReveal from '@/components/ScrollReveal'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
 
 const topGyms = [
   { name: 'ビーコンセプト（B CONCEPT）', feature: '下半身・太もも痩せ特化', price: '月々5,545円〜（税込・分割）', badge: '女性専用' },
@@ -205,7 +210,7 @@ export default function Home() {
         {/* Areas */}
         <section className="py-20 md:py-24 bg-ivory" id="areas">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
-            <SectionHeading en="Area" title="エリアから探す" lead="全国20エリアの女性専用パーソナルジム情報をまとめています。" />
+            <SectionHeading en="Area" title="エリアから探す" lead="全国102エリアの女性専用パーソナルジム情報をまとめています。主要エリアはこちら。" />
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 fade-up">
               {areas.map((area) => (
                 <Link
@@ -217,6 +222,9 @@ export default function Home() {
                   <span className="text-ink-faint text-xs">{area.desc}</span>
                 </Link>
               ))}
+            </div>
+            <div className="text-center mt-10">
+              <Link href="/areas/" className="btn-outline text-sm inline-block">全国102エリアをすべて見る →</Link>
             </div>
           </div>
         </section>
