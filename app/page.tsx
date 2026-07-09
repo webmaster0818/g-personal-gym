@@ -138,13 +138,13 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-7 mt-10 text-ink-soft">
                 <div>
-                  <span className="font-display text-3xl text-accent leading-none">20</span>
+                  <span className="font-display text-3xl text-accent leading-none">102</span>
                   <span className="text-xs ml-1.5">エリア対応</span>
                 </div>
                 <span className="w-px h-8 bg-line" />
                 <div>
-                  <span className="font-display text-3xl text-accent leading-none">100</span>
-                  <span className="text-xs ml-1.5">%女性専用で厳選</span>
+                  <span className="font-display text-3xl text-accent leading-none">546</span>
+                  <span className="text-xs ml-1.5">ジムを独自調査</span>
                 </div>
               </div>
             </div>
@@ -247,6 +247,34 @@ export default function Home() {
                     詳しく見る
                     <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" /></svg>
                   </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 目的・お悩みから探す（コラム導線） */}
+        <section className="py-20 md:py-24 bg-white">
+          <div className="max-w-6xl mx-auto px-6 lg:px-8">
+            <SectionHeading en="Columns" title="目的・お悩みから探す" lead="女性トレーナー・完全個室・料金・目的別に、選び方をていねいに解説しています。" />
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 fade-up">
+              {[
+                { href: '/articles/josei-trainer/', label: '女性トレーナーで選ぶ' },
+                { href: '/articles/private-kanshitsu/', label: '完全個室・プライベート' },
+                { href: '/articles/ryokin-osaeru/', label: '料金を抑えるコツ' },
+                { href: '/articles/joseisenyo-vs-kyoyo/', label: '女性専用 vs 男女共用' },
+                { href: '/articles/shippai/', label: '失敗しない注意点' },
+                { href: '/articles/josei-gym-data/', label: '独自調査（546ジム）' },
+                { href: '/articles/diet/', label: 'ダイエット目的で選ぶ' },
+                { href: '/articles/bodymake/', label: 'ボディメイクで選ぶ' },
+                { href: '/articles/', label: '記事をすべて見る →' },
+              ].map((c) => (
+                <Link
+                  key={c.href}
+                  href={c.href}
+                  className="block bg-ivory border border-line rounded-xl px-4 py-4 text-center text-sm text-ink-soft transition card-hover hover:border-accent/50 hover:text-accent"
+                >
+                  {c.label}
                 </Link>
               ))}
             </div>
