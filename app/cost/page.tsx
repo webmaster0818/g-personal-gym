@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/cost/' },
-  title: '女性専用パーソナルジムの料金相場【2026年6月最新】2ヶ月・月額・都度払いを徹底比較',
+  title: '女性専用パーソナルジムの料金相場【2026年7月最新】2ヶ月・月額・都度払いを徹底比較',
   description:
     '女性専用パーソナルジムの料金相場を、2ヶ月集中コース・月額制・都度払い別に徹底解説。入会金や食事指導などの追加費用、総額の目安、安く抑えるコツ、他の運動施設との料金比較まで、公開情報ベースでまとめました。',
 }
@@ -30,11 +30,25 @@ export default function CostPage() {
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="eyebrow mb-3">Price Guide</p>
-            <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">女性専用パーソナルジムの料金相場【2026年6月最新】</h1>
+            <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">女性専用パーソナルジムの料金相場【2026年7月最新】</h1>
             <p className="text-ink-soft text-sm md:text-base leading-relaxed">2ヶ月集中コース・月額制・都度払い、入会金や追加費用まで。総額の目安と、賢く安く通うコツを徹底解説します。</p>
             <p className="text-ink-faint text-xs mt-3">更新日 2026年4月13日</p>
           </div>
         </section>
+        <section className="py-8 bg-white border-b border-line">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <div className="bg-ivory border border-line rounded-2xl p-6">
+              <p className="text-xs font-semibold tracking-widest text-accent mb-3">30秒でわかる料金相場</p>
+              <ul className="space-y-2 text-sm text-ink">
+                <li>■ <strong>2ヶ月集中コース（16回）: 約18万〜25万円（税込）</strong>が相場</li>
+                <li>■ 月額制: 月1.2万〜6万円／都度払い: 1回6千〜1.5万円が目安</li>
+                <li>■ 短期集中なら2ヶ月コース、無理なく続けるなら月額制が向きます</li>
+              </ul>
+              <p className="text-ink-faint text-xs mt-3">※当サイト掲載の女性専用パーソナルジム各社の公開料金に基づく目安です。詳細は下記の比較表をご覧ください。</p>
+            </div>
+          </div>
+        </section>
+
         <section className="py-3 bg-white border-b border-line">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <nav className="text-sm text-ink-faint"><Link href="/" className="hover:text-accent transition">ホーム</Link>{' > '}<span className="text-ink-soft">料金相場ガイド</span></nav>

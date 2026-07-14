@@ -223,7 +223,16 @@ export default function Home() {
                 </Link>
               ))}
             </div>
-            <div className="text-center mt-10">
+            <div className="mt-8 flex flex-wrap justify-center gap-2 text-sm fade-up">
+              <span className="text-ink-faint text-xs self-center mr-1">注目:</span>
+              <Link href="/areas/naha/" className="px-3 py-1.5 bg-white border border-accent/40 rounded-full text-ink hover:border-accent transition">那覇</Link>
+              <Link href="/areas/toyama/" className="px-3 py-1.5 bg-white border border-accent/40 rounded-full text-ink hover:border-accent transition">富山</Link>
+              <Link href="/areas/sangenjaya/" className="px-3 py-1.5 bg-white border border-accent/40 rounded-full text-ink hover:border-accent transition">三軒茶屋</Link>
+              <Link href="/areas/wakayama/" className="px-3 py-1.5 bg-white border border-accent/40 rounded-full text-ink hover:border-accent transition">和歌山</Link>
+              <Link href="/areas/nagano/" className="px-3 py-1.5 bg-white border border-accent/40 rounded-full text-ink hover:border-accent transition">長野</Link>
+              <Link href="/cost/" className="px-3 py-1.5 bg-accent text-white rounded-full hover:opacity-90 transition">料金相場ガイド</Link>
+            </div>
+            <div className="text-center mt-6">
               <Link href="/areas/" className="btn-outline text-sm inline-block">全国102エリアをすべて見る →</Link>
             </div>
           </div>

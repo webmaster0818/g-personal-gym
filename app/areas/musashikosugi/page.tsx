@@ -11,8 +11,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/areas/musashikosugi/' },
-  title: '【2026年6月最新】武蔵小杉の女性向けパーソナルジムおすすめ4選！料金比較',
-  description: '【2026年6月最新】武蔵小杉のおすすめ女性向けパーソナルジム4選を比較。UNDEUX・ファディー・かたぎり塾など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '【2026年7月最新】武蔵小杉の女性向けパーソナルジムおすすめ4選！料金比較',
+  description: '【2026年7月最新】武蔵小杉のおすすめ女性向けパーソナルジム4選を比較。UNDEUX・ファディー・かたぎり塾など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,武蔵小杉,神奈川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -86,7 +86,7 @@ export default function MusashikosugiPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年6月最新】武蔵小杉の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年7月最新】武蔵小杉の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>

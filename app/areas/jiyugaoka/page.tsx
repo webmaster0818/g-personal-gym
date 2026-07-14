@@ -11,7 +11,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/areas/jiyugaoka/' },
-  title: '【2026年6月最新】自由が丘の女性専用パーソナルジムおすすめ6選！料金比較',
+  title: '【2026年7月最新】自由が丘の女性専用パーソナルジムおすすめ6選！料金比較',
   description: '【2026年4月最新】自由が丘のおすすめ女性専用パーソナルジム6選を徹底比較。UNDEUX SUPERBODY・OUTLINE・リボーンマイセルフなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,自由が丘,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -167,7 +167,7 @@ export default function JiyugaokaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年6月最新】自由が丘の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年7月最新】自由が丘の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>
