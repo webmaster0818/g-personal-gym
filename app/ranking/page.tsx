@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
 import { FAQSchema } from '@/components/FAQSchema'
+import { BreadcrumbSchema } from '@/components/BreadcrumbSchema'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -111,10 +112,30 @@ const rankings = [
   },
 ]
 
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: '女性専用パーソナルジムおすすめランキング',
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  numberOfItems: rankings.length,
+  itemListElement: rankings.map((gym) => ({
+    '@type': 'ListItem',
+    position: gym.rank,
+    name: gym.name,
+  })),
+}
+
 export default function RankingPage() {
   return (
     <>
       <FAQSchema faqs={faqs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'ホーム', path: '/' },
+          { name: '女性専用パーソナルジムおすすめランキング', path: '/ranking/' },
+        ]}
+      />
       <Navigation />
       <main data-reveal className="pt-16">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">

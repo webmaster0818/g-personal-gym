@@ -2,9 +2,16 @@ import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
 import { FAQSchema } from '@/components/FAQSchema'
+import { BreadcrumbSchema } from '@/components/BreadcrumbSchema'
 
 type FAQ = { question: string; answer: string }
 type Related = { href: string; label: string }
+
+// "2026年6月13日" → "2026-06-13"（変換できなければundefined）
+function toISO(jp?: string): string | undefined {
+  const m = jp?.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/)
+  return m ? `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}` : undefined
+}
 
 type Props = {
   eyebrow: string
@@ -18,9 +25,28 @@ type Props = {
 }
 
 export function ArticleShell({ eyebrow, title, lead, updated = '2026年6月13日', breadcrumb, faqs, related, children }: Props) {
+  const iso = toISO(updated)
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: lead,
+    inLanguage: 'ja-JP',
+    ...(iso ? { dateModified: iso } : {}),
+    author: { '@type': 'Organization', name: 'woman-gym編集部' },
+    publisher: { '@type': 'Organization', name: 'woman-gym', url: 'https://woman-gym.com' },
+  }
   return (
     <>
       {faqs && faqs.length > 0 && <FAQSchema faqs={faqs} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'ホーム', path: '/' },
+          { name: '記事一覧', path: '/articles/' },
+          { name: breadcrumb, path: '' },
+        ]}
+      />
       <Navigation />
       <main data-reveal className="pt-16">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
