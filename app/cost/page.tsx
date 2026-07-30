@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
+import { IntentGuideLinks } from '@/components/IntentGuideLinks'
+import { SurveyHighlight } from '@/components/SurveyHighlight'
 import { FAQSchema } from '@/components/FAQSchema'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/cost/' },
-  title: '女性専用パーソナルジムの料金相場【2026年7月最新】2ヶ月・月額・都度払いを徹底比較',
+  title: '女性専用パーソナルジムの料金相場【2026年7月】相場・入会金・体験無料60%を独自調査',
   description:
     '女性専用パーソナルジムの料金相場を、2ヶ月集中コース・月額制・都度払い別に徹底解説。入会金や食事指導などの追加費用、総額の目安、安く抑えるコツ、他の運動施設との料金比較まで、公開情報ベースでまとめました。',
 }
@@ -33,6 +35,12 @@ export default function CostPage() {
             <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">女性専用パーソナルジムの料金相場【2026年7月最新】</h1>
             <p className="text-ink-soft text-sm md:text-base leading-relaxed">2ヶ月集中コース・月額制・都度払い、入会金や追加費用まで。総額の目安と、賢く安く通うコツを徹底解説します。</p>
             <p className="text-ink-faint text-xs mt-3">更新日 2026年4月13日</p>
+          </div>
+        </section>
+
+        <section className="py-12 bg-ivory">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <SurveyHighlight />
           </div>
         </section>
         <section className="py-8 bg-white border-b border-line">
@@ -278,6 +286,7 @@ export default function CostPage() {
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>
+        <IntentGuideLinks />
       </main>
       <SiteFooter />
     </>

@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
+import { IntentGuideLinks } from '@/components/IntentGuideLinks'
+import { SurveyHighlight } from '@/components/SurveyHighlight'
 import { FAQSchema } from '@/components/FAQSchema'
 import { BreadcrumbSchema } from '@/components/BreadcrumbSchema'
 import type { Metadata } from 'next'
@@ -151,6 +153,12 @@ export default function RankingPage() {
           </div>
         </section>
 
+        <section className="py-12 bg-ivory">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <SurveyHighlight />
+          </div>
+        </section>
+
         <section className="py-3 bg-white border-b border-line">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <nav className="text-sm text-ink-faint">
@@ -270,6 +278,7 @@ export default function RankingPage() {
             </Link>
           </div>
         </section>
+        <IntentGuideLinks />
       </main>
       <SiteFooter />
     </>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
+import { IntentGuideLinks } from '@/components/IntentGuideLinks'
 import { FAQSchema } from '@/components/FAQSchema'
 import type { Metadata } from 'next'
 
@@ -77,6 +78,7 @@ export default function FAQPage() {
             </div>
           </div>
         </section>
+        <IntentGuideLinks />
       </main>
       <SiteFooter />
     </>

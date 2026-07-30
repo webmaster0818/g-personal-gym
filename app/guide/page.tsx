@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
+import { IntentGuideLinks } from '@/components/IntentGuideLinks'
+import { SurveyHighlight } from '@/components/SurveyHighlight'
 import { FAQSchema } from '@/components/FAQSchema'
 import type { Metadata } from 'next'
 
@@ -40,6 +42,12 @@ export default function GuidePage() {
             <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">女性専用パーソナルジムの選び方【2026年版】</h1>
             <p className="text-ink-soft text-sm md:text-base leading-relaxed">「どこを選べばいいか分からない」を解消。失敗しない5つの軸＋目的別の選び方を、女性目線で解説します。</p>
             <p className="text-ink-faint text-xs mt-3">更新日 2026年4月13日</p>
+          </div>
+        </section>
+
+        <section className="py-12 bg-ivory">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <SurveyHighlight />
           </div>
         </section>
         <section className="py-3 bg-white border-b border-line">
@@ -172,6 +180,7 @@ export default function GuidePage() {
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>
+        <IntentGuideLinks />
       </main>
       <SiteFooter />
     </>
