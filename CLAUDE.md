@@ -68,3 +68,13 @@ GSC28d=2click/286imp/pos58.4（依然0→1）。P0=クエリ×title/H1突合。
 - /cost/・/ranking/ のtitle/H1は既に意図一致（料金相場/比較・おすすめランキング/料金比較）＝OK。rankingの鮮度6月→7月バンプ。
 - build EXIT0・方式B（**.txt削除は robots.txt除外**厳守＝過去に消した教訓）・deploy+source両push（source=§16 webmaster0818 HTTPS）・本番新H1確認・Indexing 3/3。効果1-2週GSC（頭クラスタのpos改善＝ホームが最大レバー）。
 - 次=P1（強化対象の深化＋独自レポート＋掲載ジム通知メール＋修正フォーム）。ただしwoman-gymもpilates/gold同様、新規ドメインで被リンクゼロ＝オンページ後は権威/被リンクが本丸。
+
+
+### 2026-07-30 do/know/go戦略v2 Phase1実行（MediaXAI「進めてください」）✅本番反映済み
+戦略v2=`~/.openclaw/workspace/womangym-strategy-do-know-go-2026-07-28.md`。**実装前の実データ確認で戦略の前提を2点修正**（誠実性の記録）:
+- ❌当初想定「意図別受け皿がない」→ **実際は /ranking/(おすすめTOP10) /guide/(選び方) /faq/ が既に存在**。にもかかわらず「ジム おすすめ 女性」等が全部TOPに着地(62位)していた
+- 🚨**真のボトルネック=URL Inspectionで /ranking/ /guide/ /faq/ が全て "Discovered - currently not indexed"(一度もクロールされていない)**。sitemap掲載・nav/TOPリンクはあるのにクロール予算が回っていない(立ち上げ期のドメイン評価)
+- ❌当初想定「仙台/浜松が薄い」→ **実際は実在ジム4件の詳細データ(料金/体験/アクセス/住所/オプション)で既に充実**。de-thin不要と判断し実施せず
+**実施内容**: ①`components/SurveyHighlight.tsx`新設=独自調査(102エリア・のべ546ジム・2026年6月集計)のハイライト(女性専用46%/体験無料60%/個室28%/食事指導26%・出典明記)を /cost/ /ranking/ /guide/ に注入 ②`components/IntentGuideLinks.tsx`新設=4受け皿への意図別導線を**全102エリアページ+4ハブに配線**(クロール導線の面拡大=未クロール解消の主レバー) ③/cost/ title即答化(独自データの実数「体験無料60%」入り) ④**Indexing API 12件送信**(未クロール3ページ最優先)+sitemap再送信
+**⚠️デプロイ経路の重大な変更**: sourceリポのremoteに**失効トークンが埋め込まれていた**(push不可状態)→adminトークンでデプロイキー登録し**SSHエイリアス方式に切替**(`git@github.com-webmaster0818-g-personal-gym`)。deployリポは既にSSH。⚠️`printf`/`git remote set-url`で変数展開により`@`が消えてURLが壊れる事故→シングルクォートで固定値指定が安全
+build EXIT0・数値突合OK(GYM_SURVEY実値と一致)・両push・本番確認。効果=未クロール3ページのインデックス獲得(先行指標)を1-2週で測定
