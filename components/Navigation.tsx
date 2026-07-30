@@ -40,13 +40,13 @@ export function Navigation() {
               <span className="font-display text-xl font-bold text-accent group-hover:text-accent-dark transition-colors">G-PersonalGym</span>
             </Link>
             <div className="hidden md:flex items-center gap-8">
-              <Link href="/ranking/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">ランキング</Link>
+              <Link href="/ranking/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">ランキング</Link><Link href="/brands/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">ブランド</Link>
               <Link href="/cost/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">料金相場</Link>
               <Link href="/guide/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">選び方</Link>
               <Link href="/areas/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">エリア</Link>
               <Link href="/articles/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">記事</Link>
               <Link href="/faq/" className="nav-link text-brand-muted hover:text-accent text-sm font-medium">FAQ</Link>
-              <Link href="/ranking/" className="btn-primary text-sm !py-2 !px-5 !rounded-full">おすすめを見る</Link>
+              <Link href="/ranking/" className="btn-primary text-sm !py-2 !px-5 !rounded-full">おすすめを見る</Link><Link href="/brands/" className="btn-primary text-sm !py-2 !px-5 !rounded-full">ブランド</Link>
             </div>
             <button className="md:hidden p-2" onClick={toggleMenu} aria-label="メニューを開く" id="menuBtn" aria-expanded="false">
               <svg className="w-6 h-6 text-brand-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ export function Navigation() {
           </div>
           <div className="flex flex-col gap-6">
             <Link href="/" className="text-brand-text text-base font-medium hover:text-accent transition" onClick={toggleMenu}>ホーム</Link>
-            <Link href="/ranking/" className="text-brand-text text-base font-medium hover:text-accent transition" onClick={toggleMenu}>ランキング</Link>
+            <Link href="/ranking/" className="text-brand-text text-base font-medium hover:text-accent transition" onClick={toggleMenu}>ランキング</Link><Link href="/brands/" className="text-brand-text text-base font-medium hover:text-accent transition" onClick={toggleMenu}>ブランド</Link>
             <Link href="/cost/" className="text-brand-text text-base font-medium hover:text-accent transition" onClick={toggleMenu}>料金相場</Link>
             <Link href="/guide/" className="text-brand-text text-base font-medium hover:text-accent transition" onClick={toggleMenu}>選び方ガイド</Link>
             <Link href="/articles/" className="text-brand-text text-base font-medium hover:text-accent transition" onClick={toggleMenu}>記事一覧</Link>
