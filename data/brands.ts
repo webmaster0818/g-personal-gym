@@ -30,6 +30,8 @@ export type BrandInfo = {
   trialNote: string
   faq: BrandFaq[]
   officialUrl: string
+  /** A8等の計測リンク。未設定なら公式URLへ送る（生URLでの送客は成果が計上されないため） */
+  affiliateUrl?: string
   officialStores?: OfficialStores
 }
 
@@ -64,6 +66,9 @@ export const BRANDS: BrandInfo[] = [
   {
     slug: 'b-concept',
     name: 'ビーコンセプト',
+    // A8アフィリエイトリンク（BEST-FITと同一・2026-08-06 MediaXAI共有）
+    // ⚠️他5ブランドはBEST-FIT側にA8リンクが存在しないため未設定（公式URLのまま）
+    affiliateUrl: 'https://px.a8.net/svt/ejp?a8mat=45E3Q1+1HL182+3UK2+5YRHE',
     tagline: '下半身・太もも痩せに特化した女性専用の完全個室ジム',
     womenOnly: true,
     intro: [

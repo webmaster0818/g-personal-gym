@@ -8,6 +8,8 @@ type Store = {
   areaSlug: string
   areaName: string
   officialUrl: string
+  /** A8等の計測リンク。未設定なら公式URLへ（成果計上のため生URLで送客しない） */
+  affiliateUrl?: string
   price: string
   trial: string
   access: string
@@ -195,9 +197,9 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
       <section className="py-14">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <a
-            href={brand.officialUrl}
+            href={brand.affiliateUrl ?? brand.officialUrl}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow sponsored"
             className="inline-block rounded-full bg-accent px-10 py-4 text-sm font-bold text-white transition-colors hover:bg-accent-dark"
           >
             {brand.name}の公式サイトを見る
