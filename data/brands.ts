@@ -60,7 +60,7 @@ export const BRANDS: BrandInfo[] = [
       kind: '一覧実数',
       caveat: '公式サイト内では「37店舗以上」「40店舗以上」「50店舗以上」と複数の表記が見られるため、店舗一覧ページの掲載数を採用しています。',
       sourceUrl: 'https://www.diet-undeux.jp/studio/',
-      asOf: '2026年7月',
+      asOf: '2026年8月',
     },
   },
   {
@@ -90,7 +90,7 @@ export const BRANDS: BrandInfo[] = [
       kind: '一覧実数',
       caveat: '公式サイトに全国店舗数の明記がないため、店舗一覧ページの掲載数を採用しています。',
       sourceUrl: 'https://b-concept.tokyo/clublist/',
-      asOf: '2026年7月',
+      asOf: '2026年8月',
     },
   },
   {
@@ -117,7 +117,7 @@ export const BRANDS: BrandInfo[] = [
       kind: '一覧実数',
       caveat: '公式サイトに全国店舗数の明記がないため、店舗一覧ページの掲載数を採用しています（「◯◯店」「◯◯駅前店」など表記の近い店舗があります）。',
       sourceUrl: 'https://www.outline-gym.com/gym',
-      asOf: '2026年7月',
+      asOf: '2026年8月',
     },
   },
   {
@@ -144,7 +144,7 @@ export const BRANDS: BrandInfo[] = [
       kind: '一覧実数',
       caveat: '公式サイトには「全国30店舗以上」との記載もありますが、検証可能な店舗一覧ページの掲載数を採用しています。',
       sourceUrl: 'https://www.shapes-international.co.jp/store/',
-      asOf: '2026年7月',
+      asOf: '2026年8月',
     },
   },
   {
@@ -167,11 +167,11 @@ export const BRANDS: BrandInfo[] = [
     ],
     officialUrl: 'https://katagirijuku.jp/',
     officialStores: {
-      count: 325,
+      count: 327,
       kind: '一覧実数',
       caveat: '公式サイト内では「250店舗以上」「300店舗以上」と複数の表記が見られるため、店舗一覧ページの掲載数を採用しています。',
       sourceUrl: 'https://katagirijuku.jp/gyms',
-      asOf: '2026年7月',
+      asOf: '2026年8月',
     },
   },
   {
@@ -198,7 +198,7 @@ export const BRANDS: BrandInfo[] = [
       kind: '一覧実数',
       caveat: '公式サイトに全国店舗数の明記がないため、店舗検索ページの掲載数を採用しています。',
       sourceUrl: 'https://exercisecoach.co.jp/store',
-      asOf: '2026年7月',
+      asOf: '2026年8月',
     },
   },
 ]
