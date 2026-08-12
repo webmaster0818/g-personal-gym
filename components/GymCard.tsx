@@ -58,6 +58,15 @@ const GYM_IMAGES: { match: string; slug: string }[] = [
   { match: 'かたぎり塾', slug: 'katagirijuku' },
 ]
 
+// ブランド評判ページが存在するもの。GYM_IMAGES は画像用に10件あるが、
+// ページがあるのはこの6件だけなので、リンクはこの集合に限定する（404を作らない）。
+const BRAND_PAGES = new Set(['b-concept', 'outline', 'reborn-myself', 'exercise-coach', 'undeux', 'katagirijuku'])
+
+function brandSlug(name: string): string | null {
+  const hit = GYM_IMAGES.find((g) => name.includes(g.match))
+  return hit && BRAND_PAGES.has(hit.slug) ? hit.slug : null
+}
+
 function gymOfficialImage(name: string): string | null {
   const hit = GYM_IMAGES.find((g) => name.includes(g.match))
   return hit ? `/images/gyms/${hit.slug}.webp` : null
@@ -265,10 +274,18 @@ export function GymCard({ gym, index }: GymCardProps) {
           )}
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 flex flex-wrap items-center gap-3">
           <a href={gym.officialUrl || `https://www.google.com/search?q=${encodeURIComponent(gym.name + ' 公式')}`} target="_blank" rel={gym.officialUrl ? 'noopener noreferrer sponsored' : 'noopener noreferrer'} className="inline-block bg-accent text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-accent-dark transition">
             公式サイトを見る
           </a>
+          {/* ブランド評判ページへの内部リンク。
+              ブランドページ6本が90日間表示ゼロ・5本がインデックス未登録だったのは、
+              エリアページ103本のどこからもリンクされておらず孤立していたため。 */}
+          {brandSlug(gym.name) && (
+            <a href={`/brands/${brandSlug(gym.name)}/`} className="inline-block border border-accent text-accent px-5 py-2.5 rounded-full text-sm font-medium hover:bg-accent hover:text-white transition">
+              料金・全店舗を見る
+            </a>
+          )}
         </div>
       </div>
     </div>
