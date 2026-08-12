@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!brand) return { title: 'ブランドが見つかりません' }
   const n = ((brandStores as Record<string, unknown[]>)[slug] ?? []).length
   return {
-    title: `${brand.name}の料金・店舗一覧・特徴【2026年7月】掲載${n}店を比較`,
+    title: `${brand.name}の料金・店舗一覧・特徴【2026年8月】掲載${n}店を比較`,
     description: `${brand.name}の料金プラン・体験カウンセリング・店舗一覧を公式情報と掲載データで整理。${brand.tagline}。掲載${n}店舗のエリア別リンク付きで、近くの店舗がすぐ見つかります。`,
     alternates: { canonical: `/brands/${slug}/` },
   }

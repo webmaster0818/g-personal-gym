@@ -41,7 +41,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://woman-gym.com'),
   title: {
-    default: '女性専用パーソナルジムおすすめ比較【2026年7月】料金・口コミ・エリアで探せる | G-PersonalGym',
+    default: '女性専用パーソナルジムおすすめ比較【2026年8月】料金・口コミ・エリアで探せる | G-PersonalGym',
     template: '%s | G-PersonalGym',
   },
   description: '【2026年7月最新】女性専用パーソナルジムのおすすめを料金・口コミで徹底比較。ビーコンセプト・リボーンマイセルフ・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を網羅。あなたにぴったりのパーソナルジムが見つかります。',
