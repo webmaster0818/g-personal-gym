@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 町田店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 15,
-    reviews: [
-      { author: 'K.S', rating: 5, date: '1週間前', text: '生涯サポート付きで安心。町田駅から徒歩圏内で通いやすいです。' },
-      { author: 'R.T', rating: 5, date: '2週間前', text: '女性専用マシンでのトレーニングが効率的。完全個室でリラックスできます。' },
-      { author: 'N.M', rating: 4, date: '1ヶ月前', text: 'ベビーサークル完備で子連れOK。町田で女性専用の完全個室ジムは貴重です。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 町田店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 14,
-    reviews: [
-      { author: 'T.K', rating: 5, date: '2週間前', text: 'トレーナーが全員女性で安心。町田駅から徒歩4分で通いやすい。' },
-      { author: 'M.H', rating: 4, date: '1ヶ月前', text: 'アライメント分析で自分だけのメニューを作ってくれるのが魅力。' },
-      { author: 'E.S', rating: 5, date: '3週間前', text: '産後ダイエットで-4kg。女性トレーナーだからこそ相談しやすかったです。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', 'アライメント分析', '駅徒歩4分', '産後対応'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY LIFE 町田スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.6,
-    reviewCount: 11,
-    reviews: [
-      { author: 'A.N', rating: 5, date: '2週間前', text: '月額制で1万円台から始められるのが嬉しい。町田駅から徒歩2分の好立地。' },
-      { author: 'M.K', rating: 4, date: '1ヶ月前', text: '月の回数を2回〜8回から選べるので自分のペースで通える。女性専用で安心。' },
-      { author: 'Y.S', rating: 4, date: '3週間前', text: '一流の女性専門トレーナーが在籍。気軽に始められる料金設定が魅力。' },
-    ],
     price: '月額 19,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['女性専用', '月額制', '1万円台〜', '駅徒歩2分', '回数選択制'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 町田店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'S.M', rating: 5, date: '2週間前', text: '太もも痩せに特化。町田で脚やせメソッドが受けられるのは嬉しい。' },
-      { author: 'H.T', rating: 5, date: '1ヶ月前', text: '医師監修で安心。完全個室で人目を気にせずトレーニングに集中できます。' },
-      { author: 'A.K', rating: 4, date: '3週間前', text: '分割払いで月々5,545円〜。町田で通いやすい価格帯です。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -105,13 +77,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 町田',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

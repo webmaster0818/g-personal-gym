@@ -21,12 +21,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 札幌店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '大通駅36番出口から徒歩1分の好立地。女性トレーナーのみ在籍の女性専用ジム。とても満足しています。' },
-      { author: 'M.S', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '大通駅徒歩1分'],
@@ -41,12 +35,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 札幌店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'B.L', rating: 5, date: '2週間前', text: '札幌エリアの下半身痩せ特化女性専用パーソナルジム。とても満足しています。' },
-      { author: 'N.T', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '医師監修'],
@@ -60,12 +48,6 @@ const gyms = [
   },
   {
     name: 'BEYOND 札幌店',
-    rating: 4.6,
-    reviewCount: 10,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '2週間前', text: 'コンテスト入賞者多数在籍。札幌で本格的なボディメイク。とても満足しています。' },
-      { author: 'O.U', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '16回 281,600円〜（税込）',
     trial: '体験レッスンあり',
     features: ['コンテスト入賞トレーナー', '完全個室', '食事指導あり'],
@@ -80,12 +62,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 札幌店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 12,
-    reviews: [
-      { author: 'D.N', rating: 5, date: '2週間前', text: 'AI主導20分トレーニング。札幌で月4回12,000円〜。とても満足しています。' },
-      { author: 'P.V', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格'],
@@ -99,12 +75,6 @@ const gyms = [
   },
   {
     name: 'パーソナルジムNANA',
-    rating: 4.5,
-    reviewCount: 8,
-    reviews: [
-      { author: 'E.O', rating: 5, date: '2週間前', text: '骨格から整え理想のボディラインへ導く女性専用ジム。通い続けない卒業できる身体へ。とても満足しています。' },
-      { author: 'Q.W', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '要問合せ',
     trial: '体験レッスンあり',
     features: ['女性専用', '骨格から整える', '卒業を目指す'],

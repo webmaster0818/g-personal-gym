@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 千葉店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.8,
-    reviewCount: 16,
-    reviews: [
-      { author: 'A.T', rating: 5, date: '1週間前', text: '生涯アフターサポートが心強い。千葉駅から近くて通いやすいです。' },
-      { author: 'M.S', rating: 5, date: '2週間前', text: '完全個室で子連れOK。ベビーサークルがあるので安心して通えます。' },
-      { author: 'K.H', rating: 4, date: '1ヶ月前', text: '料金がリーズナブル。女性専用マシンで効率的にトレーニングできます。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 千葉スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'R.K', rating: 5, date: '2週間前', text: '宅配食が美味しくて食事管理がストレスフリー。千葉で女性専用ジムは嬉しい。' },
-      { author: 'S.M', rating: 5, date: '1ヶ月前', text: 'パウダールーム完備で仕事帰りでも通いやすい。基礎化粧品も揃っています。' },
-      { author: 'N.T', rating: 4, date: '3週間前', text: '2ヶ月で-5kg達成。トレーナーさんの指導が丁寧で続けやすいです。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '千葉駅近'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 千葉店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'T.N', rating: 5, date: '1週間前', text: 'トレーナー全員女性で安心。10年以上の実績に基づいた指導が信頼できます。' },
-      { author: 'M.A', rating: 4, date: '2週間前', text: '食事指導が具体的で実践しやすい。千葉で女性トレーナーのみのジムは貴重。' },
-      { author: 'E.S', rating: 5, date: '1ヶ月前', text: 'ブライダルコースで通いました。理想のドレス姿を実現できました。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', 'ブライダルコース'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 千葉店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.6,
-    reviewCount: 13,
-    reviews: [
-      { author: 'H.K', rating: 5, date: '2週間前', text: '下半身特化プログラムで太もも痩せに成功。千葉で脚やせするならここ。' },
-      { author: 'A.M', rating: 5, date: '1ヶ月前', text: '医師監修のメソッドで安心。分割払いで負担なく始められました。' },
-      { author: 'K.T', rating: 4, date: '3週間前', text: '託児所費用補助があるのが嬉しい。産後ダイエットに最適です。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -104,13 +76,6 @@ const gyms = [
   },
   {
     name: '24/7 Workout 千葉店',
-    rating: 4.5,
-    reviewCount: 20,
-    reviews: [
-      { author: 'F.S', rating: 5, date: '1週間前', text: '3食食べて痩せるメソッドが続けやすい。深夜まで営業で仕事帰りも安心。' },
-      { author: 'G.T', rating: 4, date: '2週間前', text: '全額返金保証があるので気軽にスタートできた。千葉駅近で便利。' },
-      { author: 'B.K', rating: 4, date: '1ヶ月前', text: 'トレーナーの質が高い。完全個室で集中してトレーニングできます。' },
-    ],
     price: '2ヶ月16回 257,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '完全個室', '深夜営業', '3食食べるダイエット', '全額返金保証'],
@@ -125,13 +90,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 千葉店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.3,
-    reviewCount: 18,
-    reviews: [
-      { author: 'D.M', rating: 5, date: '2週間前', text: '1回20分で月12,000円。千葉でこの価格のパーソナルジムは他にない。' },
-      { author: 'E.K', rating: 4, date: '1ヶ月前', text: 'AI主導で効率的。女性利用者が多くて安心して通えます。' },
-      { author: 'W.T', rating: 4, date: '3週間前', text: '千葉駅から近い。短時間集中型で忙しい日々でも続けられます。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '千葉駅近'],

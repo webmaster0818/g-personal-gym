@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 恵比寿スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 22,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '恵比寿駅から近くて通いやすい。宅配食が美味しくて食事管理が楽でした。2ヶ月で-5kg達成！' },
-      { author: 'M.S', rating: 5, date: '1ヶ月前', text: 'パウダールーム完備で仕事帰りに通えるのが最高。トレーナーさんの指導も丁寧です。' },
-      { author: 'Y.T', rating: 4, date: '3週間前', text: '基礎化粧品まで揃っていて手ぶらでOK。施設が綺麗で女性専用なので安心感があります。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '恵比寿駅近'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 恵比寿・広尾店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 16,
-    reviews: [
-      { author: 'K.N', rating: 5, date: '1週間前', text: '生涯アフターサポートが心強い。完全個室でベビーサークルもあり、子連れで通えました。' },
-      { author: 'R.H', rating: 5, date: '2週間前', text: '女性専用マシンでのトレーニングが効率的。よもぎ蒸しも気持ちよくてリラックスできます。' },
-      { author: 'N.M', rating: 4, date: '1ヶ月前', text: '卒業後も無料サポートが続くのが安心。リバウンドの心配がなくなりました。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', 'よもぎ蒸し'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 恵比寿店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 19,
-    reviews: [
-      { author: 'S.A', rating: 5, date: '2週間前', text: '恵比寿駅から徒歩2分で最高の立地。太もも-5cm達成できて大満足です！' },
-      { author: 'H.Y', rating: 5, date: '1ヶ月前', text: '下半身特化のプログラムが本当に効果的。医師監修メソッドの信頼感があります。' },
-      { author: 'A.I', rating: 4, date: '3週間前', text: '託児所費用補助があるので産後ママに嬉しい。分割払いで始めやすかったです。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '駅徒歩2分'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 恵比寿店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 14,
-    reviews: [
-      { author: 'T.M', rating: 5, date: '1週間前', text: 'トレーナーが全員女性で本当に安心。食事指導も的確で無理なく続けられました。' },
-      { author: 'M.K', rating: 4, date: '2週間前', text: '10年以上の実績があるだけあって指導の質が高い。ブライダルコースで理想の体型に。' },
-      { author: 'E.N', rating: 5, date: '1ヶ月前', text: '恵比寿の落ち着いた雰囲気の中でトレーニングできるのが良い。結果も出ました。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', 'ブライダルコース'],
@@ -104,13 +76,6 @@ const gyms = [
   },
   {
     name: 'LIM 恵比寿店',
-    rating: 4.5,
-    reviewCount: 11,
-    reviews: [
-      { author: 'C.S', rating: 5, date: '2週間前', text: 'コース卒業後も毎月1回無料でパーソナルトレーニングが受けられるのが嬉しい。' },
-      { author: 'K.O', rating: 4, date: '1ヶ月前', text: '女性専用で設備も女性向けに設計されていて居心地が良い。トレーナーさんも親切です。' },
-      { author: 'J.H', rating: 5, date: '3週間前', text: '1対1のセッションにこだわっているので集中できます。結果もしっかり出ました。' },
-    ],
     price: '2ヶ月16回 215,600円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '卒業後月1回無料', '完全マンツーマン', '女性向け設備', '恵比寿駅近'],
@@ -125,13 +90,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 恵比寿',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

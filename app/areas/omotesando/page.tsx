@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 青山・表参道スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 21,
-    reviews: [
-      { author: 'A.H', rating: 5, date: '2週間前', text: '表参道駅徒歩1分で通いやすさ抜群。宅配食と管理栄養士の毎食指導が選べるのが便利。2ヶ月で-7kg。' },
-      { author: 'M.T', rating: 5, date: '1ヶ月前', text: '表参道のおしゃれな雰囲気のスタジオ。チーム担当制でトレーナーと栄養士が連携してサポートしてくれます。' },
-      { author: 'Y.S', rating: 4, date: '3週間前', text: 'パウダールーム完備で仕事帰りにそのまま表参道でショッピングできるのが嬉しい。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '駅徒歩1分', '宅配食無料', 'チーム担当制', 'パウダールーム完備'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 表参道店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'K.A', rating: 5, date: '1週間前', text: '表参道という立地で生涯サポート付き。コスパが良いと思います。完全個室で落ち着ける。' },
-      { author: 'R.T', rating: 5, date: '2週間前', text: '女性専用マシンでのトレーニングが効率的。よもぎ蒸しもリラックスできて気に入っています。' },
-      { author: 'N.K', rating: 4, date: '1ヶ月前', text: '卒業後もずっとサポートが受けられるのが決め手でした。料金も表参道にしてはリーズナブル。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'よもぎ蒸し', '表参道エリア'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 表参道店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.6,
-    reviewCount: 16,
-    reviews: [
-      { author: 'S.K', rating: 5, date: '2週間前', text: '表参道で脚やせ特化のジムは嬉しい。太もも-5cm達成でスキニーが履けるように！' },
-      { author: 'H.M', rating: 5, date: '1ヶ月前', text: '医師監修のメソッドで安心。分割払いで月々5,545円〜始められるのも魅力的。' },
-      { author: 'A.S', rating: 4, date: '3週間前', text: '完全個室で表参道の人目を気にせずトレーニングできます。結果もしっかり出ました。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '完全個室', '表参道駅近'],
@@ -83,13 +62,6 @@ const gyms = [
   },
   {
     name: 'AGLAIA（アグライア）表参道',
-    rating: 4.6,
-    reviewCount: 10,
-    reviews: [
-      { author: 'C.N', rating: 5, date: '1週間前', text: '美尻特化のトレーニングが魅力。グルーツビルダーという専用マシンで効率的にヒップアップできました。' },
-      { author: 'K.H', rating: 5, date: '2週間前', text: 'トレーニング未経験でしたが丁寧に教えてもらえて安心。姿勢改善も実感しています。' },
-      { author: 'J.S', rating: 4, date: '1ヶ月前', text: '表参道のおしゃれな雰囲気のジム。会員の80%が未経験者なので安心して始められました。' },
-    ],
     price: '月4回 52,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '美尻特化', '姿勢改善', '未経験者80%', 'オリジナルメソッド'],
@@ -103,13 +75,6 @@ const gyms = [
   },
   {
     name: 'MMM（トリプルエム）表参道',
-    rating: 4.5,
-    reviewCount: 9,
-    reviews: [
-      { author: 'L.M', rating: 5, date: '2週間前', text: 'バストアッププランが他にない特徴。バストを維持しつつ脂肪だけ落とせるのが画期的。' },
-      { author: 'P.K', rating: 4, date: '1ヶ月前', text: '表参道駅徒歩1分の好立地。一人ひとりに合わせたオーダーメイドダイエットが魅力。' },
-      { author: 'D.S', rating: 4, date: '3週間前', text: '女性専用で安心。表参道の洗練された空間でモチベーションが上がります。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', 'バストアッププラン', '駅徒歩1分', 'オーダーメイド', '表参道'],
@@ -124,13 +89,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 表参道',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

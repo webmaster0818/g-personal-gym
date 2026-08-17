@@ -21,12 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 梅田スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 22,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '梅田エリアの女性専用パーソナルジム。宅配食無料の総合ダイエットサポート。とても満足しています。' },
-      { author: 'M.S', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', '梅田駅近'],
@@ -41,12 +35,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 梅田店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 16,
-    reviews: [
-      { author: 'B.L', rating: 5, date: '2週間前', text: '下半身痩せ特化の女性専用ジム。梅田エリアで好アクセス。とても満足しています。' },
-      { author: 'N.T', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '医師監修'],
@@ -61,12 +49,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 梅田店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 14,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '2週間前', text: '女性トレーナーのみ在籍。梅田エリアの女性専用ジム。とても満足しています。' },
-      { author: 'O.U', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ'],
@@ -80,12 +62,6 @@ const gyms = [
   },
   {
     name: 'BURNS 本町店',
-    rating: 4.5,
-    reviewCount: 10,
-    reviews: [
-      { author: 'D.N', rating: 5, date: '2週間前', text: '大人の女性のきれいを叶える女性専用パーソナルジム。本町・心斎橋エリア。とても満足しています。' },
-      { author: 'P.V', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月額制（要問合せ）',
     trial: '体験レッスンあり',
     features: ['女性専用', '女性トレーナー', '本町駅近'],
@@ -100,12 +76,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 梅田店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 18,
-    reviews: [
-      { author: 'E.O', rating: 5, date: '2週間前', text: 'AI主導20分トレーニング。梅田で気軽に通える低価格ジム。とても満足しています。' },
-      { author: 'Q.W', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格'],

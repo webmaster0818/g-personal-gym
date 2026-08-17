@@ -21,12 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 新宿店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.8,
-    reviewCount: 22,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '業界初の生涯無料アフターサポート付き女性専用パーソナルジム。完全個室でベビーサークル完備。新宿駅からとても満足しています。' },
-      { author: 'M.S', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備'],
@@ -41,12 +35,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 新宿スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.7,
-    reviewCount: 20,
-    reviews: [
-      { author: 'B.L', rating: 5, date: '2週間前', text: '糖質オフ宅配食を無料提供する女性専用パーソナルジム。食事とトレーニングの総合サポート。とても満足しています。' },
-      { author: 'N.T', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備'],
@@ -61,12 +49,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 新宿店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 18,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '2週間前', text: '医師とトレーナー共同開発の脚やせメソッド。太もも痩せ・ヒップアップに特化。とても満足しています。' },
-      { author: 'O.U', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助'],
@@ -81,12 +63,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 新宿店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 16,
-    reviews: [
-      { author: 'D.N', rating: 5, date: '2週間前', text: 'トレーナー全員女性の老舗女性専用ジム。2万人以上の指導実績。とても満足しています。' },
-      { author: 'P.V', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績'],
@@ -101,12 +77,6 @@ const gyms = [
   {
     name: 'かたぎり塾 西新宿女性専門店',
     officialUrl: 'https://katagirijuku.jp/',
-    rating: 4.5,
-    reviewCount: 14,
-    reviews: [
-      { author: 'E.O', rating: 5, date: '2週間前', text: '西新宿の女性専門店。トレーナー全員女性でAI食事指導付き。月額制で通いやすい。とても満足しています。' },
-      { author: 'Q.W', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['女性専用', '女性トレーナーのみ', 'AI食事指導', '月額制'],
@@ -121,12 +91,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 新宿店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 20,
-    reviews: [
-      { author: 'F.P', rating: 5, date: '2週間前', text: 'AI主導の20分パーソナルトレーニング。月4回12,000円〜の低価格。とても満足しています。' },
-      { author: 'R.X', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割'],

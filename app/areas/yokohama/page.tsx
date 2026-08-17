@@ -21,12 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 横浜店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.8,
-    reviewCount: 24,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '横浜に6店舗展開する女性専用パーソナルジム。生涯無料アフターサポート付き。とても満足しています。' },
-      { author: 'M.S', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備'],
@@ -41,12 +35,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 横浜スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.7,
-    reviewCount: 18,
-    reviews: [
-      { author: 'B.L', rating: 5, date: '2週間前', text: '横浜駅より徒歩3分。糖質オフ宅配食無料の女性専用ジム。とても満足しています。' },
-      { author: 'N.T', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', '横浜駅徒歩3分'],
@@ -61,12 +49,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 横浜店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 16,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '2週間前', text: '下半身痩せに特化した女性専用パーソナルジム。横浜駅近く。とても満足しています。' },
-      { author: 'O.U', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '託児所費用補助'],
@@ -81,12 +63,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 横浜店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 15,
-    reviews: [
-      { author: 'D.N', rating: 5, date: '2週間前', text: '女性トレーナーのみ在籍の老舗女性専用ジム。横浜駅から好アクセス。とても満足しています。' },
-      { author: 'P.V', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績'],
@@ -101,12 +77,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 横浜店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 16,
-    reviews: [
-      { author: 'E.O', rating: 5, date: '2週間前', text: 'AI主導20分トレーニング。横浜で月4回12,000円〜。とても満足しています。' },
-      { author: 'Q.W', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格'],

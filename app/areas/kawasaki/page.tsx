@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 川崎スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 17,
-    reviews: [
-      { author: 'A.T', rating: 5, date: '2週間前', text: '川崎駅すぐで通いやすい。宅配食が美味しくて食事管理のストレスがない。2ヶ月で-5kg。' },
-      { author: 'M.N', rating: 5, date: '1ヶ月前', text: '女性専用で安心。トレーナーの質が高く、丁寧に指導してくれます。' },
-      { author: 'Y.K', rating: 4, date: '3週間前', text: 'パウダールーム完備で仕事帰りに通えるのが嬉しい。基礎化粧品も揃ってます。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '川崎駅すぐ', '宅配食無料', 'パウダールーム完備', '手ぶらOK'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 川崎店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'K.M', rating: 5, date: '1週間前', text: '生涯リバウンドサポートが安心。川崎でベテランの女性ダイエット指導者が多い。' },
-      { author: 'R.S', rating: 5, date: '2週間前', text: '完全個室でリラックスしてトレーニング。女性専用マシンが効率的です。' },
-      { author: 'N.K', rating: 4, date: '1ヶ月前', text: 'ベビーサークル完備で子連れOK。卒業後のサポートが無料なのが決め手でした。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベテランスタッフ', 'ベビーサークル'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 川崎店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 13,
-    reviews: [
-      { author: 'T.S', rating: 5, date: '2週間前', text: 'トレーナーが全員女性で安心。川崎駅から近くて仕事帰りに通いやすい。' },
-      { author: 'M.K', rating: 4, date: '1ヶ月前', text: '10年以上の実績で指導の質が高い。女性トレーナーだからこそ分かる悩みに対応。' },
-      { author: 'E.N', rating: 5, date: '3週間前', text: '産後ダイエットで通いました。ブライダルコースもあり幅広いニーズに対応。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット', 'ブライダルコース'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 川崎店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'S.H', rating: 5, date: '2週間前', text: '脚やせ特化が嬉しい。太もも-4cm達成。川崎で美脚になれました。' },
-      { author: 'H.M', rating: 5, date: '1ヶ月前', text: '医師監修メソッドで安心。完全個室で人目を気にせずトレーニングできます。' },
-      { author: 'A.S', rating: 4, date: '3週間前', text: '分割払いで始めやすい。託児所費用補助もあり産後ママに嬉しい。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -105,13 +77,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 川崎',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

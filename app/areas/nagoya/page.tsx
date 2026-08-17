@@ -21,12 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY LIFE 名古屋',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.7,
-    reviewCount: 16,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '月額制の女性専用パーソナルジム。UNDEUX SUPERBODYのセカンドライン。とても満足しています。' },
-      { author: 'M.S', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月額 17,600円〜',
     trial: '体験レッスンあり',
     features: ['女性専用', '月額制', '食事管理付き'],
@@ -41,12 +35,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 名古屋駅店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'B.L', rating: 5, date: '2週間前', text: '下半身痩せに特化した女性専用パーソナルジム。名古屋駅近く。とても満足しています。' },
-      { author: 'N.T', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '医師監修'],
@@ -61,12 +49,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 名古屋駅店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '2週間前', text: '名駅エリアの女性専用ジム。女性トレーナーのみ在籍。とても満足しています。' },
-      { author: 'O.U', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ'],
@@ -81,12 +63,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 名古屋栄店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 14,
-    reviews: [
-      { author: 'D.N', rating: 5, date: '2週間前', text: 'AI主導20分トレーニング。名古屋栄エリアで低価格。とても満足しています。' },
-      { author: 'P.V', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格'],
@@ -100,12 +76,6 @@ const gyms = [
   },
   {
     name: 'ASPI 名古屋店',
-    rating: 4.5,
-    reviewCount: 10,
-    reviews: [
-      { author: 'E.O', rating: 5, date: '2週間前', text: '全スタッフが米国の難関資格を保持。リーズナブルな料金設定。とても満足しています。' },
-      { author: 'Q.W', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月8回 28,000円〜（税込）',
     trial: '体験レッスンあり',
     features: ['米国資格保持', '低価格', '食事指導あり'],

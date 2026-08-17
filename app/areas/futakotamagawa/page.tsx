@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 二子玉川スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 18,
-    reviews: [
-      { author: 'A.S', rating: 5, date: '2週間前', text: '二子玉川駅から徒歩3分。宅配食プランが便利で食事管理が楽。2ヶ月で-6kg達成できました。' },
-      { author: 'M.K', rating: 5, date: '1ヶ月前', text: 'ニコタマのおしゃれな雰囲気のスタジオ。管理栄養士の毎食指導も選べるのが嬉しい。' },
-      { author: 'Y.H', rating: 4, date: '3週間前', text: '高評価が多い人気店で安心。女性専用なのでリラックスしてトレーニングできます。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '駅徒歩3分', '宅配食無料', '管理栄養士指導', 'パウダールーム完備'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 二子玉川店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 15,
-    reviews: [
-      { author: 'S.N', rating: 5, date: '2週間前', text: '脚やせ特化で太もも-5cm！ニコタマでショッピングついでに通えるのも便利。' },
-      { author: 'H.T', rating: 5, date: '1ヶ月前', text: '医師監修のメソッドで安心。完全個室で集中できます。分割払いで始めやすかった。' },
-      { author: 'A.K', rating: 4, date: '3週間前', text: '産後の体型戻しに通いました。託児所費用の補助があるのが本当にありがたい。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'OUTLINE 二子玉川店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'K.M', rating: 5, date: '1週間前', text: '生涯サポート付きで安心。ベビーサークル完備なので子連れでも大丈夫。' },
-      { author: 'R.K', rating: 5, date: '2週間前', text: '女性専用マシンでのトレーニングが効率的。ニコタマの落ち着いた雰囲気も良い。' },
-      { author: 'N.S', rating: 4, date: '1ヶ月前', text: '卒業後もずっとサポートが受けられるのが決め手。料金もリーズナブルで満足です。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', 'よもぎ蒸し'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 二子玉川店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 11,
-    reviews: [
-      { author: 'T.N', rating: 5, date: '2週間前', text: 'トレーナーが全員女性なので相談しやすい。産後ダイエットで-4kg達成しました。' },
-      { author: 'M.H', rating: 4, date: '1ヶ月前', text: '10年以上の実績で安心。二子玉川の子育てママ仲間から紹介されて入会しました。' },
-      { author: 'E.S', rating: 5, date: '3週間前', text: '食事指導が具体的で分かりやすい。ブライダルコースで理想の体型に近づけました。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット', 'ブライダルコース'],
@@ -105,13 +77,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 二子玉川',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

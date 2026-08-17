@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 代官山スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.9,
-    reviewCount: 22,
-    reviews: [
-      { author: 'A.Y', rating: 5, date: '1週間前', text: '代官山の洗練された空間でトレーニングできるのが嬉しい。宅配食も美味しくて食事管理が楽です。' },
-      { author: 'M.N', rating: 5, date: '2週間前', text: 'パウダールーム・基礎化粧品完備で手ぶらOK。仕事帰りにそのまま通えます。' },
-      { author: 'S.H', rating: 5, date: '1ヶ月前', text: '女性専用なので安心。トレーナーさんが丁寧で2ヶ月で理想の体型に近づけました。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '代官山の高級空間'],
@@ -41,13 +34,6 @@ const gyms = [
   },
   {
     name: 'RIZAP WOMAN 代官山店',
-    rating: 4.7,
-    reviewCount: 18,
-    reviews: [
-      { author: 'K.A', rating: 5, date: '2週間前', text: 'RIZAPの女性専用版。コラーゲンマシンやエステも受けられるのが嬉しい。確実に結果が出ます。' },
-      { author: 'R.T', rating: 5, date: '1ヶ月前', text: '美容と健康を両立できる贅沢なプログラム。代官山のラグジュアリーな空間で至福のひととき。' },
-      { author: 'N.Y', rating: 4, date: '3週間前', text: '料金は高めですが、エステ付きで美しく痩せられる。結果にコミットの安心感。' },
-    ],
     price: '2ヶ月16回 327,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', 'エステ付き', 'コラーゲンマシン', '完全個室', 'ラグジュアリー空間'],
@@ -62,13 +48,6 @@ const gyms = [
   {
     name: 'OUTLINE 代官山店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'Y.M', rating: 5, date: '1週間前', text: '生涯アフターサポートが最大の魅力。代官山のおしゃれな空間で気分よくトレーニングできます。' },
-      { author: 'H.S', rating: 5, date: '2週間前', text: '完全個室で人目を気にせず集中できる。女性専用マシンで効率的に鍛えられます。' },
-      { author: 'T.N', rating: 4, date: '1ヶ月前', text: '料金がリーズナブルなのにサービスが充実。卒業後のサポートも安心。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -83,13 +62,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 恵比寿・代官山店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.6,
-    reviewCount: 16,
-    reviews: [
-      { author: 'S.A', rating: 5, date: '2週間前', text: '太もも痩せメソッドが本当に効果的。代官山駅からも恵比寿駅からもアクセス良好。' },
-      { author: 'M.K', rating: 4, date: '1ヶ月前', text: '医師監修プログラムで安心。下半身のラインが確実に変わりました。' },
-      { author: 'E.T', rating: 5, date: '3週間前', text: '託児所費用補助があるので子育て中でも通いやすい。効果もしっかり実感。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -103,13 +75,6 @@ const gyms = [
   },
   {
     name: 'クレビック 恵比寿・代官山店',
-    rating: 4.5,
-    reviewCount: 10,
-    reviews: [
-      { author: 'C.Y', rating: 5, date: '2週間前', text: '管理栄養士の食事指導が具体的で実践しやすい。代官山エリアで通いやすい立地。' },
-      { author: 'J.M', rating: 4, date: '1ヶ月前', text: '料金がリーズナブルなのにサービスが充実。完全個室で安心してトレーニングできます。' },
-      { author: 'L.K', rating: 5, date: '3週間前', text: '内側と外側の両面からボディメイクしてくれるので効果的。確実に変化を実感。' },
-    ],
     price: '2ヶ月16回 149,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専門', '管理栄養士の食事指導', '完全個室', '手ぶらOK', 'リーズナブル'],

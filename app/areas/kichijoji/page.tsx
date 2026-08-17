@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 吉祥寺店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 18,
-    reviews: [
-      { author: 'S.T', rating: 5, date: '2週間前', text: '吉祥寺駅徒歩1分で最高の立地。太もも-4cm達成で脚が細くなったと周りに言われます！' },
-      { author: 'H.K', rating: 5, date: '1ヶ月前', text: '医師とトレーナー共同開発の脚やせメソッドが効果的。完全個室で人目を気にせずトレーニング。' },
-      { author: 'A.M', rating: 4, date: '3週間前', text: '月々5,545円〜の分割払いで始めやすい。吉祥寺の帰りにサクッと通えるのが良い。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '駅徒歩1分', '下半身特化', '医師×トレーナー共同開発', '完全個室'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 吉祥寺店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 15,
-    reviews: [
-      { author: 'K.S', rating: 5, date: '1週間前', text: '生涯アフターサポートが決め手。完全個室でベビーサークルもあり、子連れで通えました。' },
-      { author: 'R.N', rating: 5, date: '2週間前', text: '女性専用マシンが効率的。よもぎ蒸しも気持ちよくてリラックスできます。' },
-      { author: 'N.H', rating: 4, date: '1ヶ月前', text: '吉祥寺で生涯サポート付きのジムは貴重。リバウンドの心配がなくなりました。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', 'よもぎ蒸し'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 吉祥寺スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 16,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '宅配食が美味しくて食事管理が楽。吉祥寺の落ち着いた環境で通いやすいです。' },
-      { author: 'M.S', rating: 5, date: '1ヶ月前', text: '美尻・脚痩せなど目的に合わせたトレーニングが受けられる。2ヶ月で-5kg達成！' },
-      { author: 'Y.N', rating: 4, date: '3週間前', text: 'パウダールーム完備で手ぶらOK。吉祥寺でのショッピング帰りに通えて便利。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '宅配食無料', 'パウダールーム完備', '目的別トレーニング', '手ぶらOK'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 吉祥寺店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'T.H', rating: 5, date: '1週間前', text: 'トレーナーが全員女性なのが安心。女性ならではの悩みに寄り添ってくれます。' },
-      { author: 'M.A', rating: 4, date: '2週間前', text: '10年以上の実績でノウハウが豊富。吉祥寺の街を散歩しながら通えるのも良い。' },
-      { author: 'E.T', rating: 5, date: '1ヶ月前', text: '食事指導が具体的で分かりやすい。無理なく続けられるプランを提案してくれました。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', '吉祥寺駅近'],
@@ -105,13 +77,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 吉祥寺',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 秋葉原店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 13,
-    reviews: [
-      { author: 'A.N', rating: 5, date: '1週間前', text: '生涯アフターサポートが心強い。秋葉原駅から近くて通いやすいです。' },
-      { author: 'M.T', rating: 5, date: '2週間前', text: '完全個室で女性専用。ベビーサークルもあるので子連れでも安心。' },
-      { author: 'K.S', rating: 4, date: '1ヶ月前', text: '料金がリーズナブルで質が高い。女性専用マシンが使いやすいです。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -41,13 +34,6 @@ const gyms = [
   },
   {
     name: 'Bodies 丸の内店',
-    rating: 4.5,
-    reviewCount: 22,
-    reviews: [
-      { author: 'Y.K', rating: 5, date: '2週間前', text: '月会費がリーズナブル。ゲルマニウム温浴も気持ちいい。秋葉原からもアクセスしやすいです。' },
-      { author: 'H.M', rating: 4, date: '1ヶ月前', text: '女性専用で安心。サーキットトレーニングが1回30分で手軽に続けられます。' },
-      { author: 'T.S', rating: 4, date: '3週間前', text: '運動初心者でも安心。スタッフさんが丁寧にサポートしてくれます。' },
-    ],
     price: '月会費 5,970円〜（税込）',
     trial: '無料体験あり',
     features: ['女性専用', 'サーキットトレーニング', 'ゲルマニウム温浴', '駅近', 'リーズナブル'],
@@ -61,13 +47,6 @@ const gyms = [
   },
   {
     name: '24/7 Workout 秋葉原・神田店',
-    rating: 4.5,
-    reviewCount: 18,
-    reviews: [
-      { author: 'F.N', rating: 5, date: '1週間前', text: '3食食べて痩せられるのが嬉しい。深夜まで営業しているので仕事帰りに通えます。' },
-      { author: 'G.K', rating: 4, date: '2週間前', text: '全額返金保証があるので安心して始められた。トレーナーの質も高い。' },
-      { author: 'B.T', rating: 4, date: '1ヶ月前', text: '秋葉原・神田エリアで通いやすい立地。完全個室で集中できます。' },
-    ],
     price: '2ヶ月16回 257,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '完全個室', '深夜営業', '3食食べるダイエット', '全額返金保証'],
@@ -82,13 +61,6 @@ const gyms = [
   {
     name: 'かたぎり塾 秋葉原店',
     officialUrl: 'https://katagirijuku.jp/',
-    rating: 4.4,
-    reviewCount: 11,
-    reviews: [
-      { author: 'L.M', rating: 5, date: '2週間前', text: '月額制で始めやすい。AI食事指導が便利で続けやすいです。' },
-      { author: 'P.K', rating: 4, date: '1ヶ月前', text: '秋葉原駅から近い。リーズナブルな料金で満足度が高い。' },
-      { author: 'D.S', rating: 4, date: '3週間前', text: '女性トレーナーもいて安心。月4回から気軽に始められます。' },
-    ],
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '秋葉原駅近'],
@@ -103,13 +75,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 秋葉原店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.3,
-    reviewCount: 16,
-    reviews: [
-      { author: 'W.T', rating: 5, date: '1週間前', text: '1回20分で効率的。月12,000円は破格。忙しい日々でも通いやすい。' },
-      { author: 'E.M', rating: 4, date: '2週間前', text: 'AI主導で毎回最適化されるのが良い。秋葉原駅から近い。' },
-      { author: 'C.K', rating: 4, date: '1ヶ月前', text: '女性利用者が多くて安心。短時間で効果を実感できます。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '秋葉原駅近'],

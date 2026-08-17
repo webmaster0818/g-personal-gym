@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 錦糸町店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '1週間前', text: '生涯アフターサポート付きで安心。錦糸町で女性専用パーソナルジムは貴重です。' },
-      { author: 'M.S', rating: 5, date: '2週間前', text: '完全個室でベビーサークルも。子連れで通えるのがありがたい。' },
-      { author: 'K.N', rating: 4, date: '1ヶ月前', text: '女性専用マシンで効率よくトレーニング。料金もリーズナブル。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 錦糸町店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 13,
-    reviews: [
-      { author: 'H.T', rating: 5, date: '2週間前', text: '下半身特化プログラムで太もも痩せに成功。医師監修なので安心感がある。' },
-      { author: 'S.K', rating: 5, date: '1ヶ月前', text: '分割払いで月々5,545円から始められる。錦糸町駅からアクセス良好。' },
-      { author: 'N.M', rating: 4, date: '3週間前', text: '託児所費用補助がありがたい。産後の体型戻しに効果を実感中。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'かたぎり塾 錦糸町店',
     officialUrl: 'https://katagirijuku.jp/',
-    rating: 4.5,
-    reviewCount: 11,
-    reviews: [
-      { author: 'L.K', rating: 5, date: '1週間前', text: '月額制で気軽に始められる。AI食事指導も面白くて継続しやすい。' },
-      { author: 'P.T', rating: 4, date: '2週間前', text: '錦糸町駅から近い。リーズナブルな料金で質の高いトレーニング。' },
-      { author: 'D.S', rating: 4, date: '1ヶ月前', text: '女性トレーナーも在籍。月4回プランから無理なく通えます。' },
-    ],
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '錦糸町駅近'],
@@ -83,13 +62,6 @@ const gyms = [
   },
   {
     name: 'Apple GYM 錦糸町店',
-    rating: 4.5,
-    reviewCount: 10,
-    reviews: [
-      { author: 'W.N', rating: 5, date: '2週間前', text: '海外式ボディメイクが新鮮。見た目の変化が分かりやすいです。' },
-      { author: 'E.M', rating: 4, date: '1ヶ月前', text: '料金がリーズナブル。トレーナーさんが明るくて楽しい時間。' },
-      { author: 'C.K', rating: 4, date: '3週間前', text: '錦糸町で本格パーソナルジム。8回から気軽に始められるのが良い。' },
-    ],
     price: '8回 49,280円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '海外式ボディメイク', '完全個室', 'リーズナブル', '芸能人御用達'],
@@ -104,13 +76,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 錦糸町店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.3,
-    reviewCount: 16,
-    reviews: [
-      { author: 'F.T', rating: 5, date: '1週間前', text: '1回20分で月12,000円。コスパ最強のパーソナルジムです。' },
-      { author: 'G.K', rating: 4, date: '2週間前', text: 'AI主導で効率的。錦糸町駅から近くて通いやすい。' },
-      { author: 'B.M', rating: 4, date: '1ヶ月前', text: '女性利用者が多くて安心。短時間でしっかり効果を感じます。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '錦糸町駅近'],

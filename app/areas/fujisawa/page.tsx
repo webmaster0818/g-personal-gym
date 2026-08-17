@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 藤沢駅前店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'K.M', rating: 5, date: '1週間前', text: '藤沢駅から徒歩4分。生涯アフターサポートが決め手でした。完全個室で安心。' },
-      { author: 'R.S', rating: 5, date: '2週間前', text: '女性専用マシンで効率的にトレーニング。トレーナーが女性のボディメイクに詳しい。' },
-      { author: 'N.T', rating: 4, date: '1ヶ月前', text: 'ベビーサークル完備で子連れOK。湘南エリアで女性専用のジムは貴重です。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '駅徒歩4分'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY LIFE 藤沢店',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.6,
-    reviewCount: 11,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '藤沢駅から徒歩2分。月額制で始めやすく、マシンピラティスの設備もあるのが嬉しい。' },
-      { author: 'M.H', rating: 4, date: '1ヶ月前', text: '女性専用で安心。洗練された雰囲気のスタジオでモチベーションが上がります。' },
-      { author: 'Y.N', rating: 4, date: '3週間前', text: '月額1万円台から通えるのが魅力。無理なく続けられる料金設定です。' },
-    ],
     price: '月額 19,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['女性専用', '月額制', 'マシンピラティス', '駅徒歩2分', '1万円台〜'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 藤沢店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'T.S', rating: 5, date: '2週間前', text: 'トレーナーが全員女性で安心。藤沢駅から徒歩4分で通いやすいです。' },
-      { author: 'M.K', rating: 4, date: '1ヶ月前', text: '完全プライベート空間で60分間集中してトレーニング。湘南エリアで貴重な女性専用ジム。' },
-      { author: 'E.N', rating: 5, date: '3週間前', text: '産後ダイエットで-4kg達成。女性トレーナーだからこその寄り添い力が違います。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '完全プライベート', '産後対応', '藤沢駅近'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 藤沢店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.5,
-    reviewCount: 10,
-    reviews: [
-      { author: 'S.N', rating: 5, date: '2週間前', text: '湘南エリアで脚やせ特化のジムは嬉しい。太もも-4cm達成で夏の水着が楽しみ。' },
-      { author: 'H.T', rating: 5, date: '1ヶ月前', text: '医師監修メソッドで安心。完全個室で集中できます。分割払いで始めやすい。' },
-      { author: 'A.M', rating: 4, date: '3週間前', text: '藤沢で女性専用の完全個室ジムは選択肢が少ないので貴重。結果も出ました。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '完全個室', '藤沢駅近'],
@@ -105,13 +77,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 藤沢',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

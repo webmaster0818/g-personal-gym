@@ -278,6 +278,21 @@ export function GymCard({ gym, index }: GymCardProps) {
           <a href={gym.officialUrl || `https://www.google.com/search?q=${encodeURIComponent(gym.name + ' 公式')}`} target="_blank" rel={gym.officialUrl ? 'noopener noreferrer sponsored' : 'noopener noreferrer'} className="inline-block bg-accent text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-accent-dark transition">
             公式サイトを見る
           </a>
+          {/*
+            口コミは当サイトでは掲載せず、Googleマップの実際の口コミへ誘導する。
+            ⚠️ 以前ここには編集部が用意した口コミ文が並んでいたが、
+               同じ本文が別エリア・別ジムにも使い回されており、実在の利用者の声ではなかった。
+               実在の口コミを転載するにはGoogleの利用規約上の制約があるため、
+               「当サイトには載せず、一次情報へ送る」形にしている。
+          */}
+          <a
+            href={`https://www.google.com/maps/search/${encodeURIComponent(gym.name)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-warm-border text-warm-gray px-5 py-2.5 rounded-full text-sm font-medium hover:text-foreground transition"
+          >
+            Googleマップで口コミを見る
+          </a>
           {/* ブランド評判ページへの内部リンク。
               ブランドページ6本が90日間表示ゼロ・5本がインデックス未登録だったのは、
               エリアページ103本のどこからもリンクされておらず孤立していたため。 */}

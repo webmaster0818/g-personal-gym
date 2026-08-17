@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 北千住店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 15,
-    reviews: [
-      { author: 'A.M', rating: 5, date: '1週間前', text: '下半身特化のプログラムで太もも-4cm達成！医師監修で安心感があります。' },
-      { author: 'M.K', rating: 5, date: '2週間前', text: '北千住駅から近くて通いやすい。分割払いで月々5,545円から始められるのも嬉しい。' },
-      { author: 'S.T', rating: 4, date: '1ヶ月前', text: '託児所費用補助があるので子育て中でも安心。産後ダイエットに最適です。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 北千住店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 12,
-    reviews: [
-      { author: 'R.N', rating: 5, date: '2週間前', text: '生涯アフターサポート付きでリバウンドの心配なし。北千住で女性専用は嬉しい。' },
-      { author: 'K.H', rating: 5, date: '1ヶ月前', text: '完全個室でベビーサークルもある。子連れでも安心して通えます。' },
-      { author: 'Y.S', rating: 4, date: '3週間前', text: '女性専用マシンで効率的。料金もリーズナブルで満足しています。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -62,13 +48,6 @@ const gyms = [
   },
   {
     name: 'Apple GYM 北千住店',
-    rating: 4.6,
-    reviewCount: 14,
-    reviews: [
-      { author: 'W.M', rating: 5, date: '1週間前', text: '海外式ボディメイクで見た目が変わる。料金もリーズナブルで通いやすい。' },
-      { author: 'E.K', rating: 4, date: '2週間前', text: '芸能人も通うジム。トレーナーさんが明るくて楽しいトレーニング時間。' },
-      { author: 'C.N', rating: 5, date: '1ヶ月前', text: '北千住で本格的なパーソナルジムが見つかって嬉しい。効果もしっかり実感。' },
-    ],
     price: '8回 49,280円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '海外式ボディメイク', '完全個室', 'リーズナブル', '芸能人御用達'],
@@ -83,13 +62,6 @@ const gyms = [
   {
     name: 'かたぎり塾 北千住店',
     officialUrl: 'https://katagirijuku.jp/',
-    rating: 4.4,
-    reviewCount: 10,
-    reviews: [
-      { author: 'L.T', rating: 5, date: '2週間前', text: '月額制で始めやすい。AI食事指導も便利で続けやすいです。' },
-      { author: 'P.K', rating: 4, date: '1ヶ月前', text: '北千住駅から近い。リーズナブルな料金で質が高い。' },
-      { author: 'D.M', rating: 4, date: '3週間前', text: '月4回プランから気軽にスタート。着実に体が変わっています。' },
-    ],
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '北千住駅近'],
@@ -104,13 +76,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 北千住店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.3,
-    reviewCount: 15,
-    reviews: [
-      { author: 'F.S', rating: 5, date: '1週間前', text: '1回20分で効率的！月12,000円はコスパ最強。北千住で気軽に通えます。' },
-      { author: 'G.M', rating: 4, date: '2週間前', text: 'AI主導で毎回最適なトレーニング。女性利用者が多い安心感。' },
-      { author: 'B.T', rating: 4, date: '1ヶ月前', text: '短時間で効果的。忙しい毎日でも続けられるのが嬉しい。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '北千住駅近'],

@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 大宮店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 16,
-    reviews: [
-      { author: 'S.T', rating: 5, date: '2週間前', text: '大宮で脚やせ特化のジムは嬉しい。太もも-5cm達成でスキニーが履けるように！' },
-      { author: 'H.K', rating: 5, date: '1ヶ月前', text: '医師監修メソッドで安心。完全個室で集中できる。産後ママへの託児所費用補助も嬉しい。' },
-      { author: 'A.M', rating: 4, date: '3週間前', text: '75分×16回で199,650円〜。埼玉エリアでは良心的な価格だと思います。' },
-    ],
     price: '2ヶ月16回 199,650円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 大宮店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'K.S', rating: 5, date: '1週間前', text: '生涯無料24hアフターサポートが決め手。大宮で女性専用の完全個室ジムは貴重です。' },
-      { author: 'R.N', rating: 5, date: '2週間前', text: '8回92,400円〜とリーズナブルに始められるのが嬉しい。実績豊富なトレーナーの指導。' },
-      { author: 'N.H', rating: 4, date: '1ヶ月前', text: 'ベビーサークル完備で子連れOK。卒業後もLINEで相談できるので安心。' },
-    ],
     price: '8回 92,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', '8回から始められる', '24hサポート'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 大宮スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 15,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '宅配食が美味しくて食事管理が楽。大宮駅からも近く通いやすいです。' },
-      { author: 'M.S', rating: 5, date: '1ヶ月前', text: '埼玉で女性専用の高品質なジムは少ないので嬉しい。手ぶらで通えるのが最高。' },
-      { author: 'Y.N', rating: 4, date: '3週間前', text: 'パウダールーム完備。仕事帰りにそのまま通えて、大宮で買い物もできて便利。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '宅配食無料', 'パウダールーム完備', '手ぶらOK', '大宮駅近'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 大宮店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'T.H', rating: 5, date: '1週間前', text: 'トレーナーが全員女性。大宮で女性専用ジムは選択肢が少ないので助かります。' },
-      { author: 'M.A', rating: 4, date: '2週間前', text: '10年以上の実績で安心。食事指導も具体的で分かりやすいです。' },
-      { author: 'E.T', rating: 5, date: '1ヶ月前', text: '産後ダイエットコースで-5kg。女性トレーナーだからこそ相談しやすかった。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット', 'ブライダルコース'],
@@ -105,13 +77,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 大宮',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

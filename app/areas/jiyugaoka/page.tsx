@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 自由が丘スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 20,
-    reviews: [
-      { author: 'A.M', rating: 5, date: '2週間前', text: '自由が丘駅から徒歩1分！通いやすさ抜群。宅配食が美味しくて2ヶ月で-6kg達成できました。' },
-      { author: 'M.N', rating: 5, date: '1ヶ月前', text: '集中コース終了後96%が目標体重達成というだけあって、結果が出ます。管理栄養士監修の食事指導も的確。' },
-      { author: 'Y.K', rating: 4, date: '3週間前', text: 'おしゃれな自由が丘の雰囲気に合った綺麗なスタジオ。手ぶらで通えるのが嬉しい。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '駅徒歩1分', '宅配食無料', '管理栄養士監修', '目標達成率96%'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 自由が丘店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.7,
-    reviewCount: 15,
-    reviews: [
-      { author: 'T.S', rating: 5, date: '1週間前', text: 'トレーナーもお客さんも全員女性。キッズスペース併設で産後ママでも安心して通えます。' },
-      { author: 'M.H', rating: 5, date: '2週間前', text: '自由が丘駅徒歩4分で通いやすい。女性特有の悩みに寄り添った指導が魅力です。' },
-      { author: 'E.K', rating: 4, date: '1ヶ月前', text: '10年以上の実績でノウハウが豊富。食事指導も具体的で分かりやすかったです。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', 'キッズスペース', '産後ダイエット', '自由が丘駅近'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'OUTLINE 自由が丘店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 13,
-    reviews: [
-      { author: 'K.Y', rating: 5, date: '2週間前', text: '生涯アフターサポートが決め手。卒業後もLINEで相談できるのが心強いです。' },
-      { author: 'R.S', rating: 5, date: '1ヶ月前', text: '完全個室でベビーサークルもあり、子連れで安心。女性専用マシンが効果的です。' },
-      { author: 'N.T', rating: 4, date: '3週間前', text: '自由が丘のおしゃれな雰囲気に合った清潔感のあるジム。料金もリーズナブル。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 自由が丘店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.6,
-    reviewCount: 14,
-    reviews: [
-      { author: 'S.M', rating: 5, date: '2週間前', text: '太もも-4cm、ヒップアップも実感。下半身に悩んでいたのが嘘みたいです。' },
-      { author: 'H.K', rating: 5, date: '1ヶ月前', text: '医師とトレーナーの共同開発メソッドが信頼できる。月々5,545円〜の分割払いで始めやすい。' },
-      { author: 'A.T', rating: 4, date: '3週間前', text: '自由が丘の街並みを楽しみながら通えるのが良い。完全個室で集中できます。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -104,13 +76,6 @@ const gyms = [
   },
   {
     name: 'パーソナルジムNICO 自由が丘',
-    rating: 4.5,
-    reviewCount: 10,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '1週間前', text: '加圧トレーニングとピラティスを組み合わせられるのが魅力。お子様連れOKも嬉しい。' },
-      { author: 'K.S', rating: 4, date: '2週間前', text: '女性専門のスタジオで安心。プログラムが多彩で飽きずに続けられます。' },
-      { author: 'J.N', rating: 4, date: '1ヶ月前', text: '自由が丘の隠れ家的なジム。アットホームな雰囲気で通いやすいです。' },
-    ],
     price: '月4回 35,200円〜（税込）',
     trial: '体験レッスンあり',
     features: ['女性専門', '加圧トレーニング', 'ピラティス', 'お子様連れOK', 'アットホーム'],
@@ -125,13 +90,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 自由が丘',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

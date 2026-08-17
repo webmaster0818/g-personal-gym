@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 五反田店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'A.H', rating: 5, date: '1週間前', text: 'トレーナーも全員女性で安心して通えます。10年以上の実績があり指導が的確。' },
-      { author: 'M.Y', rating: 5, date: '2週間前', text: '女性らしい柔らかいボディラインを目指せるのが嬉しい。食事指導も具体的です。' },
-      { author: 'K.S', rating: 4, date: '1ヶ月前', text: '五反田駅から近くて通いやすい。ブライダルコースで通っています。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', 'ブライダルコース'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 五反田店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 12,
-    reviews: [
-      { author: 'R.T', rating: 5, date: '2週間前', text: '生涯アフターサポートが心強い。リバウンドの不安がなくなりました。' },
-      { author: 'S.K', rating: 5, date: '1ヶ月前', text: '完全個室で子連れOK。ベビーサークルがあるので安心です。' },
-      { author: 'N.H', rating: 4, date: '3週間前', text: '女性専用マシンで効率的にトレーニング。卒業後のサポートが充実。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -62,13 +48,6 @@ const gyms = [
   },
   {
     name: '24/7 Workout 五反田店',
-    rating: 4.5,
-    reviewCount: 20,
-    reviews: [
-      { author: 'F.M', rating: 5, date: '1週間前', text: '3食食べて痩せるメソッドが画期的。深夜まで営業で仕事帰りに通えます。' },
-      { author: 'G.T', rating: 4, date: '2週間前', text: '全額返金保証があるので安心。トレーナーの質が高いです。' },
-      { author: 'B.K', rating: 4, date: '1ヶ月前', text: '完全個室で人目を気にせずトレーニング。五反田は職場から近くて便利。' },
-    ],
     price: '2ヶ月16回 257,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '完全個室', '深夜営業', '3食食べるダイエット', '全額返金保証'],
@@ -83,13 +62,6 @@ const gyms = [
   {
     name: 'かたぎり塾 五反田店',
     officialUrl: 'https://katagirijuku.jp/',
-    rating: 4.4,
-    reviewCount: 13,
-    reviews: [
-      { author: 'L.N', rating: 5, date: '2週間前', text: '月額制で気軽に始められる。AI食事指導も分かりやすくて続けやすい。' },
-      { author: 'P.S', rating: 4, date: '1ヶ月前', text: '五反田駅から近い。リーズナブルな料金設定が魅力的です。' },
-      { author: 'D.H', rating: 4, date: '3週間前', text: '無理のないペースで体が変わってきた。トレーナーさんが親切。' },
-    ],
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '五反田駅近'],
@@ -104,13 +76,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 五反田店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.3,
-    reviewCount: 17,
-    reviews: [
-      { author: 'W.M', rating: 5, date: '1週間前', text: '1回20分で終わるので忙しくても通える。月12,000円〜は本当にコスパが良い。' },
-      { author: 'E.K', rating: 4, date: '2週間前', text: 'AI主導のトレーニングが効率的。女性利用者が多いので安心です。' },
-      { author: 'C.T', rating: 4, date: '1ヶ月前', text: '五反田駅から近い。短時間集中型で結果が出ます。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '五反田駅近'],

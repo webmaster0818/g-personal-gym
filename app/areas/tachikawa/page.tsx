@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 立川店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 16,
-    reviews: [
-      { author: 'K.T', rating: 5, date: '1週間前', text: '生涯アフターサポートが決め手。立川で女性専用の完全個室ジムは貴重です。' },
-      { author: 'R.M', rating: 5, date: '2週間前', text: 'よもぎ蒸しや遺伝子検査など無料サービスが充実。女性専用マシンも効率的。' },
-      { author: 'N.S', rating: 4, date: '1ヶ月前', text: 'ベビーサークル完備で子連れOK。立川は子育て世帯も多いので助かります。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', '遺伝子検査', 'よもぎ蒸し'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 立川店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'S.H', rating: 5, date: '2週間前', text: '太もも-4cm達成！立川で脚やせ特化のジムは嬉しい。医師監修メソッドで信頼感あり。' },
-      { author: 'H.N', rating: 5, date: '1ヶ月前', text: '完全個室で集中できる。分割払いで月々5,545円〜始められるのも魅力。' },
-      { author: 'A.T', rating: 4, date: '3週間前', text: '産後の下半身太りに悩んでいたが、見事に解消。託児所費用補助も助かりました。' },
-    ],
     price: '2ヶ月16回 199,650円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 立川店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 13,
-    reviews: [
-      { author: 'T.K', rating: 5, date: '1週間前', text: 'トレーナーが全員女性で安心。立川駅からのアクセスも良く通いやすいです。' },
-      { author: 'M.O', rating: 4, date: '2週間前', text: '10年以上の実績で信頼できる。食事指導も無理のない範囲で提案してくれます。' },
-      { author: 'E.H', rating: 5, date: '1ヶ月前', text: '産後ダイエットコースで-5kg。女性トレーナーだからこそ分かる悩みに寄り添ってくれました。' },
-    ],
     price: '8回 92,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット', 'リーズナブル'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY LIFE 立川スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.6,
-    reviewCount: 10,
-    reviews: [
-      { author: 'A.N', rating: 5, date: '2週間前', text: '月額制で通いやすい。プロのトレーナーがマンツーマンで指導してくれて効果的。' },
-      { author: 'M.S', rating: 4, date: '1ヶ月前', text: '継続割で長く通うほどお得。立川で女性専用の月額制ジムは貴重です。' },
-      { author: 'Y.K', rating: 4, date: '3週間前', text: 'ライフスタイルに合わせて回数を選べるのが便利。月8回プランで通っています。' },
-    ],
     price: '月8回 59,400円〜（税込）',
     trial: '体験レッスンあり',
     features: ['女性専用', '月額制', '継続割あり', 'マンツーマン', '立川駅近'],
@@ -105,13 +77,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 立川',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 8,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '1回約20分なので仕事帰りでも通いやすい。AIマシンが負荷を自動で調整してくれるのが新鮮でした。' },
-      { author: 'M.T', rating: 4, date: '3週間前', text: '月額制で予算が読みやすい。女性の利用者が多く、安心して通えます。' },
-      { author: 'R.S', rating: 4, date: '1ヶ月前', text: '短時間でしっかり効くトレーニング。続けやすさ重視の人に向いています。' },
-    ],
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],

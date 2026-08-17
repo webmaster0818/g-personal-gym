@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 目黒店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.8,
-    reviewCount: 19,
-    reviews: [
-      { author: 'A.T', rating: 5, date: '1週間前', text: '太もも痩せプログラムが効果的。2ヶ月で太もも-4cm達成しました。医師監修なので安心。' },
-      { author: 'M.S', rating: 5, date: '2週間前', text: '分割払いで月々5,545円から始められるので負担が少ない。目黒駅からも近いです。' },
-      { author: 'K.H', rating: 4, date: '1ヶ月前', text: '託児所費用補助があるので子育て中でも安心。下半身のラインが確実に変わりました。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 目黒店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'R.K', rating: 5, date: '2週間前', text: '生涯サポートが決め手。リバウンドの心配がないのが安心です。' },
-      { author: 'S.M', rating: 5, date: '1ヶ月前', text: '完全個室で女性専用。ベビーサークルもあって子連れママに最適。' },
-      { author: 'N.T', rating: 4, date: '3週間前', text: '料金がリーズナブルなのに質の高いトレーニングが受けられます。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -62,13 +48,6 @@ const gyms = [
   },
   {
     name: 'Bodies 目黒店',
-    rating: 4.5,
-    reviewCount: 20,
-    reviews: [
-      { author: 'Y.N', rating: 5, date: '1週間前', text: 'ABCクッキングスタジオのボディ版。女性専用で安心。サーキットトレーニングが手軽で続けやすい。' },
-      { author: 'H.K', rating: 4, date: '2週間前', text: '月会費がリーズナブル。ゲルマニウム温浴も気持ちいい。目黒駅直結で便利。' },
-      { author: 'T.M', rating: 4, date: '1ヶ月前', text: '運動が苦手でも通えるのが良い。スタッフさんが親切にサポートしてくれます。' },
-    ],
     price: '月会費 5,970円〜（税込）',
     trial: '無料体験あり',
     features: ['女性専用', 'サーキットトレーニング', 'ゲルマニウム温浴', '駅直結', 'リーズナブル'],
@@ -83,13 +62,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 目黒スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.7,
-    reviewCount: 16,
-    reviews: [
-      { author: 'C.S', rating: 5, date: '2週間前', text: '宅配食が美味しくて食事管理がストレスフリー。2ヶ月で-5kg達成しました。' },
-      { author: 'L.M', rating: 5, date: '1ヶ月前', text: 'パウダールーム完備で仕事帰りに通いやすい。基礎化粧品も揃っているのが嬉しい。' },
-      { author: 'P.T', rating: 4, date: '3週間前', text: '女性専用なので安心。トレーナーさんの質が高くモチベーションが上がります。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '目黒駅近'],
@@ -104,13 +76,6 @@ const gyms = [
   {
     name: 'かたぎり塾 目黒店',
     officialUrl: 'https://katagirijuku.jp/',
-    rating: 4.4,
-    reviewCount: 15,
-    reviews: [
-      { author: 'F.K', rating: 5, date: '1週間前', text: '月額制で始めやすい。AI食事指導も面白くて続けやすいです。' },
-      { author: 'G.N', rating: 4, date: '2週間前', text: '目黒駅から近くて通いやすい。リーズナブルな料金が魅力。' },
-      { author: 'B.S', rating: 4, date: '1ヶ月前', text: '月4回プランから気軽に始められる。着実に体が変わってきました。' },
-    ],
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '目黒駅近'],
@@ -125,13 +90,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 目黒店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.3,
-    reviewCount: 18,
-    reviews: [
-      { author: 'D.M', rating: 5, date: '2週間前', text: '1回20分で効率的。忙しくても無理なく通えます。月4回12,000円は本当に安い。' },
-      { author: 'E.T', rating: 4, date: '1ヶ月前', text: 'AI主導で毎回最適な負荷設定。女性利用者が多くて安心です。' },
-      { author: 'W.K', rating: 4, date: '3週間前', text: '目黒駅からすぐ。短時間で効果的なトレーニングができるのが魅力。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '目黒駅近'],

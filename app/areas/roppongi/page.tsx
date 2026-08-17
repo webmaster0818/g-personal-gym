@@ -21,12 +21,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 六本木店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '医師×トレーナー共同開発の脚やせメソッド。六本木駅から好アクセス。とても満足しています。' },
-      { author: 'M.S', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '医師監修'],
@@ -40,12 +34,6 @@ const gyms = [
   },
   {
     name: 'クレビック 六本木店',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'B.L', rating: 5, date: '2週間前', text: '女性専門パーソナルジム。管理栄養士による食事指導付き。とても満足しています。' },
-      { author: 'N.T', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月16回 149,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専門', '管理栄養士の食事指導', '完全個室'],
@@ -59,12 +47,6 @@ const gyms = [
   },
   {
     name: 'BEYOND 六本木店',
-    rating: 4.7,
-    reviewCount: 16,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '2週間前', text: 'コンテスト入賞者多数在籍のハイクオリティジム。女性利用者も多い。とても満足しています。' },
-      { author: 'O.U', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '16回 281,600円〜（税込）',
     trial: '体験レッスンあり',
     features: ['コンテスト入賞トレーナー', '完全個室', '食事指導あり'],
@@ -79,12 +61,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 六本木店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 14,
-    reviews: [
-      { author: 'D.N', rating: 5, date: '2週間前', text: 'AI主導20分トレーニング。六本木で気軽に通える低価格ジム。とても満足しています。' },
-      { author: 'P.V', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格'],
@@ -98,12 +74,6 @@ const gyms = [
   },
   {
     name: 'eviGym 六本木店',
-    rating: 4.5,
-    reviewCount: 10,
-    reviews: [
-      { author: 'E.O', rating: 5, date: '2週間前', text: '利用者の8割が女性。早朝7:30から夜22:00まで営業。幅広い目的に対応。とても満足しています。' },
-      { author: 'Q.W', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月額制（要問合せ）',
     trial: '体験レッスンあり',
     features: ['女性利用者8割', '早朝対応', '柔軟な予約'],

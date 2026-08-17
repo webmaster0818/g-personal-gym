@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 中目黒店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.8,
-    reviewCount: 16,
-    reviews: [
-      { author: 'A.M', rating: 5, date: '1週間前', text: '生涯アフターサポート付きでリバウンドの心配なし。中目黒の落ち着いた雰囲気の中でトレーニングできます。' },
-      { author: 'K.S', rating: 5, date: '2週間前', text: '完全個室で子連れOK。ベビーサークルがあるので安心して通えます。' },
-      { author: 'Y.T', rating: 4, date: '1ヶ月前', text: '女性専用マシンで効果的にトレーニング。卒業後のサポートが充実しています。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -41,13 +34,6 @@ const gyms = [
   },
   {
     name: 'zen place pilates 中目黒スタジオ',
-    rating: 4.6,
-    reviewCount: 19,
-    reviews: [
-      { author: 'M.H', rating: 5, date: '2週間前', text: 'ピラティスを取り入れたトレーニングで姿勢が劇的に改善。中目黒のおしゃれな空間で心もリフレッシュ。' },
-      { author: 'S.K', rating: 4, date: '1ヶ月前', text: '体の歪みを整えながらトレーニングできるのが魅力。インナーマッスルが鍛えられます。' },
-      { author: 'R.N', rating: 5, date: '3週間前', text: 'マシンピラティスが効果的。女性インストラクターが多くて安心です。' },
-    ],
     price: '月4回 14,520円〜（税込）',
     trial: '体験レッスン1,000円',
     features: ['女性専用プランあり', 'ピラティス専門', '姿勢改善', 'マシンピラティス', '中目黒駅近'],
@@ -62,13 +48,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 中目黒店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'H.A', rating: 5, date: '2週間前', text: '下半身痩せに特化していて確実に効果が出る。中目黒は恵比寿からも近くて通いやすい。' },
-      { author: 'N.M', rating: 5, date: '1ヶ月前', text: '医師監修のメソッドが安心。太もも-4cm達成できました！' },
-      { author: 'T.K', rating: 4, date: '3週間前', text: '託児所費用補助があるので産後ママにはありがたいです。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -83,13 +62,6 @@ const gyms = [
   {
     name: 'かたぎり塾 中目黒店',
     officialUrl: 'https://katagirijuku.jp/',
-    rating: 4.5,
-    reviewCount: 12,
-    reviews: [
-      { author: 'L.S', rating: 5, date: '1週間前', text: '月額制で始めやすくて続けやすい。AI食事指導も参考になります。' },
-      { author: 'P.M', rating: 4, date: '2週間前', text: '中目黒駅から近くて通いやすい。トレーナーさんの質も高いです。' },
-      { author: 'D.T', rating: 4, date: '1ヶ月前', text: '無理なく通えるペースで体が変わってきた。月額制なのがいい。' },
-    ],
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '中目黒駅近'],
@@ -103,13 +75,6 @@ const gyms = [
   },
   {
     name: 'Apple GYM 中目黒店',
-    rating: 4.5,
-    reviewCount: 10,
-    reviews: [
-      { author: 'W.K', rating: 5, date: '2週間前', text: '海外式ボディメイクで女性らしいシルエットに。料金もリーズナブルで通いやすい。' },
-      { author: 'E.H', rating: 4, date: '1ヶ月前', text: '中目黒駅から近くて便利。トレーナーさんが明るくて楽しくトレーニングできます。' },
-      { author: 'C.N', rating: 4, date: '3週間前', text: '芸能人も通っているジムだけあって質が高い。見た目の変化がわかりやすい。' },
-    ],
     price: '8回 49,280円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '海外式ボディメイク', '完全個室', 'リーズナブル', '芸能人御用達'],

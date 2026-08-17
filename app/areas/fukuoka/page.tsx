@@ -21,12 +21,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 福岡天神店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 14,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '天神エリアの女性専用パーソナルジム。下半身痩せに特化。とても満足しています。' },
-      { author: 'M.S', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '医師監修'],
@@ -41,12 +35,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 博多店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'B.L', rating: 5, date: '2週間前', text: '女性トレーナーのみ在籍の女性専用ジム。博多駅エリア。とても満足しています。' },
-      { author: 'N.T', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ'],
@@ -61,12 +49,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY LIFE 福岡',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.6,
-    reviewCount: 10,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '2週間前', text: '月額制の女性専用パーソナルジム。福岡エリアで展開。とても満足しています。' },
-      { author: 'O.U', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月額 17,600円〜',
     trial: '体験レッスンあり',
     features: ['女性専用', '月額制', '食事管理付き'],
@@ -80,12 +62,6 @@ const gyms = [
   },
   {
     name: 'with U（ウィズユー）',
-    rating: 4.5,
-    reviewCount: 8,
-    reviews: [
-      { author: 'D.N', rating: 5, date: '2週間前', text: '福岡の女性専門パーソナルジム。スタッフ全員女性で産前・産後にも対応。とても満足しています。' },
-      { author: 'P.V', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '要問合せ',
     trial: '体験レッスンあり',
     features: ['女性専門', '女性スタッフのみ', '子連れOK'],
@@ -100,12 +76,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 天神店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 14,
-    reviews: [
-      { author: 'E.O', rating: 5, date: '2週間前', text: 'AI主導20分トレーニング。天神で月4回12,000円〜。とても満足しています。' },
-      { author: 'Q.W', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格'],

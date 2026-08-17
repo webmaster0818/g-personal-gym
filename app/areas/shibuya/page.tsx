@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 渋谷スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 24,
-    reviews: [
-      { author: 'A.S', rating: 5, date: '2週間前', text: '食事指導が徹底していて、糖質オフの宅配食も美味しい。2ヶ月で6kg減量できました。シャワー・パウダールーム完備で仕事帰りに通いやすいです。' },
-      { author: 'M.K', rating: 5, date: '1ヶ月前', text: 'トレーナーさんが優しく丁寧に指導してくれます。渋谷駅から近いので通いやすい。女性専用なので安心感があります。' },
-      { author: 'Y.H', rating: 4, date: '3週間前', text: '施設が綺麗で基礎化粧品も完備。手ぶらで通えるのが嬉しい。少し料金は高めですがサービスの質を考えると納得です。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '渋谷駅近'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 渋谷店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 18,
-    reviews: [
-      { author: 'K.T', rating: 5, date: '1週間前', text: '生涯アフターサポートが決め手で入会しました。完全個室で子連れOKなのもありがたい。16回コースで-5kg達成！' },
-      { author: 'R.M', rating: 5, date: '2週間前', text: '女性専用マシンで効率よくトレーニングできます。トレーナーさんがとても親切で毎回楽しいです。' },
-      { author: 'N.S', rating: 4, date: '1ヶ月前', text: '料金がリーズナブルなのに質が高い。卒業後も無料でサポートしてもらえるのが安心です。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル���備', '女性特化マシン'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 渋谷店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 20,
-    reviews: [
-      { author: 'S.Y', rating: 5, date: '2週間前', text: '太もも痩せに悩んでいましたが、2ヶ月で太もも-4cm達成！医師監修のメソッドが効果的でした。' },
-      { author: 'H.N', rating: 5, date: '1ヶ月前', text: '下半身特化のトレーニングが本当に効く。分割払いで月々5,545円から始められるのも嬉しい。' },
-      { author: 'A.M', rating: 4, date: '3週間前', text: '託児所費用の補助があるのがありがたい。産後の体型戻しに通っています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 渋谷店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 15,
-    reviews: [
-      { author: 'T.K', rating: 5, date: '1週間前', text: 'トレーナーも全員女性なので安心して通えます。10年以上の実績があるだけあって指導の質が高い。' },
-      { author: 'M.O', rating: 4, date: '2週間前', text: '食事指導が具体的で分かりやすい。女性らしい柔らかいボディラインを目指せるのが嬉しい。' },
-      { author: 'E.S', rating: 5, date: '1ヶ月前', text: 'ブライダルダイエットコースで通いました。3ヶ月で-7kg、ドレスが綺麗に着れて大満足です。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', 'ブライダルコース'],
@@ -104,13 +76,6 @@ const gyms = [
   },
   {
     name: 'クレビック 渋谷店',
-    rating: 4.6,
-    reviewCount: 12,
-    reviews: [
-      { author: 'C.H', rating: 5, date: '2週間前', text: '管理栄養士の食事指導が科学的で説得力がある。トレーニングもきちんとフォームを教えてくれるので効果的。' },
-      { author: 'K.W', rating: 4, date: '1ヶ月前', text: '女性専門なので安心。施設も綺麗で手ぶらで通える。料金も他と比べてリーズナブルだと思います。' },
-      { author: 'J.T', rating: 5, date: '3週間前', text: '内側（食事）と外側（トレーニング）の両面からアプローチしてくれるのが良い。確実に結果が出ます。' },
-    ],
     price: '2ヶ月16回 149,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専門', '管理栄養士の食事指導', '完全個室', '手ぶらOK', 'リーズナブル'],
@@ -125,13 +90,6 @@ const gyms = [
   {
     name: 'かたぎり塾 渋谷店',
     officialUrl: 'https://katagirijuku.jp/',
-    rating: 4.5,
-    reviewCount: 16,
-    reviews: [
-      { author: 'L.M', rating: 5, date: '1週間前', text: '月額制で始めやすい。AI食事指導も面白くて続けやすい。トレーナーの質も高いです。' },
-      { author: 'P.N', rating: 4, date: '2週間前', text: '料金がリーズナブルで継続しやすい。女性のトレーナーさんもいるので相談しやすいです。' },
-      { author: 'D.K', rating: 4, date: '1ヶ月前', text: '月4回プランから始められるのが良い。無理なく通えて着実に体が変わってきました。' },
-    ],
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '渋谷駅近'],
@@ -146,13 +104,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 渋谷店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 22,
-    reviews: [
-      { author: 'F.Y', rating: 5, date: '1週間前', text: '1回20分で効率的！忙しくても続けやすい。AI主導なので毎回最適な負荷でトレーニングできます。' },
-      { author: 'G.S', rating: 4, date: '2週間前', text: '月4回12,000円は本当に安い。パーソナルジムのハードルがグンと下がりました。' },
-      { author: 'B.T', rating: 4, date: '1ヶ月前', text: '利用者の8割が女性なので安心。短時��で効果的なトレーニングができるのが魅力です。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '渋谷駅近'],

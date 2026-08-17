@@ -21,12 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 銀座スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 20,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '銀座一丁目駅から徒歩1分。糖質オフ宅配食無料の女性専用パーソナルジム。とても満足しています。' },
-      { author: 'M.S', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', '銀座一丁目駅徒歩1分'],
@@ -41,12 +35,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 銀座店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 18,
-    reviews: [
-      { author: 'B.L', rating: 5, date: '2週間前', text: '銀座一丁目駅から徒歩1分。下半身痩せに特化した女性専用ジム。とても満足しています。' },
-      { author: 'N.T', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '銀座一丁目駅徒歩1分'],
@@ -60,12 +48,6 @@ const gyms = [
   },
   {
     name: 'クレビック 銀座店',
-    rating: 4.6,
-    reviewCount: 14,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '2週間前', text: '管理栄養士による食事指導付き女性専門パーソナルジム。銀座エリアで比較的リーズナブル。とても満足しています。' },
-      { author: 'O.U', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '2ヶ月16回 149,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専門', '管理栄養士の食事指導', '完全個室'],
@@ -80,12 +62,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 東京店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 15,
-    reviews: [
-      { author: 'D.N', rating: 5, date: '2週間前', text: '銀座近くの日本橋に位置する女性専用ジム。トレーナー全員女性。とても満足しています。' },
-      { author: 'P.V', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '日本橋エリア'],
@@ -100,12 +76,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 銀座店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.4,
-    reviewCount: 16,
-    reviews: [
-      { author: 'E.O', rating: 5, date: '2週間前', text: 'AI主導20分トレーニング。銀座で月4回12,000円〜の低価格。とても満足しています。' },
-      { author: 'Q.W', rating: 4, date: '1ヶ月前', text: 'トレーナーさんが親切で通いやすい。着実に結果が出ています。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格'],

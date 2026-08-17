@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 品川スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.8,
-    reviewCount: 20,
-    reviews: [
-      { author: 'A.K', rating: 5, date: '2週間前', text: '宅配食が美味しくて食事管理が楽。品川駅から近いので仕事帰りに通いやすいです。2ヶ月で5kg減量できました。' },
-      { author: 'M.T', rating: 5, date: '1ヶ月前', text: 'パウダールーム完備で手ぶらで通えるのが最高。トレーナーさんも優しく丁寧です。' },
-      { author: 'S.N', rating: 4, date: '3週間前', text: '施設が綺麗で清潔感がある。女性専用なので安心して通えます。少し高めですがサービスに見合う価値あり。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '品川駅近'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'OUTLINE 品川店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.7,
-    reviewCount: 15,
-    reviews: [
-      { author: 'R.S', rating: 5, date: '1週間前', text: '生涯アフターサポートが魅力的。完全個室で人目を気にせずトレーニングできます。' },
-      { author: 'K.M', rating: 5, date: '2週間前', text: '女性専用マシンが使いやすい。トレーナーさんの指導が丁寧で効果を実感しています。' },
-      { author: 'Y.A', rating: 4, date: '1ヶ月前', text: '料金がリーズナブルで卒業後もサポートしてもらえるのが安心。品川から通いやすいです。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -63,13 +49,6 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 品川店',
     officialUrl: 'https://reborn-myself.com/',
-    rating: 4.6,
-    reviewCount: 13,
-    reviews: [
-      { author: 'T.H', rating: 5, date: '1週間前', text: 'トレーナーも全員女性で安心。10年以上の実績があるだけあって指導の質が高いです。' },
-      { author: 'M.S', rating: 4, date: '2週間前', text: '食事指導が具体的。女性らしいボディラインを目指せるのが嬉しいポイント。' },
-      { author: 'E.K', rating: 5, date: '1ヶ月前', text: 'ブライダルコースで通いました。3ヶ月で見違えるほど変わりました。' },
-    ],
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', 'ブライダルコース'],
@@ -84,13 +63,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 品川店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 18,
-    reviews: [
-      { author: 'H.Y', rating: 5, date: '2週間前', text: '太もも痩せに特化したプログラムが効果的。2ヶ月で太もも-3.5cm達成しました！' },
-      { author: 'A.N', rating: 5, date: '1ヶ月前', text: '医師監修のメソッドで安心。分割払いで始めやすいのもポイント高いです。' },
-      { author: 'K.T', rating: 4, date: '3週間前', text: '品川駅から近くて通いやすい。産後の体型戻しに効果を感じています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -104,13 +76,6 @@ const gyms = [
   },
   {
     name: 'クレビック 品川店',
-    rating: 4.5,
-    reviewCount: 11,
-    reviews: [
-      { author: 'C.M', rating: 5, date: '2週間前', text: '管理栄養士の食事指導が具体的で実践しやすい。科学的なアプローチが信頼できます。' },
-      { author: 'N.K', rating: 4, date: '1ヶ月前', text: '手ぶらで通えるのが便利。料金も良心的で続けやすいです。' },
-      { author: 'J.S', rating: 5, date: '3週間前', text: '内側と外側の両面からアプローチしてくれるので効果的。確実に変化を感じます。' },
-    ],
     price: '2ヶ月16回 149,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専門', '管理栄養士の食事指導', '完全個室', '手ぶらOK', 'リーズナブル'],
@@ -124,13 +89,6 @@ const gyms = [
   },
   {
     name: '24/7 Workout 品川店',
-    rating: 4.4,
-    reviewCount: 22,
-    reviews: [
-      { author: 'F.T', rating: 5, date: '1週間前', text: '3食食べて痩せるメソッドが魅力的。無理な食事制限がないので続けやすいです。' },
-      { author: 'G.M', rating: 4, date: '2週間前', text: '深夜24時まで営業しているので仕事帰りでも余裕で通える。品川勤務には最適。' },
-      { author: 'B.Y', rating: 4, date: '1ヶ月前', text: 'トレーナーの質が高い。マンツーマンで丁寧に指導してもらえます。' },
-    ],
     price: '2ヶ月16回 257,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '完全個室', '深夜営業', '3食食べるダイエット', '全額返金保証'],

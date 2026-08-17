@@ -21,13 +21,6 @@ const gyms = [
   {
     name: 'OUTLINE 上野店',
     officialUrl: 'https://www.outline-gym.com/',
-    rating: 4.8,
-    reviewCount: 15,
-    reviews: [
-      { author: 'A.S', rating: 5, date: '1週間前', text: '生涯アフターサポート付きでリバウンドの心配がない。上野駅からも近くて便利。' },
-      { author: 'M.K', rating: 5, date: '2週間前', text: '完全個室で子連れOK。女性専用マシンで効果的にトレーニングできます。' },
-      { author: 'Y.T', rating: 4, date: '1ヶ月前', text: '料金がリーズナブル。卒業後もサポートしてもらえるのが安心です。' },
-    ],
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
@@ -42,13 +35,6 @@ const gyms = [
   {
     name: 'ビーコンセプト 上野店',
     officialUrl: 'https://b-concept.tokyo/',
-    rating: 4.7,
-    reviewCount: 16,
-    reviews: [
-      { author: 'H.N', rating: 5, date: '2週間前', text: '下半身特化のプログラムが効果的。太もも-3.5cm達成しました！' },
-      { author: 'S.M', rating: 5, date: '1ヶ月前', text: '医師監修で安心感がある。分割払いで始めやすいです。' },
-      { author: 'K.A', rating: 4, date: '3週間前', text: '上野駅から近い。産後の体型戻しに通っています。' },
-    ],
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -62,13 +48,6 @@ const gyms = [
   },
   {
     name: 'クレビック 上野店',
-    rating: 4.6,
-    reviewCount: 11,
-    reviews: [
-      { author: 'C.T', rating: 5, date: '2週間前', text: '管理栄養士の食事指導が科学的で実践しやすい。コスパが良いです。' },
-      { author: 'J.K', rating: 4, date: '1ヶ月前', text: '手ぶらで通えるのが便利。完全個室で安心してトレーニングできます。' },
-      { author: 'L.S', rating: 5, date: '3週間前', text: '食事と運動の両面からアプローチしてくれるので確実に効果が出ます。' },
-    ],
     price: '2ヶ月16回 149,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専門', '管理栄養士の食事指導', '完全個室', '手ぶらOK', 'リーズナブル'],
@@ -83,13 +62,6 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 上野スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    rating: 4.7,
-    reviewCount: 13,
-    reviews: [
-      { author: 'R.H', rating: 5, date: '1週間前', text: '宅配食が美味しくて食事管理が楽。上野駅から近くて通いやすいです。' },
-      { author: 'N.Y', rating: 5, date: '2週間前', text: 'パウダールーム完備で仕事帰りでも安心。トレーナーさんが優しい。' },
-      { author: 'T.M', rating: 4, date: '1ヶ月前', text: '女性専用で安心。施設が綺麗で手ぶらで通えるのが嬉しいです。' },
-    ],
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '上野駅近'],
@@ -104,13 +76,6 @@ const gyms = [
   {
     name: 'かたぎり塾 上野店',
     officialUrl: 'https://katagirijuku.jp/',
-    rating: 4.4,
-    reviewCount: 14,
-    reviews: [
-      { author: 'F.S', rating: 5, date: '2週間前', text: '月額制で始めやすい。AI食事指導が面白くて続けやすいです。' },
-      { author: 'G.K', rating: 4, date: '1ヶ月前', text: '上野駅から近い。リーズナブルな料金で質の高いトレーニング。' },
-      { author: 'B.M', rating: 4, date: '3週間前', text: '月4回から始められるのが良い。着実に変化を感じています。' },
-    ],
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '上野駅近'],
@@ -125,13 +90,6 @@ const gyms = [
   {
     name: 'エクササイズコーチ 上野店',
     officialUrl: 'https://exercisecoach.co.jp/',
-    rating: 4.3,
-    reviewCount: 19,
-    reviews: [
-      { author: 'D.T', rating: 5, date: '1週間前', text: '1回20分で効率的。月12,000円〜はパーソナルジムとしては破格の安さ。' },
-      { author: 'E.N', rating: 4, date: '2週間前', text: 'AI主導で毎回最適化。上野駅から近くて通いやすいです。' },
-      { author: 'W.S', rating: 4, date: '1ヶ月前', text: '女性利用者が8割以上で安心。短時間で効果的なのが魅力。' },
-    ],
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '上野駅近'],
