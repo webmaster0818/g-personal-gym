@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { GYM_REVIEWS } from '@/data/gymReviews'
 
 type Review = {
   author: string
@@ -130,6 +131,33 @@ export function GymCard({ gym, index }: GymCardProps) {
             <p className="text-brand-light text-xs mt-3 text-center">※ 口コミはGoogle Mapsの投稿を参考に要約・再構成したものです</p>
           </div>
         )}
+
+        {/*
+          口コミは「Googleの口コミをもとにした編集部の要約」＋出典リンクで載せる。
+          口コミ本文の転載はしない。照合を通っていないジムは何も出さない（別の店の要約を出さないため）。
+        */}
+        {(() => {
+          const rev = GYM_REVIEWS[gym.name]
+          if (!rev) return null
+          return (
+            <div className="mb-4 bg-ivory border border-line rounded-lg p-4">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-sm font-bold text-brand-text">Googleの評価</span>
+                <span className="text-sm font-bold text-brand-text">★{rev.rating}</span>
+                <span className="text-xs text-brand-light">（{rev.userRatings}件）</span>
+              </div>
+              <p className="text-sm text-brand-muted mt-2 leading-relaxed">{rev.summary}</p>
+              <p className="text-[11px] text-brand-light mt-2">
+                Googleマップに投稿された口コミをもとに編集部が要約しました（{rev.fetchedAt}時点）。
+                口コミ本文は転載していません。
+                {' '}
+                <a href={rev.mapsUri} target="_blank" rel="noopener noreferrer" className="underline hover:text-brand-text">
+                  出典：Googleマップの口コミを見る
+                </a>
+              </p>
+            </div>
+          )
+        })()}
 
         <div className="flex flex-wrap gap-2 mb-4">
           {gym.features.map((feature, i) => (
