@@ -41,10 +41,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://woman-gym.com'),
   title: {
-    default: '女性専用パーソナルジムおすすめ比較【2026年8月】料金・口コミ・エリアで探せる | G-PersonalGym',
+    default: '女性専用パーソナルジムを料金・エリアで探す【2026年8月】全国103エリア・主要6ブランドを掲載 | G-PersonalGym',
     template: '%s | G-PersonalGym',
   },
-  description: '【2026年7月最新】女性専用パーソナルジムのおすすめを料金・口コミで徹底比較。ビーコンセプト・リボーンマイセルフ・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を網羅。あなたにぴったりのパーソナルジムが見つかります。',
+  description: '女性専用パーソナルジムを、お住まいのエリアと料金から探せます。全国103エリア・主要6ブランド（ビーコンセプト／リボーンマイセルフ／UNDEUX SUPERBODY／OUTLINE／かたぎり塾／エクササイズコーチ）の料金・入会金・体験の有無を独自調査でまとめました。ランキングで比較したい方は「おすすめランキング」をご覧ください。【2026年8月時点】',
   keywords: ['女性専用パーソナルジム', 'パーソナルジム', '比較', 'おすすめ', 'ランキング', '料金', '口コミ', '2026'],
   authors: [{ name: 'G-PersonalGym編集部' }],
   openGraph: {

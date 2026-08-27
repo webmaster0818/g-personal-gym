@@ -122,11 +122,11 @@ export default function Home() {
             <div className="max-w-xl fade-up">
               <p className="eyebrow mb-5">Women&rsquo;s Personal Gym Guide</p>
               <h1 className="font-serif text-[2.1rem] sm:text-4xl md:text-[3rem] leading-[1.3] text-ink mb-6">
-                女性専用パーソナルジムの<br />
-                <span className="text-accent">おすすめ比較</span>・ランキング
+                女性専用パーソナルジムを<br />
+                <span className="text-accent">エリアと料金</span>から探す
               </h1>
               <p className="text-ink-soft text-[0.95rem] md:text-base leading-loose mb-9 max-w-lg">
-                「変わりたい」を、一緒に叶える場所へ。女性専用パーソナルジムだけを厳選し、<strong>料金・口コミ・目的別（ダイエット／ボディメイク）</strong>で、清潔感のある視点からていねいに比較します。初心者の選び方や、お住まいのエリアからも探せます。
+                「変わりたい」を、一緒に叶える場所へ。女性専用パーソナルジムだけを掲載しています。<strong>全国103エリア</strong>から通える店舗を探せるほか、主要6ブランドの<strong>料金・入会金・体験の有無</strong>を独自調査でまとめました。順位をつけて比べたい方は<strong>おすすめランキング</strong>へどうぞ。
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/ranking/" className="btn-primary text-sm md:text-base !px-9 !py-4 text-center">
