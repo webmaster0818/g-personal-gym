@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { BrandInfo } from '@/data/brands'
 import brandStores from '@/data/brandStores.json'
 import { SurveyHighlight } from '@/components/SurveyHighlight'
+import { BrandReviewDigest } from '@/components/BrandReviewDigest'
 
 type Store = {
   name: string
@@ -169,6 +170,9 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
           <p className="mt-3 text-[11px] text-ink-faint">※エリア名をタップすると、その地域の他ジムとまとめて比較できます。</p>
         </div>
       </section>
+
+      {/* Google口コミの集約（2026-08-28・出典リンクは店舗ごとに明記） */}
+      <BrandReviewDigest brandSlug={brand.slug} brandName={brand.name} />
 
       {/* 独自調査データ */}
       <section className="py-14">
