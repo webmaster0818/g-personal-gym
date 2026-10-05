@@ -20,6 +20,7 @@ const related = [
   { href: '/articles/taiken-nagare/', label: '無料体験の流れ・当日の準備' },
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
   { href: '/articles/joseisenyo-vs-kyoyo/', label: '女性専用 vs 共用ジムの違い' },
+  { href: '/articles/20dai/', label: '20代の選び方' },
   { href: '/ranking/', label: 'おすすめランキング' },
 ]
 

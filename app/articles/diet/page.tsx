@@ -40,6 +40,7 @@ const related = [
   { href: '/articles/kouka-itsukara/', label: '効果はいつから出る？' },
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
   { href: '/articles/taiken-nagare/', label: '無料体験の流れ' },
+  { href: '/articles/bridal-diet/', label: 'ブライダルダイエットの選び方' },
   { href: '/guide/', label: '女性専用パーソナルジムの選び方' },
   { href: '/ranking/', label: 'おすすめランキング' },
 ]

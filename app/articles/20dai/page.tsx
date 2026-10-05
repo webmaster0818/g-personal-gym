@@ -20,6 +20,7 @@ const related = [
   { href: '/articles/40dai-50dai/', label: '40代・50代の選び方' },
   { href: '/articles/ryokin-osaeru/', label: '料金を抑えるコツ' },
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
+  { href: '/articles/bridal-diet/', label: 'ブライダルダイエットの選び方' },
   { href: '/ranking/', label: 'おすすめランキング' },
 ]
 

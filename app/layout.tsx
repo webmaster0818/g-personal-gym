@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     default: '女性専用パーソナルジムを料金・エリアで探す【2026年8月】全国103エリア・主要6ブランドを掲載 | G-PersonalGym',
     template: '%s | G-PersonalGym',
   },
-  description: '女性専用パーソナルジムを、お住まいのエリアと料金から探せます。全国103エリア・主要6ブランド（ビーコンセプト／リボーンマイセルフ／UNDEUX SUPERBODY／OUTLINE／かたぎり塾／エクササイズコーチ）の料金・入会金・体験の有無を独自調査でまとめました。ランキングで比較したい方は「おすすめランキング」をご覧ください。【2026年8月時点】',
+  description: '女性専用パーソナルジムを、お住まいのエリアと料金から探せます。全国103エリア・主要6ブランド（ビーコンセプト、リボーンマイセルフ、かたぎり塾ほか）の料金・入会金・体験の有無を独自調査でまとめました。ランキングで比較したい方は「おすすめランキング」をご覧ください。【2026年8月時点】',
   keywords: ['女性専用パーソナルジム', 'パーソナルジム', '比較', 'おすすめ', 'ランキング', '料金', '口コミ', '2026'],
   authors: [{ name: 'G-PersonalGym編集部' }],
   openGraph: {
@@ -54,11 +54,16 @@ export const metadata: Metadata = {
     title: 'G-PersonalGym | 女性専用パーソナルジム比較・おすすめランキング',
     description: '女性専用パーソナルジムを徹底比較。料金・口コミ・特徴を網羅。',
     siteName: 'G-PersonalGym',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'G-PersonalGym｜女性専用パーソナルジムをエリアと料金から探す' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'G-PersonalGym | 女性専用パーソナルジム比較',
     description: '女性専用パーソナルジムを徹底比較。あなたにぴったりのジムが見つかります。',
+    images: ['/og-image.png'],
+  },
+  icons: {
+    icon: [{ url: '/favicon.ico', sizes: 'any' }, { url: '/icon.png', type: 'image/png', sizes: '512x512' }],
   },
   robots: {
     index: true,

@@ -22,6 +22,7 @@ const related = [
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査（専門家監修14%の根拠）' },
   { href: '/articles/sango-diet/', label: '産後ダイエットの選び方' },
   { href: '/articles/40dai-50dai/', label: '40代・50代の選び方' },
+  { href: '/articles/shisei/', label: '姿勢改善・反り腰・猫背の選び方' },
   { href: '/ranking/', label: 'おすすめランキング' },
 ]
 

@@ -43,6 +43,7 @@ const related = [
   { href: '/articles/kyakuyase/', label: '脚やせ・下半身太りの選び方' },
   { href: '/articles/kouka-itsukara/', label: '効果はいつから出る？' },
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
+  { href: '/articles/bridal-diet/', label: 'ブライダルダイエットの選び方' },
   { href: '/ranking/', label: 'おすすめランキング' },
 ]
 
