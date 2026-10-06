@@ -48,11 +48,10 @@ export const metadata: Metadata = {
   keywords: ['女性専用パーソナルジム', 'パーソナルジム', '比較', 'おすすめ', 'ランキング', '料金', '口コミ', '2026'],
   authors: [{ name: 'G-PersonalGym編集部' }],
   openGraph: {
+    // 2026-10-06 url・title・description を外した。固定値だと全135ページの og:url が TOP、og:title が共通になる。
+    // 省略すると Next.js がページごとの title / description / canonical から埋める（ビルド出力で確認）。
     type: 'website',
     locale: 'ja_JP',
-    url: 'https://woman-gym.com/',
-    title: 'G-PersonalGym | 女性専用パーソナルジム比較・おすすめランキング',
-    description: '女性専用パーソナルジムを徹底比較。料金・口コミ・特徴を網羅。',
     siteName: 'G-PersonalGym',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'G-PersonalGym｜女性専用パーソナルジムをエリアと料金から探す' }],
   },
