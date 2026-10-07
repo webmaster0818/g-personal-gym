@@ -4,10 +4,11 @@ import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
 import { FAQSchema } from '@/components/FAQSchema'
 import ScrollReveal from '@/components/ScrollReveal'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/' },
+  ...pageUrlMeta('/'),
 }
 
 const topGyms = [

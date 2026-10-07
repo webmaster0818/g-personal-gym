@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
@@ -10,7 +11,7 @@ import brandStores from '@/data/brandStores.json'
 export const metadata: Metadata = {
   title: '女性向けパーソナルジムのブランド別ガイド【2026年8月】料金・店舗数を比較',
   description: '女性向けパーソナルジムの主要ブランドを、料金・店舗数・利用条件（女性専用かどうか）で比較。各ブランドの店舗一覧はエリアページにリンクしています。',
-  alternates: { canonical: '/brands/' },
+  ...pageUrlMeta('/brands/'),
 }
 
 const STORES = brandStores as Record<string, { areaSlug: string }[]>

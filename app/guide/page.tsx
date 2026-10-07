@@ -4,10 +4,11 @@ import { SiteFooter } from '@/components/SiteFooter'
 import { IntentGuideLinks } from '@/components/IntentGuideLinks'
 import { SurveyHighlight } from '@/components/SurveyHighlight'
 import { FAQSchema } from '@/components/FAQSchema'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/guide/' },
+  ...pageUrlMeta('/guide/'),
   title: '女性専用パーソナルジムの選び方【2026年版】失敗しない7つのポイント',
   description:
     '女性専用パーソナルジムの選び方を徹底解説。女性専用か・料金・トレーナーの質・通いやすさ・アフターサポートの5つの軸に加え、目的別の選び方、よくある失敗、体験前のチェックリストまで。失敗しないジム選びをサポートします。',

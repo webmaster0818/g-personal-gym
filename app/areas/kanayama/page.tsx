@@ -8,10 +8,11 @@ import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
 import { AreaContext } from '@/components/AreaContext'
 import { WhyWomenOnly } from '@/components/WhyWomenOnly'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/areas/kanayama/' },
+  ...pageUrlMeta('/areas/kanayama/'),
   title: '【2026年7月最新】金山の女性向けパーソナルジムおすすめ3選！料金比較',
   description: '【2026年7月最新】金山のおすすめ女性向けパーソナルジム3選を比較。リボーンマイセルフ・ビーコンセプト・ピラティス&ジム1to1など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,金山,愛知,おすすめ,料金,比較,ダイエット,ボディメイク',

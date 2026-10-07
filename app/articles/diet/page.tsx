@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   title: '女性のダイエットにジムはどこがいい？パーソナルジムの選び方【2026年8月】',
   description:
     'ダイエット目的の女性向けに、パーソナルジムの選び方を解説。食事指導の有無・リバウンド対策・続けやすさの見極め方、そして女性専用ジムが向く理由まで。全国546ジムの独自調査データ（食事指導26%・女性専用46%・体験無料60%など）をもとに、事実ベースで失敗しない選び方を紹介します。',
-  alternates: { canonical: '/articles/diet/' },
+  ...pageUrlMeta('/articles/diet/'),
 }
 
 const faqs = [

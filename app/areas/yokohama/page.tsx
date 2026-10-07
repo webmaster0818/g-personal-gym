@@ -8,10 +8,11 @@ import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
 import { AreaContext } from '@/components/AreaContext'
 import { WhyWomenOnly } from '@/components/WhyWomenOnly'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/areas/yokohama/' },
+  ...pageUrlMeta('/areas/yokohama/'),
   title: '【2026年7月最新】横浜の女性専用パーソナルジムおすすめ5選！料金比較',
   description: '【2026年4月最新】横浜のおすすめ女性専用・女性向けパーソナルジム5選を徹底比較。料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,横浜,おすすめ,料金,比較,ダイエット,ボディメイク',

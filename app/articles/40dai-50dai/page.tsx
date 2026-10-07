@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   title: '40代・50代女性のパーソナルジムの選び方｜更年期・代謝低下に向き合う【2026年】',
   description:
     '40代・50代女性がパーソナルジムを選ぶときのポイントを解説。代謝低下・更年期・関節への配慮、無理なく続く頻度、女性専用・女性トレーナーが向く理由まで。年代特化のジムも増えています。',
-  alternates: { canonical: '/articles/40dai-50dai/' },
+  ...pageUrlMeta('/articles/40dai-50dai/'),
 }
 
 const faqs = [

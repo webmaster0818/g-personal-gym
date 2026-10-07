@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 import { GYM_SURVEY } from '@/data/gymSurvey'
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   title: '完全個室・プライベートジムで選ぶ女性専用パーソナルジムの選び方【2026年】',
   description:
     '「人の目が気になって集中できない」女性へ。完全個室・プライベート空間のパーソナルジムのメリットと選び方を解説。当サイト独自調査（全国102エリア・546ジム集計）では完全個室・個室対応は28%。個室のタイプの違いや確認ポイントも紹介します。',
-  alternates: { canonical: '/articles/private-kanshitsu/' },
+  ...pageUrlMeta('/articles/private-kanshitsu/'),
 }
 
 const faqs = [

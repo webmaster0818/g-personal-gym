@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 import { GYM_SURVEY } from '@/data/gymSurvey'
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
   title: '姿勢改善・反り腰・猫背・肩こりに強い女性専用パーソナルジムの選び方【2026年】',
   description:
     '反り腰・猫背・肩こりに悩む女性向けに、姿勢改善に強いパーソナルジムの選び方を解説。なぜ姿勢が崩れるのか、姿勢評価とフォーム指導の重要性、理学療法士監修の価値、自宅ケアの併用まで。当サイト調査では専門家監修・医療連携の言及は全体の14%と希少です。',
-  alternates: { canonical: '/articles/shisei/' },
+  ...pageUrlMeta('/articles/shisei/'),
 }
 
 const S = GYM_SURVEY.stats

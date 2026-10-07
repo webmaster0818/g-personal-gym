@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   title: '女性専用パーソナルジムの料金を抑えるコツ【2026年】無料体験・回数最適化で賢く',
   description:
     '女性専用パーソナルジムの料金を抑えるコツを解説。料金の内訳（入会金・コース・オプション）の見方、無料体験やキャンペーンの活用、回数・頻度の最適化、分割やモニター制度の注意点まで。具体額は各社公式での確認を前提に、続けやすさとのバランスで選ぶ考え方を紹介します。',
-  alternates: { canonical: '/articles/ryokin-osaeru/' },
+  ...pageUrlMeta('/articles/ryokin-osaeru/'),
 }
 
 const faqs = [

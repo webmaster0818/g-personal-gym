@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/privacy-policy/' },
+  ...pageUrlMeta('/privacy-policy/'),
   title: 'プライバシーポリシー',
   description: 'G-PersonalGymのプライバシーポリシーです。',
 }

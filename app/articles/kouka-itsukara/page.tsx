@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   title: '女性専用パーソナルジムの効果はいつから？何ヶ月で痩せる・続く目安【2026年】',
   description:
     'パーソナルジムの効果が出るまでの期間を解説。「10回で違いを感じ20回で見た目が変わる」の目安、週1・2・3回別の到達時期、効果が出ない原因、リバウンドしないための続け方まで。女性が無理なく結果を出すコツをまとめました。',
-  alternates: { canonical: '/articles/kouka-itsukara/' },
+  ...pageUrlMeta('/articles/kouka-itsukara/'),
 }
 
 const faqs = [

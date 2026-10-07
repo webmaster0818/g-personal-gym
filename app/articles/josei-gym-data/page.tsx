@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 import { GYM_SURVEY } from '@/data/gymSurvey'
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
   title: '女性向けパーソナルジム実態調査2026｜102エリア546ジムを独自集計（女性専用率・体験無料率）',
   description:
     'woman-gym編集部が全国102エリア・のべ546ジムの公式情報を独自集計。女性専用を掲げるジムは46%、体験・カウンセリング無料は60%、完全個室28%、食事指導26%、子連れ対応17%。出典明記での引用を歓迎します。',
-  alternates: { canonical: '/articles/josei-gym-data/' },
+  ...pageUrlMeta('/articles/josei-gym-data/'),
 }
 
 const S = GYM_SURVEY.stats

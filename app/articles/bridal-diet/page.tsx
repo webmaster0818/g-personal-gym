@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   title: 'ブライダルダイエットはパーソナルジムで成功する｜結婚式まで期間別の選び方【2026年】',
   description:
     '結婚式前のブライダルダイエットをパーソナルジムで成功させる方法。式まで3ヶ月・2ヶ月・1ヶ月の期間別プラン、二の腕・背中・デコルテなどドレス映えする部位対策、女性専用ジムが向く理由を解説します。',
-  alternates: { canonical: '/articles/bridal-diet/' },
+  ...pageUrlMeta('/articles/bridal-diet/'),
 }
 
 const faqs = [

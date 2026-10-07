@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 import { GYM_SURVEY } from '@/data/gymSurvey'
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
   title: '女性専用パーソナルジムと男女共用、どっちを選ぶ？違いと選び方【2026年】',
   description:
     '女性専用パーソナルジムと男女共用ジムの違いを、料金・プライバシー・店舗数・相談しやすさで徹底比較。当サイト調査では女性専用は全体の46%。あなたに合うのはどちらかを判断できる選び方ガイドです。',
-  alternates: { canonical: '/articles/joseisenyo-vs-kyoyo/' },
+  ...pageUrlMeta('/articles/joseisenyo-vs-kyoyo/'),
 }
 
 const S = GYM_SURVEY.stats

@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: '女性専用パーソナルジムの記事一覧｜選び方・産後・ブライダル・年代別ガイド',
   description:
     '女性専用パーソナルジム選びに役立つ記事一覧。産後ダイエット・ブライダル・40代50代の選び方、女性専用と男女共用の違い、全国102エリア546ジムの独自調査データまで。目的別に最適な1社を見つけましょう。',
-  alternates: { canonical: '/articles/' },
+  ...pageUrlMeta('/articles/'),
 }
 
 const articles = [

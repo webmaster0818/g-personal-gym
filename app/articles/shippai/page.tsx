@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   title: '女性専用パーソナルジム選びで失敗しない注意点｜よくある失敗例7つ【2026年】',
   description:
     '女性専用パーソナルジム選びでありがちな失敗を7つに整理。料金だけで選んで通えない／勧誘がつらい／トレーナーと相性が合わない／立地が遠い／目的とのミスマッチ／体験せず契約／解約条件の見落とし——それぞれの回避策を、当サイトの実態調査データを交えて解説します。',
-  alternates: { canonical: '/articles/shippai/' },
+  ...pageUrlMeta('/articles/shippai/'),
 }
 
 const faqs = [

@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   title: '産後ダイエットはパーソナルジムでいつから？子連れOK・骨盤ケアの選び方【2026年】',
   description:
     '産後ダイエットをパーソナルジムで始める時期の目安、子連れOK・託児付きジムの探し方、骨盤底筋ケアの重要性、女性専用ジムが向く理由を解説。当サイト調査では子連れ対応は全体の17%。失敗しない選び方をまとめました。',
-  alternates: { canonical: '/articles/sango-diet/' },
+  ...pageUrlMeta('/articles/sango-diet/'),
 }
 
 const faqs = [

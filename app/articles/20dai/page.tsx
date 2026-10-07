@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   title: '20代女性のパーソナルジムの選び方｜就活・結婚・予算で考える【2026年】',
   description:
     '20代女性がパーソナルジムを選ぶときのポイントを解説。就活・結婚・SNS映えといった目的別の考え方、料金を抑える工夫、続けやすさのコツ、女性専用が向く理由まで。当サイトの独自調査データをもとに、無理なく始める方法をまとめました。',
-  alternates: { canonical: '/articles/20dai/' },
+  ...pageUrlMeta('/articles/20dai/'),
 }
 
 const faqs = [

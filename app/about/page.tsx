@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/about/' },
+  ...pageUrlMeta('/about/'),
   title: '運営者情報',
   description: 'G-PersonalGymの運営者情報ページです。',
 }

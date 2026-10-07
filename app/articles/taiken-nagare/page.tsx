@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 import { GYM_SURVEY } from '@/data/gymSurvey'
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
   title: 'パーソナルジムの無料体験・カウンセリングの流れと持ち物｜勧誘対策も【2026年】',
   description:
     'パーソナルジムの無料体験・カウンセリング当日の流れ、持ち物、所要時間、そして「その場で契約しない」断り方・勧誘対策を解説。当サイト調査では女性向けジムの60%が体験・カウンセリング無料。失敗しない体験の受け方をまとめました。',
-  alternates: { canonical: '/articles/taiken-nagare/' },
+  ...pageUrlMeta('/articles/taiken-nagare/'),
 }
 
 const S = GYM_SURVEY.stats

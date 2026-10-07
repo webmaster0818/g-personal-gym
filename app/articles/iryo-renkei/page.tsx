@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 import { GYM_SURVEY } from '@/data/gymSurvey'
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
   title: '理学療法士・医師監修の女性専用パーソナルジムの選び方｜腰痛・産後・体の不安がある人へ【2026年】',
   description:
     '腰痛・膝痛・産後・体の不安がある女性向けに、理学療法士・医師など専門家監修のパーソナルジムの選び方を解説。当サイト調査では専門家監修・医療連携の言及は全体の14%と希少。見分け方、向いている人、注意点を事実ベースでまとめました。',
-  alternates: { canonical: '/articles/iryo-renkei/' },
+  ...pageUrlMeta('/articles/iryo-renkei/'),
 }
 
 const S = GYM_SURVEY.stats

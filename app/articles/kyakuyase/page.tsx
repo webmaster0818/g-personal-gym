@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   title: '脚やせ・下半身太りに強い女性専用パーソナルジムの選び方【2026年】',
   description:
     '下半身太り・脚やせに悩む女性向けに、パーソナルジムの選び方を解説。なぜ下半身は痩せにくいのか、脚やせ特化メソッドのあるジムの見分け方、自己流との違い、女性専用が向く理由まで。医師×トレーナー共同開発の専門ジムも紹介します。',
-  alternates: { canonical: '/articles/kyakuyase/' },
+  ...pageUrlMeta('/articles/kyakuyase/'),
 }
 
 const faqs = [

@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 import { GYM_SURVEY } from '@/data/gymSurvey'
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   title: '女性トレーナーを指名できる女性専用パーソナルジムの選び方【2026年】',
   description:
     '「男性トレーナーには体のことを相談しにくい」——そんな女性のために、女性トレーナーのみ在籍・女性トレーナー指名ができるパーソナルジムの選び方を解説。確認すべきポイントと、当サイト独自調査（全国102エリア・546ジム集計）の実数値もあわせて紹介します。',
-  alternates: { canonical: '/articles/josei-trainer/' },
+  ...pageUrlMeta('/articles/josei-trainer/'),
 }
 
 const faqs = [

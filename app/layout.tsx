@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_JP, Shippori_Mincho, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import ContentReveal from '@/components/ContentReveal'
+import { OG_BASE } from '@/lib/seo'
 
 const notoSansJP = Noto_Sans_JP({
   weight: ['300', '400', '500', '600', '700'],
@@ -47,14 +48,10 @@ export const metadata: Metadata = {
   description: '女性専用パーソナルジムを、お住まいのエリアと料金から探せます。全国103エリア・主要6ブランド（ビーコンセプト、リボーンマイセルフ、かたぎり塾ほか）の料金・入会金・体験の有無を独自調査でまとめました。ランキングで比較したい方は「おすすめランキング」をご覧ください。【2026年8月時点】',
   keywords: ['女性専用パーソナルジム', 'パーソナルジム', '比較', 'おすすめ', 'ランキング', '料金', '口コミ', '2026'],
   authors: [{ name: 'G-PersonalGym編集部' }],
-  openGraph: {
-    // 2026-10-06 url・title・description を外した。固定値だと全135ページの og:url が TOP、og:title が共通になる。
-    // 省略すると Next.js がページごとの title / description / canonical から埋める（ビルド出力で確認）。
-    type: 'website',
-    locale: 'ja_JP',
-    siteName: 'G-PersonalGym',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'G-PersonalGym｜女性専用パーソナルジムをエリアと料金から探す' }],
-  },
+  // 2026-10-06 url・title・description を外した。固定値だと全135ページの og:url が TOP、og:title が共通になる。
+  // title / description は Next.js がページごとの値から埋める。og:url は各ページが lib/seo.ts の pageUrlMeta() で
+  // canonical と同じ値を入れる（2026-10-07）。共通値（type/locale/siteName/images）は OG_BASE に一本化。
+  openGraph: OG_BASE,
   twitter: {
     card: 'summary_large_image',
     title: 'G-PersonalGym | 女性専用パーソナルジム比較',

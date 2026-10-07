@@ -3,10 +3,11 @@ import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
 import { IntentGuideLinks } from '@/components/IntentGuideLinks'
 import { FAQSchema } from '@/components/FAQSchema'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/faq/' },
+  ...pageUrlMeta('/faq/'),
   title: '女性専用パーソナルジムに関するよくある質問（FAQ）15問',
   description: '女性専用パーソナルジムに関する疑問を15問にまとめて回答。料金・効果・食事制限・子連れOK・リバウンドなど、よくある質問に詳しくお答えします。',
 }

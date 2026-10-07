@@ -8,10 +8,11 @@ import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
 import { AreaContext } from '@/components/AreaContext'
 import { WhyWomenOnly } from '@/components/WhyWomenOnly'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/areas/naha/' },
+  ...pageUrlMeta('/areas/naha/'),
   title: '那覇の女性向けパーソナルジムおすすめ4選｜料金比較・無料体験【2026年7月最新】',
   description: '【2026年7月最新】那覇のおすすめ女性向けパーソナルジム4選を比較。REMパーソナルトレーニングジム・パーソナルジム・プリッツジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,那覇,沖縄,おすすめ,料金,比較,ダイエット,ボディメイク',

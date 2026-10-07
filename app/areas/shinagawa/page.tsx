@@ -8,10 +8,11 @@ import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
 import { AreaContext } from '@/components/AreaContext'
 import { WhyWomenOnly } from '@/components/WhyWomenOnly'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/areas/shinagawa/' },
+  ...pageUrlMeta('/areas/shinagawa/'),
   title: '【2026年7月最新】品川の女性専用パーソナルジムおすすめ6選！料金比較',
   description: '【2026年4月最新】品川のおすすめ女性専用パーソナルジム6選を徹底比較。UNDEUX SUPERBODY・OUTLINE・Reborn Myselfなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,品川,おすすめ,料金,比較,ダイエット,ボディメイク',

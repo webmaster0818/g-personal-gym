@@ -1,3 +1,4 @@
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 import { GYM_SURVEY } from '@/data/gymSurvey'
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   title: 'ボディメイク・くびれ/メリハリ作りに強い女性専用パーソナルジムの選び方【2026年】',
   description:
     'ダイエット（減量）とボディメイク（造形）は別物。くびれ・メリハリのある体を目指す女性向けに、筋トレ設計・食事・期間目安と、ボディメイクに強い女性専用パーソナルジムの選び方を解説。当サイト独自調査（546ジム集計）の実数値もあわせて紹介します。',
-  alternates: { canonical: '/articles/bodymake/' },
+  ...pageUrlMeta('/articles/bodymake/'),
 }
 
 const faqs = [

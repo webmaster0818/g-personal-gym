@@ -2,13 +2,14 @@ import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
 import { AREA_CONTEXT } from '@/components/areaContextData'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'エリアから探す｜女性専用パーソナルジムを地域別に比較【全国102エリア】',
   description: '全国102エリアの女性専用・女性向けパーソナルジムを地域別に比較。お住まい・お勤めの街から、料金・口コミ・特徴をまとめたエリア別ページを探せます。',
   keywords: '女性専用パーソナルジム,エリア,地域,比較,全国,おすすめ',
-  alternates: { canonical: '/areas/' },
+  ...pageUrlMeta('/areas/'),
 }
 
 // 地域グルーピング（掲載エリアを見つけやすくする内部リンクハブ）。

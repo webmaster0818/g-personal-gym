@@ -8,10 +8,11 @@ import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
 import { AreaContext } from '@/components/AreaContext'
 import { WhyWomenOnly } from '@/components/WhyWomenOnly'
+import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/areas/chofu/' },
+  ...pageUrlMeta('/areas/chofu/'),
   title: '【2026年7月最新】調布の女性向けパーソナルジムおすすめ3選！料金比較',
   description: '【2026年7月最新】調布のおすすめ女性向けパーソナルジム3選を比較。かたぎり塾・@style・パーソナルトレーニングSuAiなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,調布,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
