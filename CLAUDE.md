@@ -133,3 +133,9 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
   - 取得月の実績確認: `google-reviews.json` の `fetched_at` を月別に数える。
 - ⚠️ **取得済み32店のうち要約が無い11店は、10店が別店舗への誤マッチだった**（OUTLINE上野店→上野マルイ／OUTLINE錦糸町店→REAL WORKOUT錦糸町店／UNDEUX梅田スタジオ→**UNDEUX銀座**／ビーコンセプト六本木店→BEYOND六本木店／ビーコンセプト目黒店→BoConcept自由が丘／リボーンマイセルフ五反田店→IRIS GYM五反田店 ほか）。**要約を書ける新規は zen place 中目黒の1件のみ**＝無料でできる要約作業は実質ゼロ。**店名検索の誤マッチ率の高さ（11件中10件）を改めて確認した。judge_strict を必ず通す。**
 - 対象規模の実測: サイト掲載ジム **375店**（エリアページから `name:` と `access:`/`officialUrl:` を持つオブジェクトを抽出）／取得済み32／要約済み21。
+
+### 2026-10-07 og:url を各ページの canonical と同じ値で出力（10/6 の layout 固定値撤去の続き）✅本番反映済み
+- 事象: Next.js は `openGraph.url` を書かないと og:url を出さない。10/6 に layout の固定 url を外した結果、全135ページで og:url が 0 件だった。
+- 対応: **`lib/seo.ts` に `OG_BASE`（type/locale/siteName/images）と `pageUrlMeta(path)` を新設**し、全130 page.tsx の `alternates: { canonical: X }` を `...pageUrlMeta(X)` に機械置換（スクリプトで一括・手書きなし）。layout.tsx の openGraph も `OG_BASE` を参照。
+- ⚠️ 原則: **ページ側で `openGraph` を定義すると layout の openGraph（images/siteName/type/locale）は引き継がれず丸ごと置き換わる**。今後ページに og 項目を足すときは必ず `pageUrlMeta()`／`OG_BASE` を経由する。canonical を書く場所もここ1箇所。
+- 検証: ビルド後の全HTMLで og:url == canonical **135/135・不一致0**、og:image/og:site_name/og:type/og:locale/og:title/og:description の欠落 **0**。site-precheck 全項目OK。本番 TOP と /ranking/ でページ別 og:url を確認。
