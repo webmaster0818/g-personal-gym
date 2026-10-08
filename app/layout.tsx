@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_JP, Shippori_Mincho, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import ContentReveal from '@/components/ContentReveal'
-import { OG_BASE } from '@/lib/seo'
+import { OG_BASE, TWITTER_BASE } from '@/lib/seo'
 
 const notoSansJP = Noto_Sans_JP({
   weight: ['300', '400', '500', '600', '700'],
@@ -52,12 +52,9 @@ export const metadata: Metadata = {
   // title / description は Next.js がページごとの値から埋める。og:url は各ページが lib/seo.ts の pageUrlMeta() で
   // canonical と同じ値を入れる（2026-10-07）。共通値（type/locale/siteName/images）は OG_BASE に一本化。
   openGraph: OG_BASE,
-  twitter: {
-    card: 'summary_large_image',
-    title: 'G-PersonalGym | 女性専用パーソナルジム比較',
-    description: '女性専用パーソナルジムを徹底比較。あなたにぴったりのジムが見つかります。',
-    images: ['/og-image.png'],
-  },
+  // 2026-10-08 twitter の固定 title/description を外した。固定値だと全135ページの twitter:title が共通になる。
+  // card/images は lib/seo.ts の TWITTER_BASE に一本化。title/description は Next.js がページごとの og:title/og:description から埋める。
+  twitter: TWITTER_BASE,
   icons: {
     icon: [{ url: '/favicon.ico', sizes: 'any' }, { url: '/icon.png', type: 'image/png', sizes: '512x512' }],
   },

@@ -13,6 +13,17 @@ export const OG_BASE: NonNullable<Metadata['openGraph']> = {
 }
 
 /**
+ * Twitter カードの共通値（layout.tsx で使用・2026-10-08）。
+ * title / description はここに書かない。書くと全ページ共通の twitter:title / twitter:description になる。
+ * 省くと Next.js がページごとの og:title / og:description（＝ページの title / description）から埋める。
+ * card は large_image 固定、image は og:image と同じ画像。各ページは twitter を定義しない（layout の値を引き継ぐ）。
+ */
+export const TWITTER_BASE: NonNullable<Metadata['twitter']> = {
+  card: 'summary_large_image',
+  images: ['/og-image.png'],
+}
+
+/**
  * canonical と og:url を同じパスから組み立てる（2026-10-07）。
  * Next.js は openGraph.url を書かないと og:url を出さないので、canonical と同じ値を入れる。
  * 相対パスは layout.tsx の metadataBase で絶対URLに解決される。

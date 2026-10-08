@@ -139,3 +139,9 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 対応: **`lib/seo.ts` に `OG_BASE`（type/locale/siteName/images）と `pageUrlMeta(path)` を新設**し、全130 page.tsx の `alternates: { canonical: X }` を `...pageUrlMeta(X)` に機械置換（スクリプトで一括・手書きなし）。layout.tsx の openGraph も `OG_BASE` を参照。
 - ⚠️ 原則: **ページ側で `openGraph` を定義すると layout の openGraph（images/siteName/type/locale）は引き継がれず丸ごと置き換わる**。今後ページに og 項目を足すときは必ず `pageUrlMeta()`／`OG_BASE` を経由する。canonical を書く場所もここ1箇所。
 - 検証: ビルド後の全HTMLで og:url == canonical **135/135・不一致0**、og:image/og:site_name/og:type/og:locale/og:title/og:description の欠落 **0**。site-precheck 全項目OK。本番 TOP と /ranking/ でページ別 og:url を確認。
+
+### 2026-10-08 twitter:title / twitter:description をページ別に（layout の固定 twitter 値撤去）✅本番反映済み
+- 事象: layout.tsx の `twitter` に固定 title/description が残り、本番135ページ全てで twitter:title が「G-PersonalGym | 女性専用パーソナルジム比較」の1種類（og:title との一致 0/135）だった。
+- 対応: **`lib/seo.ts` に `TWITTER_BASE`（card=summary_large_image・images=/og-image.png）を新設**し、layout.tsx の twitter をこれに差し替え（title/description を書かない）。Next.js は twitter.title/description が無いと og:title/og:description（＝ページの title/description）から埋める。各ページは twitter を定義しない（layout の値を引き継ぐ）。
+- 検証: ビルド後HTML → 本番で twitter:title 種類数 1→135、twitter:title==og:title **0→135**、twitter:description==og:description 0→135、twitter:image 欠落 0・og:image と一致 135、card=summary_large_image 135。**og:title / twitter:title / canonical / og:url の4点整合 135/135**。site-precheck 全項目OK。
+- 計測スクリプト: `/tmp/wg-tw-check.py --origin https://woman-gym.com`（sitemap 135 URL の meta を集計。`--out out` でビルド成果物も同じ集計）。
