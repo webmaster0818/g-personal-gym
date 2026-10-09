@@ -145,3 +145,12 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 対応: **`lib/seo.ts` に `TWITTER_BASE`（card=summary_large_image・images=/og-image.png）を新設**し、layout.tsx の twitter をこれに差し替え（title/description を書かない）。Next.js は twitter.title/description が無いと og:title/og:description（＝ページの title/description）から埋める。各ページは twitter を定義しない（layout の値を引き継ぐ）。
 - 検証: ビルド後HTML → 本番で twitter:title 種類数 1→135、twitter:title==og:title **0→135**、twitter:description==og:description 0→135、twitter:image 欠落 0・og:image と一致 135、card=summary_large_image 135。**og:title / twitter:title / canonical / og:url の4点整合 135/135**。site-precheck 全項目OK。
 - 計測スクリプト: `/tmp/wg-tw-check.py --origin https://woman-gym.com`（sitemap 135 URL の meta を集計。`--out out` でビルド成果物も同じ集計）。
+
+### 2026-10-09 エリア数の不一致（103 vs 102）をデータ計算値に統一＋「最新」表記を外す ✅本番反映済み（source 185c3d5 / deploy 76ed669）
+- **実数は102**: `app/areas/<slug>/page.tsx`=102・`AREA_CONTEXT`のキー=102・`public/sitemap.xml`の/areas/ URL=102（全部一致）。8/27 に「out/areas=103ディレクトリ」と数えたのが誤り（`/areas/` 一覧ページ自身のディレクトリを含めていた）。title/description/TOP本文の「全国103エリア」はそれ以来ずっと1つ多かった。
+- **固定文字列を全廃**: `lib/site.ts` を新設し `AREA_COUNT = Object.keys(AREA_CONTEXT).length`／`BRAND_COUNT = BRANDS.length`。置換箇所＝layout.tsx の title/description（og/twitter もここから派生）、TOP本文3箇所、/areas/ の title/description、/articles/ ハブ1箇所。独自調査の「102エリア・546ジム」（記事13箇所＋/articles/ ハブ2箇所＋josei-gym-data の title/description）は**現在のエリア数ではなく集計時点の母数**なので `GYM_SURVEY.areas / .listings` を参照（`data/gymSurvey.ts` の source 文字列も同様）。ソース上の `10[23]エリア` リテラルは gymSurvey.ts の定義コメント1行を除き0。
+  - ⚠️ `components/Navigation.tsx` は `'use client'` なので AREA_CONTEXT を import しない（全ページのJSに全エリア本文が載る）。リンク文言を「エリアから探す（全国のエリア一覧）」にして数字を外した。
+  - **再発防止**: `scripts/check-area-count.py` を `npm run build` の `prebuild` に配線。ページ数・AREA_CONTEXT・sitemap が1つでもずれたら exit 1 でビルド停止（`npx next build` 直叩きでは走らないので `npm run build` を使う）。
+- **「最新」の主張を外した（年月は事実表記として維持）**: `【2026年N月最新】`→`【2026年N月】`。エリア102ページ×3（title/description/h1）=306箇所＋/ranking/ 2箇所（title/h1・brands.ts asOf=8月は8/27確認のまま、今日は未確認なので進めない）＋/cost/ h1 1箇所＝**計309箇所、110ファイル**。年月を進めたページは0。
+  - ⚠️ 残る不整合: 初期30エリア（chiba/jiyugaoka/machida 等）は title/h1=【2026年7月】・description=【2026年4月】のまま。どちらも今日内容確認していないので触っていない。揃えるなら各ページのジム情報を公式で再確認してから。
+- 検証: build EXIT0（prebuild: pages=102 AREA_CONTEXT=102 sitemap=102）・out で「103エリア」0・「最新】」0・site-precheck 全項目OK。本番135ページ全件取得で「103エリア」0・「最新】」0・「102エリア」96（out=120 は sitemap外の404.html/404/index.html 各12を含む＝一致）・title年月=【2026年7月】102/【2026年8月】11/なし22。`/tmp/wg-tw-check.py` で **og:title==twitter:title／og:url==canonical==sitemap の4点整合 135/135**。
