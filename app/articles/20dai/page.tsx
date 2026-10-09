@@ -1,6 +1,7 @@
 import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
+import { GYM_SURVEY } from '@/data/gymSurvey'
 
 export const metadata: Metadata = {
   title: '20代女性のパーソナルジムの選び方｜就活・結婚・予算で考える【2026年】',
@@ -66,7 +67,7 @@ export default function Page() {
         <li><strong>支払い方法を比べる</strong>：都度払い・マンスリー・コースなど、無理のない方式を選ぶ</li>
         <li><strong>無料体験を活用する</strong>：複数社を比べてから契約すれば、ムダな出費を避けられます</li>
       </ol>
-      <p>当サイトが全国102エリア・のべ546ジムの公式情報を集計した独自調査では、<strong>体験・カウンセリングが無料のジムは約6割（325件・60%）</strong>でした。まずは無料の機会を使い倒すのが、賢い始め方です。料金を抑える具体策は<a href="/articles/ryokin-osaeru/">料金を抑えるコツ</a>でも詳しく解説しています。</p>
+      <p>当サイトが全国{GYM_SURVEY.areas}エリア・のべ{GYM_SURVEY.listings}ジムの公式情報を集計した独自調査では、<strong>体験・カウンセリングが無料のジムは約6割（325件・60%）</strong>でした。まずは無料の機会を使い倒すのが、賢い始め方です。料金を抑える具体策は<a href="/articles/ryokin-osaeru/">料金を抑えるコツ</a>でも詳しく解説しています。</p>
 
       <h2>20代が「続けやすい」ジムの見分け方</h2>
       <p>どんなに良いメニューでも、続かなければ意味がありません。20代は仕事・学業・予定が変わりやすい時期だからこそ、続けやすさを最優先に選びましょう。</p>

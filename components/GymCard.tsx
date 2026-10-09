@@ -323,7 +323,7 @@ export function GymCard({ gym, index }: GymCardProps) {
           </a>
           {/* ブランド評判ページへの内部リンク。
               ブランドページ6本が90日間表示ゼロ・5本がインデックス未登録だったのは、
-              エリアページ103本のどこからもリンクされておらず孤立していたため。 */}
+              エリアページ（全エリア）のどこからもリンクされておらず孤立していたため。 */}
           {brandSlug(gym.name) && (
             <a href={`/brands/${brandSlug(gym.name)}/`} className="inline-block border border-accent text-accent px-5 py-2.5 rounded-full text-sm font-medium hover:bg-accent hover:text-white transition">
               料金・全店舗を見る

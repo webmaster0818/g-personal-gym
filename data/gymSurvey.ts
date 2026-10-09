@@ -8,11 +8,14 @@
 // 注意: 「女性専用」等の割合は、各ジムの掲載特徴タグ（公式サイト記載にもとづく）を集計したもの。
 //       同一ブランドが複数エリアに登場するため、のべ掲載数での割合である点に留意。
 
+const AREAS = 102 // 集計時点（2026年6月）の掲載エリア数。現在のエリア数は lib/site.ts AREA_COUNT
+const LISTINGS = 546
+
 export const GYM_SURVEY = {
-  areas: 102,
-  listings: 546,
+  areas: AREAS,
+  listings: LISTINGS,
   period: '2026年6月',
-  source: 'woman-gym.com 独自調査（全国102エリア・のべ546ジムの公式情報を集計）',
+  source: `woman-gym.com 独自調査（全国${AREAS}エリア・のべ${LISTINGS}ジムの公式情報を集計）`,
   stats: {
     womenOnly: { count: 250, pct: 46 }, // 女性専用を明記
     privateRoom: { count: 155, pct: 28 }, // 完全個室・個室対応

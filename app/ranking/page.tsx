@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/ranking/'),
-  title: '女性専用パーソナルジムおすすめランキングTOP10【2026年8月最新】料金・特徴を徹底比較',
+  title: '女性専用パーソナルジムおすすめランキングTOP10【2026年8月】料金・特徴を徹底比較',
   description: '女性専用パーソナルジムのおすすめランキングTOP10。OUTLINE・ビーコンセプト・UNDEUX SUPERBODY・リボーンマイセルフなど人気ジムの料金・特徴・選び方を、目的別に徹底比較。あなたに合う一社が見つかります。',
 }
 
@@ -145,7 +145,7 @@ export default function RankingPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="eyebrow mb-3">Ranking</p>
             <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">
-              女性専用パーソナルジムおすすめランキングTOP10【2026年8月最新】
+              女性専用パーソナルジムおすすめランキングTOP10【2026年8月】
             </h1>
             <p className="text-ink-soft text-sm md:text-base leading-relaxed">
               女性専用パーソナルジムを「環境・料金・サポート・通いやすさ・実績」の5軸で総合評価し、おすすめ順にランキング。目的別に、あなたに合う一社が見つかります。

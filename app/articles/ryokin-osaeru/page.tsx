@@ -1,6 +1,7 @@
 import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
+import { GYM_SURVEY } from '@/data/gymSurvey'
 
 export const metadata: Metadata = {
   title: '女性専用パーソナルジムの料金を抑えるコツ【2026年】無料体験・回数最適化で賢く',
@@ -59,7 +60,7 @@ export default function Page() {
       </div>
 
       <h2>無料体験・カウンセリングを最大限に使う</h2>
-      <p>料金を抑えるうえで、もっとも手軽で効果的なのが<strong>無料体験・無料カウンセリングの活用</strong>です。当サイトが全国の女性向けパーソナルジムの公式情報を集計した独自調査（2026年6月／全国102エリア・のべ546ジム）では、<strong>体験・カウンセリングを無料で実施していたジムは約6割（325件）</strong>にのぼりました。</p>
+      <p>料金を抑えるうえで、もっとも手軽で効果的なのが<strong>無料体験・無料カウンセリングの活用</strong>です。当サイトが全国の女性向けパーソナルジムの公式情報を集計した独自調査（2026年6月／全国{GYM_SURVEY.areas}エリア・のべ{GYM_SURVEY.listings}ジム）では、<strong>体験・カウンセリングを無料で実施していたジムは約6割（325件）</strong>にのぼりました。</p>
       <p>無料の機会を使えば、費用をかけずに次のことを確認できます。</p>
       <ul>
         <li>料金の<strong>正確な内訳と総額</strong>（その場で見積もりを聞ける）</li>

@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/yokohama/'),
-  title: '【2026年7月最新】横浜の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月最新】横浜のおすすめ女性専用・女性向けパーソナルジム5選を徹底比較。料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】横浜の女性専用パーソナルジムおすすめ5選！料金比較',
+  description: '【2026年4月】横浜のおすすめ女性専用・女性向けパーソナルジム5選を徹底比較。料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,横浜,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -114,7 +114,7 @@ export default function YokohamaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年7月最新】横浜の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年7月】横浜の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
             </h1>
           </div>
         </section>

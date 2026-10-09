@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { GYM_SURVEY } from '@/data/gymSurvey'
 
 /**
- * 当サイト独自調査（全国102エリア・のべ546ジムの公式情報集計）のハイライト。
+ * 当サイト独自調査（全国◯エリア・のべ◯ジム＝GYM_SURVEY.areas/listingsの公式情報集計）のハイライト。
  * 数値は data/gymSurvey.ts の集計値のみを使用し、推定・補完はしない。
  */
 export function SurveyHighlight({ variant = 'default' }: { variant?: 'default' | 'compact' }) {

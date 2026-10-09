@@ -3,16 +3,18 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
+import { AREA_COUNT } from '@/lib/site'
+import { GYM_SURVEY } from '@/data/gymSurvey'
 
 export const metadata: Metadata = {
   title: '女性専用パーソナルジムの記事一覧｜選び方・産後・ブライダル・年代別ガイド',
   description:
-    '女性専用パーソナルジム選びに役立つ記事一覧。産後ダイエット・ブライダル・40代50代の選び方、女性専用と男女共用の違い、全国102エリア546ジムの独自調査データまで。目的別に最適な1社を見つけましょう。',
+    `女性専用パーソナルジム選びに役立つ記事一覧。産後ダイエット・ブライダル・40代50代の選び方、女性専用と男女共用の違い、全国${GYM_SURVEY.areas}エリア${GYM_SURVEY.listings}ジムの独自調査データまで。目的別に最適な1社を見つけましょう。`,
   ...pageUrlMeta('/articles/'),
 }
 
 const articles = [
-  { href: '/articles/josei-gym-data/', tag: '独自調査', title: '女性向けパーソナルジム実態調査2026', desc: '全国102エリア・546ジムを独自集計。女性専用46%・体験無料60%など、選ぶ前に知りたい実態を数字で公開。' },
+  { href: '/articles/josei-gym-data/', tag: '独自調査', title: '女性向けパーソナルジム実態調査2026', desc: `全国${GYM_SURVEY.areas}エリア・${GYM_SURVEY.listings}ジムを独自集計。女性専用46%・体験無料60%など、選ぶ前に知りたい実態を数字で公開。` },
   { href: '/articles/joseisenyo-vs-kyoyo/', tag: '比較', title: '女性専用と男女共用、どっちを選ぶ？', desc: 'プライバシー・料金・店舗数・相談しやすさの4軸で比較。あなたに合うのはどちらかを判断できます。' },
   { href: '/articles/josei-trainer/', tag: 'トレーナー', title: '女性トレーナーを指名できるジムの選び方', desc: '男性トレーナーには相談しにくい体の悩み。女性トレーナーのみ在籍・指名可の違いと確認ポイントを、独自調査とあわせて解説。' },
   { href: '/articles/private-kanshitsu/', tag: '完全個室', title: '完全個室・プライベートジムで選ぶ', desc: '人目が気になって続かなかった人へ。完全個室・個室対応28%のデータと、個室タイプの違い・確認ポイントを解説。' },
@@ -65,7 +67,7 @@ export default function Page() {
 
             <div className="mt-12 bg-ivory border border-line rounded-xl p-6 text-center">
               <p className="text-ink font-bold mb-2">お住まいのエリアからジムを探す</p>
-              <p className="text-ink-soft text-sm mb-5">全国102エリアの女性向けパーソナルジムを、料金・体験・特徴で比較できます。</p>
+              <p className="text-ink-soft text-sm mb-5">全国{AREA_COUNT}エリアの女性向けパーソナルジムを、料金・体験・特徴で比較できます。</p>
               <Link href="/" className="inline-block btn-primary text-sm !py-2.5 !px-7 !rounded-full">エリアから探す</Link>
             </div>
           </div>

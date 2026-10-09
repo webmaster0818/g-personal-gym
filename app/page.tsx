@@ -6,6 +6,7 @@ import { FAQSchema } from '@/components/FAQSchema'
 import ScrollReveal from '@/components/ScrollReveal'
 import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
+import { AREA_COUNT, BRAND_COUNT } from '@/lib/site'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/'),
@@ -127,7 +128,7 @@ export default function Home() {
                 <span className="text-accent">エリアと料金</span>から探す
               </h1>
               <p className="text-ink-soft text-[0.95rem] md:text-base leading-loose mb-9 max-w-lg">
-                「変わりたい」を、一緒に叶える場所へ。女性専用パーソナルジムだけを掲載しています。<strong>全国103エリア</strong>から通える店舗を探せるほか、主要6ブランドの<strong>料金・入会金・体験の有無</strong>を独自調査でまとめました。順位をつけて比べたい方は<strong>おすすめランキング</strong>へどうぞ。
+                「変わりたい」を、一緒に叶える場所へ。女性専用パーソナルジムだけを掲載しています。<strong>全国{AREA_COUNT}エリア</strong>から通える店舗を探せるほか、主要{BRAND_COUNT}ブランドの<strong>料金・入会金・体験の有無</strong>を独自調査でまとめました。順位をつけて比べたい方は<strong>おすすめランキング</strong>へどうぞ。
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/ranking/" className="btn-primary text-sm md:text-base !px-9 !py-4 text-center">
@@ -211,7 +212,7 @@ export default function Home() {
         {/* Areas */}
         <section className="py-20 md:py-24 bg-ivory" id="areas">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
-            <SectionHeading en="Area" title="エリアから探す" lead="全国102エリアの女性専用パーソナルジム情報をまとめています。主要エリアはこちら。" />
+            <SectionHeading en="Area" title="エリアから探す" lead={`全国${AREA_COUNT}エリアの女性専用パーソナルジム情報をまとめています。主要エリアはこちら。`} />
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 fade-up">
               {areas.map((area) => (
                 <Link
@@ -234,7 +235,7 @@ export default function Home() {
               <Link href="/cost/" className="px-3 py-1.5 bg-accent text-white rounded-full hover:opacity-90 transition">料金相場ガイド</Link>
             </div>
             <div className="text-center mt-6">
-              <Link href="/areas/" className="btn-outline text-sm inline-block">全国102エリアをすべて見る →</Link>
+              <Link href="/areas/" className="btn-outline text-sm inline-block">全国{AREA_COUNT}エリアをすべて見る →</Link>
             </div>
           </div>
         </section>

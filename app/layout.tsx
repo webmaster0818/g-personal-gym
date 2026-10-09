@@ -3,6 +3,7 @@ import { Noto_Sans_JP, Shippori_Mincho, Cormorant_Garamond } from 'next/font/goo
 import './globals.css'
 import ContentReveal from '@/components/ContentReveal'
 import { OG_BASE, TWITTER_BASE } from '@/lib/seo'
+import { AREA_COUNT, BRAND_COUNT } from '@/lib/site'
 
 const notoSansJP = Noto_Sans_JP({
   weight: ['300', '400', '500', '600', '700'],
@@ -42,10 +43,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://woman-gym.com'),
   title: {
-    default: '女性専用パーソナルジムを料金・エリアで探す【2026年8月】全国103エリア・主要6ブランドを掲載 | G-PersonalGym',
+    default: `女性専用パーソナルジムを料金・エリアで探す【2026年8月】全国${AREA_COUNT}エリア・主要${BRAND_COUNT}ブランドを掲載 | G-PersonalGym`,
     template: '%s | G-PersonalGym',
   },
-  description: '女性専用パーソナルジムを、お住まいのエリアと料金から探せます。全国103エリア・主要6ブランド（ビーコンセプト、リボーンマイセルフ、かたぎり塾ほか）の料金・入会金・体験の有無を独自調査でまとめました。ランキングで比較したい方は「おすすめランキング」をご覧ください。【2026年8月時点】',
+  description: `女性専用パーソナルジムを、お住まいのエリアと料金から探せます。全国${AREA_COUNT}エリア・主要${BRAND_COUNT}ブランド（ビーコンセプト、リボーンマイセルフ、かたぎり塾ほか）の料金・入会金・体験の有無を独自調査でまとめました。ランキングで比較したい方は「おすすめランキング」をご覧ください。【2026年8月時点】`,
   keywords: ['女性専用パーソナルジム', 'パーソナルジム', '比較', 'おすすめ', 'ランキング', '料金', '口コミ', '2026'],
   authors: [{ name: 'G-PersonalGym編集部' }],
   // 2026-10-06 url・title・description を外した。固定値だと全135ページの og:url が TOP、og:title が共通になる。

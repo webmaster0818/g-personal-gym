@@ -1,6 +1,7 @@
 import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
+import { GYM_SURVEY } from '@/data/gymSurvey'
 
 export const metadata: Metadata = {
   title: '女性のダイエットにジムはどこがいい？パーソナルジムの選び方【2026年8月】',
@@ -74,7 +75,7 @@ export default function Page() {
         ダイエットでは運動と同じくらい、あるいはそれ以上に<strong>食事の見直し</strong>が大切だとされています。トレーニングで消費できるエネルギーには限りがあるため、食事の質・量を整えることが体の変化につながりやすいからです。
       </p>
       <p>
-        ただし、<strong>すべてのパーソナルジムに食事指導があるわけではありません</strong>。当サイト woman-gym.com が全国102エリア・のべ546ジムの公式情報を調べたところ、食事指導を掲げているのは<strong>26%（142ジム）</strong>でした。トレーニング中心で食事は別オプション、というジムも少なくないのです。
+        ただし、<strong>すべてのパーソナルジムに食事指導があるわけではありません</strong>。当サイト woman-gym.com が全国{GYM_SURVEY.areas}エリア・のべ{GYM_SURVEY.listings}ジムの公式情報を調べたところ、食事指導を掲げているのは<strong>26%（142ジム）</strong>でした。トレーニング中心で食事は別オプション、というジムも少なくないのです。
       </p>
       <div className="callout">
         <p>
@@ -86,7 +87,7 @@ export default function Page() {
           <li>女性専用を明記：<strong>46%</strong></li>
           <li>完全個室・個室対応：<strong>28%</strong></li>
         </ul>
-        <p>出典：woman-gym.com 独自調査（全国102エリア・のべ546ジムの公式情報を集計）</p>
+        <p>出典：woman-gym.com 独自調査（全国{GYM_SURVEY.areas}エリア・のべ{GYM_SURVEY.listings}ジムの公式情報を集計）</p>
       </div>
       <h3>食事指導はどこまで見てくれるかを聞く</h3>
       <p>

@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "python3 scripts/check-area-count.py",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
