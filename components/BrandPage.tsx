@@ -3,6 +3,7 @@ import type { BrandInfo } from '@/data/brands'
 import brandStores from '@/data/brandStores.json'
 import { SurveyHighlight } from '@/components/SurveyHighlight'
 import { BrandReviewDigest } from '@/components/BrandReviewDigest'
+import { BrandReviewThemes } from '@/components/BrandReviewThemes'
 
 type Store = {
   name: string
@@ -35,6 +36,8 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
   const prices = priceSummary(stores)
   const freeTrial = freeTrialCount(stores)
   const areas = [...new Map(stores.map((s) => [s.areaSlug, s.areaName])).entries()]
+  const unlisted = brand.unlistedStores?.stores ?? {}
+  const unlistedCount = stores.filter((s) => unlisted[s.name]).length
 
   return (
     <main>
@@ -49,9 +52,14 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
             <span className="text-ink-soft">{brand.name}</span>
           </nav>
           <h1 className="font-serif text-2xl md:text-3xl text-ink leading-snug">
-            {brand.name}の料金・店舗一覧・特徴
+            {brand.reviewThemes ? `${brand.name}の口コミ・評判と料金・店舗一覧` : `${brand.name}の料金・店舗一覧・特徴`}
             <span className="block mt-2 text-base text-ink-soft font-sans">{brand.tagline}</span>
           </h1>
+          {brand.updated && (
+            <p className="mt-3 text-xs text-ink-faint">
+              最終更新: {brand.updated}（公式サイトの料金・店舗一覧・よくある質問と、Googleマップの口コミを確認）
+            </p>
+          )}
 
           <div className="mt-8 rounded-2xl border border-line bg-white p-6">
             <p className="text-xs font-medium tracking-[0.15em] text-ink-faint uppercase mb-4">まず結論</p>
@@ -157,7 +165,10 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
               <tbody>
                 {stores.map((s, i) => (
                   <tr key={i} className="border-b border-line/60 last:border-0">
-                    <td className="px-4 py-3 text-ink">{s.name}</td>
+                    <td className="px-4 py-3 text-ink">
+                      {s.name}
+                      {unlisted[s.name] && <span className="block mt-1 text-[11px] text-ink-faint">※{unlisted[s.name]}（{brand.unlistedStores?.checked}確認）</span>}
+                    </td>
                     <td className="px-4 py-3">
                       <Link href={`/areas/${s.areaSlug}/`} className="text-accent hover:underline">{s.areaName}</Link>
                     </td>
@@ -168,11 +179,21 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
             </table>
           </div>
           <p className="mt-3 text-[11px] text-ink-faint">※エリア名をタップすると、その地域の他ジムとまとめて比較できます。</p>
+          {unlistedCount > 0 && (
+            <p className="mt-2 text-[11px] leading-relaxed text-ink-faint">
+              ※当サイト掲載{stores.length}店のうち{unlistedCount}店は、{brand.unlistedStores?.checked}時点で
+              <a href={brand.officialStores?.sourceUrl ?? brand.officialUrl} target="_blank" rel="noopener noreferrer" className="underline">公式の店舗一覧</a>
+              に掲載がありません（閉店・移転・統合の可能性があります）。来店前に必ず公式サイトで営業状況をご確認ください。
+            </p>
+          )}
         </div>
       </section>
 
       {/* Google口コミの集約（2026-08-28・出典リンクは店舗ごとに明記） */}
-      <BrandReviewDigest brandSlug={brand.slug} brandName={brand.name} />
+      {brand.reviewThemes && (
+        <BrandReviewThemes brandSlug={brand.slug} brandName={brand.name} themes={brand.reviewThemes} unlisted={unlisted} />
+      )}
+      <BrandReviewDigest brandSlug={brand.slug} brandName={brand.name} unlisted={unlisted} />
 
       {/* 独自調査データ */}
       <section className="py-14">
@@ -208,6 +229,7 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
           >
             {brand.name}の公式サイトを見る
           </a>
+          {brand.affiliateUrl && <p className="mt-3 text-[11px] text-ink-faint">PR：このボタンは広告（アフィリエイト）リンクです。</p>}
           <p className="mt-3 text-[11px] text-ink-faint">
             情報引用元: <a href={brand.officialUrl} target="_blank" rel="noopener noreferrer" className="underline">{brand.name}公式サイト</a>
           </p>

@@ -13,7 +13,7 @@ import { gymBrandSlugOf } from '@/lib/gymBrand'
 // ⚠️ ★は取得できた実値のみ。件数・取得時点を併記し、良い店だけを選ばない
 //    （並びは口コミ件数順。評価順にすると高評価店だけが上に来る）。
 
-export function BrandReviewDigest({ brandSlug, brandName }: { brandSlug: string; brandName: string }) {
+export function BrandReviewDigest({ brandSlug, brandName, unlisted = {} }: { brandSlug: string; brandName: string; unlisted?: Record<string, string> }) {
   const rows = Object.values(GYM_REVIEWS).filter((r) => gymBrandSlugOf(r.name) === brandSlug)
   if (rows.length < 3) return null // 3店舗未満は「ブランドの傾向」と言えないので出さない
 
@@ -68,7 +68,10 @@ export function BrandReviewDigest({ brandSlug, brandName }: { brandSlug: string;
           {shown.map((r) => (
             <div key={r.name} className="bg-white border border-line p-5">
               <div className="flex items-baseline justify-between gap-3 flex-wrap mb-2">
-                <p className="text-sm font-medium text-ink">{r.name}</p>
+                <p className="text-sm font-medium text-ink">
+                  {r.name}
+                  {unlisted[r.name] && <span className="ml-2 text-[11px] font-normal text-ink-faint">※{unlisted[r.name]}</span>}
+                </p>
                 <p className="text-xs text-ink-soft">
                   ★{r.rating}（{r.userRatings.toLocaleString()}件）
                 </p>
