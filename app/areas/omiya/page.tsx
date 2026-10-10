@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'ビーコンセプト 大宮店',
-    officialUrl: 'https://b-concept.tokyo/',
+    officialUrl: 'https://b-concept.tokyo/clublist/omiya/',
     price: '2ヶ月16回 199,650円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
@@ -31,7 +31,7 @@ const gyms = [
     popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×16回の集中プログラム。', price: '2ヶ月16回 199,650円〜（税込）' },
     options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
   {
     name: 'OUTLINE 大宮店',

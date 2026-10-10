@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'ビーコンセプト 小倉店',
-    officialUrl: 'https://b-concept.tokyo/store/kokura/',
+    officialUrl: 'https://b-concept.tokyo/clublist/kokura/',
     price: '太ももダイエットプログラム 89,842円×2ヶ月（18回・税込・入会金無料）',
     trial: '無料カウンセリング＋体験トレーニングあり（当日体験可）',
     features: ['女性専用', '完全個室', '脚やせ・下半身特化', '託児所費用補助', '手ぶらOK'],

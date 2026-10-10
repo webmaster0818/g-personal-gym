@@ -21,17 +21,17 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'ビーコンセプト 福岡天神店',
-    officialUrl: 'https://b-concept.tokyo/',
+    officialUrl: 'https://b-concept.tokyo/clublist/tenjin/',
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '医師監修'],
     description: '天神エリアの女性専用パーソナルジム。下半身痩せに特化。',
-    access: '地下鉄「天神駅」徒歩5分',
-    address: '地下鉄「天神駅」徒歩5分',
+    access: '福岡市地下鉄空港線「赤坂駅」徒歩5分',
+    address: '福岡県福岡市中央区大名1-10-33 東峰マンション大名105',
     popularPlan: { name: '人気プラン', description: '天神エリアの女性専用パーソナルジム。下半身痩せに特化。', price: '2ヶ月18回 179,685円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'リボーンマイセルフ 博多店',
