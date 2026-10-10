@@ -182,3 +182,9 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
   - **確認できない68件**→hours/closed とも「公式サイトでご確認ください」（biyori 10/8 と同方針）。うち52件は5ブランドの公式店舗一覧で該当店を特定できなかった店（リボーン19・エクササイズコーチ13・OUTLINE10・かたぎり塾6・UNDEUX4）＝ビーコンセプトと同じ「実在未確認」の疑い。今回は件数報告のみ。
 - after: `10:00〜22:00／不定休` 110→**18**（残りはビーコンセプトの wip 対象店のみ）、`9:00〜22:00／不定休` 16→0。build EXIT0・precheck 全項目OK。
 - スクリプト: /tmp/bc1010/scripts/apply_hours.py（照合ログ /tmp/bc1010/hours-log.json）。⚠️ ジムブロックの正規表現 `\n  \{\s*name:` は一部ページの書式（`}, {` 連結）を取りこぼす。件数は `hours: '…', closed: '…'` を直接数えること。
+
+### 2026-10-10（続き2）主要5ブランドの「公式一覧に無い52店」を確定 ✅実在店の訂正は本番（source 5c84674 / deploy 47b0ee6）・削除案は wip
+- 52店＝**実は現役13**（リボーン11・UNDEUX福岡＝天神スタジオ・エクササイズコーチ池袋＝東口/西口のどちらか）／**掲載終了10**／**元から無い29**。表は `~/.openclaw/workspace/reports/woman-gym-unverified-stores-2026-10-10.md`。
+- 🚨 リボーンマイセルフの照合は必ず本体 `https://www.shapes-international.co.jp/store/`（REST `/wp-json/wp/v2/store` 26件）。reborn-myself.com は西日本5店だけのサイト。
+- 本番訂正: リボーン11店の住所・アクセス・営業時間・公式URL（自由が丘＝世田谷区奥沢、東京店＝日本橋駅徒歩1分、横浜・立川＝徒歩7分ほか）、UNDEUX福岡＝天神スタジオの住所・時間・URL、川崎・立川のFAQ徒歩分数。precheck OK・本番確認済み。
+- wip `wip/remove-unverified-stores-other-brands`（b3b333b）: 39店を外す案。N選のみ反映・FAQ本文の言及は未整理。五反田は1件、上野は2件になる（ビーコンセプト wip と併用で上野1件）。
