@@ -31,7 +31,7 @@ const gyms = [
     popularPlan: { name: '16回コース', description: '完全個室マンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'よもぎ蒸し', '高級アミノ酸提供', 'ウェアレンタル無料'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
     name: 'UNDEUX SUPERBODY LIFE 藤沢店',
@@ -45,7 +45,7 @@ const gyms = [
     popularPlan: { name: '月4回プラン', description: '月額制のマンツーマンパーソナルトレーニング。マシンピラティスも可。', price: '月額 33,000円〜（税込）' },
     options: ['マシンピラティス設備', '月2回〜8回から選択', '継続割あり', 'シャワー完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善', '体型維持'] },
-    basicInfo: { hours: '9:00〜22:00', closed: '不定休', facilities: ['トレーニングルーム', 'ピラティスマシン', 'シャワー'] },
+    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['トレーニングルーム', 'ピラティスマシン', 'シャワー'] },
   },
   {
     name: 'リボーンマイセルフ 藤沢店',
@@ -59,7 +59,7 @@ const gyms = [
     popularPlan: { name: 'ダイエットコース', description: '女性トレーナーによるマンツーマン指導。60分の完全プライベートセッション。', price: '入会金38,000円＋コース料金' },
     options: ['ウェアレンタル無料', '産後ダイエットコース', 'ブライダルダイエットコース', '部分痩せコース'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', '産後ダイエット', 'ブライダル', '部分痩せ'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全プライベート空間', 'ロッカー', 'ウェアレンタル'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全プライベート空間', 'ロッカー', 'ウェアレンタル'] },
   },
   {
     name: 'ビーコンセプト 藤沢店',

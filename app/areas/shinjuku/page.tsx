@@ -31,7 +31,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '業界初の生涯無料アフターサポート付き女性専用パーソナルジム。完全個室でベビーサー', price: '16回 184,800円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'UNDEUX SUPERBODY 新宿スタジオ',
@@ -45,7 +45,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '糖質オフ宅配食を無料提供する女性専用パーソナルジム。食事とトレーニングの総合サポ', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'ビーコンセプト 新宿店',
@@ -73,7 +73,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: 'トレーナー全員女性の老舗女性専用ジム。2万人以上の指導実績。', price: '入会金38,000円＋コース料金' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'かたぎり塾 西新宿女性専門店',
@@ -87,7 +87,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '西新宿の女性専門店。トレーナー全員女性でAI食事指導付き。月額制で通いやすい。', price: '月4回 30,800円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '火〜木・日10:00〜22:00／金10:00〜20:00', closed: '月・土', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'エクササイズコーチ 新宿店',
@@ -101,7 +101,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: 'AI主導の20分パーソナルトレーニング。月4回12,000円〜の低価格。', price: '月4回 12,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   }
 ]
 

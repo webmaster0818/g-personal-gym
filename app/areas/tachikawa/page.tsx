@@ -31,7 +31,7 @@ const gyms = [
     popularPlan: { name: '16回コース', description: '完全個室マンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
     options: ['生涯無料アフターサポート', 'よもぎ蒸し', '遺伝子検査', '高級アミノ酸提供', 'ベビーサークル完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
     name: 'ビーコンセプト 立川店',
@@ -59,7 +59,7 @@ const gyms = [
     popularPlan: { name: 'ダイエットコース 8回', description: '女性トレーナーによるマンツーマン指導。60分×8回の短期集中。', price: '8回 92,400円〜（税込）' },
     options: ['ウェアレンタル無料', '産後ダイエットコース', 'ブライダルダイエットコース', '部分痩せコース'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', '産後ダイエット', 'ブライダル', '部分痩せ'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['ロッカー', 'ウェアレンタル'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'ウェアレンタル'] },
   },
   {
     name: 'UNDEUX SUPERBODY LIFE 立川スタジオ',
@@ -73,7 +73,7 @@ const gyms = [
     popularPlan: { name: '月8回プラン', description: '月額制のマンツーマンパーソナルトレーニング。1回50分。', price: '月8回 59,400円〜（税込）' },
     options: ['継続割あり', '月2回〜8回から選択', 'ウェアレンタル', 'シャワー完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体型維持', '健康管理'] },
-    basicInfo: { hours: '9:00〜22:00', closed: '不定休', facilities: ['トレーニングルーム', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['トレーニングルーム', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'エクササイズコーチ 立川',

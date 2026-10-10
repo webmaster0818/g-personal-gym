@@ -31,7 +31,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '生涯無料アフターサポート付き女性専用パーソナルジム。池袋駅から好アクセス。', price: '16回 184,800円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'UNDEUX SUPERBODY 池袋スタジオ',
@@ -45,7 +45,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '糖質オフ宅配食を無料提供する女性専用パーソナルジム。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'ビーコンセプト 池袋店',
@@ -72,7 +72,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '筋トレ×ボクシング×有酸素×ピラティスの超効率トレーニング。女性人気No.1受賞', price: '2ヶ月16回 158,400円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'エクササイズコーチ 池袋店',
@@ -86,7 +86,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: 'AI主導20分トレーニング。月4回12,000円〜。', price: '月4回 12,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   }
 ]
 

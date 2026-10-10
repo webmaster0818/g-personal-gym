@@ -31,7 +31,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '横浜に6店舗展開する女性専用パーソナルジム。生涯無料アフターサポート付き。', price: '16回 184,800円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'UNDEUX SUPERBODY 横浜スタジオ',
@@ -45,7 +45,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '横浜駅より徒歩3分。糖質オフ宅配食無料の女性専用ジム。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'ビーコンセプト 横浜店',
@@ -73,7 +73,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '女性トレーナーのみ在籍の老舗女性専用ジム。横浜駅から好アクセス。', price: '入会金38,000円＋コース料金' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'エクササイズコーチ 横浜店',
@@ -87,7 +87,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: 'AI主導20分トレーニング。横浜で月4回12,000円〜。', price: '月4回 12,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '平日9:40〜21:40（月曜は12:00〜）／土日祝8:40〜18:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   }
 ]
 
