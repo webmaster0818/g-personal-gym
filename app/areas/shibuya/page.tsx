@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shibuya/'),
-  title: '【2026年7月】渋谷の女性専用パーソナルジムおすすめ7選！料金比較',
-  description: '【2026年4月】渋谷のおすすめ女性専用パーソナルジム7選を徹底比較。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】渋谷の女性専用パーソナルジムおすすめ6選！料金比較',
+  description: '【2026年4月】渋谷のおすすめ女性専用パーソナルジム6選を徹底比較。UNDEUX SUPERBODY・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,渋谷,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -46,20 +46,6 @@ const gyms = [
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
-  {
-    name: 'ビーコンセプト 渋谷店',
-    officialUrl: 'https://b-concept.tokyo/',
-    price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
-    description: '医師とトレーナーが共同開発した独自の脚やせメソッドが人気。太もも痩せ・ヒップアップに特化し、2ヶ月で美脚を目指す。託児所費用補助で産後ママにも対応。月々5,545円〜の分割払い可。',
-    access: 'JR「渋谷駅」徒歩5分',
-    address: '東京都渋谷区（渋谷駅徒歩5分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
-    options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応（月々5,545円〜）'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
   {
     name: 'リボーンマイセルフ 渋谷店',
@@ -119,15 +105,15 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '渋谷で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプト、リボーンマイセルフ、クレビックが渋谷で人気の女性専用パーソナルジムです。それぞれ特徴が異なるので、食事管理重視ならUNDEUX、コスパ重視ならOUTLINE、下半身痩せならビーコンセプトがおすすめです。' },
+  { question: '渋谷で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、リボーンマイセルフ、クレビックが渋谷で人気の女性専用パーソナルジムです。それぞれ特徴が異なるので、食事管理重視ならUNDEUX、コスパ重視ならOUTLINEがおすすめです。' },
   { question: '渋谷のパーソナルジムの料金相場は？', answer: '渋谷エリアの女性向けパーソナルジムの2ヶ月��ース料金は約15万〜22万円。月額制なら月12,000円〜30,800円程度。エクササイズコーチは月4回12,000円〜と最安クラスです。' },
-  { question: '渋谷駅から近いパーソナルジムは？', answer: 'エクササイズコーチ渋谷店（徒歩3分）、UNDEUX SUPERBODY（徒歩5分）、ビーコンセプト（徒歩5分）、クレビック（徒歩5分）が渋谷駅から特に近いジムです。' },
-  { question: '子連れで通えるジムはある？', answer: 'OUTLINE渋谷店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験あり。OUTLINE、ビーコンセプト、リボーンマイセルフは無料カウンセリングを実施しています。' },
+  { question: '渋谷駅から近いパーソナルジムは？', answer: 'エクササイズコーチ渋谷店（徒歩3分）、UNDEUX SUPERBODY（徒歩5分）、クレビック（徒歩5分）が渋谷駅から特に近いジムです。' },
+  { question: '子連れで通えるジムはある？', answer: 'OUTLINE渋谷店はベビーサークル完備で子連れOK。' },
+  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験あり。OUTLINE、リボーンマイセルフは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
   { question: '渋谷で最も安いパーソナルジムは？', answer: 'エクササイズコーチ（月4回12,000円〜）が最安。2ヶ月コースではクレビック（149,800円〜）がコスパ良好。OUTLINEは生涯サポート付きで184,800円〜。' },
   { question: '短時間で通えるジムは？', answer: 'エクササイズコーチは1回20分で完了。忙しい方に最適です。他のジムも50〜75分のセッションが一般的です。' },
-  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料提供。クレビックは管理栄養士による食事指導。ビーコンセプトは医師監修の食事指導が受けられます。' },
+  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料提供。クレビックは管理栄養士による食事指導。' },
   { question: 'リバウンドが心配な場合は？', answer: 'OUTLINE（アウトライン）は業界初の「生涯無料アフターサポート」があり、卒業後もずっとサポートが受けられます。リバウンドが心配な方に最もおすすめです。' },
 ]
 
@@ -191,15 +177,15 @@ export default function ShibuyaPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（月4回 12,000円〜）</li><li className="text-brand-muted">・クレビック（16回 149,800円〜）</li><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（月4回 12,000円〜）</li><li className="text-brand-muted">・クレビック（16回 149,800円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・クレビック（管理栄養士指導）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・クレビック（管理栄養士指導）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li></ul>
               </div>
             </div>
           </div>
@@ -289,7 +275,7 @@ export default function ShibuyaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">渋谷エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプト、女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、下半身痩せなら女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

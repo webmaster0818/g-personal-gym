@@ -2516,40 +2516,6 @@
  ],
  "b-concept": [
   {
-   "name": "ビーコンセプト 千葉店",
-   "areaSlug": "chiba",
-   "areaName": "千葉",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「千葉駅」徒歩5分",
-   "address": "千葉県千葉市中央区（千葉駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 恵比寿・代官山店",
-   "areaSlug": "daikanyama",
-   "areaName": "代官山",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東急東横線「代官山駅」徒歩6分 / JR「恵比寿駅」徒歩7分",
-   "address": "東京都渋谷区恵比寿西（代官山駅徒歩6分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
-   ]
-  },
-  {
    "name": "ビーコンセプト 恵比寿店",
    "areaSlug": "ebisu",
    "areaName": "恵比寿",
@@ -2567,23 +2533,6 @@
    ]
   },
   {
-   "name": "ビーコンセプト 藤沢店",
-   "areaSlug": "fujisawa",
-   "areaName": "藤沢",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「藤沢駅」徒歩5分",
-   "address": "神奈川県藤沢市（藤沢駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "完全個室",
-    "藤沢駅近"
-   ]
-  },
-  {
    "name": "ビーコンセプト 福岡天神店",
    "areaSlug": "fukuoka",
    "areaName": "福岡",
@@ -2597,39 +2546,6 @@
     "下半身特化",
     "完全個室",
     "医師監修"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 二子玉川店",
-   "areaSlug": "futakotamagawa",
-   "areaName": "二子玉川",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東急「二子玉川駅」徒歩5分",
-   "address": "東京都世田谷区玉川（二子玉川駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 銀座店",
-   "areaSlug": "ginza",
-   "areaName": "銀座",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東京メトロ「銀座一丁目駅」徒歩1分",
-   "address": "東京メトロ「銀座一丁目駅」徒歩1分",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "完全個室",
-    "銀座一丁目駅徒歩1分"
    ]
   },
   {
@@ -2650,23 +2566,6 @@
    ]
   },
   {
-   "name": "ビーコンセプト 神楽坂店",
-   "areaSlug": "iidabashi",
-   "areaName": "飯田橋",
-   "officialUrl": "https://b-concept.tokyo/clublist/kagurazaka/",
-   "price": "太ももダイエットプログラム 89,842円×2ヶ月（全18回・税込）",
-   "trial": "無料カウンセリング・体験トレーニングあり",
-   "access": "東京メトロ東西線 神楽坂駅から徒歩3分",
-   "address": "東京都新宿区矢来町38 BELLA VOCE 302",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "下半身・太もも痩せ特化",
-    "手ぶらOK",
-    "託児所費用補助"
-   ]
-  },
-  {
    "name": "ビーコンセプト 池袋店",
    "areaSlug": "ikebukuro",
    "areaName": "池袋",
@@ -2680,23 +2579,6 @@
     "下半身特化",
     "完全個室",
     "託児所費用補助"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 自由が丘店",
-   "areaSlug": "jiyugaoka",
-   "areaName": "自由が丘",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東急「自由が丘駅」徒歩5分",
-   "address": "東京都目黒区自由が丘（自由が丘駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
    ]
   },
   {
@@ -2730,23 +2612,6 @@
     "完全個室",
     "脚やせ・下半身特化",
     "手ぶらOK"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 川崎店",
-   "areaSlug": "kawasaki",
-   "areaName": "川崎",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「川崎駅」徒歩5分",
-   "address": "神奈川県川崎市川崎区（川崎駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
    ]
   },
   {
@@ -2784,23 +2649,6 @@
    ]
   },
   {
-   "name": "ビーコンセプト 北千住店",
-   "areaSlug": "kitasenju",
-   "areaName": "北千住",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「北千住駅」徒歩5分",
-   "address": "東京都足立区千住（北千住駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
-   ]
-  },
-  {
    "name": "ビーコンセプト 小倉店",
    "areaSlug": "kokura",
    "areaName": "小倉",
@@ -2815,40 +2663,6 @@
     "脚やせ・下半身特化",
     "託児所費用補助",
     "手ぶらOK"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 町田店",
-   "areaSlug": "machida",
-   "areaName": "町田",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「町田駅」徒歩5分",
-   "address": "東京都町田市（町田駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 目黒店",
-   "areaSlug": "meguro",
-   "areaName": "目黒",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「目黒駅」徒歩5分",
-   "address": "東京都品川区上大崎（目黒駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
    ]
   },
   {
@@ -2880,23 +2694,6 @@
     "下半身特化",
     "完全個室",
     "医師監修"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 中目黒店",
-   "areaSlug": "nakameguro",
-   "areaName": "中目黒",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東急東横線「中目黒駅」徒歩6分",
-   "address": "東京都目黒区上目黒（中目黒駅徒歩6分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
    ]
   },
   {
@@ -2934,55 +2731,6 @@
    ]
   },
   {
-   "name": "ビーコンセプト 表参道店",
-   "areaSlug": "omotesando",
-   "areaName": "表参道",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東京メトロ「表参道駅」徒歩4分",
-   "address": "東京都港区南青山（表参道駅徒歩4分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "完全個室",
-    "表参道駅近"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 梅田店",
-   "areaSlug": "osaka",
-   "areaName": "大阪（梅田・心斎橋）",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「大阪駅」徒歩6分",
-   "address": "JR「大阪駅」徒歩6分",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "完全個室",
-    "医師監修"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 六本木店",
-   "areaSlug": "roppongi",
-   "areaName": "六本木",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東京メトロ「六本木駅」徒歩5分",
-   "address": "東京メトロ「六本木駅」徒歩5分",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "完全個室",
-    "医師監修"
-   ]
-  },
-  {
    "name": "ビーコンセプト 札幌店",
    "areaSlug": "sapporo",
    "areaName": "札幌",
@@ -2996,57 +2744,6 @@
     "下半身特化",
     "完全個室",
     "医師監修"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 渋谷店",
-   "areaSlug": "shibuya",
-   "areaName": "渋谷",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「渋谷駅」徒歩5分",
-   "address": "東京都渋谷区（渋谷駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 下北沢店",
-   "areaSlug": "shimokitazawa",
-   "areaName": "下北沢",
-   "officialUrl": "https://b-concept.tokyo/clublist/shimokitazawa/",
-   "price": "太ももダイエットプログラム 2ヶ月全18回 179,685円（税込）",
-   "trial": "無料カウンセリング・体験トレーニングあり",
-   "access": "下北沢駅 徒歩1分",
-   "address": "東京都世田谷区北沢2-23-12 下北沢デントビル3A",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "脚やせ・下半身特化",
-    "手ぶらOK",
-    "子連れ可"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 品川店",
-   "areaSlug": "shinagawa",
-   "areaName": "品川",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「品川駅」徒歩5分",
-   "address": "東京都港区港南（品川駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
    ]
   },
   {
@@ -3083,23 +2780,6 @@
    ]
   },
   {
-   "name": "ビーコンセプト 上野店",
-   "areaSlug": "ueno",
-   "areaName": "上野",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「上野駅」徒歩5分",
-   "address": "東京都台東区上野（上野駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "医師×トレーナー共同開発",
-    "託児所費用補助",
-    "完全個室"
-   ]
-  },
-  {
    "name": "ビーコンセプト 北新地・堂島店",
    "areaSlug": "umeda",
    "areaName": "梅田",
@@ -3113,22 +2793,6 @@
     "完全個室",
     "脚やせ・下半身特化",
     "医師×トレーナー共同開発"
-   ]
-  },
-  {
-   "name": "ビーコンセプト 横浜店",
-   "areaSlug": "yokohama",
-   "areaName": "横浜",
-   "officialUrl": "https://b-concept.tokyo/",
-   "price": "2ヶ月18回 179,685円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「横浜駅」徒歩6分",
-   "address": "JR「横浜駅」徒歩6分",
-   "features": [
-    "女性専用",
-    "下半身特化",
-    "完全個室",
-    "託児所費用補助"
    ]
   }
  ]

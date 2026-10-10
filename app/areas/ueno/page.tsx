@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/ueno/'),
-  title: '【2026年7月】上野の女性専用パーソナルジムおすすめ6選！料金比較',
-  description: '【2026年4月】上野のおすすめ女性専用パーソナルジム6選を徹底比較。OUTLINE・B-CONCEPT・CREBIQなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】上野の女性専用パーソナルジムおすすめ5選！料金比較',
+  description: '【2026年4月】上野のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・B-CONCEPT・CREBIQなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,上野,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -32,20 +32,6 @@ const gyms = [
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
-  {
-    name: 'ビーコンセプト 上野店',
-    officialUrl: 'https://b-concept.tokyo/',
-    price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
-    description: '医師とトレーナー共同開発の脚やせメソッドが人気。上野エリアで太もも痩せ・ヒップアップに特化。託児所費用補助で産後ママにも対応。',
-    access: 'JR「上野駅」徒歩5分',
-    address: '東京都台東区上野（上野駅徒歩5分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
-    options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応（月々5,545円〜）'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
   {
     name: 'クレビック 上野店',
@@ -105,11 +91,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '上野で女性専用のパーソナルジムはありますか？', answer: 'はい、上野エリアにはOUTLINE、ビーコンセプト、クレビック、UNDEUX SUPERBODYなど複数の女性専用パーソナルジムがあります。いずれも上野駅から徒歩圏内です。' },
+  { question: '上野で女性専用のパーソナルジムはありますか？', answer: 'はい、上野エリアにはOUTLINE、クレビック、UNDEUX SUPERBODYなど複数の女性専用パーソナルジムがあります。いずれも上野駅から徒歩圏内です。' },
   { question: '上野のパーソナルジムの料金相場は？', answer: '上野エリアの料金はエクササイズコーチ（月12,000円〜）からUNDEUX SUPERBODY（2ヶ月220,000円〜）まで幅広い選択肢。クレビック（149,800円〜）が2ヶ月コースで最安クラスです。' },
   { question: '上野で食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODY（糖質オフ宅配食無料）、クレビック（管理栄養士指導）が食事サポートに特に力を入れています。' },
   { question: '上野で最も安いパーソナルジムは？', answer: 'エクササイズコーチ上野店（月4回12,000円〜）が最安。2ヶ月コースではクレビック（149,800円〜）がコスパに優れています。' },
-  { question: '上野で子連れで通えるジムは？', answer: 'OUTLINE上野店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
+  { question: '上野で子連れで通えるジムは？', answer: 'OUTLINE上野店はベビーサークル完備で子連れOK。' },
 ]
 
 export default function UenoPage() {
@@ -169,7 +155,7 @@ export default function UenoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">上野エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパ重視ならOUTLINEやクレビック、食事管理重視ならUNDEUX SUPERBODY、下半身痩せならビーコンセプトがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">コスパ重視ならOUTLINEやクレビック、食事管理重視ならUNDEUX SUPERBODYがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

@@ -13,25 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/iidabashi/'),
-  title: '【2026年7月】飯田橋の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】飯田橋のおすすめ女性向けパーソナルジム3選を比較。ビーコンセプト・かたぎり塾・LiMEパーソナルジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '【2026年7月】飯田橋の女性向けパーソナルジムおすすめ2選！料金比較',
+  description: '【2026年7月】飯田橋のおすすめ女性向けパーソナルジム2選を比較。かたぎり塾・LiMEパーソナルジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,飯田橋,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'ビーコンセプト 神楽坂店',
-    officialUrl: 'https://b-concept.tokyo/clublist/kagurazaka/',
-    price: '太ももダイエットプログラム 89,842円×2ヶ月（全18回・税込）',
-    trial: '無料カウンセリング・体験トレーニングあり',
-    features: ['女性専用', '完全個室', '下半身・太もも痩せ特化', '手ぶらOK', '託児所費用補助'],
-    description: '女性専用・完全個室。医師×トレーナー開発の下半身（太もも）痩せ特化メソッドと、無理な制限のない食事指導が特徴。朝7時から23時まで営業し、託児所費用補助もあります。',
-    access: '東京メトロ東西線 神楽坂駅から徒歩3分',
-    address: '東京都新宿区矢来町38 BELLA VOCE 302',
-    options: ['トライアルプラン4回44,000円', '分割 月々4,991円〜', '当日入会で入会金無料'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['太もも痩せ', '下半身痩せ', '産後ダイエット'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
-  },
   {
     name: 'かたぎり塾 飯田橋店',
     officialUrl: 'https://katagirijuku.jp/gyms/iidabashi',
@@ -59,11 +46,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '飯田橋で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、ビーコンセプト 神楽坂店です（2026年6月調査時点）。' },
-  { question: '飯田橋のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、ビーコンセプト 神楽坂店は太ももダイエットプログラム 89,842円×2ヶ月（全18回・税込）。かたぎり塾 飯田橋店は月4プラン 33,000円（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '飯田橋駅から近いジムは？', answer: '駅徒歩3分以内・直結では、ビーコンセプト 神楽坂店（東京メトロ東西線 神楽坂駅から徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'ビーコンセプト 神楽坂店、かたぎり塾 飯田橋店、LiMEパーソナルジム 飯田橋・市ヶ谷店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'ビーコンセプト 神楽坂店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '飯田橋で女性専用のパーソナルジムはどこ？', answer: '当サイト掲載のジムのうち、公式サイトで女性専用と確認できたジムはありません（2026年10月時点）。掲載中の2ジムはいずれも完全個室のマンツーマン指導です。' },
+  { question: '飯田橋のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金ではは太ももダイエットプログラム 89,842円×2ヶ月（全18回・税込）。かたぎり塾 飯田橋店は月4プラン 33,000円（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '飯田橋駅から近いジムは？', answer: '駅徒歩3分以内・直結ではがあります。' },
+  { question: '体験やカウンセリングは無料で受けられる？', answer: 'かたぎり塾 飯田橋店、LiMEパーソナルジム 飯田橋・市ヶ谷店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはある？', answer: '条件は各公式サイトでご確認ください。' },
   { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
 ]
 
@@ -125,12 +112,8 @@ export default function IidabashiPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別の選び方</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト 神楽坂店</li></ul>
-              </div>
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト 神楽坂店</li><li className="text-brand-muted">・かたぎり塾 飯田橋店</li><li className="text-brand-muted">・LiMEパーソナルジム 飯田橋・市ヶ谷店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・かたぎり塾 飯田橋店</li><li className="text-brand-muted">・LiMEパーソナルジム 飯田橋・市ヶ谷店</li></ul>
               </div>
             </div>
           </div>
@@ -141,7 +124,7 @@ export default function IidabashiPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">飯田橋の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ビーコンセプト 神楽坂店</span><span className="text-brand-muted text-sm">太ももダイエットプログラム 89,842円×2ヶ月（全18回・税込）</span></li>
+              
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">かたぎり塾 飯田橋店</span><span className="text-brand-muted text-sm">月4プラン 33,000円（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">LiMEパーソナルジム 飯田橋・市ヶ谷店</span><span className="text-brand-muted text-sm">料金は公式サイトでご確認ください（「大手の半額以下」と公式記載）</span></li>
             </ul>

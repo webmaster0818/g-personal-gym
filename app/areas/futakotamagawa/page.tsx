@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/futakotamagawa/'),
-  title: '【2026年7月】二子玉川の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】二子玉川のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・ビーコンセプト・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】二子玉川の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】二子玉川のおすすめ女性専用パーソナルジム4選を徹底比較。UNDEUX SUPERBODY・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,二子玉川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -32,20 +32,6 @@ const gyms = [
     options: ['糖質オフ宅配食無料', '管理栄養士の毎食指導', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '9:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム'] },
-  },
-  {
-    name: 'ビーコンセプト 二子玉川店',
-    officialUrl: 'https://b-concept.tokyo/',
-    price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
-    description: '医師とトレーナーが共同開発した脚やせメソッド。二子玉川エリアで下半身痩せに特化。託児所費用補助で産後ママにも対応。月々5,545円〜の分割払い可。',
-    access: '東急「二子玉川駅」徒歩5分',
-    address: '東京都世田谷区玉川（二子玉川駅徒歩5分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
-    options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
   {
     name: 'OUTLINE 二子玉川店',
@@ -92,14 +78,14 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '二子玉川で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、ビーコンセプト、OUTLINE、リボーンマイセルフが人気。食事管理ならUNDEUX、下半身痩せならビーコンセプト、生涯サポートならOUTLINEがおすすめ。' },
-  { question: '二子玉川のパーソナルジムの料金相場は？', answer: '2ヶ月コースは約18万〜22万円。ビーコンセプトが179,685円〜と最安。都心部と同等かやや割安な傾向があります。' },
-  { question: '二子玉川駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYが徒歩3分で最も近い。ビーコンセプト・OUTLINE・リボーンマイセルフは徒歩5分程度です。' },
-  { question: '子連れで通えるジムは？', answer: 'OUTLINEはベビーサークル完備。ビーコンセプトは託児所費用補助あり。二子玉川は子育てファミリーが多いエリアで、子連れ対応のジムが揃っています。' },
-  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。ビーコンセプト・OUTLINE・リボーンマイセルフ・エクササイズコーチは無料カウンセリング。' },
+  { question: '二子玉川で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、リボーンマイセルフが人気。食事管理ならUNDEUX、下半身痩せなら生涯サポートならOUTLINEがおすすめ。' },
+  { question: '二子玉川のパーソナルジムの料金相場は？', answer: '2ヶ月コースは約18万〜22万円。都心部と同等かやや割安な傾向があります。' },
+  { question: '二子玉川駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYが徒歩3分で最も近い。OUTLINE・リボーンマイセルフは徒歩5分程度です。' },
+  { question: '子連れで通えるジムは？', answer: 'OUTLINEはベビーサークル完備。二子玉川は子育てファミリーが多いエリアで、子連れ対応のジムが揃っています。' },
+  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE・リボーンマイセルフ・エクササイズコーチは無料カウンセリング。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎。マンツーマン指導なので運動経験がなくても安心です。' },
   { question: '二子玉川ライズでのショッピングと両立できる？', answer: 'ほとんどのジムが二子玉川駅から徒歩5分圏内。ショッピング前後にトレーニングを組み込めます。ウェアレンタルありのジムなら手ぶらでOK。' },
-  { question: '産後ダイエットに対応しているジムは？', answer: 'リボーンマイセルフは産後ダイエットコースあり。ビーコンセプトは託児所費用補助。OUTLINEはベビーサークル完備。二子玉川は産後ママ向けサービスが充実。' },
+  { question: '産後ダイエットに対応しているジムは？', answer: 'リボーンマイセルフは産後ダイエットコースあり。OUTLINEはベビーサークル完備。二子玉川は産後ママ向けサービスが充実。' },
   { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択可。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。' },
   { question: 'リバウンド防止のサポートは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。卒業後もずっとサポートが受けられます。' },
 ]
@@ -159,15 +145,15 @@ export default function FutakotamagawaPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">産後ママ向け</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（産後コース）</li><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（産後コース）</li><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul>
               </div>
             </div>
           </div>
@@ -179,7 +165,7 @@ export default function FutakotamagawaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安。世田谷エリアの中では標準的な価格帯。</p>
+                <p className="text-sm text-brand-muted">世田谷エリアの中では標準的な価格帯。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">入会金</h3>
@@ -226,7 +212,7 @@ export default function FutakotamagawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">二子玉川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、下半身痩せならビーコンセプト、生涯サポートならOUTLINE、産後ダイエットならリボーンマイセルフがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、下半身痩せなら生涯サポートならOUTLINE、産後ダイエットならリボーンマイセルフがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

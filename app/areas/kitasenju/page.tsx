@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kitasenju/'),
-  title: '【2026年7月】北千住の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】北千住のおすすめ女性専用パーソナルジム5選を徹底比較。B-CONCEPT・OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】北千住の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】北千住のおすすめ女性専用パーソナルジム4選を徹底比較。B-CONCEPT・OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,北千住,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'ビーコンセプト 北千住店',
-    officialUrl: 'https://b-concept.tokyo/',
-    price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
-    description: '医師とトレーナー共同開発の脚やせメソッドが人気。北千住エリアで太もも痩せ・ヒップアップに特化。託児所費用補助で産後ママにも対応。駅近で通いやすい。',
-    access: 'JR「北千住駅」徒歩5分',
-    address: '東京都足立区千住（北千住駅徒歩5分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
-    options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応（月々5,545円〜）'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
-  },
   {
     name: 'OUTLINE 北千住店',
     officialUrl: 'https://www.outline-gym.com/',
@@ -91,10 +77,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '北千住で女性専用のパーソナルジムはありますか？', answer: 'はい、北千住エリアにはビーコンセプト、OUTLINEなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意しています。' },
+  { question: '北千住で女性専用のパーソナルジムはありますか？', answer: 'はい、北千住エリアにはOUTLINEなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意しています。' },
   { question: '北千住のパーソナルジムの料金相場は？', answer: '北千住エリアの料金はエクササイズコーチ（月12,000円〜）からOUTLINE（184,800円〜）まで幅広い選択肢。Apple GYM（8回49,280円〜）もリーズナブルです。' },
-  { question: '北千住で下半身痩せに特化したジムは？', answer: 'ビーコンセプト北千住店が下半身特化で最もおすすめです。医師とトレーナーが共同開発した脚やせメソッドで太もも痩せ・ヒップアップを目指せます。' },
-  { question: '北千住で子連れで通えるジムは？', answer: 'OUTLINE北千住店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
+  { question: '北千住で下半身痩せに特化したジムは？', answer: '医師とトレーナーが共同開発した脚やせメソッドで太もも痩せ・ヒップアップを目指せます。' },
+  { question: '北千住で子連れで通えるジムは？', answer: 'OUTLINE北千住店はベビーサークル完備で子連れOK。' },
 ]
 
 export default function KitasenjuPage() {
@@ -154,7 +140,7 @@ export default function KitasenjuPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">北千住エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">下半身痩せならビーコンセプト、コスパと生涯サポートならOUTLINE、リーズナブルに始めるならApple GYMやエクササイズコーチがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">下半身痩せならコスパと生涯サポートならOUTLINE、リーズナブルに始めるならApple GYMやエクササイズコーチがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

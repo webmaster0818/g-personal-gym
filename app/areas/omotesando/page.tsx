@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/omotesando/'),
-  title: '【2026年7月】表参道の女性専用パーソナルジムおすすめ6選！料金比較',
-  description: '【2026年4月】表参道・青山のおすすめ女性専用パーソナルジム6選を徹底比較。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】表参道の女性専用パーソナルジムおすすめ5選！料金比較',
+  description: '【2026年4月】表参道・青山のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,表参道,青山,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -46,20 +46,6 @@ const gyms = [
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'よもぎ蒸し', '高級アミノ酸提供', 'ウェアレンタル無料'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', 'リバウンド防止', '美容'] },
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
-  {
-    name: 'ビーコンセプト 表参道店',
-    officialUrl: 'https://b-concept.tokyo/',
-    price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '完全個室', '表参道駅近'],
-    description: '医師とトレーナーが共同開発した脚やせメソッド。表参道で美脚を目指す女性に人気。完全個室で人目を気にせずトレーニング可能。',
-    access: '東京メトロ「表参道駅」徒歩4分',
-    address: '東京都港区南青山（表参道駅徒歩4分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
-    options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '美脚', 'ボディメイク'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
   {
     name: 'AGLAIA（アグライア）表参道',
@@ -104,11 +90,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '表参道で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプト、AGLAIA、MMMが表参道で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、美尻特化ならAGLAIA、バストアップならMMMがおすすめ。' },
-  { question: '表参道のパーソナルジムの料金相場は？', answer: '表参道の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円。ビーコンセプトが179,685円〜と最もリーズナブル。表参道は高級エリアですが、郊外と大きな差はありません。' },
-  { question: '表参道駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYとMMM（トリプルエム）が表参道駅徒歩1分で最も近い。ビーコンセプトは徒歩4分です。' },
-  { question: '美尻・ヒップアップに特化したジムは？', answer: 'AGLAIA（アグライア）は美尻専用マシン「グルーツビルダー」を完備し、ゼロから美尻を作るオリジナルメソッドを提供。ビーコンセプトも下半身特化でヒップアップに効果的。' },
-  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、ビーコンセプト、AGLAIA、MMM、エクササイズコーチは無料カウンセリングを実施しています。' },
+  { question: '表参道で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、AGLAIA、MMMが表参道で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、美尻特化ならAGLAIA、バストアップならMMMがおすすめ。' },
+  { question: '表参道のパーソナルジムの料金相場は？', answer: '表参道の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円。表参道は高級エリアですが、郊外と大きな差はありません。' },
+  { question: '表参道駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYとMMM（トリプルエム）が表参道駅徒歩1分で最も近い。' },
+  { question: '美尻・ヒップアップに特化したジムは？', answer: 'AGLAIA（アグライア）は美尻専用マシン「グルーツビルダー」を完備し、ゼロから美尻を作るオリジナルメソッドを提供。' },
+  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、AGLAIA、MMM、エクササイズコーチは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎。AGLAIAは会員の80%がトレーニング未経験者で、特に初心者フレンドリーです。' },
   { question: '表参道と青山のジムは同じエリア？', answer: '表参道駅は港区南青山に位置しており、「表参道」「青山」は基本的に同じエリアです。ジムの住所は「南青山」が多いですが、いずれも表参道駅から徒歩圏内です。' },
   { question: 'バストアップしながらダイエットできるジムは？', answer: 'MMM（トリプルエム）の「バストアッププラン」は、バストを維持しつつ余分な脂肪だけを落とすことが可能。他にはない独自のプランです。' },
@@ -176,15 +162,15 @@ export default function OmotesandoPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">美尻・美脚特化</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・AGLAIA（美尻専用マシン）</li><li className="text-brand-muted">・ビーコンセプト（脚やせメソッド）</li><li className="text-brand-muted">・MMM（バストアッププラン）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・AGLAIA（美尻専用マシン）</li><li className="text-brand-muted">・MMM（バストアッププラン）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul>
               </div>
             </div>
           </div>
@@ -197,7 +183,7 @@ export default function OmotesandoPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安。表参道は高級イメージですが料金は都内平均並み。</p>
+                <p className="text-sm text-brand-muted">表参道は高級イメージですが料金は都内平均並み。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
@@ -247,7 +233,7 @@ export default function OmotesandoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">表参道エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、美脚ならビーコンセプト、美尻ならAGLAIAがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、美脚なら美尻ならAGLAIAがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

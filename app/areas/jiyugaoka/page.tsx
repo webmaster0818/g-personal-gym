@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/jiyugaoka/'),
-  title: '【2026年7月】自由が丘の女性専用パーソナルジムおすすめ6選！料金比較',
-  description: '【2026年4月】自由が丘のおすすめ女性専用パーソナルジム6選を徹底比較。UNDEUX SUPERBODY・OUTLINE・リボーンマイセルフなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】自由が丘の女性専用パーソナルジムおすすめ5選！料金比較',
+  description: '【2026年4月】自由が丘のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・OUTLINE・リボーンマイセルフなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,自由が丘,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -62,20 +62,6 @@ const gyms = [
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
-    name: 'ビーコンセプト 自由が丘店',
-    officialUrl: 'https://b-concept.tokyo/',
-    price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
-    description: '医師とトレーナーが共同開発した脚やせメソッドで人気。太もも痩せ・ヒップアップに特化。月々5,545円〜の分割払い対応。託児所費用補助もあり。',
-    access: '東急「自由が丘駅」徒歩5分',
-    address: '東京都目黒区自由が丘（自由が丘駅徒歩5分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
-    options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
-  },
-  {
     name: 'パーソナルジムNICO 自由が丘',
     price: '月4回 35,200円〜（税込）',
     trial: '体験レッスンあり',
@@ -105,11 +91,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '自由が丘で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、リボーンマイセルフ、OUTLINE、ビーコンセプトが自由が丘で人気の女性専用パーソナルジムです。駅近ならUNDEUX（徒歩1分）、産後ママならリボーンマイセルフ（キッズスペース完備）がおすすめ。' },
-  { question: '自由が丘のパーソナルジムの料金相場は？', answer: '自由が丘の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円。ビーコンセプトが179,685円〜と最もリーズナブル。月額制ならNICOの月4回35,200円〜も人気。' },
+  { question: '自由が丘で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、リボーンマイセルフ、OUTLINEが自由が丘で人気の女性専用パーソナルジムです。駅近ならUNDEUX（徒歩1分）、産後ママならリボーンマイセルフ（キッズスペース完備）がおすすめ。' },
+  { question: '自由が丘のパーソナルジムの料金相場は？', answer: '自由が丘の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円。月額制ならNICOの月4回35,200円〜も人気。' },
   { question: '自由が丘駅から最も近いジムは？', answer: 'UNDEUX SUPERBODY自由が丘スタジオが徒歩1分で最も駅近。NICO自由が丘は徒歩3分、リボーンマイセルフは徒歩4分です。' },
-  { question: '子連れで通えるジムは？', answer: 'リボーンマイセルフ自由が丘店はキッズスペース併設。OUTLINEはベビーサークル完備。NICOもお子様連れOK。ビーコンセプトは託児所費用補助があります。自由が丘は子連れ対応のジムが充実しています。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、ビーコンセプト、リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施。NICOも体験レッスンあり。' },
+  { question: '子連れで通えるジムは？', answer: 'リボーンマイセルフ自由が丘店はキッズスペース併設。OUTLINEはベビーサークル完備。NICOもお子様連れOK。自由が丘は子連れ対応のジムが充実しています。' },
+  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施。NICOも体験レッスンあり。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても安心。自由が丘のジムはアットホームな雰囲気が多く、初めての方も通いやすいです。' },
   { question: '自由が丘はどんな雰囲気のエリア？', answer: '自由が丘はおしゃれなカフェやスイーツ店が並ぶ落ち着いた街。30〜40代の女性に人気のエリアで、トレーニング前後にカフェでリフレッシュするのもおすすめです。' },
   { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは管理栄養士監修の宅配食20食が無料。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。リボーンマイセルフも食事指導が充実しています。' },
@@ -177,7 +163,7 @@ export default function JiyugaokaPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・NICO（月4回 35,200円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・NICO（月4回 35,200円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3>
@@ -198,7 +184,7 @@ export default function JiyugaokaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安。UNDEUX 220,000円〜が最高。都心より若干落ち着いた価格帯。</p>
+                <p className="text-sm text-brand-muted">UNDEUX 220,000円〜が最高。都心より若干落ち着いた価格帯。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
@@ -248,7 +234,7 @@ export default function JiyugaokaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">自由が丘エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">駅近で通いやすさ重視ならUNDEUX SUPERBODY、産後ダイエットならリボーンマイセルフ、生涯サポート付きならOUTLINE、下半身痩せならビーコンセプトがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">駅近で通いやすさ重視ならUNDEUX SUPERBODY、産後ダイエットならリボーンマイセルフ、生涯サポート付きならOUTLINEがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

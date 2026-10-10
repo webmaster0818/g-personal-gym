@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nakameguro/'),
-  title: '【2026年7月】中目黒の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】中目黒のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・zen place・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】中目黒の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】中目黒のおすすめ女性専用パーソナルジム4選を徹底比較。OUTLINE・zen placeなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,中目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -47,20 +47,6 @@ const gyms = [
     basicInfo: { hours: '9:00〜21:00', closed: '不定休', facilities: ['マシンピラティス', 'マットスペース', 'ロッカー'] },
   },
   {
-    name: 'ビーコンセプト 中目黒店',
-    officialUrl: 'https://b-concept.tokyo/',
-    price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
-    description: '医師とトレーナーが共同開発した脚やせメソッドが人気。太もも痩せ・ヒップアップに特化したプログラムで、2ヶ月で美脚を目指す。中目黒駅から徒歩圏内。',
-    access: '東急東横線「中目黒駅」徒歩6分',
-    address: '東京都目黒区上目黒（中目黒駅徒歩6分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
-    options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応（月々5,545円〜）'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
-  },
-  {
     name: 'かたぎり塾 中目黒店',
     officialUrl: 'https://katagirijuku.jp/',
     price: '月4回 30,800円〜（税込）',
@@ -90,10 +76,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '中目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、中目黒エリアにはOUTLINE、ビーコンセプトなどの女性専用パーソナルジムがあります。zen placeやかたぎり塾も女性の利用者が多いスタジオです。' },
+  { question: '中目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、中目黒エリアにはOUTLINEなどの女性専用パーソナルジムがあります。zen placeやかたぎり塾も女性の利用者が多いスタジオです。' },
   { question: '中目黒のパーソナルジムの料金相場は？', answer: '中目黒エリアのパーソナルジムは月額14,520円〜（zen place）から2ヶ月184,800円〜（OUTLINE）まで幅広い選択肢があります。Apple GYMは8回49,280円〜とリーズナブルです。' },
   { question: '中目黒でピラティスもできるパーソナルジムは？', answer: 'zen place pilates 中目黒スタジオでは、マシンピラティスを使った本格的なピラティストレーニングが受けられます。姿勢改善やインナーマッスル強化に効果的です。' },
-  { question: '中目黒で子連れで通えるジムは？', answer: 'OUTLINE中目黒店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
+  { question: '中目黒で子連れで通えるジムは？', answer: 'OUTLINE中目黒店はベビーサークル完備で子連れOK。' },
 ]
 
 export default function NakameguroPage() {
@@ -153,7 +139,7 @@ export default function NakameguroPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">中目黒エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">リバウンド防止ならOUTLINE、姿勢改善ならzen place、下半身痩せならビーコンセプト、コスパ重視ならApple GYMがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">リバウンド防止ならOUTLINE、姿勢改善ならzen place、下半身痩せならコスパ重視ならApple GYMがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

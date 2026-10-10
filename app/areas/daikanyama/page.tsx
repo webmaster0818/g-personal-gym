@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/daikanyama/'),
-  title: '【2026年7月】代官山の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・RIZAP WOMAN・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】代官山の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム4選を徹底比較。UNDEUX SUPERBODY・RIZAP WOMAN・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,代官山,おすすめ,料金,比較,ダイエット,ボディメイク,高級',
 }
 
@@ -61,20 +61,6 @@ const gyms = [
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
-    name: 'ビーコンセプト 恵比寿・代官山店',
-    officialUrl: 'https://b-concept.tokyo/',
-    price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
-    description: '医師×トレーナー共同開発の脚やせメソッドが評判。代官山・恵比寿の2駅利用可能な好立地。太もも痩せ・ヒップアップに特化し、産後ママにも人気。',
-    access: '東急東横線「代官山駅」徒歩6分 / JR「恵比寿駅」徒歩7分',
-    address: '東京都渋谷区恵比寿西（代官山駅徒歩6分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
-    options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応（月々5,545円〜）'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
-  },
-  {
     name: 'クレビック 恵比寿・代官山店',
     price: '2ヶ月16回 149,800円〜（税込）',
     trial: '無料カウンセリング',
@@ -90,11 +76,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '代官山で女性専用のパーソナルジムはありますか？', answer: 'はい、代官山エリアにはUNDEUX SUPERBODY、RIZAP WOMAN、OUTLINE、ビーコンセプト、クレビックなど複数の女性専用パーソナルジムがあります。高級感のある空間が多いのが代官山の特徴です。' },
+  { question: '代官山で女性専用のパーソナルジムはありますか？', answer: 'はい、代官山エリアにはUNDEUX SUPERBODY、RIZAP WOMAN、OUTLINE、クレビックなど複数の女性専用パーソナルジムがあります。高級感のある空間が多いのが代官山の特徴です。' },
   { question: '代官山で高級なパーソナルジムはどこ？', answer: 'RIZAP WOMAN代官山店はエステ・コラーゲンマシン付きの贅沢なプログラムを提供しています。UNDEUX SUPERBODY代官山スタジオも洗練された空間で質の高いサービスが受けられます。' },
   { question: '代官山のパーソナルジムの料金相場は？', answer: '代官山エリアでは2ヶ月コース149,800円〜（クレビック）から327,800円〜（RIZAP WOMAN）まで幅広い選択肢があります。OUTLINE（184,800円〜）がコスパと質のバランスに優れています。' },
   { question: '代官山でエステも受けられるジムは？', answer: 'RIZAP WOMAN代官山店では、トレーニングに加えてコラーゲンマシンやエステ施術も受けられます。美しく痩せたい方に最適です。' },
-  { question: '代官山で子連れで通えるジムは？', answer: 'OUTLINE代官山店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
+  { question: '代官山で子連れで通えるジムは？', answer: 'OUTLINE代官山店はベビーサークル完備で子連れOK。' },
 ]
 
 export default function DaikanyamaPage() {
