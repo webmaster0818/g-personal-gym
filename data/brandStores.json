@@ -18,23 +18,6 @@
    ]
   },
   {
-   "name": "かたぎり塾 秋葉原店",
-   "areaSlug": "akihabara",
-   "areaName": "秋葉原",
-   "officialUrl": "https://katagirijuku.jp/",
-   "price": "月4回 30,800円〜（税込）",
-   "trial": "体験レッスンあり",
-   "access": "JR「秋葉原駅」徒歩4分",
-   "address": "東京都千代田区外神田（秋葉原駅徒歩4分）",
-   "features": [
-    "月額制",
-    "AI食事指導",
-    "女性トレーナー在籍",
-    "リーズナブル",
-    "秋葉原駅近"
-   ]
-  },
-  {
    "name": "かたぎり塾 調布店",
    "areaSlug": "chofu",
    "areaName": "調布",
@@ -48,23 +31,6 @@
     "完全個室",
     "子連れOK",
     "産後ダイエット対応"
-   ]
-  },
-  {
-   "name": "かたぎり塾 五反田店",
-   "areaSlug": "gotanda",
-   "areaName": "五反田",
-   "officialUrl": "https://katagirijuku.jp/",
-   "price": "月4回 30,800円〜（税込）",
-   "trial": "体験レッスンあり",
-   "access": "JR「五反田駅」徒歩4分",
-   "address": "東京都品川区東五反田（五反田駅徒歩4分）",
-   "features": [
-    "月額制",
-    "AI食事指導",
-    "女性トレーナー在籍",
-    "リーズナブル",
-    "五反田駅近"
    ]
   },
   {
@@ -134,23 +100,6 @@
    ]
   },
   {
-   "name": "かたぎり塾 錦糸町店",
-   "areaSlug": "kinshicho",
-   "areaName": "錦糸町",
-   "officialUrl": "https://katagirijuku.jp/",
-   "price": "月4回 30,800円〜（税込）",
-   "trial": "体験レッスンあり",
-   "access": "JR「錦糸町駅」徒歩4分",
-   "address": "東京都墨田区錦糸（錦糸町駅徒歩4分）",
-   "features": [
-    "月額制",
-    "AI食事指導",
-    "女性トレーナー在籍",
-    "リーズナブル",
-    "錦糸町駅近"
-   ]
-  },
-  {
    "name": "かたぎり塾 北千住店",
    "areaSlug": "kitasenju",
    "areaName": "北千住",
@@ -165,23 +114,6 @@
     "女性トレーナー在籍",
     "リーズナブル",
     "北千住駅近"
-   ]
-  },
-  {
-   "name": "かたぎり塾 目黒店",
-   "areaSlug": "meguro",
-   "areaName": "目黒",
-   "officialUrl": "https://katagirijuku.jp/",
-   "price": "月4回 30,800円〜（税込）",
-   "trial": "体験レッスンあり",
-   "access": "JR「目黒駅」徒歩4分",
-   "address": "東京都品川区上大崎（目黒駅徒歩4分）",
-   "features": [
-    "月額制",
-    "AI食事指導",
-    "女性トレーナー在籍",
-    "リーズナブル",
-    "目黒駅近"
    ]
   },
   {
@@ -299,23 +231,6 @@
    ]
   },
   {
-   "name": "かたぎり塾 渋谷店",
-   "areaSlug": "shibuya",
-   "areaName": "渋谷",
-   "officialUrl": "https://katagirijuku.jp/",
-   "price": "月4回 30,800円〜（税込）",
-   "trial": "体験レッスンあり",
-   "access": "JR「渋谷駅」徒歩5分",
-   "address": "東京都渋谷区（渋谷駅徒歩5分）",
-   "features": [
-    "月額制",
-    "AI食事指導",
-    "女性トレーナー在籍",
-    "リーズナブル",
-    "渋谷駅近"
-   ]
-  },
-  {
    "name": "かたぎり塾 西新宿女性専門店",
    "areaSlug": "shinjuku",
    "areaName": "新宿",
@@ -345,23 +260,6 @@
     "完全個室",
     "AI食事指導",
     "医師監修"
-   ]
-  },
-  {
-   "name": "かたぎり塾 上野店",
-   "areaSlug": "ueno",
-   "areaName": "上野",
-   "officialUrl": "https://katagirijuku.jp/",
-   "price": "月4回 30,800円〜（税込）",
-   "trial": "体験レッスンあり",
-   "access": "JR「上野駅」徒歩4分",
-   "address": "東京都台東区上野（上野駅徒歩4分）",
-   "features": [
-    "月額制",
-    "AI食事指導",
-    "女性トレーナー在籍",
-    "リーズナブル",
-    "上野駅近"
    ]
   },
   {
@@ -433,23 +331,6 @@
    ]
   },
   {
-   "name": "OUTLINE 代官山店",
-   "areaSlug": "daikanyama",
-   "areaName": "代官山",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "16回 184,800円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東急東横線「代官山駅」徒歩5分",
-   "address": "東京都渋谷区代官山町（代官山駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "ベビーサークル完備",
-    "女性特化マシン"
-   ]
-  },
-  {
    "name": "OUTLINE 恵比寿・広尾店",
    "areaSlug": "ebisu",
    "areaName": "恵比寿",
@@ -500,40 +381,6 @@
    ]
   },
   {
-   "name": "OUTLINE 二子玉川店",
-   "areaSlug": "futakotamagawa",
-   "areaName": "二子玉川",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "16回 184,800円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東急「二子玉川駅」徒歩5分",
-   "address": "東京都世田谷区玉川（二子玉川駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "ベビーサークル完備",
-    "よもぎ蒸し"
-   ]
-  },
-  {
-   "name": "OUTLINE 五反田店",
-   "areaSlug": "gotanda",
-   "areaName": "五反田",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "16回 184,800円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「五反田駅」徒歩5分",
-   "address": "東京都品川区東五反田（五反田駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "ベビーサークル完備",
-    "女性特化マシン"
-   ]
-  },
-  {
    "name": "OUTLINE 池袋店",
    "areaSlug": "ikebukuro",
    "areaName": "池袋",
@@ -547,23 +394,6 @@
     "完全個室",
     "生涯サポート無料",
     "ベビーサークル完備"
-   ]
-  },
-  {
-   "name": "OUTLINE 自由が丘店",
-   "areaSlug": "jiyugaoka",
-   "areaName": "自由が丘",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "16回 184,800円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東急「自由が丘駅」徒歩5分",
-   "address": "東京都目黒区自由が丘（自由が丘駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "ベビーサークル完備",
-    "女性特化マシン"
    ]
   },
   {
@@ -684,40 +514,6 @@
    ]
   },
   {
-   "name": "OUTLINE 目黒店",
-   "areaSlug": "meguro",
-   "areaName": "目黒",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "16回 184,800円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「目黒駅」徒歩6分",
-   "address": "東京都品川区上大崎（目黒駅徒歩6分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "ベビーサークル完備",
-    "女性特化マシン"
-   ]
-  },
-  {
-   "name": "OUTLINE 中目黒店",
-   "areaSlug": "nakameguro",
-   "areaName": "中目黒",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "16回 184,800円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東急東横線「中目黒駅」徒歩5分",
-   "address": "東京都目黒区上目黒（中目黒駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "ベビーサークル完備",
-    "女性特化マシン"
-   ]
-  },
-  {
    "name": "OUTLINE（アウトライン）中野店",
    "areaSlug": "nakano",
    "areaName": "中野",
@@ -766,40 +562,6 @@
    ]
   },
   {
-   "name": "OUTLINE 大宮店",
-   "areaSlug": "omiya",
-   "areaName": "大宮",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "8回 92,400円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「大宮駅」徒歩5分",
-   "address": "埼玉県さいたま市大宮区（大宮駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "8回から始められる",
-    "24hサポート"
-   ]
-  },
-  {
-   "name": "OUTLINE 表参道店",
-   "areaSlug": "omotesando",
-   "areaName": "表参道",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "16回 184,800円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "東京メトロ「表参道駅」徒歩5分",
-   "address": "東京都港区南青山（表参道駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "よもぎ蒸し",
-    "表参道エリア"
-   ]
-  },
-  {
    "name": "OUTLINE 渋谷店",
    "areaSlug": "shibuya",
    "areaName": "渋谷",
@@ -813,23 +575,6 @@
     "完全個室",
     "生涯サポート無料",
     "ベビーサークル���備",
-    "女性特化マシン"
-   ]
-  },
-  {
-   "name": "OUTLINE 品川店",
-   "areaSlug": "shinagawa",
-   "areaName": "品川",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "16回 184,800円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「品川駅」徒歩6分",
-   "address": "東京都港区港南（品川駅徒歩6分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "ベビーサークル完備",
     "女性特化マシン"
    ]
   },
@@ -896,23 +641,6 @@
     "女性専用",
     "完全個室",
     "生涯リバウンドサポート"
-   ]
-  },
-  {
-   "name": "OUTLINE 上野店",
-   "areaSlug": "ueno",
-   "areaName": "上野",
-   "officialUrl": "https://www.outline-gym.com/",
-   "price": "16回 184,800円〜（税込）",
-   "trial": "無料カウンセリング",
-   "access": "JR「上野駅」徒歩5分",
-   "address": "東京都台東区上野（上野駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "完全個室",
-    "生涯サポート無料",
-    "ベビーサークル完備",
-    "女性特化マシン"
    ]
   },
   {
@@ -984,71 +712,6 @@
    ]
   },
   {
-   "name": "リボーンマイセルフ 恵比寿店",
-   "areaSlug": "ebisu",
-   "areaName": "恵比寿",
-   "officialUrl": "https://reborn-myself.com/",
-   "price": "入会金38,000円＋コース料金",
-   "trial": "無料カウンセリング",
-   "access": "JR「恵比寿駅」徒歩5分",
-   "address": "東京都渋谷区恵比寿（恵比寿駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "女性トレーナーのみ",
-    "10年以上の実績",
-    "産後ダイエット対応",
-    "ブライダルコース"
-   ]
-  },
-  {
-   "name": "リボーンマイセルフ 藤沢店",
-   "areaSlug": "fujisawa",
-   "areaName": "藤沢",
-   "officialUrl": "https://reborn-myself.com/",
-   "price": "入会金38,000円＋コース料金",
-   "trial": "無料カウンセリング",
-   "access": "JR「藤沢駅」徒歩4分",
-   "address": "神奈川県藤沢市（藤沢駅徒歩4分）",
-   "features": [
-    "女性専用",
-    "女性トレーナーのみ",
-    "完全プライベート",
-    "産後対応",
-    "藤沢駅近"
-   ]
-  },
-  {
-   "name": "リボーンマイセルフ 博多店",
-   "areaSlug": "fukuoka",
-   "areaName": "福岡",
-   "officialUrl": "https://reborn-myself.com/",
-   "price": "入会金38,000円＋コース料金",
-   "trial": "無料カウンセリング",
-   "access": "JR「博多駅」徒歩5分",
-   "address": "JR「博多駅」徒歩5分",
-   "features": [
-    "女性専用",
-    "女性トレーナーのみ"
-   ]
-  },
-  {
-   "name": "リボーンマイセルフ 二子玉川店",
-   "areaSlug": "futakotamagawa",
-   "areaName": "二子玉川",
-   "officialUrl": "https://reborn-myself.com/",
-   "price": "入会金38,000円＋コース料金",
-   "trial": "無料カウンセリング",
-   "access": "東急「二子玉川駅」徒歩5分",
-   "address": "東京都世田谷区玉川（二子玉川駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "女性トレーナーのみ",
-    "10年以上の実績",
-    "産後ダイエット",
-    "ブライダルコース"
-   ]
-  },
-  {
    "name": "リボーンマイセルフ 東京店",
    "areaSlug": "ginza",
    "areaName": "銀座",
@@ -1061,23 +724,6 @@
     "女性専用",
     "女性トレーナーのみ",
     "日本橋エリア"
-   ]
-  },
-  {
-   "name": "リボーンマイセルフ 五反田店",
-   "areaSlug": "gotanda",
-   "areaName": "五反田",
-   "officialUrl": "https://reborn-myself.com/",
-   "price": "入会金38,000円＋コース料金",
-   "trial": "無料カウンセリング",
-   "access": "JR「五反田駅」徒歩4分",
-   "address": "東京都品川区東五反田（五反田駅徒歩4分）",
-   "features": [
-    "女性専用",
-    "女性トレーナーのみ",
-    "10年以上の実績",
-    "産後ダイエット対応",
-    "ブライダルコース"
    ]
   },
   {
@@ -1274,23 +920,6 @@
    ]
   },
   {
-   "name": "リボーンマイセルフ 大宮店",
-   "areaSlug": "omiya",
-   "areaName": "大宮",
-   "officialUrl": "https://reborn-myself.com/",
-   "price": "入会金38,000円＋コース料金",
-   "trial": "無料カウンセリング",
-   "access": "JR「大宮駅」徒歩5分",
-   "address": "埼玉県さいたま市大宮区（大宮駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "女性トレーナーのみ",
-    "10年以上の実績",
-    "産後ダイエット",
-    "ブライダルコース"
-   ]
-  },
-  {
    "name": "リボーンマイセルフ 梅田店",
    "areaSlug": "osaka",
    "areaName": "大阪（梅田・心斎橋）",
@@ -1333,40 +962,6 @@
     "トレーナー全員女性",
     "専属女性トレーナー制",
     "シャワー・パウダールーム完備"
-   ]
-  },
-  {
-   "name": "リボーンマイセルフ 渋谷店",
-   "areaSlug": "shibuya",
-   "areaName": "渋谷",
-   "officialUrl": "https://reborn-myself.com/",
-   "price": "入会金38,000円＋コース料金",
-   "trial": "無料カウンセリング",
-   "access": "JR「渋谷駅」徒歩6分",
-   "address": "東京都渋谷区（渋谷駅徒歩6分）",
-   "features": [
-    "女性専用",
-    "女性トレーナーのみ",
-    "10年以上の実績",
-    "産後ダイエット対応",
-    "ブライダルコース"
-   ]
-  },
-  {
-   "name": "リボーンマイセルフ 品川店",
-   "areaSlug": "shinagawa",
-   "areaName": "品川",
-   "officialUrl": "https://reborn-myself.com/",
-   "price": "入会金38,000円＋コース料金",
-   "trial": "無料カウンセリング",
-   "access": "JR「品川駅」徒歩5分",
-   "address": "東京都港区港南（品川駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "女性トレーナーのみ",
-    "10年以上の実績",
-    "産後ダイエット対応",
-    "ブライダルコース"
    ]
   },
   {
@@ -1481,359 +1076,6 @@
    ]
   }
  ],
- "exercise-coach": [
-  {
-   "name": "エクササイズコーチ 秋葉原店",
-   "areaSlug": "akihabara",
-   "areaName": "秋葉原",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "JR「秋葉原駅」徒歩3分",
-   "address": "東京都千代田区外神田（秋葉原駅徒歩3分）",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格",
-    "女性利用者8割",
-    "秋葉原駅近"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 千葉店",
-   "areaSlug": "chiba",
-   "areaName": "千葉",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "JR「千葉駅」徒歩3分",
-   "address": "千葉県千葉市中央区（千葉駅徒歩3分）",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格",
-    "女性利用者8割",
-    "千葉駅近"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 恵比寿",
-   "areaSlug": "ebisu",
-   "areaName": "恵比寿",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「恵比寿」駅周辺",
-   "address": "恵比寿エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 藤沢",
-   "areaSlug": "fujisawa",
-   "areaName": "藤沢",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「藤沢」駅周辺",
-   "address": "藤沢エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 二子玉川",
-   "areaSlug": "futakotamagawa",
-   "areaName": "二子玉川",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「二子玉川」駅周辺",
-   "address": "二子玉川エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 五反田店",
-   "areaSlug": "gotanda",
-   "areaName": "五反田",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "JR「五反田駅」徒歩3分",
-   "address": "東京都品川区東五反田（五反田駅徒歩3分）",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格",
-    "女性利用者8割",
-    "五反田駅近"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 自由が丘",
-   "areaSlug": "jiyugaoka",
-   "areaName": "自由が丘",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「自由が丘」駅周辺",
-   "address": "自由が丘エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 川崎",
-   "areaSlug": "kawasaki",
-   "areaName": "川崎",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「川崎」駅周辺",
-   "address": "川崎エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 吉祥寺",
-   "areaSlug": "kichijoji",
-   "areaName": "吉祥寺",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「吉祥寺」駅周辺",
-   "address": "吉祥寺エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 錦糸町店",
-   "areaSlug": "kinshicho",
-   "areaName": "錦糸町",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "JR「錦糸町駅」徒歩3分",
-   "address": "東京都墨田区錦糸（錦糸町駅徒歩3分）",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格",
-    "女性利用者8割",
-    "錦糸町駅近"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 北千住店",
-   "areaSlug": "kitasenju",
-   "areaName": "北千住",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "JR「北千住駅」徒歩3分",
-   "address": "東京都足立区千住（北千住駅徒歩3分）",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格",
-    "女性利用者8割",
-    "北千住駅近"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 町田",
-   "areaSlug": "machida",
-   "areaName": "町田",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「町田」駅周辺",
-   "address": "町田エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 目黒店",
-   "areaSlug": "meguro",
-   "areaName": "目黒",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "JR「目黒駅」徒歩3分",
-   "address": "東京都品川区上大崎（目黒駅徒歩3分）",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格",
-    "女性利用者8割",
-    "目黒駅近"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 名古屋栄店",
-   "areaSlug": "nagoya",
-   "areaName": "名古屋",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "地下鉄「栄駅」徒歩3分",
-   "address": "地下鉄「栄駅」徒歩3分",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 大宮",
-   "areaSlug": "omiya",
-   "areaName": "大宮",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「大宮」駅周辺",
-   "address": "大宮エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 表参道",
-   "areaSlug": "omotesando",
-   "areaName": "表参道",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「表参道」駅周辺",
-   "address": "表参道エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 六本木店",
-   "areaSlug": "roppongi",
-   "areaName": "六本木",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "東京メトロ「六本木駅」徒歩4分",
-   "address": "東京メトロ「六本木駅」徒歩4分",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 札幌店",
-   "areaSlug": "sapporo",
-   "areaName": "札幌",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "地下鉄「大通駅」徒歩3分",
-   "address": "地下鉄「大通駅」徒歩3分",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 渋谷店",
-   "areaSlug": "shibuya",
-   "areaName": "渋谷",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "JR「渋谷駅」徒歩3分",
-   "address": "東京都渋谷区（渋谷駅徒歩3分）",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格",
-    "女性利用者8割",
-    "渋谷駅近"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 立川",
-   "areaSlug": "tachikawa",
-   "areaName": "立川",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「立川」駅周辺",
-   "address": "立川エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 上野店",
-   "areaSlug": "ueno",
-   "areaName": "上野",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月4回 12,000円〜（税込）",
-   "trial": "無料体験あり",
-   "access": "JR「上野駅」徒歩3分",
-   "address": "東京都台東区上野（上野駅徒歩3分）",
-   "features": [
-    "AI主導",
-    "1回20分",
-    "低価格",
-    "女性利用者8割",
-    "上野駅近"
-   ]
-  }
- ],
  "undeux": [
   {
    "name": "UNDEUX SUPERBODY 千葉スタジオ",
@@ -1850,23 +1092,6 @@
     "宅配食無料",
     "パウダールーム完備",
     "千葉駅近"
-   ]
-  },
-  {
-   "name": "UNDEUX SUPERBODY 代官山スタジオ",
-   "areaSlug": "daikanyama",
-   "areaName": "代官山",
-   "officialUrl": "https://www.diet-undeux.jp/",
-   "price": "2ヶ月16回 220,000円〜（税込）",
-   "trial": "体験レッスン0円",
-   "access": "東急東横線「代官山駅」徒歩4分",
-   "address": "東京都渋谷区代官山町（代官山駅徒歩4分）",
-   "features": [
-    "女性専用",
-    "食事管理付き",
-    "宅配食無料",
-    "パウダールーム完備",
-    "代官山の高級空間"
    ]
   },
   {
@@ -2355,23 +1580,6 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY 品川スタジオ",
-   "areaSlug": "shinagawa",
-   "areaName": "品川",
-   "officialUrl": "https://www.diet-undeux.jp/",
-   "price": "2ヶ月16回 220,000円〜（税込）",
-   "trial": "体験レッスン0円",
-   "access": "JR「品川駅」徒歩5分",
-   "address": "東京都港区港南（品川駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "食事管理付き",
-    "宅配食無料",
-    "パウダールーム完備",
-    "品川駅近"
-   ]
-  },
-  {
    "name": "UNDEUX SUPERBODY 新宿スタジオ",
    "areaSlug": "shinjuku",
    "areaName": "新宿",
@@ -2447,23 +1655,6 @@
     "女性専用",
     "月額制",
     "管理栄養士の食事改善サポート"
-   ]
-  },
-  {
-   "name": "UNDEUX SUPERBODY 上野スタジオ",
-   "areaSlug": "ueno",
-   "areaName": "上野",
-   "officialUrl": "https://www.diet-undeux.jp/",
-   "price": "2ヶ月16回 220,000円〜（税込）",
-   "trial": "体験レッスン0円",
-   "access": "JR「上野駅」徒歩5分",
-   "address": "東京都台東区上野（上野駅徒歩5分）",
-   "features": [
-    "女性専用",
-    "食事管理付き",
-    "宅配食無料",
-    "パウダールーム完備",
-    "上野駅近"
    ]
   },
   {
@@ -3129,6 +2320,210 @@
     "下半身特化",
     "完全個室",
     "託児所費用補助"
+   ]
+  }
+ ],
+ "exercise-coach": [
+  {
+   "name": "エクササイズコーチ 恵比寿",
+   "areaSlug": "ebisu",
+   "areaName": "恵比寿",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「恵比寿」駅周辺",
+   "address": "恵比寿エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 藤沢",
+   "areaSlug": "fujisawa",
+   "areaName": "藤沢",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「藤沢」駅周辺",
+   "address": "藤沢エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 二子玉川",
+   "areaSlug": "futakotamagawa",
+   "areaName": "二子玉川",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「二子玉川」駅周辺",
+   "address": "二子玉川エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 自由が丘",
+   "areaSlug": "jiyugaoka",
+   "areaName": "自由が丘",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「自由が丘」駅周辺",
+   "address": "自由が丘エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 川崎",
+   "areaSlug": "kawasaki",
+   "areaName": "川崎",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「川崎」駅周辺",
+   "address": "川崎エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 吉祥寺",
+   "areaSlug": "kichijoji",
+   "areaName": "吉祥寺",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「吉祥寺」駅周辺",
+   "address": "吉祥寺エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 町田",
+   "areaSlug": "machida",
+   "areaName": "町田",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「町田」駅周辺",
+   "address": "町田エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 名古屋栄店",
+   "areaSlug": "nagoya",
+   "areaName": "名古屋",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月4回 12,000円〜（税込）",
+   "trial": "無料体験あり",
+   "access": "地下鉄「栄駅」徒歩3分",
+   "address": "地下鉄「栄駅」徒歩3分",
+   "features": [
+    "AI主導",
+    "1回20分",
+    "低価格"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 大宮",
+   "areaSlug": "omiya",
+   "areaName": "大宮",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「大宮」駅周辺",
+   "address": "大宮エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 表参道",
+   "areaSlug": "omotesando",
+   "areaName": "表参道",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「表参道」駅周辺",
+   "address": "表参道エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 渋谷店",
+   "areaSlug": "shibuya",
+   "areaName": "渋谷",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月4回 12,000円〜（税込）",
+   "trial": "無料体験あり",
+   "access": "JR「渋谷駅」徒歩3分",
+   "address": "東京都渋谷区（渋谷駅徒歩3分）",
+   "features": [
+    "AI主導",
+    "1回20分",
+    "低価格",
+    "女性利用者8割",
+    "渋谷駅近"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 立川",
+   "areaSlug": "tachikawa",
+   "areaName": "立川",
+   "officialUrl": "https://exercisecoach.co.jp/",
+   "price": "月額制（プラン・店舗により異なる）",
+   "trial": "無料体験あり",
+   "access": "「立川」駅周辺",
+   "address": "立川エリア（最寄り店舗は公式サイトでご確認ください）",
+   "features": [
+    "1回約20分",
+    "月額制",
+    "AIマシン活用",
+    "女性利用者が多い",
+    "続けやすい"
    ]
   }
  ]

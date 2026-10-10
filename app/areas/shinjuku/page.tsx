@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shinjuku/'),
-  title: '【2026年7月】新宿の女性専用パーソナルジムおすすめ6選！料金比較',
-  description: '【2026年4月】新宿のおすすめ女性専用・女性向けパーソナルジム6選を徹底比較。料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】新宿の女性専用パーソナルジムおすすめ5選！料金比較',
+  description: '【2026年4月】新宿のおすすめ女性専用・女性向けパーソナルジム5選を徹底比較。料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,新宿,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -89,20 +89,6 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '火〜木・日10:00〜22:00／金10:00〜20:00', closed: '月・土', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
-  {
-    name: 'エクササイズコーチ 新宿店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格', '女性利用者8割'],
-    description: 'AI主導の20分パーソナルトレーニング。月4回12,000円〜の低価格。',
-    access: 'JR「新宿駅」徒歩3分',
-    address: 'JR「新宿駅」徒歩3分',
-    popularPlan: { name: '人気プラン', description: 'AI主導の20分パーソナルトレーニング。月4回12,000円〜の低価格。', price: '月4回 12,000円〜（税込）' },
-    options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
-  }
 ]
 
 const faqs = [

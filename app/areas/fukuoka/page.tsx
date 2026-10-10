@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/fukuoka/'),
-  title: '【2026年7月】福岡の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】福岡のおすすめ女性専用・女性向けパーソナルジム5選を徹底比較。料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】福岡の女性専用パーソナルジムおすすめ3選！料金比較',
+  description: '【2026年4月】福岡のおすすめ女性専用・女性向けパーソナルジム3選を徹底比較。料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,福岡,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -32,20 +32,6 @@ const gyms = [
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
-  },
-  {
-    name: 'リボーンマイセルフ 博多店',
-    officialUrl: 'https://reborn-myself.com/',
-    price: '入会金38,000円＋コース料金',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '女性トレーナーのみ'],
-    description: '女性トレーナーのみ在籍の女性専用ジム。博多駅エリア。',
-    access: 'JR「博多駅」徒歩5分',
-    address: 'JR「博多駅」徒歩5分',
-    popularPlan: { name: '人気プラン', description: '女性トレーナーのみ在籍の女性専用ジム。博多駅エリア。', price: '入会金38,000円＋コース料金' },
-    options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'UNDEUX SUPERBODY LIFE 福岡',
@@ -74,20 +60,6 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
-  {
-    name: 'エクササイズコーチ 天神店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格'],
-    description: 'AI主導20分トレーニング。天神で月4回12,000円〜。',
-    access: '地下鉄「天神駅」徒歩3分',
-    address: '地下鉄「天神駅」徒歩3分',
-    popularPlan: { name: '人気プラン', description: 'AI主導20分トレーニング。天神で月4回12,000円〜。', price: '月4回 12,000円〜（税込）' },
-    options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
-  }
 ]
 
 const faqs = [

@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/fujisawa/'),
-  title: '【2026年7月】藤沢の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】藤沢のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・リボーンマイセルフ・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】藤沢の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】藤沢のおすすめ女性専用パーソナルジム4選を徹底比較。OUTLINE・リボーンマイセルフ・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,藤沢,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -46,20 +46,6 @@ const gyms = [
     options: ['マシンピラティス設備', '月2回〜8回から選択', '継続割あり', 'シャワー完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善', '体型維持'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['トレーニングルーム', 'ピラティスマシン', 'シャワー'] },
-  },
-  {
-    name: 'リボーンマイセルフ 藤沢店',
-    officialUrl: 'https://reborn-myself.com/',
-    price: '入会金38,000円＋コース料金',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '女性トレーナーのみ', '完全プライベート', '産後対応', '藤沢駅近'],
-    description: '日本初の女性専用ダイエットジム。藤沢駅徒歩4分。トレーナーも全員女性で完全プライベート空間。湘南エリアの女性に支持されるジム。',
-    access: 'JR「藤沢駅」徒歩4分',
-    address: '神奈川県藤沢市（藤沢駅徒歩4分）',
-    popularPlan: { name: 'ダイエットコース', description: '女性トレーナーによるマンツーマン指導。60分の完全プライベートセッション。', price: '入会金38,000円＋コース料金' },
-    options: ['ウェアレンタル無料', '産後ダイエットコース', 'ブライダルダイエットコース', '部分痩せコース'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', '産後ダイエット', 'ブライダル', '部分痩せ'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全プライベート空間', 'ロッカー', 'ウェアレンタル'] },
   },
   {
     name: 'ビーコンセプト 藤沢店',

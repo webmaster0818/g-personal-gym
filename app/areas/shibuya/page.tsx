@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shibuya/'),
-  title: '【2026年7月】渋谷の女性専用パーソナルジムおすすめ7選！料金比較',
-  description: '【2026年4月】渋谷のおすすめ女性専用パーソナルジム7選を徹底比較。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】渋谷の女性専用パーソナルジムおすすめ5選！料金比較',
+  description: '【2026年4月】渋谷のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,渋谷,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -62,20 +62,6 @@ const gyms = [
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
   {
-    name: 'リボーンマイセルフ 渋谷店',
-    officialUrl: 'https://reborn-myself.com/',
-    price: '入会金38,000円＋コース料金',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', 'ブライダルコース'],
-    description: '2010年創業の日本初の女性専用ダイエットジム。トレーナーも全員女性。2万人以上の指導実績をもとにしたオリジナルメソッドで、女性本来の柔らかさを残したボディメイクを実現。',
-    access: 'JR「渋谷駅」徒歩6分',
-    address: '東京都渋谷区（渋谷駅徒歩6分）',
-    popularPlan: { name: 'ダイエットコース', description: '2万人以上の指導実績をもとにしたオリジナルメソッド。女性トレーナーによるマンツーマン指導。', price: '入会金38,000円＋コース料金' },
-    options: ['ウェアレンタル無料', '産後ダイエットコース', 'ブライダルダイエットコース', '部分痩せコース'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', 'ブライダル', '産後ダイエット', '部分痩せ'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'ウェアレンタル'] },
-  },
-  {
     name: 'クレビック 渋谷店',
     price: '2ヶ月16回 149,800円〜（税込）',
     trial: '無料カウンセリング',
@@ -87,20 +73,6 @@ const gyms = [
     options: ['管理栄養士による食事指導', 'ウェアレンタル無料', 'タオル完備', 'シャワー完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '食事改善', '美容'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
-  },
-  {
-    name: 'かたぎり塾 渋谷店',
-    officialUrl: 'https://katagirijuku.jp/',
-    price: '月4回 30,800円〜（税込）',
-    trial: '体験レッスンあり',
-    features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '渋谷駅近'],
-    description: '全国に店舗を展開するパーソナルジムチェーン。月額制で続けやすい料金設定が人気。AI食事指導など最新技術も活用。女性トレーナーも在籍しており、渋谷駅からアクセス良好。',
-    access: 'JR「渋谷駅」徒歩5分',
-    address: '東京都渋谷区（渋谷駅徒歩5分）',
-    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニング。AI食事指導付き。', price: '月4回 30,800円〜（税込）' },
-    options: ['AI食事指導', '月額制で始めやすい', '回数変更可能'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室', 'ロッカー'] },
   },
   {
     name: 'エクササイズコーチ 渋谷店',

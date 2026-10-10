@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/omotesando/'),
-  title: '【2026年7月】表参道の女性専用パーソナルジムおすすめ6選！料金比較',
-  description: '【2026年4月】表参道・青山のおすすめ女性専用パーソナルジム6選を徹底比較。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】表参道の女性専用パーソナルジムおすすめ5選！料金比較',
+  description: '【2026年4月】表参道・青山のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,表参道,青山,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -32,20 +32,6 @@ const gyms = [
     options: ['糖質オフ宅配食無料', '管理栄養士の毎食指導', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', 'ボディメイク', '美容'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
-  },
-  {
-    name: 'OUTLINE 表参道店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'よもぎ蒸し', '表参道エリア'],
-    description: '業界初の生涯無料アフターサポート。完全個室・女性専用マシン完備。表参道の洗練された環境で、女性に特化したトレーニングを提供。',
-    access: '東京メトロ「表参道駅」徒歩5分',
-    address: '東京都港区南青山（表参道駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室マンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'よもぎ蒸し', '高級アミノ酸提供', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', 'リバウンド防止', '美容'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
     name: 'ビーコンセプト 表参道店',

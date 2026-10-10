@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nakameguro/'),
-  title: '【2026年7月】中目黒の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】中目黒のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・zen place・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】中目黒の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】中目黒のおすすめ女性専用パーソナルジム4選を徹底比較。OUTLINE・zen place・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,中目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'OUTLINE 中目黒店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '業界初の生涯無料アフターサポートが特徴の女性専用パーソナルジム。中目黒の閑静なエリアに位置し、落ち着いた雰囲気でトレーニングに集中できる。完全個室・ベビーサークル完備。',
-    access: '東急東横線「中目黒駅」徒歩5分',
-    address: '東京都目黒区上目黒（中目黒駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
   {
     name: 'zen place pilates 中目黒スタジオ',
     price: '月4回 14,520円〜（税込）',

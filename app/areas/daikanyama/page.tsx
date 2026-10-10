@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/daikanyama/'),
-  title: '【2026年7月】代官山の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・RIZAP WOMAN・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】代官山の女性専用パーソナルジムおすすめ3選！料金比較',
+  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム3選を徹底比較。UNDEUX SUPERBODY・RIZAP WOMAN・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,代官山,おすすめ,料金,比較,ダイエット,ボディメイク,高級',
 }
 
 const gyms = [
-  {
-    name: 'UNDEUX SUPERBODY 代官山スタジオ',
-    officialUrl: 'https://www.diet-undeux.jp/',
-    price: '2ヶ月16回 220,000円〜（税込）',
-    trial: '体験レッスン0円',
-    features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '代官山の高級空間'],
-    description: '代官山のおしゃれなエリアに位置する女性専用パーソナルジム。糖質オフ宅配食を無料提供し、トレーニングと食事の両面からサポート。洗練された空間でモチベーション高くトレーニングできる。',
-    access: '東急東横線「代官山駅」徒歩4分',
-    address: '東京都渋谷区代官山町（代官山駅徒歩4分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプラン。', price: '2ヶ月16回 220,000円〜（税込）' },
-    options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', 'ボディメイク', '美容'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
-  },
   {
     name: 'RIZAP WOMAN 代官山店',
     price: '2ヶ月16回 327,800円〜（税込）',
@@ -45,20 +31,6 @@ const gyms = [
     options: ['コラーゲンマシン', 'エステ施術', '30日間全額返金保証', 'ウェアレンタル無料', '食事指導付き'],
     userProfile: { ageRange: '30代〜50代が中心', genderRatio: '女性100%', purpose: ['美ボディメイク', 'ダイエット', 'エイジングケア', '美容'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'エステルーム', 'コラーゲンマシン', 'シャワー'] },
-  },
-  {
-    name: 'OUTLINE 代官山店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '生涯無料アフターサポートが特徴の女性専用ジム。代官山のおしゃれなロケーションで、完全個室・女性専用マシン完備。コスパの良さと充実のサポートが魅力。',
-    access: '東急東横線「代官山駅」徒歩5分',
-    address: '東京都渋谷区代官山町（代官山駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
     name: 'ビーコンセプト 恵比寿・代官山店',

@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/meguro/'),
-  title: '【2026年7月】目黒の女性専用パーソナルジムおすすめ6選！料金比較',
-  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム6選を徹底比較。B-CONCEPT・OUTLINE・Bodiesなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】目黒の女性専用パーソナルジムおすすめ3選！料金比較',
+  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム3選を徹底比較。B-CONCEPT・OUTLINE・Bodiesなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -32,20 +32,6 @@ const gyms = [
     options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応（月々5,545円〜）'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
     basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
-  },
-  {
-    name: 'OUTLINE 目黒店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '生涯無料アフターサポートが最大の特徴。完全個室で女性専用マシンを使ったトレーニング。ベビーサークル完備で産後ママも安心して通える。',
-    access: 'JR「目黒駅」徒歩6分',
-    address: '東京都品川区上大崎（目黒駅徒歩6分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
     name: 'Bodies 目黒店',
@@ -73,34 +59,6 @@ const gyms = [
     options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
-  },
-  {
-    name: 'かたぎり塾 目黒店',
-    officialUrl: 'https://katagirijuku.jp/',
-    price: '月4回 30,800円〜（税込）',
-    trial: '体験レッスンあり',
-    features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '目黒駅近'],
-    description: '全国展開のパーソナルジムチェーン。月額制で続けやすい料金設定が人気。AI食事指導で最新技術を活用。目黒駅からのアクセスも良好。',
-    access: 'JR「目黒駅」徒歩4分',
-    address: '東京都品川区上大崎（目黒駅徒歩4分）',
-    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニング。AI食事指導付き。', price: '月4回 30,800円〜（税込）' },
-    options: ['AI食事指導', '月額制で始めやすい', '回数変更可能'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室', 'ロッカー'] },
-  },
-  {
-    name: 'エクササイズコーチ 目黒店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '目黒駅近'],
-    description: 'AI主導の効率的パーソナルトレーニング。1回20分で月4回12,000円〜の低価格。利用者の8割以上が女性で、短時間で効果的なトレーニングが可能。',
-    access: 'JR「目黒駅」徒歩3分',
-    address: '東京都品川区上大崎（目黒駅徒歩3分）',
-    popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定。1回20分の効率トレーニング。', price: '月4回 12,000円〜（税込）' },
-    options: ['AI個別最適化', '1回20分', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['ダイエット', '健康維持', '体力向上', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['トレーニングマシン', 'ロッカー'] },
   },
 ]
 
