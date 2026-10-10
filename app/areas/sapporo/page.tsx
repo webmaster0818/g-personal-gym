@@ -21,17 +21,17 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'リボーンマイセルフ 札幌店',
-    officialUrl: 'https://reborn-myself.com/',
+    officialUrl: 'https://www.shapes-international.co.jp/store/sapporo/',
     price: '入会金38,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '大通駅徒歩1分'],
     description: '大通駅36番出口から徒歩1分の好立地。女性トレーナーのみ在籍の女性専用ジム。',
     access: '地下鉄「大通駅」36番出口 徒歩1分',
-    address: '地下鉄「大通駅」36番出口 徒歩1分',
+    address: '北海道札幌市中央区南1条西2-1-1 らんたんビルB2階',
     popularPlan: { name: '人気プラン', description: '大通駅36番出口から徒歩1分の好立地。女性トレーナーのみ在籍の女性専用ジム。', price: '入会金38,000円＋コース料金' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '平日11:00〜22:00／土日祝10:00〜19:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'ビーコンセプト 札幌店',
