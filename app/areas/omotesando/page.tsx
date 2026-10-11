@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/omotesando/'),
   title: '【2026年7月】表参道の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】表参道・青山のおすすめ女性専用パーソナルジム4選を徹底比較。UNDEUX SUPERBODY・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】表参道・青山のおすすめ女性専用パーソナルジム4選を徹底比較。UNDEUX SUPERBODY・AGLAIA・MMMなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,表参道,青山,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -76,16 +76,15 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '表参道で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、AGLAIA、MMMが表参道で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、美尻特化ならAGLAIA、バストアップならMMMがおすすめ。' },
+  { question: '表参道で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、AGLAIA、MMMが表参道で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、美尻特化ならAGLAIA、バストアップならMMMがおすすめ。' },
   { question: '表参道のパーソナルジムの料金相場は？', answer: '表参道の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円。表参道は高級エリアですが、郊外と大きな差はありません。' },
   { question: '表参道駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYとMMM（トリプルエム）が表参道駅徒歩1分で最も近い。' },
   { question: '美尻・ヒップアップに特化したジムは？', answer: 'AGLAIA（アグライア）は美尻専用マシン「グルーツビルダー」を完備し、ゼロから美尻を作るオリジナルメソッドを提供。' },
-  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、AGLAIA、MMM、エクササイズコーチは無料カウンセリングを実施しています。' },
+  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。AGLAIA、MMM、エクササイズコーチは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎。AGLAIAは会員の80%がトレーニング未経験者で、特に初心者フレンドリーです。' },
   { question: '表参道と青山のジムは同じエリア？', answer: '表参道駅は港区南青山に位置しており、「表参道」「青山」は基本的に同じエリアです。ジムの住所は「南青山」が多いですが、いずれも表参道駅から徒歩圏内です。' },
   { question: 'バストアップしながらダイエットできるジムは？', answer: 'MMM（トリプルエム）の「バストアッププラン」は、バストを維持しつつ余分な脂肪だけを落とすことが可能。他にはない独自のプランです。' },
   { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択可能。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドが好評。' },
-  { question: 'リバウンド防止のサポートは？', answer: 'OUTLINEは「生涯無料アフターサポート」で卒業後もずっとサポート。表参道エリアで最も手厚いリバウンド対策です。' },
 ]
 
 export default function OmotesandoPage() {
@@ -148,7 +147,7 @@ export default function OmotesandoPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">美尻・美脚特化</h3>
@@ -219,7 +218,7 @@ export default function OmotesandoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">表参道エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、美脚なら美尻ならAGLAIAがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、美尻ならAGLAIAがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

@@ -91,11 +91,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '恵比寿で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプト、リボーンマイセルフ、LIMが恵比寿で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプトがおすすめです。' },
+  { question: '恵比寿で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプト、LIMが恵比寿で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプトがおすすめです。' },
   { question: '恵比寿のパーソナルジムの料金相場は？', answer: '恵比寿エリアの女性向けパーソナルジムの2ヶ月コース料金は約18万〜22万円。ビーコンセプトが179,685円〜と比較的リーズナブル。OUTLINEは生涯サポート付きで184,800円〜です。' },
-  { question: '恵比寿駅から最も近いパーソナルジムは？', answer: 'ビーコンセプト恵比寿店が徒歩2分で最も駅近です。UNDEUX SUPERBODYは徒歩4分、リボーンマイセルフ・LIMは徒歩5分です。' },
+  { question: '恵比寿駅から最も近いパーソナルジムは？', answer: 'ビーコンセプト恵比寿店が徒歩2分で最も駅近です。UNDEUX SUPERBODYは徒歩4分、LIMは徒歩5分です。' },
   { question: '子連れで通えるジムはある？', answer: 'OUTLINE恵比寿・広尾店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、ビーコンセプト、リボーンマイセルフ、LIMは無料カウンセリングを実施しています。' },
+  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、ビーコンセプト、LIMは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
   { question: '恵比寿で最も安いパーソナルジムは？', answer: 'ビーコンセプト（2ヶ月18回 179,685円〜）が最安クラス。OUTLINE（16回 184,800円〜）もコスパ良好。分割払いなら月々5,545円〜で始められます。' },
   { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料提供。エクササイズコーチは「食べて痩せる」メソッドで糖質制限なしの食事指導が好評です。' },
@@ -234,7 +234,7 @@ export default function EbisuPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">恵比寿エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプト、女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプトがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/ueno/'),
   title: '【2026年7月】上野の女性専用パーソナルジムおすすめ1選！料金比較',
-  description: '【2026年4月】上野のおすすめ女性専用パーソナルジム1選を徹底比較。OUTLINE・B-CONCEPT・CREBIQなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】上野のおすすめ女性専用パーソナルジム1選を徹底比較。クレビックの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,上野,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -35,11 +35,9 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '上野で女性専用のパーソナルジムはありますか？', answer: 'はい、上野エリアにはOUTLINE、クレビック、UNDEUX SUPERBODYなど複数の女性専用パーソナルジムがあります。いずれも上野駅から徒歩圏内です。' },
-  { question: '上野のパーソナルジムの料金相場は？', answer: '上野エリアの料金はエクササイズコーチ（月12,000円〜）からUNDEUX SUPERBODY（2ヶ月220,000円〜）まで幅広い選択肢。クレビック（149,800円〜）が2ヶ月コースで最安クラスです。' },
-  { question: '上野で食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODY（糖質オフ宅配食無料）、クレビック（管理栄養士指導）が食事サポートに特に力を入れています。' },
-  { question: '上野で最も安いパーソナルジムは？', answer: 'エクササイズコーチ上野店（月4回12,000円〜）が最安。2ヶ月コースではクレビック（149,800円〜）がコスパに優れています。' },
-  { question: '上野で子連れで通えるジムは？', answer: 'OUTLINE上野店はベビーサークル完備で子連れOK。' },
+  { question: '上野で女性専用のパーソナルジムはありますか？', answer: 'はい、当サイトで上野エリアに掲載しているのはクレビックです。' },
+  { question: '上野のパーソナルジムの料金相場は？', answer: 'クレビックの2ヶ月コースは149,800円〜です。' },
+  { question: '上野で食事指導が充実しているジムは？', answer: 'クレビック（管理栄養士指導）が食事サポートに力を入れています。' },
 ]
 
 export default function UenoPage() {
@@ -99,7 +97,7 @@ export default function UenoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">上野エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパ重視ならOUTLINEやクレビック、食事管理重視ならUNDEUX SUPERBODYがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">管理栄養士の食事指導を受けたいならクレビックがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

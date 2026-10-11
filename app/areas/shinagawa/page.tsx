@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shinagawa/'),
   title: '【2026年7月】品川の女性専用パーソナルジムおすすめ2選！料金比較',
-  description: '【2026年4月】品川のおすすめ女性専用パーソナルジム2選を徹底比較。UNDEUX SUPERBODY・OUTLINE・Reborn Myselfなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】品川のおすすめ女性専用パーソナルジム2選を徹底比較。クレビック・24/7 Workoutの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,品川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -48,11 +48,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '品川で女性専用のパーソナルジムはありますか？', answer: 'はい、品川エリアにはUNDEUX SUPERBODY、OUTLINE、リボーンマイセルフ、クレビックなど複数の女性専用パーソナルジムがあります。いずれも品川駅から徒歩圏内です。' },
+  { question: '品川で女性専用のパーソナルジムはありますか？', answer: 'はい、品川エリアではクレビック、24/7 Workoutを掲載しています。' },
   { question: '品川のパーソナルジムの料金相場はどれくらい？', answer: '品川エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜26万円です。クレビック（149,800円〜）が最もリーズナブルでもコスパが良いです。' },
-  { question: '品川駅から近いパーソナルジムは？', answer: 'UNDEUX SUPERBODY（徒歩5分）、リボーンマイセルフ（徒歩5分）、24/7 Workout（徒歩5分）が品川駅から特に近いジムです。' },
-  { question: '品川で仕事帰りに通えるジムは？', answer: '24/7 Workoutは深夜24時まで営業しており、品川で働くビジネスパーソンに最適です。UNDEUX SUPERBODYも22時まで営業しています。' },
-  { question: '品川で子連れで通えるジムは？', answer: 'OUTLINE品川店はベビーサークル完備で子連れOK。' },
+  { question: '品川駅から近いパーソナルジムは？', answer: '24/7 Workout（徒歩5分）が品川駅から近いジムです。' },
+  { question: '品川で仕事帰りに通えるジムは？', answer: '24/7 Workoutは深夜24時まで営業しており、品川で働くビジネスパーソンに最適です。' },
 ]
 
 export default function ShinagawaPage() {
@@ -112,7 +111,7 @@ export default function ShinagawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">品川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、下半身痩せなら女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">掲載ジムの料金・特徴を比較して選んでください。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

@@ -77,11 +77,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '渋谷で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、リボーンマイセルフ、クレビックが渋谷で人気の女性専用パーソナルジムです。それぞれ特徴が異なるので、食事管理重視ならUNDEUX、コスパ重視ならOUTLINEがおすすめです。' },
+  { question: '渋谷で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、クレビックが渋谷で人気の女性専用パーソナルジムです。それぞれ特徴が異なるので、食事管理重視ならUNDEUX、コスパ重視ならOUTLINEがおすすめです。' },
   { question: '渋谷のパーソナルジムの料金相場は？', answer: '渋谷エリアの女性向けパーソナルジムの2ヶ月��ース料金は約15万〜22万円。月額制なら月12,000円〜30,800円程度。エクササイズコーチは月4回12,000円〜と最安クラスです。' },
   { question: '渋谷駅から近いパーソナルジムは？', answer: 'エクササイズコーチ渋谷店（徒歩3分）、UNDEUX SUPERBODY（徒歩5分）、クレビック（徒歩5分）が渋谷駅から特に近いジムです。' },
   { question: '子連れで通えるジムはある？', answer: 'OUTLINE渋谷店はベビーサークル完備で子連れOK。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験あり。OUTLINE、リボーンマイセルフは無料カウンセリングを実施しています。' },
+  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験あり。OUTLINEは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
   { question: '渋谷で最も安いパーソナルジムは？', answer: 'エクササイズコーチ（月4回12,000円〜）が最安。2ヶ月コースではクレビック（149,800円〜）がコスパ良好。OUTLINEは生涯サポート付きで184,800円〜。' },
   { question: '短時間で通えるジムは？', answer: 'エクササイズコーチは1回20分で完了。忙しい方に最適です。他のジムも50〜75分のセッションが一般的です。' },
@@ -175,7 +175,7 @@ export default function ShibuyaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
                 <p className="text-3xl font-bold text-accent mb-2">1.2万〜3.1万円/月</p>
-                <p className="text-sm text-brand-muted">エクササイズコーチ12,000��〜が最安。かたぎり塾30,800円〜も人気。</p>
+                <p className="text-sm text-brand-muted">エクササイズコーチ12,000円〜が最安。</p>
               </div>
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function ShibuyaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">渋谷エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、下半身痩せなら女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINEがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

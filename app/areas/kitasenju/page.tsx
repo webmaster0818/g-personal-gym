@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kitasenju/'),
   title: '【2026年7月】北千住の女性専用パーソナルジムおすすめ3選！料金比較',
-  description: '【2026年4月】北千住のおすすめ女性専用パーソナルジム3選を徹底比較。B-CONCEPT・OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】北千住のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・かたぎり塾・Apple GYMの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,北千住,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -64,7 +64,7 @@ const gyms = [
 
 const faqs = [
   { question: '北千住で女性専用のパーソナルジムはありますか？', answer: 'はい、北千住エリアにはOUTLINEなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意しています。' },
-  { question: '北千住のパーソナルジムの料金相場は？', answer: '北千住エリアの料金はエクササイズコーチ（月12,000円〜）からOUTLINE（184,800円〜）まで幅広い選択肢。Apple GYM（8回49,280円〜）もリーズナブルです。' },
+  { question: '北千住のパーソナルジムの料金相場は？', answer: '北千住エリアの料金はApple GYM（8回49,280円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
   { question: '北千住で下半身痩せに特化したジムは？', answer: '医師とトレーナーが共同開発した脚やせメソッドで太もも痩せ・ヒップアップを目指せます。' },
   { question: '北千住で子連れで通えるジムは？', answer: 'OUTLINE北千住店はベビーサークル完備で子連れOK。' },
 ]
@@ -126,7 +126,7 @@ export default function KitasenjuPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">北千住エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">下半身痩せならコスパと生涯サポートならOUTLINE、リーズナブルに始めるならApple GYMやエクササイズコーチがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、リーズナブルに始めるならApple GYMがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

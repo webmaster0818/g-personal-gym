@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kinshicho/'),
   title: '【2026年7月】錦糸町の女性専用パーソナルジムおすすめ3選！料金比較',
-  description: '【2026年4月】錦糸町のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・B-CONCEPT・かたぎり塾など人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】錦糸町のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・ビーコンセプト・Apple GYMの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,錦糸町,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -63,8 +63,8 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '錦糸町で女性専用のパーソナルジムはありますか？', answer: 'はい、錦糸町エリアにはOUTLINE、ビーコンセプトなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意。エクササイズコーチも女性利用者が8割以上です。' },
-  { question: '錦糸町のパーソナルジムの料金相場は？', answer: '錦糸町エリアの料金はエクササイズコーチ（月12,000円〜）からOUTLINE（184,800円〜）まで幅広いです。Apple GYM（8回49,280円〜）もお手頃。' },
+  { question: '錦糸町で女性専用のパーソナルジムはありますか？', answer: 'はい、錦糸町エリアにはOUTLINE、ビーコンセプトなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意。' },
+  { question: '錦糸町のパーソナルジムの料金相場は？', answer: '錦糸町エリアの料金はApple GYM（8回49,280円〜）からOUTLINE（184,800円〜）まで幅広いです。' },
   { question: '錦糸町で下半身痩せに特化したジムは？', answer: 'ビーコンセプト錦糸町店が下半身特化で最もおすすめ。医師とトレーナーが共同開発した脚やせメソッドで太もも痩せ・ヒップアップを目指せます。' },
   { question: '錦糸町で子連れで通えるジムは？', answer: 'OUTLINE錦糸町店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
 ]
@@ -126,7 +126,7 @@ export default function KinshichoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">錦糸町エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプト、リーズナブルに始めるならApple GYMやエクササイズコーチがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプト、リーズナブルに始めるならApple GYMがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nakameguro/'),
   title: '【2026年7月】中目黒の女性専用パーソナルジムおすすめ3選！料金比較',
-  description: '【2026年4月】中目黒のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・zen placeなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】中目黒のおすすめ女性専用パーソナルジム3選を徹底比較。zen place・かたぎり塾・Apple GYMの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,中目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -62,10 +62,9 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '中目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、中目黒エリアにはOUTLINEなどの女性専用パーソナルジムがあります。zen placeやかたぎり塾も女性の利用者が多いスタジオです。' },
-  { question: '中目黒のパーソナルジムの料金相場は？', answer: '中目黒エリアのパーソナルジムは月額14,520円〜（zen place）から2ヶ月184,800円〜（OUTLINE）まで幅広い選択肢があります。Apple GYMは8回49,280円〜とリーズナブルです。' },
+  { question: '中目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、中目黒エリアではzen place、かたぎり塾、Apple GYMを掲載しています。' },
+  { question: '中目黒のパーソナルジムの料金相場は？', answer: '中目黒エリアのパーソナルジムは月額14,520円〜（zen place）やApple GYMの8回49,280円〜など、幅広い選択肢があります。' },
   { question: '中目黒でピラティスもできるパーソナルジムは？', answer: 'zen place pilates 中目黒スタジオでは、マシンピラティスを使った本格的なピラティストレーニングが受けられます。姿勢改善やインナーマッスル強化に効果的です。' },
-  { question: '中目黒で子連れで通えるジムは？', answer: 'OUTLINE中目黒店はベビーサークル完備で子連れOK。' },
 ]
 
 export default function NakameguroPage() {
@@ -125,7 +124,7 @@ export default function NakameguroPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">中目黒エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">リバウンド防止ならOUTLINE、姿勢改善ならzen place、下半身痩せならコスパ重視ならApple GYMがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">姿勢改善ならzen place、コスパ重視ならApple GYMがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

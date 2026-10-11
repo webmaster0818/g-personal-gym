@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/gotanda/'),
   title: '【2026年7月】五反田の女性専用パーソナルジムおすすめ1選！料金比較',
-  description: '【2026年4月】五反田のおすすめ女性専用パーソナルジム1選を徹底比較。Reborn Myself・OUTLINE・24/7 Workoutなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】五反田のおすすめ女性専用パーソナルジム1選を徹底比較。24/7 Workoutの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,五反田,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -35,10 +35,9 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '五反田で女性専用のパーソナルジムはありますか？', answer: 'はい、五反田エリアにはリボーンマイセルフ、OUTLINEなどの女性専用パーソナルジムがあります。24/7 Workoutも女性専用プランを用意しています。' },
-  { question: '五反田のパーソナルジムの料金相場は？', answer: '五反田エリアの料金はエクササイズコーチ（月12,000円〜）から24/7 Workout（2ヶ月257,400円〜）まで幅広い選択肢があります。OUTLINE（184,800円〜）がコスパに優れています。' },
+  { question: '五反田で女性専用のパーソナルジムはありますか？', answer: '当サイトで五反田エリアに掲載しているのは24/7 Workoutです。女性専用プランを用意しています。' },
+  { question: '五反田のパーソナルジムの料金相場は？', answer: '24/7 Workoutは2ヶ月257,400円〜です。' },
   { question: '五反田で深夜まで営業しているジムは？', answer: '24/7 Workout五反田店は深夜24時まで営業しています。仕事が遅くなっても通えるので、五反田エリアで働く方におすすめです。' },
-  { question: '五反田で女性トレーナーのみのジムは？', answer: 'リボーンマイセルフ五反田店はトレーナーも全員女性。男性トレーナーに抵抗がある方でも安心して通えます。' },
 ]
 
 export default function GotandaPage() {
@@ -98,7 +97,7 @@ export default function GotandaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">五反田エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">女性トレーナー希望ならリボーンマイセルフ、コスパ重視ならOUTLINE、深夜まで通いたいなら24/7 Workoutがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">深夜まで通いたいなら24/7 Workoutがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

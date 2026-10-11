@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/daikanyama/'),
   title: '【2026年7月】代官山の女性専用パーソナルジムおすすめ2選！料金比較',
-  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム2選を徹底比較。UNDEUX SUPERBODY・RIZAP WOMAN・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム2選を徹底比較。RIZAP WOMAN・クレビックの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,代官山,おすすめ,料金,比較,ダイエット,ボディメイク,高級',
 }
 
@@ -48,11 +48,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '代官山で女性専用のパーソナルジムはありますか？', answer: 'はい、代官山エリアにはUNDEUX SUPERBODY、RIZAP WOMAN、OUTLINE、クレビックなど複数の女性専用パーソナルジムがあります。高級感のある空間が多いのが代官山の特徴です。' },
-  { question: '代官山で高級なパーソナルジムはどこ？', answer: 'RIZAP WOMAN代官山店はエステ・コラーゲンマシン付きの贅沢なプログラムを提供しています。UNDEUX SUPERBODY代官山スタジオも洗練された空間で質の高いサービスが受けられます。' },
-  { question: '代官山のパーソナルジムの料金相場は？', answer: '代官山エリアでは2ヶ月コース149,800円〜（クレビック）から327,800円〜（RIZAP WOMAN）まで幅広い選択肢があります。OUTLINE（184,800円〜）がコスパと質のバランスに優れています。' },
+  { question: '代官山で女性専用のパーソナルジムはありますか？', answer: 'はい、代官山エリアにはRIZAP WOMAN、クレビックなどの女性専用パーソナルジムがあります。高級感のある空間が多いのが代官山の特徴です。' },
+  { question: '代官山で高級なパーソナルジムはどこ？', answer: 'RIZAP WOMAN代官山店はエステ・コラーゲンマシン付きの贅沢なプログラムを提供しています。' },
+  { question: '代官山のパーソナルジムの料金相場は？', answer: '代官山エリアでは2ヶ月コース149,800円〜（クレビック）から327,800円〜（RIZAP WOMAN）まで幅広い選択肢があります。' },
   { question: '代官山でエステも受けられるジムは？', answer: 'RIZAP WOMAN代官山店では、トレーニングに加えてコラーゲンマシンやエステ施術も受けられます。美しく痩せたい方に最適です。' },
-  { question: '代官山で子連れで通えるジムは？', answer: 'OUTLINE代官山店はベビーサークル完備で子連れOK。' },
 ]
 
 export default function DaikanyamaPage() {
@@ -112,7 +111,7 @@ export default function DaikanyamaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">代官山エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">ラグジュアリーな美容体験ならRIZAP WOMAN、食事管理重視ならUNDEUX SUPERBODY、コスパ重視ならOUTLINEやクレビックがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">ラグジュアリーな美容体験ならRIZAP WOMAN、コスパ重視ならクレビックがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

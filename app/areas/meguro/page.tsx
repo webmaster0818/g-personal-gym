@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/meguro/'),
   title: '【2026年7月】目黒の女性専用パーソナルジムおすすめ2選！料金比較',
-  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム2選を徹底比較。B-CONCEPT・OUTLINE・Bodiesなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム2選を徹底比較。UNDEUX SUPERBODY・Bodiesの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -49,10 +49,9 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、目黒エリアにはOUTLINE、Bodies、UNDEUX SUPERBODYなど複数の女性専用パーソナルジムがあります。いずれも目黒駅から徒歩圏内です。' },
-  { question: '目黒のパーソナルジムの料金相場は？', answer: '目黒エリアの料金は月5,970円〜（Bodies）から2ヶ月220,000円〜（UNDEUX SUPERBODY）まで幅広い選択肢があります。エクササイズコーチは月12,000円〜と低価格です。' },
+  { question: '目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、目黒エリアにはBodies、UNDEUX SUPERBODYなどの女性専用パーソナルジムがあります。いずれも目黒駅から徒歩圏内です。' },
+  { question: '目黒のパーソナルジムの料金相場は？', answer: '目黒エリアの料金は月5,970円〜（Bodies）から2ヶ月220,000円〜（UNDEUX SUPERBODY）まで幅広い選択肢があります。' },
   { question: '目黒駅直結のジムはある？', answer: 'Bodies目黒店は目黒駅直結で、雨の日でも濡れずに通えます。月会費5,970円〜のリーズナブルな料金で、ゲルマニウム温浴も利用可能です。' },
-  { question: '目黒で子連れで通えるジムは？', answer: 'OUTLINE目黒店はベビーサークル完備で子連れOK。' },
 ]
 
 export default function MeguroPage() {
@@ -112,7 +111,7 @@ export default function MeguroPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">目黒エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">下半身痩せならコスパと生涯サポートならOUTLINE、手軽に始めるならBodiesやエクササイズコーチがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、手軽に始めるならBodiesがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

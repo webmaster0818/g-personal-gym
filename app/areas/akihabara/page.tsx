@@ -63,10 +63,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '秋葉原で女性専用のパーソナルジムはありますか？', answer: 'はい、秋葉原エリアにはOUTLINE、Bodiesなどの女性専用ジムがあります。24/7 Workoutも女性専用プランを用意しています。エクササイズコーチも女性利用者が8割以上です。' },
-  { question: '秋葉原のパーソナルジムの料金相場は？', answer: '秋葉原エリアの料金はBodies（月5,970円〜）やエクササイズコーチ（月12,000円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
-  { question: '秋葉原で深夜まで営業しているジムは？', answer: '24/7 Workout秋葉原・神田店は深夜24時まで営業。エクササイズコーチも22時まで営業しているので、仕事帰りにも通えます。' },
-  { question: '秋葉原で初心者でも通えるジムは？', answer: 'Bodiesは1回30分のサーキットトレーニングで初心者向け。エクササイズコーチもAI主導で1回20分から始められます。どのジムもマンツーマン指導なので初心者歓迎です。' },
+  { question: '秋葉原で女性専用のパーソナルジムはありますか？', answer: 'はい、秋葉原エリアにはOUTLINE、Bodiesなどの女性専用ジムがあります。24/7 Workoutも女性専用プランを用意しています。' },
+  { question: '秋葉原のパーソナルジムの料金相場は？', answer: '秋葉原エリアの料金はBodies（月5,970円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
+  { question: '秋葉原で深夜まで営業しているジムは？', answer: '24/7 Workout秋葉原・神田店は深夜24時まで営業。' },
+  { question: '秋葉原で初心者でも通えるジムは？', answer: 'Bodiesは1回30分のサーキットトレーニングで初心者向け。どのジムもマンツーマン指導なので初心者歓迎です。' },
 ]
 
 export default function AkihabaraPage() {
@@ -126,7 +126,7 @@ export default function AkihabaraPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">秋葉原エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、手軽に始めるならBodiesやエクササイズコーチ、本格的にダイエットするなら24/7 Workoutがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、手軽に始めるならBodies、本格的にダイエットするなら24/7 Workoutがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>
