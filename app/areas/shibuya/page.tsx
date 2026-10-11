@@ -38,11 +38,11 @@ const gyms = [
     officialUrl: 'https://www.outline-gym.com/',
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル���備', '女性特化マシン'],
+    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
     description: '2年連続「女性に選ばれているパーソナルジム第1位」。業界初の生涯無料アフターサポートが最大の特徴。完全個室・女性専用マシン・ベビーサークル完備で、子連れママも安心。',
     access: 'JR「渋谷駅」徒歩7分',
     address: '東京都渋谷区（渋谷駅徒歩7分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。���業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
+    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
@@ -83,7 +83,7 @@ const gyms = [
     description: '「身体の内側（食事）と外側（トレーニング）」の両面からボディメイクする女性専門パーソナルジム。管理栄養士による食事指導付きで、科学的根拠に基づいたプログラムを提供。比較的リーズナブルな料金設定。',
     access: 'JR「渋谷駅」徒歩5分',
     address: '東京都渋谷区（渋谷駅徒歩5分）',
-    popularPlan: { name: 'ダイエッ��&ボディメイクコース', description: '管理栄養士の食事指導＋マンツーマントレーニングの総合プログラム。', price: '2ヶ月16回 149,800円〜（税込）' },
+    popularPlan: { name: 'ダイエット&ボディメイクコース', description: '管理栄養士の食事指導＋マンツーマントレーニングの総合プログラム。', price: '2ヶ月16回 149,800円〜（税込）' },
     options: ['管理栄養士による食事指導', 'ウェアレンタル無料', 'タオル完備', 'シャワー完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '食事改善', '美容'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -114,13 +114,13 @@ const gyms = [
     popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定。1回20分の効率トレーニング。', price: '月4回 12,000円〜（税込）' },
     options: ['AI個別最適化', '1回20分', 'ウェアレンタル無料'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['ダイエット', '健康維持', '体力向上', '運動習慣'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定���', facilities: ['トレーニングマシン', 'ロッカー'] },
+    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['トレーニングマシン', 'ロッカー'] },
   },
 ]
 
 const faqs = [
   { question: '渋谷で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプト、リボーンマイセルフ、クレビックが渋谷で人気の女性専用パーソナルジムです。それぞれ特徴が異なるので、食事管理重視ならUNDEUX、コスパ重視ならOUTLINE、下半身痩せならビーコンセプトがおすすめです。' },
-  { question: '渋谷のパーソナルジムの料金相場は？', answer: '渋谷エリアの女性向けパーソナルジムの2ヶ月��ース料金は約15万〜22万円。月額制なら月12,000円〜30,800円程度。エクササイズコーチは月4回12,000円〜と最安クラスです。' },
+  { question: '渋谷のパーソナルジムの料金相場は？', answer: '渋谷エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円。月額制なら月12,000円〜30,800円程度。エクササイズコーチは月4回12,000円〜と最安クラスです。' },
   { question: '渋谷駅から近いパーソナルジムは？', answer: 'エクササイズコーチ渋谷店（徒歩3分）、UNDEUX SUPERBODY（徒歩5分）、ビーコンセプト（徒歩5分）、クレビック（徒歩5分）が渋谷駅から特に近いジムです。' },
   { question: '子連れで通えるジムはある？', answer: 'OUTLINE渋谷店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
   { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験あり。OUTLINE、ビーコンセプト、リボーンマイセルフは無料カウンセリングを実施しています。' },
@@ -217,7 +217,7 @@ export default function ShibuyaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
                 <p className="text-3xl font-bold text-accent mb-2">1.2万〜3.1万円/月</p>
-                <p className="text-sm text-brand-muted">エクササイズコーチ12,000��〜が最安。かたぎり塾30,800円〜も人気。</p>
+                <p className="text-sm text-brand-muted">エクササイズコーチ12,000円〜が最安。かたぎり塾30,800円〜も人気。</p>
               </div>
             </div>
           </div>
