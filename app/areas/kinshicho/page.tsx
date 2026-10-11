@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kinshicho/'),
-  title: '【2026年7月】錦糸町の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】錦糸町のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・B-CONCEPT・かたぎり塾など人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】錦糸町の女性専用パーソナルジムおすすめ3選！料金比較',
+  description: '【2026年4月】錦糸町のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・B-CONCEPT・かたぎり塾など人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,錦糸町,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -48,20 +48,6 @@ const gyms = [
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
   {
-    name: 'かたぎり塾 錦糸町店',
-    officialUrl: 'https://katagirijuku.jp/',
-    price: '月4回 30,800円〜（税込）',
-    trial: '体験レッスンあり',
-    features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '錦糸町駅近'],
-    description: '全国展開のパーソナルジムチェーン。月額制で続けやすい料金設定。AI食事指導で最新技術を活用。錦糸町駅からアクセス良好。',
-    access: 'JR「錦糸町駅」徒歩4分',
-    address: '東京都墨田区錦糸（錦糸町駅徒歩4分）',
-    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニング。AI食事指導付き。', price: '月4回 30,800円〜（税込）' },
-    options: ['AI食事指導', '月額制で始めやすい', '回数変更可能'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室', 'ロッカー'] },
-  },
-  {
     name: 'Apple GYM 錦糸町店',
     price: '8回 49,280円〜（税込）',
     trial: '無料カウンセリング',
@@ -73,20 +59,6 @@ const gyms = [
     options: ['海外式ボディメイク', '完全個室', 'ウェアレンタル無料', '食事指導付き'],
     userProfile: { ageRange: '20代〜30代が中心', genderRatio: '女性100%', purpose: ['ボディメイク', 'ダイエット', 'ヒップアップ', '美脚'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ロッカー'] },
-  },
-  {
-    name: 'エクササイズコーチ 錦糸町店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '錦糸町駅近'],
-    description: 'AI主導の効率的パーソナルトレーニング。1回20分で月4回12,000円〜。利用者の8割以上が女性。錦糸町駅近の便利な立地。',
-    access: 'JR「錦糸町駅」徒歩3分',
-    address: '東京都墨田区錦糸（錦糸町駅徒歩3分）',
-    popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定。1回20分の効率トレーニング。', price: '月4回 12,000円〜（税込）' },
-    options: ['AI個別最適化', '1回20分', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['ダイエット', '健康維持', '体力向上', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['トレーニングマシン', 'ロッカー'] },
   },
 ]
 
