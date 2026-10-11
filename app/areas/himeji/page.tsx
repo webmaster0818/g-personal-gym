@@ -30,7 +30,7 @@ const gyms = [
     address: '姫路市忍町154',
     options: ['ジム利用のみスタンダード会員 月額9,900円', 'プレミアム月額55,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '下半身痩せ', '運動習慣'] },
-    basicInfo: { hours: '24時間', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '24時間（スタッフ在籍：月・火・木・金・土 11:00〜20:00）', closed: '年中無休', facilities: ['公式サイトでご確認ください'] },
   },
   {
     name: 'BEYOND 姫路店',

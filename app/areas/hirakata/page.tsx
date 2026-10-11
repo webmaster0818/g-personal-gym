@@ -28,7 +28,7 @@ const gyms = [
     description: '女性専用の24時間ジム。トレーナーは全員女性で、セルフ利用にパーソナルトレーニングを組み合わせられます（マンツーマン専門型ではなく24hジム＋パーソナル型）。',
     access: '京阪 枚方市駅 9番出口すぐ',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['運動習慣', 'ダイエット'] },
-    basicInfo: { hours: '24時間（スタッフ在籍は曜日・時間限定）', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '24時間（スタッフ在籍：月・火・木・金・土 11:00〜20:00）', closed: '年中無休', facilities: ['公式サイトでご確認ください'] },
   },
   {
     name: 'BEYOND 枚方店',

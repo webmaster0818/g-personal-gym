@@ -29,7 +29,7 @@ const gyms = [
     access: '近鉄四日市駅より車3分（無料駐車場第一〜第三あり）',
     options: ['スタンダード25,300円（パーソナル月1回付）', '追加パーソナル8,580円〜/回'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', '運動習慣'] },
-    basicInfo: { hours: '24時間', closed: '公式サイトでご確認ください', facilities: ['個室パーソナル'] },
+    basicInfo: { hours: '24時間', closed: '年中無休', facilities: ['個室パーソナル'] },
   },
   {
     name: 'Private & Personal GYM SILHOUETTE（シルエット）',

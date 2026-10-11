@@ -29,7 +29,7 @@ const gyms = [
     access: 'JR和歌山駅中央口から徒歩1分',
     options: ['学生・シニア月7,700円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['運動習慣', 'ダイエット'] },
-    basicInfo: { hours: '24時間', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '24時間（スタッフ在籍：月・火・木・金・土 11:00〜20:00）', closed: '年中無休', facilities: ['公式サイトでご確認ください'] },
   },
   {
     name: 'MoveLab（ムーブラボ）',

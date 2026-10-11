@@ -29,7 +29,7 @@ const gyms = [
     access: '阪神尼崎駅北口から徒歩6分',
     options: ['学生・シニア月7,700円', 'おさんぽ会員月4,400円', 'ビジター2,200円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['運動習慣', 'ダイエット', '下半身痩せ'] },
-    basicInfo: { hours: '24時間', closed: '公式サイトでご確認ください', facilities: ['キッズルームあり'] },
+    basicInfo: { hours: '24時間（スタッフ在籍：月・火・木・金・土 11:00〜20:00）', closed: '年中無休', facilities: ['キッズルームあり'] },
   },
   {
     name: 'パーソナルジムLiFT 阪神尼崎店',

@@ -67,7 +67,7 @@ const gyms = [
     address: '名古屋市中村区名駅2-28-9',
     options: ['都度払い50分9,050円／75分11,800円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性専用表記（試験的に男性受け入れあり）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '24時間', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '24時間', closed: '年中無休', facilities: ['完全個室'] },
   },
 ]
 
