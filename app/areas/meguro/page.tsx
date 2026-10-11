@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/meguro/'),
-  title: '【2026年7月】目黒の女性専用パーソナルジムおすすめ6選！料金比較',
-  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム6選を徹底比較。B-CONCEPT・OUTLINE・Bodiesなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】目黒の女性専用パーソナルジムおすすめ5選！料金比較',
+  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム5選を徹底比較。B-CONCEPT・OUTLINE・Bodiesなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'ビーコンセプト 目黒店',
-    officialUrl: 'https://b-concept.tokyo/',
-    price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
-    description: '医師とトレーナーが共同開発した脚やせメソッドが人気。太もも痩せ・ヒップアップに特化したプログラムで美脚を目指す。目黒駅から徒歩圏内で通いやすい立地。',
-    access: 'JR「目黒駅」徒歩5分',
-    address: '東京都品川区上大崎（目黒駅徒歩5分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
-    options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応（月々5,545円〜）'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
-    basicInfo: { hours: '10:00〜22:00', closed: '不定休', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
-  },
   {
     name: 'OUTLINE 目黒店',
     officialUrl: 'https://www.outline-gym.com/',
@@ -105,10 +91,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、目黒エリアにはビーコンセプト、OUTLINE、Bodies、UNDEUX SUPERBODYなど複数の女性専用パーソナルジムがあります。いずれも目黒駅から徒歩圏内です。' },
+  { question: '目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、目黒エリアにはOUTLINE、Bodies、UNDEUX SUPERBODYなど複数の女性専用パーソナルジムがあります。いずれも目黒駅から徒歩圏内です。' },
   { question: '目黒のパーソナルジムの料金相場は？', answer: '目黒エリアの料金は月5,970円〜（Bodies）から2ヶ月220,000円〜（UNDEUX SUPERBODY）まで幅広い選択肢があります。エクササイズコーチは月12,000円〜と低価格です。' },
   { question: '目黒駅直結のジムはある？', answer: 'Bodies目黒店は目黒駅直結で、雨の日でも濡れずに通えます。月会費5,970円〜のリーズナブルな料金で、ゲルマニウム温浴も利用可能です。' },
-  { question: '目黒で子連れで通えるジムは？', answer: 'OUTLINE目黒店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
+  { question: '目黒で子連れで通えるジムは？', answer: 'OUTLINE目黒店はベビーサークル完備で子連れOK。' },
 ]
 
 export default function MeguroPage() {
@@ -168,7 +154,7 @@ export default function MeguroPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">目黒エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">下半身痩せならビーコンセプト、コスパと生涯サポートならOUTLINE、手軽に始めるならBodiesやエクササイズコーチがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">下半身痩せならコスパと生涯サポートならOUTLINE、手軽に始めるならBodiesやエクササイズコーチがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

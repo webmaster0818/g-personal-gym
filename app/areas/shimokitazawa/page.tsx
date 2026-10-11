@@ -13,25 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shimokitazawa/'),
-  title: '【2026年7月】下北沢の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】下北沢のおすすめ女性向けパーソナルジム3選を比較。ビーコンセプト・UNDEUX・lotusなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '【2026年7月】下北沢の女性向けパーソナルジムおすすめ2選！料金比較',
+  description: '【2026年7月】下北沢のおすすめ女性向けパーソナルジム2選を比較。UNDEUX・lotusなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,下北沢,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'ビーコンセプト 下北沢店',
-    officialUrl: 'https://b-concept.tokyo/clublist/shimokitazawa/',
-    price: '太ももダイエットプログラム 2ヶ月全18回 179,685円（税込）',
-    trial: '無料カウンセリング・体験トレーニングあり',
-    features: ['女性専用', '完全個室', '脚やせ・下半身特化', '手ぶらOK', '子連れ可'],
-    description: '女性専用・完全個室。医師×トレーナー共同開発の脚痩せ（下半身）特化メソッドと、無理な制限のない食事指導が特徴。ウェア・シューズ・タオル無料レンタルで手ぶらOKです。',
-    access: '下北沢駅 徒歩1分',
-    address: '東京都世田谷区北沢2-23-12 下北沢デントビル3A',
-    options: ['トライアルプラン4回44,000円', 'カウンセリング当日入会で入会金無料', '託児費補助'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['太もも痩せ', '下半身痩せ', '産後ダイエット'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
-  },
   {
     name: 'UNDEUX SUPERBODY 下北沢スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/studio/shimokitazawa/',
@@ -61,11 +48,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '下北沢で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、ビーコンセプト 下北沢店、UNDEUX SUPERBODY 下北沢スタジオです（2026年6月調査時点）。' },
-  { question: '下北沢のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、ビーコンセプト 下北沢店は太ももダイエットプログラム 2ヶ月全18回 179,685円（税込）。UNDEUX SUPERBODY 下北沢スタジオはスタンダードプラン月2回 21,300円〜（税込）。lotus moon studio 下北沢は美ボディダイエット加圧コース 初回16回 136,000円（女性専用価格）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '下北沢駅から近いジムは？', answer: '駅徒歩3分以内・直結では、ビーコンセプト 下北沢店（下北沢駅 徒歩1分）、lotus moon studio 下北沢（京王井の頭線 下北沢駅西口より徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'ビーコンセプト 下北沢店、UNDEUX SUPERBODY 下北沢スタジオ、lotus moon studio 下北沢は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'ビーコンセプト 下北沢店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '下北沢で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 下北沢スタジオです（2026年6月調査時点）。' },
+  { question: '下北沢のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金ではは太ももダイエットプログラム 2ヶ月全18回 179,685円（税込）。UNDEUX SUPERBODY 下北沢スタジオはスタンダードプラン月2回 21,300円〜（税込）。lotus moon studio 下北沢は美ボディダイエット加圧コース 初回16回 136,000円（女性専用価格）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '下北沢駅から近いジムは？', answer: '駅徒歩3分以内・直結では、lotus moon studio 下北沢（京王井の頭線 下北沢駅西口より徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 下北沢スタジオ、lotus moon studio 下北沢は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはある？', answer: '条件は各公式サイトでご確認ください。' },
   { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
 ]
 
@@ -128,15 +115,11 @@ export default function ShimokitazawaPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト 下北沢店</li><li className="text-brand-muted">・UNDEUX SUPERBODY 下北沢スタジオ</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY 下北沢スタジオ</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY 下北沢スタジオ</li></ul>
-              </div>
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト 下北沢店</li></ul>
               </div>
             </div>
           </div>
@@ -147,7 +130,7 @@ export default function ShimokitazawaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">下北沢の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ビーコンセプト 下北沢店</span><span className="text-brand-muted text-sm">太ももダイエットプログラム 2ヶ月全18回 179,685円（税込）</span></li>
+              
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 下北沢スタジオ</span><span className="text-brand-muted text-sm">スタンダードプラン月2回 21,300円〜（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">lotus moon studio 下北沢</span><span className="text-brand-muted text-sm">美ボディダイエット加圧コース 初回16回 136,000円（女性専用価格）</span></li>
             </ul>
