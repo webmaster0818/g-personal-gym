@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const topGyms = [
   { name: 'ビーコンセプト（B CONCEPT）', feature: '下半身・太もも痩せ特化', price: '月々5,545円〜（税込・分割）', badge: '女性専用' },
-  { name: 'リボーンマイセルフ', feature: '女性トレーナーのみ在籍', price: '入会金38,000円＋コース料金', badge: '女性専用' },
+  { name: 'リボーンマイセルフ', feature: '女性トレーナーのみ在籍', price: '入会金22,000円＋コース料金', badge: '女性専用' },
   { name: 'UNDEUX SUPERBODY', feature: '食事管理・宅配食付き', price: '2ヶ月16回 220,000円〜', badge: '女性専用' },
   { name: 'OUTLINE（アウトライン）', feature: '完全個室・生涯サポート', price: '16回 184,800円〜（税込）', badge: '女性専用' },
   { name: 'Bodyke（ボディーク）', feature: '糖質制限なしボディメイク', price: '2ヶ月 215,600円〜（税込）', badge: 'ボディメイク特化' },
