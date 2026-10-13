@@ -13,54 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shinagawa/'),
-  title: '【2026年7月】品川の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】品川のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・OUTLINE・Reborn Myselfなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】品川の女性専用パーソナルジムおすすめ2選！料金比較',
+  description: '【2026年4月】品川のおすすめ女性専用パーソナルジム2選を徹底比較。クレビック・24/7 Workoutの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,品川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'UNDEUX SUPERBODY 品川スタジオ',
-    officialUrl: 'https://www.diet-undeux.jp/',
-    price: '2ヶ月16回 220,000円〜（税込）',
-    trial: '体験レッスン0円',
-    features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '品川駅近'],
-    description: '全国40店舗以上展開の女性専用パーソナルジム。糖質オフ宅配食を無料提供する総合的なダイエットサポートが特徴。シャワー・パウダールーム・基礎化粧品完備で手ぶらOK。品川駅から好アクセス。',
-    access: 'JR「品川駅」徒歩5分',
-    address: '東京都港区港南（品川駅徒歩5分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプラン。', price: '2ヶ月16回 220,000円〜（税込）' },
-    options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
-  },
-  {
-    name: 'OUTLINE 品川店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '業界初の生涯無料アフターサポートが最大の特徴。完全個室・女性専用マシン・ベビーサークル完備で、子連れママも安心。リバウンド防止に力を入れたプログラム。',
-    access: 'JR「品川駅」徒歩6分',
-    address: '東京都港区港南（品川駅徒歩6分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
-  {
-    name: 'リボーンマイセルフ 品川店',
-    officialUrl: 'https://reborn-myself.com/',
-    price: '入会金22,000円＋コース料金',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', 'ブライダルコース'],
-    description: '日本初の女性専用ダイエットジム。トレーナーも全員女性。2万人以上の指導実績をもとにしたオリジナルメソッドで、女性本来の柔らかさを残したボディメイクを実現。',
-    access: 'JR「品川駅」徒歩5分',
-    address: '東京都港区港南（品川駅徒歩5分）',
-    popularPlan: { name: 'ダイエットコース', description: '2万人以上の指導実績をもとにしたオリジナルメソッド。女性トレーナーによるマンツーマン指導。', price: '入会金22,000円＋コース料金' },
-    options: ['ウェアレンタル無料', '産後ダイエットコース', 'ブライダルダイエットコース', '部分痩せコース'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', 'ブライダル', '産後ダイエット', '部分痩せ'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'ウェアレンタル'] },
-  },
   {
     name: 'クレビック 品川店',
     price: '2ヶ月16回 149,800円〜（税込）',
@@ -90,11 +48,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '品川で女性専用のパーソナルジムはありますか？', answer: 'はい、品川エリアにはUNDEUX SUPERBODY、OUTLINE、リボーンマイセルフ、クレビックなど複数の女性専用パーソナルジムがあります。いずれも品川駅から徒歩圏内です。' },
+  { question: '品川で女性専用のパーソナルジムはありますか？', answer: 'はい、品川エリアではクレビック、24/7 Workoutを掲載しています。' },
   { question: '品川のパーソナルジムの料金相場はどれくらい？', answer: '品川エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜26万円です。クレビック（149,800円〜）が最もリーズナブルでもコスパが良いです。' },
-  { question: '品川駅から近いパーソナルジムは？', answer: 'UNDEUX SUPERBODY（徒歩5分）、リボーンマイセルフ（徒歩5分）、24/7 Workout（徒歩5分）が品川駅から特に近いジムです。' },
-  { question: '品川で仕事帰りに通えるジムは？', answer: '24/7 Workoutは深夜24時まで営業しており、品川で働くビジネスパーソンに最適です。UNDEUX SUPERBODYも22時まで営業しています。' },
-  { question: '品川で子連れで通えるジムは？', answer: 'OUTLINE品川店はベビーサークル完備で子連れOK。' },
+  { question: '品川駅から近いパーソナルジムは？', answer: '24/7 Workout（徒歩5分）が品川駅から近いジムです。' },
+  { question: '品川で仕事帰りに通えるジムは？', answer: '24/7 Workoutは深夜24時まで営業しており、品川で働くビジネスパーソンに最適です。' },
 ]
 
 export default function ShinagawaPage() {
@@ -154,7 +111,7 @@ export default function ShinagawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">品川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">掲載ジムの料金・特徴を比較して選んでください。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

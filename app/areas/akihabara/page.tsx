@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/akihabara/'),
-  title: '【2026年7月】秋葉原の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】秋葉原のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・Bodies・24/7 Workoutなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】秋葉原の女性専用パーソナルジムおすすめ3選！料金比較',
+  description: '【2026年4月】秋葉原のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・Bodies・24/7 Workoutなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,秋葉原,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -60,41 +60,13 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体力向上', '健康維持'] },
     basicInfo: { hours: '7:00〜24:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
-  {
-    name: 'かたぎり塾 秋葉原店',
-    officialUrl: 'https://katagirijuku.jp/',
-    price: '月4回 30,800円〜（税込）',
-    trial: '体験レッスンあり',
-    features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '秋葉原駅近'],
-    description: '全国展開のパーソナルジムチェーン。月額制で続けやすい料金設定。AI食事指導も活用。秋葉原駅からアクセス良好。',
-    access: 'JR「秋葉原駅」徒歩4分',
-    address: '東京都千代田区外神田（秋葉原駅徒歩4分）',
-    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニング。AI食事指導付き。', price: '月4回 30,800円〜（税込）' },
-    options: ['AI食事指導', '月額制で始めやすい', '回数変更可能'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室', 'ロッカー'] },
-  },
-  {
-    name: 'エクササイズコーチ 秋葉原店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '秋葉原駅近'],
-    description: 'AI主導の効率的パーソナルトレーニング。1回20分で月4回12,000円〜。利用者の8割以上が女性。秋葉原駅近の便利な立地。',
-    access: 'JR「秋葉原駅」徒歩3分',
-    address: '東京都千代田区外神田（秋葉原駅徒歩3分）',
-    popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定。1回20分の効率トレーニング。', price: '月4回 12,000円〜（税込）' },
-    options: ['AI個別最適化', '1回20分', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['ダイエット', '健康維持', '体力向上', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['トレーニングマシン', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
-  { question: '秋葉原で女性専用のパーソナルジムはありますか？', answer: 'はい、秋葉原エリアにはOUTLINE、Bodiesなどの女性専用ジムがあります。24/7 Workoutも女性専用プランを用意しています。エクササイズコーチも女性利用者が8割以上です。' },
-  { question: '秋葉原のパーソナルジムの料金相場は？', answer: '秋葉原エリアの料金はBodies（月5,970円〜）やエクササイズコーチ（月12,000円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
-  { question: '秋葉原で深夜まで営業しているジムは？', answer: '24/7 Workout秋葉原・神田店は深夜24時まで営業。エクササイズコーチも22時まで営業しているので、仕事帰りにも通えます。' },
-  { question: '秋葉原で初心者でも通えるジムは？', answer: 'Bodiesは1回30分のサーキットトレーニングで初心者向け。エクササイズコーチもAI主導で1回20分から始められます。どのジムもマンツーマン指導なので初心者歓迎です。' },
+  { question: '秋葉原で女性専用のパーソナルジムはありますか？', answer: 'はい、秋葉原エリアにはOUTLINE、Bodiesなどの女性専用ジムがあります。24/7 Workoutも女性専用プランを用意しています。' },
+  { question: '秋葉原のパーソナルジムの料金相場は？', answer: '秋葉原エリアの料金はBodies（月5,970円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
+  { question: '秋葉原で深夜まで営業しているジムは？', answer: '24/7 Workout秋葉原・神田店は深夜24時まで営業。' },
+  { question: '秋葉原で初心者でも通えるジムは？', answer: 'Bodiesは1回30分のサーキットトレーニングで初心者向け。どのジムもマンツーマン指導なので初心者歓迎です。' },
 ]
 
 export default function AkihabaraPage() {
@@ -154,7 +126,7 @@ export default function AkihabaraPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">秋葉原エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、手軽に始めるならBodiesやエクササイズコーチ、本格的にダイエットするなら24/7 Workoutがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、手軽に始めるならBodies、本格的にダイエットするなら24/7 Workoutがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

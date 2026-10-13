@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/sapporo/'),
-  title: '【2026年7月】札幌の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】札幌のおすすめ女性専用・女性向けパーソナルジム5選を徹底比較。料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】札幌の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】札幌のおすすめ女性専用・女性向けパーソナルジム4選を徹底比較。料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,札幌,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -56,20 +56,6 @@ const gyms = [
     access: '地下鉄「大通駅」徒歩5分',
     address: '地下鉄「大通駅」徒歩5分',
     popularPlan: { name: '人気プラン', description: 'コンテスト入賞者多数在籍。札幌で本格的なボディメイク。', price: '16回 281,600円〜（税込）' },
-    options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
-  },
-  {
-    name: 'エクササイズコーチ 札幌店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格'],
-    description: 'AI主導20分トレーニング。札幌で月4回12,000円〜。',
-    access: '地下鉄「大通駅」徒歩3分',
-    address: '地下鉄「大通駅」徒歩3分',
-    popularPlan: { name: '人気プラン', description: 'AI主導20分トレーニング。札幌で月4回12,000円〜。', price: '月4回 12,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },

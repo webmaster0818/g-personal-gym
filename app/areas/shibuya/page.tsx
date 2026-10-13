@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shibuya/'),
-  title: '【2026年7月】渋谷の女性専用パーソナルジムおすすめ6選！料金比較',
-  description: '【2026年4月】渋谷のおすすめ女性専用パーソナルジム6選を徹底比較。UNDEUX SUPERBODY・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】渋谷の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】渋谷のおすすめ女性専用パーソナルジム4選を徹底比較。UNDEUX SUPERBODY・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,渋谷,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -48,20 +48,6 @@ const gyms = [
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
-    name: 'リボーンマイセルフ 渋谷店',
-    officialUrl: 'https://reborn-myself.com/',
-    price: '入会金22,000円＋コース料金',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', 'ブライダルコース'],
-    description: '2010年創業の日本初の女性専用ダイエットジム。トレーナーも全員女性。2万人以上の指導実績をもとにしたオリジナルメソッドで、女性本来の柔らかさを残したボディメイクを実現。',
-    access: 'JR「渋谷駅」徒歩6分',
-    address: '東京都渋谷区（渋谷駅徒歩6分）',
-    popularPlan: { name: 'ダイエットコース', description: '2万人以上の指導実績をもとにしたオリジナルメソッド。女性トレーナーによるマンツーマン指導。', price: '入会金22,000円＋コース料金' },
-    options: ['ウェアレンタル無料', '産後ダイエットコース', 'ブライダルダイエットコース', '部分痩せコース'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', 'ブライダル', '産後ダイエット', '部分痩せ'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'ウェアレンタル'] },
-  },
-  {
     name: 'クレビック 渋谷店',
     price: '2ヶ月16回 149,800円〜（税込）',
     trial: '無料カウンセリング',
@@ -73,20 +59,6 @@ const gyms = [
     options: ['管理栄養士による食事指導', 'ウェアレンタル無料', 'タオル完備', 'シャワー完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '食事改善', '美容'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
-  },
-  {
-    name: 'かたぎり塾 渋谷店',
-    officialUrl: 'https://katagirijuku.jp/',
-    price: '月4回 30,800円〜（税込）',
-    trial: '体験レッスンあり',
-    features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '渋谷駅近'],
-    description: '全国に店舗を展開するパーソナルジムチェーン。月額制で続けやすい料金設定が人気。AI食事指導など最新技術も活用。女性トレーナーも在籍しており、渋谷駅からアクセス良好。',
-    access: 'JR「渋谷駅」徒歩5分',
-    address: '東京都渋谷区（渋谷駅徒歩5分）',
-    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニング。AI食事指導付き。', price: '月4回 30,800円〜（税込）' },
-    options: ['AI食事指導', '月額制で始めやすい', '回数変更可能'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室', 'ロッカー'] },
   },
   {
     name: 'エクササイズコーチ 渋谷店',
@@ -105,11 +77,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '渋谷で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、リボーンマイセルフ、クレビックが渋谷で人気の女性専用パーソナルジムです。それぞれ特徴が異なるので、食事管理重視ならUNDEUX、コスパ重視ならOUTLINEがおすすめです。' },
+  { question: '渋谷で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、クレビックが渋谷で人気の女性専用パーソナルジムです。それぞれ特徴が異なるので、食事管理重視ならUNDEUX、コスパ重視ならOUTLINEがおすすめです。' },
   { question: '渋谷のパーソナルジムの料金相場は？', answer: '渋谷エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円。月額制なら月12,000円〜30,800円程度。エクササイズコーチは月4回12,000円〜と最安クラスです。' },
   { question: '渋谷駅から近いパーソナルジムは？', answer: 'エクササイズコーチ渋谷店（徒歩3分）、UNDEUX SUPERBODY（徒歩5分）、クレビック（徒歩5分）が渋谷駅から特に近いジムです。' },
   { question: '子連れで通えるジムはある？', answer: 'OUTLINE渋谷店はベビーサークル完備で子連れOK。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験あり。OUTLINE、リボーンマイセルフは無料カウンセリングを実施しています。' },
+  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験あり。OUTLINEは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
   { question: '渋谷で最も安いパーソナルジムは？', answer: 'エクササイズコーチ（月4回12,000円〜）が最安。2ヶ月コースではクレビック（149,800円〜）がコスパ良好。OUTLINEは生涯サポート付きで184,800円〜。' },
   { question: '短時間で通えるジムは？', answer: 'エクササイズコーチは1回20分で完了。忙しい方に最適です。他のジムも50〜75分のセッションが一般的です。' },
@@ -203,7 +175,7 @@ export default function ShibuyaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
                 <p className="text-3xl font-bold text-accent mb-2">1.2万〜3.1万円/月</p>
-                <p className="text-sm text-brand-muted">エクササイズコーチ12,000円〜が最安。かたぎり塾30,800円〜も人気。</p>
+                <p className="text-sm text-brand-muted">エクササイズコーチ12,000円〜が最安。</p>
               </div>
             </div>
           </div>
@@ -275,7 +247,7 @@ export default function ShibuyaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">渋谷エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINEがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

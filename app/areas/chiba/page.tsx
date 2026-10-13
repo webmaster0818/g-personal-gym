@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/chiba/'),
-  title: '【2026年7月】千葉の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】千葉のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・UNDEUX SUPERBODY・Reborn Myselfなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】千葉の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】千葉のおすすめ女性専用パーソナルジム4選を徹底比較。OUTLINE・UNDEUX SUPERBODY・Reborn Myselfなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,千葉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -75,25 +75,11 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体力向上', '健康維持'] },
     basicInfo: { hours: '7:00〜24:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
-  {
-    name: 'エクササイズコーチ 千葉店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '千葉駅近'],
-    description: 'AI主導の効率的パーソナルトレーニング。1回20分で月4回12,000円〜の低価格。利用者の8割以上が女性。千葉駅近の便利な立地。',
-    access: 'JR「千葉駅」徒歩3分',
-    address: '千葉県千葉市中央区（千葉駅徒歩3分）',
-    popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定。1回20分の効率トレーニング。', price: '月4回 12,000円〜（税込）' },
-    options: ['AI個別最適化', '1回20分', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['ダイエット', '健康維持', '体力向上', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['トレーニングマシン', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
   { question: '千葉で女性専用のパーソナルジムはありますか？', answer: 'はい、千葉エリアにはOUTLINE、UNDEUX SUPERBODY、リボーンマイセルフなど複数の女性専用パーソナルジムがあります。いずれも千葉駅から徒歩圏内です。' },
-  { question: '千葉のパーソナルジムの料金相場は？', answer: '千葉エリアの料金はエクササイズコーチ（月12,000円〜）からUNDEUX SUPERBODY（2ヶ月220,000円〜）まで幅広い選択肢。OUTLINE（184,800円〜）がコスパに優れています。' },
+  { question: '千葉のパーソナルジムの料金相場は？', answer: '千葉エリアの料金はOUTLINE（184,800円〜）からUNDEUX SUPERBODY（2ヶ月220,000円〜）まで。OUTLINEがコスパに優れています。' },
   { question: '千葉で女性トレーナーのみのジムは？', answer: 'リボーンマイセルフ千葉店はトレーナーも全員女性。男性トレーナーに抵抗がある方でも安心して通えます。2万人以上の指導実績があります。' },
   { question: '千葉で食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料提供。リボーンマイセルフも食事指導付き。科学的な食事サポートを求めるなら24/7 Workoutもおすすめ。' },
   { question: '千葉で子連れで通えるジムは？', answer: 'OUTLINE千葉店はベビーサークル完備で子連れOK。' },

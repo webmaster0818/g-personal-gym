@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kitasenju/'),
-  title: '【2026年7月】北千住の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】北千住のおすすめ女性専用パーソナルジム4選を徹底比較。OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】北千住の女性専用パーソナルジムおすすめ3選！料金比較',
+  description: '【2026年4月】北千住のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,北千住,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -60,25 +60,11 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
     basicInfo: { hours: '平日10:00〜22:00／土日9:00〜20:00', closed: '月・木', facilities: ['個室', 'ロッカー'] },
   },
-  {
-    name: 'エクササイズコーチ 北千住店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '北千住駅近'],
-    description: 'AI主導の効率的パーソナルトレーニング。1回20分で月4回12,000円〜。利用者の8割以上が女性。北千住駅から近い便利な立地。',
-    access: 'JR「北千住駅」徒歩3分',
-    address: '東京都足立区千住（北千住駅徒歩3分）',
-    popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定。1回20分の効率トレーニング。', price: '月4回 12,000円〜（税込）' },
-    options: ['AI個別最適化', '1回20分', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['ダイエット', '健康維持', '体力向上', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['トレーニングマシン', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
   { question: '北千住で女性専用のパーソナルジムはありますか？', answer: 'はい、北千住エリアにはOUTLINEなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意しています。' },
-  { question: '北千住のパーソナルジムの料金相場は？', answer: '北千住エリアの料金はエクササイズコーチ（月12,000円〜）からOUTLINE（184,800円〜）まで幅広い選択肢。Apple GYM（8回49,280円〜）もリーズナブルです。' },
+  { question: '北千住のパーソナルジムの料金相場は？', answer: '北千住エリアの料金はApple GYM（8回49,280円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
   { question: '北千住で子連れで通えるジムは？', answer: 'OUTLINE北千住店はベビーサークル完備で子連れOK。' },
 ]
 
@@ -139,7 +125,7 @@ export default function KitasenjuPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">北千住エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、リーズナブルに始めるならApple GYMやエクササイズコーチがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、リーズナブルに始めるならApple GYMがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>
