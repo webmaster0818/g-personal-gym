@@ -215,3 +215,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - エクササイズコーチ名古屋栄（/areas/nagoya/）: 公式 https://exercisecoach.co.jp/store/nagoyasakae/ どおりに。アクセス＝栄駅16番出口 徒歩3分（名城線栄駅からは徒歩5分。徒歩3分は誤りではなかった）、住所＝中区栄3-6-20 辰晃ビル8階、料金＝月4回 17,600円（税込・スタンダード）／平日12〜17時のデイプランは14,960円（12,000円は公式に無い）、男女比＝女性約7割（公式FAQ「7対3」。女性100%は誤り）、officialUrl を店舗ページに。料金相場FAQ「月12,000円〜」も更新。
 - OUTLINE 立川（/gym/tachikawa）・吉祥寺（/gym/kichijouji）は再確認でも404（公式トップのリンクは残存、サイト内検索で閉店告知なし）。報告のみ・判断待ち。
 - ⚠️ 方式Bで deploy リポには index.txt 等の RSC ペイロードが入っている。`.txt` を消してから rsync すると275件差分になる → 今回は消さずに同期（robots.txt 200 確認）。
+
+### 2026-10-13 ビーコンセプト20店の削除を本番反映（10/12宣言の既定案）／統合 wip を最新 main 上に作り直し ✅本番（source f80f1fd / deploy c3912b56）
+- `wip/remove-bconcept-1012`（acb8033）を main にマージ（衝突なし）。brandStores.json は aggregate-brands.py で再生成（マージで名古屋栄の10/12訂正値が旧値に戻っていたのを再生成で復帰＝**マージ後は必ず再生成**）。sitemap lastmod 20エリア＋/brands/b-concept/ を 2026-10-13。build EXIT0・precheck（deploy リポ）全項目OK。
+- 本番確認（20ページ）: title/h1/description の N選＝カード数 20/20、外した20店名 0、飯田橋・下北沢＝2店、b-concept 掲載17店、robots.txt 200。Indexing API 21/21・sitemap 送信OK。
+  - ⚠️ 外した店名は `_next/static/chunks/*.js` には残る（gymReviews.ts がクライアントバンドルに入るため・表示はされない）。HTML ではブランドページ b-concept の口コミまとめ4店（銀座・神楽坂・下北沢・北千住）のみ。
+- **wip/remove-unverified-stores-all-1013（732277a・未デプロイ・origin に push 済み）**: main(f80f1fd) から分岐し、/tmp/wg1011/plan2.json（39店）・plan3.json（フィギュアボディ名古屋栄）を remove_gyms.py で再適用→ edits.py（10/11 の整理文）＋main の文面に合わせた追加整理12か所。all-1011 の単純マージは23ファイル衝突のため不採用。0店ページなし、N選＝カード数（全102）、外した60店名は HTML で b-concept 口コミまとめ以外0。1店=上野（クレビック・全店閉店）・五反田（24/7 Workout・公式に無い）。2店=代官山・二子玉川・目黒・品川・飯田橋・下北沢・栄ほか。デプロイ時は sitemap lastmod を更新すること。
+- **OUTLINE 立川・吉祥寺（10/13 再確認）**: /gym/tachikawa・/gym/kichijouji とも404。公式 /gym 一覧の表示ブロックは10店のみ（吉祥寺はHTMLコメントアウト、立川は無し）、公式 page-sitemap.xml（本日生成）の /gym/ は17URLで両店とも無し。ヘッダー/フッターのリンクだけ残存（同じく残存リンクの kashiwa・kinshicyo・machida・nanba・koshigaya・totsuka・honatsugi・shimokitazawa も404）。WP REST で「閉店」「移転」「営業終了」の告知なし。→ 当サイト掲載 OUTLINE で店舗ページ404は ほかに赤羽・柏・川崎・錦糸町・町田・なんば心斎橋（2ページ）。判断待ち・未変更。
