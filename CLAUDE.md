@@ -222,3 +222,9 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
   - ⚠️ 外した店名は `_next/static/chunks/*.js` には残る（gymReviews.ts がクライアントバンドルに入るため・表示はされない）。HTML ではブランドページ b-concept の口コミまとめ4店（銀座・神楽坂・下北沢・北千住）のみ。
 - **wip/remove-unverified-stores-all-1013（732277a・未デプロイ・origin に push 済み）**: main(f80f1fd) から分岐し、/tmp/wg1011/plan2.json（39店）・plan3.json（フィギュアボディ名古屋栄）を remove_gyms.py で再適用→ edits.py（10/11 の整理文）＋main の文面に合わせた追加整理12か所。all-1011 の単純マージは23ファイル衝突のため不採用。0店ページなし、N選＝カード数（全102）、外した60店名は HTML で b-concept 口コミまとめ以外0。1店=上野（クレビック・全店閉店）・五反田（24/7 Workout・公式に無い）。2店=代官山・二子玉川・目黒・品川・飯田橋・下北沢・栄ほか。デプロイ時は sitemap lastmod を更新すること。
 - **OUTLINE 立川・吉祥寺（10/13 再確認）**: /gym/tachikawa・/gym/kichijouji とも404。公式 /gym 一覧の表示ブロックは10店のみ（吉祥寺はHTMLコメントアウト、立川は無し）、公式 page-sitemap.xml（本日生成）の /gym/ は17URLで両店とも無し。ヘッダー/フッターのリンクだけ残存（同じく残存リンクの kashiwa・kinshicyo・machida・nanba・koshigaya・totsuka・honatsugi・shimokitazawa も404）。WP REST で「閉店」「移転」「営業終了」の告知なし。→ 当サイト掲載 OUTLINE で店舗ページ404は ほかに赤羽・柏・川崎・錦糸町・町田・なんば心斎橋（2ページ）。判断待ち・未変更。
+
+### 2026-10-14 主要5ブランド39店＋閉館済みフィギュアボディ名古屋栄の削除を本番反映（10/13宣言の既定案） ✅本番（source cd2f0bd・63630a8 / deploy 6d9debf2）
+- `wip/remove-unverified-stores-all-1013`（732277a）を main(fe12464) にマージ（衝突なし）。aggregate-brands.py 再生成はマージ結果と一致（katagirijuku 23→16・outline 34→24・reborn-myself 33→25・exercise-coach 21→12・undeux 42→39・b-concept 17のまま）。sitemap lastmod 23エリア＋5ブランドを 2026-10-14。build EXIT0（prebuild 102）・precheck（deploy リポ）全項目OK。rsync は .txt を消さずに out→deploy（robots.txt 200）。
+- N選（本番カード数）: 秋葉原5→3・千葉5→4・代官山4→2・恵比寿6→5・藤沢4→3・福岡5→3・二子玉川4→2・**五反田5→1**・自由が丘5→4・錦糸町5→3・北千住4→3・目黒5→2・中目黒4→3・大宮5→3・表参道5→4・梅田(osaka)4→3・六本木4→3・栄3→2・札幌5→4・渋谷6→4・品川5→2・新宿6→5・**上野5→1**（計109→69）。全102エリア 1店2・2店17・3店53・4店24・5店6、0店なし。
+- 本番確認（28URL 200）: title/h1/description の N選＝カード数 23/23、外した40店名 0、robots.txt 200。CF 反映まで約4分。Indexing API 28/28・sitemap 204（⚠️ GSC プロパティは `https://woman-gym.com/`。sc-domain は 403）。
+- 残: 上野（クレビック・全店閉店）と五反田（24/7 Workout・公式に無い）は1店。クレビック6ページ・OUTLINE 404店は判断待ち（10/15 宣言予定）。
