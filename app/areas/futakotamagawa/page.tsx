@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/futakotamagawa/'),
-  title: '【2026年7月】二子玉川の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】二子玉川のおすすめ女性専用パーソナルジム4選を徹底比較。UNDEUX SUPERBODY・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】二子玉川の女性専用パーソナルジムおすすめ2選！料金比較',
+  description: '【2026年4月】二子玉川のおすすめ女性専用パーソナルジム2選を徹底比較。UNDEUX SUPERBODY・エクササイズコーチの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,二子玉川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -34,34 +34,6 @@ const gyms = [
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム'] },
   },
   {
-    name: 'OUTLINE 二子玉川店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', 'よもぎ蒸し'],
-    description: '業界初の生涯無料アフターサポート。完全個室・女性専用マシン完備。ベビーサークルもあり子連れでも安心。二子玉川の住みやすい環境でトレーニング。',
-    access: '東急「二子玉川駅」徒歩5分',
-    address: '東京都世田谷区玉川（二子玉川駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室マンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'よもぎ蒸し', '高級アミノ酸提供', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
-  {
-    name: 'リボーンマイセルフ 二子玉川店',
-    officialUrl: 'https://reborn-myself.com/',
-    price: '入会金22,000円＋コース料金',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット', 'ブライダルコース'],
-    description: '日本初の女性専用ダイエットジム。トレーナーも全員女性。二子玉川の子育てファミリーに人気のエリアで、産後ダイエットコースも充実。',
-    access: '東急「二子玉川駅」徒歩5分',
-    address: '東京都世田谷区玉川（二子玉川駅徒歩5分）',
-    popularPlan: { name: 'ダイエットコース', description: '女性トレーナーによるマンツーマン指導。産後ダイエットにも対応。', price: '入会金22,000円＋コース料金' },
-    options: ['ウェアレンタル無料', '産後ダイエットコース', 'ブライダルダイエットコース', '部分痩せコース'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', '産後ダイエット', 'ブライダル', '部分痩せ'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'ウェアレンタル'] },
-  },
-  {
     name: 'エクササイズコーチ 二子玉川',
     officialUrl: 'https://exercisecoach.co.jp/',
     price: '月額制（プラン・店舗により異なる）',
@@ -78,16 +50,13 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '二子玉川で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、リボーンマイセルフが人気。食事管理ならUNDEUX、生涯サポートならOUTLINEがおすすめ。' },
+  { question: '二子玉川で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、エクササイズコーチを掲載しています。食事管理ならUNDEUXがおすすめ。' },
   { question: '二子玉川のパーソナルジムの料金相場は？', answer: '2ヶ月コースは約18万〜22万円。都心部と同等かやや割安な傾向があります。' },
-  { question: '二子玉川駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYが徒歩3分で最も近い。OUTLINE・リボーンマイセルフは徒歩5分程度です。' },
-  { question: '子連れで通えるジムは？', answer: 'OUTLINEはベビーサークル完備。二子玉川は子育てファミリーが多いエリアで、子連れ対応のジムが揃っています。' },
-  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE・リボーンマイセルフ・エクササイズコーチは無料カウンセリング。' },
+  { question: '二子玉川駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYが徒歩3分です。' },
+  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。エクササイズコーチは無料カウンセリング。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎。マンツーマン指導なので運動経験がなくても安心です。' },
   { question: '二子玉川ライズでのショッピングと両立できる？', answer: 'ほとんどのジムが二子玉川駅から徒歩5分圏内。ショッピング前後にトレーニングを組み込めます。ウェアレンタルありのジムなら手ぶらでOK。' },
-  { question: '産後ダイエットに対応しているジムは？', answer: 'リボーンマイセルフは産後ダイエットコースあり。OUTLINEはベビーサークル完備。二子玉川は産後ママ向けサービスが充実。' },
   { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択可。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。' },
-  { question: 'リバウンド防止のサポートは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。卒業後もずっとサポートが受けられます。' },
 ]
 
 export default function FutakotamagawaPage() {
@@ -145,11 +114,7 @@ export default function FutakotamagawaPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
-              </div>
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold text-brand-text mb-4">産後ママ向け</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（産後コース）</li><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
@@ -212,7 +177,7 @@ export default function FutakotamagawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">二子玉川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、生涯サポートならOUTLINE、産後ダイエットならリボーンマイセルフがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODYがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

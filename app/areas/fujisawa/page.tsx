@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/fujisawa/'),
-  title: '【2026年7月】藤沢の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】藤沢のおすすめ女性専用パーソナルジム4選を徹底比較。OUTLINE・リボーンマイセルフ・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】藤沢の女性専用パーソナルジムおすすめ3選！料金比較',
+  description: '【2026年4月】藤沢のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・UNDEUX SUPERBODY・エクササイズコーチの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,藤沢,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -48,20 +48,6 @@ const gyms = [
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['トレーニングルーム', 'ピラティスマシン', 'シャワー'] },
   },
   {
-    name: 'リボーンマイセルフ 藤沢店',
-    officialUrl: 'https://reborn-myself.com/',
-    price: '入会金22,000円＋コース料金',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '女性トレーナーのみ', '完全プライベート', '産後対応', '藤沢駅近'],
-    description: '日本初の女性専用ダイエットジム。藤沢駅徒歩4分。トレーナーも全員女性で完全プライベート空間。湘南エリアの女性に支持されるジム。',
-    access: 'JR「藤沢駅」徒歩4分',
-    address: '神奈川県藤沢市（藤沢駅徒歩4分）',
-    popularPlan: { name: 'ダイエットコース', description: '女性トレーナーによるマンツーマン指導。60分の完全プライベートセッション。', price: '入会金22,000円＋コース料金' },
-    options: ['ウェアレンタル無料', '産後ダイエットコース', 'ブライダルダイエットコース', '部分痩せコース'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', '産後ダイエット', 'ブライダル', '部分痩せ'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全プライベート空間', 'ロッカー', 'ウェアレンタル'] },
-  },
-  {
     name: 'エクササイズコーチ 藤沢',
     officialUrl: 'https://exercisecoach.co.jp/',
     price: '月額制（プラン・店舗により異なる）',
@@ -78,11 +64,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '藤沢で女性専用のパーソナルジムはどこがおすすめ？', answer: 'OUTLINE、UNDEUX SUPERBODY LIFE、リボーンマイセルフが藤沢で人気。生涯サポートならOUTLINE、月額制ならUNDEUX LIFE、女性トレーナー希望ならリボーンマイセルフ。' },
+  { question: '藤沢で女性専用のパーソナルジムはどこがおすすめ？', answer: 'OUTLINE、UNDEUX SUPERBODY LIFEが藤沢で人気。生涯サポートならOUTLINE、月額制ならUNDEUX LIFE。' },
   { question: '藤沢のパーソナルジムの料金相場は？', answer: '藤沢の2ヶ月コースは約18万〜22万円。月額制ならUNDEUX LIFE月額19,800円〜。横浜・川崎と同等か若干安い傾向。' },
-  { question: '藤沢駅から最も近いジムは？', answer: 'UNDEUX SUPERBODY LIFE藤沢店が徒歩2分で最寄り。OUTLINE・リボーンマイセルフは徒歩4分。' },
+  { question: '藤沢駅から最も近いジムは？', answer: 'UNDEUX SUPERBODY LIFE藤沢店が徒歩2分で最寄り。OUTLINEは徒歩4分。' },
   { question: '子連れで通えるジムは？', answer: 'OUTLINE藤沢駅前店はベビーサークル完備。' },
-  { question: '体験は無料？', answer: 'OUTLINE・リボーンマイセルフ・エクササイズコーチは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
+  { question: '体験は無料？', answer: 'OUTLINE・エクササイズコーチは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
   { question: '湘南エリアで他に選択肢は？', answer: '藤沢は湘南エリアで最も女性専用パーソナルジムが充実しています。辻堂や茅ヶ崎からも藤沢駅は東海道線で数分なのでアクセス良好。' },
   { question: 'マシンピラティスも受けたい場合は？', answer: 'UNDEUX SUPERBODY LIFE藤沢店はマシンピラティスの設備も完備。筋トレとピラティスの両方を楽しめます。' },
   { question: '食事指導が充実しているジムは？', answer: 'エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。湘南の新鮮な海鮮やグルメを楽しみながらダイエットが可能です。' },
@@ -108,7 +94,7 @@ export default function FujisawaPage() {
         <section className="py-16 bg-ivory"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">藤沢の料金相場【2026年4月】</h2><div className="grid grid-cols-1 md:grid-cols-2 gap-6"><div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3><p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p><p className="text-sm text-brand-muted">都心部より若干リーズナブル。</p></div><div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">月額制</h3><p className="text-3xl font-bold text-accent mb-2">2万円〜/月</p><p className="text-sm text-brand-muted">UNDEUX LIFE 月額19,800円〜。気軽に始められる価格帯。</p></div></div></div></section>
         <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">藤沢で選ぶ際の注意点</h2><div className="space-y-6"><div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">湘南エリアで最もジムが充実した駅</h3><p className="text-brand-muted leading-relaxed">藤沢は湘南エリアの中心的な駅で、女性専用パーソナルジムの選択肢が最も多い。辻堂・茅ヶ崎・鎌倉からも東海道線やJR湘南新宿ラインで数分〜十数分でアクセス可能です。</p></div><div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">夏のビーチシーズンを見据えた計画を</h3><p className="text-brand-muted leading-relaxed">湘南は夏のビーチが人気。水着を自信を持って着たいなら、2ヶ月前の4〜5月頃にはスタートしましょう。早めの無料カウンセリングがおすすめです。</p></div></div></div></section>
         <section className="py-16 bg-ivory"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">よくある質問</h2><div className="space-y-4">{faqs.map((faq, index) => (<div key={index} className="border border-line rounded-xl overflow-hidden"><details className="group"><summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-accent-tint transition"><h3 className="font-bold text-brand-text pr-4 text-sm">Q{index + 1}. {faq.question}</h3><svg className="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg></summary><div className="px-5 pb-5 text-brand-muted leading-relaxed text-sm">{faq.answer}</div></details></div>))}</div></div></section>
-        <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2><p className="text-brand-muted leading-relaxed mb-4">藤沢エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p><p className="text-brand-muted leading-relaxed mb-4">生涯サポートならOUTLINE、月額制ならUNDEUX SUPERBODY LIFE、女性トレーナー希望ならリボーンマイセルフがおすすめです。</p><p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p></div></section>
+        <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2><p className="text-brand-muted leading-relaxed mb-4">藤沢エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p><p className="text-brand-muted leading-relaxed mb-4">生涯サポートならOUTLINE、月額制ならUNDEUX SUPERBODY LIFEがおすすめです。</p><p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p></div></section>
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white"><div className="max-w-4xl mx-auto px-6 lg:px-8 text-center"><h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2><p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p><Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link></div></section>
         <IntentGuideLinks />
       </main>

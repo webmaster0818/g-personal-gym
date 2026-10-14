@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kinshicho/'),
-  title: '【2026年7月】錦糸町の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】錦糸町のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・B-CONCEPT・かたぎり塾など人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】錦糸町の女性専用パーソナルジムおすすめ3選！料金比較',
+  description: '【2026年4月】錦糸町のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・ビーコンセプト・Apple GYMの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,錦糸町,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -48,20 +48,6 @@ const gyms = [
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
   {
-    name: 'かたぎり塾 錦糸町店',
-    officialUrl: 'https://katagirijuku.jp/',
-    price: '月4回 30,800円〜（税込）',
-    trial: '体験レッスンあり',
-    features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '錦糸町駅近'],
-    description: '全国展開のパーソナルジムチェーン。月額制で続けやすい料金設定。AI食事指導で最新技術を活用。錦糸町駅からアクセス良好。',
-    access: 'JR「錦糸町駅」徒歩4分',
-    address: '東京都墨田区錦糸（錦糸町駅徒歩4分）',
-    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニング。AI食事指導付き。', price: '月4回 30,800円〜（税込）' },
-    options: ['AI食事指導', '月額制で始めやすい', '回数変更可能'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室', 'ロッカー'] },
-  },
-  {
     name: 'Apple GYM 錦糸町店',
     price: '8回 49,280円〜（税込）',
     trial: '無料カウンセリング',
@@ -74,25 +60,11 @@ const gyms = [
     userProfile: { ageRange: '20代〜30代が中心', genderRatio: '女性100%', purpose: ['ボディメイク', 'ダイエット', 'ヒップアップ', '美脚'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ロッカー'] },
   },
-  {
-    name: 'エクササイズコーチ 錦糸町店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '錦糸町駅近'],
-    description: 'AI主導の効率的パーソナルトレーニング。1回20分で月4回12,000円〜。利用者の8割以上が女性。錦糸町駅近の便利な立地。',
-    access: 'JR「錦糸町駅」徒歩3分',
-    address: '東京都墨田区錦糸（錦糸町駅徒歩3分）',
-    popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定。1回20分の効率トレーニング。', price: '月4回 12,000円〜（税込）' },
-    options: ['AI個別最適化', '1回20分', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['ダイエット', '健康維持', '体力向上', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['トレーニングマシン', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
-  { question: '錦糸町で女性専用のパーソナルジムはありますか？', answer: 'はい、錦糸町エリアにはOUTLINE、ビーコンセプトなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意。エクササイズコーチも女性利用者が8割以上です。' },
-  { question: '錦糸町のパーソナルジムの料金相場は？', answer: '錦糸町エリアの料金はエクササイズコーチ（月12,000円〜）からOUTLINE（184,800円〜）まで幅広いです。Apple GYM（8回49,280円〜）もお手頃。' },
+  { question: '錦糸町で女性専用のパーソナルジムはありますか？', answer: 'はい、錦糸町エリアにはOUTLINE、ビーコンセプトなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意。' },
+  { question: '錦糸町のパーソナルジムの料金相場は？', answer: '錦糸町エリアの料金はApple GYM（8回49,280円〜）からOUTLINE（184,800円〜）まで幅広いです。' },
   { question: '錦糸町で下半身痩せに特化したジムは？', answer: 'ビーコンセプト錦糸町店が下半身特化で最もおすすめ。医師とトレーナーが共同開発した脚やせメソッドで太もも痩せ・ヒップアップを目指せます。' },
   { question: '錦糸町で子連れで通えるジムは？', answer: 'OUTLINE錦糸町店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
 ]
@@ -154,7 +126,7 @@ export default function KinshichoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">錦糸町エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプト、リーズナブルに始めるならApple GYMやエクササイズコーチがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプト、リーズナブルに始めるならApple GYMがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

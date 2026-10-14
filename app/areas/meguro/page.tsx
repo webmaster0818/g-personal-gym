@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/meguro/'),
-  title: '【2026年7月】目黒の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・Bodiesなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】目黒の女性専用パーソナルジムおすすめ2選！料金比較',
+  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム2選を徹底比較。UNDEUX SUPERBODY・Bodiesの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'OUTLINE 目黒店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '生涯無料アフターサポートが最大の特徴。完全個室で女性専用マシンを使ったトレーニング。ベビーサークル完備で産後ママも安心して通える。',
-    access: 'JR「目黒駅」徒歩6分',
-    address: '東京都品川区上大崎（目黒駅徒歩6分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
   {
     name: 'Bodies 目黒店',
     price: '月会費 5,970円〜（税込）',
@@ -60,41 +46,12 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
   },
-  {
-    name: 'かたぎり塾 目黒店',
-    officialUrl: 'https://katagirijuku.jp/',
-    price: '月4回 30,800円〜（税込）',
-    trial: '体験レッスンあり',
-    features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '目黒駅近'],
-    description: '全国展開のパーソナルジムチェーン。月額制で続けやすい料金設定が人気。AI食事指導で最新技術を活用。目黒駅からのアクセスも良好。',
-    access: 'JR「目黒駅」徒歩4分',
-    address: '東京都品川区上大崎（目黒駅徒歩4分）',
-    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニング。AI食事指導付き。', price: '月4回 30,800円〜（税込）' },
-    options: ['AI食事指導', '月額制で始めやすい', '回数変更可能'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室', 'ロッカー'] },
-  },
-  {
-    name: 'エクササイズコーチ 目黒店',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月4回 12,000円〜（税込）',
-    trial: '無料体験あり',
-    features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '目黒駅近'],
-    description: 'AI主導の効率的パーソナルトレーニング。1回20分で月4回12,000円〜の低価格。利用者の8割以上が女性で、短時間で効果的なトレーニングが可能。',
-    access: 'JR「目黒駅」徒歩3分',
-    address: '東京都品川区上大崎（目黒駅徒歩3分）',
-    popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定。1回20分の効率トレーニング。', price: '月4回 12,000円〜（税込）' },
-    options: ['AI個別最適化', '1回20分', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['ダイエット', '健康維持', '体力向上', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['トレーニングマシン', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
-  { question: '目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、目黒エリアにはOUTLINE、Bodies、UNDEUX SUPERBODYなど複数の女性専用パーソナルジムがあります。いずれも目黒駅から徒歩圏内です。' },
-  { question: '目黒のパーソナルジムの料金相場は？', answer: '目黒エリアの料金は月5,970円〜（Bodies）から2ヶ月220,000円〜（UNDEUX SUPERBODY）まで幅広い選択肢があります。エクササイズコーチは月12,000円〜と低価格です。' },
+  { question: '目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、目黒エリアにはBodies、UNDEUX SUPERBODYなどの女性専用パーソナルジムがあります。いずれも目黒駅から徒歩圏内です。' },
+  { question: '目黒のパーソナルジムの料金相場は？', answer: '目黒エリアの料金は月5,970円〜（Bodies）から2ヶ月220,000円〜（UNDEUX SUPERBODY）まで幅広い選択肢があります。' },
   { question: '目黒駅直結のジムはある？', answer: 'Bodies目黒店は目黒駅直結で、雨の日でも濡れずに通えます。月会費5,970円〜のリーズナブルな料金で、ゲルマニウム温浴も利用可能です。' },
-  { question: '目黒で子連れで通えるジムは？', answer: 'OUTLINE目黒店はベビーサークル完備で子連れOK。' },
 ]
 
 export default function MeguroPage() {
@@ -154,7 +111,7 @@ export default function MeguroPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">目黒エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、手軽に始めるならBodiesやエクササイズコーチがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、手軽に始めるならBodiesがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>
