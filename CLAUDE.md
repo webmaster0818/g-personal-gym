@@ -228,3 +228,12 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - N選（本番カード数）: 秋葉原5→3・千葉5→4・代官山4→2・恵比寿6→5・藤沢4→3・福岡5→3・二子玉川4→2・**五反田5→1**・自由が丘5→4・錦糸町5→3・北千住4→3・目黒5→2・中目黒4→3・大宮5→3・表参道5→4・梅田(osaka)4→3・六本木4→3・栄3→2・札幌5→4・渋谷6→4・品川5→2・新宿6→5・**上野5→1**（計109→69）。全102エリア 1店2・2店17・3店53・4店24・5店6、0店なし。
 - 本番確認（28URL 200）: title/h1/description の N選＝カード数 23/23、外した40店名 0、robots.txt 200。CF 反映まで約4分。Indexing API 28/28・sitemap 204（⚠️ GSC プロパティは `https://woman-gym.com/`。sc-domain は 403）。
 - 残: 上野（クレビック・全店閉店）と五反田（24/7 Workout・公式に無い）は1店。クレビック6ページ・OUTLINE 404店は判断待ち（10/15 宣言予定）。
+
+### 2026-10-15 クレビック・OUTLINE 404店を外す実行用 wip（10/15宣言・回答なしなら 10/16 実行） ✅本番変更なし
+- **wip/remove-closed-1015（b84b379・未デプロイ・origin に push 済み）**: main(447445e) から分岐。3コミット: ①0f1b523 店舗削除＋文面整理 ②beccda1 上野ページ削除＋301 ③b84b379 sitemap lastmod（20URL・2026-10-16。実行日が変わったら日付を直す）。build EXIT0・precheck（out）全項目OK。
+- 根拠（本日再確認）: クレビック＝Wayback 2025-03-17 公式トップ「CREBIQ全店閉店のお知らせ」（2025年2月16日をもって全店舗の営業を終了）・crebiq.com は本日も 521。OUTLINE＝公式 /gym 一覧の表示ブロックは10店（chiba/ebisu/funabashi/ikebukuro/kamata/kitasenju/nerima/shinjuku/utsunomiya/yokohama）、page-sitemap.xml の /gym/ は11URL（shinjuku2 含む）。外す8店の店舗ページ: tachikawa/kichijouji/akabane/kashiwa/kawasaki/machida/nanba=404、kinshicyo=410。
+- 外したもの: クレビック 代官山・銀座・六本木・渋谷・品川（＋上野）／OUTLINE 立川・吉祥寺・赤羽・柏・川崎・錦糸町・町田・なんば心斎橋（namba・shinsaibashi の2ページ）。N選: 代官山2→1・品川2→1・銀座4→3・六本木3→2・渋谷4→3・立川5→4・吉祥寺5→4・赤羽3→2・柏3→2・川崎4→3・錦糸町3→2・町田4→3・難波3→2・心斎橋3→2。title/h1/description＝カード数（全101）。FAQ・目的別・料金・まとめ・description の当該ブランド言及を整理（OUTLINE のみの FAQ「子連れ」「リバウンド防止」と目的別「子連れ対応」カードは削除）。
+- **上野は0店になる**ため②でページ削除＋public/_redirects で /areas/akihabara/ へ301（全国102→101エリア）。代替案＝上野を残して実在確認済みの店を追加、など。
+- /ranking/: クレビック（7位）を外して TOP10→TOP9（TOP の「ランキングTOP10」も）、OUTLINE 説明「30店舗以上」→「公式の店舗一覧は2026年10月時点で10店舗」。brands.ts outline officialStores 29→10（2026年10月）。brandStores.json 再生成（outline 24→15）。
+- HTML 差分: 内容が変わったのは20URL＋404。ほか87ページは関連エリアの「上野」リンクが消えるだけ（lastmod は更新しない）。外した店名は HTML では /brands/outline/ の口コミまとめ（立川・町田）のみ残る（b-concept と同じ扱い）。
+- 🆕 **範囲外の追加発見（未変更・判断待ち）**: 当サイト掲載の OUTLINE 秋葉原・藤沢駅前・天王寺・渋谷・中野の5店も公式一覧に無く、店舗ページは 410（akihabara/fujisawa/tennouji/shibuya/nakano）。これを外さないと /brands/outline/ の掲載15店が公式10店より多いまま。品川は残る1店が 24/7 Workout 品川店（公式に無い・10/12 確定）＝実質0店。
