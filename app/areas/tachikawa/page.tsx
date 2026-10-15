@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/tachikawa/'),
-  title: '【2026年7月】立川の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】立川のおすすめ女性専用パーソナルジム5選を徹底比較。OUTLINE・ビーコンセプト・リボーンマイセルフなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】立川の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】立川のおすすめ女性専用パーソナルジム4選を徹底比較。ビーコンセプト・リボーンマイセルフ・UNDEUX SUPERBODY LIFEなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,立川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'OUTLINE 立川店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', '遺伝子検査', 'よもぎ蒸し'],
-    description: '業界初の生涯無料アフターサポート。よもぎ蒸しや遺伝子検査など無料サービスが充実。完全個室・女性専用マシン完備。ベビーサークルもあり子連れOK。',
-    access: 'JR「立川駅」徒歩5分',
-    address: '東京都立川市（立川駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室マンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'よもぎ蒸し', '遺伝子検査', '高級アミノ酸提供', 'ベビーサークル完備'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
   {
     name: 'ビーコンセプト 立川店',
     officialUrl: 'https://b-concept.tokyo/clublist/tachikawa/',
@@ -92,16 +78,15 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '立川で女性専用のパーソナルジムはどこがおすすめ？', answer: 'OUTLINE、ビーコンセプト、リボーンマイセルフ、UNDEUX SUPERBODY LIFEが立川で人気の女性専用ジムです。生涯サポートならOUTLINE、脚やせならビーコンセプトがおすすめ。' },
+  { question: '立川で女性専用のパーソナルジムはどこがおすすめ？', answer: 'ビーコンセプト、リボーンマイセルフ、UNDEUX SUPERBODY LIFEが立川で人気の女性専用ジムです。脚やせならビーコンセプトがおすすめ。' },
   { question: '立川のパーソナルジムの料金相場は？', answer: '立川の2ヶ月コースは約18万〜22万円。リボーンマイセルフの8回92,400円〜が最安。都心部より若干リーズナブルな傾向があります。' },
-  { question: '立川駅から最も近いジムは？', answer: 'ビーコンセプトとUNDEUX SUPERBODY LIFEが徒歩4分。OUTLINEは徒歩5分、リボーンマイセルフは徒歩7分です。' },
-  { question: '子連れで通えるジムは？', answer: 'OUTLINEはベビーサークル完備。ビーコンセプトは託児所費用補助あり。立川は子育て世帯も多く、対応ジムがあります。' },
-  { question: '体験は無料？', answer: 'ビーコンセプト・OUTLINE・リボーンマイセルフ・エクササイズコーチは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
+  { question: '立川駅から最も近いジムは？', answer: 'ビーコンセプトとUNDEUX SUPERBODY LIFEが徒歩4分。リボーンマイセルフは徒歩7分です。' },
+  { question: '子連れで通えるジムは？', answer: 'ビーコンセプトは託児所費用補助あり。立川は子育て世帯も多く、対応ジムがあります。' },
+  { question: '体験は無料？', answer: 'ビーコンセプト・リボーンマイセルフ・エクササイズコーチは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
   { question: '月額制で通えるジムは？', answer: 'UNDEUX SUPERBODY LIFEは月額制で月2回〜8回から選べます。月8回59,400円〜。継続割で長く通うほどお得になります。' },
   { question: '立川と八王子、どちらがジムの選択肢が多い？', answer: '立川のほうが女性専用ジムの選択肢が豊富です。JR中央線・南武線・多摩モノレールが交差するターミナル駅なのでアクセスも良好。' },
   { question: '食事指導が充実しているジムは？', answer: 'エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。ビーコンセプトは医師監修の食事指導。UNDEUX SUPERBODY LIFEもプロの食事アドバイスが受けられます。' },
   { question: '最も安いプランは？', answer: 'リボーンマイセルフの8回コース（92,400円〜）が最安。短期間で試したい方におすすめ。月額制ならUNDEUX SUPERBODY LIFEの月2回プラン。' },
-  { question: 'リバウンド防止のサポートは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。24時間LINEで相談可能で卒業後もサポートが続きます。' },
 ]
 
 export default function TachikawaPage() {
@@ -150,9 +135,9 @@ export default function TachikawaPage() {
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（8回 92,400円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・ビーコンセプト（16回 199,650円〜）</li></ul></div>
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（8回 92,400円〜）</li><li className="text-brand-muted">・ビーコンセプト（16回 199,650円〜）</li></ul></div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">月額制で継続</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX LIFE（月8回 59,400円〜）</li><li className="text-brand-muted">・継続割でお得に</li></ul></div>
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul></div>
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul></div>
             </div>
           </div>
         </section>
@@ -160,7 +145,7 @@ export default function TachikawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">立川の料金相場【2026年4月】</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3><p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p><p className="text-sm text-brand-muted">OUTLINE 184,800円〜が最安クラス。都心部より若干リーズナブル。</p></div>
+              <div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3><p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p><p className="text-sm text-brand-muted">都心部より若干リーズナブル。</p></div>
               <div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">短期コース</h3><p className="text-3xl font-bold text-accent mb-2">9.2万円〜</p><p className="text-sm text-brand-muted">リボーンマイセルフ 8回92,400円〜。まず試したい方に最適。</p></div>
             </div>
           </div>
@@ -180,7 +165,7 @@ export default function TachikawaPage() {
             <div className="space-y-4">{faqs.map((faq, index) => (<div key={index} className="border border-line rounded-xl overflow-hidden"><details className="group"><summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-accent-tint transition"><h3 className="font-bold text-brand-text pr-4 text-sm">Q{index + 1}. {faq.question}</h3><svg className="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg></summary><div className="px-5 pb-5 text-brand-muted leading-relaxed text-sm">{faq.answer}</div></details></div>))}</div>
           </div>
         </section>
-        <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2><p className="text-brand-muted leading-relaxed mb-4">立川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p><p className="text-brand-muted leading-relaxed mb-4">生涯サポートならOUTLINE、脚やせならビーコンセプト、女性トレーナー希望ならリボーンマイセルフ、月額制ならUNDEUX SUPERBODY LIFEがおすすめです。</p><p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p></div></section>
+        <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2><p className="text-brand-muted leading-relaxed mb-4">立川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p><p className="text-brand-muted leading-relaxed mb-4">脚やせならビーコンセプト、女性トレーナー希望ならリボーンマイセルフ、月額制ならUNDEUX SUPERBODY LIFEがおすすめです。</p><p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p></div></section>
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white"><div className="max-w-4xl mx-auto px-6 lg:px-8 text-center"><h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2><p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p><Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link></div></section>
         <IntentGuideLinks />
       </main>

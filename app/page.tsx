@@ -246,7 +246,7 @@ export default function Home() {
             <SectionHeading en="Contents" title="ジム選びに役立つ情報" lead="はじめてでも迷わないためのガイドをご用意しています。" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { href: '/ranking/', n: '01', title: 'ランキングTOP10', desc: '女性専用パーソナルジムの人気ランキング。料金・口コミ・特徴を比較。' },
+                { href: '/ranking/', n: '01', title: 'ランキングTOP9', desc: '女性専用パーソナルジムの人気ランキング。料金・口コミ・特徴を比較。' },
                 { href: '/cost/', n: '02', title: '料金相場ガイド', desc: '2ヶ月コース・月額制・都度払いの料金を、わかりやすく徹底解説。' },
                 { href: '/guide/', n: '03', title: '選び方ガイド', desc: '失敗しないパーソナルジムの選び方を、5つのポイントで解説。' },
               ].map((c) => (

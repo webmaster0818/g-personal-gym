@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kinshicho/'),
-  title: '【2026年7月】錦糸町の女性専用パーソナルジムおすすめ3選！料金比較',
-  description: '【2026年4月】錦糸町のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・ビーコンセプト・Apple GYMの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】錦糸町の女性専用パーソナルジムおすすめ2選！料金比較',
+  description: '【2026年4月】錦糸町のおすすめ女性専用パーソナルジム2選を徹底比較。ビーコンセプト・Apple GYMの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,錦糸町,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'OUTLINE 錦糸町店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '生涯無料アフターサポートが特徴の女性専用ジム。錦糸町駅から徒歩圏内。完全個室・ベビーサークル完備で産後ママも安心。コスパの良さで人気。',
-    access: 'JR「錦糸町駅」徒歩5分',
-    address: '東京都墨田区錦糸（錦糸町駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
   {
     name: 'ビーコンセプト 錦糸町店',
     officialUrl: 'https://b-concept.tokyo/clublist/kinshicho/',
@@ -63,10 +49,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '錦糸町で女性専用のパーソナルジムはありますか？', answer: 'はい、錦糸町エリアにはOUTLINE、ビーコンセプトなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意。' },
-  { question: '錦糸町のパーソナルジムの料金相場は？', answer: '錦糸町エリアの料金はApple GYM（8回49,280円〜）からOUTLINE（184,800円〜）まで幅広いです。' },
+  { question: '錦糸町で女性専用のパーソナルジムはありますか？', answer: 'はい、錦糸町エリアにはビーコンセプトなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意。' },
+  { question: '錦糸町のパーソナルジムの料金相場は？', answer: '当サイト掲載では、Apple GYM（8回 49,280円〜）からビーコンセプト（2ヶ月18回 179,685円〜）まで幅があります（いずれも税込）。' },
   { question: '錦糸町で下半身痩せに特化したジムは？', answer: 'ビーコンセプト錦糸町店が下半身特化で最もおすすめ。医師とトレーナーが共同開発した脚やせメソッドで太もも痩せ・ヒップアップを目指せます。' },
-  { question: '錦糸町で子連れで通えるジムは？', answer: 'OUTLINE錦糸町店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
+  { question: '錦糸町で子連れで通えるジムは？', answer: 'ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
 ]
 
 export default function KinshichoPage() {
@@ -126,7 +112,7 @@ export default function KinshichoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">錦糸町エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプト、リーズナブルに始めるならApple GYMがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">下半身痩せならビーコンセプト、リーズナブルに始めるならApple GYMがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

@@ -13,25 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shinsaibashi/'),
-  title: '【2026年7月】心斎橋の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】心斎橋のおすすめ女性向けパーソナルジム3選を比較。OUTLINE・BODY・UNDEUXなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '【2026年7月】心斎橋の女性向けパーソナルジムおすすめ2選！料金比較',
+  description: '【2026年7月】心斎橋のおすすめ女性向けパーソナルジム2選を比較。BODY SALVATION・UNDEUXの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,心斎橋,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'OUTLINE（アウトライン）なんば・心斎橋店',
-    officialUrl: 'https://www.outline-gym.com/gym/nanba',
-    price: 'フルサポートコース16回 184,800円（税込・入会金0円）',
-    trial: '無料カウンセリングあり（LINE・電話予約）',
-    features: ['女性専用', '完全個室', '生涯リバウンドサポート', '遺伝子検査', 'ペアトレ無料'],
-    description: '女性専用・完全個室のパーソナルジム。生涯リバウンドサポートと遺伝子検査によるオーダーメイドプログラムが特徴。ペアトレ無料オプションもあります。',
-    access: '心斎橋駅徒歩5分／なんば駅徒歩5分',
-    address: '大阪市中央区西心斎橋2-16-9 ラ・シェネガ心斎橋802',
-    options: ['24回264,000円／32回334,400円', '学生・モニター15%OFF'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
-  },
   {
     name: 'BODY SALVATION（ボディサーベーション）',
     officialUrl: 'https://www.body-salvation.net/',
@@ -59,10 +46,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '心斎橋で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、OUTLINE（アウトライン）なんば・心斎橋店、BODY SALVATION（ボディサーベーション）、UNDEUX SUPERBODY LIFE 心斎橋スタジオです（2026年6月調査時点）。' },
-  { question: '心斎橋のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、OUTLINE（アウトライン）なんば・心斎橋店はフルサポートコース16回 184,800円（税込・入会金0円）。BODY SALVATION（ボディサーベーション）はスターターコース4回 18,000円（30分・新規限定・入会金無料）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '心斎橋で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、BODY SALVATION（ボディサーベーション）、UNDEUX SUPERBODY LIFE 心斎橋スタジオです（2026年6月調査時点）。' },
+  { question: '心斎橋のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、BODY SALVATION（ボディサーベーション）はスターターコース4回 18,000円（30分・新規限定・入会金無料）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '心斎橋駅から近いジムは？', answer: '駅徒歩3分以内・直結では、BODY SALVATION（ボディサーベーション）（御堂筋線心斎橋駅徒歩4分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'OUTLINE（アウトライン）なんば・心斎橋店、UNDEUX SUPERBODY LIFE 心斎橋スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY LIFE 心斎橋スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
 ]
 
@@ -125,7 +112,7 @@ export default function ShinsaibashiPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（アウトライン）なんば・心斎橋店</li><li className="text-brand-muted">・BODY SALVATION（ボディサーベーション）</li><li className="text-brand-muted">・UNDEUX SUPERBODY LIFE 心斎橋スタジオ</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・BODY SALVATION（ボディサーベーション）</li><li className="text-brand-muted">・UNDEUX SUPERBODY LIFE 心斎橋スタジオ</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
@@ -133,7 +120,7 @@ export default function ShinsaibashiPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（アウトライン）なんば・心斎橋店</li><li className="text-brand-muted">・BODY SALVATION（ボディサーベーション）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・BODY SALVATION（ボディサーベーション）</li></ul>
               </div>
             </div>
           </div>
@@ -144,7 +131,7 @@ export default function ShinsaibashiPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">心斎橋の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">OUTLINE（アウトライン）なんば・心斎橋店</span><span className="text-brand-muted text-sm">フルサポートコース16回 184,800円（税込・入会金0円）</span></li>
+              
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BODY SALVATION（ボディサーベーション）</span><span className="text-brand-muted text-sm">スターターコース4回 18,000円（30分・新規限定・入会金無料）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY LIFE 心斎橋スタジオ</span><span className="text-brand-muted text-sm">月額制（金額は公式サイトでご確認ください）</span></li>
             </ul>

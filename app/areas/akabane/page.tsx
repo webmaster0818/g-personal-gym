@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/akabane/'),
-  title: '【2026年7月】赤羽の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】赤羽のおすすめ女性向けパーソナルジム3選を比較。かたぎり塾・OUTLINE・リボーンマイセルフなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '【2026年7月】赤羽の女性向けパーソナルジムおすすめ2選！料金比較',
+  description: '【2026年7月】赤羽のおすすめ女性向けパーソナルジム2選を比較。かたぎり塾・リボーンマイセルフの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,赤羽,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -33,18 +33,6 @@ const gyms = [
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
   },
   {
-    name: 'OUTLINE（アウトライン）赤羽店',
-    officialUrl: 'https://www.outline-gym.com/gym/akabane',
-    price: '16回 184,800円〜（税込・入会金0円）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '食事指導つき', '子連れOK', '遺伝子検査'],
-    description: '女性専用パーソナルジム。入会金0円で食事指導つき。ベビーサークルがあり子連れ可。ウェア・タオル・アミノ酸ドリンク・プロテイン提供、シャワー・遺伝子検査もあります。',
-    access: '赤羽駅徒歩5分',
-    options: ['ベビーサークル', 'ウェア・タオル無料', 'アミノ酸ドリンク・プロテイン提供', 'シャワーあり'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
-  },
-  {
     name: 'リボーンマイセルフ 赤羽店',
     officialUrl: 'https://www.shapes-international.co.jp/store/akabane/',
     price: '2ヶ月16回 220,000円（税込・入会金22,000円）',
@@ -59,10 +47,9 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '赤羽で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、かたぎり塾 赤羽女性専門店、OUTLINE（アウトライン）赤羽店、リボーンマイセルフ 赤羽店です（2026年6月調査時点）。' },
-  { question: '赤羽のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、かたぎり塾 赤羽女性専門店は月4回 33,000円（税込）。OUTLINE（アウトライン）赤羽店は16回 184,800円〜（税込・入会金0円）。リボーンマイセルフ 赤羽店は2ヶ月16回 220,000円（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'かたぎり塾 赤羽女性専門店、OUTLINE（アウトライン）赤羽店、リボーンマイセルフ 赤羽店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'OUTLINE（アウトライン）赤羽店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '赤羽で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、かたぎり塾 赤羽女性専門店、リボーンマイセルフ 赤羽店です（2026年6月調査時点）。' },
+  { question: '赤羽のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、かたぎり塾 赤羽女性専門店は月4回 33,000円（税込）。リボーンマイセルフ 赤羽店は2ヶ月16回 220,000円（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられる？', answer: 'かたぎり塾 赤羽女性専門店、リボーンマイセルフ 赤羽店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
 ]
 
@@ -125,7 +112,7 @@ export default function AkabanePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・かたぎり塾 赤羽女性専門店</li><li className="text-brand-muted">・OUTLINE（アウトライン）赤羽店</li><li className="text-brand-muted">・リボーンマイセルフ 赤羽店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・かたぎり塾 赤羽女性専門店</li><li className="text-brand-muted">・リボーンマイセルフ 赤羽店</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
@@ -145,7 +132,7 @@ export default function AkabanePage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">かたぎり塾 赤羽女性専門店</span><span className="text-brand-muted text-sm">月4回 33,000円（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">OUTLINE（アウトライン）赤羽店</span><span className="text-brand-muted text-sm">16回 184,800円〜（税込・入会金0円）</span></li>
+              
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 赤羽店</span><span className="text-brand-muted text-sm">2ヶ月16回 220,000円（税込・入会金22,000円）</span></li>
             </ul>
           </div>

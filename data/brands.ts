@@ -215,11 +215,11 @@ export const BRANDS: BrandInfo[] = [
     ],
     officialUrl: 'https://www.outline-gym.com/',
     officialStores: {
-      count: 29,
+      count: 10,
       kind: '一覧実数',
-      caveat: '公式サイトに全国店舗数の明記がないため、店舗一覧ページの掲載数を採用しています（「◯◯店」「◯◯駅前店」など表記の近い店舗があります）。',
+      caveat: '公式サイトに全国店舗数の明記がないため、店舗一覧ページの掲載数を採用しています。2026年8月時点の一覧は29店でしたが、10月の再確認では10店に減り、一覧から消えた店舗の個別ページは404・410（ページなし）になっています。',
       sourceUrl: 'https://www.outline-gym.com/gym',
-      asOf: '2026年8月',
+      asOf: '2026年10月',
     },
   },
   {

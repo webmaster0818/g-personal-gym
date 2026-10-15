@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/daikanyama/'),
-  title: '【2026年7月】代官山の女性専用パーソナルジムおすすめ2選！料金比較',
-  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム2選を徹底比較。RIZAP WOMAN・クレビックの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】代官山の女性専用パーソナルジムおすすめ1選！料金比較',
+  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム1選を徹底比較。RIZAP WOMANの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,代官山,おすすめ,料金,比較,ダイエット,ボディメイク,高級',
 }
 
@@ -32,25 +32,12 @@ const gyms = [
     userProfile: { ageRange: '30代〜50代が中心', genderRatio: '女性100%', purpose: ['美ボディメイク', 'ダイエット', 'エイジングケア', '美容'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'エステルーム', 'コラーゲンマシン', 'シャワー'] },
   },
-  {
-    name: 'クレビック 恵比寿・代官山店',
-    price: '2ヶ月16回 149,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専門', '管理栄養士の食事指導', '完全個室', '手ぶらOK', 'リーズナブル'],
-    description: '管理栄養士による食事指導と科学的なトレーニングが特徴の女性専門ジム。代官山エリアでリーズナブルに本格的なボディメイクが可能。手ぶらで通える充実した設備。',
-    access: '東急東横線「代官山駅」徒歩7分',
-    address: '東京都渋谷区恵比寿西（代官山駅徒歩7分）',
-    popularPlan: { name: 'ダイエット&ボディメイクコース', description: '管理栄養士の食事指導＋マンツーマントレーニングの総合プログラム。', price: '2ヶ月16回 149,800円〜（税込）' },
-    options: ['管理栄養士による食事指導', 'ウェアレンタル無料', 'タオル完備', 'シャワー完備'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '食事改善', '美容'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
-  { question: '代官山で女性専用のパーソナルジムはありますか？', answer: 'はい、代官山エリアにはRIZAP WOMAN、クレビックなどの女性専用パーソナルジムがあります。高級感のある空間が多いのが代官山の特徴です。' },
+  { question: '代官山で女性専用のパーソナルジムはありますか？', answer: 'はい、当サイトで代官山エリアに掲載しているのはRIZAP WOMAN 代官山店です。高級感のある空間が多いのが代官山の特徴です。' },
   { question: '代官山で高級なパーソナルジムはどこ？', answer: 'RIZAP WOMAN代官山店はエステ・コラーゲンマシン付きの贅沢なプログラムを提供しています。' },
-  { question: '代官山のパーソナルジムの料金相場は？', answer: '代官山エリアでは2ヶ月コース149,800円〜（クレビック）から327,800円〜（RIZAP WOMAN）まで幅広い選択肢があります。' },
+  { question: '代官山のパーソナルジムの料金相場は？', answer: '当サイト掲載のRIZAP WOMAN 代官山店は2ヶ月16回 327,800円〜（税込）です。最新の料金は公式サイトでご確認ください。' },
   { question: '代官山でエステも受けられるジムは？', answer: 'RIZAP WOMAN代官山店では、トレーニングに加えてコラーゲンマシンやエステ施術も受けられます。美しく痩せたい方に最適です。' },
 ]
 
@@ -111,7 +98,7 @@ export default function DaikanyamaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">代官山エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">ラグジュアリーな美容体験ならRIZAP WOMAN、コスパ重視ならクレビックがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">ラグジュアリーな美容体験ならRIZAP WOMANがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>

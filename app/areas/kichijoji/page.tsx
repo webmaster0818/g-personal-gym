@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kichijoji/'),
-  title: '【2026年7月】吉祥寺の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】吉祥寺のおすすめ女性専用パーソナルジム5選を徹底比較。ビーコンセプト・OUTLINE・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】吉祥寺の女性専用パーソナルジムおすすめ4選！料金比較',
+  description: '【2026年4月】吉祥寺のおすすめ女性専用パーソナルジム4選を徹底比較。ビーコンセプト・UNDEUX SUPERBODY・リボーンマイセルフなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,吉祥寺,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -32,20 +32,6 @@ const gyms = [
     options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応（月々5,545円〜）'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
-  },
-  {
-    name: 'OUTLINE 吉祥寺店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', 'よもぎ蒸し'],
-    description: '業界初の生涯無料アフターサポートが最大の特徴。完全個室・女性専用マシン完備。ベビーサークルもあり子連れでも安心。吉祥寺の住みたい街ランキング常連エリアで。',
-    access: 'JR「吉祥寺駅」徒歩5分',
-    address: '東京都武蔵野市吉祥寺（吉祥寺駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室マンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'よもぎ蒸し', '高級アミノ酸提供', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
     name: 'UNDEUX SUPERBODY 吉祥寺スタジオ',
@@ -92,16 +78,15 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '吉祥寺で女性専用のパーソナルジムはどこがおすすめ？', answer: 'ビーコンセプト、OUTLINE、UNDEUX SUPERBODY、リボーンマイセルフが吉祥寺で人気の女性専用パーソナルジムです。駅近ならビーコンセプト（徒歩1分）、食事管理ならUNDEUXがおすすめ。' },
+  { question: '吉祥寺で女性専用のパーソナルジムはどこがおすすめ？', answer: 'ビーコンセプト、UNDEUX SUPERBODY、リボーンマイセルフが吉祥寺で人気の女性専用パーソナルジムです。駅近ならビーコンセプト（徒歩1分）、食事管理ならUNDEUXがおすすめ。' },
   { question: '吉祥寺のパーソナルジムの料金相場は？', answer: '吉祥寺の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円。ビーコンセプトが179,685円〜と最安。都心部より若干リーズナブルな傾向があります。' },
-  { question: '吉祥寺駅から最も近いジムは？', answer: 'ビーコンセプト吉祥寺店が徒歩1分で最も駅近。UNDEUX SUPERBODYは徒歩4分、OUTLINE・リボーンマイセルフは徒歩5分です。' },
-  { question: '子連れで通えるジムは？', answer: 'OUTLINE吉祥寺店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
-  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。ビーコンセプト、OUTLINE、リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施。' },
+  { question: '吉祥寺駅から最も近いジムは？', answer: 'ビーコンセプト吉祥寺店が徒歩1分で最も駅近。UNDEUX SUPERBODYは徒歩4分、リボーンマイセルフは徒歩5分です。' },
+  { question: '子連れで通えるジムは？', answer: 'ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
+  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。ビーコンセプト、リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施。' },
   { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので運動経験がなくても安心。吉祥寺のジムはアットホームな雰囲気のところが多いです。' },
   { question: '吉祥寺は都心のジムと比べてどう？', answer: '吉祥寺は都心に比べてやや落ち着いた雰囲気。料金は都心とほぼ同等ですが、混雑が少なく予約が取りやすい傾向があります。JR中央線で新宿から約15分と好アクセス。' },
   { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは宅配食20食が無料。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。吉祥寺はグルメの街なので食事指導重視がおすすめ。' },
   { question: '仕事帰りでも通える？', answer: 'ほとんどのジムが22:00まで営業。ウェアレンタルやシャワー完備のジムが多いので、仕事帰りでも手ぶらで通えます。' },
-  { question: 'リバウンド防止のサポートは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。卒業後もずっと無料でサポートが受けられるので、リバウンドが心配な方に最適です。' },
 ]
 
 export default function KichijojiPage() {
@@ -164,7 +149,7 @@ export default function KichijojiPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
@@ -172,7 +157,7 @@ export default function KichijojiPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul>
               </div>
             </div>
           </div>
@@ -235,7 +220,7 @@ export default function KichijojiPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">吉祥寺エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">駅近で下半身痩せならビーコンセプト、生涯サポートならOUTLINE、食事管理重視ならUNDEUX SUPERBODY、女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">駅近で下半身痩せならビーコンセプト、食事管理重視ならUNDEUX SUPERBODY、女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
           </div>
         </section>
