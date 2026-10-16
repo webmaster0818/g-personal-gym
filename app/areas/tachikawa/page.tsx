@@ -70,7 +70,7 @@ const gyms = [
     description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
     access: '「立川」駅周辺',
     address: '立川エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制で継続しやすいです。', price: '月額制（プラン・店舗により異なる）' },
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制のため、無理なく続けやすい料金体系です。', price: '月額制（プラン・店舗により異なる）' },
     options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
     basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
@@ -154,7 +154,7 @@ export default function TachikawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">立川で選ぶ際の注意点</h2>
             <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">多摩エリアのターミナル駅で交通至便</h3><p className="text-brand-muted leading-relaxed">立川はJR中央線・南武線・多摩モノレールが交差するターミナル駅です。多摩エリア各地からアクセスしやすいため、近隣の国立・国分寺・日野・昭島からも通いやすいです。</p></div>
+              <div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">多摩エリアのターミナル駅で交通至便</h3><p className="text-brand-muted leading-relaxed">立川はJR中央線・南武線・多摩モノレールが交差するターミナル駅です。多摩エリア各地からアクセスしやすいため、近隣の国立・国分寺・日野・昭島からも通いやすい立地です。</p></div>
               <div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">北口と南口でジムの場所が異なる</h3><p className="text-brand-muted leading-relaxed">立川駅は北口がルミネ・グランデュオなどの商業施設、南口はIKEA・ららぽーと方面です。ジムがどちら側にあるか事前にご確認ください。</p></div>
             </div>
           </div>

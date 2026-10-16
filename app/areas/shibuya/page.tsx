@@ -174,7 +174,7 @@ export default function ShibuyaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">渋谷駅は出口が多い</h3>
-                <p className="text-brand-muted leading-relaxed">渋谷駅は複数の路線が乗り入れ、出口も多いです。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
+                <p className="text-brand-muted leading-relaxed">渋谷駅は複数の路線が乗り入れており、出口の数も多くなっています。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">体験レッスンは2〜3ジムで比較</h3>

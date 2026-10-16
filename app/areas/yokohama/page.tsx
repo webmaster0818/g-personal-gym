@@ -82,9 +82,9 @@ const faqs = [
   { question: '横浜のパーソナルジムの料金相場はいくらですか？', answer: '横浜エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制なら月12,000円〜30,000円程度から通えます。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
   { question: '体験レッスンは無料で受けられますか？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずはお気軽にお問い合わせください。' },
-  { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は1ヶ月目から感じる方が多いです。' },
+  { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は、1ヶ月目から感じ始める方が多い傾向にあります。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
-  { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが多いです。' },
+  { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが大半を占めます。' },
   { question: '横浜駅から近いジムはどこですか？', answer: 'OUTLINE 横浜店、UNDEUX SUPERBODY 横浜スタジオが駅から近いジムです。' },
   { question: 'リバウンドを防ぐサポートはありますか？', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」があります。多くのジムでは卒業後のフォロープログラムが含まれています。' },
   { question: '子連れで通えるジムはどこですか？', answer: 'OUTLINEはベビーサークル全店完備です。事前に各ジムにお問い合わせください。' },
@@ -162,7 +162,7 @@ export default function YokohamaPage() {
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">総額で比較する</h3>
-                <p className="text-brand-muted leading-relaxed">コース料金だけでなく、入会金・オプション費用も含めた総額で比較することをおすすめします。キャンペーンで入会金無料になることも多いです。</p>
+                <p className="text-brand-muted leading-relaxed">コース料金だけでなく、入会金・オプション費用も含めた総額で比較することをおすすめします。キャンペーンにより入会金が無料になる場合も少なくありません。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">通いやすさを重視</h3>

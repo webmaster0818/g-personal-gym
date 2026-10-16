@@ -42,7 +42,7 @@ const gyms = [
     description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
     access: '「二子玉川」駅周辺',
     address: '二子玉川エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制で継続しやすいです。', price: '月額制（プラン・店舗により異なる）' },
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制のため、無理なく続けやすい料金体系です。', price: '月額制（プラン・店舗により異なる）' },
     options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
     basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
@@ -146,7 +146,7 @@ export default function FutakotamagawaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">ファミリー層が多く週末は混雑しやすい</h3>
-                <p className="text-brand-muted leading-relaxed">二子玉川は子育てファミリーに人気のエリアです。週末は二子玉川ライズ周辺が混雑するため、平日に通えるなら予約が取りやすいです。ジムの予約状況は事前にご確認ください。</p>
+                <p className="text-brand-muted leading-relaxed">二子玉川は子育てファミリーに人気のエリアです。週末は二子玉川ライズ周辺が混雑するため、平日に通える場合は予約を取りやすくなります。ジムの予約状況は事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">産後ダイエット需要が高いエリア</h3>
