@@ -241,3 +241,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 ### 2026-10-16 クレビック6店＋OUTLINE 404の8店を外す（10/15宣言の既定案を実行） ✅本番反映済み（source dcf7b47 / deploy 3e0256b1）
 - wip/remove-closed-1015（b84b379）を main(14fd20e) に --no-ff マージ（main 側は CLAUDE.md のみで衝突なし）。aggregate-brands.py 再生成は差分なし。N選＝カード数（全101ページ一致）・ランキング TOP9・build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK。外した店名は HTML では /brands/outline/ の口コミまとめ（立川・町田）のみ残る（b-concept と同じ扱い・P2）。
 - 本番確認: /areas/ueno/ と /areas/ueno → /areas/akihabara/ 301・14エリアの title N選が新値・クレビック 0・sitemap 134URL（ueno なし・lastmod 2026-10-16 が20URL）・robots 200。OUTLINE 秋葉原/藤沢/天王寺/渋谷/中野と 24/7 Workout 品川は判断待ちのため未変更。
+
+### 2026-10-16 全文言のビジネス文書化（MediaXAI指示・writing-standards §8） ✅本番反映（source 35dee98 / deploy 10798baa）
+- 対象: 全134ページ（エリア101・ブランド・記事17・TOP/ranking/cost/guide/faq ほか）。当サイト作成の説明文・注記・FAQ回答・カード説明・口コミ要約（gymReviews.ts）・メタ説明をです・ます調に。FAQ質問は丁寧語（〜はどこ？→〜はどこですか？／料金の目安は？→いくらですか？）。見出しの「結論：」「先に結論をお伝えします」「まず知っておきたい」「正直な留保」「まず結論」を宣言形・中立表現に。「こんにちは、G-PersonalGym編集部です」101ページ→「本ページはG-PersonalGym編集部が作成しています」。〜しましょう→ご確認ください／〜ことをおすすめします、つき→付き、無い/無し→ない/なし、網羅→掲載、徹底比較/徹底解説→比較/解説、あなた→ご自身、子連れOK（文中）→お子様連れでも利用できます。
+- 方法: 文末変換スクリプト（引用「」『』・店名・URL/キーは保護、comment除外）＋手動上書き約150文。変換前後で引用スパンの集合が一致することを確認（差分はサイト自作の見出し語のみ）。箇条書き（。なし）・表のラベル・features チップは体言止めのまま。
+- 検証: build EXIT0（prebuild 101）・precheck 全項目OK（out/deploy）・out の NG 語は本文0（残りは引用内「〜知っておきたい」「〜落としましょう」と「生まれつき」のみ）・崩れ（ますます/ですです/時点時点等）0・アフィリエイト（A8 1件・/brands/b-concept/）本番と一致・robots 200。brandStores.json は aggregate-brands.py 再生成（つき→付き 9件のみ）。
+- テンプレ: scripts/gen-areas-batch1-202606.py の文言も同基準に（batch2〜4 のデータ内文言は未変更。再生成すると現行ページを上書きするので使わないこと）。places-api/add-summaries.py で今後要約を足すときは です・ます で書く。
+- 範囲外の発見（未変更）: TOP「女性専用パーソナルジムだけを掲載しています」だが男女共用ジムも掲載／TOP統計「102 エリア対応」は調査時点の母数（現行101）／フッター「掲載情報は2026年4月時点」・各ページの年月混在（7月/4月）／ranking「OUTLINE 2年連続第1位」「BEYOND 全トレーナー受賞経験」等の実績表記は出典未確認／記事タイトル「どっちを選ぶ？」等は検索語のため据え置き。
