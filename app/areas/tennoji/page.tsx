@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/tennoji/'),
   title: '【2026年7月】天王寺の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】天王寺のおすすめ女性向けパーソナルジム3選を比較。UNDEUX・OUTLINE・トトヤセなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】天王寺のおすすめ女性向けパーソナルジム3選を比較しています。UNDEUX・OUTLINE・トトヤセなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,天王寺,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダードプラン月2回 20,500円〜（税込）',
     trial: '無料体験トレーニング（約60分）＋無料カウンセリング（約30分）',
     features: ['女性専用', '食事相談込み', '手ぶらOK'],
-    description: '駅徒歩1分の女性専用パーソナルジム。食事相談込みで、ウェア・シューズ・タオル無料レンタルにより手ぶらで通えます。無理な勧誘なしと公式に明記されています。',
+    description: '駅徒歩1分の女性専用パーソナルジムです。食事相談込みで、ウェア・シューズ・タオル無料レンタルにより手ぶらで通えます。無理な勧誘なしと公式に明記されています。',
     access: '御堂筋線・JR「天王寺駅」徒歩1分',
     address: '大阪市阿倍野区松崎町2-2-28 アーバンシュールビル4F',
     options: ['月8回66,800円', 'コミットプラン月6回79,200円'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '16回 184,800円（税込・入会金0円）',
     trial: '体験トレーニング無料・無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯リバウンドサポート'],
-    description: '女性専用・完全個室のパーソナルジム。生涯リバウンドサポートと遺伝子検査オーダーメイドプログラムが特徴。朝7時から23時まで営業しています。',
+    description: '女性専用・完全個室のパーソナルジムです。生涯リバウンドサポートと遺伝子検査オーダーメイドプログラムが特徴です。朝7時から23時まで営業しています。',
     access: '天王寺駅徒歩7分',
     address: '大阪市天王寺区大道1-2-28 サンプラザ四天王寺802',
     options: ['24回264,000円／32回334,400円', '学生・モニター15%OFF'],
@@ -51,7 +51,7 @@ const gyms = [
     price: '月2回 22,000円〜月8回69,800円（60分・月額、入会金33,000円）',
     trial: '体験10,000円→1,000円（当日入会で無料）',
     features: ['女性専用', 'マシンピラティス×パーソナル', '骨格矯正', '下半身痩せ・姿勢改善特化'],
-    description: '女性専用のマシンピラティス×パーソナルジム。整体×ピラティス×トレーニングを組み合わせた骨格矯正で、下半身痩せ・姿勢改善に特化しています。',
+    description: '女性専用のマシンピラティス×パーソナルジムです。整体×ピラティス×トレーニングを組み合わせた骨格矯正で、下半身痩せ・姿勢改善に特化しています。',
     access: 'JR天王寺駅徒歩3分／御堂筋線天王寺駅徒歩4分',
     address: '大阪市天王寺区堀越町9-6 レジデンスJUKO天王寺501',
     options: ['キャンペーン価格あり（月2回19,800円等）', '入会金無料キャンペーンの時期あり'],
@@ -61,11 +61,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '天王寺で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 天王寺スタジオ、OUTLINE（アウトライン）天王寺店、トトヤセ 天王寺店です（2026年6月調査時点）。' },
-  { question: '天王寺のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 天王寺スタジオはスタンダードプラン月2回 20,500円〜（税込）。OUTLINE（アウトライン）天王寺店は16回 184,800円（税込・入会金0円）。トトヤセ 天王寺店は月2回 22,000円〜月8回69,800円（60分・月額、入会金33,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '天王寺駅から近いジムは？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 天王寺スタジオ（御堂筋線・JR「天王寺駅」徒歩1分）、トトヤセ 天王寺店（JR天王寺駅徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 天王寺スタジオ、OUTLINE（アウトライン）天王寺店、トトヤセ 天王寺店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '天王寺で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 天王寺スタジオ、OUTLINE（アウトライン）天王寺店、トトヤセ 天王寺店です（2026年6月調査時点）。' },
+  { question: '天王寺のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 天王寺スタジオはスタンダードプラン月2回 20,500円〜です（税込）。OUTLINE（アウトライン）天王寺店は16回 184,800円です（税込・入会金0円）。トトヤセ 天王寺店は月2回 22,000円〜月8回69,800円です（60分・月額、入会金33,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '天王寺駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 天王寺スタジオ（御堂筋線・JR「天王寺駅」徒歩1分）、トトヤセ 天王寺店（JR天王寺駅徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 天王寺スタジオ、OUTLINE（アウトライン）天王寺店、トトヤセ 天王寺店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function TennojiPage() {
@@ -94,7 +94,7 @@ export default function TennojiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「天王寺で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、天王寺エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -159,10 +159,10 @@ export default function TennojiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -177,8 +177,8 @@ export default function TennojiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -226,7 +226,7 @@ export default function TennojiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

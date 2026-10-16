@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/takasaki/'),
   title: '【2026年7月】高崎の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】高崎のおすすめ女性向けパーソナルジム3選を比較。リボーンマイセルフ・Tryangle・パーソナルジムRatなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】高崎のおすすめ女性向けパーソナルジム3選を比較しています。リボーンマイセルフ・Tryangle・パーソナルジムRatなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,高崎,群馬,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'ショートコース（2ヶ月16回）220,000円（入会金22,000円）',
     trial: '無料カウンセリング・無料体験あり',
     features: ['女性専用', 'トレーナー全員女性', '専属トレーナー制', '無料駐車場'],
-    description: '女性専用・トレーナー全員女性のジム。専属トレーナー制で食事指導つき（宅食付きプランも選択可）。個室パウダールームと無料駐車場があります。',
+    description: '女性専用・トレーナー全員女性のジムです。専属トレーナー制で、食事指導が付いています（宅食付きプランも選択できます）。個室パウダールームと無料駐車場があります。',
     access: '高崎駅西口 徒歩8分（無料駐車場完備）',
     options: ['ベーシックコース（3ヶ月24回）303,600円', 'チケット8回101,200円〜'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'ブライダル'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: '60分 13,000円／2ヶ月16回 264,000円（入会金33,000円・キャンペーンで16,500円）',
     trial: 'パーソナル体験あり（料金は公式サイトでご確認ください）',
     features: ['個室', '女性向けメニューあり', 'オーダーメイド食事指導'],
-    description: '個室のパーソナルジム。女性専用ではありませんが「女性も安心」を掲げ、ヒップアップなど女性向けメニューと食事＋トレーニングのオーダーメイド指導があります。',
+    description: '個室のパーソナルジムです。女性専用ではありませんが「女性も安心」を掲げ、ヒップアップなど女性向けメニューと食事＋トレーニングのオーダーメイド指導があります。',
     access: '高崎駅東口 徒歩5分',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性向けメニューあり）', purpose: ['ボディメイク', 'ダイエット', 'ヒップアップ'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室'] },
@@ -48,7 +48,7 @@ const gyms = [
     price: 'シェイプアップコース8回 121,440円',
     trial: '無料カウンセリング・体験あり（30日間全額返金保証）',
     features: ['完全個室', '女性トレーナー在籍', '食べて痩せる食事指導'],
-    description: '完全個室のパーソナルジム。女性トレーナーが在籍し、「食べて痩せる」食事指導と30日間全額返金保証が特徴です。',
+    description: '完全個室のパーソナルジムです。女性トレーナーが在籍し、「食べて痩せる」食事指導と30日間全額返金保証が特徴です。',
     access: '高崎駅 徒歩12分（駐車場1台）',
     options: ['美ボディメイク8回121,440円', '短期集中8回136,840円', '分割可'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性トレーナー在籍）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -57,10 +57,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '高崎で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 高崎店です（2026年6月調査時点）。' },
-  { question: '高崎のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 高崎店はショートコース（2ヶ月16回）220,000円（入会金22,000円）。Tryangle（トライアングル）パーソナルジム高崎店は60分 13,000円／2ヶ月16回 264,000円（入会金33,000円・キャンペーンで16,500円）。パーソナルジムRat 高崎店はシェイプアップコース8回 121,440円。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'リボーンマイセルフ 高崎店、パーソナルジムRat 高崎店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '高崎で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 高崎店です（2026年6月調査時点）。' },
+  { question: '高崎のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 高崎店はショートコース（2ヶ月16回）220,000円です（入会金22,000円）。Tryangle（トライアングル）パーソナルジム高崎店は60分 13,000円／2ヶ月16回 264,000円です（入会金33,000円・キャンペーンで16,500円）。パーソナルジムRat 高崎店はシェイプアップコース8回 121,440円です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'リボーンマイセルフ 高崎店、パーソナルジムRat 高崎店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function TakasakiPage() {
@@ -89,7 +89,7 @@ export default function TakasakiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「高崎で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、高崎エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、高崎駅徒歩圏で「完全女性専用」を公式に確認できたのはリボーンマイセルフのみでした。あわせて女性向けに強いジムを掲載しています。</p>
@@ -157,10 +157,10 @@ export default function TakasakiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -175,8 +175,8 @@ export default function TakasakiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -224,7 +224,7 @@ export default function TakasakiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

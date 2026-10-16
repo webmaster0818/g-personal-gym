@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shinsaibashi/'),
   title: '【2026年7月】心斎橋の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】心斎橋のおすすめ女性向けパーソナルジム2選を比較。BODY SALVATION・UNDEUXの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】心斎橋のおすすめ女性向けパーソナルジム2選を比較しています。BODY SALVATION・UNDEUXの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,心斎橋,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スターターコース4回 18,000円（30分・新規限定・入会金無料）',
     trial: '体験トレーニングあり（料金は公式サイトでご確認ください）',
     features: ['女性専用', '完全個室', '女性トレーナーのみ', '40〜50代向け'],
-    description: '女性専用・完全個室・女性トレーナーのみのジム。40〜50代向けの「簡単筋トレ×痩せストレッチ」と、食事制限なしのアドバイスが特徴です。',
+    description: '女性専用・完全個室・女性トレーナーのみのジムです。40〜50代向けの「簡単筋トレ×痩せストレッチ」と、食事制限なしのアドバイスが特徴です。',
     access: '御堂筋線心斎橋駅徒歩4分／四ツ橋駅徒歩3分',
     address: '大阪市中央区南船場4-9-5 村上ビル401',
     options: ['スターター8回34,400円', 'パーソナル（60分）4回36,300円〜（入会金11,000円）'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '月額制（金額は公式サイトでご確認ください）',
     trial: '初回体験0円・無料カウンセリングあり',
     features: ['女性専用', '月額制', '食事改善サポート'],
-    description: 'UNDEUXの月額制ライン「LIFE」の心斎橋スタジオ。女性専用で、パーソナルトレーニング＋食事改善のサポートが受けられます。',
+    description: 'UNDEUXの月額制ライン「LIFE」の心斎橋スタジオです。女性専用で、パーソナルトレーニング＋食事改善のサポートが受けられます。',
     access: '心斎橋エリア（所在地詳細は公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '食事改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -46,11 +46,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '心斎橋で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、BODY SALVATION（ボディサーベーション）、UNDEUX SUPERBODY LIFE 心斎橋スタジオです（2026年6月調査時点）。' },
-  { question: '心斎橋のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、BODY SALVATION（ボディサーベーション）はスターターコース4回 18,000円（30分・新規限定・入会金無料）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '心斎橋駅から近いジムは？', answer: '駅徒歩3分以内・直結では、BODY SALVATION（ボディサーベーション）（御堂筋線心斎橋駅徒歩4分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY LIFE 心斎橋スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '心斎橋で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、BODY SALVATION（ボディサーベーション）、UNDEUX SUPERBODY LIFE 心斎橋スタジオです（2026年6月調査時点）。' },
+  { question: '心斎橋のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BODY SALVATION（ボディサーベーション）はスターターコース4回 18,000円です（30分・新規限定・入会金無料）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '心斎橋駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、BODY SALVATION（ボディサーベーション）（御堂筋線心斎橋駅徒歩4分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY LIFE 心斎橋スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function ShinsaibashiPage() {
@@ -79,7 +79,7 @@ export default function ShinsaibashiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「心斎橋で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、心斎橋エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -144,10 +144,10 @@ export default function ShinsaibashiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -162,8 +162,8 @@ export default function ShinsaibashiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -211,7 +211,7 @@ export default function ShinsaibashiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

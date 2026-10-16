@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/asahikawa/'),
   title: '【2026年7月】旭川の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】旭川のおすすめ女性向けパーソナルジム3選を比較。personal・KOKOA・ファディーなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】旭川のおすすめ女性向けパーソナルジム3選を比較しています。personal・KOKOA・ファディーなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,旭川,北海道,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '60分コース回数券 1回10,000円〜（食事サポート付・税込/税抜は公式サイトでご確認ください）',
     trial: 'トライアルレッスン 3,000円（カウンセリング・姿勢評価・トレーニング）',
     features: ['整体×トレーニング', 'ヨガ・ピラティス要素', '女性向けボディメイク特化', '食事サポート付'],
-    description: '整体×トレーニングにヨガ・ピラティス要素を組み合わせた、女性向けボディメイク特化のパーソナルジム（「女性専用」の文言は公式に未確認）。食事サポート付きの回数券制です。',
+    description: '整体×トレーニングにヨガ・ピラティス要素を組み合わせた、女性向けボディメイク特化のパーソナルジムです（「女性専用」の文言は公式に未確認）。食事サポート付きの回数券制です。',
     access: '旭川駅より徒歩7分（買物公園至近）',
     options: ['90分コース（＋ストレッチ整体）1回15,000円〜'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '公式サイトでご確認ください（女性向け特化）', purpose: ['ボディメイク', '姿勢改善', 'ダイエット'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: 'パーソナル1回 8,000円（税抜・入会金10,000円＋事務手数料4,000円＋月会費2,000円いずれも税抜）',
     trial: '初回体験 2,000円（LINE追加で1,000円）',
     features: ['女性専用', '女性トレーナー', 'ルーム貸切マンツーマン', '食事指導'],
-    description: '公式に「女性専用パーソナルジム」と明記するジム。女性トレーナーによるルーム貸切の完全マンツーマンで、食事指導を徹底しています。',
+    description: '公式に「女性専用パーソナルジム」と明記するジムです。女性トレーナーによるルーム貸切の完全マンツーマンで、食事指導を徹底しています。',
     access: '旭川市豊岡（中心部からやや東・アクセスは公式サイトでご確認ください）',
     options: ['セミパーソナル2名 1名あたり4,000円（税抜）'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -49,7 +49,7 @@ const gyms = [
     price: '月額8,778円〜（税込・通い放題・入会金不要）',
     trial: '無料体験・無料カウンセリングあり',
     features: ['女性専用', 'AIパーソナル', '通い放題', '予約不要'],
-    description: '女性専用のAIフィットネス型パーソナルジム。AIマシン＋トレーナーの個別メニューで、1回30分・予約不要・通い放題。MEGAドンキ併設で駐車場があります。',
+    description: '女性専用のAIフィットネス型パーソナルジムです。AIマシン＋トレーナーの個別メニューで、1回30分・予約不要・通い放題です。MEGAドンキ併設で駐車場があります。',
     access: 'バス停「花咲6丁目」徒歩1分（春光エリア・MEGAドンキ併設駐車場あり）',
     options: ['カード発行3,300円＋事務手数料5,500円', 'スタンダード月9,878円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '運動習慣'] },
@@ -58,11 +58,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '旭川で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、KOKOA GYM（ココアジム）、ファディー（FÜRDI）MEGAドン・キホーテ旭川店です（2026年6月調査時点）。' },
-  { question: '旭川のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、KOKOA GYM（ココアジム）はパーソナル1回 8,000円（税抜・入会金10,000円＋事務手数料4,000円＋月会費2,000円いずれも税抜）。ファディー（FÜRDI）MEGAドン・キホーテ旭川店は月額8,778円〜（税込・通い放題・入会金不要）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '旭川駅から近いジムは？', answer: '駅徒歩3分以内・直結では、ファディー（FÜRDI）MEGAドン・キホーテ旭川店（バス停「花咲6丁目」徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'personal gym TRIM（トリム）、KOKOA GYM（ココアジム）、ファディー（FÜRDI）MEGAドン・キホーテ旭川店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '旭川で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、KOKOA GYM（ココアジム）、ファディー（FÜRDI）MEGAドン・キホーテ旭川店です（2026年6月調査時点）。' },
+  { question: '旭川のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、KOKOA GYM（ココアジム）はパーソナル1回 8,000円です（税抜・入会金10,000円＋事務手数料4,000円＋月会費2,000円いずれも税抜）。ファディー（FÜRDI）MEGAドン・キホーテ旭川店は月額8,778円〜です（税込・通い放題・入会金不要）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '旭川駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、ファディー（FÜRDI）MEGAドン・キホーテ旭川店（バス停「花咲6丁目」徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'personal gym TRIM（トリム）、KOKOA GYM（ココアジム）、ファディー（FÜRDI）MEGAドン・キホーテ旭川店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function AsahikawaPage() {
@@ -91,7 +91,7 @@ export default function AsahikawaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「旭川で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、旭川エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、旭川駅徒歩圏で「女性専用」を公式に明記するパーソナルジムは確認できませんでした（駅徒歩7分のTRIMは女性向け特化ですが「女性専用」の文言は公式未確認）。市内の女性専用ジムは中心部からやや離れたエリアにあります。</p>
@@ -155,10 +155,10 @@ export default function AsahikawaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -173,8 +173,8 @@ export default function AsahikawaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -222,7 +222,7 @@ export default function AsahikawaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

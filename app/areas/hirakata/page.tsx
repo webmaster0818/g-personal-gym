@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/hirakata/'),
   title: '【2026年7月】枚方の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】枚方のおすすめ女性向けパーソナルジム2選を比較。Amazones・BEYONDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】枚方のおすすめ女性向けパーソナルジム2選を比較しています。Amazones・BEYONDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,枚方,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダード会員 月額9,900円〜／パーソナル1回4,400円',
     trial: '無料体験・無料見学あり（入会時パーソナル4回無料）',
     features: ['女性専用', '24時間営業', 'トレーナー全員女性'],
-    description: '女性専用の24時間ジム。トレーナーは全員女性で、セルフ利用にパーソナルトレーニングを組み合わせられます（マンツーマン専門型ではなく24hジム＋パーソナル型）。',
+    description: '女性専用の24時間ジムです。トレーナーは全員女性で、セルフ利用にパーソナルトレーニングを組み合わせられます（マンツーマン専門型ではなく24hジム＋パーソナル型）。',
     access: '京阪 枚方市駅 9番出口すぐ',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['運動習慣', 'ダイエット'] },
     basicInfo: { hours: '24時間（スタッフ在籍：月・火・木・金・土 11:00〜20:00）', closed: '年中無休', facilities: ['公式サイトでご確認ください'] },
@@ -36,7 +36,7 @@ const gyms = [
     price: '回数券10回 102,300円／月額制 17,600円〜（税込）',
     trial: '無料カウンセリング＋無料体験トレーニング',
     features: ['女性トレーナー在籍', '食事指導コースあり', '手ぶらOK'],
-    description: '男女共用ですが女性トレーナーが在籍するボディメイクジム。食事指導つきコース（ライフプランニング）があり、ウェア・シューズレンタルで手ぶらOKです。',
+    description: '男女共用ですが女性トレーナーが在籍するボディメイクジムです。食事指導付きコース（ライフプランニング）があり、ウェア・シューズレンタルで手ぶらOKです。',
     access: '京阪本線 枚方市駅 徒歩1分',
     options: ['20回187,000円／30回264,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性トレーナー在籍）', purpose: ['ボディメイク', 'ダイエット'] },
@@ -45,11 +45,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '枚方で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Amazones（アマゾネス）枚方市駅前店です（2026年6月調査時点）。' },
-  { question: '枚方のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、Amazones（アマゾネス）枚方市駅前店はスタンダード会員 月額9,900円〜／パーソナル1回4,400円。BEYOND 枚方店は回数券10回 102,300円／月額制 17,600円〜（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '枚方駅から近いジムは？', answer: '駅徒歩3分以内・直結では、BEYOND 枚方店（京阪本線 枚方市駅 徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'Amazones（アマゾネス）枚方市駅前店、BEYOND 枚方店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '枚方で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Amazones（アマゾネス）枚方市駅前店です（2026年6月調査時点）。' },
+  { question: '枚方のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、Amazones（アマゾネス）枚方市駅前店はスタンダード会員 月額9,900円〜／パーソナル1回4,400円です。BEYOND 枚方店は回数券10回 102,300円／月額制 17,600円〜です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '枚方駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、BEYOND 枚方店（京阪本線 枚方市駅 徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'Amazones（アマゾネス）枚方市駅前店、BEYOND 枚方店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function HirakataPage() {
@@ -78,7 +78,7 @@ export default function HirakataPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「枚方で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、枚方エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、枚方市駅周辺に「女性専用のマンツーマン専門パーソナルジム」は公式に確認できませんでした。本ページでは女性専用24時間型（パーソナル付帯）と、女性利用に強いジムを掲載しています。</p>
@@ -141,10 +141,10 @@ export default function HirakataPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -159,8 +159,8 @@ export default function HirakataPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -208,7 +208,7 @@ export default function HirakataPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

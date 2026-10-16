@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/matsumoto/'),
   title: '【2026年7月】松本の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】松本のおすすめ女性向けパーソナルジム2選を比較。style・gymなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】松本のおすすめ女性向けパーソナルジム2選を比較しています。style・gymなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,松本,長野,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'パーソナル4回 36,500円〜／ダイエットサポート2ヶ月 155,000円〜',
     trial: 'カウンセリング&体験 60分 5,500円',
     features: ['女性専用', '女性トレーナーのみ', '姿勢改善', '整体・よもぎ蒸しオプション'],
-    description: '女性専用・女性トレーナーのみのスタジオ。姿勢改善と食事指導に加え、整体・よもぎ蒸しのオプションがあります。駐車場ありの車アクセス向け立地です。',
+    description: '女性専用・女性トレーナーのみのスタジオです。姿勢改善と食事指導に加え、整体・よもぎ蒸しのオプションがあります。駐車場ありの車アクセス向け立地です。',
     access: '松本市野溝東（南松本エリア・車アクセス前提・駐車場あり）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '姿勢改善', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -36,7 +36,7 @@ const gyms = [
     price: 'セミパーソナル（女性限定）月4回 14,000円〜／パーソナル回数券4回 26,000円〜（税込/税抜は公式サイトでご確認ください）',
     trial: '体験あり（パーソナル初回3,500円・セミパーソナル初回2,500円）',
     features: ['セミパーソナルは女性限定', '利用者の約9割が女性', '駐車場対応'],
-    description: '松本駅徒歩5分のジム。セミパーソナルは女性限定で、パーソナルも利用者の約9割が女性と公式に記載。駐車場はパーソナル用契約ガレージ、セミパーソナルは近隣パーキング代を入会後返金する仕組みです。',
+    description: '松本駅徒歩5分のジムです。セミパーソナルは女性限定で、パーソナルも利用者の約9割が女性と公式に記載しています。駐車場はパーソナル用契約ガレージ、セミパーソナルは近隣パーキング代を入会後返金する仕組みです。',
     access: '松本駅 徒歩5分',
     options: ['セミパーソナル通い放題 月48,000円', 'ビジター7,000円/回'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（セミパーソナルは女性限定・利用者約9割が女性）', purpose: ['ダイエット', 'ボディメイク', '運動習慣'] },
@@ -45,10 +45,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '松本で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、style it.（スタイルイット）です（2026年6月調査時点）。' },
-  { question: '松本のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、style it.（スタイルイット）はパーソナル4回 36,500円〜／ダイエットサポート2ヶ月 155,000円〜。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'style it.（スタイルイット）、gym Shape＋（シェイププラス）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '松本で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、style it.（スタイルイット）です（2026年6月調査時点）。' },
+  { question: '松本のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、style it.（スタイルイット）はパーソナル4回 36,500円〜／ダイエットサポート2ヶ月 155,000円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'style it.（スタイルイット）、gym Shape＋（シェイププラス）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function MatsumotoPage() {
@@ -77,7 +77,7 @@ export default function MatsumotoPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「松本で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、松本エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -137,10 +137,10 @@ export default function MatsumotoPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -155,8 +155,8 @@ export default function MatsumotoPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -204,7 +204,7 @@ export default function MatsumotoPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

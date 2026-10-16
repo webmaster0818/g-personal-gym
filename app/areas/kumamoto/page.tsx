@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kumamoto/'),
   title: '【2026年7月】熊本の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】熊本のおすすめ女性向けパーソナルジム3選を比較。プリッツジム熊本店・RITA-STYLE・BEYONDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】熊本のおすすめ女性向けパーソナルジム3選を比較しています。プリッツジム熊本店・RITA-STYLE・BEYONDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,熊本,熊本,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '月4回 14,300円／月8回 24,000円（税込・入会金22,000円）',
     trial: '初回体験あり（予約制・料金は公式サイトでご確認ください）',
     features: ['女性専用', 'セミパーソナル（最大3名）', 'マシンピラティス完備', '無料駐車場'],
-    description: '女性専用のセミパーソナルジム（最大3名・1回50分・完全予約制）。マシンピラティス完備で、食事指導はオプションで付けられます。無料駐車場があり車でも通えます。',
+    description: '女性専用のセミパーソナルジムです（最大3名・1回50分・完全予約制）。マシンピラティス完備で、食事指導はオプションで付けられます。無料駐車場があり車でも通えます。',
     access: '市電 水道町電停から徒歩10分（無料駐車場完備）',
     options: ['月6回18,900円', '食事指導オプション11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', 'ボディメイク'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: '短期集中コース1ヶ月 総額97,680円（入会金込・税込）〜',
     trial: '無料カウンセリングあり（体験トレーニングはキャンペーン時無料）',
     features: ['完全個室', '永久お食事サポート', '全額返金制度', 'シャワー・パウダールーム'],
-    description: 'ダイエット専門の完全個室マンツーマンジム。女性専用ではありませんが女性が通いやすい設計で、永久お食事サポートと全額返金制度（条件あり）が特徴です。',
+    description: 'ダイエット専門の完全個室マンツーマンジムです。女性専用ではありませんが女性が通いやすい設計で、永久お食事サポートと全額返金制度（条件あり）が特徴です。',
     access: '市電 通町筋電停から徒歩3分（上通アーケード内）',
     address: '熊本市中央区上通町7-6 マツモトレコードビル3F',
     options: ['2ヶ月151,580円／3ヶ月205,480円', '卒業生向け月額コースあり'],
@@ -50,7 +50,7 @@ const gyms = [
     price: '回数券10回 102,300円／月額マンスリー月2回 17,600円〜（税込）',
     trial: '初回限定の無料カウンセリング・体験トレーニングあり',
     features: ['女性会員60〜70%を公式明記', '食事指導あり（糖質制限なし）', '手ぶら可'],
-    description: '会員の60〜70%が女性と公式に明記するボディメイクジム。糖質制限なし・3食推奨の食事指導つき。シャワー・ロッカー・レンタルウェア完備で手ぶら可です（トレーナーは調査時点で男性のみと公式記載）。',
+    description: '会員の60〜70%が女性と公式に明記するボディメイクジムです。糖質制限なし・3食を推奨する食事指導が付いています。シャワー・ロッカー・レンタルウェア完備で手ぶら可です（トレーナーは調査時点で男性のみと公式記載）。',
     access: '市電 通町筋電停から徒歩1分',
     address: '熊本市中央区城東町2-12 アンピールパーキング上通り2F',
     options: ['20回187,000円／30回264,000円', '月4回35,200円／月8回69,300円'],
@@ -60,11 +60,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '熊本で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）です（2026年6月調査時点）。' },
-  { question: '熊本のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）は月4回 14,300円／月8回 24,000円（税込・入会金22,000円）。RITA-STYLE 熊本上通店は短期集中コース1ヶ月 総額97,680円（入会金込・税込）〜。BEYOND 熊本店は回数券10回 102,300円／月額マンスリー月2回 17,600円〜（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '熊本駅から近いジムは？', answer: '駅徒歩3分以内・直結では、RITA-STYLE 熊本上通店（市電 通町筋電停から徒歩3分）、BEYOND 熊本店（市電 通町筋電停から徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'RITA-STYLE 熊本上通店、BEYOND 熊本店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '熊本で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）です（2026年6月調査時点）。' },
+  { question: '熊本のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）は月4回 14,300円／月8回 24,000円です（税込・入会金22,000円）。RITA-STYLE 熊本上通店は短期集中コース1ヶ月 総額97,680円（入会金込・税込）〜です。BEYOND 熊本店は回数券10回 102,300円／月額マンスリー月2回 17,600円〜です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '熊本駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、RITA-STYLE 熊本上通店（市電 通町筋電停から徒歩3分）、BEYOND 熊本店（市電 通町筋電停から徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'RITA-STYLE 熊本上通店、BEYOND 熊本店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function KumamotoPage() {
@@ -93,7 +93,7 @@ export default function KumamotoPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「熊本で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、熊本エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -158,10 +158,10 @@ export default function KumamotoPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -176,8 +176,8 @@ export default function KumamotoPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -225,7 +225,7 @@ export default function KumamotoPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/jiyugaoka/'),
   title: '【2026年7月】自由が丘の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】自由が丘のおすすめ女性専用パーソナルジム4選を徹底比較。UNDEUX SUPERBODY・リボーンマイセルフ・NICOなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】自由が丘のおすすめ女性専用パーソナルジム4選を比較しています。UNDEUX SUPERBODY・リボーンマイセルフ・NICOなど人気ジムの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,自由が丘,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '駅徒歩1分', '宅配食無料', '管理栄養士監修', '目標達成率96%'],
-    description: '自由が丘駅徒歩1分の好立地。集中コース終了後の目標体重達成率96%を誇る女性専用パーソナルジム。管理栄養士監修の糖質オフ宅配食20食が追加料金なしで付く。',
+    description: '自由が丘駅徒歩1分の好立地です。集中コース終了後の目標体重達成率96%を誇る女性専用パーソナルジムです。管理栄養士監修の糖質オフ宅配食20食が追加料金なしで付きます。',
     access: '東急「自由が丘駅」徒歩1分',
     address: '東京都目黒区自由が丘（自由が丘駅徒歩1分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプラン。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['糖質オフ宅配食20食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
@@ -39,10 +39,10 @@ const gyms = [
     price: '入会金22,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', 'キッズスペース', '産後ダイエット', '自由が丘駅近'],
-    description: '日本初の女性専用ダイエットジム。トレーナーも全員女性で、キッズスペース（託児所）併設。産後ママも安心して通える環境。自由が丘駅から徒歩4分。',
+    description: '日本初の女性専用ダイエットジムです。トレーナーも全員女性で、キッズスペース（託児所）併設しています。産後ママも安心して通える環境です。自由が丘駅から徒歩4分です。',
     access: '東急「自由が丘駅」南口 徒歩4分',
     address: '東京都世田谷区奥沢6-33-14 第一大塚ビル1階',
-    popularPlan: { name: 'ダイエットコース', description: '女性トレーナーによるマンツーマン指導。産後ダイエットコースも用意。', price: '入会金22,000円＋コース料金' },
+    popularPlan: { name: 'ダイエットコース', description: '女性トレーナーによるマンツーマン指導します。産後ダイエットコースも用意しています。', price: '入会金22,000円＋コース料金' },
     options: ['ウェアレンタル無料', 'キッズスペース完備', '産後ダイエットコース', 'ブライダルダイエットコース'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', '産後ダイエット', 'ブライダル', '部分痩せ'] },
     basicInfo: { hours: '平日10:00〜22:00／土日祝9:00〜20:00', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'キッズスペース', 'ウェアレンタル'] },
@@ -52,10 +52,10 @@ const gyms = [
     price: '月4回 35,200円〜（税込）',
     trial: '体験レッスンあり',
     features: ['女性専門', '加圧トレーニング', 'ピラティス', 'お子様連れOK', 'アットホーム'],
-    description: '女性のボディメイクに特化した自由が丘のパーソナルジム。加圧トレーニングやピラティスなど多彩なプログラムを提供。お子様連れOKでママにも人気。',
+    description: '女性のボディメイクに特化した自由が丘のパーソナルジムです。加圧トレーニングやピラティスなど多彩なプログラムを提供しています。お子様連れOKでママにも人気です。',
     access: '東急「自由が丘駅」徒歩3分',
     address: '東京都目黒区自由が丘（自由が丘駅徒歩3分）',
-    popularPlan: { name: '月4回プラン', description: '加圧トレーニング＋ピラティスの組み合わせ可能なプラン。', price: '月4回 35,200円〜（税込）' },
+    popularPlan: { name: '月4回プラン', description: '加圧トレーニング＋ピラティスの組み合わせ可能なプランです。', price: '月4回 35,200円〜（税込）' },
     options: ['加圧トレーニング', 'マシンピラティス', 'お子様連れOK', '食事アドバイス'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善', '産後ケア'] },
     basicInfo: { hours: '9:00〜21:00', closed: '日曜', facilities: ['トレーニングルーム', 'ロッカー'] },
@@ -66,10 +66,10 @@ const gyms = [
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
-    description: '米国発のAIパーソナルジム。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
+    description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
     access: '「自由が丘」駅周辺',
     address: '自由が丘エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニング。月額制で継続しやすい。', price: '月額制（プラン・店舗により異なる）' },
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制で継続しやすいです。', price: '月額制（プラン・店舗により異なる）' },
     options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
     basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
@@ -77,16 +77,16 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '自由が丘で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、リボーンマイセルフが自由が丘で人気の女性専用パーソナルジムです。駅近ならUNDEUX（徒歩1分）、産後ママならリボーンマイセルフ（キッズスペース完備）がおすすめ。' },
-  { question: '自由が丘のパーソナルジムの料金相場は？', answer: '自由が丘の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円。月額制ならNICOの月4回35,200円〜も人気。' },
-  { question: '自由が丘駅から最も近いジムは？', answer: 'UNDEUX SUPERBODY自由が丘スタジオが徒歩1分で最も駅近。NICO自由が丘は徒歩3分、リボーンマイセルフは徒歩4分です。' },
-  { question: '子連れで通えるジムは？', answer: 'リボーンマイセルフ自由が丘店はキッズスペース併設。NICOもお子様連れOK。自由が丘は子連れ対応のジムが充実しています。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施。NICOも体験レッスンあり。' },
-  { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても安心。自由が丘のジムはアットホームな雰囲気が多く、初めての方も通いやすいです。' },
-  { question: '自由が丘はどんな雰囲気のエリア？', answer: '自由が丘はおしゃれなカフェやスイーツ店が並ぶ落ち着いた街。30〜40代の女性に人気のエリアで、トレーニング前後にカフェでリフレッシュするのもおすすめです。' },
-  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは管理栄養士監修の宅配食20食が無料。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。リボーンマイセルフも食事指導が充実しています。' },
-  { question: 'ピラティスも受けたい場合は？', answer: 'NICOは加圧トレーニングとピラティスを組み合わせたプログラムを提供。筋トレとピラティスの両方を受けたい方におすすめです。' },
-  { question: 'リバウンド防止のサポートがあるジムは？', answer: 'エクササイズコーチは食習慣の改善を重視しておりリバウンドしにくい体質づくりをサポートします。' },
+  { question: '自由が丘で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、リボーンマイセルフが自由が丘で人気の女性専用パーソナルジムです。駅近ならUNDEUX（徒歩1分）、産後ママならリボーンマイセルフ（キッズスペース完備）がおすすめです。' },
+  { question: '自由が丘のパーソナルジムの料金相場はいくらですか？', answer: '自由が丘の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円です。月額制ならNICOの月4回35,200円〜も人気です。' },
+  { question: '自由が丘駅から最も近いジムはどこですか？', answer: 'UNDEUX SUPERBODY自由が丘スタジオが徒歩1分で最も駅近です。NICO自由が丘は徒歩3分、リボーンマイセルフは徒歩4分です。' },
+  { question: '子連れで通えるジムはどこですか？', answer: 'リボーンマイセルフ自由が丘店はキッズスペース併設しています。NICOもお子様連れで利用できます。自由が丘は子連れ対応のジムが充実しています。' },
+  { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施しています。NICOも体験レッスンがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても安心です。自由が丘のジムはアットホームな雰囲気が多く、初めての方も通いやすいです。' },
+  { question: '自由が丘はどんな雰囲気のエリアですか？', answer: '自由が丘はおしゃれなカフェやスイーツ店が並ぶ落ち着いた街です。30〜40代の女性に人気のエリアで、トレーニング前後にカフェでリフレッシュするのもおすすめです。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは管理栄養士監修の宅配食20食が無料です。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。リボーンマイセルフも食事指導が充実しています。' },
+  { question: 'ピラティスも受けたい場合はどうすればよいですか？', answer: 'NICOは加圧トレーニングとピラティスを組み合わせたプログラムを提供しています。筋トレとピラティスの両方を受けたい方におすすめです。' },
+  { question: 'リバウンド防止のサポートがあるジムはどこですか？', answer: 'エクササイズコーチは食習慣の改善を重視しておりリバウンドしにくい体質づくりをサポートします。' },
 ]
 
 export default function JiyugaokaPage() {
@@ -115,7 +115,7 @@ export default function JiyugaokaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「自由が丘で女性専用のパーソナルジムを探している」「おしゃれな街で通いやすいジムが知りたい」という方のために、自由が丘エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -170,12 +170,12 @@ export default function JiyugaokaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">UNDEUX 220,000円〜が最高。都心より若干落ち着いた価格帯。</p>
+                <p className="text-sm text-brand-muted">UNDEUX 220,000円〜が最高です。都心より若干落ち着いた価格帯です。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
                 <p className="text-3xl font-bold text-accent mb-2">3.5万円〜/月</p>
-                <p className="text-sm text-brand-muted">NICO 月4回35,200円〜。継続しやすい月額プランも充実。</p>
+                <p className="text-sm text-brand-muted">NICO 月4回35,200円〜です。継続しやすい月額プランも充実しています。</p>
               </div>
             </div>
           </div>
@@ -187,11 +187,11 @@ export default function JiyugaokaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">正面口と南口で雰囲気が異なる</h3>
-                <p className="text-brand-muted leading-relaxed">自由が丘駅は正面口側がメインの商業エリア、南口側は住宅街寄り。ジムの場所によって駅からのルートが異なるので、事前に確認しておきましょう。</p>
+                <p className="text-brand-muted leading-relaxed">自由が丘駅は、正面口側が主な商業エリアで、南口側は住宅街寄りです。ジムの場所によって駅からのルートが異なるので、事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">子連れ対応のジムが多い穴場エリア</h3>
-                <p className="text-brand-muted leading-relaxed">自由が丘はファミリー層も多く、キッズスペースやベビーサークルを完備したジムが充実。産後ダイエットを考えているママには特におすすめのエリアです。</p>
+                <p className="text-brand-muted leading-relaxed">自由が丘はファミリー層も多く、キッズスペースやベビーサークルを完備したジムが充実しています。産後ダイエットを考えているママには特におすすめのエリアです。</p>
               </div>
             </div>
           </div>
@@ -221,14 +221,14 @@ export default function JiyugaokaPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">自由が丘エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">駅近で通いやすさ重視ならUNDEUX SUPERBODY、産後ダイエットならリボーンマイセルフがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

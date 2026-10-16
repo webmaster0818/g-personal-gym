@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/gifu/'),
   title: '【2026年7月】岐阜の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】岐阜のおすすめ女性向けパーソナルジム3選を比較。パーソナルトレーニングジム・Amazones・Smilentなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】岐阜のおすすめ女性向けパーソナルジム3選を比較しています。パーソナルトレーニングジム・Amazones・Smilentなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,岐阜,岐阜,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '回数券4回 28,160円／通い放題 月52,800円（税込・入会金22,000円）',
     trial: '初回体験無料',
     features: ['女性専用', '完全マンツーマン', '整体・姿勢改善', '手ぶら可'],
-    description: '女性専用の完全マンツーマンジム。トレーニングに整体・姿勢改善・ストレッチを組み合わせ、食事アドバイスつき。ウェア・シューズ無料レンタルで手ぶら可です。',
+    description: '女性専用の完全マンツーマンジムです。トレーニングに整体・姿勢改善・ストレッチを組み合わせ、食事アドバイスも受けられます。ウェア・シューズ無料レンタルで手ぶら可です。',
     access: '岐阜市敷島町（岐阜駅から約2km・アクセスは公式サイトでご確認ください）',
     options: ['短期集中フルサポート220,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '姿勢改善', 'ボディメイク'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: 'スタンダード会員 月9,900円／パーソナル1回 4,400円（税込・入会時4回無料）',
     trial: '無料体験・見学あり（要予約）',
     features: ['女性専用', '24時間営業', 'トレーナー全員女性'],
-    description: '女性専用の24時間ジム。トレーナーは全員女性で、下半身マシンは地域最大級。セルフ＋パーソナルを組み合わせられます。',
+    description: '女性専用の24時間ジムです。トレーナーは全員女性で、下半身マシンは地域最大級です。セルフ＋パーソナルを組み合わせられます。',
     access: '岐阜バス「鍵屋」徒歩3分（岐阜駅から車6分・提携駐車場あり）',
     options: ['学生・シニア月7,700円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['運動習慣', 'ダイエット', '下半身痩せ'] },
@@ -49,7 +49,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください（初期費用無料キャンペーンあり）',
     trial: '体験 4,980円（キャンペーンで無料）',
     features: ['完全個室', '24時間営業（完全予約制）', '子連れOK', 'マシンピラティス併設'],
-    description: '完全個室プライベートのパーソナルジム。24時間営業（完全予約制）で子連れOK、マシンピラティス併設。コインパーキング代の負担制度もあります。',
+    description: '完全個室プライベートのパーソナルジムです。24時間営業（完全予約制）で子連れOK、マシンピラティス併設しています。コインパーキング代の負担制度もあります。',
     access: 'JR岐阜駅・名鉄岐阜駅 最寄り（徒歩分数は公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性向け要素が強い）', purpose: ['ダイエット', 'ピラティス', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -57,12 +57,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '岐阜で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、パーソナルトレーニングジム TOKIEL（トキエル）岐阜店、Amazones（アマゾネス）岐阜都通店です（2026年6月調査時点）。' },
-  { question: '岐阜のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、パーソナルトレーニングジム TOKIEL（トキエル）岐阜店は回数券4回 28,160円／通い放題 月52,800円（税込・入会金22,000円）。Amazones（アマゾネス）岐阜都通店はスタンダード会員 月9,900円／パーソナル1回 4,400円（税込・入会時4回無料）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '岐阜駅から近いジムは？', answer: '駅徒歩3分以内・直結では、Amazones（アマゾネス）岐阜都通店（岐阜バス「鍵屋」徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'パーソナルトレーニングジム TOKIEL（トキエル）岐阜店、Amazones（アマゾネス）岐阜都通店、Smilent（スミレント）パーソナルジム 岐阜加納店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'Smilent（スミレント）パーソナルジム 岐阜加納店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '岐阜で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、パーソナルトレーニングジム TOKIEL（トキエル）岐阜店、Amazones（アマゾネス）岐阜都通店です（2026年6月調査時点）。' },
+  { question: '岐阜のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、パーソナルトレーニングジム TOKIEL（トキエル）岐阜店は回数券4回 28,160円／通い放題 月52,800円です（税込・入会金22,000円）。Amazones（アマゾネス）岐阜都通店はスタンダード会員 月9,900円／パーソナル1回 4,400円です（税込・入会時4回無料）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '岐阜駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、Amazones（アマゾネス）岐阜都通店（岐阜バス「鍵屋」徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'パーソナルトレーニングジム TOKIEL（トキエル）岐阜店、Amazones（アマゾネス）岐阜都通店、Smilent（スミレント）パーソナルジム 岐阜加納店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'Smilent（スミレント）パーソナルジム 岐阜加納店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function GifuPage() {
@@ -91,7 +91,7 @@ export default function GifuPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「岐阜で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、岐阜エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、岐阜駅徒歩圏に「女性専用」を公式に確認できるパーソナルジムは見つかりませんでした。本ページでは市内の女性専用ジム（車・バスアクセス）と女性向けに強いジムを掲載しています。</p>
@@ -155,10 +155,10 @@ export default function GifuPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -173,8 +173,8 @@ export default function GifuPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -222,7 +222,7 @@ export default function GifuPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

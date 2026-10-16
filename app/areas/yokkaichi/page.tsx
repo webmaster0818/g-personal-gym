@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/yokkaichi/'),
   title: '【2026年7月】四日市の女性向けパーソナルジムおすすめ4選！料金比較',
-  description: '【2026年7月】四日市のおすすめ女性向けパーソナルジム4選を比較。CACHIE・Private・アレスコなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】四日市のおすすめ女性向けパーソナルジム4選を比較しています。CACHIE・Private・アレスコなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,四日市,三重,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '月会費ベーシック 16,280円〜／プレミアム 50,600円（パーソナル月4回付・税込）',
     trial: '無料見学あり（当日から利用可）',
     features: ['女性専用', '24時間年中無休', '個室パーソナル', '化粧台・高級アメニティ'],
-    description: '女性専用の24時間ジム。個室でのパーソナルトレーニングを提供し、化粧台・シャワー・高級アメニティ（ReFa等）完備。無料駐車場が3カ所あります。',
+    description: '女性専用の24時間ジムです。個室でのパーソナルトレーニングを提供し、化粧台・シャワー・高級アメニティ（ReFa等）を完備しています。無料駐車場が3カ所あります。',
     access: '近鉄四日市駅より車3分（無料駐車場第一〜第三あり）',
     options: ['スタンダード25,300円（パーソナル月1回付）', '追加パーソナル8,580円〜/回'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', '運動習慣'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: '月4回 29,000円／月8回 48,000円（入会金10,000円）',
     trial: '見学・カウンセリング無料／体験トレーニング5,000円',
     features: ['完全予約制マンツーマン', '女性らしいSライン作り特化', '食事指導あり', '初心者向け'],
-    description: '「女性らしいSライン作り」を掲げる初心者向けパーソナルジム。完全予約制マンツーマンで食事指導つき。駅徒歩4分・駐車場無料です。',
+    description: '「女性らしいSライン作り」を掲げる初心者向けパーソナルジムです。完全予約制のマンツーマンで、食事指導が付いています。駅徒歩4分・駐車場無料です。',
     access: '近鉄四日市駅より徒歩4分（駐車場無料）',
     options: ['ビジター50分10,000円', 'グループ体験4,000円/名'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性向けボディメイク特化を掲げる）', purpose: ['ボディメイク', 'ダイエット'] },
@@ -49,7 +49,7 @@ const gyms = [
     price: 'ボディメイク50分×16回 176,000円（税込）',
     trial: '無料カウンセリング60〜90分あり（体験は希望者のみ）',
     features: ['食べながら痩せる食事指導', '遺伝子検査プログラム', '女性の実績多数'],
-    description: '炭水化物を食べながら痩せる食事指導と遺伝子検査プログラムが特徴のパーソナルジム。女性のビフォーアフター実績が多数掲載されています。',
+    description: '炭水化物を食べながら痩せる食事指導と遺伝子検査プログラムが特徴のパーソナルジムです。女性のビフォーアフター実績が多数掲載されています。',
     access: '近鉄四日市駅より徒歩5分（駐車場無料）',
     options: ['24回224,400円／48回396,000円', 'プレミアム70分×24回316,800円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性実績多数）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -61,7 +61,7 @@ const gyms = [
     price: '回数券10回 102,300円／マンスリー 17,600円〜（税込）',
     trial: '無料体験あり（初回限定）',
     features: ['女性会員6〜7割を公式明記', '食事指導あり', '手ぶらOK'],
-    description: '会員の6〜7割が女性と公式に明記するボディメイクジム。食事指導つきコースがあり手ぶらOK・無料駐車場あり（女性トレーナーは不在と公式FAQに明記）。',
+    description: '会員の6〜7割が女性と公式に明記するボディメイクジムです。食事指導付きのコースがあり、手ぶらで通えるほか無料駐車場もあります（女性トレーナーは不在と公式FAQに明記）。',
     access: '新正駅 徒歩4分（近鉄四日市駅から徒歩15分・無料駐車場あり）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性6〜7割と公式明記）', purpose: ['ボディメイク', 'ダイエット'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -69,10 +69,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '四日市で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、CACHIE（カチエ）三重四日市店です（2026年6月調査時点）。' },
-  { question: '四日市のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、CACHIE（カチエ）三重四日市店は月会費ベーシック 16,280円〜／プレミアム 50,600円（パーソナル月4回付・税込）。Private & Personal GYM SILHOUETTE（シルエット）は月4回 29,000円／月8回 48,000円（入会金10,000円）。アレスコ（ALESCO）四日市店はボディメイク50分×16回 176,000円（税込）。BEYOND 四日市店は回数券10回 102,300円／マンスリー 17,600円〜（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'CACHIE（カチエ）三重四日市店、Private & Personal GYM SILHOUETTE（シルエット）、アレスコ（ALESCO）四日市店、BEYOND 四日市店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '四日市で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、CACHIE（カチエ）三重四日市店です（2026年6月調査時点）。' },
+  { question: '四日市のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、CACHIE（カチエ）三重四日市店は月会費ベーシック 16,280円〜／プレミアム 50,600円です（パーソナル月4回付・税込）。Private & Personal GYM SILHOUETTE（シルエット）は月4回 29,000円／月8回 48,000円です（入会金10,000円）。アレスコ（ALESCO）四日市店はボディメイク50分×16回 176,000円です（税込）。BEYOND 四日市店は回数券10回 102,300円／マンスリー 17,600円〜です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'CACHIE（カチエ）三重四日市店、Private & Personal GYM SILHOUETTE（シルエット）、アレスコ（ALESCO）四日市店、BEYOND 四日市店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function YokkaichiPage() {
@@ -101,7 +101,7 @@ export default function YokkaichiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「四日市で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、四日市エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -163,10 +163,10 @@ export default function YokkaichiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -181,8 +181,8 @@ export default function YokkaichiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -230,7 +230,7 @@ export default function YokkaichiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/takadanobaba/'),
   title: '【2026年7月】高田馬場の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】高田馬場のおすすめ女性向けパーソナルジム3選を比較。Diet・パーソナルランド・Kireiなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】高田馬場のおすすめ女性向けパーソナルジム3選を比較しています。Diet・パーソナルランド・Kireiなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,高田馬場,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'コース料金は公式サイトでご確認ください',
     trial: '無料カウンセリング20分（毎月先着）＋体験＆面談60分 5,500円（税込）',
     features: ['40〜50代女性の支持を明記', '骨格タイプ別プログラム', '週1回でOK', '食事指導あり'],
-    description: '指導歴20年以上・延べ4万人超の実績を持つマンツーマンジム。骨格タイプ別プログラムで「女性らしいラインづくり」に特化し、40〜50代女性の支持を公式に明記しています。',
+    description: '指導歴20年以上・延べ4万人超の実績を持つマンツーマンジムです。骨格タイプ別プログラムで「女性らしいラインづくり」に特化し、40〜50代女性の支持を公式に明記しています。',
     access: '高田馬場駅 徒歩1分（BIGBOX高田馬場4F）',
     userProfile: { ageRange: '40代〜50代の利用を公式明記', genderRatio: '男女共用（40〜50代女性の支持を明記）', purpose: ['ボディメイク', 'ダイエット', '姿勢改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -36,7 +36,7 @@ const gyms = [
     price: '月2回（30分）9,900円〜／月8回（60分）54,948円〜（税込）',
     trial: '初回体験60分 2,200円（通常8,800円・当日入会で無料）／カウンセリングのみ無料',
     features: ['利用者は女性中心と公式記載', 'マシンピラティス×筋トレ', 'キッズスペース完備', '初心者8割以上'],
-    description: 'マシンピラティスと筋トレを併用できるパーソナルジム。利用者は女性中心と公式に記載され、キッズスペース完備で産後ママにも対応。会員の8割以上が初心者です。',
+    description: 'マシンピラティスと筋トレを併用できるパーソナルジムです。利用者は女性中心と公式に記載され、キッズスペース完備で産後ママにも対応しています。会員の8割以上が初心者です。',
     access: '高田馬場駅・下落合駅・目白駅が徒歩圏（新宿区下落合2-6-21）',
     options: ['月4回（60分）30,628円〜', '食事指導あり'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（利用者は女性中心と公式記載）', purpose: ['ダイエット', 'ピラティス', '産後ダイエット'] },
@@ -48,7 +48,7 @@ const gyms = [
     price: '月4回 22,000円／通い放題 49,500円（税込・入会金16,500円）',
     trial: '体験レッスン5,500円（体験当日入会で無料）',
     features: ['女性専用', 'セミパーソナル（最大2名）', '手ぶら可', 'セルフトレーニング無料付き'],
-    description: '女性専用のセミパーソナルジム（トレーナー1名:最大2名・個別ブース）。ウェア・シューズ・タオル・水無料で手ぶら可、セルフトレーニング無料利用つき。高田馬場からは東西線1駅です。',
+    description: '女性専用のセミパーソナルジムです（トレーナー1名:最大2名・個別ブース）。ウェア・シューズ・タオル・水が無料で手ぶらで通えるほか、セルフトレーニングも無料で利用できます。高田馬場からは東西線1駅です。',
     access: '東西線 早稲田駅 徒歩1分（高田馬場から東西線1駅）',
     address: '東京都新宿区馬場下町61-4 長谷部第11ビル5F',
     options: ['月6回29,700円／月8回36,300円', '公式LINEで予約'],
@@ -58,12 +58,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '高田馬場で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Kirei by QUALITAS 早稲田店です（2026年6月調査時点）。' },
-  { question: '高田馬場のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、パーソナルランドは月2回（30分）9,900円〜／月8回（60分）54,948円〜（税込）。Kirei by QUALITAS 早稲田店は月4回 22,000円／通い放題 49,500円（税込・入会金16,500円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '高田馬場駅から近いジムは？', answer: '駅徒歩3分以内・直結では、Diet Space 高田馬場（高田馬場駅 徒歩1分）、Kirei by QUALITAS 早稲田店（東西線 早稲田駅 徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'Diet Space 高田馬場、パーソナルランド、Kirei by QUALITAS 早稲田店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'パーソナルランドが子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '高田馬場で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Kirei by QUALITAS 早稲田店です（2026年6月調査時点）。' },
+  { question: '高田馬場のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、パーソナルランドは月2回（30分）9,900円〜／月8回（60分）54,948円〜です（税込）。Kirei by QUALITAS 早稲田店は月4回 22,000円／通い放題 49,500円です（税込・入会金16,500円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '高田馬場駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、Diet Space 高田馬場（高田馬場駅 徒歩1分）、Kirei by QUALITAS 早稲田店（東西線 早稲田駅 徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'Diet Space 高田馬場、パーソナルランド、Kirei by QUALITAS 早稲田店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'パーソナルランドが子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function TakadanobabaPage() {
@@ -92,7 +92,7 @@ export default function TakadanobabaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「高田馬場で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、高田馬場エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、高田馬場駅徒歩圏に「完全女性専用のマンツーマンパーソナルジム」は公式に確認できませんでした。本ページでは女性向けに強いジムと、隣駅・早稲田の女性専用セミパーソナルを掲載しています。</p>
@@ -156,10 +156,10 @@ export default function TakadanobabaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -174,8 +174,8 @@ export default function TakadanobabaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -223,7 +223,7 @@ export default function TakadanobabaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

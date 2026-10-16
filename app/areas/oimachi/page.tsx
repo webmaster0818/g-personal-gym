@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/oimachi/'),
   title: '【2026年7月】大井町の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】大井町のおすすめ女性向けパーソナルジム3選を比較。BODY・かたぎり塾・UBTYなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】大井町のおすすめ女性向けパーソナルジム3選を比較しています。BODY・かたぎり塾・UBTYなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,大井町,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください',
     trial: '体験予約あり（公式サイトから）',
     features: ['女性専用', '完全個室', '女性トレーナーのみ', 'ピラティス対応'],
-    description: '女性専用・完全個室で、女性トレーナーのみ在籍のパーソナルジム。パーソナルトレーニングとピラティスに対応し、短期集中ダイエット・産後リカバリー・更年期ケアまでカバー。LINE食事サポートがあります。',
+    description: '女性専用・完全個室で、女性トレーナーのみ在籍のパーソナルジムです。パーソナルトレーニングとピラティスに対応し、短期集中ダイエット・産後リカバリー・更年期ケアまでカバーしています。LINE食事サポートがあります。',
     access: 'JR・東急大井町線 大井町駅から徒歩3分',
     options: ['LINE食事サポート', '産後リカバリー・更年期ケア対応'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '産後ダイエット', '更年期ケア'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: '月4回 33,000円（税込）',
     trial: '無料体験トレーニングあり（原則1回）',
     features: ['月額制', '完全個室', '医師監修', '手ぶらOK'],
-    description: '完全個室マンツーマンの月額制ジム。医師監修「綺麗なダイエット」・理学療法士監修プログラムで、LINE食事指導つき。ウェア・シューズ・タオル・水・プロテイン無料です。',
+    description: '完全個室マンツーマンの月額制ジムです。医師監修「綺麗なダイエット」・理学療法士監修のプログラムで、LINEでの食事指導が付いています。ウェア・シューズ・タオル・水・プロテイン無料です。',
     access: 'JR京浜東北線・東急大井町線 大井町駅 徒歩2分',
     address: '東京都品川区東大井5-1-9 1階',
     options: ['月8回59,400円', '無期限チケット8,800円/回', 'LINE食事サポート2週間11,000円'],
@@ -50,7 +50,7 @@ const gyms = [
     price: '-3kg〜確約コース 78,000円〜（目標体重まで回数無制限・追加料金なし）',
     trial: '無料カウンセリングあり',
     features: ['女性専用エリア完備', '回数無制限', '食事指導あり', 'サウナ完備'],
-    description: '目標体重まで回数無制限・追加料金なしの確約型ジム。女性専用ではありませんが女性専用エリアを完備し、レンタルウェア＆シューズで手ぶら可。サウナも使えます。',
+    description: '目標体重まで回数無制限・追加料金なしの確約型ジムです。女性専用ではありませんが女性専用エリアを完備し、レンタルウェア＆シューズで手ぶらで通えます。サウナも使えます。',
     access: 'JR大井町駅 東口より徒歩1分',
     address: '東京都品川区東大井5-2-1 おおい元気館4F',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性専用エリアあり）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -59,11 +59,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '大井町で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、BODY TERRACE（ボディテラス）大井町です（2026年6月調査時点）。' },
-  { question: '大井町のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、かたぎり塾 大井町店は月4回 33,000円（税込）。UBTY（ユービティ）大井町店は-3kg〜確約コース 78,000円〜（目標体重まで回数無制限・追加料金なし）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '大井町駅から近いジムは？', answer: '駅徒歩3分以内・直結では、BODY TERRACE（ボディテラス）大井町（JR・東急大井町線 大井町駅から徒歩3分）、かたぎり塾 大井町店（JR京浜東北線・東急大井町線 大井町駅 徒歩2分）、UBTY（ユービティ）大井町店（JR大井町駅 東口より徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'かたぎり塾 大井町店、UBTY（ユービティ）大井町店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '大井町で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、BODY TERRACE（ボディテラス）大井町です（2026年6月調査時点）。' },
+  { question: '大井町のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、かたぎり塾 大井町店は月4回 33,000円です（税込）。UBTY（ユービティ）大井町店は-3kg〜確約コース 78,000円〜です（目標体重まで回数無制限・追加料金なし）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '大井町駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、BODY TERRACE（ボディテラス）大井町（JR・東急大井町線 大井町駅から徒歩3分）、かたぎり塾 大井町店（JR京浜東北線・東急大井町線 大井町駅 徒歩2分）、UBTY（ユービティ）大井町店（JR大井町駅 東口より徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'かたぎり塾 大井町店、UBTY（ユービティ）大井町店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function OimachiPage() {
@@ -92,7 +92,7 @@ export default function OimachiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「大井町で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、大井町エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -157,10 +157,10 @@ export default function OimachiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -175,8 +175,8 @@ export default function OimachiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -224,7 +224,7 @@ export default function OimachiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

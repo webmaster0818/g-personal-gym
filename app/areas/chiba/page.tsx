@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/chiba/'),
   title: '【2026年7月】千葉の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】千葉のおすすめ女性専用パーソナルジム4選を徹底比較。OUTLINE・UNDEUX SUPERBODY・Reborn Myselfなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】千葉のおすすめ女性専用パーソナルジム4選を比較しています。OUTLINE・UNDEUX SUPERBODY・Reborn Myselfなど人気ジムの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,千葉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '生涯無料アフターサポートが最大の特徴。千葉駅から徒歩圏内の好立地。完全個室・ベビーサークル完備で産後ママも安心。千葉エリアでコスパ重視なら最有力候補。',
+    description: '生涯無料アフターサポートが最大の特徴です。千葉駅から徒歩圏内の好立地です。完全個室・ベビーサークル完備で産後ママも安心です。千葉エリアでコスパ重視なら最有力候補です。',
     access: 'JR「千葉駅」徒歩5分',
     address: '千葉県千葉市中央区（千葉駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
+    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニングです。卒業後も生涯無料のアフターサポートを受けられます。', price: '16回 184,800円〜（税込）' },
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
@@ -39,10 +39,10 @@ const gyms = [
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '千葉駅近'],
-    description: '糖質オフ宅配食を無料提供する女性専用パーソナルジム。トレーニングと食事の両面から総合サポート。千葉駅からアクセス良好。パウダールーム・基礎化粧品完備。',
+    description: '糖質オフ宅配食を無料提供する女性専用パーソナルジムです。トレーニングと食事の両面から総合サポートしています。千葉駅からアクセス良好です。パウダールーム・基礎化粧品を完備しています。',
     access: 'JR「千葉駅」徒歩5分',
     address: '千葉県千葉市中央区（千葉駅徒歩5分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプラン。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
@@ -53,10 +53,10 @@ const gyms = [
     price: '入会金22,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績', '産後ダイエット対応', 'ブライダルコース'],
-    description: '日本初の女性専用ダイエットジム。トレーナーも全員女性。2万人以上の指導実績に基づくオリジナルメソッド。千葉エリアで女性トレーナーのみのジムを探している方に最適。',
+    description: '日本初の女性専用ダイエットジムです。トレーナーも全員女性です。2万人以上の指導実績に基づくオリジナルメソッドです。千葉エリアで女性トレーナーのみのジムを探している方に最適です。',
     access: 'JR「千葉駅」徒歩3分',
     address: '千葉県千葉市中央区富士見2-5-15 塚本千葉第三ビル3階',
-    popularPlan: { name: 'ダイエットコース', description: '2万人以上の指導実績に基づくオリジナルメソッド。女性トレーナーによるマンツーマン指導。', price: '入会金22,000円＋コース料金' },
+    popularPlan: { name: 'ダイエットコース', description: '2万人以上の指導実績に基づくオリジナルメソッドです。女性トレーナーによるマンツーマン指導します。', price: '入会金22,000円＋コース料金' },
     options: ['ウェアレンタル無料', '産後ダイエットコース', 'ブライダルダイエットコース', '部分痩せコース'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', 'ブライダル', '産後ダイエット', '部分痩せ'] },
     basicInfo: { hours: '平日10:00〜22:00／土祝9:00〜20:00', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'ウェアレンタル'] },
@@ -67,10 +67,10 @@ const gyms = [
     price: '2ヶ月16回 257,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '完全個室', '深夜営業', '3食食べるダイエット', '全額返金保証'],
-    description: '「3食食べて痩せる」がコンセプトの大手パーソナルジム。千葉駅近くで深夜24時まで営業。全額返金保証付きで安心して始められる。',
+    description: '「3食食べて痩せる」がコンセプトの大手パーソナルジムです。千葉駅近くで深夜24時まで営業しています。全額返金保証付きで安心して始められます。',
     access: 'JR「千葉駅」徒歩5分',
     address: '千葉県千葉市中央区富士見2-9-13 WTC千葉富士見ビル9F',
-    popularPlan: { name: '2ヶ月コース', description: '3食食べながら理想の体型を目指す。マンツーマン指導16回。', price: '2ヶ月16回 257,400円〜（税込）' },
+    popularPlan: { name: '2ヶ月コース', description: '3食食べながら理想の体型を目指します。マンツーマン指導16回です。', price: '2ヶ月16回 257,400円〜（税込）' },
     options: ['全額返金保証', 'ウェアレンタル無料', '深夜24時まで営業', '食事指導付き'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体力向上', '健康維持'] },
     basicInfo: { hours: '7:00〜24:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -79,10 +79,10 @@ const gyms = [
 
 const faqs = [
   { question: '千葉で女性専用のパーソナルジムはありますか？', answer: 'はい、千葉エリアにはOUTLINE、UNDEUX SUPERBODY、リボーンマイセルフなど複数の女性専用パーソナルジムがあります。いずれも千葉駅から徒歩圏内です。' },
-  { question: '千葉のパーソナルジムの料金相場は？', answer: '千葉エリアの料金はOUTLINE（184,800円〜）からUNDEUX SUPERBODY（2ヶ月220,000円〜）まで。OUTLINEがコスパに優れています。' },
-  { question: '千葉で女性トレーナーのみのジムは？', answer: 'リボーンマイセルフ千葉店はトレーナーも全員女性。男性トレーナーに抵抗がある方でも安心して通えます。2万人以上の指導実績があります。' },
-  { question: '千葉で食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料提供。リボーンマイセルフも食事指導付き。科学的な食事サポートを求めるなら24/7 Workoutもおすすめ。' },
-  { question: '千葉で子連れで通えるジムは？', answer: 'OUTLINE千葉店はベビーサークル完備で子連れOK。' },
+  { question: '千葉のパーソナルジムの料金相場はいくらですか？', answer: '千葉エリアの料金は、OUTLINE（184,800円〜）からUNDEUX SUPERBODY（2ヶ月220,000円〜）までの幅があります。OUTLINEがコスパに優れています。' },
+  { question: '千葉で女性トレーナーのみのジムはどこですか？', answer: 'リボーンマイセルフ千葉店はトレーナーも全員女性です。男性トレーナーに抵抗がある方でも安心して通えます。2万人以上の指導実績があります。' },
+  { question: '千葉で食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料で提供しています。リボーンマイセルフも食事指導が付いています。科学的な食事サポートを求めるなら24/7 Workoutもおすすめです。' },
+  { question: '千葉で子連れで通えるジムはどこですか？', answer: 'OUTLINE千葉店はベビーサークルを完備しており、お子様連れでも利用できます。' },
 ]
 
 export default function ChibaPage() {
@@ -111,7 +111,7 @@ export default function ChibaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「千葉で女性専用のパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、千葉エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -143,7 +143,7 @@ export default function ChibaPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">千葉エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、食事管理重視ならUNDEUX SUPERBODY、女性トレーナー希望ならリボーンマイセルフがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
@@ -169,7 +169,7 @@ export default function ChibaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

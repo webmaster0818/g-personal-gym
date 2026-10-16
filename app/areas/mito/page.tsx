@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/mito/'),
   title: '【2026年7月】水戸の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】水戸のおすすめ女性向けパーソナルジム3選を比較。ファディー・BEYOND・Slimitなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】水戸のおすすめ女性向けパーソナルジム3選を比較しています。ファディー・BEYOND・Slimitなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,水戸,茨城,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '月額7,678円（税込・通い放題）',
     trial: '無料体験あり',
     features: ['女性専用', 'AIパーソナル', '予約不要通い放題', '駐車場あり'],
-    description: '女性専用のAIフィットネス型パーソナルジム。月額7,678円の通い放題・予約不要で、朝5時から23時まで利用できます（カード発行3,300円＋事務手数料5,500円別途）。',
+    description: '女性専用のAIフィットネス型パーソナルジムです。月額7,678円の通い放題・予約不要で、朝5時から23時まで利用できます（カード発行3,300円＋事務手数料5,500円別途）。',
     access: '水戸市笠原町1102-5（水戸駅から車約15分・バス停徒歩5分・駐車場あり）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '運動習慣'] },
     basicInfo: { hours: '5:00〜23:00（一部無人）', closed: '公式サイトでご確認ください', facilities: ['駐車場あり'] },
@@ -36,7 +36,7 @@ const gyms = [
     price: '入会金無料（コース料金は公式サイトでご確認ください・分割月々4,300円〜）',
     trial: '体験トレーニングあり（通常60分11,000円→無料）',
     features: ['女性比率約7割', '女性トレーナー在籍', 'LINE食事管理コースあり'],
-    description: '会員比率は男3:女7と女性が多いボディメイクジム。女性トレーナーが在籍し、LINE食事管理つきのライフプランニングコースがあります。',
+    description: '会員比率は男3:女7と女性が多いボディメイクジムです。女性トレーナーが在籍し、LINE食事管理付きのライフプランニングコースがあります。',
     access: '水戸駅 徒歩14分',
     address: '水戸市白梅2-2-12',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性約7割）', purpose: ['ボディメイク', 'ダイエット'] },
@@ -48,7 +48,7 @@ const gyms = [
     price: 'コース料金は公式サイトでご確認ください（入会金30,000円・キャンペーンで0円）',
     trial: '無料カウンセリング・体験6,000円',
     features: ['女性比率約8割', '完全個室', '食事アドバイスあり'],
-    description: '会員比率は男2:女8と女性中心の完全個室パーソナルジム。食事アドバイスつきです。',
+    description: '会員比率は男2:女8と女性中心の完全個室パーソナルジムです。食事アドバイス付きです。',
     access: '水戸市笠原町1527-18（駅徒歩圏外・アクセスは公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性約8割）', purpose: ['ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -56,10 +56,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '水戸で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、ファディー（FÜRDI）水戸千波店です（2026年6月調査時点）。' },
-  { question: '水戸のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、ファディー（FÜRDI）水戸千波店は月額7,678円（税込・通い放題）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'ファディー（FÜRDI）水戸千波店、BEYOND 水戸店、Slimit（スリミット）水戸は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '水戸で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、ファディー（FÜRDI）水戸千波店です（2026年6月調査時点）。' },
+  { question: '水戸のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、ファディー（FÜRDI）水戸千波店は月額7,678円です（税込・通い放題）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'ファディー（FÜRDI）水戸千波店、BEYOND 水戸店、Slimit（スリミット）水戸は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function MitoPage() {
@@ -88,7 +88,7 @@ export default function MitoPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「水戸で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、水戸エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、水戸駅徒歩圏に「完全女性専用」のパーソナルジムは公式に確認できませんでした。本ページでは車アクセスの女性専用AI型と、女性比率の高いジムを掲載しています。</p>
@@ -156,10 +156,10 @@ export default function MitoPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -174,8 +174,8 @@ export default function MitoPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -223,7 +223,7 @@ export default function MitoPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shimokitazawa/'),
   title: '【2026年7月】下北沢の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】下北沢のおすすめ女性向けパーソナルジム2選を比較。UNDEUX・lotusなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】下北沢のおすすめ女性向けパーソナルジム2選を比較しています。UNDEUX・lotusなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,下北沢,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験トレーニング約60分 0円（カウンセリング＋InBody計測＋目標設定）',
     features: ['女性専用', 'マシンピラティス完備', '管理栄養士の食事指導', '手ぶらOK'],
-    description: '女性専用パーソナルジム。マシンピラティス完備で、管理栄養士による食事指導（無料相談）つき。レンタル無料で手ぶらで通えます。',
+    description: '女性専用パーソナルジムです。マシンピラティスを完備し、管理栄養士による食事指導（無料相談）が付いています。レンタル無料で手ぶらで通えます。',
     access: '下北沢駅より徒歩4分',
     address: '東京都世田谷区北沢2-1-9 KIE下北沢ビル2階',
     options: ['月4回30,300円／月8回60,600円', 'コミットプラン月6回79,200円（宅配食30食付）', '継続割で最大10%割引'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '美ボディダイエット加圧コース 初回16回 136,000円（女性専用価格）',
     trial: '体験予約あり（体験当日入会で入会金11,000円無料）',
     features: ['マンツーマン', '加圧トレーニング', 'ヨガ併用'],
-    description: '加圧トレーニングとヨガをマンツーマンで受けられるスタジオ。初回割引コースに「女性専用価格」が設定されるなど女性向けに強い店舗です（店舗全体が女性専用かは公式に明記がありません）。',
+    description: '加圧トレーニングとヨガをマンツーマンで受けられるスタジオです。初回割引コースに「女性専用価格」が設定されるなど女性向けに強い店舗です（店舗全体が女性専用かは公式に明記がありません）。',
     access: '京王井の頭線 下北沢駅西口より徒歩3分',
     address: '東京都世田谷区代田6-4-19 レーヴ下北沢101',
     options: ['ゆるりと加圧コース 初回10回65,000円', 'ヨガマンツーマン60分 初回10回65,000円'],
@@ -48,12 +48,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '下北沢で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 下北沢スタジオです（2026年6月調査時点）。' },
-  { question: '下北沢のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 下北沢スタジオはスタンダードプラン月2回 21,300円〜（税込）。lotus moon studio 下北沢は美ボディダイエット加圧コース 初回16回 136,000円（女性専用価格）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '下北沢駅から近いジムは？', answer: '駅徒歩3分以内・直結では、lotus moon studio 下北沢（京王井の頭線 下北沢駅西口より徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 下北沢スタジオ、lotus moon studio 下北沢は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: '掲載中のジムで子連れ対応を公式に案内しているところは確認できていません。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '下北沢で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 下北沢スタジオです（2026年6月調査時点）。' },
+  { question: '下北沢のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 下北沢スタジオはスタンダードプラン月2回 21,300円〜です（税込）。lotus moon studio 下北沢は美ボディダイエット加圧コース 初回16回 136,000円です（女性専用価格）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '下北沢駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、lotus moon studio 下北沢（京王井の頭線 下北沢駅西口より徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 下北沢スタジオ、lotus moon studio 下北沢は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: '掲載中のジムで、子連れ対応を公式に案内しているジムは確認できませんでした。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function ShimokitazawaPage() {
@@ -82,7 +82,7 @@ export default function ShimokitazawaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「下北沢で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、下北沢エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -143,10 +143,10 @@ export default function ShimokitazawaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -161,8 +161,8 @@ export default function ShimokitazawaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -210,7 +210,7 @@ export default function ShimokitazawaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

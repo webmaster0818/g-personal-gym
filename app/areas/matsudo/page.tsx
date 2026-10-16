@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/matsudo/'),
   title: '【2026年7月】松戸の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】松戸のおすすめ女性向けパーソナルジム2選を比較。KIKKAパーソナルジム・こつこつカメさん。など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】松戸のおすすめ女性向けパーソナルジム2選を比較しています。KIKKAパーソナルジム・こつこつカメさん。など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,松戸,千葉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください（回数券・月額定額制あり）',
     trial: '無料カウンセリング30分／体験トレーニング2,500円〜',
     features: ['女性限定', '女性トレーナー', '完全個室', 'ラジオ波痩身マシン', '手ぶらOK'],
-    description: '女性限定・女性トレーナーによるマンツーマンジム。食事指導×筋トレ×ラジオ波痩身マシンを組み合わせ、完全個室予約制・シャワー完備で手ぶらOKです。',
+    description: '女性限定・女性トレーナーによるマンツーマンジムです。食事指導×筋トレ×ラジオ波痩身マシンを組み合わせ、完全個室予約制・シャワー完備で手ぶらOKです。',
     access: 'JR松戸駅西口 徒歩4分',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -36,7 +36,7 @@ const gyms = [
     price: '入会金11,000円＋事務手数料3,300円（税込・コース料金は公式サイトでご確認ください）',
     trial: '初回体験 3,850円（税込・60〜90分、当日入会で入会金無料）',
     features: ['女性専用', '完全個室', '加圧トレーニング専門', '0歳から子連れOK'],
-    description: '女性専用・完全個室の加圧トレーニング専門スタジオ（加圧ピラティスも）。0歳から子連れOKで、産後ママに対応しています。',
+    description: '女性専用・完全個室の加圧トレーニング専門スタジオです（加圧ピラティスも）。0歳から子連れOKで、産後ママに対応しています。',
     access: '松戸駅西口 徒歩2分',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -44,11 +44,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '松戸で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、こつこつカメさん。です（2026年6月調査時点）。' },
-  { question: '松戸駅から近いジムは？', answer: '駅徒歩3分以内・直結では、こつこつカメさん。（松戸駅西口 徒歩2分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'KIKKAパーソナルジム、こつこつカメさん。は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'こつこつカメさん。が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '松戸で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、こつこつカメさん。です（2026年6月調査時点）。' },
+  { question: '松戸駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、こつこつカメさん。（松戸駅西口 徒歩2分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'KIKKAパーソナルジム、こつこつカメさん。は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'こつこつカメさん。が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function MatsudoPage() {
@@ -77,7 +77,7 @@ export default function MatsudoPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「松戸で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、松戸エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -141,10 +141,10 @@ export default function MatsudoPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -159,8 +159,8 @@ export default function MatsudoPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -208,7 +208,7 @@ export default function MatsudoPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

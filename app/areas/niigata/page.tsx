@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/niigata/'),
   title: '【2026年7月】新潟の女性向けパーソナルジムおすすめ4選！料金比較',
-  description: '【2026年7月】新潟のおすすめ女性向けパーソナルジム4選を比較。エマ・24/7ピラティス・BEYONDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】新潟のおすすめ女性向けパーソナルジム4選を比較しています。エマ・24/7ピラティス・BEYONDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,新潟,新潟,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '料金は公式サイト・問い合わせでご確認ください',
     trial: '申込みは問い合わせフォーム／LINE公式から（体験の有無は公式サイトでご確認ください）',
     features: ['女性専用', '女性トレーナー', '完全予約制', 'ピラティス・ヨガ対応'],
-    description: '女性トレーナーによる女性専門パーソナルジム。パーソナルトレーニング・ピラティス・ヨガが1か所で完結し、バランス重視の食事アドバイスがあります。完全予約制です。',
+    description: '女性トレーナーによる女性専門パーソナルジムです。パーソナルトレーニング・ピラティス・ヨガが1か所で完結し、バランス重視の食事アドバイスがあります。完全予約制です。',
     access: '新潟駅南口から徒歩10分（提携駐車場あり）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', 'ボディメイク'] },
     basicInfo: { hours: '9:00〜21:00（不定休）', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -36,7 +36,7 @@ const gyms = [
     price: '月2回 14,500円〜／月8回 52,000円〜（税込）',
     trial: '体験レッスン完全無料（手ぶらOK・ウェアレンタル無料）',
     features: ['女性専用', '完全個室マンツーマン', '全員女性インストラクター', 'マシンピラティス特化'],
-    description: '女性専用・完全個室のマシンピラティス特化型スタジオ。レッスンはすべて女性インストラクターによるマンツーマンです（筋トレ型ジムではない点にご注意ください）。',
+    description: '女性専用・完全個室のマシンピラティス特化型スタジオです。レッスンはすべて女性インストラクターによるマンツーマンです（筋トレ型ジムではない点にご注意ください）。',
     access: '礎町バス停から徒歩3分（万代・古町から徒歩圏）',
     address: '新潟市中央区月町1988 フレンディビル302',
     options: ['月4回27,000円〜／月12回74,400円〜'],
@@ -49,7 +49,7 @@ const gyms = [
     price: '回数券10回 102,300円／月額マンスリー月2回 17,600円〜（税込）',
     trial: '体験トレーニング・カウンセリングとも初回無料',
     features: ['女性会員6〜7割を公式明記', '食事管理サポート', '手ぶらOK'],
-    description: '会員の6〜7割が女性と公式に明記するボディメイクジム。食事管理サポートつきコースがあります（女性トレーナーは調査時点で不在と公式記載）。',
+    description: '会員の6〜7割が女性と公式に明記するボディメイクジムです。食事管理サポート付きコースがあります（女性トレーナーは調査時点で不在と公式記載）。',
     access: '新潟駅南口から徒歩10分',
     address: '新潟市中央区南笹口1-15-7 Flat南笹口 INT2F',
     options: ['20回187,000円／30回264,000円', '月4回35,200円／月8回69,300円'],
@@ -61,8 +61,8 @@ const gyms = [
     officialUrl: 'https://aspirest.com/access/niigata/niigata-honcho/',
     price: 'マンスリー月2回 8,840円〜／シェイプアップ30（7回＋30日食事指導）109,000円',
     trial: '無料体験受付中',
-    features: ['完全マンツーマン', 'LINE栄養計算つき食事指導', '全トレーナーNSCA-CPT保有'],
-    description: '完全マンツーマンのパーソナルジム。LINEでの栄養計算つき食事指導があり、ダイエット・ボディメイク・姿勢改善に対応。全トレーナーがNSCA-CPT資格を保有しています（女性専用ではありません）。',
+    features: ['完全マンツーマン', 'LINE栄養計算付き食事指導', '全トレーナーNSCA-CPT保有'],
+    description: '完全マンツーマンのパーソナルジムです。LINEでの栄養計算付き食事指導があり、ダイエット・ボディメイク・姿勢改善に対応しています。全トレーナーがNSCA-CPT資格を保有しています（女性専用ではありません）。',
     access: 'バス停「本町」徒歩1分（古町・万代から徒歩圏）',
     address: '新潟市中央区本町通6番町1141-1 ストークビル新潟一番館5階C室',
     options: ['シェイプアップ60（14回＋60日）211,000円', '入会金55,000円（当日入会で無料）'],
@@ -72,11 +72,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '新潟で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、エマ（EMMA）、24/7ピラティス 新潟店です（2026年6月調査時点）。' },
-  { question: '新潟のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、24/7ピラティス 新潟店は月2回 14,500円〜／月8回 52,000円〜（税込）。BEYOND 新潟店は回数券10回 102,300円／月額マンスリー月2回 17,600円〜（税込）。パーソナルジムASPI（アスピ）新潟本町はマンスリー月2回 8,840円〜／シェイプアップ30（7回＋30日食事指導）109,000円。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '新潟駅から近いジムは？', answer: '駅徒歩3分以内・直結では、24/7ピラティス 新潟店（礎町バス停から徒歩3分）、パーソナルジムASPI（アスピ）新潟本町（バス停「本町」徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: '24/7ピラティス 新潟店、BEYOND 新潟店、パーソナルジムASPI（アスピ）新潟本町は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '新潟で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、エマ（EMMA）、24/7ピラティス 新潟店です（2026年6月調査時点）。' },
+  { question: '新潟のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、24/7ピラティス 新潟店は月2回 14,500円〜／月8回 52,000円〜です（税込）。BEYOND 新潟店は回数券10回 102,300円／月額マンスリー月2回 17,600円〜です（税込）。パーソナルジムASPI（アスピ）新潟本町はマンスリー月2回 8,840円〜／シェイプアップ30（7回＋30日食事指導）109,000円です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '新潟駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、24/7ピラティス 新潟店（礎町バス停から徒歩3分）、パーソナルジムASPI（アスピ）新潟本町（バス停「本町」徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: '24/7ピラティス 新潟店、BEYOND 新潟店、パーソナルジムASPI（アスピ）新潟本町は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function NiigataPage() {
@@ -105,7 +105,7 @@ export default function NiigataPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「新潟で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、新潟エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、新潟駅・万代の徒歩圏で「女性専用のマンツーマンパーソナルジム」と公式確認できたのはエマ（EMMA）のみでした（リボーンマイセルフ新潟店など大手は閉店・撤退を確認）。女性専用ピラティス型や女性比率の高いジムもあわせて掲載しています。</p>
@@ -174,10 +174,10 @@ export default function NiigataPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -192,8 +192,8 @@ export default function NiigataPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -241,7 +241,7 @@ export default function NiigataPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

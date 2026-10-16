@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/wakayama/'),
   title: '和歌山の女性向けパーソナルジムおすすめ3選｜料金比較・無料体験【2026年7月】',
-  description: '【2026年7月】和歌山のおすすめ女性向けパーソナルジム3選を比較。Amazones・MoveLab・BEYONDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】和歌山のおすすめ女性向けパーソナルジム3選を比較しています。Amazones・MoveLab・BEYONDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,和歌山,和歌山,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダード会員 月額9,900円／パーソナル1回 4,400円（税込）',
     trial: '無料体験受付中（入会時カウンセリング＋パーソナル4回無料）',
     features: ['女性専用', '24時間営業', 'トレーナー全員女性'],
-    description: 'JR和歌山駅徒歩1分の女性専用24時間ジム（年中無休）。トレーナーは全員女性で、プロテイン・水素水のオプションもあります。',
+    description: 'JR和歌山駅徒歩1分の女性専用24時間ジムです（年中無休）。トレーナーは全員女性で、プロテイン・水素水のオプションもあります。',
     access: 'JR和歌山駅中央口から徒歩1分',
     options: ['学生・シニア月7,700円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['運動習慣', 'ダイエット'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: 'ダイエットベーシック3ヶ月12回 158,400円（税込/税抜は公式サイトでご確認ください）',
     trial: '体験90分 5,500円（カウンセリング・体質分析・姿勢分析込み）',
     features: ['女性専用', '女性トレーナー専属', 'マット&マシンピラティス', '美容整体併用'],
-    description: '女性専用のピラティス×美容整体×ダイエット専門スタジオ。女性トレーナー専属で、週1回の食事指導つき。体験は体質分析・姿勢分析込みの90分です。',
+    description: '女性専用のピラティス×美容整体×ダイエット専門スタジオです。女性トレーナーが専属で担当し、週1回の食事指導が付いています。体験は体質分析・姿勢分析込みの90分です。',
     access: '和歌山市屋形町（アクセスは公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', '姿勢改善'] },
     basicInfo: { hours: '9:00〜20:00（完全予約制）', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -48,7 +48,7 @@ const gyms = [
     price: '回数券10回 102,300円／マンスリー月2回 17,600円（税込）',
     trial: '無料カウンセリング＋初回限定無料体験（手ぶらOK）',
     features: ['女性会員6〜7割を公式明記', '食事指導コースあり'],
-    description: '会員の6〜7割が女性と公式に明記するボディメイクジム。糖質コントロール式の食事管理込みコースがあります（トレーナーは調査時点で男性のみ）。',
+    description: '会員の6〜7割が女性と公式に明記するボディメイクジムです。糖質コントロール式の食事管理込みコースがあります（トレーナーは調査時点で男性のみ）。',
     access: '高松バス停 徒歩1分（駅徒歩圏外・車10分）',
     options: ['ライフプランニング16回290,400円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性6〜7割と公式明記）', purpose: ['ボディメイク', 'ダイエット'] },
@@ -57,11 +57,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '和歌山で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Amazones（アマゾネス）和歌山駅前店、MoveLab（ムーブラボ）です（2026年6月調査時点）。' },
-  { question: '和歌山のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、Amazones（アマゾネス）和歌山駅前店はスタンダード会員 月額9,900円／パーソナル1回 4,400円（税込）。BEYOND 和歌山店は回数券10回 102,300円／マンスリー月2回 17,600円（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '和歌山駅から近いジムは？', answer: '駅徒歩3分以内・直結では、Amazones（アマゾネス）和歌山駅前店（JR和歌山駅中央口から徒歩1分）、BEYOND 和歌山店（高松バス停 徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'Amazones（アマゾネス）和歌山駅前店、MoveLab（ムーブラボ）、BEYOND 和歌山店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '和歌山で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Amazones（アマゾネス）和歌山駅前店、MoveLab（ムーブラボ）です（2026年6月調査時点）。' },
+  { question: '和歌山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、Amazones（アマゾネス）和歌山駅前店はスタンダード会員 月額9,900円／パーソナル1回 4,400円です（税込）。BEYOND 和歌山店は回数券10回 102,300円／マンスリー月2回 17,600円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '和歌山駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、Amazones（アマゾネス）和歌山駅前店（JR和歌山駅中央口から徒歩1分）、BEYOND 和歌山店（高松バス停 徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'Amazones（アマゾネス）和歌山駅前店、MoveLab（ムーブラボ）、BEYOND 和歌山店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function WakayamaPage() {
@@ -90,7 +90,7 @@ export default function WakayamaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「和歌山で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、和歌山エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -151,10 +151,10 @@ export default function WakayamaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -169,8 +169,8 @@ export default function WakayamaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -218,7 +218,7 @@ export default function WakayamaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

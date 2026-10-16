@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nara/'),
   title: '【2026年7月】奈良の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】奈良のおすすめ女性向けパーソナルジム3選を比較。ボディメイキングスタジオasuka・Personal・TONeなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】奈良のおすすめ女性向けパーソナルジム3選を比較しています。ボディメイキングスタジオasuka・Personal・TONeなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,奈良,奈良,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'レギュラーコース45（月4回）23,800円・入会金10,000円（税込/税抜は公式サイトでご確認ください）',
     trial: '体験あり: トレーニング45分 2,980円',
     features: ['女性トレーナーのマンツーマン', 'キャビテーション・ラジオ波', '整骨院併設'],
-    description: '女性トレーナーによるマンツーマン指導と、キャビテーション・ラジオ波・EMSの女性向け痩身メニューが主力のスタジオ。整骨院併設で栄養士とも連携しています（男性も利用可）。',
+    description: '女性トレーナーによるマンツーマン指導と、キャビテーション・ラジオ波・EMSの女性向け痩身メニューが主力のスタジオです。整骨院併設で栄養士とも連携しています（男性も利用可）。',
     access: '近鉄奈良駅から徒歩2分',
     options: ['スペシャルプラン月4回33,000円', 'キャビテーション体験35分4,380円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性向け痩身メニューが主力）', purpose: ['ダイエット', 'ボディメイク', '部分痩せ'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください',
     trial: '完全予約制（体験の詳細は公式サイトでご確認ください）',
     features: ['完全個室', 'パウダールーム・アメニティ完備', 'カフェスペース融合'],
-    description: 'トレーニング×ビューティー×カフェスペースを融合した完全プライベートジム。「女性にうれしい設備が豊富」と公式に明記され、パウダールーム・アメニティが揃います。',
+    description: 'トレーニング×ビューティー×カフェスペースを融合した完全プライベートジムです。「女性にうれしい設備が豊富」と公式に明記され、パウダールーム・アメニティが揃います。',
     access: '近鉄奈良駅から徒歩9分／JR奈良駅から徒歩13分',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性向け設備が充実）', purpose: ['ボディメイク', 'ダイエット'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'パウダールーム・アメニティ完備'] },
@@ -48,7 +48,7 @@ const gyms = [
     price: '1セッション 4,600円〜（詳細は公式サイトでご確認ください）',
     trial: '体験レッスン受付中（料金は公式サイトでご確認ください）',
     features: ['完全貸切', 'ボディケア（筋膜リリース・リンパ）', '産後・骨盤調整', '子連れ可'],
-    description: '完全貸切のパーソナル＋ボディケアスタジオ。筋膜リリース・リンパケアを組み合わせ、産後ダイエット・骨盤調整に対応。子連れ可です（トレーナーは男女在籍）。',
+    description: '完全貸切のパーソナル＋ボディケアスタジオです。筋膜リリース・リンパケアを組み合わせ、産後ダイエット・骨盤調整に対応しています。子連れ可です（トレーナーは男女在籍）。',
     access: '近鉄奈良線 新大宮駅 南口より徒歩6分',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（産後・骨盤ケア対応）', purpose: ['産後ダイエット', '骨盤ケア', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -56,11 +56,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '奈良に女性専用のパーソナルジムはある？', answer: '2026年6月の調査時点では、奈良駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
-  { question: '奈良駅から近いジムは？', answer: '駅徒歩3分以内・直結では、ボディメイキングスタジオasuka（Asukaトレーニングクラブ本店）（近鉄奈良駅から徒歩2分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'ボディメイキングスタジオasuka（Asukaトレーニングクラブ本店）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'TONe BODY CONDITIONING 奈良大宮店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '奈良に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、奈良駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
+  { question: '奈良駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、ボディメイキングスタジオasuka（Asukaトレーニングクラブ本店）（近鉄奈良駅から徒歩2分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'ボディメイキングスタジオasuka（Asukaトレーニングクラブ本店）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'TONe BODY CONDITIONING 奈良大宮店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function NaraPage() {
@@ -89,7 +89,7 @@ export default function NaraPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「奈良で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、奈良エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、近鉄奈良駅・JR奈良駅の徒歩圏に「完全女性専用」を公式に明記するパーソナルジムは確認できませんでした。本ページでは女性向けメニュー・設備に強いジムを掲載しています。</p>
@@ -153,10 +153,10 @@ export default function NaraPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -171,8 +171,8 @@ export default function NaraPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -220,7 +220,7 @@ export default function NaraPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

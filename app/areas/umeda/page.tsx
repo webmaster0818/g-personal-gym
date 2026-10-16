@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/umeda/'),
   title: '【2026年7月】梅田の女性向けパーソナルジムおすすめ4選！料金比較',
-  description: '【2026年7月】梅田のおすすめ女性向けパーソナルジム4選を比較。UNDEUX・リボーンマイセルフ・ビーコンセプトなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】梅田のおすすめ女性向けパーソナルジム4選を比較しています。UNDEUX・リボーンマイセルフ・ビーコンセプトなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,梅田,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダードプラン月4回 29,100円〜（税込）',
     trial: '体験トレーニング無料（約60分）＋無料カウンセリング',
     features: ['女性専用', '管理栄養士の食事指導', 'マシンピラティス対応', '手ぶらOK'],
-    description: '女性専用パーソナルジム。管理栄養士による食事指導とマシンピラティスに対応。ウェア・シューズ・タオル無料レンタルで手ぶらOKです。',
+    description: '女性専用パーソナルジムです。管理栄養士による食事指導とマシンピラティスに対応しています。ウェア・シューズ・タオル無料レンタルで手ぶらOKです。',
     access: '阪急「大阪梅田駅」徒歩2分',
     address: '大阪市北区茶屋町4-4 茶屋町ガーデンビル2F',
     options: ['コミットプラン月6回79,200円', '月2回20,500円〜月8回66,800円'],
@@ -37,8 +37,8 @@ const gyms = [
     officialUrl: 'https://www.shapes-international.co.jp/store/umeda/',
     price: 'ショートコース（2ヶ月16回）168,000円（入会金22,000円）',
     trial: 'カウンセリング・体験トレーニングとも無料',
-    features: ['女性専用', 'トレーナー全員女性', '食事指導つき', 'パウダールーム完備'],
-    description: '女性専用・トレーナーも全員女性のジム。食事指導つきで、ウェア・タオル無料貸出、個室パウダールーム・シャワー完備です。',
+    features: ['女性専用', 'トレーナー全員女性', '食事指導付き', 'パウダールーム完備'],
+    description: '女性専用・トレーナーも全員女性のジムです。食事指導付きで、ウェア・タオル無料貸出、個室パウダールーム・シャワー完備です。',
     access: '阪急梅田駅茶屋町口徒歩4分／JR大阪駅徒歩5分',
     address: '大阪市北区芝田1-10-8 山中ビル2F',
     options: ['ベーシックコース（3ヶ月24回）228,000円', 'チケット1回8,800円〜', '入会金無料キャンペーンの時期あり'],
@@ -51,7 +51,7 @@ const gyms = [
     price: '太ももダイエットプログラム 89,842円×2ヶ月（18回）',
     trial: '無料カウンセリング＆体験トレーニングあり',
     features: ['女性専用', '完全個室', '脚やせ・下半身特化', '医師×トレーナー共同開発'],
-    description: '医師×トレーナー共同開発の脚やせ・下半身痩せメソッドの女性専用ジム。完全個室で、シューズなど無料レンタルがあります。',
+    description: '医師×トレーナー共同開発の脚やせ・下半身痩せメソッドの女性専用ジムです。完全個室で、シューズなど無料レンタルがあります。',
     access: '北新地駅徒歩2分（梅田駅徒歩圏）',
     options: ['トライアルプラン4回44,000円', '当日入会で入会金無料'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['太もも痩せ', '下半身痩せ', 'ダイエット'] },
@@ -63,7 +63,7 @@ const gyms = [
     price: '月々6,000円〜のプランあり',
     trial: '体験2,980円（通常6,000円）／カウンセリング無料（期間限定）',
     features: ['初心者女性専門', '完全個室', '手ぶらOK', 'シャワー完備'],
-    description: '会員の9割が初心者という初心者女性専門のパーソナルジム。完全個室・手ぶらOK・シャワールーム完備です。',
+    description: '会員の9割が初心者という初心者女性専門のパーソナルジムです。完全個室・手ぶらOK・シャワールーム完備です。',
     access: '各線梅田駅徒歩8分／中崎町駅徒歩5分',
     options: ['3回トライアル9,980円', '4回トライアル14,900円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性専門（初心者女性向け）', purpose: ['ダイエット', '運動習慣'] },
@@ -72,11 +72,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '梅田で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 梅田スタジオ、リボーンマイセルフ 梅田店、ビーコンセプト 北新地・堂島店です（2026年6月調査時点）。' },
-  { question: '梅田のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 梅田スタジオはスタンダードプラン月4回 29,100円〜（税込）。リボーンマイセルフ 梅田店はショートコース（2ヶ月16回）168,000円（入会金22,000円）。ビーコンセプト 北新地・堂島店は太ももダイエットプログラム 89,842円×2ヶ月（18回）。Deat-workout 梅田店【初心者女性専門】は月々6,000円〜のプランあり。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '梅田駅から近いジムは？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 梅田スタジオ（阪急「大阪梅田駅」徒歩2分）、ビーコンセプト 北新地・堂島店（北新地駅徒歩2分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 梅田スタジオ、リボーンマイセルフ 梅田店、ビーコンセプト 北新地・堂島店、Deat-workout 梅田店【初心者女性専門】は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '梅田で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 梅田スタジオ、リボーンマイセルフ 梅田店、ビーコンセプト 北新地・堂島店です（2026年6月調査時点）。' },
+  { question: '梅田のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 梅田スタジオはスタンダードプラン月4回 29,100円〜です（税込）。リボーンマイセルフ 梅田店はショートコース（2ヶ月16回）168,000円です（入会金22,000円）。ビーコンセプト 北新地・堂島店は太ももダイエットプログラム 89,842円×2ヶ月です（18回）。Deat-workout 梅田店【初心者女性専門】は月々6,000円〜のプランがあります。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '梅田駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 梅田スタジオ（阪急「大阪梅田駅」徒歩2分）、ビーコンセプト 北新地・堂島店（北新地駅徒歩2分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 梅田スタジオ、リボーンマイセルフ 梅田店、ビーコンセプト 北新地・堂島店、Deat-workout 梅田店【初心者女性専門】は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function UmedaPage() {
@@ -105,7 +105,7 @@ export default function UmedaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「梅田で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、梅田エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -171,10 +171,10 @@ export default function UmedaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -189,8 +189,8 @@ export default function UmedaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -238,7 +238,7 @@ export default function UmedaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

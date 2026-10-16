@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kagoshima/'),
   title: '【2026年7月】鹿児島の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】鹿児島のおすすめ女性向けパーソナルジム3選を比較。女性専門パーソナルトレーニングジムGROW・RITA-STYLE・BELLOパーソナルトレーニングジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】鹿児島のおすすめ女性向けパーソナルジム3選を比較しています。女性専門パーソナルトレーニングジムGROW・RITA-STYLE・BELLOパーソナルトレーニングジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,鹿児島,鹿児島,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -24,8 +24,8 @@ const gyms = [
     officialUrl: 'https://www.grow-bodymake.com/',
     price: '60分×16回＋食事サポート 158,000円（税込・2026年6月キャンペーン時）',
     trial: '無料カウンセリング・体験トレーニングあり（LINE/アプリ予約）',
-    features: ['女性専門', '食事サポートつき', '女性トレーナー在籍'],
-    description: '鹿児島中央駅徒歩3分の女性専門パーソナルジム。食事サポートつきの16回コースが中心で、月額制サブスクコースもあります。',
+    features: ['女性専門', '食事サポート付き', '女性トレーナー在籍'],
+    description: '鹿児島中央駅徒歩3分の女性専門パーソナルジムです。食事サポート付きの16回コースが中心で、月額制サブスクコースもあります。',
     access: '鹿児島中央駅 徒歩3分',
     address: '鹿児島市西田2丁目21-19 5F',
     options: ['通常価格211,680円（キャンペーンにより変動）', 'サブスク月4回・8回コースあり'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '月額 49,000円〜（入会金39,800円・キャンペーンで無料の場合あり）',
     trial: '無料カウンセリング0円・体験トレーニング3,980円（当日入会で無料）',
     features: ['女性会員約8割', '完全個室', '永久お食事サポート', '全額返金制度', '子連れ可'],
-    description: '女性専用ではありませんが会員の約8割が女性のダイエット専門ジム。完全個室マンツーマン60分で、永久お食事サポートと全額返金制度（条件あり）つき。手ぶらOK・子連れ可です。',
+    description: '女性専用ではありませんが会員の約8割が女性のダイエット専門ジムです。完全個室マンツーマン60分で、永久お食事サポートと全額返金制度（条件あり）が付いています。手ぶらOK・子連れ可です。',
     access: '市電 いづろ通電停 徒歩3分',
     address: '鹿児島市中町7-9 重野ビル2F',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性約8割）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -50,7 +50,7 @@ const gyms = [
     price: '45分コース 月4回 20,000円／都度払い 5,500円（入会金0円・縛りなし）',
     trial: '見学・体験申込あり（詳細は問い合わせ）',
     features: ['完全個室', '完全予約制', '食事・生活習慣アドバイス', '9〜23時無休'],
-    description: '「女性・中高年・ジム未経験者に通いやすい」を掲げる完全個室マンツーマンジム。入会金0円・縛りなしで、都度払いにも対応します。',
+    description: '「女性・中高年・ジム未経験者に通いやすい」を掲げる完全個室マンツーマンジムです。入会金0円・縛りなしで、都度払いにも対応します。',
     access: '市電 高見馬場電停 徒歩3分',
     address: '鹿児島市西千石町17-28 NADESHIKOビル4F',
     options: ['月8回39,800円'],
@@ -60,12 +60,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '鹿児島に女性専用のパーソナルジムはある？', answer: '2026年6月の調査時点では、鹿児島駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
-  { question: '鹿児島のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、女性専門パーソナルトレーニングジムGROWは60分×16回＋食事サポート 158,000円（税込・2026年6月キャンペーン時）。RITA-STYLE 鹿児島天文館店は月額 49,000円〜（入会金39,800円・キャンペーンで無料の場合あり）。BELLOパーソナルトレーニングジム 天文館店は45分コース 月4回 20,000円／都度払い 5,500円（入会金0円・縛りなし）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '鹿児島駅から近いジムは？', answer: '駅徒歩3分以内・直結では、女性専門パーソナルトレーニングジムGROW（鹿児島中央駅 徒歩3分）、RITA-STYLE 鹿児島天文館店（市電 いづろ通電停 徒歩3分）、BELLOパーソナルトレーニングジム 天文館店（市電 高見馬場電停 徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: '女性専門パーソナルトレーニングジムGROW、RITA-STYLE 鹿児島天文館店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'RITA-STYLE 鹿児島天文館店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '鹿児島に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、鹿児島駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
+  { question: '鹿児島のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、女性専門パーソナルトレーニングジムGROWは60分×16回＋食事サポート 158,000円です（税込・2026年6月キャンペーン時）。RITA-STYLE 鹿児島天文館店は月額 49,000円〜です（入会金39,800円・キャンペーンで無料の場合あり）。BELLOパーソナルトレーニングジム 天文館店は45分コース 月4回 20,000円／都度払い 5,500円です（入会金0円・縛りなし）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '鹿児島駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、女性専門パーソナルトレーニングジムGROW（鹿児島中央駅 徒歩3分）、RITA-STYLE 鹿児島天文館店（市電 いづろ通電停 徒歩3分）、BELLOパーソナルトレーニングジム 天文館店（市電 高見馬場電停 徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: '女性専門パーソナルトレーニングジムGROW、RITA-STYLE 鹿児島天文館店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'RITA-STYLE 鹿児島天文館店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function KagoshimaPage() {
@@ -94,7 +94,7 @@ export default function KagoshimaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「鹿児島で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、鹿児島エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -155,10 +155,10 @@ export default function KagoshimaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -173,8 +173,8 @@ export default function KagoshimaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -222,7 +222,7 @@ export default function KagoshimaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

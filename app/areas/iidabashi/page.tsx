@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/iidabashi/'),
   title: '【2026年7月】飯田橋の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】飯田橋のおすすめ女性向けパーソナルジム2選を比較。かたぎり塾・LiMEパーソナルジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】飯田橋のおすすめ女性向けパーソナルジム2選を比較しています。かたぎり塾・LiMEパーソナルジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,飯田橋,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '月4プラン 33,000円（税込）',
     trial: '体験トレーニングあり（体験当日入会で入会金無料）',
     features: ['月額制', '完全個室', 'AI食事指導', '手ぶらOK', '乳幼児同伴可'],
-    description: '完全個室マンツーマンの月額制ジム。医師・理学療法士監修メソッドで、AI食事指導が無料。ウェア・シューズ無料貸出の手ぶらOK、乳幼児同伴可です。',
+    description: '完全個室マンツーマンの月額制ジムです。医師・理学療法士監修メソッドで、AI食事指導が無料です。ウェア・シューズ無料貸出の手ぶらOK、乳幼児同伴可です。',
     access: '東西線 飯田橋駅B3出口 徒歩4分／JR飯田橋駅西口 徒歩5分',
     address: '東京都新宿区神楽坂3-6-12 ニュージョウトーヤビル5F',
     options: ['月8プラン59,400円', '無期限チケット8,800円/回'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください（「大手の半額以下」と公式記載）',
     trial: '無料体験あり（カウンセリング＋姿勢チェック＋トレーニング、最大2時間）',
     features: ['完全個室', '管理栄養士監修のLINE食事指導', '女性利用が多いと公式記載', '年中無休9〜24時'],
-    description: '完全個室のパーソナルジム。管理栄養士監修のLINE食事指導つきで、無理な食事制限なし。女性利用が多いと公式に記載されています。神楽坂店もあります。',
+    description: '完全個室のパーソナルジムです。管理栄養士監修のLINE食事指導付きで、無理な食事制限はありません。女性利用が多いと公式に記載されています。神楽坂店もあります。',
     access: '市ヶ谷駅 徒歩約4分／飯田橋駅 徒歩約8分',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性利用が多いと公式記載）', purpose: ['ダイエット', '姿勢改善', 'ボディメイク'] },
     basicInfo: { hours: '9:00〜24:00（年中無休）', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -46,12 +46,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '飯田橋で女性専用のパーソナルジムはどこ？', answer: '当サイト掲載のジムのうち、公式サイトで女性専用と確認できたジムはありません（2026年10月時点）。掲載中の2ジムはいずれも完全個室のマンツーマン指導です。' },
-  { question: '飯田橋のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、かたぎり塾 飯田橋店は月4プラン 33,000円（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '飯田橋駅から近いジムは？', answer: '当サイト掲載のジムに駅徒歩3分以内・直結のジムはありません。最寄りはかたぎり塾 飯田橋店（東西線 飯田橋駅B3出口 徒歩4分）です。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'かたぎり塾 飯田橋店、LiMEパーソナルジム 飯田橋・市ヶ谷店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'かたぎり塾 飯田橋店は乳幼児同伴可と案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '飯田橋で女性専用のパーソナルジムはどこですか？', answer: '当サイト掲載のジムのうち、公式サイトで女性専用と確認できたジムはありません（2026年10月時点）。掲載中の2ジムはいずれも完全個室のマンツーマン指導です。' },
+  { question: '飯田橋のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、かたぎり塾 飯田橋店は月4プラン 33,000円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '飯田橋駅から近いジムはどこですか？', answer: '当サイト掲載のジムに駅徒歩3分以内・直結のジムはありません。最寄りはかたぎり塾 飯田橋店（東西線 飯田橋駅B3出口 徒歩4分）です。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'かたぎり塾 飯田橋店、LiMEパーソナルジム 飯田橋・市ヶ谷店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'かたぎり塾 飯田橋店は乳幼児同伴可と案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function IidabashiPage() {
@@ -80,7 +80,7 @@ export default function IidabashiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「飯田橋で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、飯田橋エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -137,10 +137,10 @@ export default function IidabashiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -155,8 +155,8 @@ export default function IidabashiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -204,7 +204,7 @@ export default function IidabashiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

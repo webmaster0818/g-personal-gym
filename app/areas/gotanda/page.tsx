@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/gotanda/'),
   title: '【2026年7月】五反田の女性専用パーソナルジムおすすめ1選！料金比較',
-  description: '【2026年4月】五反田のおすすめ女性専用パーソナルジム1選を徹底比較。24/7 Workoutの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】五反田のおすすめ女性専用パーソナルジム1選を比較しています。24/7 Workoutの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,五反田,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -24,10 +24,10 @@ const gyms = [
     price: '2ヶ月16回 257,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '完全個室', '深夜営業', '3食食べるダイエット', '全額返金保証'],
-    description: '「3食食べて痩せる」がコンセプトの大手パーソナルジム。深夜24時まで営業で仕事帰りでも余裕。全額返金保証付きで安心して始められる。',
+    description: '「3食食べて痩せる」がコンセプトの大手パーソナルジムです。深夜24時まで営業で仕事帰りでも余裕です。全額返金保証付きで安心して始められます。',
     access: 'JR「五反田駅」徒歩3分',
     address: '東京都品川区東五反田（五反田駅徒歩3分）',
-    popularPlan: { name: '2ヶ月コース', description: '3食食べながら理想の体型を目指す。マンツーマン指導16回。', price: '2ヶ月16回 257,400円〜（税込）' },
+    popularPlan: { name: '2ヶ月コース', description: '3食食べながら理想の体型を目指します。マンツーマン指導16回です。', price: '2ヶ月16回 257,400円〜（税込）' },
     options: ['全額返金保証', 'ウェアレンタル無料', '深夜24時まで営業', '食事指導付き'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体力向上', '健康維持'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -36,8 +36,8 @@ const gyms = [
 
 const faqs = [
   { question: '五反田で女性専用のパーソナルジムはありますか？', answer: '当サイトで五反田エリアに掲載しているのは24/7 Workoutです。女性専用プランを用意しています。' },
-  { question: '五反田のパーソナルジムの料金相場は？', answer: '24/7 Workoutは2ヶ月257,400円〜です。' },
-  { question: '五反田で深夜まで営業しているジムは？', answer: '24/7 Workout五反田店は深夜24時まで営業しています。仕事が遅くなっても通えるので、五反田エリアで働く方におすすめです。' },
+  { question: '五反田のパーソナルジムの料金相場はいくらですか？', answer: '24/7 Workoutは2ヶ月257,400円〜です。' },
+  { question: '五反田で深夜まで営業しているジムはどこですか？', answer: '24/7 Workout五反田店は深夜24時まで営業しています。仕事が遅くなっても通えるので、五反田エリアで働く方におすすめです。' },
 ]
 
 export default function GotandaPage() {
@@ -66,7 +66,7 @@ export default function GotandaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「五反田で女性専用のパーソナルジムを探している」「仕事帰りに通えるジムが知りたい」という方のために、五反田エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -98,7 +98,7 @@ export default function GotandaPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">五反田エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">深夜まで通いたいなら24/7 Workoutがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
@@ -124,7 +124,7 @@ export default function GotandaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

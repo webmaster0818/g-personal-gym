@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/futakotamagawa/'),
   title: '【2026年7月】二子玉川の女性専用パーソナルジムおすすめ2選！料金比較',
-  description: '【2026年4月】二子玉川のおすすめ女性専用パーソナルジム2選を徹底比較。UNDEUX SUPERBODY・エクササイズコーチの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】二子玉川のおすすめ女性専用パーソナルジム2選を比較しています。UNDEUX SUPERBODY・エクササイズコーチの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,二子玉川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '駅徒歩3分', '宅配食無料', '管理栄養士指導', 'パウダールーム完備'],
-    description: '二子玉川駅徒歩3分の女性専用パーソナルジム。糖質オフ宅配食プランと管理栄養士の毎食指導の2つから選択可能。女性ダイエットのプロ集団が在籍。',
+    description: '二子玉川駅徒歩3分の女性専用パーソナルジムです。糖質オフ宅配食プランと管理栄養士の毎食指導の2つから選択可能です。女性ダイエットのプロ集団が在籍しています。',
     access: '東急「二子玉川駅」徒歩3分',
     address: '東京都世田谷区玉川（二子玉川駅徒歩3分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポート。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートです。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['糖質オフ宅配食無料', '管理栄養士の毎食指導', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム'] },
@@ -39,10 +39,10 @@ const gyms = [
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
-    description: '米国発のAIパーソナルジム。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
+    description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
     access: '「二子玉川」駅周辺',
     address: '二子玉川エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニング。月額制で継続しやすい。', price: '月額制（プラン・店舗により異なる）' },
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制で継続しやすいです。', price: '月額制（プラン・店舗により異なる）' },
     options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
     basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
@@ -50,13 +50,13 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '二子玉川で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、エクササイズコーチを掲載しています。食事管理ならUNDEUXがおすすめ。' },
-  { question: '二子玉川のパーソナルジムの料金相場は？', answer: '2ヶ月コースは約18万〜22万円。都心部と同等かやや割安な傾向があります。' },
-  { question: '二子玉川駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYが徒歩3分です。' },
-  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。エクササイズコーチは無料カウンセリング。' },
-  { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎。マンツーマン指導なので運動経験がなくても安心です。' },
-  { question: '二子玉川ライズでのショッピングと両立できる？', answer: 'ほとんどのジムが二子玉川駅から徒歩5分圏内。ショッピング前後にトレーニングを組み込めます。ウェアレンタルありのジムなら手ぶらでOK。' },
-  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択可。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。' },
+  { question: '二子玉川で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、エクササイズコーチを掲載しています。食事管理ならUNDEUXがおすすめです。' },
+  { question: '二子玉川のパーソナルジムの料金相場はいくらですか？', answer: '2ヶ月コースは約18万〜22万円です。都心部と同等かやや割安な傾向があります。' },
+  { question: '二子玉川駅から最も近いジムはどこですか？', answer: 'UNDEUX SUPERBODYが徒歩3分です。' },
+  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。エクササイズコーチは無料カウンセリングです。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので運動経験がなくても安心です。' },
+  { question: '二子玉川ライズでのショッピングと両立できますか？', answer: 'ほとんどのジムが二子玉川駅から徒歩5分圏内です。ショッピング前後にトレーニングを組み込めます。ウェアのレンタルがあるジムなら、手ぶらで通えます。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択できます。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。' },
 ]
 
 export default function FutakotamagawaPage() {
@@ -83,7 +83,7 @@ export default function FutakotamagawaPage() {
         </section>
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「二子玉川で女性専用のパーソナルジムを探している」「ニコタマの買い物ついでに通いたい」という方のために、二子玉川エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -130,12 +130,12 @@ export default function FutakotamagawaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">世田谷エリアの中では標準的な価格帯。</p>
+                <p className="text-sm text-brand-muted">世田谷エリアの中では標準的な価格帯です。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">入会金</h3>
                 <p className="text-3xl font-bold text-accent mb-2">0〜5万円</p>
-                <p className="text-sm text-brand-muted">キャンペーンで入会金無料のジムも。体験時に要確認。</p>
+                <p className="text-sm text-brand-muted">キャンペーンで入会金無料のジムもあります。詳細は体験時にご確認ください。</p>
               </div>
             </div>
           </div>
@@ -146,11 +146,11 @@ export default function FutakotamagawaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">ファミリー層が多く週末は混雑しやすい</h3>
-                <p className="text-brand-muted leading-relaxed">二子玉川は子育てファミリーに人気のエリア。週末は二子玉川ライズ周辺が混雑するため、平日に通えるなら予約が取りやすい。ジムの予約状況は事前に確認を。</p>
+                <p className="text-brand-muted leading-relaxed">二子玉川は子育てファミリーに人気のエリアです。週末は二子玉川ライズ周辺が混雑するため、平日に通えるなら予約が取りやすいです。ジムの予約状況は事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">産後ダイエット需要が高いエリア</h3>
-                <p className="text-brand-muted leading-relaxed">二子玉川は30〜40代の子育てママが多いエリア。そのため産後ダイエットに対応したジムが充実しています。キッズスペースや託児所費用補助の有無をチェックしましょう。</p>
+                <p className="text-brand-muted leading-relaxed">二子玉川は30〜40代の子育てママが多いエリアです。そのため産後ダイエットに対応したジムが充実しています。キッズスペースや託児所費用補助の有無をご確認ください。</p>
               </div>
             </div>
           </div>
@@ -178,13 +178,13 @@ export default function FutakotamagawaPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">二子玉川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODYがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

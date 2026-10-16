@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/funabashi/'),
   title: '【2026年7月】船橋の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】船橋のおすすめ女性向けパーソナルジム2選を比較。UNDEUX・OUTLINEなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】船橋のおすすめ女性向けパーソナルジム2選を比較しています。UNDEUX・OUTLINEなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,船橋,千葉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダードプラン月2回 20,500円〜（税込）',
     trial: '初回体験トレーニング無料',
     features: ['女性専用', '管理栄養士の食事サポート', 'マシンピラティス併設', '手ぶらOK'],
-    description: '女性専用パーソナルジム。管理栄養士監修の食事改善サポート＋宅配食、マシンピラティス併設。ウェア等レンタル無料で手ぶらOKです。',
+    description: '女性専用パーソナルジムです。管理栄養士監修の食事改善サポート＋宅配食、マシンピラティス併設しています。ウェア等レンタル無料で手ぶらOKです。',
     access: '各線「船橋駅」徒歩2分',
     address: '船橋市本町5-1-1 船橋AUビル2F',
     options: ['月4回29,100円〜／月8回58,200円〜', 'コミットプラン月6回79,200円（宅配食30食付）'],
@@ -38,7 +38,7 @@ const gyms = [
     price: 'フルサポート16回 184,800円（税込・入会金0円）',
     trial: '無料カウンセリング（LINE・メール予約可）',
     features: ['女性専用', '完全個室', '食事指導あり', 'ベビーサークル完備'],
-    description: '女性専用・完全個室のパーソナルジム。「食べて痩せる」方針の食事指導と生涯アフターフォローつき。ベビーサークル完備で子連れ可です。',
+    description: '女性専用・完全個室のパーソナルジムです。「食べて痩せる」方針の食事指導と、生涯のアフターフォローが付いています。ベビーサークル完備で子連れ可です。',
     access: '船橋駅徒歩1分',
     address: '船橋市本町5-3-3 杉川ビル501',
     options: ['24回264,000円／32回334,400円', 'ウェア・アミノ酸ドリンク等無料'],
@@ -48,12 +48,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '船橋で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 船橋スタジオ、OUTLINE（アウトライン）船橋店です（2026年6月調査時点）。' },
-  { question: '船橋のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 船橋スタジオはスタンダードプラン月2回 20,500円〜（税込）。OUTLINE（アウトライン）船橋店はフルサポート16回 184,800円（税込・入会金0円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '船橋駅から近いジムは？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 船橋スタジオ（各線「船橋駅」徒歩2分）、OUTLINE（アウトライン）船橋店（船橋駅徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 船橋スタジオ、OUTLINE（アウトライン）船橋店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'OUTLINE（アウトライン）船橋店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '船橋で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 船橋スタジオ、OUTLINE（アウトライン）船橋店です（2026年6月調査時点）。' },
+  { question: '船橋のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 船橋スタジオはスタンダードプラン月2回 20,500円〜です（税込）。OUTLINE（アウトライン）船橋店はフルサポート16回 184,800円です（税込・入会金0円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '船橋駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 船橋スタジオ（各線「船橋駅」徒歩2分）、OUTLINE（アウトライン）船橋店（船橋駅徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 船橋スタジオ、OUTLINE（アウトライン）船橋店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'OUTLINE（アウトライン）船橋店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function FunabashiPage() {
@@ -82,7 +82,7 @@ export default function FunabashiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「船橋で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、船橋エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -146,10 +146,10 @@ export default function FunabashiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -164,8 +164,8 @@ export default function FunabashiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -213,7 +213,7 @@ export default function FunabashiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

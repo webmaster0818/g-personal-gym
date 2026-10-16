@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/yokohama/'),
   title: '【2026年7月】横浜の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】横浜のおすすめ女性専用・女性向けパーソナルジム4選を徹底比較。料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】横浜のおすすめ女性専用・女性向けパーソナルジム4選を比較しています。料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,横浜,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備'],
-    description: '横浜に6店舗展開する女性専用パーソナルジム。生涯無料アフターサポート付き。',
+    description: '横浜に6店舗展開する女性専用パーソナルジムです。生涯無料のアフターサポートが付いています。',
     access: 'JR「横浜駅」徒歩5分',
     address: 'JR「横浜駅」徒歩5分',
-    popularPlan: { name: '人気プラン', description: '横浜に6店舗展開する女性専用パーソナルジム。生涯無料アフターサポート付き。', price: '16回 184,800円〜（税込）' },
+    popularPlan: { name: '人気プラン', description: '横浜に6店舗展開する女性専用パーソナルジムです。生涯無料のアフターサポートが付いています。', price: '16回 184,800円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -39,10 +39,10 @@ const gyms = [
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', '横浜駅徒歩3分'],
-    description: '横浜駅より徒歩3分。糖質オフ宅配食無料の女性専用ジム。',
+    description: '横浜駅より徒歩3分です。糖質オフ宅配食無料の女性専用ジムです。',
     access: 'JR「横浜駅」徒歩3分',
     address: 'JR「横浜駅」徒歩3分',
-    popularPlan: { name: '人気プラン', description: '横浜駅より徒歩3分。糖質オフ宅配食無料の女性専用ジム。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: '人気プラン', description: '横浜駅より徒歩3分です。糖質オフ宅配食無料の女性専用ジムです。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -53,10 +53,10 @@ const gyms = [
     price: '入会金22,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '10年以上の実績'],
-    description: '女性トレーナーのみ在籍の老舗女性専用ジム。横浜駅から好アクセス。',
+    description: '女性トレーナーのみ在籍の老舗女性専用ジムです。横浜駅から好アクセスです。',
     access: 'JR「横浜駅」西口 徒歩7分',
     address: '神奈川県横浜市西区岡野1-13-5 横浜西口サンエースビル5階',
-    popularPlan: { name: '人気プラン', description: '女性トレーナーのみ在籍の老舗女性専用ジム。横浜駅から好アクセス。', price: '入会金22,000円＋コース料金' },
+    popularPlan: { name: '人気プラン', description: '女性トレーナーのみ在籍の老舗女性専用ジムです。横浜駅から好アクセスです。', price: '入会金22,000円＋コース料金' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '平日10:00〜22:00／土祝9:00〜20:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -67,10 +67,10 @@ const gyms = [
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格'],
-    description: 'AI主導20分トレーニング。横浜で月4回12,000円〜。',
+    description: 'AI主導20分トレーニングです。横浜で月4回12,000円〜です。',
     access: 'JR「横浜駅」徒歩5分',
     address: 'JR「横浜駅」徒歩5分',
-    popularPlan: { name: '人気プラン', description: 'AI主導20分トレーニング。横浜で月4回12,000円〜。', price: '月4回 12,000円〜（税込）' },
+    popularPlan: { name: '人気プラン', description: 'AI主導20分トレーニングです。横浜で月4回12,000円〜です。', price: '月4回 12,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '平日9:40〜21:40（月曜は12:00〜）／土日祝8:40〜18:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -78,16 +78,16 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '横浜で女性専用のパーソナルジムはどこがおすすめ？', answer: 'OUTLINE 横浜店、UNDEUX SUPERBODY 横浜スタジオが横浜で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
-  { question: '横浜のパーソナルジムの料金相場は？', answer: '横浜エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円。月額制なら月12,000円〜30,000円程度から通えます。' },
-  { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずは気軽に問い合わせてみましょう。' },
-  { question: 'どのくらいで効果が出る？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は1ヶ月目から感じる方が多いです。' },
+  { question: '横浜で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'OUTLINE 横浜店、UNDEUX SUPERBODY 横浜スタジオが横浜で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
+  { question: '横浜のパーソナルジムの料金相場はいくらですか？', answer: '横浜エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制なら月12,000円〜30,000円程度から通えます。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
+  { question: '体験レッスンは無料で受けられますか？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずはお気軽にお問い合わせください。' },
+  { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は1ヶ月目から感じる方が多いです。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
-  { question: 'ウェアは必要？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが多いです。' },
-  { question: '横浜駅から近いジムは？', answer: 'OUTLINE 横浜店、UNDEUX SUPERBODY 横浜スタジオが駅から近いジムです。' },
-  { question: 'リバウンドが心配', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」があります。多くのジムでは卒業後のフォロープログラムが含まれています。' },
-  { question: '子連れで通えるジムは？', answer: 'OUTLINEはベビーサークル全店完備です。事前に各ジムにお問い合わせください。' },
+  { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが多いです。' },
+  { question: '横浜駅から近いジムはどこですか？', answer: 'OUTLINE 横浜店、UNDEUX SUPERBODY 横浜スタジオが駅から近いジムです。' },
+  { question: 'リバウンドを防ぐサポートはありますか？', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」があります。多くのジムでは卒業後のフォロープログラムが含まれています。' },
+  { question: '子連れで通えるジムはどこですか？', answer: 'OUTLINEはベビーサークル全店完備です。事前に各ジムにお問い合わせください。' },
 ]
 
 export default function YokohamaPage() {
@@ -111,7 +111,7 @@ export default function YokohamaPage() {
         </section>
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「横浜で女性専用のパーソナルジムを探している」という方のために、横浜エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -142,12 +142,12 @@ export default function YokohamaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">15万〜22万円</p>
-                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金。入会金は別途2〜5万円程度。</p>
+                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は別途2〜5万円程度です。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
                 <p className="text-3xl font-bold text-accent mb-2">1.2万〜3万円/月</p>
-                <p className="text-sm text-brand-muted">月4〜8回のプラン。継続しやすい料金設定。</p>
+                <p className="text-sm text-brand-muted">月4〜8回のプランです。継続しやすい料金設定です。</p>
               </div>
             </div>
           </div>
@@ -157,16 +157,16 @@ export default function YokohamaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">横浜で選ぶ際の注意点</h2>
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験レッスンは2〜3ジム比較を</h3>
-                <p className="text-brand-muted leading-relaxed">最低2〜3ジムの体験に行って、トレーナーとの相性や雰囲気を比較してから決めましょう。</p>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験レッスンは2〜3ジムで比較</h3>
+                <p className="text-brand-muted leading-relaxed">最低2〜3ジムの体験に行って、トレーナーとの相性や雰囲気を比較してから決めることをおすすめします。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">総額で比較する</h3>
-                <p className="text-brand-muted leading-relaxed">コース料金だけでなく、入会金・オプション費用も含めた総額で比較しましょう。キャンペーンで入会金無料になることも多いです。</p>
+                <p className="text-brand-muted leading-relaxed">コース料金だけでなく、入会金・オプション費用も含めた総額で比較することをおすすめします。キャンペーンで入会金無料になることも多いです。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">通いやすさを重視</h3>
-                <p className="text-brand-muted leading-relaxed">継続が最も大切。自宅や職場から通いやすい場所のジムを選びましょう。</p>
+                <p className="text-brand-muted leading-relaxed">継続が最も大切です。自宅や職場から通いやすい場所のジムを選ぶことをおすすめします。</p>
               </div>
             </div>
           </div>
@@ -179,8 +179,8 @@ export default function YokohamaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -219,13 +219,13 @@ export default function YokohamaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">横浜エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">まずは気になるジムの体験レッスンに行ってみてください。複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">まずは気になるジムの体験レッスンをご利用ください。複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
           </div>
         </section>
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

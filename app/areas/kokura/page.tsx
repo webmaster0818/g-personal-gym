@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kokura/'),
   title: '【2026年7月】小倉の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】小倉のおすすめ女性向けパーソナルジム3選を比較。ビーコンセプト・RITA-STYLE・プリッツジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】小倉のおすすめ女性向けパーソナルジム3選を比較しています。ビーコンセプト・RITA-STYLE・プリッツジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,小倉,福岡,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '太ももダイエットプログラム 89,842円×2ヶ月（18回・税込・入会金無料）',
     trial: '無料カウンセリング＋体験トレーニングあり（当日体験可）',
     features: ['女性専用', '完全個室', '脚やせ・下半身特化', '託児所費用補助', '手ぶらOK'],
-    description: '女性専用・完全個室。下半身（脚やせ）特化メソッドと3食食べる食事指導が特徴で、託児所費用補助（最大1,000円/回）があります。',
+    description: '女性専用・完全個室です。下半身（脚やせ）特化メソッドと3食食べる食事指導が特徴で、託児所費用補助（最大1,000円/回）があります。',
     access: 'JR小倉駅 徒歩5分',
     address: '北九州市小倉北区京町1-5-7 小林ビル402',
     options: ['トライアルプラン4回44,000円'],
@@ -37,8 +37,8 @@ const gyms = [
     officialUrl: 'https://rita-style.co.jp/gym/fukuoka/kokura/',
     price: 'コース 49,000円〜（例: 2ヶ月8回 合計151,580円・税込、入会金39,800円）',
     trial: '無料カウンセリング60分／体験90分 3,980円（当日入会で0円）',
-    features: ['完全個室', '食事指導つき', 'マシンピラティス併設', '全額返金保証', '子連れ可'],
-    description: 'ダイエット専門の完全個室マンツーマンジム。女性トレーナーが在籍し、卒業後も続く食事サポートと全額返金保証（条件あり）が特徴。マシンピラティス併設です。',
+    features: ['完全個室', '食事指導付き', 'マシンピラティス併設', '全額返金保証', '子連れ可'],
+    description: 'ダイエット専門の完全個室マンツーマンジムです。女性トレーナーが在籍し、卒業後も続く食事サポートと全額返金保証（条件あり）が特徴です。マシンピラティス併設です。',
     access: 'JR小倉駅（小倉城口）徒歩5分／平和通駅 徒歩3分',
     address: '北九州市小倉北区魚町2-1-7 ACT松永ビル3F',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性向け・女性トレーナー在籍）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -50,7 +50,7 @@ const gyms = [
     price: '月4回 14,300円／月8回 24,000円（税込・入会金22,000円）',
     trial: '初回体験レッスンあり（料金は公式サイトでご確認ください）',
     features: ['女性専用', 'セミパーソナル（最大3名）', 'マシンピラティス', '低価格'],
-    description: '女性専用のセミパーソナルジム（最大3名・1回50分）。マシンピラティス導入の低価格型で、食事指導はオプションで付けられます。',
+    description: '女性専用のセミパーソナルジムです（最大3名・1回50分）。マシンピラティス導入の低価格型で、食事指導はオプションで付けられます。',
     access: '小倉駅すぐ・平和通駅近く（徒歩分数は公式サイトでご確認ください）',
     options: ['月6回18,900円', '食事指導オプション11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', '運動習慣'] },
@@ -59,12 +59,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '小倉で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、ビーコンセプト 小倉店、プリッツジム 小倉店です（2026年6月調査時点）。' },
-  { question: '小倉のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、ビーコンセプト 小倉店は太ももダイエットプログラム 89,842円×2ヶ月（18回・税込・入会金無料）。RITA-STYLE 小倉魚町店はコース 49,000円〜（例: 2ヶ月8回 合計151,580円・税込、入会金39,800円）。プリッツジム 小倉店は月4回 14,300円／月8回 24,000円（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '小倉駅から近いジムは？', answer: '駅徒歩3分以内・直結では、RITA-STYLE 小倉魚町店（JR小倉駅）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'ビーコンセプト 小倉店、RITA-STYLE 小倉魚町店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'ビーコンセプト 小倉店、RITA-STYLE 小倉魚町店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '小倉で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、ビーコンセプト 小倉店、プリッツジム 小倉店です（2026年6月調査時点）。' },
+  { question: '小倉のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、ビーコンセプト 小倉店は太ももダイエットプログラム 89,842円×2ヶ月です（18回・税込・入会金無料）。RITA-STYLE 小倉魚町店はコース 49,000円〜です（例: 2ヶ月8回 合計151,580円・税込、入会金39,800円）。プリッツジム 小倉店は月4回 14,300円／月8回 24,000円です（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '小倉駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、RITA-STYLE 小倉魚町店（JR小倉駅）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'ビーコンセプト 小倉店、RITA-STYLE 小倉魚町店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'ビーコンセプト 小倉店、RITA-STYLE 小倉魚町店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function KokuraPage() {
@@ -93,7 +93,7 @@ export default function KokuraPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「小倉で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、小倉エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -158,10 +158,10 @@ export default function KokuraPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -176,8 +176,8 @@ export default function KokuraPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -225,7 +225,7 @@ export default function KokuraPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

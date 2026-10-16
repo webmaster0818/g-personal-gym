@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shibuya/'),
   title: '【2026年7月】渋谷の女性専用パーソナルジムおすすめ3選！料金比較',
-  description: '【2026年4月】渋谷のおすすめ女性専用パーソナルジム3選を徹底比較。UNDEUX SUPERBODY・OUTLINEなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】渋谷のおすすめ女性専用パーソナルジム3選を比較しています。UNDEUX SUPERBODY・OUTLINEなど人気ジムの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,渋谷,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '渋谷駅近'],
-    description: '全国40店舗以上展開の女性専用パーソナルジム。トレーニングに加え糖質オフ宅配食を無料提供する総合的なダイエットサポートが特徴。シャワー・パウダールーム・基礎化粧品完備で手ぶらOK。渋谷駅から好アクセス。',
+    description: '全国40店舗以上展開の女性専用パーソナルジムです。トレーニングに加え糖質オフ宅配食を無料提供する総合的なダイエットサポートが特徴です。シャワー・パウダールーム・基礎化粧品を完備しており、手ぶらで通えます。渋谷駅から好アクセスです。',
     access: 'JR「渋谷駅」徒歩5分',
     address: '東京都渋谷区（渋谷駅徒歩5分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプラン。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
@@ -39,10 +39,10 @@ const gyms = [
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '2年連続「女性に選ばれているパーソナルジム第1位」。業界初の生涯無料アフターサポートが最大の特徴。完全個室・女性専用マシン・ベビーサークル完備で、子連れママも安心。',
+    description: '2年連続「女性に選ばれているパーソナルジム第1位」です。業界初の生涯無料アフターサポートが最大の特徴です。完全個室・女性専用マシン・ベビーサークル完備で、子連れママも安心です。',
     access: 'JR「渋谷駅」徒歩7分',
     address: '東京都渋谷区（渋谷駅徒歩7分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
+    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニングです。卒業後も生涯無料のアフターサポートを受けられます。', price: '16回 184,800円〜（税込）' },
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
@@ -53,10 +53,10 @@ const gyms = [
     price: '月4回 12,000円〜（税込）',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格', '女性利用者8割', '渋谷駅近'],
-    description: 'アメリカ発のAI主導パーソナルトレーニングジム。1回わずか20分で効率的にトレーニングでき、月4回12,000円〜と低価格。利用者の8割以上が女性。忙しい女性に人気のジム。',
+    description: 'アメリカ発のAI主導パーソナルトレーニングジムです。1回わずか20分で効率的にトレーニングでき、月4回12,000円〜と低価格です。利用者の8割以上が女性です。忙しい女性に人気のジムです。',
     access: 'JR「渋谷駅」徒歩3分',
     address: '東京都渋谷区（渋谷駅徒歩3分）',
-    popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定。1回20分の効率トレーニング。', price: '月4回 12,000円〜（税込）' },
+    popularPlan: { name: '月4回プラン', description: 'AIが最適な負荷を設定します。1回20分の効率トレーニングです。', price: '月4回 12,000円〜（税込）' },
     options: ['AI個別最適化', '1回20分', 'ウェアレンタル無料'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['ダイエット', '健康維持', '体力向上', '運動習慣'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['トレーニングマシン', 'ロッカー'] },
@@ -64,16 +64,16 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '渋谷で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、エクササイズコーチが渋谷で人気の女性専用パーソナルジムです。それぞれ特徴が異なるので、食事管理重視ならUNDEUX、コスパ重視ならOUTLINEがおすすめです。' },
-  { question: '渋谷のパーソナルジムの料金相場は？', answer: '渋谷エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円。月額制なら月12,000円〜30,800円程度。エクササイズコーチは月4回12,000円〜と最安クラスです。' },
-  { question: '渋谷駅から近いパーソナルジムは？', answer: 'エクササイズコーチ渋谷店（徒歩3分）、UNDEUX SUPERBODY（徒歩5分）が渋谷駅から特に近いジムです。' },
-  { question: '子連れで通えるジムはある？', answer: 'OUTLINE渋谷店はベビーサークル完備で子連れOK。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験あり。OUTLINEは無料カウンセリングを実施しています。' },
-  { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
-  { question: '渋谷で最も安いパーソナルジムは？', answer: 'エクササイズコーチ（月4回12,000円〜）が最安。2ヶ月コースではOUTLINEが生涯サポート付きで184,800円〜。' },
-  { question: '短時間で通えるジムは？', answer: 'エクササイズコーチは1回20分で完了。忙しい方に最適です。他のジムも50〜75分のセッションが一般的です。' },
-  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料提供。' },
-  { question: 'リバウンドが心配な場合は？', answer: 'OUTLINE（アウトライン）は業界初の「生涯無料アフターサポート」があり、卒業後もずっとサポートが受けられます。リバウンドが心配な方に最もおすすめです。' },
+  { question: '渋谷で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、OUTLINE、エクササイズコーチが渋谷で人気の女性専用パーソナルジムです。それぞれ特徴が異なるので、食事管理重視ならUNDEUX、コスパ重視ならOUTLINEがおすすめです。' },
+  { question: '渋谷のパーソナルジムの料金相場はいくらですか？', answer: '渋谷エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制なら月12,000円〜30,800円程度です。エクササイズコーチは月4回12,000円〜と最安クラスです。' },
+  { question: '渋谷駅から近いパーソナルジムはどこですか？', answer: 'エクササイズコーチ渋谷店（徒歩3分）、UNDEUX SUPERBODY（徒歩5分）が渋谷駅から特に近いジムです。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'OUTLINE渋谷店はベビーサークルを完備しており、お子様連れでも利用できます。' },
+  { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験があります。OUTLINEは無料カウンセリングを実施しています。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
+  { question: '渋谷で最も安いパーソナルジムはどこですか？', answer: 'エクササイズコーチ（月4回12,000円〜）が最安です。2ヶ月コースではOUTLINEが生涯サポート付きで184,800円〜です。' },
+  { question: '短時間で通えるジムはどこですか？', answer: 'エクササイズコーチは1回20分で完了します。忙しい方に最適です。他のジムも50〜75分のセッションが一般的です。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料で提供しています。' },
+  { question: 'リバウンドが心配な場合はどうすればよいですか？', answer: 'OUTLINE（アウトライン）は業界初の「生涯無料アフターサポート」があり、卒業後もずっとサポートが受けられます。リバウンドが心配な方に最もおすすめです。' },
 ]
 
 export default function ShibuyaPage() {
@@ -102,7 +102,7 @@ export default function ShibuyaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「渋谷で女性専用のパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、渋谷エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -157,12 +157,12 @@ export default function ShibuyaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">15万〜22万円</p>
-                <p className="text-sm text-brand-muted">当サイト掲載ではOUTLINE 184,800円〜、UNDEUX 220,000円〜（いずれも16回・税込）。</p>
+                <p className="text-sm text-brand-muted">当サイト掲載ではOUTLINE 184,800円〜、UNDEUX 220,000円〜です（いずれも16回・税込）。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
                 <p className="text-3xl font-bold text-accent mb-2">1.2万〜3.1万円/月</p>
-                <p className="text-sm text-brand-muted">エクササイズコーチ12,000円〜が最安。</p>
+                <p className="text-sm text-brand-muted">エクササイズコーチ12,000円〜が最安です。</p>
               </div>
             </div>
           </div>
@@ -174,11 +174,11 @@ export default function ShibuyaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">渋谷駅は出口が多い</h3>
-                <p className="text-brand-muted leading-relaxed">渋谷駅は複数の路線が乗り入れ、出口も多いです。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">渋谷駅は複数の路線が乗り入れ、出口も多いです。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験レッスンは2〜3ジム比較を</h3>
-                <p className="text-brand-muted leading-relaxed">渋谷は選択肢が多いエリア。最低2〜3ジムの体験に行って、トレーナーとの相性や雰囲気を比較してから決めましょう。</p>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験レッスンは2〜3ジムで比較</h3>
+                <p className="text-brand-muted leading-relaxed">渋谷は選択肢が多いエリアです。最低2〜3ジムの体験に行って、トレーナーとの相性や雰囲気を比較してから決めることをおすすめします。</p>
               </div>
             </div>
           </div>
@@ -192,8 +192,8 @@ export default function ShibuyaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -235,14 +235,14 @@ export default function ShibuyaPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">渋谷エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINEがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

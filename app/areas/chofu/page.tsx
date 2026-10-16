@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/chofu/'),
   title: '【2026年7月】調布の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】調布のおすすめ女性向けパーソナルジム3選を比較。かたぎり塾・@style・パーソナルトレーニングSuAiなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】調布のおすすめ女性向けパーソナルジム3選を比較しています。かたぎり塾・@style・パーソナルトレーニングSuAiなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,調布,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '月4回 33,000円（税込）',
     trial: '無料体験あり（手ぶらOK・体組成測定＋カウンセリング＋体験トレーニング）',
     features: ['月額制', '完全個室', '子連れOK', '産後ダイエット対応'],
-    description: '調布駅徒歩1分の完全個室マンツーマンジム。月額制で、子連れOK・産後ダイエットに対応します。',
+    description: '調布駅徒歩1分の完全個室マンツーマンジムです。月額制で、子連れOK・産後ダイエットに対応します。',
     access: '京王線 調布駅 徒歩1分',
     address: '東京都調布市布田1-42-4 鈴木ビル1階',
     options: ['月8回59,400円', '無期限チケット8,800円/回', '体験当日入会で入会金0円（通常55,000円）'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください',
     trial: '無料体験あり',
     features: ['女性限定', '食事管理サポート', 'プライベート空間'],
-    description: '「東京・調布の女性限定パーソナルトレーニングジム」と公式に明記された女性専用ジム。食事管理サポートがあります。プライバシー保護のため所在地は予約時に案内されます。',
+    description: '「東京・調布の女性限定パーソナルトレーニングジム」と公式に明記された女性専用ジムです。食事管理サポートがあります。プライバシー保護のため所在地は予約時に案内されます。',
     access: '調布エリア（プライバシー保護のため所在地は予約時案内・公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -49,7 +49,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください',
     trial: '体験予約可（24時間オンライン予約・電話可）',
     features: ['女性専用', '食事アドバイスあり', '人目を気にしない環境'],
-    description: '女性専用と公式に明記されたパーソナルジム。食事アドバイスつきで、「周りの目を気にせずできる環境」を掲げています。',
+    description: '女性専用と公式に明記されたパーソナルジムです。食事アドバイス付きで、「周りの目を気にせずできる環境」を掲げています。',
     access: '調布市小島町1-35-4（調布駅近く・徒歩分数は公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -57,12 +57,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '調布で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、パーソナルトレーニングSuAi 調布店です（2026年6月調査時点）。' },
-  { question: '調布のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、かたぎり塾 調布店は月4回 33,000円（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '調布駅から近いジムは？', answer: '駅徒歩3分以内・直結では、かたぎり塾 調布店（京王線 調布駅 徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'かたぎり塾 調布店、@style（アットスタイル）調布は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'かたぎり塾 調布店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '調布で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、パーソナルトレーニングSuAi 調布店です（2026年6月調査時点）。' },
+  { question: '調布のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、かたぎり塾 調布店は月4回 33,000円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '調布駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、かたぎり塾 調布店（京王線 調布駅 徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'かたぎり塾 調布店、@style（アットスタイル）調布は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'かたぎり塾 調布店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function ChofuPage() {
@@ -91,7 +91,7 @@ export default function ChofuPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「調布で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、調布エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -156,10 +156,10 @@ export default function ChofuPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -174,8 +174,8 @@ export default function ChofuPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -223,7 +223,7 @@ export default function ChofuPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

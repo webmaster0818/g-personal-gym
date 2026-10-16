@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/mizonokuchi/'),
   title: '【2026年7月】溝の口の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】溝の口のおすすめ女性向けパーソナルジム3選を比較。PERSONAL・かたぎり塾・UBTYなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】溝の口のおすすめ女性向けパーソナルジム3選を比較しています。PERSONAL・かたぎり塾・UBTYなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,溝の口,神奈川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '月2回 22,000円／月4回 39,600円／月8回 70,400円（各50分）',
     trial: '体験あり（カウンセリング＋体験トレーニング30分程度）',
     features: ['女性専用', 'マンツーマン', 'LINE食事サポート（オプション）'],
-    description: '女性専用のパーソナルトレーニングスタジオ。50分マンツーマンの月額制で、LINE食事サポート（月11,000円）をオプションで付けられます。',
+    description: '女性専用のパーソナルトレーニングスタジオです。50分マンツーマンの月額制で、LINE食事サポート（月11,000円）をオプションで付けられます。',
     access: '高津駅 徒歩1分／溝の口駅 徒歩10分',
     address: '川崎市高津区二子4-2-6',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: '月4回 30,800円（税込）',
     trial: '無料体験60分',
     features: ['月額制', 'マンツーマン', 'AI食事指導'],
-    description: '高津駅徒歩1分の月額制マンツーマンジム。医師・理学療法士監修メソッドで、AI食事指導アプリが無料です。',
+    description: '高津駅徒歩1分の月額制マンツーマンジムです。医師・理学療法士監修メソッドで、AI食事指導アプリが無料です。',
     access: '東急田園都市線 高津駅 徒歩1分（溝の口駅から1駅・徒歩圏）',
     options: ['月8回59,400円', '無期限チケット8,800円/回', '体験当日入会で入会金0円（通常55,000円）'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性利用多数）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -49,7 +49,7 @@ const gyms = [
     price: '-3kg〜確約コース 78,000円〜（目標達成まで回数無制限）',
     trial: '無料カウンセリング実施中（LINE・電話・メール）',
     features: ['女性専用エリア完備', '回数無制限', '食事指導あり', 'サウナ・ジェットバス利用可'],
-    description: '目標達成まで回数無制限の確約型ジム。女性専用ではありませんが女性専用エリアを完備。ゴールドジム溝の口内にあり、ジェットバス・サウナも利用できます。',
+    description: '目標達成まで回数無制限の確約型ジムです。女性専用ではありませんが女性専用エリアを完備しています。ゴールドジム溝の口内にあり、ジェットバス・サウナも利用できます。',
     access: '溝の口駅・JR武蔵溝ノ口駅 徒歩2分',
     address: '川崎市高津区溝口1-1-30 溝の口ブロックスビル2F・3F',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性専用エリアあり）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -58,11 +58,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '溝の口で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、PERSONAL TRAINING STUDIO U 溝の口・高津女性専用店です（2026年6月調査時点）。' },
-  { question: '溝の口のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、PERSONAL TRAINING STUDIO U 溝の口・高津女性専用店は月2回 22,000円／月4回 39,600円／月8回 70,400円（各50分）。かたぎり塾 高津店は月4回 30,800円（税込）。UBTY 溝の口は-3kg〜確約コース 78,000円〜（目標達成まで回数無制限）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '溝の口駅から近いジムは？', answer: '駅徒歩3分以内・直結では、PERSONAL TRAINING STUDIO U 溝の口・高津女性専用店（高津駅 徒歩1分）、かたぎり塾 高津店（東急田園都市線 高津駅 徒歩1分）、UBTY 溝の口（溝の口駅・JR武蔵溝ノ口駅 徒歩2分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'かたぎり塾 高津店、UBTY 溝の口は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '溝の口で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、PERSONAL TRAINING STUDIO U 溝の口・高津女性専用店です（2026年6月調査時点）。' },
+  { question: '溝の口のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、PERSONAL TRAINING STUDIO U 溝の口・高津女性専用店は月2回 22,000円／月4回 39,600円／月8回 70,400円です（各50分）。かたぎり塾 高津店は月4回 30,800円です（税込）。UBTY 溝の口は-3kg〜確約コース 78,000円〜です（目標達成まで回数無制限）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '溝の口駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、PERSONAL TRAINING STUDIO U 溝の口・高津女性専用店（高津駅 徒歩1分）、かたぎり塾 高津店（東急田園都市線 高津駅 徒歩1分）、UBTY 溝の口（溝の口駅・JR武蔵溝ノ口駅 徒歩2分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'かたぎり塾 高津店、UBTY 溝の口は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function MizonokuchiPage() {
@@ -91,7 +91,7 @@ export default function MizonokuchiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「溝の口で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、溝の口エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -152,10 +152,10 @@ export default function MizonokuchiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -170,8 +170,8 @@ export default function MizonokuchiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -219,7 +219,7 @@ export default function MizonokuchiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

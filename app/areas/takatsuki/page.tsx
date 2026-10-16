@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/takatsuki/'),
   title: '【2026年7月】高槻の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】高槻のおすすめ女性向けパーソナルジム3選を比較。パーソナルジムBREEZE・fis.lady\'s・パーソナルトレーニングジムWILLなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】高槻のおすすめ女性向けパーソナルジム3選を比較しています。パーソナルジムBREEZE・fis.lady\'s・パーソナルトレーニングジムWILLなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,高槻,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -24,8 +24,8 @@ const gyms = [
     officialUrl: 'https://www.breeze-takatuki.com/',
     price: '通い放題 月額32,780円〜（税込）',
     trial: '無料カウンセリングあり（無理な勧誘なしと明記）',
-    features: ['女性専用', '全プラン食事管理つき', 'ストレッチ・整体対応', '手ぶらOK'],
-    description: '女性専用のマンツーマンジム。30分通い放題など3プランすべてに食事管理がつき、ストレッチ・整体にも対応。ウェア・タオル無料で手ぶらOKです。',
+    features: ['女性専用', '全プラン食事管理付き', 'ストレッチ・整体対応', '手ぶらOK'],
+    description: '女性専用のマンツーマンジムです。30分通い放題など3プランすべてに食事管理がつき、ストレッチ・整体にも対応しています。ウェア・タオル無料で手ぶらOKです。',
     access: 'JR高槻駅 徒歩3分／阪急高槻市駅 徒歩3分',
     options: ['30分通い放題／60分スタンダード／90分トータルケアの3プラン'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '姿勢改善', 'ボディメイク'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: '回数券8回 65,800円〜／月額制 月2回 16,400円〜（税込）',
     trial: '当日入会30,000円OFFキャンペーンあり（体験ベース）',
     features: ['女性専用', 'トレーナー全員女性', '完全個室', 'マシンピラティス＋パーソナル', '子連れ可'],
-    description: '女性専用・全員女性トレーナーの完全個室ジム。マシンピラティスとパーソナルを組み合わせられ、指名制・手ぶらOK・ベビーベッド完備で子連れ可です。',
+    description: '女性専用・全員女性トレーナーの完全個室ジムです。マシンピラティスとパーソナルを組み合わせられ、指名制・手ぶらOK・ベビーベッド完備で子連れ可です。',
     access: 'JR高槻駅南口 徒歩3分／阪急高槻市駅8番出口 徒歩3分',
     address: '高槻市高槻町10-15 エクセレント富士',
     options: ['回数券32回236,800円', '月10回66,000円', '指名制あり'],
@@ -50,7 +50,7 @@ const gyms = [
     price: 'お試しトレーニング2,750円／結果保証コース 1回あたり3,850円〜',
     trial: '無料カウンセリング（Web/LINE予約）',
     features: ['完全個室', '食事指導あり', '子連れ可', '医療系国家資格保持トレーナー'],
-    description: '完全個室のパーソナルジム。女性専用ではありませんが女性客が多く、医療系国家資格を持つトレーナーが在籍。食事指導つきで子連れ可です。',
+    description: '完全個室のパーソナルジムです。女性専用ではありませんが女性客が多く、医療系国家資格を持つトレーナーが在籍しています。食事指導付きで子連れ可です。',
     access: '阪急高槻市駅 徒歩2分／JR高槻駅 徒歩4分',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性客多数）', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -58,12 +58,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '高槻で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、パーソナルジムBREEZE 高槻店、fis.lady\'s 高槻店です（2026年6月調査時点）。' },
-  { question: '高槻のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、パーソナルジムBREEZE 高槻店は通い放題 月額32,780円〜（税込）。fis.lady\'s 高槻店は回数券8回 65,800円〜／月額制 月2回 16,400円〜（税込）。パーソナルトレーニングジムWILL 高槻店はお試しトレーニング2,750円／結果保証コース 1回あたり3,850円〜。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '高槻駅から近いジムは？', answer: '駅徒歩3分以内・直結では、パーソナルジムBREEZE 高槻店（JR高槻駅 徒歩3分）、fis.lady\'s 高槻店（JR高槻駅南口 徒歩3分）、パーソナルトレーニングジムWILL 高槻店（阪急高槻市駅 徒歩2分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'パーソナルジムBREEZE 高槻店、fis.lady\'s 高槻店、パーソナルトレーニングジムWILL 高槻店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'fis.lady\'s 高槻店、パーソナルトレーニングジムWILL 高槻店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '高槻で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、パーソナルジムBREEZE 高槻店、fis.lady\'s 高槻店です（2026年6月調査時点）。' },
+  { question: '高槻のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、パーソナルジムBREEZE 高槻店は通い放題 月額32,780円〜です（税込）。fis.lady\'s 高槻店は回数券8回 65,800円〜／月額制 月2回 16,400円〜です（税込）。パーソナルトレーニングジムWILL 高槻店はお試しトレーニング2,750円／結果保証コース 1回あたり3,850円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '高槻駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、パーソナルジムBREEZE 高槻店（JR高槻駅 徒歩3分）、fis.lady\'s 高槻店（JR高槻駅南口 徒歩3分）、パーソナルトレーニングジムWILL 高槻店（阪急高槻市駅 徒歩2分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'パーソナルジムBREEZE 高槻店、fis.lady\'s 高槻店、パーソナルトレーニングジムWILL 高槻店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'fis.lady\'s 高槻店、パーソナルトレーニングジムWILL 高槻店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function TakatsukiPage() {
@@ -92,7 +92,7 @@ export default function TakatsukiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「高槻で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、高槻エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -157,10 +157,10 @@ export default function TakatsukiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -175,8 +175,8 @@ export default function TakatsukiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -224,7 +224,7 @@ export default function TakatsukiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/namba/'),
   title: '【2026年7月】難波の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】難波のおすすめ女性向けパーソナルジム2選を比較。リボーンマイセルフ・Amazonesの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】難波のおすすめ女性向けパーソナルジム2選を比較しています。リボーンマイセルフ・Amazonesの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,難波,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '月額プラン 8,360円〜35,200円（月2〜8回・税込、入会金22,000円）',
     trial: 'カウンセリング無料・体験トレーニング無料',
     features: ['女性専用', '完全個室', '専属トレーナー制', 'ピラティス併設'],
-    description: '駅直結の女性専用ジム。会員・トレーナーとも女性のみで、完全個室・専属トレーナー制。ピラティスオプションもあります。',
+    description: '駅直結の女性専用ジムです。会員・トレーナーとも女性のみで、完全個室・専属トレーナー制です。ピラティスオプションもあります。',
     access: '南海なんば駅直結（なんばスカイオ6F）',
     address: '大阪市中央区難波5-1-60 なんばスカイオ6F',
     options: ['ピラティスオプション月2,000円', '食事説明オプション5,000円/回', 'ウェア・タオル無料'],
@@ -38,7 +38,7 @@ const gyms = [
     price: 'フィットネス月額9,900円／パーソナルプラン月額22,000円〜',
     trial: '無料体験受付中',
     features: ['女性専用', '24時間営業', 'トレーナー全員女性', 'セルフ＋パーソナル併用可'],
-    description: '女性専用の24時間ジム。トレーナーは全員女性で、セルフ利用とパーソナルを併用できます。下半身マシンは地域最大級です。',
+    description: '女性専用の24時間ジムです。トレーナーは全員女性で、セルフ利用とパーソナルを併用できます。下半身マシンは地域最大級です。',
     access: 'JR難波駅徒歩2分／四つ橋線・近鉄なんば駅徒歩3分',
     address: '大阪市浪速区桜川1-3-2',
     options: ['通い放題パーソナル月44,000円', '学生・シニア月7,700円'],
@@ -48,11 +48,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '難波で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ なんばスカイオ店、Amazones（アマゾネス）難波本店です（2026年6月調査時点）。' },
-  { question: '難波のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、リボーンマイセルフ なんばスカイオ店は月額プラン 8,360円〜35,200円（月2〜8回・税込、入会金22,000円）。Amazones（アマゾネス）難波本店はフィットネス月額9,900円／パーソナルプラン月額22,000円〜。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '難波駅から近いジムは？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ なんばスカイオ店（南海なんば駅直結）、Amazones（アマゾネス）難波本店（JR難波駅徒歩2分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'リボーンマイセルフ なんばスカイオ店、Amazones（アマゾネス）難波本店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '難波で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ なんばスカイオ店、Amazones（アマゾネス）難波本店です（2026年6月調査時点）。' },
+  { question: '難波のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、リボーンマイセルフ なんばスカイオ店は月額プラン 8,360円〜35,200円です（月2〜8回・税込、入会金22,000円）。Amazones（アマゾネス）難波本店はフィットネス月額9,900円／パーソナルプラン月額22,000円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '難波駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ なんばスカイオ店（南海なんば駅直結）、Amazones（アマゾネス）難波本店（JR難波駅徒歩2分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'リボーンマイセルフ なんばスカイオ店、Amazones（アマゾネス）難波本店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function NambaPage() {
@@ -81,7 +81,7 @@ export default function NambaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「難波で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、難波エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -146,10 +146,10 @@ export default function NambaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -164,8 +164,8 @@ export default function NambaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -213,7 +213,7 @@ export default function NambaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/omotesando/'),
   title: '【2026年7月】表参道の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】表参道・青山のおすすめ女性専用パーソナルジム4選を徹底比較。UNDEUX SUPERBODY・AGLAIA・MMMなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】表参道・青山のおすすめ女性専用パーソナルジム4選を比較しています。UNDEUX SUPERBODY・AGLAIA・MMMなど人気ジムの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,表参道,青山,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '駅徒歩1分', '宅配食無料', 'チーム担当制', 'パウダールーム完備'],
-    description: '表参道駅徒歩1分の最高立地。トレーナーと管理栄養士のチーム担当制で総合的にサポート。宅配食と管理栄養士による毎食指導の2つのプランから選択可能。',
+    description: '表参道駅徒歩1分の最高立地です。トレーナーと管理栄養士のチーム担当制で総合的にサポートしています。宅配食と管理栄養士による毎食指導の2つのプランから選択可能です。',
     access: '東京メトロ「表参道駅」徒歩1分',
     address: '東京都港区南青山（表参道駅徒歩1分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプラン。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['糖質オフ宅配食無料', '管理栄養士の毎食指導', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', 'ボディメイク', '美容'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
@@ -38,10 +38,10 @@ const gyms = [
     price: '月4回 52,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '美尻特化', '姿勢改善', '未経験者80%', 'オリジナルメソッド'],
-    description: '表参道の女性専用パーソナルジム。ゼロから美尻を作るオリジナルメソッドが特徴。会員の80%がトレーニング未経験者で、初心者でも安心。姿勢改善にも定評あり。',
+    description: '表参道の女性専用パーソナルジムです。ゼロから美尻を作るオリジナルメソッドが特徴です。会員の80%がトレーニング未経験者で、初心者でも安心です。姿勢改善にも定評があります。',
     access: '東京メトロ「表参道駅」徒歩6分',
     address: '東京都港区南青山（表参道駅徒歩6分）',
-    popularPlan: { name: '美尻メイクコース', description: 'オリジナルメソッドによる美尻・姿勢改善特化トレーニング。', price: '月4回 52,800円〜（税込）' },
+    popularPlan: { name: '美尻メイクコース', description: 'オリジナルメソッドによる美尻・姿勢改善特化トレーニングです。', price: '月4回 52,800円〜（税込）' },
     options: ['美尻専用マシン完備', '姿勢改善プログラム', '食事アドバイス', 'ウェアレンタル'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['美尻', 'ヒップアップ', '姿勢改善', 'ボディメイク'] },
     basicInfo: { hours: '10:00〜21:00', closed: '不定休', facilities: ['完全個室', '美尻専用マシン', 'ロッカー'] },
@@ -51,10 +51,10 @@ const gyms = [
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', 'バストアッププラン', '駅徒歩1分', 'オーダーメイド', '表参道'],
-    description: '表参道駅徒歩1分の女性専用パーソナルジム。バストアッププランならバストを維持しつつ余分な脂肪のみを落とすことが可能。一人ひとりに合わせたオーダーメイドダイエット。',
+    description: '表参道駅徒歩1分の女性専用パーソナルジムです。バストアッププランならバストを維持しつつ余分な脂肪のみを落とすことが可能です。一人ひとりに合わせたオーダーメイドダイエットです。',
     access: '東京メトロ「表参道駅」徒歩1分',
     address: '東京都港区南青山（表参道駅徒歩1分）',
-    popularPlan: { name: 'バストアッププラン', description: 'バストを維持しつつ余分な脂肪を落とすオーダーメイドプラン。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: 'バストアッププラン', description: 'バストを維持しつつ余分な脂肪を落とすオーダーメイドプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['バストアッププラン', 'オーダーメイドメニュー', '食事指導', 'ウェアレンタル'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'バストアップ', 'ボディメイク', '部分痩せ'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー'] },
@@ -65,10 +65,10 @@ const gyms = [
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
-    description: '米国発のAIパーソナルジム。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
+    description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
     access: '「表参道」駅周辺',
     address: '表参道エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニング。月額制で継続しやすい。', price: '月額制（プラン・店舗により異なる）' },
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制で継続しやすいです。', price: '月額制（プラン・店舗により異なる）' },
     options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
     basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
@@ -76,15 +76,15 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '表参道で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、AGLAIA、MMMが表参道で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、美尻特化ならAGLAIA、バストアップならMMMがおすすめ。' },
-  { question: '表参道のパーソナルジムの料金相場は？', answer: '表参道の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円。表参道は高級エリアですが、郊外と大きな差はありません。' },
-  { question: '表参道駅から最も近いジムは？', answer: 'UNDEUX SUPERBODYとMMM（トリプルエム）が表参道駅徒歩1分で最も近い。' },
-  { question: '美尻・ヒップアップに特化したジムは？', answer: 'AGLAIA（アグライア）は美尻専用マシン「グルーツビルダー」を完備し、ゼロから美尻を作るオリジナルメソッドを提供。' },
-  { question: '体験は無料？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。AGLAIA、MMM、エクササイズコーチは無料カウンセリングを実施しています。' },
-  { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎。AGLAIAは会員の80%がトレーニング未経験者で、特に初心者フレンドリーです。' },
-  { question: '表参道と青山のジムは同じエリア？', answer: '表参道駅は港区南青山に位置しており、「表参道」「青山」は基本的に同じエリアです。ジムの住所は「南青山」が多いですが、いずれも表参道駅から徒歩圏内です。' },
-  { question: 'バストアップしながらダイエットできるジムは？', answer: 'MMM（トリプルエム）の「バストアッププラン」は、バストを維持しつつ余分な脂肪だけを落とすことが可能。他にはない独自のプランです。' },
-  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択可能。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドが好評。' },
+  { question: '表参道で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、AGLAIA、MMMが表参道で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、美尻特化ならAGLAIA、バストアップならMMMがおすすめです。' },
+  { question: '表参道のパーソナルジムの料金相場はいくらですか？', answer: '表参道の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円です。表参道は高級エリアですが、郊外と大きな差はありません。' },
+  { question: '表参道駅から最も近いジムはどこですか？', answer: 'UNDEUX SUPERBODYとMMM（トリプルエム）が表参道駅徒歩1分で最も近いです。' },
+  { question: '美尻・ヒップアップに特化したジムはどこですか？', answer: 'AGLAIA（アグライア）は美尻専用マシン「グルーツビルダー」を完備し、ゼロから美尻を作るオリジナルメソッドを提供しています。' },
+  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。AGLAIA、MMM、エクササイズコーチは無料カウンセリングを実施しています。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。AGLAIAは会員の80%がトレーニング未経験者で、特に初心者フレンドリーです。' },
+  { question: '表参道と青山のジムは同じエリアですか？', answer: '表参道駅は港区南青山に位置しており、「表参道」「青山」は基本的に同じエリアです。ジムの住所は「南青山」が多いですが、いずれも表参道駅から徒歩圏内です。' },
+  { question: 'バストアップしながらダイエットできるジムはどこですか？', answer: 'MMM（トリプルエム）の「バストアッププラン」は、バストを維持しつつ余分な脂肪だけを落とすことが可能です。他にはない独自のプランです。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択可能です。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドが好評です。' },
 ]
 
 export default function OmotesandoPage() {
@@ -113,7 +113,7 @@ export default function OmotesandoPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「表参道・青山エリアで女性専用のパーソナルジムを探している」「おしゃれな街で美ボディを手に入れたい」という方のために、表参道エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -168,12 +168,12 @@ export default function OmotesandoPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">表参道は高級イメージですが料金は都内平均並み。</p>
+                <p className="text-sm text-brand-muted">表参道は高級なイメージがありますが、料金は都内の平均並みです。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
                 <p className="text-3xl font-bold text-accent mb-2">5.3万円〜/月</p>
-                <p className="text-sm text-brand-muted">AGLAIA 月4回52,800円〜。部位特化型のジムは月額制が多い傾向。</p>
+                <p className="text-sm text-brand-muted">AGLAIA 月4回52,800円〜です。部位特化型のジムは月額制が多い傾向です。</p>
               </div>
             </div>
           </div>
@@ -185,11 +185,11 @@ export default function OmotesandoPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">高級エリアだが料金は都内平均並み</h3>
-                <p className="text-brand-muted leading-relaxed">表参道・青山は高級イメージですが、パーソナルジムの料金は渋谷・新宿とほぼ同等。エリアイメージで敬遠せず、まずは無料カウンセリングに行ってみましょう。</p>
+                <p className="text-brand-muted leading-relaxed">表参道・青山は高級イメージですが、パーソナルジムの料金は渋谷・新宿とほぼ同等です。エリアのイメージだけで判断せず、まずは無料カウンセリングをご利用ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">美容・ボディメイク特化のジムが多い</h3>
-                <p className="text-brand-muted leading-relaxed">表参道エリアは美尻・美脚・バストアップなど美容特化のジムが多いのが特徴。ダイエットだけでなくボディラインの美しさを追求したい方に最適です。</p>
+                <p className="text-brand-muted leading-relaxed">表参道エリアは美尻・美脚・バストアップなど美容特化のジムが多いのが特徴です。ダイエットだけでなくボディラインの美しさを追求したい方に最適です。</p>
               </div>
             </div>
           </div>
@@ -219,14 +219,14 @@ export default function OmotesandoPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">表参道エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、美尻ならAGLAIAがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

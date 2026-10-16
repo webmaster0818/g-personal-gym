@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nakameguro/'),
   title: '【2026年7月】中目黒の女性専用パーソナルジムおすすめ3選！料金比較',
-  description: '【2026年4月】中目黒のおすすめ女性専用パーソナルジム3選を徹底比較。zen place・かたぎり塾・Apple GYMの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】中目黒のおすすめ女性専用パーソナルジム3選を比較しています。zen place・かたぎり塾・Apple GYMの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,中目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -24,10 +24,10 @@ const gyms = [
     price: '月4回 14,520円〜（税込）',
     trial: '体験レッスン1,000円',
     features: ['女性専用プランあり', 'ピラティス専門', '姿勢改善', 'マシンピラティス', '中目黒駅近'],
-    description: '全国100店舗以上展開のピラティス専門スタジオ。マシンピラティスを活用した姿勢改善・インナーマッスル強化が得意。中目黒のおしゃれな空間でリラックスしながらトレーニング。',
+    description: '全国100店舗以上展開のピラティス専門スタジオです。マシンピラティスを活用した姿勢改善・インナーマッスル強化が得意です。中目黒のおしゃれな空間でリラックスしながらトレーニングです。',
     access: '東急東横線「中目黒駅」徒歩3分',
     address: '東京都目黒区上目黒（中目黒駅徒歩3分）',
-    popularPlan: { name: 'マシンピラティス月4回プラン', description: '専用マシンを使ったピラティスで姿勢改善・体幹強化。', price: '月4回 14,520円〜（税込）' },
+    popularPlan: { name: 'マシンピラティス月4回プラン', description: '専用マシンを使ったピラティスで姿勢改善・体幹強化を図ります。', price: '月4回 14,520円〜（税込）' },
     options: ['マシンピラティス', 'マットピラティス', 'プライベートレッスン対応', '男女共用（女性8割）'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性80% / 男性20%', purpose: ['姿勢改善', 'インナーマッスル強化', 'ボディメイク', 'リラックス'] },
     basicInfo: { hours: '9:00〜21:00', closed: '不定休', facilities: ['マシンピラティス', 'マットスペース', 'ロッカー'] },
@@ -38,10 +38,10 @@ const gyms = [
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '中目黒駅近'],
-    description: '全国展開のパーソナルジムチェーン。月額制で続けやすい料金設定が人気。AI食事指導など最新技術も活用。中目黒の落ち着いた雰囲気で無理なく通える。',
+    description: '全国展開のパーソナルジムチェーンです。月額制で続けやすい料金設定が人気です。AI食事指導など最新技術も活用しています。中目黒の落ち着いた雰囲気で無理なく通えます。',
     access: '東急東横線「中目黒駅」徒歩4分',
     address: '東京都目黒区上目黒（中目黒駅徒歩4分）',
-    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニング。AI食事指導付き。', price: '月4回 30,800円〜（税込）' },
+    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニングです。AIによる食事指導が付いています。', price: '月4回 30,800円〜（税込）' },
     options: ['AI食事指導', '月額制で始めやすい', '回数変更可能'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
     basicInfo: { hours: '月〜水・金10:00〜22:00／木9:00〜22:00／土9:00〜21:00／日9:00〜20:00', closed: '公式サイトでご確認ください', facilities: ['個室', 'ロッカー'] },
@@ -51,10 +51,10 @@ const gyms = [
     price: '8回 49,280円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '海外式ボディメイク', '完全個室', 'リーズナブル', '芸能人御用達'],
-    description: '東京を中心に展開するパーソナルジム。海外式のボディメイクメソッドで、女性らしいシルエットを目指す。芸能人やモデルも通う人気ジム。リーズナブルな料金設定も魅力。',
+    description: '東京を中心に展開するパーソナルジムです。海外式のボディメイクメソッドで、女性らしいシルエットを目指します。芸能人やモデルも通う人気ジムです。リーズナブルな料金設定も魅力です。',
     access: '東急東横線「中目黒駅」徒歩5分',
     address: '東京都目黒区上目黒（中目黒駅徒歩5分）',
-    popularPlan: { name: '8回チケット', description: '海外式ボディメイクのパーソナルトレーニング8回。', price: '8回 49,280円〜（税込）' },
+    popularPlan: { name: '8回チケット', description: '海外式ボディメイクのパーソナルトレーニング8回です。', price: '8回 49,280円〜（税込）' },
     options: ['海外式ボディメイク', '完全個室', 'ウェアレンタル無料', '食事指導付き'],
     userProfile: { ageRange: '20代〜30代が中心', genderRatio: '女性100%', purpose: ['ボディメイク', 'ダイエット', 'ヒップアップ', '美脚'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ロッカー'] },
@@ -63,8 +63,8 @@ const gyms = [
 
 const faqs = [
   { question: '中目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、中目黒エリアではzen place、かたぎり塾、Apple GYMを掲載しています。' },
-  { question: '中目黒のパーソナルジムの料金相場は？', answer: '中目黒エリアのパーソナルジムは月額14,520円〜（zen place）やApple GYMの8回49,280円〜など、幅広い選択肢があります。' },
-  { question: '中目黒でピラティスもできるパーソナルジムは？', answer: 'zen place pilates 中目黒スタジオでは、マシンピラティスを使った本格的なピラティストレーニングが受けられます。姿勢改善やインナーマッスル強化に効果的です。' },
+  { question: '中目黒のパーソナルジムの料金相場はいくらですか？', answer: '中目黒エリアのパーソナルジムは月額14,520円〜（zen place）やApple GYMの8回49,280円〜など、幅広い選択肢があります。' },
+  { question: '中目黒でピラティスもできるパーソナルジムはどこですか？', answer: 'zen place pilates 中目黒スタジオでは、マシンピラティスを使った本格的なピラティストレーニングが受けられます。姿勢改善やインナーマッスル強化に効果的です。' },
 ]
 
 export default function NakameguroPage() {
@@ -93,7 +93,7 @@ export default function NakameguroPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「中目黒で女性専用のパーソナルジムを探している」「おしゃれなエリアで通いやすいジムが知りたい」という方のために、中目黒エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -125,7 +125,7 @@ export default function NakameguroPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">中目黒エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">姿勢改善ならzen place、コスパ重視ならApple GYMがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
@@ -151,7 +151,7 @@ export default function NakameguroPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

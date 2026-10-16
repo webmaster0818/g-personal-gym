@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/sapporo/'),
   title: '【2026年7月】札幌の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】札幌のおすすめ女性専用・女性向けパーソナルジム4選を徹底比較。料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】札幌のおすすめ女性専用・女性向けパーソナルジム4選を比較しています。料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,札幌,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '入会金22,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ', '大通駅徒歩1分'],
-    description: '大通駅36番出口から徒歩1分の好立地。女性トレーナーのみ在籍の女性専用ジム。',
+    description: '大通駅36番出口から徒歩1分の好立地です。女性トレーナーのみ在籍の女性専用ジムです。',
     access: '地下鉄「大通駅」36番出口 徒歩1分',
     address: '北海道札幌市中央区南1条西2-1-1 らんたんビルB2階',
-    popularPlan: { name: '人気プラン', description: '大通駅36番出口から徒歩1分の好立地。女性トレーナーのみ在籍の女性専用ジム。', price: '入会金22,000円＋コース料金' },
+    popularPlan: { name: '人気プラン', description: '大通駅36番出口から徒歩1分の好立地です。女性トレーナーのみ在籍の女性専用ジムです。', price: '入会金22,000円＋コース料金' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '平日11:00〜22:00／土日祝10:00〜19:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -39,10 +39,10 @@ const gyms = [
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '医師監修'],
-    description: '札幌エリアの下半身痩せ特化女性専用パーソナルジム。',
+    description: '札幌エリアの下半身痩せ特化女性専用パーソナルジムです。',
     access: '地下鉄「大通駅」徒歩5分',
     address: '北海道札幌市中央区南3条西6-3-3 ジャラン狸小路302',
-    popularPlan: { name: '人気プラン', description: '札幌エリアの下半身痩せ特化女性専用パーソナルジム。', price: '2ヶ月18回 179,685円〜（税込）' },
+    popularPlan: { name: '人気プラン', description: '札幌エリアの下半身痩せ特化女性専用パーソナルジムです。', price: '2ヶ月18回 179,685円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -52,10 +52,10 @@ const gyms = [
     price: '16回 281,600円〜（税込）',
     trial: '体験レッスンあり',
     features: ['コンテスト入賞トレーナー', '完全個室', '食事指導あり'],
-    description: 'コンテスト入賞者多数在籍。札幌で本格的なボディメイク。',
+    description: 'コンテスト入賞者多数在籍しています。札幌で本格的なボディメイクです。',
     access: '地下鉄「大通駅」徒歩5分',
     address: '地下鉄「大通駅」徒歩5分',
-    popularPlan: { name: '人気プラン', description: 'コンテスト入賞者多数在籍。札幌で本格的なボディメイク。', price: '16回 281,600円〜（税込）' },
+    popularPlan: { name: '人気プラン', description: 'コンテスト入賞者多数在籍しています。札幌で本格的なボディメイクです。', price: '16回 281,600円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -65,10 +65,10 @@ const gyms = [
     price: '要問合せ',
     trial: '体験レッスンあり',
     features: ['女性専用', '骨格から整える', '卒業を目指す'],
-    description: '骨格から整え理想のボディラインへ導く女性専用ジム。通い続けない卒業できる身体へ。',
+    description: '骨格から整え理想のボディラインへ導く女性専用ジムです。通い続けなくても維持できる、卒業を見据えた体づくりを掲げています。',
     access: '札幌市内',
     address: '札幌市内',
-    popularPlan: { name: '人気プラン', description: '骨格から整え理想のボディラインへ導く女性専用ジム。通い続けない卒業できる身体へ。', price: '要問合せ' },
+    popularPlan: { name: '人気プラン', description: '骨格から整え理想のボディラインへ導く女性専用ジムです。通い続けなくても維持できる、卒業を見据えた体づくりを掲げています。', price: '要問合せ' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -76,16 +76,16 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '札幌で女性専用のパーソナルジムはどこがおすすめ？', answer: 'リボーンマイセルフ 札幌店、ビーコンセプト 札幌大通店、BEYOND 札幌店が札幌で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
-  { question: '札幌のパーソナルジムの料金相場は？', answer: '札幌エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円。月額制なら月12,000円〜30,000円程度から通えます。' },
-  { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずは気軽に問い合わせてみましょう。' },
-  { question: 'どのくらいで効果が出る？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は1ヶ月目から感じる方が多いです。' },
+  { question: '札幌で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'リボーンマイセルフ 札幌店、ビーコンセプト 札幌大通店、BEYOND 札幌店が札幌で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
+  { question: '札幌のパーソナルジムの料金相場はいくらですか？', answer: '札幌エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制なら月12,000円〜30,000円程度から通えます。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
+  { question: '体験レッスンは無料で受けられますか？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずはお気軽にお問い合わせください。' },
+  { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は1ヶ月目から感じる方が多いです。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
-  { question: 'ウェアは必要？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが多いです。' },
-  { question: '札幌駅から近いジムは？', answer: 'リボーンマイセルフ 札幌店、ビーコンセプト 札幌大通店、BEYOND 札幌店が駅から近いジムです。' },
-  { question: 'リバウンドが心配', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」があります。多くのジムでは卒業後のフォロープログラムが含まれています。' },
-  { question: '子連れで通えるジムは？', answer: 'OUTLINEはベビーサークル全店完備、ビーコンセプトは託児所費用補助があります。事前に各ジムにお問い合わせください。' },
+  { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが多いです。' },
+  { question: '札幌駅から近いジムはどこですか？', answer: 'リボーンマイセルフ 札幌店、ビーコンセプト 札幌大通店、BEYOND 札幌店が駅から近いジムです。' },
+  { question: 'リバウンドを防ぐサポートはありますか？', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」があります。多くのジムでは卒業後のフォロープログラムが含まれています。' },
+  { question: '子連れで通えるジムはどこですか？', answer: 'OUTLINEはベビーサークル全店完備、ビーコンセプトは託児所費用補助があります。事前に各ジムにお問い合わせください。' },
 ]
 
 export default function SapporoPage() {
@@ -109,7 +109,7 @@ export default function SapporoPage() {
         </section>
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「札幌で女性専用のパーソナルジムを探している」という方のために、札幌エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -140,12 +140,12 @@ export default function SapporoPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">15万〜22万円</p>
-                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金。入会金は別途2〜5万円程度。</p>
+                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は別途2〜5万円程度です。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
                 <p className="text-3xl font-bold text-accent mb-2">1.2万〜3万円/月</p>
-                <p className="text-sm text-brand-muted">月4〜8回のプラン。継続しやすい料金設定。</p>
+                <p className="text-sm text-brand-muted">月4〜8回のプランです。継続しやすい料金設定です。</p>
               </div>
             </div>
           </div>
@@ -155,16 +155,16 @@ export default function SapporoPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">札幌で選ぶ際の注意点</h2>
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験レッスンは2〜3ジム比較を</h3>
-                <p className="text-brand-muted leading-relaxed">最低2〜3ジムの体験に行って、トレーナーとの相性や雰囲気を比較してから決めましょう。</p>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験レッスンは2〜3ジムで比較</h3>
+                <p className="text-brand-muted leading-relaxed">最低2〜3ジムの体験に行って、トレーナーとの相性や雰囲気を比較してから決めることをおすすめします。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">総額で比較する</h3>
-                <p className="text-brand-muted leading-relaxed">コース料金だけでなく、入会金・オプション費用も含めた総額で比較しましょう。キャンペーンで入会金無料になることも多いです。</p>
+                <p className="text-brand-muted leading-relaxed">コース料金だけでなく、入会金・オプション費用も含めた総額で比較することをおすすめします。キャンペーンで入会金無料になることも多いです。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">通いやすさを重視</h3>
-                <p className="text-brand-muted leading-relaxed">継続が最も大切。自宅や職場から通いやすい場所のジムを選びましょう。</p>
+                <p className="text-brand-muted leading-relaxed">継続が最も大切です。自宅や職場から通いやすい場所のジムを選ぶことをおすすめします。</p>
               </div>
             </div>
           </div>
@@ -177,8 +177,8 @@ export default function SapporoPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -217,13 +217,13 @@ export default function SapporoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">札幌エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">まずは気になるジムの体験レッスンに行ってみてください。複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">まずは気になるジムの体験レッスンをご利用ください。複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
           </div>
         </section>
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/sangenjaya/'),
   title: '三軒茶屋の女性向けパーソナルジムおすすめ3選｜料金比較・無料体験【2026年7月】',
-  description: '【2026年7月】三軒茶屋のおすすめ女性向けパーソナルジム3選を比較。UNDEUX・YourFit・ELEMENTなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】三軒茶屋のおすすめ女性向けパーソナルジム3選を比較しています。UNDEUX・YourFit・ELEMENTなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,三軒茶屋,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '無料体験トレーニング約60分（0円・カウンセリング含む）',
     features: ['女性専用', '管理栄養士監修の食事指導', '手ぶらOK', 'シャワー完備'],
-    description: '女性専用パーソナルジム。管理栄養士監修メソッドによる食事指導つきで、ウェア・シューズレンタル無料の手ぶらOK。シャワー完備です。',
+    description: '女性専用パーソナルジムです。管理栄養士監修メソッドによる食事指導が付いており、ウェア・シューズのレンタルが無料のため手ぶらで通えます。シャワー完備です。',
     access: '三軒茶屋駅 北口Bより徒歩3分',
     address: '東京都世田谷区太子堂2-12-2 T-one世田谷ビル8F',
     options: ['月4回30,300円／月8回60,600円', 'コミットプラン月6回79,200円'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '60日間ダイエット集中コース 112,200円／月会費制 16,390円〜（税込）',
     trial: '初回体験あり（調査時点で無料キャンペーン中・強引な勧誘なしと明記）',
     features: ['女性専用', '完全予約制マンツーマン', '栄養カウンセリング', '初心者向け'],
-    description: '女性専用・完全予約制のマンツーマンジム。ストレッチとトレーニングを組み合わせられ、栄養カウンセリング・食事指導つき。運動初心者向けの設計です。',
+    description: '女性専用・完全予約制のマンツーマンジムです。ストレッチとトレーニングを組み合わせることができ、栄養カウンセリング・食事指導が付いています。運動初心者向けの設計です。',
     access: '三軒茶屋駅 南口B 徒歩5分',
     address: '東京都世田谷区三軒茶屋1-16-8 コルティーレ世田谷102',
     options: ['60日間機能改善コース57,200円', '月会費制16,390円〜65,560円'],
@@ -51,7 +51,7 @@ const gyms = [
     price: '月額39,800円（通い放題）',
     trial: '申込みは24時間WEB受付（体験の詳細は公式サイトでご確認ください）',
     features: ['通い放題', '1回30分', '女性トレーナー充実', '手ぶらOK'],
-    description: '1回30分・月額制通い放題のパーソナルジム。元女性専用店で、現在はLGBTフレンドリー店として「女性が安心して利用できる」ことを公式に明記。女性トレーナーが充実しています。',
+    description: '1回30分・月額制通い放題のパーソナルジムです。元女性専用店で、現在はLGBTフレンドリー店として「女性が安心して利用できる」ことを公式に明記しています。女性トレーナーが充実しています。',
     access: '三軒茶屋駅より徒歩8分',
     address: '東京都世田谷区太子堂2-4-16 テラスコート三軒茶屋305',
     options: ['ウェア・タオル・ドリンク・プロテイン無料'],
@@ -61,11 +61,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '三軒茶屋で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 三軒茶屋スタジオ、YourFit（ユアフィット）三軒茶屋です（2026年6月調査時点）。' },
-  { question: '三軒茶屋のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 三軒茶屋スタジオはスタンダードプラン月2回 21,300円〜（税込）。YourFit（ユアフィット）三軒茶屋は60日間ダイエット集中コース 112,200円／月会費制 16,390円〜（税込）。ELEMENT（エレメント）三宿店は月額39,800円（通い放題）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '三軒茶屋駅から近いジムは？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 三軒茶屋スタジオ（三軒茶屋駅 北口Bより徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 三軒茶屋スタジオ、YourFit（ユアフィット）三軒茶屋は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '三軒茶屋で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 三軒茶屋スタジオ、YourFit（ユアフィット）三軒茶屋です（2026年6月調査時点）。' },
+  { question: '三軒茶屋のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 三軒茶屋スタジオはスタンダードプラン月2回 21,300円〜です（税込）。YourFit（ユアフィット）三軒茶屋は60日間ダイエット集中コース 112,200円／月会費制 16,390円〜です（税込）。ELEMENT（エレメント）三宿店は月額39,800円です（通い放題）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '三軒茶屋駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 三軒茶屋スタジオ（三軒茶屋駅 北口Bより徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 三軒茶屋スタジオ、YourFit（ユアフィット）三軒茶屋は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function SangenjayaPage() {
@@ -94,7 +94,7 @@ export default function SangenjayaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「三軒茶屋で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、三軒茶屋エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -155,10 +155,10 @@ export default function SangenjayaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -173,8 +173,8 @@ export default function SangenjayaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -222,7 +222,7 @@ export default function SangenjayaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

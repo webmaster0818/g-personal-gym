@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/naha/'),
   title: '那覇の女性向けパーソナルジムおすすめ4選｜料金比較・無料体験【2026年7月】',
-  description: '【2026年7月】那覇のおすすめ女性向けパーソナルジム4選を比較。REMパーソナルトレーニングジム・パーソナルジム・プリッツジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】那覇のおすすめ女性向けパーソナルジム4選を比較しています。REMパーソナルトレーニングジム・パーソナルジム・プリッツジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,那覇,沖縄,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '回数券 1回あたり約2,500円〜（入会金実質無料・詳細は公式サイトでご確認ください）',
     trial: '体験・カウンセリングは公式サイトでご確認ください',
     features: ['女性専用', 'トレーニング×ピラティス×整体', '医療系国家資格保有トレーナー', '無料駐車場'],
-    description: '女性専用のパーソナルジム。トレーニング・ピラティス・整体を組み合わせ、医療系国家資格を持つトレーナーが指導。食事改善プログラムつきで手ぶらOK・無料駐車場ありです。',
+    description: '女性専用のパーソナルジムです。トレーニング・ピラティス・整体を組み合わせ、医療系国家資格を持つトレーナーが指導します。食事改善プログラム付きで手ぶらOK・無料駐車場ありです。',
     access: 'ゆいレール美栄橋駅 徒歩5分（若狭店は県庁前駅徒歩11分）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', '姿勢改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['無料駐車場'] },
@@ -36,7 +36,7 @@ const gyms = [
     price: 'コース料金は公式サイトでご確認ください（入会金0円キャンペーン中）',
     trial: '無料体験レッスンあり（カウンセリング＋トレーニング体験）',
     features: ['女性専用', '女性トレーナー', '完全個室', '毎日の食事指導'],
-    description: '女性専用・完全個室のパーソナルジム。女性トレーナーによる指導と毎日の食事指導つきで、「痩せるまで追加料金なし」の定額制を掲げています。',
+    description: '女性専用・完全個室のパーソナルジムです。女性トレーナーによる指導と毎日の食事指導付きで、「痩せるまで追加料金なし」の定額制を掲げています。',
     access: 'ゆいレールおもろまち駅 徒歩7分（専用無料駐車場3台）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -47,7 +47,7 @@ const gyms = [
     price: '月4回 14,300円／月8回 24,000円（税込・入会金22,000円）',
     trial: '体験は公式サイトでご確認ください',
     features: ['女性専用', 'セミパーソナル（最大3名）', 'マシンピラティス', '縛り・解約金なし'],
-    description: '女性専用のセミパーソナルジム（最大3名・1回50分・完全予約制）。マシンピラティス導入で、契約の縛りや解約金がありません。',
+    description: '女性専用のセミパーソナルジムです（最大3名・1回50分・完全予約制）。マシンピラティス導入で、契約の縛りや解約金がありません。',
     access: '那覇市樋川（専有無料駐車場3台・アクセスは公式サイトでご確認ください）',
     options: ['月6回18,900円', '食事指導オプション11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', '運動習慣'] },
@@ -59,7 +59,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください',
     trial: '無料プチ体験＆ジム見学あり',
     features: ['女性専用', '女性トレーナー', '完全個室', '食事指導'],
-    description: '女性専用・完全個室のボディメイクジム。女性トレーナーによる指導と食事指導つきです。',
+    description: '女性専用・完全個室のボディメイクジムです。女性トレーナーによる指導と食事指導付きです。',
     access: 'ゆいレール県庁前駅 徒歩5分',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ボディメイク', 'ダイエット'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -67,10 +67,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '那覇で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、REMパーソナルトレーニングジム（那覇美栄橋店）、パーソナルジム フレイム 那覇店、プリッツジム 那覇店、ShapesGirl 那覇店です（2026年6月調査時点）。' },
-  { question: '那覇のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、プリッツジム 那覇店は月4回 14,300円／月8回 24,000円（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'パーソナルジム フレイム 那覇店、ShapesGirl 那覇店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '那覇で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、REMパーソナルトレーニングジム（那覇美栄橋店）、パーソナルジム フレイム 那覇店、プリッツジム 那覇店、ShapesGirl 那覇店です（2026年6月調査時点）。' },
+  { question: '那覇のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、プリッツジム 那覇店は月4回 14,300円／月8回 24,000円です（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'パーソナルジム フレイム 那覇店、ShapesGirl 那覇店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function NahaPage() {
@@ -99,7 +99,7 @@ export default function NahaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「那覇で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、那覇エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -165,10 +165,10 @@ export default function NahaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -183,8 +183,8 @@ export default function NahaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -232,7 +232,7 @@ export default function NahaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

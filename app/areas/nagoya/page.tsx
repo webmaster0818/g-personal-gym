@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nagoya/'),
   title: '【2026年7月】名古屋の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】名古屋のおすすめ女性専用・女性向けパーソナルジム5選を徹底比較。料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】名古屋のおすすめ女性専用・女性向けパーソナルジム5選を比較しています。料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,名古屋,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '月額 17,600円〜',
     trial: '体験レッスンあり',
     features: ['女性専用', '月額制', '食事管理付き'],
-    description: '月額制の女性専用パーソナルジム。UNDEUX SUPERBODYのセカンドライン。',
+    description: '月額制の女性専用パーソナルジムです。UNDEUX SUPERBODYのセカンドラインです。',
     access: 'JR「名古屋駅」徒歩5分',
     address: 'JR「名古屋駅」徒歩5分',
-    popularPlan: { name: '人気プラン', description: '月額制の女性専用パーソナルジム。UNDEUX SUPERBODYのセカンドライン', price: '月額 17,600円〜' },
+    popularPlan: { name: '人気プラン', description: '月額制の女性専用パーソナルジムです。UNDEUX SUPERBODYのセカンドライン', price: '月額 17,600円〜' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -39,10 +39,10 @@ const gyms = [
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '完全個室', '医師監修'],
-    description: '下半身痩せに特化した女性専用パーソナルジム。名古屋駅近く。',
+    description: '下半身痩せに特化した女性専用パーソナルジムです。名古屋駅の近くにあります。',
     access: 'JR「名古屋駅」徒歩3分',
     address: '愛知県名古屋市中村区椿町1-3 チサンマンション名古屋第一ビル8F',
-    popularPlan: { name: '人気プラン', description: '下半身痩せに特化した女性専用パーソナルジム。名古屋駅近く。', price: '2ヶ月18回 179,685円〜（税込）' },
+    popularPlan: { name: '人気プラン', description: '下半身痩せに特化した女性専用パーソナルジムです。名古屋駅の近くにあります。', price: '2ヶ月18回 179,685円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -53,10 +53,10 @@ const gyms = [
     price: '入会金22,000円＋コース料金',
     trial: '無料カウンセリング',
     features: ['女性専用', '女性トレーナーのみ'],
-    description: '名駅エリアの女性専用ジム。女性トレーナーのみ在籍。',
+    description: '名駅エリアの女性専用ジムです。女性トレーナーのみ在籍しています。',
     access: '名古屋駅ユニモール12・14番出口 徒歩2分',
     address: '愛知県名古屋市中村区名駅3-22-4 名駅前みどりビル8階',
-    popularPlan: { name: '人気プラン', description: '名駅エリアの女性専用ジム。女性トレーナーのみ在籍。', price: '入会金22,000円＋コース料金' },
+    popularPlan: { name: '人気プラン', description: '名駅エリアの女性専用ジムです。女性トレーナーのみ在籍しています。', price: '入会金22,000円＋コース料金' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '平日10:00〜22:00／土日祝10:00〜19:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -67,10 +67,10 @@ const gyms = [
     price: '月4回 17,600円（税込・スタンダード）／平日12〜17時のデイプランは14,960円',
     trial: '無料体験あり',
     features: ['AI主導', '1回20分', '低価格'],
-    description: 'AI主導20分トレーニング。名古屋栄エリアで低価格。',
+    description: 'AI主導20分トレーニングです。名古屋栄エリアで低価格です。',
     access: '地下鉄「栄駅」16番出口 徒歩3分（名城線改札からは徒歩5分）',
     address: '愛知県名古屋市中区栄3-6-20 辰晃ビル8階',
-    popularPlan: { name: '人気プラン', description: 'AI主導20分トレーニング。名古屋栄エリアで低価格。', price: '月4回 17,600円（税込・スタンダード）／平日12〜17時のデイプランは14,960円' },
+    popularPlan: { name: '人気プラン', description: 'AI主導20分トレーニングです。名古屋栄エリアで低価格です。', price: '月4回 17,600円（税込・スタンダード）／平日12〜17時のデイプランは14,960円' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性約7割（公式FAQ）', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '平日10:00〜21:00／土日祝10:00〜19:00', closed: '年中無休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -80,10 +80,10 @@ const gyms = [
     price: '月8回 28,000円〜（税込）',
     trial: '体験レッスンあり',
     features: ['米国資格保持', '低価格', '食事指導あり'],
-    description: '全スタッフが米国の難関資格を保持。リーズナブルな料金設定。',
+    description: '全スタッフが米国の難関資格を保持しています。リーズナブルな料金設定です。',
     access: 'JR「名古屋駅」徒歩5分',
     address: 'JR「名古屋駅」徒歩5分',
-    popularPlan: { name: '人気プラン', description: '全スタッフが米国の難関資格を保持。リーズナブルな料金設定。', price: '月8回 28,000円〜（税込）' },
+    popularPlan: { name: '人気プラン', description: '全スタッフが米国の難関資格を保持しています。リーズナブルな料金設定です。', price: '月8回 28,000円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -91,16 +91,16 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '名古屋で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY LIFE 名古屋、ビーコンセプト 名古屋駅店、リボーンマイセルフ 名古屋駅店が名古屋で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
-  { question: '名古屋のパーソナルジムの料金相場は？', answer: '名古屋エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円。月額制ならエクササイズコーチ名古屋栄店の月4回14,960円（税込・平日12〜17時のデイプラン）から通えます。' },
-  { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずは気軽に問い合わせてみましょう。' },
-  { question: 'どのくらいで効果が出る？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は1ヶ月目から感じる方が多いです。' },
+  { question: '名古屋で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY LIFE 名古屋、ビーコンセプト 名古屋駅店、リボーンマイセルフ 名古屋駅店が名古屋で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
+  { question: '名古屋のパーソナルジムの料金相場はいくらですか？', answer: '名古屋エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制ならエクササイズコーチ名古屋栄店の月4回14,960円（税込・平日12〜17時のデイプラン）から通えます。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
+  { question: '体験レッスンは無料で受けられますか？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずはお気軽にお問い合わせください。' },
+  { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は1ヶ月目から感じる方が多いです。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
-  { question: 'ウェアは必要？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが多いです。' },
-  { question: '名古屋駅から近いジムは？', answer: 'UNDEUX SUPERBODY LIFE 名古屋、ビーコンセプト 名古屋駅店、リボーンマイセルフ 名古屋駅店が駅から近いジムです。' },
-  { question: 'リバウンドが心配', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」があります。多くのジムでは卒業後のフォロープログラムが含まれています。' },
-  { question: '子連れで通えるジムは？', answer: 'OUTLINEはベビーサークル全店完備、ビーコンセプトは託児所費用補助があります。事前に各ジムにお問い合わせください。' },
+  { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが多いです。' },
+  { question: '名古屋駅から近いジムはどこですか？', answer: 'UNDEUX SUPERBODY LIFE 名古屋、ビーコンセプト 名古屋駅店、リボーンマイセルフ 名古屋駅店が駅から近いジムです。' },
+  { question: 'リバウンドを防ぐサポートはありますか？', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」があります。多くのジムでは卒業後のフォロープログラムが含まれています。' },
+  { question: '子連れで通えるジムはどこですか？', answer: 'OUTLINEはベビーサークル全店完備、ビーコンセプトは託児所費用補助があります。事前に各ジムにお問い合わせください。' },
 ]
 
 export default function NagoyaPage() {
@@ -124,7 +124,7 @@ export default function NagoyaPage() {
         </section>
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「名古屋で女性専用のパーソナルジムを探している」という方のために、名古屋エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -155,12 +155,12 @@ export default function NagoyaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">15万〜22万円</p>
-                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金。入会金は別途2〜5万円程度。</p>
+                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は別途2〜5万円程度です。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
                 <p className="text-3xl font-bold text-accent mb-2">1.2万〜3万円/月</p>
-                <p className="text-sm text-brand-muted">月4〜8回のプラン。継続しやすい料金設定。</p>
+                <p className="text-sm text-brand-muted">月4〜8回のプランです。継続しやすい料金設定です。</p>
               </div>
             </div>
           </div>
@@ -170,16 +170,16 @@ export default function NagoyaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">名古屋で選ぶ際の注意点</h2>
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験レッスンは2〜3ジム比較を</h3>
-                <p className="text-brand-muted leading-relaxed">最低2〜3ジムの体験に行って、トレーナーとの相性や雰囲気を比較してから決めましょう。</p>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験レッスンは2〜3ジムで比較</h3>
+                <p className="text-brand-muted leading-relaxed">最低2〜3ジムの体験に行って、トレーナーとの相性や雰囲気を比較してから決めることをおすすめします。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">総額で比較する</h3>
-                <p className="text-brand-muted leading-relaxed">コース料金だけでなく、入会金・オプション費用も含めた総額で比較しましょう。キャンペーンで入会金無料になることも多いです。</p>
+                <p className="text-brand-muted leading-relaxed">コース料金だけでなく、入会金・オプション費用も含めた総額で比較することをおすすめします。キャンペーンで入会金無料になることも多いです。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">通いやすさを重視</h3>
-                <p className="text-brand-muted leading-relaxed">継続が最も大切。自宅や職場から通いやすい場所のジムを選びましょう。</p>
+                <p className="text-brand-muted leading-relaxed">継続が最も大切です。自宅や職場から通いやすい場所のジムを選ぶことをおすすめします。</p>
               </div>
             </div>
           </div>
@@ -192,8 +192,8 @@ export default function NagoyaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -232,13 +232,13 @@ export default function NagoyaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">名古屋エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">まずは気になるジムの体験レッスンに行ってみてください。複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">まずは気になるジムの体験レッスンをご利用ください。複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
           </div>
         </section>
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

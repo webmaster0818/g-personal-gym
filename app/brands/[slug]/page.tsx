@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const r = Object.values(GYM_REVIEWS).filter((x) => gymBrandSlugOf(x.name) === slug).length
     return {
       title: `${brand.name}の口コミ・評判｜料金・店舗一覧【${brand.titleMonth ?? '2026年8月'}】Googleマップ${r}店舗を要約`,
-      description: `${brand.name}の口コミ・評判を、Googleマップ${r}店舗の口コミから良い点と注意点（延長の勧め・シャワー・トレーナーの性別など）に整理。料金・返金制度・体験・子連れ対応は公式サイトで確認した内容を出典付きで掲載。`,
+      description: `${brand.name}の口コミ・評判を、Googleマップ${r}店舗の口コミから良い点と注意点（延長の勧め・シャワー・トレーナーの性別など）に整理しています。料金・返金制度・体験・子連れ対応は公式サイトで確認した内容を出典付きで掲載しています。`,
       ...pageUrlMeta(`/brands/${slug}/`),
     }
   }
   return {
     title: `${brand.name}の料金・店舗一覧・特徴【${brand.titleMonth ?? '2026年8月'}】掲載${n}店を比較`,
-    description: `${brand.name}の料金プラン・体験カウンセリング・店舗一覧を公式情報と掲載データで整理。${brand.tagline}。掲載${n}店舗のエリア別リンク付きで、近くの店舗がすぐ見つかります。`,
+    description: `${brand.name}の料金プラン・体験カウンセリング・店舗一覧を公式情報と掲載データで整理しています。特長は「${brand.tagline}」です。掲載${n}店舗をエリア別のリンク付きでご紹介しています。`,
     ...pageUrlMeta(`/brands/${slug}/`),
   }
 }

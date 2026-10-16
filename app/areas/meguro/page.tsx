@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/meguro/'),
   title: '【2026年7月】目黒の女性専用パーソナルジムおすすめ2選！料金比較',
-  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム2選を徹底比較。UNDEUX SUPERBODY・Bodiesの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】目黒のおすすめ女性専用パーソナルジム2選を比較しています。UNDEUX SUPERBODY・Bodiesの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,目黒,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -24,10 +24,10 @@ const gyms = [
     price: '月会費 5,970円〜（税込）',
     trial: '無料体験あり',
     features: ['女性専用', 'サーキットトレーニング', 'ゲルマニウム温浴', '駅直結', 'リーズナブル'],
-    description: 'ABCクッキングスタジオが手がける女性専用フィットネス。1回30分のサーキットトレーニングで効率的に運動。ゲルマニウム温浴も利用可能。目黒駅直結で雨の日も安心。',
+    description: 'ABCクッキングスタジオが手がける女性専用フィットネスです。1回30分のサーキットトレーニングで効率的に運動できます。ゲルマニウム温浴も利用可能です。目黒駅直結で雨の日も安心です。',
     access: 'JR「目黒駅」直結',
     address: '東京都品川区上大崎（目黒駅直結）',
-    popularPlan: { name: 'レギュラー会員', description: 'サーキットトレーニング＋ゲルマニウム温浴が使い放題。', price: '月会費 5,970円〜（税込）' },
+    popularPlan: { name: 'レギュラー会員', description: 'サーキットトレーニング＋ゲルマニウム温浴が使い放題です。', price: '月会費 5,970円〜（税込）' },
     options: ['ゲルマニウム温浴', 'サーキットトレーニング', 'ランニング', 'ヨガプログラム'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['健康維持', '運動習慣', 'リラックス', 'ダイエット'] },
     basicInfo: { hours: '10:00〜21:00', closed: '施設定休日に準ずる', facilities: ['サーキットエリア', 'ゲルマニウム温浴', 'ロッカー'] },
@@ -38,10 +38,10 @@ const gyms = [
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '目黒駅近'],
-    description: '糖質オフ宅配食を無料提供する女性専用パーソナルジム。トレーニングと食事の両面から総合的にサポート。パウダールーム・基礎化粧品完備で手ぶらOK。',
+    description: '糖質オフ宅配食を無料提供する女性専用パーソナルジムです。トレーニングと食事の両面から総合的にサポートしています。パウダールーム・基礎化粧品を完備しており、手ぶらで通えます。',
     access: 'JR「目黒駅」徒歩5分',
     address: '東京都品川区上大崎（目黒駅徒歩5分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプラン。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
@@ -50,8 +50,8 @@ const gyms = [
 
 const faqs = [
   { question: '目黒で女性専用のパーソナルジムはありますか？', answer: 'はい、目黒エリアにはBodies、UNDEUX SUPERBODYなどの女性専用パーソナルジムがあります。いずれも目黒駅から徒歩圏内です。' },
-  { question: '目黒のパーソナルジムの料金相場は？', answer: '目黒エリアの料金は月5,970円〜（Bodies）から2ヶ月220,000円〜（UNDEUX SUPERBODY）まで幅広い選択肢があります。' },
-  { question: '目黒駅直結のジムはある？', answer: 'Bodies目黒店は目黒駅直結で、雨の日でも濡れずに通えます。月会費5,970円〜のリーズナブルな料金で、ゲルマニウム温浴も利用可能です。' },
+  { question: '目黒のパーソナルジムの料金相場はいくらですか？', answer: '目黒エリアの料金は月5,970円〜（Bodies）から2ヶ月220,000円〜（UNDEUX SUPERBODY）まで幅広い選択肢があります。' },
+  { question: '目黒駅直結のジムはありますか？', answer: 'Bodies目黒店は目黒駅直結で、雨の日でも濡れずに通えます。月会費5,970円〜のリーズナブルな料金で、ゲルマニウム温浴も利用可能です。' },
 ]
 
 export default function MeguroPage() {
@@ -80,7 +80,7 @@ export default function MeguroPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「目黒で女性専用のパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、目黒エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -112,7 +112,7 @@ export default function MeguroPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">目黒エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、手軽に始めるならBodiesがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
@@ -138,7 +138,7 @@ export default function MeguroPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

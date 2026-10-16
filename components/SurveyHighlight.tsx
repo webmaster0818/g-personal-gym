@@ -29,7 +29,7 @@ export function SurveyHighlight({ variant = 'default' }: { variant?: 'default' |
         ))}
       </div>
       <p className="mt-5 text-[11px] leading-relaxed text-ink-soft">
-        出典: {GYM_SURVEY.source}。同一ブランドが複数エリアに登場するため、のべ掲載数での割合です。
+        出典: {GYM_SURVEY.source}です。同一ブランドが複数エリアに登場するため、のべ掲載数での割合です。
         詳細は<Link href="/articles/josei-gym-data/" className="text-accent hover:underline">独自調査データの記事</Link>をご覧ください。
       </p>
     </div>

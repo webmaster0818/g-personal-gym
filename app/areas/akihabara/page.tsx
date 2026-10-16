@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/akihabara/'),
   title: '【2026年7月】秋葉原の女性専用パーソナルジムおすすめ3選！料金比較',
-  description: '【2026年4月】秋葉原のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・Bodies・24/7 Workoutなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】秋葉原のおすすめ女性専用パーソナルジム3選を比較しています。OUTLINE・Bodies・24/7 Workoutなど人気ジムの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,秋葉原,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '生涯無料アフターサポートが最大の特徴。秋葉原駅から徒歩圏内で、完全個室・女性専用マシン完備。コスパ重視の方にも人気のジム。',
+    description: '生涯無料アフターサポートが最大の特徴です。秋葉原駅から徒歩圏内で、完全個室・女性専用マシンを完備しています。コスパ重視の方にも人気のジムです。',
     access: 'JR「秋葉原駅」徒歩5分',
     address: '東京都千代田区外神田（秋葉原駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
+    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニングです。卒業後も生涯無料のアフターサポートを受けられます。', price: '16回 184,800円〜（税込）' },
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
@@ -38,10 +38,10 @@ const gyms = [
     price: '月会費 5,970円〜（税込）',
     trial: '無料体験あり',
     features: ['女性専用', 'サーキットトレーニング', 'ゲルマニウム温浴', '駅近', 'リーズナブル'],
-    description: 'ABCクッキングスタジオが手がける女性専用フィットネス。1回30分のサーキットトレーニングで効率的に運動。ゲルマニウム温浴も利用可能。秋葉原エリアからもアクセスしやすい。',
+    description: 'ABCクッキングスタジオが手がける女性専用フィットネスです。1回30分のサーキットトレーニングで効率的に運動できます。ゲルマニウム温浴も利用可能です。秋葉原エリアからもアクセスしやすいです。',
     access: 'JR「秋葉原駅」徒歩8分 / 東京メトロ「末広町駅」徒歩5分',
     address: '東京都千代田区神田（秋葉原エリア）',
-    popularPlan: { name: 'レギュラー会員', description: 'サーキットトレーニング＋ゲルマニウム温浴が使い放題。', price: '月会費 5,970円〜（税込）' },
+    popularPlan: { name: 'レギュラー会員', description: 'サーキットトレーニング＋ゲルマニウム温浴が使い放題です。', price: '月会費 5,970円〜（税込）' },
     options: ['ゲルマニウム温浴', 'サーキットトレーニング', 'ランニング', 'ヨガプログラム'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['健康維持', '運動習慣', 'リラックス', 'ダイエット'] },
     basicInfo: { hours: '10:00〜21:00', closed: '施設定休日に準ずる', facilities: ['サーキットエリア', 'ゲルマニウム温浴', 'ロッカー'] },
@@ -52,10 +52,10 @@ const gyms = [
     price: '2ヶ月16回 257,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '完全個室', '深夜営業', '3食食べるダイエット', '全額返金保証'],
-    description: '「3食食べて痩せる」がコンセプト。深夜24時まで営業で秋葉原エリアのビジネスパーソンに人気。全額返金保証付きで安心。',
+    description: '「3食食べて痩せる」がコンセプトです。深夜24時まで営業で秋葉原エリアのビジネスパーソンに人気です。全額返金保証付きで安心です。',
     access: 'JR「秋葉原駅」徒歩6分 / JR「神田駅」徒歩3分',
     address: '東京都千代田区神田東紺屋町30 サンハイツ神田・北村ビル3F',
-    popularPlan: { name: '2ヶ月コース', description: '3食食べながら理想の体型を目指す。マンツーマン指導16回。', price: '2ヶ月16回 257,400円〜（税込）' },
+    popularPlan: { name: '2ヶ月コース', description: '3食食べながら理想の体型を目指します。マンツーマン指導16回です。', price: '2ヶ月16回 257,400円〜（税込）' },
     options: ['全額返金保証', 'ウェアレンタル無料', '深夜24時まで営業', '食事指導付き'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体力向上', '健康維持'] },
     basicInfo: { hours: '7:00〜24:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -64,9 +64,9 @@ const gyms = [
 
 const faqs = [
   { question: '秋葉原で女性専用のパーソナルジムはありますか？', answer: 'はい、秋葉原エリアにはOUTLINE、Bodiesなどの女性専用ジムがあります。24/7 Workoutも女性専用プランを用意しています。' },
-  { question: '秋葉原のパーソナルジムの料金相場は？', answer: '秋葉原エリアの料金はBodies（月5,970円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
-  { question: '秋葉原で深夜まで営業しているジムは？', answer: '24/7 Workout秋葉原・神田店は深夜24時まで営業。' },
-  { question: '秋葉原で初心者でも通えるジムは？', answer: 'Bodiesは1回30分のサーキットトレーニングで初心者向け。どのジムもマンツーマン指導なので初心者歓迎です。' },
+  { question: '秋葉原のパーソナルジムの料金相場はいくらですか？', answer: '秋葉原エリアの料金はBodies（月5,970円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
+  { question: '秋葉原で深夜まで営業しているジムはどこですか？', answer: '24/7 Workout秋葉原・神田店は深夜24時まで営業しています。' },
+  { question: '秋葉原で初心者でも通えるジムはどこですか？', answer: 'Bodiesは1回30分のサーキットトレーニングで、初心者の方に向いています。どのジムもマンツーマン指導なので初心者歓迎です。' },
 ]
 
 export default function AkihabaraPage() {
@@ -95,7 +95,7 @@ export default function AkihabaraPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「秋葉原で女性専用のパーソナルジムを探している」「駅近で手軽に通えるジムが知りたい」という方のために、秋葉原エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -127,7 +127,7 @@ export default function AkihabaraPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">秋葉原エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、手軽に始めるならBodies、本格的にダイエットするなら24/7 Workoutがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
@@ -153,7 +153,7 @@ export default function AkihabaraPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

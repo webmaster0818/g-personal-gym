@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/utsunomiya/'),
   title: '【2026年7月】宇都宮の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】宇都宮のおすすめ女性向けパーソナルジム3選を比較。OUTLINE・FURDI・Amazonesなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】宇都宮のおすすめ女性向けパーソナルジム3選を比較しています。OUTLINE・FURDI・Amazonesなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,宇都宮,栃木,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -24,8 +24,8 @@ const gyms = [
     officialUrl: 'https://www.outline-gym.com/gym/utsunomiya',
     price: '16回 184,800円（税込・入会金0円）',
     trial: '無料カウンセリングあり（LINE予約可）',
-    features: ['女性専用', '完全個室', '食事指導つき', 'ベビーサークル完備', '駐車場あり'],
-    description: '女性専用・完全個室のパーソナルジム。食事指導・遺伝子検査つきで、ウェア・タオル・シャワー・プロテイン完備。ベビーサークルがあり子連れ可、専用駐車場もあります。',
+    features: ['女性専用', '完全個室', '食事指導付き', 'ベビーサークル完備', '駐車場あり'],
+    description: '女性専用・完全個室のパーソナルジムです。食事指導・遺伝子検査付きで、ウェア・タオル・シャワー・プロテインを完備しています。ベビーサークルがあり子連れ可、専用駐車場もあります。',
     access: '宇都宮駅徒歩7分（専用駐車場完備・要予約）',
     address: '宇都宮市元今泉4-13-23 シャンポールミヤ3F',
     options: ['24回264,000円／32回334,400円', '学生・モニター15%OFF'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '月額8,778円（税込・入会金不要）',
     trial: '無料体験あり',
     features: ['女性専用', 'AIパーソナル', '通い放題', '無料駐車場'],
-    description: '女性専用のAIフィットネス型パーソナルジム。月額8,778円の通い放題で、朝5時から23時まで利用できます（カード発行3,300円＋事務手数料5,500円別途）。',
+    description: '女性専用のAIフィットネス型パーソナルジムです。月額8,778円の通い放題で、朝5時から23時まで利用できます（カード発行3,300円＋事務手数料5,500円別途）。',
     access: '宇都宮市中今泉5-22-3（無料駐車場11台・駅からの徒歩分数は公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '運動習慣'] },
     basicInfo: { hours: '5:00〜23:00（日祝無人）', closed: '公式サイトでご確認ください', facilities: ['無料駐車場'] },
@@ -49,7 +49,7 @@ const gyms = [
     price: 'スタンダード月額9,900円（学生・シニア7,700円）',
     trial: '無料体験・無料見学あり（入会時パーソナル4回無料）',
     features: ['女性専用', '24時間営業', 'トレーナー全員女性'],
-    description: '女性専用の24時間フィットネスジム。トレーナーは全員女性で、入会時にパーソナルトレーニング4回分がつきます。',
+    description: '女性専用の24時間フィットネスジムです。トレーナーは全員女性で、入会時にパーソナルトレーニング4回分がつきます。',
     access: '宇都宮市岩曽町1392-45（郊外型・提携駐車場あり）',
     options: ['おさんぽ会員4,400円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['運動習慣', 'ダイエット'] },
@@ -58,11 +58,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '宇都宮で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、OUTLINE（アウトライン）宇都宮店、FURDI（ファディー）宇都宮中今泉店、Amazones（アマゾネス）宇都宮店です（2026年6月調査時点）。' },
-  { question: '宇都宮のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、OUTLINE（アウトライン）宇都宮店は16回 184,800円（税込・入会金0円）。FURDI（ファディー）宇都宮中今泉店は月額8,778円（税込・入会金不要）。Amazones（アマゾネス）宇都宮店はスタンダード月額9,900円（学生・シニア7,700円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'OUTLINE（アウトライン）宇都宮店、FURDI（ファディー）宇都宮中今泉店、Amazones（アマゾネス）宇都宮店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'OUTLINE（アウトライン）宇都宮店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '宇都宮で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、OUTLINE（アウトライン）宇都宮店、FURDI（ファディー）宇都宮中今泉店、Amazones（アマゾネス）宇都宮店です（2026年6月調査時点）。' },
+  { question: '宇都宮のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、OUTLINE（アウトライン）宇都宮店は16回 184,800円です（税込・入会金0円）。FURDI（ファディー）宇都宮中今泉店は月額8,778円です（税込・入会金不要）。Amazones（アマゾネス）宇都宮店はスタンダード月額9,900円です（学生・シニア7,700円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'OUTLINE（アウトライン）宇都宮店、FURDI（ファディー）宇都宮中今泉店、Amazones（アマゾネス）宇都宮店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'OUTLINE（アウトライン）宇都宮店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function UtsunomiyaPage() {
@@ -91,7 +91,7 @@ export default function UtsunomiyaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「宇都宮で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、宇都宮エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -156,10 +156,10 @@ export default function UtsunomiyaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -174,8 +174,8 @@ export default function UtsunomiyaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -223,7 +223,7 @@ export default function UtsunomiyaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

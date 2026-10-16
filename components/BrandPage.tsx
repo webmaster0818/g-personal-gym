@@ -62,7 +62,7 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
           )}
 
           <div className="mt-8 rounded-2xl border border-line bg-white p-6">
-            <p className="text-xs font-medium tracking-[0.15em] text-ink-faint uppercase mb-4">まず結論</p>
+            <p className="text-xs font-medium tracking-[0.15em] text-ink-faint uppercase mb-4">概要</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div>
                 <p className="text-2xl font-bold text-accent">{brand.officialStores ? `${brand.officialStores.count}店舗` : `${stores.length}店`}</p>

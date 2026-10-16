@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/ebisu/'),
   title: '【2026年7月】恵比寿の女性専用パーソナルジムおすすめ5選！料金比較',
-  description: '【2026年4月】恵比寿のおすすめ女性専用パーソナルジム5選を徹底比較。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】恵比寿のおすすめ女性専用パーソナルジム5選を比較しています。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,恵比寿,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '2ヶ月16回 220,000円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '恵比寿駅近'],
-    description: '全国40店舗以上展開の女性専用パーソナルジム。トレーニングに加え糖質オフ宅配食を無料提供する総合的なダイエットサポートが特徴。シャワー・パウダールーム・基礎化粧品完備で手ぶらOK。恵比寿駅から好アクセス。',
+    description: '全国40店舗以上展開の女性専用パーソナルジムです。トレーニングに加え糖質オフ宅配食を無料提供する総合的なダイエットサポートが特徴です。シャワー・パウダールーム・基礎化粧品を完備しており、手ぶらで通えます。恵比寿駅から好アクセスです。',
     access: 'JR「恵比寿駅」徒歩4分',
     address: '東京都渋谷区恵比寿（恵比寿駅徒歩4分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプラン。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
     options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
@@ -39,10 +39,10 @@ const gyms = [
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', 'よもぎ蒸し'],
-    description: '業界初の生涯無料アフターサポートが最大の特徴。完全個室・女性専用マシン・ベビーサークル完備で子連れママも安心。恵比寿・広尾エリアで女性のダイエットに特化。',
+    description: '業界初の生涯無料アフターサポートが最大の特徴です。完全個室・女性専用マシン・ベビーサークル完備で子連れママも安心です。恵比寿・広尾エリアで女性のダイエットに特化しています。',
     access: 'JR「恵比寿駅」徒歩6分',
     address: '東京都渋谷区恵比寿（恵比寿駅徒歩6分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
+    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニングです。卒業後も生涯無料のアフターサポートを受けられます。', price: '16回 184,800円〜（税込）' },
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
@@ -53,10 +53,10 @@ const gyms = [
     price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '駅徒歩2分'],
-    description: '医師とトレーナーが共同開発した独自の脚やせメソッドが人気。恵比寿駅徒歩2分の好立地。太もも痩せ・ヒップアップに特化し、2ヶ月で美脚を目指す。託児所費用補助あり。',
+    description: '医師とトレーナーが共同開発した独自の脚やせメソッドが人気です。恵比寿駅徒歩2分の好立地です。太もも痩せ・ヒップアップに特化し、2ヶ月で美脚を目指します。託児所費用の補助があります。',
     access: 'JR「恵比寿駅」徒歩2分',
     address: '東京都渋谷区恵比寿（恵比寿駅徒歩2分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッド。75分×18回の集中プログラム。', price: '2ヶ月18回 179,685円〜（税込）' },
+    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッドです。75分×18回の集中プログラムです。', price: '2ヶ月18回 179,685円〜（税込）' },
     options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応（月々5,545円〜）'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
@@ -66,10 +66,10 @@ const gyms = [
     price: '2ヶ月16回 215,600円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '卒業後月1回無料', '完全マンツーマン', '女性向け設備', '恵比寿駅近'],
-    description: '女性専用のパーソナルジム。ジム内の設備も女性にとって使いやすいように設計。コース終了後も毎月1回無料でパーソナルトレーニングが受けられるアフターフォローが魅力。',
+    description: '女性専用のパーソナルジムです。ジム内の設備も女性にとって使いやすいように設計されています。コース終了後も毎月1回無料でパーソナルトレーニングが受けられるアフターフォローが魅力です。',
     access: 'JR「恵比寿駅」徒歩5分',
     address: '東京都渋谷区恵比寿（恵比寿駅徒歩5分）',
-    popularPlan: { name: '2ヶ月集中コース', description: '完全マンツーマンのパーソナルトレーニング。卒業後も月1回無料セッション付き。', price: '2ヶ月16回 215,600円〜（税込）' },
+    popularPlan: { name: '2ヶ月集中コース', description: '完全マンツーマンのパーソナルトレーニングです。卒業後も月1回の無料セッションが付いています。', price: '2ヶ月16回 215,600円〜（税込）' },
     options: ['卒業後月1回無料トレーニング', 'ウェアレンタル', '食事指導付き'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体型維持', '健康管理'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー'] },
@@ -80,10 +80,10 @@ const gyms = [
     price: '月額制（プラン・店舗により異なる）',
     trial: '無料体験あり',
     features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
-    description: '米国発のAIパーソナルジム。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
+    description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
     access: '「恵比寿」駅周辺',
     address: '恵比寿エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニング。月額制で継続しやすい。', price: '月額制（プラン・店舗により異なる）' },
+    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制で継続しやすいです。', price: '月額制（プラン・店舗により異なる）' },
     options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
     basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
@@ -91,16 +91,16 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '恵比寿で女性専用のパーソナルジムはどこがおすすめ？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプト、LIMが恵比寿で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプトがおすすめです。' },
-  { question: '恵比寿のパーソナルジムの料金相場は？', answer: '恵比寿エリアの女性向けパーソナルジムの2ヶ月コース料金は約18万〜22万円。ビーコンセプトが179,685円〜と比較的リーズナブル。OUTLINEは生涯サポート付きで184,800円〜です。' },
-  { question: '恵比寿駅から最も近いパーソナルジムは？', answer: 'ビーコンセプト恵比寿店が徒歩2分で最も駅近です。UNDEUX SUPERBODYは徒歩4分、LIMは徒歩5分です。' },
-  { question: '子連れで通えるジムはある？', answer: 'OUTLINE恵比寿・広尾店はベビーサークル完備で子連れOK。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
-  { question: '体験レッスンは無料で受けられる？', answer: 'UNDEUX SUPERBODYは体験レッスン0円。OUTLINE、ビーコンセプト、LIMは無料カウンセリングを実施しています。' },
-  { question: '初心者でも大丈夫？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
-  { question: '恵比寿で最も安いパーソナルジムは？', answer: 'ビーコンセプト（2ヶ月18回 179,685円〜）が最安クラス。OUTLINE（16回 184,800円〜）もコスパ良好。分割払いなら月々5,545円〜で始められます。' },
-  { question: '食事指導が充実しているジムは？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料提供。エクササイズコーチは「食べて痩せる」メソッドで糖質制限なしの食事指導が好評です。' },
-  { question: '恵比寿と渋谷のジム、どちらがおすすめ？', answer: '恵比寿は落ち着いた雰囲気で大人の女性に人気。渋谷は選択肢が多く低価格帯のジムも。どちらも駅近のジムが多いので、通いやすさで選ぶのがおすすめです。' },
-  { question: 'リバウンドが心配な場合は？', answer: 'OUTLINEは「生涯無料アフターサポート」で卒業後もずっとサポート。LIMは卒業後も毎月1回無料セッションが受けられます。' },
+  { question: '恵比寿で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプト、LIMが恵比寿で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプトがおすすめです。' },
+  { question: '恵比寿のパーソナルジムの料金相場はいくらですか？', answer: '恵比寿エリアの女性向けパーソナルジムの2ヶ月コース料金は約18万〜22万円です。ビーコンセプトが179,685円〜と比較的リーズナブルです。OUTLINEは生涯サポート付きで184,800円〜です。' },
+  { question: '恵比寿駅から最も近いパーソナルジムはどこですか？', answer: 'ビーコンセプト恵比寿店が徒歩2分で最も駅近です。UNDEUX SUPERBODYは徒歩4分、LIMは徒歩5分です。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'OUTLINE恵比寿・広尾店はベビーサークルを完備しており、お子様連れでも利用できます。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
+  { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。OUTLINE、ビーコンセプト、LIMは無料カウンセリングを実施しています。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
+  { question: '恵比寿で最も安いパーソナルジムはどこですか？', answer: 'ビーコンセプト（2ヶ月18回 179,685円〜）が最安クラスです。OUTLINE（16回 184,800円〜）もコスパ良好です。分割払いなら月々5,545円〜で始められます。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料で提供しています。エクササイズコーチは「食べて痩せる」メソッドで糖質制限なしの食事指導が好評です。' },
+  { question: '恵比寿と渋谷のジム、どちらがおすすめですか？', answer: '恵比寿は落ち着いた雰囲気で大人の女性に人気です。渋谷は選択肢が多く低価格帯のジムもあります。どちらも駅近のジムが多いので、通いやすさで選ぶのがおすすめです。' },
+  { question: 'リバウンドが心配な場合はどうすればよいですか？', answer: 'OUTLINEは「生涯無料アフターサポート」で卒業後もずっとサポートしています。LIMは卒業後も毎月1回無料セッションが受けられます。' },
 ]
 
 export default function EbisuPage() {
@@ -129,7 +129,7 @@ export default function EbisuPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「恵比寿で女性専用のパーソナルジムを探している」「おしゃれな街で通いやすいジムが知りたい」という方のために、恵比寿エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -184,12 +184,12 @@ export default function EbisuPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安。UNDEUX 220,000円〜が最高。恵比寿は渋谷より若干高め。</p>
+                <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安です。UNDEUX 220,000円〜が最高です。恵比寿は渋谷より若干高めです。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">入会金</h3>
                 <p className="text-3xl font-bold text-accent mb-2">0〜5万円</p>
-                <p className="text-sm text-brand-muted">キャンペーンで入会金無料のジムも。体験時に確認しましょう。</p>
+                <p className="text-sm text-brand-muted">キャンペーンで入会金無料のジムもあります。体験時にご確認ください。</p>
               </div>
             </div>
           </div>
@@ -201,11 +201,11 @@ export default function EbisuPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">恵比寿は渋谷区でも家賃相場が高いエリア</h3>
-                <p className="text-brand-muted leading-relaxed">恵比寿は渋谷区の中でも高級エリアのため、ジムの料金も若干高めの傾向があります。その分、施設の質やサービスは充実しています。コスパ重視なら渋谷のジムも比較検討しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">恵比寿は渋谷区の中でも高級エリアのため、ジムの料金も若干高めの傾向があります。その分、施設の質やサービスは充実しています。費用を重視される場合は、渋谷のジムもあわせて比較することをおすすめします。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">恵比寿駅の東口・西口で距離が変わる</h3>
-                <p className="text-brand-muted leading-relaxed">恵比寿駅は東口と西口で出る場所が大きく異なります。通いたいジムがどちら側にあるか、事前に確認しておきましょう。</p>
+                <p className="text-brand-muted leading-relaxed">恵比寿駅は東口と西口で出る場所が大きく異なります。通いたいジムがどちら側にあるか、事前にご確認ください。</p>
               </div>
             </div>
           </div>
@@ -235,14 +235,14 @@ export default function EbisuPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">恵比寿エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODY、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプトがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

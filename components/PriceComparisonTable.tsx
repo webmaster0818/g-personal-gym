@@ -111,7 +111,7 @@ export function PriceComparisonTable({ gyms, areaName }: Props) {
             </tbody>
           </table>
         </div>
-        <p className="text-brand-light text-xs mt-2 text-right">※ 料金は税込表示。最新の料金は各ジム公式サイトでご確認ください。</p>
+        <p className="text-brand-light text-xs mt-2 text-right">※ 料金は税込表示です。最新の料金は各ジム公式サイトでご確認ください。</p>
       </div>
     </section>
   )

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/hiroshima/'),
   title: '【2026年7月】広島の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】広島のおすすめ女性向けパーソナルジム3選を比較。UNDEUX・くびれ美人・MUSEなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】広島のおすすめ女性向けパーソナルジム3選を比較しています。UNDEUX・くびれ美人・MUSEなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,広島,広島,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '月額制（金額は公式サイトでご確認ください）',
     trial: '初回体験0円（電話・LINE・Web予約）',
     features: ['女性専用', '月額制', '手ぶらOK'],
-    description: 'UNDEUXの月額制ライン「LIFE」の広島スタジオ。女性専用で手ぶらOKです。',
+    description: 'UNDEUXの月額制ライン「LIFE」の広島スタジオです。女性専用で手ぶらOKです。',
     access: '本通駅徒歩1分・紙屋町東駅徒歩5分',
     address: '広島市中区紙屋町2-3-4 広中ビル6階',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: '月8回コース 月会費70,400円（税込・入会金11,000円＋事務手数料2,200円）',
     trial: '体験レッスン（55分）8,800円（初回体験4,950円の記載があるコースも）',
     features: ['女性向け専門', '完全個室', '理学療法ベースのメソッド', '糖質制限なしの食事指導'],
-    description: '女性向けパーソナル専門ジム。理学療法×インナーマッスルの「HATAメソッド」と、糖質制限なしの食事指導が特徴。完全個室で、中区内に八丁堀店・白島店もあります。',
+    description: '女性向けパーソナル専門ジムです。理学療法×インナーマッスルの「HATAメソッド」と、糖質制限なしの食事指導が特徴です。完全個室で、中区内に八丁堀店・白島店もあります。',
     access: '紙屋町東電停徒歩1分',
     address: '広島市中区基町11-5 和光紙屋町ビル7F',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性向け専門', purpose: ['くびれづくり', 'ダイエット', '姿勢改善'] },
@@ -49,7 +49,7 @@ const gyms = [
     price: '月6回 月額17,600円／60日集中コース99,800円〜',
     trial: '無料カウンセリング30分0円／体験トレーニング（90分）3,300円',
     features: ['完全女性専用', 'トレーナー全員女性', 'ピラティス・整体複合', '全額返金保証あり'],
-    description: '完全女性専用・トレーナー全員女性のジム。パーソナル×ピラティス×筋膜整体×痩身エステ×栄養指導の複合型で、全額返金保証があります。',
+    description: '完全女性専用・トレーナー全員女性のジムです。パーソナル×ピラティス×筋膜整体×痩身エステ×栄養指導の複合型で、全額返金保証があります。',
     access: '広島市中区袋町（駅からの徒歩分数は公式サイトでご確認ください）',
     address: '広島市中区袋町9-3',
     options: ['90日集中コース264,000円〜', '三川町にNo.1スタジオも'],
@@ -59,11 +59,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '広島で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY LIFE 広島スタジオ、MUSE FIT（ミューズフィット）NAMIKI STUDIO本店です（2026年6月調査時点）。' },
-  { question: '広島のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、くびれ美人 紙屋町本店は月8回コース 月会費70,400円（税込・入会金11,000円＋事務手数料2,200円）。MUSE FIT（ミューズフィット）NAMIKI STUDIO本店は月6回 月額17,600円／60日集中コース99,800円〜。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '広島駅から近いジムは？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY LIFE 広島スタジオ（本通駅徒歩1分・紙屋町東駅徒歩5分）、くびれ美人 紙屋町本店（紙屋町東電停徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY LIFE 広島スタジオ、くびれ美人 紙屋町本店、MUSE FIT（ミューズフィット）NAMIKI STUDIO本店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '広島で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY LIFE 広島スタジオ、MUSE FIT（ミューズフィット）NAMIKI STUDIO本店です（2026年6月調査時点）。' },
+  { question: '広島のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、くびれ美人 紙屋町本店は月8回コース 月会費70,400円です（税込・入会金11,000円＋事務手数料2,200円）。MUSE FIT（ミューズフィット）NAMIKI STUDIO本店は月6回 月額17,600円／60日集中コース99,800円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '広島駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY LIFE 広島スタジオ（本通駅徒歩1分・紙屋町東駅徒歩5分）、くびれ美人 紙屋町本店（紙屋町東電停徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY LIFE 広島スタジオ、くびれ美人 紙屋町本店、MUSE FIT（ミューズフィット）NAMIKI STUDIO本店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function HiroshimaPage() {
@@ -92,7 +92,7 @@ export default function HiroshimaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「広島で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、広島エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -157,10 +157,10 @@ export default function HiroshimaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -175,8 +175,8 @@ export default function HiroshimaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -224,7 +224,7 @@ export default function HiroshimaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

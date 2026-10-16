@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/sendai/'),
   title: '【2026年7月】仙台の女性向けパーソナルジムおすすめ4選！料金比較',
-  description: '【2026年7月】仙台のおすすめ女性向けパーソナルジム4選を比較。UNDEUX・リボーンマイセルフ・パーソナルトレーニングジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】仙台のおすすめ女性向けパーソナルジム4選を比較しています。UNDEUX・リボーンマイセルフ・パーソナルトレーニングジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,仙台,宮城,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダードプラン月額18,200円〜（税込）',
     trial: '無料カウンセリング・無料体験トレーニングあり',
     features: ['女性専用', '管理栄養士の食事サポート', '手ぶらOK'],
-    description: '女性専用のダイエット・ボディメイク特化ジム。管理栄養士の食事サポートがあり、手ぶらで通えます。',
+    description: '女性専用のダイエット・ボディメイク特化ジムです。管理栄養士の食事サポートがあり、手ぶらで通えます。',
     access: 'JR仙台駅徒歩3分',
     address: '仙台市青葉区中央1-7-2 アールアイ名掛丁2号館3F',
     options: ['コミットプラン月額79,200円（トレーニング6回＋LINE食事指導＋宅配食30食）'],
@@ -38,7 +38,7 @@ const gyms = [
     price: 'ショートコース（2ヶ月16回）220,000円（税込・入会金22,000円）',
     trial: '無料カウンセリング・無料体験あり',
     features: ['女性専用', 'トレーナー全員女性', '専属女性トレーナー制', 'シャワー・パウダールーム完備'],
-    description: '会員もトレーナーも全員女性の女性専門ジム。専属女性トレーナー担当制で、ウェア・タオル無料レンタル、シャワー・個室パウダールーム完備です。',
+    description: '会員もトレーナーも全員女性の女性専門ジムです。専属女性トレーナー担当制で、ウェア・タオル無料レンタル、シャワー・個室パウダールーム完備です。',
     access: '地下鉄東西線 青葉通一番町駅 南1出口徒歩2分',
     address: '仙台市青葉区一番町2-8-46 青葉通りOSビル6階',
     options: ['ベーシックコース（3ヶ月24回）303,600円', 'チケット1回7,700円〜'],
@@ -51,7 +51,7 @@ const gyms = [
     price: '月謝コース月2回 13,000円〜（加圧・60分）',
     trial: '無料カウンセリングあり／体験トレーニング8,800円（当日入会で3,300円）',
     features: ['女性専用', '東北最大級', '完全マンツーマン', '子連れOK'],
-    description: '東北最大級の女性専用トレーニング施設。完全マンツーマンで、トレーナーは全員コンテスト優勝・ファイナリスト経験者。子連れOKです。',
+    description: '東北最大級の女性専用トレーニング施設です。完全マンツーマンで、トレーナーは全員コンテスト優勝・ファイナリスト経験者です。子連れOKです。',
     access: '地下鉄仙台駅 北6出口直結',
     address: '仙台市青葉区中央2-1-30 須田ビルディング4階',
     options: ['回数券コースは入会金無料', '加圧トレーニング対応'],
@@ -64,7 +64,7 @@ const gyms = [
     price: '月2回 10,780円〜月8回48,000円（入会金不要）',
     trial: '事前無料カウンセリングあり／体験トレーニング（50分）3,000円',
     features: ['女性専用', '女性トレーナー', '骨盤底筋トレーニング対応', '子連れOK'],
-    description: '女性トレーナーによる地域独立系の女性専用パーソナルジム。骨盤底筋トレーニングなど女性特有の悩みに対応し、完全予約制マンツーマン・子連れOKです。',
+    description: '女性トレーナーによる地域独立系の女性専用パーソナルジムです。骨盤底筋トレーニングなど女性特有の悩みに対応し、完全予約制マンツーマン・子連れOKです。',
     access: '地下鉄北四番丁駅徒歩3分',
     address: '仙台市青葉区二日町11-5 第二梅原ビル4-A',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '骨盤ケア', '産後ダイエット'] },
@@ -73,12 +73,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '仙台で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 仙台スタジオ、リボーンマイセルフ 仙台店、パーソナルトレーニングジム ワンネス 仙台駅前店、BARE FITNESS studio（ベアフィットネススタジオ）です（2026年6月調査時点）。' },
-  { question: '仙台のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 仙台スタジオはスタンダードプラン月額18,200円〜（税込）。リボーンマイセルフ 仙台店はショートコース（2ヶ月16回）220,000円（税込・入会金22,000円）。パーソナルトレーニングジム ワンネス 仙台駅前店は月謝コース月2回 13,000円〜（加圧・60分）。BARE FITNESS studio（ベアフィットネススタジオ）は月2回 10,780円〜月8回48,000円（入会金不要）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '仙台駅から近いジムは？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 仙台スタジオ（JR仙台駅徒歩3分）、リボーンマイセルフ 仙台店（地下鉄東西線 青葉通一番町駅 南1出口徒歩2分）、パーソナルトレーニングジム ワンネス 仙台駅前店（地下鉄仙台駅 北6出口直結）、BARE FITNESS studio（ベアフィットネススタジオ）（地下鉄北四番丁駅徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 仙台スタジオ、リボーンマイセルフ 仙台店、パーソナルトレーニングジム ワンネス 仙台駅前店、BARE FITNESS studio（ベアフィットネススタジオ）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'パーソナルトレーニングジム ワンネス 仙台駅前店、BARE FITNESS studio（ベアフィットネススタジオ）が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '仙台で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 仙台スタジオ、リボーンマイセルフ 仙台店、パーソナルトレーニングジム ワンネス 仙台駅前店、BARE FITNESS studio（ベアフィットネススタジオ）です（2026年6月調査時点）。' },
+  { question: '仙台のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 仙台スタジオはスタンダードプラン月額18,200円〜です（税込）。リボーンマイセルフ 仙台店はショートコース（2ヶ月16回）220,000円です（税込・入会金22,000円）。パーソナルトレーニングジム ワンネス 仙台駅前店は月謝コース月2回 13,000円〜です（加圧・60分）。BARE FITNESS studio（ベアフィットネススタジオ）は月2回 10,780円〜月8回48,000円です（入会金不要）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '仙台駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 仙台スタジオ（JR仙台駅徒歩3分）、リボーンマイセルフ 仙台店（地下鉄東西線 青葉通一番町駅 南1出口徒歩2分）、パーソナルトレーニングジム ワンネス 仙台駅前店（地下鉄仙台駅 北6出口直結）、BARE FITNESS studio（ベアフィットネススタジオ）（地下鉄北四番丁駅徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 仙台スタジオ、リボーンマイセルフ 仙台店、パーソナルトレーニングジム ワンネス 仙台駅前店、BARE FITNESS studio（ベアフィットネススタジオ）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'パーソナルトレーニングジム ワンネス 仙台駅前店、BARE FITNESS studio（ベアフィットネススタジオ）が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function SendaiPage() {
@@ -107,7 +107,7 @@ export default function SendaiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「仙台で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、仙台エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -169,10 +169,10 @@ export default function SendaiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -187,8 +187,8 @@ export default function SendaiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -236,7 +236,7 @@ export default function SendaiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

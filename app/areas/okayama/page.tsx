@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/okayama/'),
   title: '【2026年7月】岡山の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】岡山のおすすめ女性向けパーソナルジム2選を比較。RITA-STYLE・FIREなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】岡山のおすすめ女性向けパーソナルジム2選を比較しています。RITA-STYLE・FIREなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,岡山,岡山,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '8回コース 98,000円（入会金は通常55,000円・キャンペーン変動）',
     trial: '無料カウンセリング・無料体験トレーニング実施中',
     features: ['女性会員約8割', '完全個室', '卒業後も続く食事サポート', '子連れ歓迎'],
-    description: '女性専用ではありませんが女性会員約8割のダイエット特化ジム。完全個室マンツーマンで、卒業後も続く食事サポートつき。手ぶらOK・子連れ歓迎です。',
+    description: '女性専用ではありませんが女性会員約8割のダイエット特化ジムです。完全個室マンツーマンで、卒業後も続く食事サポートが付いています。手ぶらOK・子連れ歓迎です。',
     access: '岡山駅徒歩3分・地下街で駅直結',
     address: '岡山市北区本町6-30 第一セントラルビル2号館6F',
     options: ['2週間コース24,500円〜', 'キャンペーンにより変動'],
@@ -38,7 +38,7 @@ const gyms = [
     price: 'パーソナルセッション1回 6,000円〜／Hard Plan12回 78,000円',
     trial: '体験セッション約60分 2,500円（LINE登録で無料）',
     features: ['女性約6割', '女性トレーナー在籍', '完全個室', '子連れOK'],
-    description: '会員の約6割が女性で、女性トレーナーが在籍する完全個室マンツーマンジム。LINE食事サポートつきで子連れOK。岡山駅西口エリアに2店舗あります。',
+    description: '会員の約6割が女性で、女性トレーナーが在籍する完全個室マンツーマンジムです。LINEでの食事サポートが付いており、お子様連れでも利用できます。岡山駅西口エリアに2店舗あります。',
     access: '岡山駅西口から徒歩5分（島田本町店）',
     address: '岡山市北区島田本町1-1-47 テクノ技研ビル2F',
     options: ['食事管理プラン月6,600円〜'],
@@ -48,12 +48,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '岡山に女性専用のパーソナルジムはある？', answer: '2026年6月の調査時点では、岡山駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
-  { question: '岡山のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、RITA-STYLE（リタスタイル）岡山駅前店は8回コース 98,000円（入会金は通常55,000円・キャンペーン変動）。FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店はパーソナルセッション1回 6,000円〜／Hard Plan12回 78,000円。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '岡山駅から近いジムは？', answer: '駅徒歩3分以内・直結では、RITA-STYLE（リタスタイル）岡山駅前店（岡山駅徒歩3分・地下街で駅直結）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'RITA-STYLE（リタスタイル）岡山駅前店、FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'RITA-STYLE（リタスタイル）岡山駅前店、FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '岡山に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、岡山駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
+  { question: '岡山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、RITA-STYLE（リタスタイル）岡山駅前店は8回コース 98,000円です（入会金は通常55,000円・キャンペーン変動）。FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店はパーソナルセッション1回 6,000円〜／Hard Plan12回 78,000円です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '岡山駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、RITA-STYLE（リタスタイル）岡山駅前店（岡山駅徒歩3分・地下街で駅直結）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'RITA-STYLE（リタスタイル）岡山駅前店、FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'RITA-STYLE（リタスタイル）岡山駅前店、FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function OkayamaPage() {
@@ -82,7 +82,7 @@ export default function OkayamaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「岡山で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、岡山エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、岡山駅徒歩圏に「完全女性専用」を公式に確認できるパーソナルジムは見つかりませんでした（女性専用とされる店舗はあるものの公式サイトの接続不可等で確認できず）。本ページでは女性会員比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。</p>
@@ -141,10 +141,10 @@ export default function OkayamaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -159,8 +159,8 @@ export default function OkayamaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -208,7 +208,7 @@ export default function OkayamaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

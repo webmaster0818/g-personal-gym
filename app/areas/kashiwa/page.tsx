@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kashiwa/'),
   title: '【2026年7月】柏の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】柏のおすすめ女性向けパーソナルジム2選を比較。リボーンマイセルフ・UNDEUXの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】柏のおすすめ女性向けパーソナルジム2選を比較しています。リボーンマイセルフ・UNDEUXの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,柏,千葉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'ショートコース（2ヶ月16回）220,000円（入会金22,000円）',
     trial: 'カウンセリング0円・体験トレーニング0円',
     features: ['女性専用', 'トレーナー全員女性', '完全個室', '子連れ可'],
-    description: '女性専用・トレーナー全員女性のジム。完全個室で食事指導込み。ウェア無料貸出、シャワー・個室パウダールーム完備、子連れ可です。',
+    description: '女性専用・トレーナー全員女性のジムです。完全個室で、食事指導が含まれています。ウェア無料貸出、シャワー・個室パウダールーム完備、子連れ可です。',
     access: 'JR常磐線・東武アーバンパークライン 柏駅東口 徒歩3分',
     address: '柏市柏2-8-17 エミネンス柏3階',
     options: ['ベーシックコース（3ヶ月24回）303,600円', 'チケット8回101,200円〜'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '月額制（金額は公式料金ページでご確認ください）',
     trial: '初回体験0円',
     features: ['女性専用', '月額制', '管理栄養士の食事サポート', '手ぶらOK'],
-    description: 'UNDEUXの月額制ライン「LIFE」の柏スタジオ。女性専用で、管理栄養士の食事改善サポート＋ヘルシー宅配食があります。',
+    description: 'UNDEUXの月額制ライン「LIFE」の柏スタジオです。女性専用で、管理栄養士の食事改善サポート＋ヘルシー宅配食があります。',
     access: '各線「柏駅」徒歩2分',
     address: '柏市末広町7-2 柏プラザビル5F',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '食事改善'] },
@@ -47,12 +47,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '柏で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 柏店、UNDEUX SUPERBODY LIFE 柏スタジオです（2026年6月調査時点）。' },
-  { question: '柏のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 柏店はショートコース（2ヶ月16回）220,000円（入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '柏駅から近いジムは？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ 柏店（JR常磐線・東武アーバンパークライン 柏駅東口 徒歩3分）、UNDEUX SUPERBODY LIFE 柏スタジオ（各線「柏駅」徒歩2分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'リボーンマイセルフ 柏店、UNDEUX SUPERBODY LIFE 柏スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'リボーンマイセルフ 柏店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '柏で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 柏店、UNDEUX SUPERBODY LIFE 柏スタジオです（2026年6月調査時点）。' },
+  { question: '柏のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 柏店はショートコース（2ヶ月16回）220,000円です（入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '柏駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ 柏店（JR常磐線・東武アーバンパークライン 柏駅東口 徒歩3分）、UNDEUX SUPERBODY LIFE 柏スタジオ（各線「柏駅」徒歩2分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'リボーンマイセルフ 柏店、UNDEUX SUPERBODY LIFE 柏スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'リボーンマイセルフ 柏店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function KashiwaPage() {
@@ -81,7 +81,7 @@ export default function KashiwaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「柏で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、柏エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -146,10 +146,10 @@ export default function KashiwaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -164,8 +164,8 @@ export default function KashiwaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -213,7 +213,7 @@ export default function KashiwaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

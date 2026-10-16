@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/oita/'),
   title: '【2026年7月】大分の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】大分のおすすめ女性向けパーソナルジム3選を比較。BEYOND・rare・養生salonなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】大分のおすすめ女性向けパーソナルジム3選を比較しています。BEYOND・rare・養生salonなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,大分,大分,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '回数券10回 102,300円／月額マンスリー月2回 17,600円〜',
     trial: '無料カウンセリング＋体験トレーニング（初回限定無料）',
     features: ['女性トレーナー在籍', '女性向けプログラム対応', '食事指導コースあり'],
-    description: '男女共用ですが女性トレーナーが在籍し、女性利用が多いボディメイクジム。食事指導つきコース（ライフプランニング）があります。',
+    description: '男女共用ですが女性トレーナーが在籍し、女性利用が多いボディメイクジムです。食事指導付きコース（ライフプランニング）があります。',
     access: 'JR大分駅北口 徒歩8分',
     address: '大分市府内町3-3-8 府内トレス1階',
     options: ['ACHIEVE20回187,000円'],
@@ -49,7 +49,7 @@ const gyms = [
     price: 'パーソナルは8回/12回の1クール制（金額は公式サイトでご確認ください）',
     trial: '体験トレーニング60分 3,000円（カウンセリング込み）',
     features: ['女性専用', '完全予約制プライベート空間', '食事指導あり', 'よもぎ蒸し併設'],
-    description: '女性限定の完全予約制プライベートサロン。マンツーマントレーニングと食事指導に加え、よもぎ蒸しを併設しています。',
+    description: '女性限定の完全予約制プライベートサロンです。マンツーマントレーニングと食事指導に加え、よもぎ蒸しを併設しています。',
     access: '大分市中津留1-3-18（大分駅徒歩圏外・アクセスは公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '体質改善', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -57,10 +57,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '大分で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、rare integrate（レアインテグレート）、養生salon 古き良きです（2026年6月調査時点）。' },
-  { question: '大分のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、BEYOND 大分店は回数券10回 102,300円／月額マンスリー月2回 17,600円〜。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'BEYOND 大分店、養生salon 古き良きは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '大分で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、rare integrate（レアインテグレート）、養生salon 古き良きです（2026年6月調査時点）。' },
+  { question: '大分のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BEYOND 大分店は回数券10回 102,300円／月額マンスリー月2回 17,600円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'BEYOND 大分店、養生salon 古き良きは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function OitaPage() {
@@ -89,7 +89,7 @@ export default function OitaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「大分で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、大分エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、大分駅徒歩圏に「完全女性専用」のパーソナルジムは公式に確認できませんでした。本ページでは駅徒歩圏で女性向けに強いジムと、市内の女性専用ジム（車アクセス）をあわせて掲載しています。</p>
@@ -157,10 +157,10 @@ export default function OitaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -175,8 +175,8 @@ export default function OitaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -224,7 +224,7 @@ export default function OitaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

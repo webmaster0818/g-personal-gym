@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shinagawa/'),
   title: '【2026年7月】品川の女性専用パーソナルジムおすすめ1選！料金比較',
-  description: '【2026年4月】品川のおすすめ女性専用パーソナルジム1選を徹底比較。24/7 Workoutの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】品川のおすすめ女性専用パーソナルジム1選を比較しています。24/7 Workoutの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,品川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -24,10 +24,10 @@ const gyms = [
     price: '2ヶ月16回 257,400円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '完全個室', '深夜営業', '3食食べるダイエット', '全額返金保証'],
-    description: '「3食食べて痩せる」がコンセプトの大手パーソナルジム。深夜24時まで営業しており、品川エリアのビジネスパーソンに人気。全額返金保証付きで安心。',
+    description: '「3食食べて痩せる」がコンセプトの大手パーソナルジムです。深夜24時まで営業しており、品川エリアのビジネスパーソンに人気です。全額返金保証付きで安心です。',
     access: 'JR「品川駅」徒歩5分',
     address: '東京都港区港南（品川駅徒歩5分）',
-    popularPlan: { name: '2ヶ月コース', description: '3食食べながら理想の体型を目指す。マンツーマン指導16回。', price: '2ヶ月16回 257,400円〜（税込）' },
+    popularPlan: { name: '2ヶ月コース', description: '3食食べながら理想の体型を目指します。マンツーマン指導16回です。', price: '2ヶ月16回 257,400円〜（税込）' },
     options: ['全額返金保証', 'ウェアレンタル無料', '深夜24時まで営業', '食事指導付き'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体力向上', '健康維持'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -36,9 +36,9 @@ const gyms = [
 
 const faqs = [
   { question: '品川で女性専用のパーソナルジムはありますか？', answer: '当サイトで品川エリアに掲載しているのは24/7 Workout 品川店です。' },
-  { question: '品川のパーソナルジムの料金相場はどれくらい？', answer: '当サイト掲載の24/7 Workout 品川店は2ヶ月16回 257,400円〜（税込）です。最新の料金は公式サイトでご確認ください。' },
-  { question: '品川駅から近いパーソナルジムは？', answer: '24/7 Workout（徒歩5分）が品川駅から近いジムです。' },
-  { question: '品川で仕事帰りに通えるジムは？', answer: '24/7 Workoutは深夜24時まで営業しており、品川で働くビジネスパーソンに最適です。' },
+  { question: '品川のパーソナルジムの料金相場はどれくらいですか？', answer: '当サイト掲載の24/7 Workout 品川店は2ヶ月16回 257,400円〜（税込）です。最新の料金は公式サイトでご確認ください。' },
+  { question: '品川駅から近いパーソナルジムはどこですか？', answer: '24/7 Workout（徒歩5分）が品川駅から近いジムです。' },
+  { question: '品川で仕事帰りに通えるジムはどこですか？', answer: '24/7 Workoutは深夜24時まで営業しており、品川で働くビジネスパーソンに最適です。' },
 ]
 
 export default function ShinagawaPage() {
@@ -67,7 +67,7 @@ export default function ShinagawaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「品川で女性専用のパーソナルジムを探している」「駅近で仕事帰りに通いやすいジムが知りたい」という方のために、品川エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -99,7 +99,7 @@ export default function ShinagawaPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">品川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">掲載ジムの料金・特徴を比較して選んでください。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
@@ -125,7 +125,7 @@ export default function ShinagawaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

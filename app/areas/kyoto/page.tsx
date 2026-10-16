@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kyoto/'),
   title: '【2026年7月】京都の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】京都のおすすめ女性向けパーソナルジム2選を比較。UNDEUX・リボーンマイセルフなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】京都のおすすめ女性向けパーソナルジム2選を比較しています。UNDEUX・リボーンマイセルフなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,京都,京都,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダードプラン月2回 20,500円〜（税込）',
     trial: '無料体験あり',
     features: ['女性専用', '駅至近', '月額制', '食事相談無料'],
-    description: '阪急烏丸駅徒歩1分の女性専用パーソナルジム。月額制で食事相談は無料、手ぶらで通えます。',
+    description: '阪急烏丸駅徒歩1分の女性専用パーソナルジムです。月額制で食事相談は無料、手ぶらで通えます。',
     access: '阪急烏丸駅徒歩1分・地下鉄四条駅徒歩2分',
     options: ['月8回58,200円', 'コミットプラン月6回79,200円', 'ウェア・シューズ・タオル無料レンタル'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -36,8 +36,8 @@ const gyms = [
     officialUrl: 'https://www.shapes-international.co.jp/store/kyoto-ekimae/',
     price: 'ショートコース（2ヶ月16回）184,000円（入会金22,000円・無料キャンペーンの場合あり）',
     trial: '体験・カウンセリングともに無料',
-    features: ['女性専用', 'トレーナー全員女性', '食事指導つき', 'パウダールーム完備'],
-    description: '女性専用・トレーナー全員女性のジム。食事指導つきで、ウェア・タオル無料、シャワー・個室パウダールーム完備。四条烏丸からは地下鉄烏丸線で2駅です。',
+    features: ['女性専用', 'トレーナー全員女性', '食事指導付き', 'パウダールーム完備'],
+    description: '女性専用・トレーナー全員女性のジムです。食事指導付きで、ウェア・タオル無料、シャワー・個室パウダールームを完備しています。四条烏丸からは地下鉄烏丸線で2駅です。',
     access: 'JR京都駅中央口徒歩4分・地下鉄京都駅徒歩5分',
     options: ['ベーシックコース（3ヶ月24回）252,000円', 'チケット8,800円〜/回'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'ブライダル'] },
@@ -46,11 +46,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '京都で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 京都・四条・烏丸スタジオ、リボーンマイセルフ 京都駅店です（2026年6月調査時点）。' },
-  { question: '京都のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 京都・四条・烏丸スタジオはスタンダードプラン月2回 20,500円〜（税込）。リボーンマイセルフ 京都駅店はショートコース（2ヶ月16回）184,000円（入会金22,000円・無料キャンペーンの場合あり）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '京都駅から近いジムは？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 京都・四条・烏丸スタジオ（阪急烏丸駅徒歩1分・地下鉄四条駅徒歩2分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 京都・四条・烏丸スタジオ、リボーンマイセルフ 京都駅店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '京都で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 京都・四条・烏丸スタジオ、リボーンマイセルフ 京都駅店です（2026年6月調査時点）。' },
+  { question: '京都のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 京都・四条・烏丸スタジオはスタンダードプラン月2回 20,500円〜です（税込）。リボーンマイセルフ 京都駅店はショートコース（2ヶ月16回）184,000円です（入会金22,000円・無料キャンペーンの場合あり）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '京都駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 京都・四条・烏丸スタジオ（阪急烏丸駅徒歩1分・地下鉄四条駅徒歩2分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 京都・四条・烏丸スタジオ、リボーンマイセルフ 京都駅店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function KyotoPage() {
@@ -79,7 +79,7 @@ export default function KyotoPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「京都で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、京都エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、四条烏丸・河原町の駅前エリアで公式サイトから「女性専用」を確認できた大手パーソナルジムは限られています。本ページでは公式確認できた2店舗を掲載しています。</p>
@@ -142,10 +142,10 @@ export default function KyotoPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -160,8 +160,8 @@ export default function KyotoPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -209,7 +209,7 @@ export default function KyotoPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

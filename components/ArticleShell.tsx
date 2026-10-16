@@ -113,7 +113,7 @@ export function ArticleShell({ eyebrow, title, lead, updated = '2026年6月13日
         <section className="py-14 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">気になるジムを2〜3社比較して、あなたに合う1社を見つけましょう。</p>
+            <p className="text-white/80 mb-8">気になるジムを2〜3社比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/miyazaki/'),
   title: '【2026年7月】宮崎の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】宮崎のおすすめ女性向けパーソナルジム3選を比較。StyleUp・Kodama・プリッツジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】宮崎のおすすめ女性向けパーソナルジム3選を比較しています。StyleUp・Kodama・プリッツジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,宮崎,宮崎,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '回数券5回 45,000円〜／単発50分 11,000円（税込・入会金11,000円）',
     trial: '体験（カウンセリング込み90分）5,500円・無料カウンセリングあり',
     features: ['女性専用', '女性トレーナー', '臨床栄養医学指導士の食事指導'],
-    description: '女性専用のパーソナルジム。女性トレーナーが指導し、臨床栄養医学指導士による食事指導（月22,000円）を付けられます。店舗前に無料駐車場があります。',
+    description: '女性専用のパーソナルジムです。女性トレーナーが指導し、臨床栄養医学指導士による食事指導（月22,000円）を付けられます。店舗前に無料駐車場があります。',
     access: '宮崎市中央通（橘通りエリア・店舗前に無料駐車場あり）',
     options: ['回数券40回298,000円', '食事管理月22,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -37,7 +37,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください（プランごとに異なる）',
     trial: '無料体験あり',
     features: ['女性専用', 'スタッフ全員女性', 'AIマシン', '化粧台・個室シャワー'],
-    description: '女性専用のAIパーソナルジム。スタッフは全員女性で、AIマシン「バイオサーキット」を使った個別メニュー。専用化粧台・個室シャワー完備です。',
+    description: '女性専用のAIパーソナルジムです。スタッフは全員女性で、AIマシン「バイオサーキット」を使った個別メニューです。専用化粧台・個室シャワー完備です。',
     access: '宮崎市橘通西（中心部・専用駐車場/駐輪場あり）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '運動習慣'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['化粧台・個室シャワー'] },
@@ -48,7 +48,7 @@ const gyms = [
     price: '月4回 14,300円／月8回 24,000円（税込・入会金22,000円）',
     trial: '初回体験の予約受付あり',
     features: ['女性専用', 'セミパーソナル（最大3名）', 'マシンピラティス', '無料駐車場'],
-    description: '女性専用のセミパーソナルジム（最大3名・1回50分）。マシンピラティス導入で、食事指導はオプション。無料駐車場完備です。',
+    description: '女性専用のセミパーソナルジムです（最大3名・1回50分）。マシンピラティス導入で、食事指導はオプションです。無料駐車場完備です。',
     access: '宮崎市内（所在地・アクセスは公式サイトでご確認ください・無料駐車場完備）',
     options: ['月6回18,900円', '食事指導オプション11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', '運動習慣'] },
@@ -57,10 +57,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '宮崎で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、StyleUp（スタイルアップ）、Kodama Fit Labo（コダマフィットラボ）、プリッツジム 宮崎店です（2026年6月調査時点）。' },
-  { question: '宮崎のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、StyleUp（スタイルアップ）は回数券5回 45,000円〜／単発50分 11,000円（税込・入会金11,000円）。プリッツジム 宮崎店は月4回 14,300円／月8回 24,000円（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'StyleUp（スタイルアップ）、Kodama Fit Labo（コダマフィットラボ）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '宮崎で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、StyleUp（スタイルアップ）、Kodama Fit Labo（コダマフィットラボ）、プリッツジム 宮崎店です（2026年6月調査時点）。' },
+  { question: '宮崎のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、StyleUp（スタイルアップ）は回数券5回 45,000円〜／単発50分 11,000円です（税込・入会金11,000円）。プリッツジム 宮崎店は月4回 14,300円／月8回 24,000円です（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'StyleUp（スタイルアップ）、Kodama Fit Labo（コダマフィットラボ）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function MiyazakiPage() {
@@ -89,7 +89,7 @@ export default function MiyazakiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「宮崎で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、宮崎エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -150,10 +150,10 @@ export default function MiyazakiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -168,8 +168,8 @@ export default function MiyazakiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -217,7 +217,7 @@ export default function MiyazakiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shizuoka/'),
   title: '【2026年7月】静岡の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】静岡のおすすめ女性向けパーソナルジム3選を比較。女性専用パーソナルジムCONTRAST・かたぎり塾・リーフィットネス静岡店など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】静岡のおすすめ女性向けパーソナルジム3選を比較しています。女性専用パーソナルジムCONTRAST・かたぎり塾・リーフィットネス静岡店など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,静岡,静岡,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '月4回 35,200円（入会金22,000円）',
     trial: '体験60分 5,500円（入会時全額返金）＋無料カウンセリングあり',
     features: ['女性専用', 'トレーナー全員女性', '完全貸切プライベート空間', '完全予約制'],
-    description: '女性専用・トレーナー全員女性のジム。完全予約制の完全貸切プライベート空間で、コンディショニング・トレーニング・ストレッチの3軸で個別プログラムを組みます。',
+    description: '女性専用・トレーナー全員女性のジムです。完全予約制の完全貸切プライベート空間で、コンディショニング・トレーニング・ストレッチの3軸で個別プログラムを組みます。',
     access: '新静岡駅 徒歩5分',
     address: '静岡市葵区鷹匠2-9-6',
     options: ['月2回19,800円〜月12回82,800円'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '月4回 30,800円（税込）',
     trial: '無料体験あり（手ぶらOK）',
     features: ['月額制', '完全個室', 'AI食事指導', '医師監修'],
-    description: '完全個室マンツーマンの月額制ジム。医師監修メソッドとAI食事指導アプリ無料。女性専用ではありませんが女性・初心者向けの訴求が強い店舗です。',
+    description: '完全個室マンツーマンの月額制ジムです。医師監修メソッドとAI食事指導アプリ無料です。女性専用ではありませんが女性・初心者向けの訴求が強い店舗です。',
     access: 'JR静岡駅 徒歩10分',
     address: '静岡市葵区呉服町2-2-22',
     options: ['月8回59,400円', '無期限チケット8,800円/回', '体験当日入会で入会金22,000円（通常55,000円）'],
@@ -51,7 +51,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください',
     trial: '体験・カウンセリングあり（料金は公式サイトでご確認ください）',
     features: ['女性専用', '加圧トレーニング', 'ダイエット・ボディメイク専門', '無料駐車場'],
-    description: '女性専用のダイエット・ボディメイク専門ジム。加圧トレーニング完備で、有酸素運動機器もあります。無料駐車場つきで車でも通えます。',
+    description: '女性専用のダイエット・ボディメイク専門ジムです。加圧トレーニング完備で、有酸素運動機器もあります。無料駐車場付きで車でも通えます。',
     access: '静岡市葵区四番町6-7（駅からの徒歩分数は公式サイトでご確認ください・無料駐車場あり）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['無料駐車場'] },
@@ -59,10 +59,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '静岡で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、女性専用パーソナルジムCONTRAST（コントラスト）、リーフィットネス静岡店（Le-Fitness）です（2026年6月調査時点）。' },
-  { question: '静岡のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、女性専用パーソナルジムCONTRAST（コントラスト）は月4回 35,200円（入会金22,000円）。かたぎり塾 静岡店は月4回 30,800円（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: '女性専用パーソナルジムCONTRAST（コントラスト）、かたぎり塾 静岡店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '静岡で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、女性専用パーソナルジムCONTRAST（コントラスト）、リーフィットネス静岡店（Le-Fitness）です（2026年6月調査時点）。' },
+  { question: '静岡のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、女性専用パーソナルジムCONTRAST（コントラスト）は月4回 35,200円です（入会金22,000円）。かたぎり塾 静岡店は月4回 30,800円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: '女性専用パーソナルジムCONTRAST（コントラスト）、かたぎり塾 静岡店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function ShizuokaPage() {
@@ -91,7 +91,7 @@ export default function ShizuokaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「静岡で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、静岡エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -156,10 +156,10 @@ export default function ShizuokaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -174,8 +174,8 @@ export default function ShizuokaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -223,7 +223,7 @@ export default function ShizuokaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

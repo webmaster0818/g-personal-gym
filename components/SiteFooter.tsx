@@ -31,7 +31,7 @@ export function SiteFooter() {
           <div>
             <span className="font-display text-xl font-bold text-white">G-PersonalGym</span>
             <p className="text-white/55 text-xs mt-4 leading-relaxed">
-              女性専用パーソナルジムの比較・ランキングメディア。あなたにぴったりのジムが見つかります。
+              女性専用パーソナルジムの比較・ランキングメディアです。ご自身に合ったジム選びにお役立てください。
             </p>
           </div>
           <div>

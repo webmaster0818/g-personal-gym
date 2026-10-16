@@ -195,7 +195,7 @@ export function GymCard({ gym, index }: GymCardProps) {
           {activeTab === 'plan' && (
             <div>
               <h4 className="font-bold text-brand-text mb-2">{gym.popularPlan?.name || '基本コース'}</h4>
-              <p className="text-brand-muted text-sm mb-3">{gym.popularPlan?.description || `${gym.name}の人気プラン。`}</p>
+              <p className="text-brand-muted text-sm mb-3">{gym.popularPlan?.description || `${gym.name}の人気プランです。`}</p>
               <div className="space-y-2">
                 <div className="flex items-center text-sm">
                   <span className="text-brand-light font-medium w-24">料金：</span>

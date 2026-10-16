@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/fukui/'),
   title: '【2026年7月】福井の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】福井のおすすめ女性向けパーソナルジム3選を比較。Style.Tokyo・BONAFIDE・BODYEEDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】福井のおすすめ女性向けパーソナルジム3選を比較しています。Style.Tokyo・BONAFIDE・BODYEEDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,福井,福井,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: '都度払い 13,700円（税込・痩身エステ＋パーソナルトレーニング、入会金・管理費不要）',
     trial: '無料ZOOM相談あり（公式LINE受付）',
     features: ['女性専用', 'トレーナー全員女性', '痩身エステ機器併用', '都度払い制'],
-    description: '女性専用・トレーナー全員女性のスタジオ。ラジオ波・吸引・キャビテーションなどの痩身エステ機器とパーソナルトレーニングを組み合わせる都度払い制で、入会金不要です。',
+    description: '女性専用・トレーナー全員女性のスタジオです。ラジオ波・吸引・キャビテーションなどの痩身エステ機器とパーソナルトレーニングを組み合わせる都度払い制で、入会金不要です。',
     access: '福井市内（所在地・アクセスは公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -36,7 +36,7 @@ const gyms = [
     price: 'ライト会員 月5,478円（30分×4回）〜（税込）',
     trial: '15分無料見学あり／30分初回体験 1,100円（税込）',
     features: ['女性専用（米松店）', 'セミパーソナル', 'ピラティス対応', '低価格'],
-    description: '米松店は女性専用のセミパーソナルジム（成和店・大和田店は男女共用）。毎回トレーナーがつく30分制で、筋トレ・有酸素・ピラティスに対応。月5,478円〜と始めやすい価格です。',
+    description: '米松店は女性専用のセミパーソナルジムです（成和店・大和田店は男女共用）。毎回トレーナーがつく30分制で、筋トレ・有酸素・ピラティスに対応しています。月5,478円〜と始めやすい価格です。',
     access: '福井市志比口（アクセスは公式サイトでご確認ください）',
     options: ['スタンダード月7,678円（30分×8回・12ヶ月契約）', 'マンスリー月8,778円（いつでも解約可）'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['運動習慣', 'ダイエット', 'ピラティス'] },
@@ -48,7 +48,7 @@ const gyms = [
     price: '2ヶ月コース 113,600円（税込・入会金33,000円は体験当日入会で無料）',
     trial: '体験トレーニング 5,500円（60分・カウンセリング込・税込）',
     features: ['女性向けダイエット特化', '女性トレーナー在籍', '完全プライベート空間', 'マシンピラティス導入'],
-    description: '女性向けダイエット特化を公式に明記するプライベートジム。完全予約制で、マシンピラティスを導入。女性トレーナーが在籍します。',
+    description: '女性向けダイエット特化を公式に明記するプライベートジムです。完全予約制で、マシンピラティスを導入しています。女性トレーナーが在籍します。',
     access: '福井市江守中（車アクセス前提・駐車場2台完備）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '公式サイトでご確認ください（女性向け特化を明記）', purpose: ['ダイエット', 'ピラティス', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -56,10 +56,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '福井で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Style.Tokyo 福井です（2026年6月調査時点）。' },
-  { question: '福井のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、Style.Tokyo 福井は都度払い 13,700円（税込・痩身エステ＋パーソナルトレーニング、入会金・管理費不要）。BONAFIDE（ボナファイド）米松店はライト会員 月5,478円（30分×4回）〜（税込）。BODYEED（ボディード）は2ヶ月コース 113,600円（税込・入会金33,000円は体験当日入会で無料）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'Style.Tokyo 福井、BONAFIDE（ボナファイド）米松店、BODYEED（ボディード）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '福井で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Style.Tokyo 福井です（2026年6月調査時点）。' },
+  { question: '福井のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、Style.Tokyo 福井は都度払い 13,700円です（税込・痩身エステ＋パーソナルトレーニング、入会金・管理費不要）。BONAFIDE（ボナファイド）米松店はライト会員 月5,478円（30分×4回）〜です（税込）。BODYEED（ボディード）は2ヶ月コース 113,600円です（税込・入会金33,000円は体験当日入会で無料）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'Style.Tokyo 福井、BONAFIDE（ボナファイド）米松店、BODYEED（ボディード）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function FukuiPage() {
@@ -88,7 +88,7 @@ export default function FukuiPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「福井で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、福井エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、福井駅徒歩圏に「女性専用」を公式に確認できるパーソナルジムは見つかりませんでした。本ページでは市内の女性専用・女性向けジム（車アクセス中心）を掲載しています。</p>
@@ -148,10 +148,10 @@ export default function FukuiPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -166,8 +166,8 @@ export default function FukuiPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -215,7 +215,7 @@ export default function FukuiPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

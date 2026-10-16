@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   ...pageUrlMeta('/cost/'),
   title: '女性専用パーソナルジムの料金相場【2026年8月】相場・入会金・体験無料60%を独自調査',
   description:
-    '女性専用パーソナルジムの料金相場を、2ヶ月集中コース・月額制・都度払い別に徹底解説。入会金や食事指導などの追加費用、総額の目安、安く抑えるコツ、他の運動施設との料金比較まで、公開情報ベースでまとめました。',
+    '女性専用パーソナルジムの料金相場を、2ヶ月集中コース・月額制・都度払い別に解説します。入会金や食事指導などの追加費用、総額の目安、安く抑えるコツ、他の運動施設との料金比較まで、公開情報ベースでまとめました。',
 }
 
 const faqs = [
   { question: '女性専用パーソナルジムの料金相場はいくらですか？', answer: '主流の2ヶ月集中コース（16回）は約18万〜25万円（税込）が相場です。これに入会金2万〜5万円程度が加わります。月額制なら月1.2万〜6万円、都度払いは1回6千〜1.5万円が目安です。キャンペーンで入会金無料になるケースも多く、実際の総額は各ジムの無料カウンセリングで確認するのが確実です。' },
   { question: '2ヶ月コースと月額制はどちらがお得ですか？', answer: '短期間で集中的に結果を出したいなら2ヶ月コース、無理なく長く続けたい・初期費用を抑えたいなら月額制が向きます。週2回を3ヶ月以上続ける想定なら、月額制のほうが総額を抑えられる場合があります。一方、食事指導や宅配食などの手厚いサポートは2ヶ月コースに含まれることが多い点も比較材料です。' },
-  { question: 'コース料金以外にかかる費用はありますか？', answer: '入会金（2万〜5万円程度）が代表的です。ウェア・タオル・シューズのレンタルは無料のジムがほとんどで、食事指導もコースに含まれる場合が多いです。プロテインや一部のオプション（部分痩せ集中など）が別料金のことがあるため、カウンセリング時に「総額でいくらか」を必ず確認しましょう。' },
+  { question: 'コース料金以外にかかる費用はありますか？', answer: '入会金（2万〜5万円程度）が代表的です。ウェア・タオル・シューズのレンタルは無料のジムがほとんどで、食事指導もコースに含まれる場合が多いです。プロテインや一部のオプション（部分痩せ集中など）が別料金のことがあるため、カウンセリング時に「総額でいくらか」を必ずご確認ください。' },
   { question: '分割払いやローンは使えますか？', answer: '多くの女性専用パーソナルジムが分割払い（提携ローン・クレジットカード）に対応しています。たとえば月々5,000円台からの分割に対応するジムもあります。分割は手数料が上乗せされるため、総支払額と回数を確認したうえで利用するのがおすすめです。' },
   { question: '料金を安く抑える方法はありますか？', answer: '「入会金無料キャンペーン」「モニター割引（ビフォーアフター提供）」「友達紹介割引」「年度替わり・季節のキャンペーン」を狙うのが効果的です。高額コースが不安な場合は、まず月額制や都度払いのジムで相性を確かめてから本格的なコースに移行する方法もあります。' },
   { question: '一般的なジムより高いのはなぜですか？', answer: 'トレーナーがマンツーマンで指導し、一人ひとりに合わせたトレーニング・食事プログラムを設計するためです。フォーム指導や食事サポートまで含むため、自己流になりがちな一般ジム（月数千円〜）より単価は高くなりますが、短期間で結果が出やすく挫折しにくいのが特徴です。' },
@@ -34,7 +34,7 @@ export default function CostPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="eyebrow mb-3">Price Guide</p>
             <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">女性専用パーソナルジムの料金相場【2026年7月】</h1>
-            <p className="text-ink-soft text-sm md:text-base leading-relaxed">2ヶ月集中コース・月額制・都度払い、入会金や追加費用まで。総額の目安と、賢く安く通うコツを徹底解説します。</p>
+            <p className="text-ink-soft text-sm md:text-base leading-relaxed">2ヶ月集中コース・月額制・都度払いの料金に加え、入会金や追加費用、総額の目安と費用を抑えるコツについて解説します。</p>
             <p className="text-ink-faint text-xs mt-3">更新日 2026年4月13日</p>
           </div>
         </section>
@@ -66,10 +66,10 @@ export default function CostPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-ink-soft leading-relaxed mb-8">パーソナルジムの料金体系は主に「2ヶ月集中コース」「月額制」「都度払い」の3タイプ。女性専用ジムの相場を、追加費用や他の選択肢との比較まで含めて詳しく解説します。料金は2026年時点の公開情報をもとにした目安で、最新の金額は各ジムの無料カウンセリングでご確認ください。</p>
+            <p className="text-ink-soft leading-relaxed mb-8">パーソナルジムの料金体系は主に「2ヶ月集中コース」「月額制」「都度払い」の3タイプです。女性専用ジムの相場を、追加費用や他の選択肢との比較まで含めて詳しく解説します。料金は2026年時点の公開情報をもとにした目安で、最新の金額は各ジムの無料カウンセリングでご確認ください。</p>
 
             <div className="bg-accent-tint border border-accent-soft rounded-xl p-6 mb-10">
-              <p className="font-bold text-ink mb-2">結論：相場はこのくらい</p>
+              <p className="font-bold text-ink mb-2">料金相場の目安</p>
               <ul className="text-sm text-ink-soft leading-relaxed space-y-1">
                 <li>・<strong>2ヶ月集中コース（16回）</strong>：約18万〜25万円（税込）＋入会金2万〜5万円</li>
                 <li>・<strong>月額制</strong>：月1.2万〜6万円（月4〜8回）／初期費用を抑えやすい</li>
@@ -155,10 +155,10 @@ export default function CostPage() {
             <h2 id="factors" className="text-xl md:text-2xl font-bold text-ink mb-6">料金を左右する4つの要素</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
               {[
-                { t: 'トレーニング形態', d: '完全マンツーマンは高め、セミパーソナル（2〜3名）やグループ型は割安。料金と指導の手厚さはトレードオフです。' },
-                { t: 'コースの長さ・回数', d: '回数をまとめるほど1回あたりは下がる傾向。短期集中は総額が高く、月額・都度は初期費用が軽い。' },
+                { t: 'トレーニング形態', d: '完全マンツーマンは高め、セミパーソナル（2〜3名）やグループ型は割安です。料金と指導の手厚さはトレードオフです。' },
+                { t: 'コースの長さ・回数', d: '回数をまとめるほど1回あたりは下がる傾向です。短期集中は総額が高く、月額制・都度払いは初期費用を抑えられます。' },
                 { t: 'サポート範囲', d: '食事指導・宅配食・アフターフォローなどが手厚いほど料金は上がります。「どこまで込みか」で総額が変わります。' },
-                { t: '立地・店舗', d: '都心の駅近や高級志向の店舗は高め。同じブランドでもエリアで差が出ることがあります。' },
+                { t: '立地・店舗', d: '都心の駅近や高級志向の店舗は高めです。同じブランドでもエリアで差が出ることがあります。' },
               ].map((x, i) => (
                 <div key={i} className="bg-white border border-line rounded-xl p-5">
                   <h3 className="font-bold text-ink mb-1.5">{x.t}</h3>
@@ -169,7 +169,7 @@ export default function CostPage() {
 
             <h2 id="nyukai" className="text-xl md:text-2xl font-bold text-ink mb-6">入会金の相場</h2>
             <div className="bg-white border border-line rounded-xl p-6 mb-12">
-              <p className="text-ink-soft leading-relaxed mb-4">入会金は2万〜5万円が一般的です。キャンペーンで入会金無料になるジムも多いので、各ジムの最新キャンペーン情報をチェックしましょう。</p>
+              <p className="text-ink-soft leading-relaxed mb-4">入会金は2万〜5万円が一般的です。キャンペーンで入会金無料になるジムも多いので、各ジムの最新キャンペーン情報をご確認ください。</p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse">
                   <thead>
@@ -190,7 +190,7 @@ export default function CostPage() {
             </div>
 
             <h2 id="vs" className="text-xl md:text-2xl font-bold text-ink mb-6">他の選択肢との料金比較</h2>
-            <p className="text-ink-soft text-sm leading-relaxed mb-4">「パーソナルは高い」と感じる前に、他の選択肢と特徴・料金を比べてみましょう。価格だけでなく、得られるサポートや結果の出やすさも含めて検討するのがポイントです。</p>
+            <p className="text-ink-soft text-sm leading-relaxed mb-4">「パーソナルは高い」と感じる前に、他の選択肢と特徴・料金を比べてみることをおすすめします。価格だけでなく、得られるサポートや結果の出やすさも含めて検討するのがポイントです。</p>
             <div className="overflow-x-auto mb-12">
               <table className="w-full text-sm border-collapse">
                 <thead>
@@ -204,7 +204,7 @@ export default function CostPage() {
                   <tr className="bg-white"><td className="px-4 py-3 border-b border-line font-medium">女性専用パーソナル</td><td className="px-4 py-3 border-b border-line">2ヶ月18万〜25万円</td><td className="px-4 py-3 border-b border-line">マンツーマン指導＋食事サポートで結果が出やすい</td></tr>
                   <tr className="bg-ivory/50"><td className="px-4 py-3 border-b border-line font-medium">一般的なフィットネスジム</td><td className="px-4 py-3 border-b border-line">月数千〜1万円</td><td className="px-4 py-3 border-b border-line">安いが自己流になりやすく挫折しやすい</td></tr>
                   <tr className="bg-white"><td className="px-4 py-3 border-b border-line font-medium">暗闇・グループ系</td><td className="px-4 py-3 border-b border-line">月1万〜2万円</td><td className="px-4 py-3 border-b border-line">楽しく続けやすいが個別最適化は弱い</td></tr>
-                  <tr className="bg-ivory/50"><td className="px-4 py-3">オンラインパーソナル</td><td className="px-4 py-3">月1万〜3万円</td><td className="px-4 py-3">割安で自宅完結。器具や対面指導は限定的</td></tr>
+                  <tr className="bg-ivory/50"><td className="px-4 py-3">オンラインパーソナル</td><td className="px-4 py-3">月1万〜3万円</td><td className="px-4 py-3">割安で、自宅で完結します。器具や対面での指導は限られます。</td></tr>
                 </tbody>
               </table>
             </div>
@@ -212,10 +212,10 @@ export default function CostPage() {
             <h2 id="included" className="text-xl md:text-2xl font-bold text-ink mb-6">料金に含まれるサービス</h2>
             <div className="space-y-4 mb-12">
               {[
-                { name: 'ウェア・タオルレンタル', desc: 'ほとんどのジムで無料。手ぶらで通えます。' },
-                { name: '食事指導', desc: 'コース料金に含まれるジムが多い。LINEでの日々のサポートが一般的。' },
-                { name: 'プロテイン', desc: 'トレーニング後のプロテイン提供があるジムも。UNDEUX SUPERBODYは宅配食も無料。' },
-                { name: 'アフターフォロー', desc: 'OUTLINEは生涯無料。他ジムも1〜3ヶ月のフォローが一般的。' },
+                { name: 'ウェア・タオルレンタル', desc: 'ほとんどのジムで無料です。手ぶらで通えます。' },
+                { name: '食事指導', desc: 'コース料金に含まれるジムが多いです。LINEでの日々のサポートが一般的です。' },
+                { name: 'プロテイン', desc: 'トレーニング後のプロテイン提供があるジムもあります。UNDEUX SUPERBODYは宅配食も無料です。' },
+                { name: 'アフターフォロー', desc: 'OUTLINEは生涯無料です。他ジムも1〜3ヶ月のフォローが一般的です。' },
               ].map((item, i) => (
                 <div key={i} className="bg-white border border-line rounded-xl p-5">
                   <h3 className="font-bold text-ink mb-1">{item.name}</h3>
@@ -228,11 +228,11 @@ export default function CostPage() {
             <div className="bg-white border border-line rounded-xl p-6 mb-12">
               <p className="text-ink-soft text-sm leading-relaxed mb-3">まとまった費用が不安な場合は、分割払いで月々の負担を抑えられます。主な支払い方法は次の通りです。</p>
               <ul className="space-y-2 text-sm text-ink-soft">
-                <li>・<strong>分割払い・提携ローン</strong>：月々5,000円台〜に対応するジムも。手数料と総支払額を要確認。</li>
-                <li>・<strong>クレジットカード</strong>：一括・分割に対応。ポイント還元も。</li>
-                <li>・<strong>月額制</strong>：初期費用を抑え、毎月定額で通える。</li>
+                <li>・<strong>分割払い・提携ローン</strong>：月々5,000円台〜に対応するジムもあります。手数料と総支払額をご確認ください。</li>
+                <li>・<strong>クレジットカード</strong>：一括・分割に対応しています。ポイント還元もあります。</li>
+                <li>・<strong>月額制</strong>：初期費用を抑え、毎月定額で通えます。</li>
               </ul>
-              <p className="text-ink-faint text-xs mt-3">※分割は手数料が上乗せされます。総額・回数・金利をカウンセリングで必ず確認しましょう。</p>
+              <p className="text-ink-faint text-xs mt-3">※分割は手数料が上乗せされます。総額・回数・金利をカウンセリングで必ずご確認ください。</p>
             </div>
 
             <h2 id="tips" className="text-xl md:text-2xl font-bold text-ink mb-6">お得に通うコツ</h2>
@@ -240,19 +240,19 @@ export default function CostPage() {
               <ul className="space-y-3 text-ink-soft">
                 <li className="flex items-start"><span className="text-accent mr-2 font-bold">1.</span><span><strong>入会金無料キャンペーンを狙う</strong> - 多くのジムが定期的に入会金無料キャンペーンを実施しています。</span></li>
                 <li className="flex items-start"><span className="text-accent mr-2 font-bold">2.</span><span><strong>モニター割引を活用</strong> - ビフォーアフター写真の提供で割引になるケースがあります。</span></li>
-                <li className="flex items-start"><span className="text-accent mr-2 font-bold">3.</span><span><strong>友達紹介割引</strong> - 紹介で双方にキャッシュバックがあるジムも。</span></li>
-                <li className="flex items-start"><span className="text-accent mr-2 font-bold">4.</span><span><strong>分割払いの活用</strong> - ビーコンセプトは月々5,545円〜の分割払いに対応。</span></li>
-                <li className="flex items-start"><span className="text-accent mr-2 font-bold">5.</span><span><strong>月額制ジムから始める</strong> - いきなり高額コースが不安な方は月額制のジムから試すのもおすすめ。</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2 font-bold">3.</span><span><strong>友達紹介割引</strong> - 紹介で双方にキャッシュバックがあるジムもあります。</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2 font-bold">4.</span><span><strong>分割払いの活用</strong> - ビーコンセプトは月々5,545円〜の分割払いに対応しています。</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2 font-bold">5.</span><span><strong>月額制ジムから始める</strong> - いきなり高額コースが不安な方は月額制のジムから試すのもおすすめです。</span></li>
               </ul>
             </div>
 
             <h2 className="text-xl md:text-2xl font-bold text-ink mb-6">料金で後悔しないための注意点</h2>
             <div className="bg-white border border-line rounded-xl p-6 mb-12">
               <ul className="space-y-2 text-sm text-ink-soft">
-                <li>・<strong>「総額」で比較する</strong>：コース料金だけでなく入会金・オプションを合算して比べる。</li>
-                <li>・<strong>続けられる頻度・立地か</strong>：通いにくいと結局割高に。自宅・職場から近いかを重視。</li>
-                <li>・<strong>解約・返金の条件</strong>：中途解約時の返金規定（クーリングオフを含む）を契約前に確認。</li>
-                <li>・<strong>キャンペーンの条件</strong>：適用条件・期限・併用可否をチェック。</li>
+                <li>・<strong>「総額」で比較する</strong>：コース料金だけでなく入会金・オプションを合算して比べます。</li>
+                <li>・<strong>続けられる頻度・立地か</strong>：通いにくいと、結果的に割高になります。自宅・職場から近いかどうかを重視してください。</li>
+                <li>・<strong>解約・返金の条件</strong>：中途解約時の返金規定（クーリングオフを含む）を契約前にご確認ください。</li>
+                <li>・<strong>キャンペーンの条件</strong>：適用条件・期限・併用可否をご確認ください。</li>
               </ul>
             </div>
 

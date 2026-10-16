@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kanayama/'),
   title: '【2026年7月】金山の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】金山のおすすめ女性向けパーソナルジム3選を比較。リボーンマイセルフ・ビーコンセプト・ピラティス&ジム1to1など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】金山のおすすめ女性向けパーソナルジム3選を比較しています。リボーンマイセルフ・ビーコンセプト・ピラティス&ジム1to1など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,金山,愛知,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -24,8 +24,8 @@ const gyms = [
     officialUrl: 'https://www.shapes-international.co.jp/store/kanayama/',
     price: 'ショートコース（2ヶ月16回）220,000円（税込・入会金22,000円）',
     trial: '無料カウンセリング随時',
-    features: ['女性専用', 'トレーナー全員女性', '食事指導つき', 'パウダールーム完備'],
-    description: '女性専用・トレーナーも全員女性のジム。食事指導つきで、個室パウダールーム・シャワー完備。ウェア・タオル無料貸出です。',
+    features: ['女性専用', 'トレーナー全員女性', '食事指導付き', 'パウダールーム完備'],
+    description: '女性専用・トレーナーも全員女性のジムです。食事指導付きで、個室パウダールーム・シャワーを完備しています。ウェア・タオル無料貸出です。',
     access: '金山駅南口 徒歩3分',
     address: '名古屋市中区正木4-8-13 金山フクマルビル7F',
     options: ['ベーシックコース（3ヶ月24回）303,600円', 'チケット制あり', '入会金無料キャンペーンの時期あり'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '太ももダイエットプログラム 18回 179,685円（税込）',
     trial: '無料カウンセリング＋体験トレーニングあり（当日入会で入会金無料）',
     features: ['女性専用', '完全個室', '脚やせ・下半身特化', '手ぶらOK'],
-    description: '女性専用・完全個室。医師共同開発の下半身（脚やせ）特化メソッドと、3食食べる食事指導が特徴です。',
+    description: '女性専用・完全個室です。医師共同開発の下半身（脚やせ）特化メソッドと、3食食べる食事指導が特徴です。',
     access: '金山駅南口 徒歩6分',
     address: '名古屋市熱田区新尾頭1-10-6 ヴィラフローラ302',
     options: ['トライアルプラン4回44,000円'],
@@ -51,7 +51,7 @@ const gyms = [
     price: '都度払い 60分9,900円／ダイエットコース2ヶ月16回 179,685円（税込）',
     trial: '体験レッスン無料キャンペーン中（通常5,500円）',
     features: ['完全個室', 'マシンピラティス×ゆるトレ', '食事プラン提案', '手ぶらOK'],
-    description: '「女性のためのボディメイク」特化の完全個室スタジオ（女性専用の明記はありません）。マシンピラティスとトレーニングを組み合わせ、食事プランの提案つきです。',
+    description: '「女性のためのボディメイク」特化の完全個室スタジオ（女性専用の明記はありません）。マシンピラティスとトレーニングを組み合わせ、食事プランの提案付きです。',
     access: 'JR金山駅南口 徒歩6分',
     address: '名古屋市熱田区新尾頭1-10-6 ヴィラフローラ302 Bフロア',
     options: ['40分6,600円／80分13,200円'],
@@ -61,11 +61,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '金山で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 金山店、ビーコンセプト 金山店です（2026年6月調査時点）。' },
-  { question: '金山のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 金山店はショートコース（2ヶ月16回）220,000円（税込・入会金22,000円）。ビーコンセプト 金山店は太ももダイエットプログラム 18回 179,685円（税込）。ピラティス&ジム1to1 金山店は都度払い 60分9,900円／ダイエットコース2ヶ月16回 179,685円（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '金山駅から近いジムは？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ 金山店（金山駅南口 徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'リボーンマイセルフ 金山店、ビーコンセプト 金山店、ピラティス&ジム1to1 金山店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '金山で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 金山店、ビーコンセプト 金山店です（2026年6月調査時点）。' },
+  { question: '金山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 金山店はショートコース（2ヶ月16回）220,000円です（税込・入会金22,000円）。ビーコンセプト 金山店は太ももダイエットプログラム 18回 179,685円です（税込）。ピラティス&ジム1to1 金山店は都度払い 60分9,900円／ダイエットコース2ヶ月16回 179,685円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '金山駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ 金山店（金山駅南口 徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'リボーンマイセルフ 金山店、ビーコンセプト 金山店、ピラティス&ジム1to1 金山店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function KanayamaPage() {
@@ -94,7 +94,7 @@ export default function KanayamaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「金山で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、金山エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -159,10 +159,10 @@ export default function KanayamaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -177,8 +177,8 @@ export default function KanayamaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -226,7 +226,7 @@ export default function KanayamaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

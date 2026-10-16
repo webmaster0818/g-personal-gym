@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/akabane/'),
   title: '【2026年7月】赤羽の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】赤羽のおすすめ女性向けパーソナルジム2選を比較。かたぎり塾・リボーンマイセルフの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】赤羽のおすすめ女性向けパーソナルジム2選を比較しています。かたぎり塾・リボーンマイセルフの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,赤羽,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,9 +25,9 @@ const gyms = [
     price: '月4回 33,000円（税込）',
     trial: '無料体験トレーニング60分',
     features: ['女性専用', '完全個室', '医師監修の食事指導', '女性トレーナー在籍', '手ぶらOK'],
-    description: 'かたぎり塾の女性専門店。完全個室マンツーマンで、医師監修の食事指導と理学療法士監修プログラムが受けられます。ウェア・シューズ・飲み物無料。',
+    description: 'かたぎり塾の女性専門店です。完全個室マンツーマンで、医師監修の食事指導と理学療法士監修プログラムが受けられます。ウェア・シューズ・飲み物無料です。',
     access: 'JR「赤羽駅」徒歩5分',
-    popularPlan: { name: '月4プラン', description: '月額制のマンツーマントレーニング。', price: '月4回 33,000円（税込）' },
+    popularPlan: { name: '月4プラン', description: '月額制のマンツーマントレーニングです。', price: '月4回 33,000円（税込）' },
     options: ['LINE食事サポート2週間11,000円', '無期限チケット8,800円/回', '入会金割引キャンペーンあり（通常55,000円）'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -37,8 +37,8 @@ const gyms = [
     officialUrl: 'https://www.shapes-international.co.jp/store/akabane/',
     price: '2ヶ月16回 220,000円（税込・入会金22,000円）',
     trial: '無料カウンセリング＋無料体験トレーニング（約1時間）',
-    features: ['女性専用', 'トレーナー全員女性', '食事指導つき', '専属トレーナー制'],
-    description: '会員もトレーナーも全員女性の女性専用ジム。専属トレーナー制で食事指導つき。ウェア・タオル無料レンタル、シャワー・個室パウダールーム完備です。',
+    features: ['女性専用', 'トレーナー全員女性', '食事指導付き', '専属トレーナー制'],
+    description: '会員もトレーナーも全員女性の女性専用ジムです。専属トレーナー制で、食事指導が付いています。ウェア・タオル無料レンタル、シャワー・個室パウダールーム完備です。',
     access: 'JR赤羽駅徒歩7分／南北線赤羽岩淵駅徒歩9分',
     options: ['チケット制あり（1回8,800円〜）', 'ウェア・タオル無料レンタル', 'シャワー・個室パウダールーム', '入会金無料キャンペーンあり'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'ブライダル'] },
@@ -47,10 +47,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '赤羽で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、かたぎり塾 赤羽女性専門店、リボーンマイセルフ 赤羽店です（2026年6月調査時点）。' },
-  { question: '赤羽のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、かたぎり塾 赤羽女性専門店は月4回 33,000円（税込）。リボーンマイセルフ 赤羽店は2ヶ月16回 220,000円（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'かたぎり塾 赤羽女性専門店、リボーンマイセルフ 赤羽店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '赤羽で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、かたぎり塾 赤羽女性専門店、リボーンマイセルフ 赤羽店です（2026年6月調査時点）。' },
+  { question: '赤羽のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、かたぎり塾 赤羽女性専門店は月4回 33,000円です（税込）。リボーンマイセルフ 赤羽店は2ヶ月16回 220,000円です（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'かたぎり塾 赤羽女性専門店、リボーンマイセルフ 赤羽店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function AkabanePage() {
@@ -79,7 +79,7 @@ export default function AkabanePage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「赤羽で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、赤羽エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -144,10 +144,10 @@ export default function AkabanePage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -162,8 +162,8 @@ export default function AkabanePage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -211,7 +211,7 @@ export default function AkabanePage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

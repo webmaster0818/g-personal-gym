@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/daikanyama/'),
   title: '【2026年7月】代官山の女性専用パーソナルジムおすすめ1選！料金比較',
-  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム1選を徹底比較。RIZAP WOMANの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】代官山のおすすめ女性専用パーソナルジム1選を比較しています。RIZAP WOMANの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,代官山,おすすめ,料金,比較,ダイエット,ボディメイク,高級',
 }
 
@@ -24,10 +24,10 @@ const gyms = [
     price: '2ヶ月16回 327,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', 'エステ付き', 'コラーゲンマシン', '完全個室', 'ラグジュアリー空間'],
-    description: 'RIZAP初の女性専用ジム。トレーニングに加え、コラーゲンマシンやエステも受けられる贅沢なプログラム。代官山の高級感ある空間で「美しく痩せる」を実現。30日間全額返金保証付き。',
+    description: 'RIZAP初の女性専用ジムです。トレーニングに加え、コラーゲンマシンやエステも受けられる贅沢なプログラムです。代官山の高級感ある空間で「美しく痩せる」を実現しています。30日間の全額返金保証が付いています。',
     access: '東急東横線「代官山駅」徒歩3分',
     address: '東京都渋谷区代官山町（代官山駅徒歩3分）',
-    popularPlan: { name: '美ボディメイクコース', description: 'トレーニング＋エステ＋コラーゲンマシンの美容総合プログラム。', price: '2ヶ月16回 327,800円〜（税込）' },
+    popularPlan: { name: '美ボディメイクコース', description: 'トレーニング＋エステ＋コラーゲンマシンの美容総合プログラムです。', price: '2ヶ月16回 327,800円〜（税込）' },
     options: ['コラーゲンマシン', 'エステ施術', '30日間全額返金保証', 'ウェアレンタル無料', '食事指導付き'],
     userProfile: { ageRange: '30代〜50代が中心', genderRatio: '女性100%', purpose: ['美ボディメイク', 'ダイエット', 'エイジングケア', '美容'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'エステルーム', 'コラーゲンマシン', 'シャワー'] },
@@ -36,9 +36,9 @@ const gyms = [
 
 const faqs = [
   { question: '代官山で女性専用のパーソナルジムはありますか？', answer: 'はい、当サイトで代官山エリアに掲載しているのはRIZAP WOMAN 代官山店です。高級感のある空間が多いのが代官山の特徴です。' },
-  { question: '代官山で高級なパーソナルジムはどこ？', answer: 'RIZAP WOMAN代官山店はエステ・コラーゲンマシン付きの贅沢なプログラムを提供しています。' },
-  { question: '代官山のパーソナルジムの料金相場は？', answer: '当サイト掲載のRIZAP WOMAN 代官山店は2ヶ月16回 327,800円〜（税込）です。最新の料金は公式サイトでご確認ください。' },
-  { question: '代官山でエステも受けられるジムは？', answer: 'RIZAP WOMAN代官山店では、トレーニングに加えてコラーゲンマシンやエステ施術も受けられます。美しく痩せたい方に最適です。' },
+  { question: '代官山で高級なパーソナルジムはどこですか？', answer: 'RIZAP WOMAN代官山店はエステ・コラーゲンマシン付きの贅沢なプログラムを提供しています。' },
+  { question: '代官山のパーソナルジムの料金相場はいくらですか？', answer: '当サイト掲載のRIZAP WOMAN 代官山店は2ヶ月16回 327,800円〜（税込）です。最新の料金は公式サイトでご確認ください。' },
+  { question: '代官山でエステも受けられるジムはどこですか？', answer: 'RIZAP WOMAN代官山店では、トレーニングに加えてコラーゲンマシンやエステ施術も受けられます。美しく痩せたい方に最適です。' },
 ]
 
 export default function DaikanyamaPage() {
@@ -67,7 +67,7 @@ export default function DaikanyamaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「代官山で女性専用のパーソナルジムを探している」「高級感のある空間でトレーニングしたい」という方のために、代官山エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -99,7 +99,7 @@ export default function DaikanyamaPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">代官山エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">ラグジュアリーな美容体験ならRIZAP WOMANがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
@@ -125,7 +125,7 @@ export default function DaikanyamaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

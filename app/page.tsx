@@ -43,7 +43,7 @@ const strengths = [
   },
   {
     title: '目的別の専用プログラム',
-    desc: '下半身痩せ・産後ダイエット・ブライダルなど、なりたい姿から逆算した設計。無理のない食事サポートまで含めて整えます。',
+    desc: '下半身痩せ・産後ダイエット・ブライダルなど、なりたい姿から逆算して設計されたプログラムです。無理のない食事サポートまで含めて取り組めます。',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="24" cy="24" r="14" />
@@ -55,7 +55,7 @@ const strengths = [
 ]
 
 const areas = [
-  { name: '渋谷', slug: 'shibuya', desc: '駅チカ多数' },
+  { name: '渋谷', slug: 'shibuya', desc: '駅近多数' },
   { name: '新宿', slug: 'shinjuku', desc: '選択肢豊富' },
   { name: '池袋', slug: 'ikebukuro', desc: 'コスパ充実' },
   { name: '銀座', slug: 'ginza', desc: '高級感あり' },
@@ -78,14 +78,14 @@ const areas = [
 ]
 
 const faqs = [
-  { question: '女性専用パーソナルジムとは？', answer: '女性専用パーソナルジムは、女性のみが利用できるパーソナルトレーニングジムです。女性トレーナーのみが在籍している場合も多く、女性特有の悩み（下半身太り、産後ダイエット、ブライダルダイエットなど）に特化したプログラムを提供しています。完全個室で人目を気にせずトレーニングに集中できます。' },
-  { question: 'パーソナルジムの料金相場はどのくらい？', answer: '女性専用パーソナルジムの2ヶ月コース（16回）の料金相場は約18万〜25万円（税込）です。入会金は2万〜5万円程度。月額制のジムでは月1万〜6万円程度から通えるプランもあります。体験レッスンは無料〜5,000円程度で受けられます。' },
+  { question: '女性専用パーソナルジムとは何ですか？', answer: '女性専用パーソナルジムは、女性のみが利用できるパーソナルトレーニングジムです。女性トレーナーのみが在籍している場合も多く、女性特有の悩み（下半身太り、産後ダイエット、ブライダルダイエットなど）に特化したプログラムを提供しています。完全個室で人目を気にせずトレーニングに集中できます。' },
+  { question: 'パーソナルジムの料金相場はどのくらいですか？', answer: '女性専用パーソナルジムの2ヶ月コース（16回）の料金相場は約18万〜25万円（税込）です。入会金は2万〜5万円程度です。月額制のジムでは月1万〜6万円程度から通えるプランもあります。体験レッスンは無料〜5,000円程度で受けられます。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、大丈夫です。パーソナルジムは一人ひとりのレベルに合わせてトレーニングメニューを組むため、運動が苦手な方や初心者の方こそおすすめです。トレーナーがマンツーマンで丁寧に指導してくれるので安心です。' },
   { question: 'どのくらいの期間で効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）のコースで平均5〜8kgの減量効果が期待できます。見た目の変化（ウエストダウン、ヒップアップなど）は1ヶ月目から感じる方が多いです。' },
-  { question: '食事制限は厳しいですか？', answer: 'ジムによって異なります。ビーコンセプトは医師監修の食事指導、UNDEUX SUPERBODYは糖質オフ宅配食を提供。Bodykeは糖質制限なしで好きなものを食べながらダイエットを目指します。無理な食事制限ではなく、栄養バランスの取れた食生活を指導するジムがほとんどです。' },
-  { question: '子連れでも通えるジムはありますか？', answer: 'はい、あります。ビーコンセプトは託児所費用を最大1,000円/回まで補助。OUTLINEは全店にベビーサークルを完備し、子連れOKです。リボーンマイセルフも一部店舗で託児サービスを提供しています。' },
-  { question: 'リバウンドしないか心配です', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」を提供しており、卒業後もずっと無料でサポートが受けられます。多くのジムでは卒業後のリバウンド防止プログラムや、食事管理のフォローアップが含まれています。' },
-  { question: '体験レッスンでは何をしますか？', answer: 'カウンセリング（目標・悩みのヒアリング）→ 体組成測定 → 実際のトレーニング体験 → 今後のプラン提案、という流れが一般的です。所要時間は60〜90分程度。無料カウンセリングのみのジムもあります。' },
+  { question: '食事制限は厳しいですか？', answer: 'ジムによって異なります。ビーコンセプトは医師監修の食事指導、UNDEUX SUPERBODYは糖質オフ宅配食を提供しています。Bodykeは糖質制限なしで好きなものを食べながらダイエットを目指します。無理な食事制限ではなく、栄養バランスの取れた食生活を指導するジムがほとんどです。' },
+  { question: '子連れでも通えるジムはありますか？', answer: 'はい、あります。ビーコンセプトは託児所費用を最大1,000円/回まで補助しています。OUTLINEは全店にベビーサークルを完備し、子連れOKです。リボーンマイセルフも一部店舗で託児サービスを提供しています。' },
+  { question: 'リバウンドを防ぐにはどうすればよいですか？', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」を提供しており、卒業後もずっと無料でサポートが受けられます。多くのジムでは卒業後のリバウンド防止プログラムや、食事管理のフォローアップが含まれています。' },
+  { question: '体験レッスンでは何をしますか？', answer: 'カウンセリング（目標・悩みのヒアリング）→ 体組成測定 → 実際のトレーニング体験 → 今後のプラン提案、という流れが一般的です。所要時間は60〜90分程度です。無料カウンセリングのみのジムもあります。' },
   { question: 'ウェアやシューズは必要ですか？', answer: 'ほとんどの女性専用パーソナルジムでは、ウェア・タオル・シューズなどのレンタルが無料です。手ぶらで通えるジムがほとんどなので、仕事帰りにも気軽に立ち寄れます。' },
   { question: '産後ダイエットにも対応していますか？', answer: 'はい。ビーコンセプト、リボーンマイセルフ、UNDEUX SUPERBODYなど多くの女性専用ジムが産後ダイエットコースを用意しています。産後の体の回復に配慮したプログラムで、骨盤矯正や体型戻しをサポートします。' },
 ]
@@ -128,7 +128,7 @@ export default function Home() {
                 <span className="text-accent">エリアと料金</span>から探す
               </h1>
               <p className="text-ink-soft text-[0.95rem] md:text-base leading-loose mb-9 max-w-lg">
-                「変わりたい」を、一緒に叶える場所へ。女性専用パーソナルジムだけを掲載しています。<strong>全国{AREA_COUNT}エリア</strong>から通える店舗を探せるほか、主要{BRAND_COUNT}ブランドの<strong>料金・入会金・体験の有無</strong>を独自調査でまとめました。順位をつけて比べたい方は<strong>おすすめランキング</strong>へどうぞ。
+                当サイトは、「変わりたい」と考える女性のパーソナルジム選びを支援する比較サイトです。女性専用パーソナルジムだけを掲載しています。<strong>全国{AREA_COUNT}エリア</strong>から通える店舗を探せるほか、主要{BRAND_COUNT}ブランドの<strong>料金・入会金・体験の有無</strong>を独自調査でまとめました。順位をつけて比べたい方は<strong>おすすめランキング</strong>をご覧ください。
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/ranking/" className="btn-primary text-sm md:text-base !px-9 !py-4 text-center">
@@ -159,7 +159,7 @@ export default function Home() {
             <SectionHeading
               en="Why Choose Us"
               title="女性が安心して続けられる理由"
-              lead="清潔感のある環境と、女性に寄り添う設計。はじめての一歩を、気持ちよく踏み出せます。"
+              lead="清潔感のある環境と、女性に配慮した設計が特長です。はじめての方も安心して始められます。"
             />
             <div className="grid md:grid-cols-3 gap-8 md:gap-6">
               {strengths.map((s, i) => (
@@ -212,7 +212,7 @@ export default function Home() {
         {/* Areas */}
         <section className="py-20 md:py-24 bg-ivory" id="areas">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
-            <SectionHeading en="Area" title="エリアから探す" lead={`全国${AREA_COUNT}エリアの女性専用パーソナルジム情報をまとめています。主要エリアはこちら。`} />
+            <SectionHeading en="Area" title="エリアから探す" lead={`全国${AREA_COUNT}エリアの女性専用パーソナルジム情報をまとめています。主要エリアは以下のとおりです。`} />
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 fade-up">
               {areas.map((area) => (
                 <Link
@@ -246,9 +246,9 @@ export default function Home() {
             <SectionHeading en="Contents" title="ジム選びに役立つ情報" lead="はじめてでも迷わないためのガイドをご用意しています。" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { href: '/ranking/', n: '01', title: 'ランキングTOP9', desc: '女性専用パーソナルジムの人気ランキング。料金・口コミ・特徴を比較。' },
-                { href: '/cost/', n: '02', title: '料金相場ガイド', desc: '2ヶ月コース・月額制・都度払いの料金を、わかりやすく徹底解説。' },
-                { href: '/guide/', n: '03', title: '選び方ガイド', desc: '失敗しないパーソナルジムの選び方を、5つのポイントで解説。' },
+                { href: '/ranking/', n: '01', title: 'ランキングTOP9', desc: '女性専用パーソナルジムの人気ランキングです。料金・口コミ・特徴を比較しています。' },
+                { href: '/cost/', n: '02', title: '料金相場ガイド', desc: '2ヶ月コース・月額制・都度払いの料金を、わかりやすく解説します。' },
+                { href: '/guide/', n: '03', title: '選び方ガイド', desc: '失敗しないパーソナルジムの選び方を、5つのポイントで解説します。' },
               ].map((c) => (
                 <Link key={c.href} href={c.href} className="group fade-up block bg-ivory border border-line rounded-2xl p-8 transition card-hover hover:border-accent/40">
                   <span className="font-display text-4xl text-accent/70 leading-none block mb-5">{c.n}</span>
@@ -323,10 +323,10 @@ export default function Home() {
               <div className="bg-accent-tint px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center">
                 <p className="eyebrow mb-4">Start Today</p>
                 <h2 className="font-serif text-2xl md:text-[1.85rem] leading-snug text-ink mb-5">
-                  まずは、無料カウンセリングから。
+                  まずは無料カウンセリングをご利用ください。
                 </h2>
                 <p className="text-ink-soft text-sm leading-loose mb-8">
-                  気になるジムの体験から始めてみましょう。いくつか比べてみると、あなたに合う一つが見えてきます。
+                  まずは気になるジムの体験をご利用ください。複数のジムを比較することで、ご自身に合ったジムを選びやすくなります。
                 </p>
                 <div>
                   <Link href="/ranking/" className="btn-primary text-sm md:text-base !px-9 !py-4 inline-block">

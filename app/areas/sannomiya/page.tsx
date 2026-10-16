@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/sannomiya/'),
   title: '【2026年7月】神戸三宮の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】神戸三宮のおすすめ女性向けパーソナルジム3選を比較。UNDEUX・bloom・Flexibleなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】神戸三宮のおすすめ女性向けパーソナルジム3選を比較しています。UNDEUX・bloom・Flexibleなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,神戸三宮,兵庫,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '無料体験・無料カウンセリングあり',
     features: ['女性専用', '手ぶらOK', 'マシンピラティス対応', '管理栄養士の食事指導'],
-    description: '女性専用パーソナルジム。手ぶらOKでマシンピラティスにも対応。管理栄養士の食事指導が受けられます。',
+    description: '女性専用パーソナルジムです。手ぶらOKでマシンピラティスにも対応しています。管理栄養士の食事指導が受けられます。',
     access: '阪急神戸三宮駅徒歩5分',
     address: '神戸市中央区八幡通4-2-9',
     options: ['月4回30,300円／月8回60,600円', 'コミットプラン月6回79,200円'],
@@ -38,7 +38,7 @@ const gyms = [
     price: '月4回（30分）18,000円〜',
     trial: '体験レッスン3,300円（当日入会で無料）',
     features: ['女性専用', '40代・50代向け', '1回30分', '産後ケア対応'],
-    description: '40代・50代向けの女性専用パーソナルジム。女性トレーナーによるマンツーマンで、1回30分の短時間トレーニングに対応。産後ケアにも対応します。',
+    description: '40代・50代向けの女性専用パーソナルジムです。女性トレーナーによるマンツーマンで、1回30分の短時間トレーニングに対応しています。産後ケアにも対応します。',
     access: 'JR三ノ宮駅徒歩3分',
     address: '神戸市中央区小野柄通5-1-10',
     options: ['60分コース月4回36,000円〜', '月12回プランあり'],
@@ -51,7 +51,7 @@ const gyms = [
     price: '料金は公式サイトでご確認ください（要問合せ）',
     trial: '体験レッスンあり（カウンセリング＋姿勢分析＋トレーニング体験）',
     features: ['女性専用', '完全個室', '姿勢改善重視', '指導歴15年以上のトレーナー'],
-    description: '女性専用・完全個室のパーソナルジム。指導歴15年以上のトレーナーが姿勢改善を重視した指導を行い、40〜60代の女性が中心です。',
+    description: '女性専用・完全個室のパーソナルジムです。指導歴15年以上のトレーナーが姿勢改善を重視した指導を行い、40〜60代の女性が中心です。',
     access: '三宮駅徒歩4分',
     userProfile: { ageRange: '40代〜60代が中心', genderRatio: '女性100%（女性専用）', purpose: ['姿勢改善', '健康維持', 'ボディメイク'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -59,11 +59,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '神戸三宮で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 神戸・三宮スタジオ、bloom fit17（ブルームフィット17）、Flexible Style（フレキシブルスタイル）です（2026年6月調査時点）。' },
-  { question: '神戸三宮のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 神戸・三宮スタジオはスタンダードプラン月2回 21,300円〜（税込）。bloom fit17（ブルームフィット17）は月4回（30分）18,000円〜。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '神戸三宮駅から近いジムは？', answer: '駅徒歩3分以内・直結では、bloom fit17（ブルームフィット17）（JR三ノ宮駅徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 神戸・三宮スタジオ、bloom fit17（ブルームフィット17）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '神戸三宮で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 神戸・三宮スタジオ、bloom fit17（ブルームフィット17）、Flexible Style（フレキシブルスタイル）です（2026年6月調査時点）。' },
+  { question: '神戸三宮のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 神戸・三宮スタジオはスタンダードプラン月2回 21,300円〜です（税込）。bloom fit17（ブルームフィット17）は月4回（30分）18,000円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '神戸三宮駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、bloom fit17（ブルームフィット17）（JR三ノ宮駅徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 神戸・三宮スタジオ、bloom fit17（ブルームフィット17）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function SannomiyaPage() {
@@ -92,7 +92,7 @@ export default function SannomiyaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「神戸三宮で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、神戸三宮エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -157,10 +157,10 @@ export default function SannomiyaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -175,8 +175,8 @@ export default function SannomiyaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -224,7 +224,7 @@ export default function SannomiyaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

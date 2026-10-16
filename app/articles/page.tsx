@@ -9,28 +9,28 @@ import { GYM_SURVEY } from '@/data/gymSurvey'
 export const metadata: Metadata = {
   title: '女性専用パーソナルジムの記事一覧｜選び方・産後・ブライダル・年代別ガイド',
   description:
-    `女性専用パーソナルジム選びに役立つ記事一覧。産後ダイエット・ブライダル・40代50代の選び方、女性専用と男女共用の違い、全国${GYM_SURVEY.areas}エリア${GYM_SURVEY.listings}ジムの独自調査データまで。目的別に最適な1社を見つけましょう。`,
+    `女性専用パーソナルジム選びに役立つ記事一覧です。産後ダイエット・ブライダル・40代50代の選び方、女性専用と男女共用の違い、全国${GYM_SURVEY.areas}エリア${GYM_SURVEY.listings}ジムの独自調査データを掲載しています。目的に合った1社を選ぶ際の参考にしてください。`,
   ...pageUrlMeta('/articles/'),
 }
 
 const articles = [
-  { href: '/articles/josei-gym-data/', tag: '独自調査', title: '女性向けパーソナルジム実態調査2026', desc: `全国${GYM_SURVEY.areas}エリア・${GYM_SURVEY.listings}ジムを独自集計。女性専用46%・体験無料60%など、選ぶ前に知りたい実態を数字で公開。` },
-  { href: '/articles/joseisenyo-vs-kyoyo/', tag: '比較', title: '女性専用と男女共用、どっちを選ぶ？', desc: 'プライバシー・料金・店舗数・相談しやすさの4軸で比較。あなたに合うのはどちらかを判断できます。' },
-  { href: '/articles/josei-trainer/', tag: 'トレーナー', title: '女性トレーナーを指名できるジムの選び方', desc: '男性トレーナーには相談しにくい体の悩み。女性トレーナーのみ在籍・指名可の違いと確認ポイントを、独自調査とあわせて解説。' },
-  { href: '/articles/private-kanshitsu/', tag: '完全個室', title: '完全個室・プライベートジムで選ぶ', desc: '人目が気になって続かなかった人へ。完全個室・個室対応28%のデータと、個室タイプの違い・確認ポイントを解説。' },
-  { href: '/articles/sango-diet/', tag: '産後', title: '産後ダイエットの選び方（いつから・子連れ・骨盤ケア）', desc: '開始時期の目安、子連れOKジムの探し方、骨盤底筋ケアの重要性。産後ママのジム選びを解説。' },
-  { href: '/articles/bridal-diet/', tag: 'ブライダル', title: 'ブライダルダイエットの期間別プラン', desc: '結婚式まで3ヶ月・2ヶ月・1ヶ月の逆算プラン。二の腕・背中・デコルテを狙うドレス映え対策。' },
-  { href: '/articles/40dai-50dai/', tag: '年代別', title: '40代・50代女性のパーソナルジムの選び方', desc: '代謝低下・更年期・関節への配慮。無理なく続く頻度と、年代特化ジムという選択肢を解説。' },
-  { href: '/articles/kyakuyase/', tag: '部位別', title: '脚やせ・下半身太りに強いジムの選び方', desc: 'なぜ脚は痩せにくいのか、脚やせ特化メソッドの見分け方、自己流との違い。下半身の悩みに強いジムを解説。' },
-  { href: '/articles/kouka-itsukara/', tag: '効果', title: '効果はいつから？何ヶ月で痩せる目安', desc: '「20回で見た目が変わる」の目安、週1・2・3回別の到達時期、効果が出ない原因と続け方を解説。' },
-  { href: '/articles/taiken-nagare/', tag: '体験', title: '無料体験・カウンセリングの流れと持ち物', desc: '当日の流れ・持ち物・所要時間と、その場で契約しない断り方・勧誘対策。体験無料60%のデータも。' },
-  { href: '/articles/iryo-renkei/', tag: '専門家監修', title: '理学療法士・医師監修ジムの選び方', desc: '腰痛・膝痛・産後など体に不安がある人向け。専門家監修14%の見分け方と注意点を事実ベースで。' },
-  { href: '/articles/diet/', tag: '目的別', title: 'ダイエット目的のパーソナルジムの選び方', desc: '食事指導の有無・リバウンド対策・続けやすさ。減量目的で選ぶときのポイントを実態データとあわせて解説。' },
-  { href: '/articles/bodymake/', tag: '目的別', title: 'ボディメイク・くびれ作りに強いジムの選び方', desc: '減量との違い、くびれ・メリハリの筋トレ設計、期間の目安。造形目的のジム選びを解説。' },
-  { href: '/articles/shisei/', tag: 'お悩み', title: '姿勢改善・反り腰・猫背に強いジムの選び方', desc: '姿勢が崩れる理由、フォーム指導・専門家監修の見分け方、自宅ケア併用のコツを事実ベースで。' },
-  { href: '/articles/ryokin-osaeru/', tag: '料金', title: '女性専用パーソナルジムの料金を抑えるコツ', desc: '料金の内訳、無料体験・キャンペーン活用、頻度の最適化。安さと続けやすさのバランスを解説。' },
+  { href: '/articles/josei-gym-data/', tag: '独自調査', title: '女性向けパーソナルジム実態調査2026', desc: `全国${GYM_SURVEY.areas}エリア・${GYM_SURVEY.listings}ジムを独自集計しています。女性専用46%・体験無料60%など、選ぶ前に知りたい実態を数字で公開しています。` },
+  { href: '/articles/joseisenyo-vs-kyoyo/', tag: '比較', title: '女性専用と男女共用、どっちを選ぶ？', desc: 'プライバシー・料金・店舗数・相談しやすさの4軸で比較しています。ご自身に合うのはどちらかを判断できます。' },
+  { href: '/articles/josei-trainer/', tag: 'トレーナー', title: '女性トレーナーを指名できるジムの選び方', desc: '男性トレーナーには相談しにくい体の悩みもあります。女性トレーナーのみ在籍・指名可の違いと確認ポイントを、独自調査とあわせて解説します。' },
+  { href: '/articles/private-kanshitsu/', tag: '完全個室', title: '完全個室・プライベートジムで選ぶ', desc: '人目が気になって続かなかった方に向いています。完全個室・個室対応28%のデータと、個室タイプの違い・確認ポイントを解説します。' },
+  { href: '/articles/sango-diet/', tag: '産後', title: '産後ダイエットの選び方（いつから・子連れ・骨盤ケア）', desc: '開始時期の目安、子連れOKジムの探し方、骨盤底筋ケアの重要性です。産後ママのジム選びを解説します。' },
+  { href: '/articles/bridal-diet/', tag: 'ブライダル', title: 'ブライダルダイエットの期間別プラン', desc: '結婚式まで3ヶ月・2ヶ月・1ヶ月の逆算プランです。二の腕・背中・デコルテを狙うドレス映え対策です。' },
+  { href: '/articles/40dai-50dai/', tag: '年代別', title: '40代・50代女性のパーソナルジムの選び方', desc: '代謝低下・更年期・関節への配慮です。無理なく続く頻度と、年代特化ジムという選択肢を解説します。' },
+  { href: '/articles/kyakuyase/', tag: '部位別', title: '脚やせ・下半身太りに強いジムの選び方', desc: '脚が痩せにくい理由、脚やせ特化メソッドの見分け方、自己流との違いなど、下半身の悩みに強いジムの選び方を解説します。' },
+  { href: '/articles/kouka-itsukara/', tag: '効果', title: '効果はいつから？何ヶ月で痩せる目安', desc: '「20回で見た目が変わる」の目安、週1・2・3回別の到達時期、効果が出ない原因と続け方を解説します。' },
+  { href: '/articles/taiken-nagare/', tag: '体験', title: '無料体験・カウンセリングの流れと持ち物', desc: '当日の流れ・持ち物・所要時間と、その場で契約しない断り方・勧誘対策です。体験無料60%のデータもあります。' },
+  { href: '/articles/iryo-renkei/', tag: '専門家監修', title: '理学療法士・医師監修ジムの選び方', desc: '腰痛・膝痛・産後など、体に不安がある方に向いています。専門家監修（全体の14%）の見分け方と注意点を、事実にもとづいて解説します。' },
+  { href: '/articles/diet/', tag: '目的別', title: 'ダイエット目的のパーソナルジムの選び方', desc: '食事指導の有無・リバウンド対策・続けやすさなど、減量目的で選ぶときのポイントを実態データとあわせて解説します。' },
+  { href: '/articles/bodymake/', tag: '目的別', title: 'ボディメイク・くびれ作りに強いジムの選び方', desc: '減量との違い、くびれ・メリハリの筋トレ設計、期間の目安です。造形目的のジム選びを解説します。' },
+  { href: '/articles/shisei/', tag: 'お悩み', title: '姿勢改善・反り腰・猫背に強いジムの選び方', desc: '姿勢が崩れる理由、フォーム指導・専門家監修の見分け方、自宅ケア併用のコツを、事実にもとづいて解説します。' },
+  { href: '/articles/ryokin-osaeru/', tag: '料金', title: '女性専用パーソナルジムの料金を抑えるコツ', desc: '料金の内訳、無料体験・キャンペーンの活用、頻度の調整など、安さと続けやすさのバランスを解説します。' },
   { href: '/articles/shippai/', tag: '選び方', title: '失敗しないための注意点（よくある失敗例）', desc: '料金・勧誘・相性・解約条件など、後悔しがちな7つの失敗例と回避策をまとめました。' },
-  { href: '/articles/20dai/', tag: '年代別', title: '20代女性のパーソナルジムの選び方', desc: '20代の目的傾向・予算、料金を抑える工夫、続けやすさ。はじめての一歩を後押しする選び方。' },
+  { href: '/articles/20dai/', tag: '年代別', title: '20代女性のパーソナルジムの選び方', desc: '20代の目的の傾向と予算、料金を抑える工夫、続けやすさについて解説します。はじめての一歩を後押しする選び方です。' },
 ]
 
 export default function Page() {
@@ -42,7 +42,7 @@ export default function Page() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="eyebrow mb-3">Articles</p>
             <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">女性専用パーソナルジムの記事一覧</h1>
-            <p className="text-ink-soft text-sm md:text-base leading-relaxed">目的・ライフステージ別に、失敗しないジム選びをサポート。独自調査データにもとづく事実ベースの記事をお届けします。</p>
+            <p className="text-ink-soft text-sm md:text-base leading-relaxed">目的・ライフステージ別に、失敗しないジム選びをサポートしています。独自調査データにもとづく事実にもとづく記事をお届けします。</p>
           </div>
         </section>
 

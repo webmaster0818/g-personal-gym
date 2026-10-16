@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kitasenju/'),
   title: '【2026年7月】北千住の女性専用パーソナルジムおすすめ3選！料金比較',
-  description: '【2026年4月】北千住のおすすめ女性専用パーソナルジム3選を徹底比較。OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を網羅。',
+  description: '【2026年4月】北千住のおすすめ女性専用パーソナルジム3選を比較しています。OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,北千住,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,10 +25,10 @@ const gyms = [
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '生涯無料アフターサポートが特徴。北千住駅から徒歩圏内の好立地。完全個室・ベビーサークル完備で産後ママも安心して通える。',
+    description: '生涯無料アフターサポートが特徴です。北千住駅から徒歩圏内の好立地です。完全個室・ベビーサークル完備で産後ママも安心して通えます。',
     access: 'JR「北千住駅」徒歩6分',
     address: '東京都足立区千住（北千住駅徒歩6分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
+    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニングです。卒業後も生涯無料のアフターサポートを受けられます。', price: '16回 184,800円〜（税込）' },
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
@@ -38,10 +38,10 @@ const gyms = [
     price: '8回 49,280円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用プランあり', '海外式ボディメイク', '完全個室', 'リーズナブル', '芸能人御用達'],
-    description: '東京を中心に展開するパーソナルジム。海外式ボディメイクで女性らしいシルエットを目指す。芸能人やモデルも通う人気ジム。8回49,280円〜のリーズナブルな料金。',
+    description: '東京を中心に展開するパーソナルジムです。海外式ボディメイクで女性らしいシルエットを目指します。芸能人やモデルも通う人気ジムです。8回49,280円〜のリーズナブルな料金です。',
     access: 'JR「北千住駅」徒歩4分',
     address: '東京都足立区千住（北千住駅徒歩4分）',
-    popularPlan: { name: '8回チケット', description: '海外式ボディメイクのパーソナルトレーニング8回。', price: '8回 49,280円〜（税込）' },
+    popularPlan: { name: '8回チケット', description: '海外式ボディメイクのパーソナルトレーニング8回です。', price: '8回 49,280円〜（税込）' },
     options: ['海外式ボディメイク', '完全個室', 'ウェアレンタル無料', '食事指導付き'],
     userProfile: { ageRange: '20代〜30代が中心', genderRatio: '女性100%', purpose: ['ボディメイク', 'ダイエット', 'ヒップアップ', '美脚'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ロッカー'] },
@@ -52,10 +52,10 @@ const gyms = [
     price: '月4回 30,800円〜（税込）',
     trial: '体験レッスンあり',
     features: ['月額制', 'AI食事指導', '女性トレーナー在籍', 'リーズナブル', '北千住駅近'],
-    description: '全国展開のパーソナルジムチェーン。月額制で続けやすく、AI食事指導も活用。北千住駅近くの便利な立地。',
+    description: '全国展開のパーソナルジムチェーンです。月額制で続けやすく、AI食事指導も活用しています。北千住駅近くの便利な立地です。',
     access: 'JR「北千住駅」徒歩4分',
     address: '東京都足立区千住（北千住駅徒歩4分）',
-    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニング。AI食事指導付き。', price: '月4回 30,800円〜（税込）' },
+    popularPlan: { name: '月4回プラン', description: '月額制のパーソナルトレーニングです。AIによる食事指導が付いています。', price: '月4回 30,800円〜（税込）' },
     options: ['AI食事指導', '月額制で始めやすい', '回数変更可能'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性70% / 男性30%', purpose: ['ダイエット', '体力向上', '健康維持', 'ボディメイク'] },
     basicInfo: { hours: '平日10:00〜22:00／土日9:00〜20:00', closed: '月・木', facilities: ['個室', 'ロッカー'] },
@@ -64,8 +64,8 @@ const gyms = [
 
 const faqs = [
   { question: '北千住で女性専用のパーソナルジムはありますか？', answer: 'はい、北千住エリアにはOUTLINEなどの女性専用パーソナルジムがあります。Apple GYMも女性専用プランを用意しています。' },
-  { question: '北千住のパーソナルジムの料金相場は？', answer: '北千住エリアの料金はApple GYM（8回49,280円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
-  { question: '北千住で子連れで通えるジムは？', answer: 'OUTLINE北千住店はベビーサークル完備で子連れOK。' },
+  { question: '北千住のパーソナルジムの料金相場はいくらですか？', answer: '北千住エリアの料金はApple GYM（8回49,280円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
+  { question: '北千住で子連れで通えるジムはどこですか？', answer: 'OUTLINE北千住店はベビーサークルを完備しており、お子様連れでも利用できます。' },
 ]
 
 export default function KitasenjuPage() {
@@ -94,7 +94,7 @@ export default function KitasenjuPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「北千住で女性専用のパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、北千住エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -126,7 +126,7 @@ export default function KitasenjuPage() {
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">北千住エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
             <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、リーズナブルに始めるならApple GYMがおすすめです。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p>
+            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
 
@@ -152,7 +152,7 @@ export default function KitasenjuPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -12,7 +12,7 @@ export function WhyWomenOnly({ area }: { area?: string }) {
           なぜ「女性専用」パーソナルジムを選ぶのか
         </h2>
         <p className="text-brand-muted leading-relaxed mb-6">
-          {area ? `${area}でジムを選ぶなら、` : ''}女性専用パーソナルジムには、一般的なジムにはないメリットがあります。ボディメイクやダイエットを無理なく続けるために、次の4つの観点をチェックしましょう。
+          {area ? `${area}でジムを選ぶなら、` : ''}女性専用パーソナルジムには、一般的なジムにはないメリットがあります。ボディメイクやダイエットを無理なく続けるために、次の4つの観点をご確認ください。
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {items.map((it, i) => (

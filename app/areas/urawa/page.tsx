@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/urawa/'),
   title: '【2026年7月】浦和の女性向けパーソナルジムおすすめ4選！料金比較',
-  description: '【2026年7月】浦和のおすすめ女性向けパーソナルジム4選を比較。UNDEUX・リボーンマイセルフ・Rpreciousなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】浦和のおすすめ女性向けパーソナルジム4選を比較しています。UNDEUX・リボーンマイセルフ・Rpreciousなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,浦和,埼玉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'スタンダードプラン月額 20,500円〜（税込）',
     trial: '無料体験トレーニング（約60分・初回限定）',
     features: ['女性専用', '管理栄養士監修の食事指導', 'マンツーマン'],
-    description: '女性専用パーソナルジム。管理栄養士監修の食事指導つきマンツーマン指導です。',
+    description: '女性専用パーソナルジムです。管理栄養士監修の食事指導付きマンツーマン指導です。',
     access: '浦和駅 徒歩4分',
     address: 'さいたま市浦和区高砂2-8-16 浦和ガーデンビル3階',
     options: ['月8回58,200円', 'コミットプラン79,200円'],
@@ -38,7 +38,7 @@ const gyms = [
     price: 'ショートコース（2ヶ月16回）184,000円〜（入会金22,000円）',
     trial: 'カウンセリング・体験トレーニングとも無料',
     features: ['女性専用', 'トレーナー全員女性', '食事指導あり', 'パウダールーム'],
-    description: '女性専用・トレーナーも全員女性のジム。食事指導つきで、個室カウンセリングルーム・パウダールームがあります。',
+    description: '女性専用・トレーナーも全員女性のジムです。食事指導付きで、個室カウンセリングルーム・パウダールームがあります。',
     access: '浦和駅北口 徒歩6分・西口 徒歩7分',
     address: 'さいたま市浦和区高砂2-14-17 浦和マルゼンビル4階',
     options: ['入会金無料キャンペーンの時期あり'],
@@ -51,7 +51,7 @@ const gyms = [
     price: 'ダイエットコース16回 174,240円（50分制・入会金15,000円別途）',
     trial: '無料カウンセリング約1時間（体験トレーニング付きは5,500円・当日入会で無料）',
     features: ['女性専用', '毎日LINE食事指導', '子連れOK', '3ヶ月リバウンドサポート'],
-    description: '女性専用パーソナルジム。栄養スペシャリストによる毎日のLINE食事指導と、卒業後3ヶ月のリバウンドサポートが特徴。子連れOKです。',
+    description: '女性専用パーソナルジムです。栄養スペシャリストによる毎日のLINE食事指導と、卒業後3ヶ月のリバウンドサポートが特徴です。子連れOKです。',
     access: '浦和駅西口 徒歩5分',
     address: 'さいたま市浦和区仲町1-15-7 リベリエ浦和仲町401',
     options: ['クイック8回87,120円', 'ボディメイク24回251,240円'],
@@ -64,7 +64,7 @@ const gyms = [
     price: '月4回 33,000円（税込）',
     trial: '無料体験（手ぶらOK）',
     features: ['月額制', '完全個室', '産後ダイエット対応', '乳幼児連れOK'],
-    description: '浦和駅徒歩1分の完全個室マンツーマンジム。月額制で、産後ダイエット対応・乳幼児連れOKです。',
+    description: '浦和駅徒歩1分の完全個室マンツーマンジムです。月額制で、産後ダイエット対応・乳幼児連れOKです。',
     access: '京浜東北線 浦和駅 徒歩1分',
     address: 'さいたま市浦和区東仲町1-21 小島ビル3F',
     options: ['月8回59,400円', '無期限チケット8,800円/回'],
@@ -74,12 +74,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '浦和で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 浦和スタジオ、リボーンマイセルフ 浦和店、Rprecious（リプレシャス）浦和店です（2026年6月調査時点）。' },
-  { question: '浦和のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 浦和スタジオはスタンダードプラン月額 20,500円〜（税込）。リボーンマイセルフ 浦和店はショートコース（2ヶ月16回）184,000円〜（入会金22,000円）。Rprecious（リプレシャス）浦和店はダイエットコース16回 174,240円（50分制・入会金15,000円別途）。かたぎり塾 浦和店は月4回 33,000円（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '浦和駅から近いジムは？', answer: '駅徒歩3分以内・直結では、かたぎり塾 浦和店（京浜東北線 浦和駅 徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'UNDEUX SUPERBODY 浦和スタジオ、リボーンマイセルフ 浦和店、Rprecious（リプレシャス）浦和店、かたぎり塾 浦和店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'Rprecious（リプレシャス）浦和店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '浦和で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 浦和スタジオ、リボーンマイセルフ 浦和店、Rprecious（リプレシャス）浦和店です（2026年6月調査時点）。' },
+  { question: '浦和のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 浦和スタジオはスタンダードプラン月額 20,500円〜です（税込）。リボーンマイセルフ 浦和店はショートコース（2ヶ月16回）184,000円〜です（入会金22,000円）。Rprecious（リプレシャス）浦和店はダイエットコース16回 174,240円です（50分制・入会金15,000円別途）。かたぎり塾 浦和店は月4回 33,000円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '浦和駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、かたぎり塾 浦和店（京浜東北線 浦和駅 徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 浦和スタジオ、リボーンマイセルフ 浦和店、Rprecious（リプレシャス）浦和店、かたぎり塾 浦和店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'Rprecious（リプレシャス）浦和店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function UrawaPage() {
@@ -108,7 +108,7 @@ export default function UrawaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「浦和で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、浦和エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -174,10 +174,10 @@ export default function UrawaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -192,8 +192,8 @@ export default function UrawaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -241,7 +241,7 @@ export default function UrawaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/tokorozawa/'),
   title: '【2026年7月】所沢の女性向けパーソナルジムおすすめ4選！料金比較',
-  description: '【2026年7月】所沢のおすすめ女性向けパーソナルジム4選を比較。リボーンマイセルフ・Rprecious・Brillioなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】所沢のおすすめ女性向けパーソナルジム4選を比較しています。リボーンマイセルフ・Rprecious・Brillioなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,所沢,埼玉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -25,7 +25,7 @@ const gyms = [
     price: 'ダイエットショートコース（2ヶ月16回）220,000円（入会金22,000円）',
     trial: 'カウンセリング・体験トレーニングとも0円',
     features: ['女性専用', 'トレーナー全員女性', '完全個室（1人1部屋）', '食事指導込み'],
-    description: '女性専用・トレーナー全員女性のジム。完全個室（1人1部屋）で、食事指導込み。宅食オプションもあります。',
+    description: '女性専用・トレーナー全員女性のジムです。完全個室（1人1部屋）で、食事指導が含まれています。宅食オプションもあります。',
     access: '所沢駅東口 徒歩3分',
     address: '所沢市くすのき台3-1-13 烏山ビル4階',
     options: ['チケット8回101,200円〜', '宅食オプション'],
@@ -38,7 +38,7 @@ const gyms = [
     price: 'ダイエットコース16回 174,240円（50分制・入会金22,000円・分割月8,100円〜）',
     trial: '無料カウンセリング約1時間（体験トレーニング付き5,000円・当日入会で無料）',
     features: ['女性専用', '完全個室', '毎日LINE食事管理', '子連れOK'],
-    description: '女性専用・完全個室のパーソナルジム。毎日のLINE食事管理と、卒業後3ヶ月のリバウンド保証つき。子連れOKです。',
+    description: '女性専用・完全個室のパーソナルジムです。毎日のLINE食事管理と、卒業後3ヶ月のリバウンド保証が付いています。子連れOKです。',
     access: '所沢駅 徒歩7分',
     address: '所沢市御幸町3-13 COLORS所沢402',
     options: ['クイック8回87,120円', 'ボディメイク24回251,240円', '卒業後3ヶ月リバウンド保証'],
@@ -51,7 +51,7 @@ const gyms = [
     price: '月2回 19,800円〜月8回 66,000円（1回あたり8,250〜9,900円）',
     trial: '無料体験（カウンセリング×トレーニング約50分）',
     features: ['女性専用', '完全個室', '食事サポート', '手ぶらOK'],
-    description: '女性専用・完全個室のマンツーマンジム。「食べて痩せる」方針の食事サポートつきで、無料レンタルにより手ぶらで通えます。',
+    description: '女性専用・完全個室のマンツーマンジムです。「食べて痩せる」方針の食事サポート付きで、無料レンタルにより手ぶらで通えます。',
     access: '所沢駅西口 徒歩9分',
     address: '所沢市元町21-17 H-SQUARE元町201',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -63,7 +63,7 @@ const gyms = [
     price: '月額制（金額は公式サイトでご確認ください）',
     trial: '初回体験0円（電話・WEB予約）',
     features: ['女性専用', '月額制', '管理栄養士の食事改善サポート'],
-    description: 'UNDEUXの月額制ライン「LIFE」の新店舗（2026年3月オープン）。女性専用で、管理栄養士による食事改善サポートやヘルシー宅配食があります。',
+    description: 'UNDEUXの月額制ライン「LIFE」の新店舗です（2026年3月オープン）。女性専用で、管理栄養士による食事改善サポートやヘルシー宅配食があります。',
     access: '所沢エリア（所在地・徒歩分数は公式サイトでご確認ください）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '食事改善'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -71,12 +71,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '所沢で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 所沢店、Rprecious（リプレシャス）所沢店、Brillio（ブリリオ）所沢店、UNDEUX SUPERBODY LIFE 所沢スタジオです（2026年6月調査時点）。' },
-  { question: '所沢のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 所沢店はダイエットショートコース（2ヶ月16回）220,000円（入会金22,000円）。Rprecious（リプレシャス）所沢店はダイエットコース16回 174,240円（50分制・入会金22,000円・分割月8,100円〜）。Brillio（ブリリオ）所沢店は月2回 19,800円〜月8回 66,000円（1回あたり8,250〜9,900円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '所沢駅から近いジムは？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ 所沢店（所沢駅東口 徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'リボーンマイセルフ 所沢店、Rprecious（リプレシャス）所沢店、Brillio（ブリリオ）所沢店、UNDEUX SUPERBODY LIFE 所沢スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'Rprecious（リプレシャス）所沢店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '所沢で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 所沢店、Rprecious（リプレシャス）所沢店、Brillio（ブリリオ）所沢店、UNDEUX SUPERBODY LIFE 所沢スタジオです（2026年6月調査時点）。' },
+  { question: '所沢のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 所沢店はダイエットショートコース（2ヶ月16回）220,000円です（入会金22,000円）。Rprecious（リプレシャス）所沢店はダイエットコース16回 174,240円です（50分制・入会金22,000円・分割月8,100円〜）。Brillio（ブリリオ）所沢店は月2回 19,800円〜月8回 66,000円です（1回あたり8,250〜9,900円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '所沢駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ 所沢店（所沢駅東口 徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'リボーンマイセルフ 所沢店、Rprecious（リプレシャス）所沢店、Brillio（ブリリオ）所沢店、UNDEUX SUPERBODY LIFE 所沢スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'Rprecious（リプレシャス）所沢店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function TokorozawaPage() {
@@ -105,7 +105,7 @@ export default function TokorozawaPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「所沢で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、所沢エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -171,10 +171,10 @@ export default function TokorozawaPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -189,8 +189,8 @@ export default function TokorozawaPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -238,7 +238,7 @@ export default function TokorozawaPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

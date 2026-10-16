@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nakano/'),
   title: '【2026年7月】中野の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】中野のおすすめ女性向けパーソナルジム3選を比較。OUTLINE・Bouquet・WAPLEなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '【2026年7月】中野のおすすめ女性向けパーソナルジム3選を比較しています。OUTLINE・Bouquet・WAPLEなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,中野,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -24,10 +24,10 @@ const gyms = [
     officialUrl: 'https://www.outline-gym.com/gym/nakano',
     price: '16回 184,800円〜（税込・入会金0円）',
     trial: '体験トレーニング無料',
-    features: ['女性専用', '完全個室', '食事指導つき', '子連れOK', '生涯リバウンドサポート'],
-    description: '女性専用・完全個室のパーソナルジム。入会金0円で、各回トレーニング後の食事指導が無料。ベビーサークルがあり子連れでも通えます。卒業後の生涯リバウンドサポート付き。',
+    features: ['女性専用', '完全個室', '食事指導付き', '子連れOK', '生涯リバウンドサポート'],
+    description: '女性専用・完全個室のパーソナルジムです。入会金0円で、各回トレーニング後の食事指導が無料です。ベビーサークルがあり子連れでも通えます。卒業後の生涯リバウンドサポートが付いています。',
     access: 'JR「中野駅」徒歩3分',
-    popularPlan: { name: '16回コース', description: '完全個室のマンツーマントレーニング16回＋毎回の食事指導。卒業後も生涯無料アフターサポート。', price: '16回 184,800円〜（税込）' },
+    popularPlan: { name: '16回コース', description: '完全個室のマンツーマントレーニング16回と、毎回の食事指導が受けられます。卒業後も生涯無料のアフターサポートを受けられます。', price: '16回 184,800円〜（税込）' },
     options: ['食事指導無料', '手ぶらOK', 'ベビーサークル完備', '学生・モニター15%OFF'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
@@ -38,7 +38,7 @@ const gyms = [
     price: '回数券4回 48,000円〜（税抜・75分）',
     trial: '体験 初回限定無料（通常11,000円）',
     features: ['女性専用', '女性トレーナーのみ', '完全個室', '手ぶらOK'],
-    description: '女性専用×女性トレーナーのみの完全個室パーソナルジム。中野駅北口徒歩1分。シャワー・パウダールーム完備で、LINEでの食事・トレーニングサポートを24時間受けられます。',
+    description: '女性専用×女性トレーナーのみの完全個室パーソナルジムです。中野駅北口徒歩1分です。シャワー・パウダールーム完備で、LINEでの食事・トレーニングサポートを24時間受けられます。',
     access: '中野駅北口徒歩1分',
     options: ['シャワー・パウダールーム完備', 'LINEサポート24時間', '入会金無料キャンペーンあり（通常50,000円）'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
@@ -50,7 +50,7 @@ const gyms = [
     price: '月4回 39,160円（税込）',
     trial: '体験 キャンペーン中0円（通常5,500円）',
     features: ['女性比率80%', '完全個室', '完全予約制', '手ぶらOK', '子連れ歓迎'],
-    description: '女性専用ではありませんが利用者の女性比率は約80%。ウェア・シューズ・タオル・水まで無料の手ぶら対応で、LINE食事指導も無料です。',
+    description: '女性専用ではありませんが利用者の女性比率は約80%です。ウェア・シューズ・タオル・水まで無料の手ぶら対応で、LINE食事指導も無料です。',
     access: 'JR中野駅北口徒歩9分',
     options: ['LINE食事指導無料', 'ウェア・シューズ・水 無料', '入会金0円キャンペーンあり'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性約80%）', purpose: ['ダイエット', 'ボディメイク', '運動習慣'] },
@@ -59,12 +59,12 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '中野で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、OUTLINE（アウトライン）中野店、Bouquet（ブーケ）中野店です（2026年6月調査時点）。' },
-  { question: '中野のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、OUTLINE（アウトライン）中野店は16回 184,800円〜（税込・入会金0円）。Bouquet（ブーケ）中野店は回数券4回 48,000円〜（税抜・75分）。WAPLE（ウェイプル）中野店は月4回 39,160円（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '中野駅から近いジムは？', answer: '駅徒歩3分以内・直結では、OUTLINE（アウトライン）中野店（JR「中野駅」徒歩3分）、Bouquet（ブーケ）中野店（中野駅北口徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'OUTLINE（アウトライン）中野店、Bouquet（ブーケ）中野店、WAPLE（ウェイプル）中野店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはある？', answer: 'OUTLINE（アウトライン）中野店、WAPLE（ウェイプル）中野店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
-  { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
+  { question: '中野で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、OUTLINE（アウトライン）中野店、Bouquet（ブーケ）中野店です（2026年6月調査時点）。' },
+  { question: '中野のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、OUTLINE（アウトライン）中野店は16回 184,800円〜です（税込・入会金0円）。Bouquet（ブーケ）中野店は回数券4回 48,000円〜です（税抜・75分）。WAPLE（ウェイプル）中野店は月4回 39,160円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '中野駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、OUTLINE（アウトライン）中野店（JR「中野駅」徒歩3分）、Bouquet（ブーケ）中野店（中野駅北口徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'OUTLINE（アウトライン）中野店、Bouquet（ブーケ）中野店、WAPLE（ウェイプル）中野店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'OUTLINE（アウトライン）中野店、WAPLE（ウェイプル）中野店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
 export default function NakanoPage() {
@@ -93,7 +93,7 @@ export default function NakanoPage() {
 
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-brand-muted leading-relaxed mb-6">こんにちは、G-PersonalGym編集部です。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「中野で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、中野エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -158,10 +158,10 @@ export default function NakanoPage() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">出口・動線を事前に確認</h3>
-                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前に確認しましょう。</p>
+                <p className="text-brand-muted leading-relaxed">同じ「駅徒歩◯分」でも、利用する路線や出口によって体感距離は変わります。通いたいジムがどの出口から近いかを事前にご確認ください。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジム比較を</h3>
+                <h3 className="text-lg font-bold text-brand-text mb-3">体験は2〜3ジムで比較</h3>
                 <p className="text-brand-muted leading-relaxed">トレーナーとの相性は継続のカギです。最低2〜3ジムの体験・カウンセリングに行って、雰囲気と指導スタイルを比較してから決めるのがおすすめです。</p>
               </div>
             </div>
@@ -176,8 +176,8 @@ export default function NakanoPage() {
                 <div>
                   <h3 className="text-lg font-bold text-brand-text mb-4">必須の持ち物</h3>
                   <ul className="space-y-3 text-brand-muted text-sm">
-                    <li>・<strong>動きやすいウェア</strong>（レンタルありのジムも多い）</li>
-                    <li>・<strong>室内シューズ</strong>（レンタルありのジムも）</li>
+                    <li>・<strong>動きやすいウェア</strong>（レンタルのあるジムも多くあります）</li>
+                    <li>・<strong>室内シューズ</strong>（レンタルのあるジムもあります）</li>
                     <li>・<strong>水分（500ml以上）</strong></li>
                     <li>・<strong>フェイスタオル</strong></li>
                   </ul>
@@ -225,7 +225,7 @@ export default function NakanoPage() {
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p>
+            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>
