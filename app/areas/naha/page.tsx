@@ -83,7 +83,7 @@ export default function NahaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年7月】那覇の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年7月】那覇の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
           </div>
         </section>

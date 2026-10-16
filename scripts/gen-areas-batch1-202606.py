@@ -10,10 +10,10 @@ import json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UPDATED = "2026年06月12日"
-MONTH_TAG = "【2026年6月最新】"
+MONTH_TAG = "【2026年7月】"  # 10/9「最新」表記撤去・title年月は7月で据え置き
 
 def g(name, url, access, price, trial, features, desc, gender, address=None,
-      plan=None, options=None, purpose=None, hours=None, facilities=None, age=None):
+      plan=None, options=None, purpose=None, hours=None, facilities=None, age=None, closed=None):
     return {
         "name": name, "officialUrl": url, "access": access, "price": price,
         "trial": trial, "features": features, "description": desc,
@@ -27,7 +27,7 @@ def g(name, url, access, price, trial, features, desc, gender, address=None,
         },
         "basicInfo": {
             "hours": hours or "公式サイトでご確認ください",
-            "closed": "公式サイトでご確認ください",
+            "closed": closed or "公式サイトでご確認ください",
             "facilities": facilities or [f for f in features if any(k in f for k in ("個室", "シャワー", "駐車場", "パウダー", "キッズ", "ベビー"))] or ["公式サイトでご確認ください"],
         },
     }
@@ -90,7 +90,7 @@ AREAS = [
      "男女共用", options=["ダイエットコース（食事指導付き）172,000円", "入会金無料キャンペーンあり（通常33,000円）"],
      purpose=["ダイエット", "産後ダイエット", "ボディメイク"]),
   ]),
- dict(slug="akabane", name="赤羽", pref="東京", note=None,
+ dict(slug="akabane", description="【2026年7月】赤羽のおすすめ女性向けパーソナルジム2選を比較しています。かたぎり塾・リボーンマイセルフの料金・体験・特徴を各公式サイトで確認のうえ掲載しています。", name="赤羽", pref="東京", note=None,
   ctx=["赤羽はJR京浜東北線・埼京線・宇都宮線などが乗り入れる北区の主要ターミナルで、埼玉方面からのアクセスも良好です。駅前に商店街が広がる、暮らしに密着した街です。",
        "通勤動線上や買い物ついでに通えるジムが選ばれやすいエリアです。"],
   tips=["埼玉方面からの通勤者は乗り換え動線上の店舗が便利", "女性専門店かどうかを公式サイトで確認", "無料体験で指導スタイルを比較する"],
@@ -101,12 +101,6 @@ AREAS = [
      "かたぎり塾の女性専門店です。完全個室マンツーマンで、医師監修の食事指導と理学療法士監修プログラムが受けられます。ウェア・シューズ・飲み物無料です。",
      W, plan={"name": "月4プラン", "description": "月額制のマンツーマントレーニングです。", "price": "月4回 33,000円（税込）"},
      options=["LINE食事サポート2週間11,000円", "無期限チケット8,800円/回", "入会金割引キャンペーンあり（通常55,000円）"]),
-   g("OUTLINE（アウトライン）赤羽店", "https://www.outline-gym.com/gym/akabane", "赤羽駅徒歩5分",
-     "16回 184,800円〜（税込・入会金0円）", "無料カウンセリング",
-     ["女性専用", "食事指導付き", "子連れOK", "遺伝子検査"],
-     "女性専用パーソナルジムです。入会金0円で食事指導付き。ベビーサークルがあり子連れ可です。ウェア・タオル・アミノ酸ドリンク・プロテイン提供、シャワー・遺伝子検査もあります。",
-     W, options=["ベビーサークル", "ウェア・タオル無料", "アミノ酸ドリンク・プロテイン提供", "シャワーあり"],
-     purpose=["ダイエット", "ボディメイク", "産後ダイエット"]),
    g("リボーンマイセルフ 赤羽店", "https://www.shapes-international.co.jp/store/akabane/", "JR赤羽駅徒歩7分／南北線赤羽岩淵駅徒歩9分",
      "2ヶ月16回 220,000円（税込・入会金22,000円）", "無料カウンセリング＋無料体験トレーニング（約1時間）",
      ["女性専用", "トレーナー全員女性", "食事指導付き", "専属トレーナー制"],
@@ -316,18 +310,11 @@ AREAS = [
      "女性専門（初心者女性向け）", options=["3回トライアル9,980円", "4回トライアル14,900円"],
      purpose=["ダイエット", "運動習慣"]),
   ]),
- dict(slug="shinsaibashi", name="心斎橋", pref="大阪", note=None,
+ dict(slug="shinsaibashi", description="【2026年7月】心斎橋のおすすめ女性向けパーソナルジム2選を比較しています。BODY SALVATION・UNDEUXの料金・体験・特徴を各公式サイトで確認のうえ掲載しています。", name="心斎橋", pref="大阪", note=None,
   ctx=["心斎橋は地下鉄御堂筋線で梅田・なんばと直結するショッピングエリアで、美容感度の高い女性が多く訪れます。南船場・四ツ橋方面にもスタジオが点在します。",
        "なんばと徒歩圏で重なるため、両エリアの店舗をあわせて比較するのがおすすめです。"],
   tips=["心斎橋・なんば両方の店舗を比較対象にする", "40〜50代向けなど年代特化の有無もチェック", "総額（入会金込み）で比較する"],
   gyms=[
-   g("OUTLINE（アウトライン）なんば・心斎橋店", "https://www.outline-gym.com/gym/nanba", "心斎橋駅徒歩5分／なんば駅徒歩5分",
-     "フルサポートコース16回 184,800円（税込・入会金0円）", "無料カウンセリングあり（LINE・電話予約）",
-     ["女性専用", "完全個室", "生涯リバウンドサポート", "遺伝子検査", "ペアトレ無料"],
-     "女性専用・完全個室のパーソナルジムです。生涯リバウンドサポートと遺伝子検査によるオーダーメイドプログラムが特徴です。ペアトレ無料オプションもあります。",
-     W, address="大阪市中央区西心斎橋2-16-9 ラ・シェネガ心斎橋802",
-     options=["24回264,000円／32回334,400円", "学生・モニター15%OFF"],
-     purpose=["ダイエット", "ボディメイク", "リバウンド防止"]),
    g("BODY SALVATION（ボディサーベーション）", "https://www.body-salvation.net/", "御堂筋線心斎橋駅徒歩4分／四ツ橋駅徒歩3分",
      "スターターコース4回 18,000円（30分・新規限定・入会金無料）", "体験トレーニングあり（料金は公式サイトでご確認ください）",
      ["女性専用", "完全個室", "女性トレーナーのみ", "40〜50代向け"],
@@ -341,7 +328,7 @@ AREAS = [
      "UNDEUXの月額制ライン「LIFE」の心斎橋スタジオです。女性専用で、パーソナルトレーニング＋食事改善のサポートが受けられます。",
      W, purpose=["ダイエット", "食事改善"]),
   ]),
- dict(slug="namba", name="難波", pref="大阪", note=None,
+ dict(slug="namba", description="【2026年7月】難波のおすすめ女性向けパーソナルジム2選を比較しています。リボーンマイセルフ・Amazonesの料金・体験・特徴を各公式サイトで確認のうえ掲載しています。", name="難波", pref="大阪", note=None,
   ctx=["難波は南海・近鉄・JR・地下鉄各線が集まるミナミの玄関口です。なんばスカイオなど駅直結の商業施設も多く、買い物や通勤のついでに通いやすい立地です。",
        "24時間型から駅直結型まで、通い方の選択肢が幅広いエリアです。"],
   tips=["駅直結・駅近など雨の日も通いやすい立地を重視", "セルフ利用＋パーソナル併用型も検討", "心斎橋エリアの店舗もあわせて比較"],
@@ -357,15 +344,9 @@ AREAS = [
      "フィットネス月額9,900円／パーソナルプラン月額22,000円〜", "無料体験受付中",
      ["女性専用", "24時間営業", "トレーナー全員女性", "セルフ＋パーソナル併用可"],
      "女性専用の24時間ジムです。トレーナーは全員女性で、セルフ利用とパーソナルを併用できます。下半身マシンは地域最大級です。",
-     W, hours="24時間", address="大阪市浪速区桜川1-3-2",
+     W, address="大阪市浪速区桜川1-3-2",
      options=["通い放題パーソナル月44,000円", "学生・シニア月7,700円"],
-     purpose=["ダイエット", "下半身痩せ", "運動習慣"]),
-   g("OUTLINE（アウトライン）なんば・心斎橋店", "https://www.outline-gym.com/gym/nanba", "なんば駅徒歩5分／心斎橋駅徒歩5分",
-     "フルサポートコース16回 184,800円（税込・入会金0円）", "無料カウンセリングあり",
-     ["女性専用", "完全個室", "生涯リバウンドサポート"],
-     "女性専用・完全個室のパーソナルジムです。生涯リバウンドサポートと遺伝子検査によるオーダーメイドプログラムが特徴です。",
-     W, options=["24回264,000円／32回334,400円", "ペアトレ無料オプション"],
-     purpose=["ダイエット", "ボディメイク", "リバウンド防止"]),
+     purpose=["ダイエット", "下半身痩せ", "運動習慣"], hours="24時間（スタッフ在籍：月・火・木・金・土 11:00〜20:00）", closed="年中無休", facilities=["公式サイトでご確認ください"]),
   ]),
  dict(slug="tennoji", name="天王寺", pref="大阪", note=None,
   ctx=["天王寺はJR・地下鉄御堂筋線・谷町線が交わる大阪南部のターミナルで、あべのハルカスなど大型商業施設が集まります。阿倍野エリアと一体の生活圏です。",
@@ -394,7 +375,7 @@ AREAS = [
      options=["キャンペーン価格あり（月2回19,800円等）", "入会金無料キャンペーンの時期あり"],
      purpose=["下半身痩せ", "姿勢改善", "ピラティス"]),
   ]),
- dict(slug="sakae", name="栄", pref="愛知", note=None,
+ dict(slug="sakae", description="【2026年7月】栄のおすすめ女性向けパーソナルジム2選を比較しています。UNDEUX・かたぎり塾の料金・体験・特徴を各公式サイトで確認のうえ掲載しています。", name="栄", pref="愛知", note=None,
   ctx=["栄は名古屋最大の繁華街で、地下鉄東山線・名城線が交わります。矢場町駅周辺もパーソナルジムが集まる徒歩圏です。",
        "買い物のついでに通える立地が多く、24時間型から短期集中型まで選択肢が揃います。"],
   tips=["栄駅か矢場町駅か、よく使う動線で選ぶ", "月額低価格型と短期集中型で目的に合わせる", "無料体験で雰囲気を比較する"],
@@ -410,12 +391,6 @@ AREAS = [
      ["月額制", "完全個室", "子連れOK", "産後ダイエット対応"],
      "矢場町駅徒歩1分の完全個室マンツーマンジムです。女性専用ではありませんが女性利用が多く、子連れOK・産後ダイエット対応・レンタル無料です。",
      "男女共用（女性利用多数）", options=["月8プラン59,400円", "チケット8,800円/回", "体験当日入会で入会金無料（通常55,000円）"]),
-   g("フィギュアボディ名古屋栄", "https://figurebody.net/", "栄駅8A出口徒歩1分・久屋大通駅徒歩1分",
-     "月額8,800円（税込・入会金11,000円＋登録料5,500円）", "無料体験・見学あり",
-     ["女性専用", "24時間", "グループレッスン無料", "美容エリア併設"],
-     "女性専用の24時間ジムです。月額8,800円でグループレッスン無料、会員向けパーソナルトレーニングも提供しています。整体・ネイルなど美容エリアを併設しています。",
-     W, hours="24時間", options=["デイ&ホリデー月7,700円", "パーソナル初回4,400円（会員向け）"],
-     purpose=["ダイエット", "運動習慣", "ボディメイク"]),
   ]),
  dict(slug="meieki", name="名古屋駅", pref="愛知", note=None,
   ctx=["名古屋駅（名駅）はJR・新幹線・名鉄・近鉄・地下鉄が集まる中部最大のターミナルです。駅直結の地下街ユニモールなど、雨に濡れず移動できる動線も魅力です。",
@@ -445,9 +420,9 @@ AREAS = [
      "75分コース16回（2ヶ月）197,560円（税込・入会金0円）", "無料カウンセリングあり",
      ["完全個室", "24時間営業", "都度払い可"],
      "完全個室・24時間営業のパーソナルジムです。公式では女性専用と表記されていますが、調査時点で「試験的に男性も受け入れ中」の記載があります。都度払いにも対応しています。",
-     "女性専用表記（試験的に男性受け入れあり）", hours="24時間", address="名古屋市中村区名駅2-28-9",
+     "女性専用表記（試験的に男性受け入れあり）", address="名古屋市中村区名駅2-28-9",
      options=["都度払い50分9,050円／75分11,800円"],
-     purpose=["ダイエット", "ボディメイク"]),
+     purpose=["ダイエット", "ボディメイク"], hours="24時間", closed="年中無休", facilities=["完全個室"]),
   ]),
  dict(slug="kyoto", name="京都", pref="京都",
   note="調査時点で、四条烏丸・河原町の駅前エリアで公式サイトから「女性専用」を確認できた大手パーソナルジムは限られています。本ページでは公式確認できた2店舗を掲載しています。",
@@ -560,7 +535,12 @@ def build_faqs(a):
     else:
         faqs.append({"question": f"{name}に女性専用のパーソナルジムはありますか？",
                      "answer": f"2026年6月の調査時点では、{name}駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。"})
-    priced = [f"{g_['name']}は{g_['price']}" for g_ in gyms if "ご確認ください" not in g_["price"]]
+    def _polite_price(p):
+        # 「…円（税込）」→「…円です（税込）」／それ以外は末尾に「です」（2026-10-16 です・ます統一）
+        m_ = re.search(r"（[^（）]*）$", p)
+        if m_: return p[:m_.start()] + "です" + m_.group(0)
+        return (p[:-2] + "があります") if p.endswith("あり") else (p + "です")
+    priced = [f"{g_['name']}は{_polite_price(g_['price'])}" for g_ in gyms if "ご確認ください" not in g_["price"]]
     if priced:
         faqs.append({"question": f"{name}のパーソナルジムの料金の目安はいくらですか？",
                      "answer": "公式サイト掲載の料金では、" + "。".join(priced[:4]) + "。キャンペーン等で変動するため最新は各公式サイトでご確認ください。"})
@@ -603,8 +583,12 @@ def page_tsx(a):
     name, slug, gyms = a["name"], a["slug"], a["gyms"]
     n = len(gyms)
     comp = "".join(w.capitalize() for w in slug.split("-")) + "Page"
+    top3_raw = "・".join(g_["name"].split("（")[0].split(" ")[0] for g_ in gyms[:3])
     top3 = esc("・".join(g_["name"].split("（")[0].split(" ")[0] for g_ in gyms[:3]))
-    faqs = build_faqs(a)
+    faqs = a.get("faqs") or build_faqs(a)  # 店舗削除後に手で整えた FAQ は area の faqs で固定
+    description = esc(a.get("description") or f"{MONTH_TAG}{name}のおすすめ女性向けパーソナルジム{n}選を比較しています。{top3_raw}など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。")
+    # 個別に変えた title（2026-07 以降の手修正）は area の title で上書き
+    title = esc(a.get("title") or f"{MONTH_TAG}{name}の女性向けパーソナルジムおすすめ{n}選｜料金比較")
     buckets = build_buckets(a)
     gyms_ts = "const gyms = [\n" + "\n".join(gym_ts(g_) for g_ in gyms) + "\n]\n"
     faqs_ts = "const faqs = [\n" + "\n".join(
@@ -625,17 +609,20 @@ def page_tsx(a):
     return f"""import Link from 'next/link'
 import {{ Navigation }} from '@/components/Navigation'
 import {{ SiteFooter }} from '@/components/SiteFooter'
+import {{ IntentGuideLinks }} from '@/components/IntentGuideLinks'
 import {{ GymCard }} from '@/components/GymCard'
 import {{ PriceComparisonTable }} from '@/components/PriceComparisonTable'
 import {{ FAQSchema }} from '@/components/FAQSchema'
 import {{ RelatedAreas }} from '@/components/RelatedAreas'
 import {{ AreaContext }} from '@/components/AreaContext'
 import {{ WhyWomenOnly }} from '@/components/WhyWomenOnly'
+import {{ pageUrlMeta }} from '@/lib/seo'
 import type {{ Metadata }} from 'next'
 
 export const metadata: Metadata = {{
-  title: '{MONTH_TAG}{name}の女性向けパーソナルジムおすすめ{n}選！料金比較',
-  description: '{MONTH_TAG}{name}のおすすめ女性向けパーソナルジム{n}選を比較しています。{top3}など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  ...pageUrlMeta('/areas/{slug}/'),
+  title: '{title}',
+  description: '{description}',
   keywords: '女性専用パーソナルジム,{name},{a["pref"]},おすすめ,料金,比較,ダイエット,ボディメイク',
 }}
 
@@ -651,7 +638,7 @@ export default function {comp}() {{
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 {UPDATED}</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              {MONTH_TAG}{name}の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{{gyms.length}}選！料金比較
+              {MONTH_TAG}{name}の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{{gyms.length}}選・料金比較
             </h1>
           </div>
         </section>
@@ -790,6 +777,7 @@ export default function {comp}() {{
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>
+        <IntentGuideLinks />
       </main>
       <RelatedAreas currentSlug="{slug}" />
       <SiteFooter />

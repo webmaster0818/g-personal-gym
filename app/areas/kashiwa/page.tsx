@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kashiwa/'),
-  title: '【2026年7月】柏の女性向けパーソナルジムおすすめ2選！料金比較',
-  description: '【2026年7月】柏のおすすめ女性向けパーソナルジム2選を比較しています。リボーンマイセルフ・UNDEUXの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '【2026年7月】柏の女性向けパーソナルジムおすすめ2選｜料金比較',
+  description: '【2026年7月】柏のおすすめ女性向けパーソナルジム2選を比較しています。リボーンマイセルフ・UNDEUXの料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,柏,千葉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -65,7 +65,7 @@ export default function KashiwaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年7月】柏の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年7月】柏の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
           </div>
         </section>
@@ -134,7 +134,6 @@ export default function KashiwaPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 柏店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）220,000円（入会金22,000円）</span></li>
-              
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY LIFE 柏スタジオ</span><span className="text-brand-muted text-sm">月額制（金額は公式料金ページでご確認ください）</span></li>
             </ul>
           </div>

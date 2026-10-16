@@ -13,7 +13,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shimokitazawa/'),
-  title: '【2026年7月】下北沢の女性向けパーソナルジムおすすめ2選！料金比較',
+  title: '【2026年7月】下北沢の女性向けパーソナルジムおすすめ2選｜料金比較',
   description: '【2026年7月】下北沢のおすすめ女性向けパーソナルジム2選を比較しています。UNDEUX・lotusなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,下北沢,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -66,7 +66,7 @@ export default function ShimokitazawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年7月】下北沢の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年7月】下北沢の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
           </div>
         </section>
@@ -112,7 +112,7 @@ export default function ShimokitazawaPage() {
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別の選び方</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY 下北沢スタジオ</li></ul>
@@ -130,7 +130,6 @@ export default function ShimokitazawaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">下北沢の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 下北沢スタジオ</span><span className="text-brand-muted text-sm">スタンダードプラン月2回 21,300円〜（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">lotus moon studio 下北沢</span><span className="text-brand-muted text-sm">美ボディダイエット加圧コース 初回16回 136,000円（女性専用価格）</span></li>
             </ul>

@@ -13,7 +13,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/roppongi/'),
-  title: '【2026年7月】六本木の女性専用パーソナルジムおすすめ2選！料金比較',
+  title: '【2026年7月】六本木の女性専用パーソナルジムおすすめ2選｜料金比較',
   description: '【2026年4月】六本木のおすすめ女性専用・女性向けパーソナルジム2選を比較しています。料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,六本木,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -70,7 +70,7 @@ export default function RoppongiPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年7月】六本木の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選！料金比較
+              【2026年7月】六本木の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
           </div>
         </section>
