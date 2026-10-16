@@ -237,3 +237,7 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - /ranking/: クレビック（7位）を外して TOP10→TOP9（TOP の「ランキングTOP10」も）、OUTLINE 説明「30店舗以上」→「公式の店舗一覧は2026年10月時点で10店舗」。brands.ts outline officialStores 29→10（2026年10月）。brandStores.json 再生成（outline 24→15）。
 - HTML 差分: 内容が変わったのは20URL＋404。ほか87ページは関連エリアの「上野」リンクが消えるだけ（lastmod は更新しない）。外した店名は HTML では /brands/outline/ の口コミまとめ（立川・町田）のみ残る（b-concept と同じ扱い）。
 - 🆕 **範囲外の追加発見（未変更・判断待ち）**: 当サイト掲載の OUTLINE 秋葉原・藤沢駅前・天王寺・渋谷・中野の5店も公式一覧に無く、店舗ページは 410（akihabara/fujisawa/tennouji/shibuya/nakano）。これを外さないと /brands/outline/ の掲載15店が公式10店より多いまま。品川は残る1店が 24/7 Workout 品川店（公式に無い・10/12 確定）＝実質0店。
+
+### 2026-10-16 クレビック6店＋OUTLINE 404の8店を外す（10/15宣言の既定案を実行） ✅本番反映済み（source dcf7b47 / deploy 3e0256b1）
+- wip/remove-closed-1015（b84b379）を main(14fd20e) に --no-ff マージ（main 側は CLAUDE.md のみで衝突なし）。aggregate-brands.py 再生成は差分なし。N選＝カード数（全101ページ一致）・ランキング TOP9・build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK。外した店名は HTML では /brands/outline/ の口コミまとめ（立川・町田）のみ残る（b-concept と同じ扱い・P2）。
+- 本番確認: /areas/ueno/ と /areas/ueno → /areas/akihabara/ 301・14エリアの title N選が新値・クレビック 0・sitemap 134URL（ueno なし・lastmod 2026-10-16 が20URL）・robots 200。OUTLINE 秋葉原/藤沢/天王寺/渋谷/中野と 24/7 Workout 品川は判断待ちのため未変更。
