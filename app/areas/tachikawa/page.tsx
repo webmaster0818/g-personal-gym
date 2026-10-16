@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/tachikawa/'),
-  title: '【2026年7月】立川の女性専用パーソナルジムおすすめ4選｜料金比較',
-  description: '【2026年4月】立川のおすすめ女性専用パーソナルジム4選を比較しています。ビーコンセプト・リボーンマイセルフ・UNDEUX SUPERBODY LIFEなど人気ジムの料金・口コミ・特徴を掲載しています。',
+  title: '立川の女性専用パーソナルジムおすすめ4選｜料金比較',
+  description: '立川のおすすめ女性専用パーソナルジム4選を比較しています。ビーコンセプト・リボーンマイセルフ・UNDEUX SUPERBODY LIFEなど人気ジムの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,立川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -99,7 +99,7 @@ export default function TachikawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年7月】立川の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
+              立川の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
           </div>
         </section>
@@ -143,7 +143,7 @@ export default function TachikawaPage() {
         </section>
         <section className="py-16 bg-ivory">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">立川の料金相場【2026年4月】</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">立川の料金相場</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3><p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p><p className="text-sm text-brand-muted">都心部より若干リーズナブルです。</p></div>
               <div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">短期コース</h3><p className="text-3xl font-bold text-accent mb-2">9.2万円〜</p><p className="text-sm text-brand-muted">リボーンマイセルフ 8回92,400円〜です。まず試したい方に最適です。</p></div>

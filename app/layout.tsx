@@ -43,7 +43,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://woman-gym.com'),
   title: {
-    default: `女性専用パーソナルジムを料金・エリアで探す【2026年8月】全国${AREA_COUNT}エリア・主要${BRAND_COUNT}ブランドを掲載 | G-PersonalGym`,
+    default: `女性専用パーソナルジムを料金・エリアで探す｜全国${AREA_COUNT}エリア・主要${BRAND_COUNT}ブランドを掲載 | G-PersonalGym`,
     template: '%s | G-PersonalGym',
   },
   description: `女性専用パーソナルジムを、お住まいのエリアと料金から探せます。全国${AREA_COUNT}エリア・主要${BRAND_COUNT}ブランド（ビーコンセプト、リボーンマイセルフ、かたぎり塾ほか）の料金・入会金・体験の有無を独自調査でまとめました。ランキングで比較したい方は「おすすめランキング」をご覧ください。【2026年8月時点】`,

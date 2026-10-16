@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/sapporo/'),
-  title: '【2026年7月】札幌の女性専用パーソナルジムおすすめ4選｜料金比較',
-  description: '【2026年4月】札幌のおすすめ女性専用・女性向けパーソナルジム4選を比較しています。料金・口コミ・特徴を掲載しています。',
+  title: '札幌の女性専用パーソナルジムおすすめ4選｜料金比較',
+  description: '札幌のおすすめ女性専用・女性向けパーソナルジム4選を比較しています。料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,札幌,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -98,7 +98,7 @@ export default function SapporoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年7月】札幌の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
+              札幌の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
           </div>
         </section>
@@ -135,7 +135,7 @@ export default function SapporoPage() {
         </section>
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">札幌の料金相場【2026年4月】</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">札幌の料金相場</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>

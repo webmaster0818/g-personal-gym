@@ -37,7 +37,7 @@ export type BrandInfo = {
   reviewThemes?: ReviewThemes
   /** 表示用の最終更新日（公式・口コミを確認した日）。未設定なら表示しない */
   updated?: string
-  /** title の年月。未設定なら既定（2026年8月＝前回の公式確認） */
+  /** title の年月。公式で再確認したブランドのみ設定（未設定なら月ラベルなし） */
   titleMonth?: string
   /** 当サイト掲載店のうち、公式の店舗一覧に見当たらない店（店名→状況）。店舗一覧と口コミ節で注記する */
   unlistedStores?: { checked: string; stores: Record<string, string> }

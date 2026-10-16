@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kitasenju/'),
-  title: '【2026年7月】北千住の女性専用パーソナルジムおすすめ3選｜料金比較',
-  description: '【2026年4月】北千住のおすすめ女性専用パーソナルジム3選を比較しています。OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を掲載しています。',
+  title: '北千住の女性専用パーソナルジムおすすめ3選｜料金比較',
+  description: '北千住のおすすめ女性専用パーソナルジム3選を比較しています。OUTLINE・Apple GYMなど人気ジムの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,北千住,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -78,7 +78,7 @@ export default function KitasenjuPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-accent text-xs mb-2">更新日 2026年04月29日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              【2026年7月】北千住の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
+              北千住の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
           </div>
         </section>
