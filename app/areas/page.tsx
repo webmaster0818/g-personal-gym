@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 // 地域グルーピング（掲載エリアを見つけやすくする内部リンクハブ）。
 // 未分類のslugは末尾「その他のエリア」に自動集約されるため、取りこぼしは発生しない。
 const REGIONS: { label: string; slugs: string[] }[] = [
-  { label: '東京', slugs: ['shinjuku', 'shibuya', 'ikebukuro', 'ginza', 'roppongi', 'ebisu', 'omotesando', 'daikanyama', 'nakameguro', 'meguro', 'jiyugaoka', 'shinagawa', 'oimachi', 'gotanda', 'kamata', 'ueno', 'akihabara', 'kinshicho', 'kitasenju', 'akabane', 'iidabashi', 'takadanobaba', 'nakano', 'ogikubo', 'kichijoji', 'nerima', 'toyosu', 'sangenjaya', 'shimokitazawa', 'futakotamagawa', 'machida', 'tachikawa', 'hachioji', 'chofu'] },
+  { label: '東京', slugs: ['shinjuku', 'shibuya', 'ikebukuro', 'ginza', 'roppongi', 'ebisu', 'omotesando', 'daikanyama', 'nakameguro', 'meguro', 'jiyugaoka', 'shinagawa', 'oimachi', 'gotanda', 'kamata', 'akihabara', 'kinshicho', 'kitasenju', 'akabane', 'iidabashi', 'takadanobaba', 'nakano', 'ogikubo', 'kichijoji', 'nerima', 'toyosu', 'sangenjaya', 'shimokitazawa', 'futakotamagawa', 'machida', 'tachikawa', 'hachioji', 'chofu'] },
   { label: '神奈川', slugs: ['yokohama', 'kawasaki', 'musashikosugi', 'mizonokuchi', 'fujisawa'] },
   { label: '埼玉・千葉・北関東', slugs: ['omiya', 'urawa', 'kawagoe', 'kawaguchi', 'tokorozawa', 'chiba', 'funabashi', 'ichikawa', 'kashiwa', 'matsudo', 'mito', 'utsunomiya', 'takasaki'] },
   { label: '関西', slugs: ['osaka', 'umeda', 'namba', 'shinsaibashi', 'tennoji', 'kyobashi', 'esaka', 'sakai', 'toyonaka', 'takatsuki', 'hirakata', 'kyoto', 'sannomiya', 'himeji', 'nishinomiya', 'amagasaki', 'nara', 'wakayama'] },

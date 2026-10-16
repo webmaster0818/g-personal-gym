@@ -12,7 +12,6 @@ const allAreas = [
   { name: '代官山', slug: 'daikanyama' },
   { name: '目黒', slug: 'meguro' },
   { name: '五反田', slug: 'gotanda' },
-  { name: '上野', slug: 'ueno' },
   { name: '秋葉原', slug: 'akihabara' },
   { name: '北千住', slug: 'kitasenju' },
   { name: '錦糸町', slug: 'kinshicho' },

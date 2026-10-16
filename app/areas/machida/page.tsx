@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/machida/'),
-  title: '【2026年7月】町田の女性専用パーソナルジムおすすめ4選！料金比較',
-  description: '【2026年4月】町田のおすすめ女性専用パーソナルジム4選を徹底比較。OUTLINE・リボーンマイセルフ・UNDEUX SUPERBODYなど人気ジムの料金・口コミ・特徴を網羅。',
+  title: '【2026年7月】町田の女性専用パーソナルジムおすすめ3選！料金比較',
+  description: '【2026年4月】町田のおすすめ女性専用パーソナルジム3選を徹底比較。リボーンマイセルフ・UNDEUX SUPERBODY・エクササイズコーチなど人気ジムの料金・口コミ・特徴を網羅。',
   keywords: '女性専用パーソナルジム,町田,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'OUTLINE 町田店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '業界初の生涯無料アフターサポート。完全個室・女性専用マシン完備。町田駅から徒歩7分。ベビーサークルもあり子連れでも安心。',
-    access: 'JR「町田駅」徒歩7分',
-    address: '東京都町田市（町田駅徒歩7分）',
-    popularPlan: { name: '16回コース', description: '完全個室マンツーマントレーニング。卒業後も生涯無料でアフターサポート。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'よもぎ蒸し', '高級アミノ酸提供', 'ウェアレンタル無料'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
   {
     name: 'リボーンマイセルフ 町田店',
     officialUrl: 'https://www.shapes-international.co.jp/store/machida/',
@@ -78,16 +64,14 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '町田で女性専用のパーソナルジムはどこがおすすめ？', answer: 'OUTLINE、リボーンマイセルフ、UNDEUX SUPERBODY LIFEが町田で人気。生涯サポートならOUTLINE、女性トレーナー希望ならリボーンマイセルフがおすすめ。' },
+  { question: '町田で女性専用のパーソナルジムはどこがおすすめ？', answer: 'リボーンマイセルフ、UNDEUX SUPERBODY LIFE、エクササイズコーチが町田で人気。女性トレーナー希望ならリボーンマイセルフがおすすめ。' },
   { question: '町田のパーソナルジムの料金相場は？', answer: '町田の2ヶ月コースは約18万〜22万円。月額制ならUNDEUX SUPERBODY LIFEの月額19,800円〜。都心部より安くパーソナルジムに通えるエリアです。' },
   { question: '町田駅から最も近いジムは？', answer: 'UNDEUX SUPERBODY LIFE町田スタジオが徒歩2分で最寄り。リボーンマイセルフは徒歩4分、エクササイズコーチは徒歩5分。' },
-  { question: '子連れで通えるジムは？', answer: 'OUTLINE町田店はベビーサークル完備。' },
-  { question: '体験は無料？', answer: 'OUTLINE・リボーンマイセルフ・エクササイズコーチは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
+  { question: '体験は無料？', answer: 'リボーンマイセルフ・エクササイズコーチは無料カウンセリング。UNDEUX SUPERBODY LIFEは体験レッスンあり。' },
   { question: '月額制で安く通えるジムは？', answer: 'UNDEUX SUPERBODY LIFEは月額19,800円〜（月2回）から始められます。お試し感覚で気軽にスタートできる料金設定です。' },
   { question: '町田は相場より安いって本当？', answer: 'はい、町田は都心部と比べてパーソナルジムの料金が若干安い傾向があります。特に町田駅南口エリアは低価格で通えるジムが集まっています。' },
   { question: '食事指導が充実しているジムは？', answer: 'エクササイズコーチは糖質制限なしの「食べて痩せる」メソッド。リボーンマイセルフも食事指導が充実。' },
   { question: '小田急線と横浜線、どちらの改札が近い？', answer: 'ジムによって異なりますが、多くは小田急町田駅の方が近い傾向。JR横浜線町田駅からも徒歩圏内です。事前にアクセスを確認しましょう。' },
-  { question: 'リバウンド防止のサポートは？', answer: 'OUTLINEの「生涯無料アフターサポート」が最も手厚い。卒業後もずっとサポートが続きます。' },
 ]
 
 export default function MachidaPage() {
@@ -120,11 +104,11 @@ export default function MachidaPage() {
 
         <PriceComparisonTable gyms={gyms} areaName="町田" />
         <section className="py-16 bg-ivory" id="gyms"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">町田のおすすめ女性向けパーソナルジム{gyms.length}選</h2><div className="space-y-8">{gyms.map((gym, index) => (<GymCard key={index} gym={gym} index={index} />))}</div></div></section>
-        <section className="py-16 bg-white"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2><div className="grid grid-cols-1 md:grid-cols-3 gap-8"><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・UNDEUX LIFE（月額19,800円〜）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・リボーンマイセルフ（食事指導充実）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（ベビーサークル完備）</li></ul></div></div></div></section>
+        <section className="py-16 bg-white"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2><div className="grid grid-cols-1 md:grid-cols-2 gap-8"><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX LIFE（月額19,800円〜）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・リボーンマイセルフ（食事指導充実）</li></ul></div></div></div></section>
         <section className="py-16 bg-ivory"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">町田の料金相場【2026年4月】</h2><div className="grid grid-cols-1 md:grid-cols-2 gap-6"><div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3><p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p><p className="text-sm text-brand-muted">都心部より相場が低めのエリア。</p></div><div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">月額制</h3><p className="text-3xl font-bold text-accent mb-2">2万円〜/月</p><p className="text-sm text-brand-muted">UNDEUX LIFE 月額19,800円〜。町田は気軽に始められる価格帯。</p></div></div></div></section>
         <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">町田で選ぶ際の注意点</h2><div className="space-y-6"><div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">JR町田駅と小田急町田駅は離れている</h3><p className="text-brand-muted leading-relaxed">JR横浜線の町田駅と小田急線の町田駅は約400m離れています。通いたいジムがどちらの駅に近いか、事前に確認しましょう。多くのジムは小田急町田駅寄りに集中しています。</p></div><div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">南口エリアは低価格帯のジムが多い</h3><p className="text-brand-muted leading-relaxed">町田駅南口エリアは北口に比べてテナント賃料が低い傾向があり、その分ジムの料金もリーズナブル。コスパ重視なら南口エリアのジムもチェックしましょう。</p></div></div></div></section>
         <section className="py-16 bg-ivory"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">よくある質問</h2><div className="space-y-4">{faqs.map((faq, index) => (<div key={index} className="border border-line rounded-xl overflow-hidden"><details className="group"><summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-accent-tint transition"><h3 className="font-bold text-brand-text pr-4 text-sm">Q{index + 1}. {faq.question}</h3><svg className="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg></summary><div className="px-5 pb-5 text-brand-muted leading-relaxed text-sm">{faq.answer}</div></details></div>))}</div></div></section>
-        <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2><p className="text-brand-muted leading-relaxed mb-4">町田エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p><p className="text-brand-muted leading-relaxed mb-4">生涯サポートならOUTLINE、女性トレーナー希望ならリボーンマイセルフ、月額制ならUNDEUX SUPERBODY LIFEがおすすめです。</p><p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p></div></section>
+        <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2><p className="text-brand-muted leading-relaxed mb-4">町田エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p><p className="text-brand-muted leading-relaxed mb-4">女性トレーナー希望ならリボーンマイセルフ、月額制ならUNDEUX SUPERBODY LIFEがおすすめです。</p><p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンに行ってみてください。</p></div></section>
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white"><div className="max-w-4xl mx-auto px-6 lg:px-8 text-center"><h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2><p className="text-white/80 mb-8">複数のジムを比較して、あなたに合うジムを見つけましょう。</p><Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link></div></section>
         <IntentGuideLinks />
       </main>

@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/namba/'),
-  title: '【2026年7月】難波の女性向けパーソナルジムおすすめ3選！料金比較',
-  description: '【2026年7月】難波のおすすめ女性向けパーソナルジム3選を比較。リボーンマイセルフ・Amazones・OUTLINEなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '【2026年7月】難波の女性向けパーソナルジムおすすめ2選！料金比較',
+  description: '【2026年7月】難波のおすすめ女性向けパーソナルジム2選を比較。リボーンマイセルフ・Amazonesの、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,難波,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -45,25 +45,13 @@ const gyms = [
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '下半身痩せ', '運動習慣'] },
     basicInfo: { hours: '24時間（スタッフ在籍：月・火・木・金・土 11:00〜20:00）', closed: '年中無休', facilities: ['公式サイトでご確認ください'] },
   },
-  {
-    name: 'OUTLINE（アウトライン）なんば・心斎橋店',
-    officialUrl: 'https://www.outline-gym.com/gym/nanba',
-    price: 'フルサポートコース16回 184,800円（税込・入会金0円）',
-    trial: '無料カウンセリングあり',
-    features: ['女性専用', '完全個室', '生涯リバウンドサポート'],
-    description: '女性専用・完全個室のパーソナルジム。生涯リバウンドサポートと遺伝子検査によるオーダーメイドプログラムが特徴です。',
-    access: 'なんば駅徒歩5分／心斎橋駅徒歩5分',
-    options: ['24回264,000円／32回334,400円', 'ペアトレ無料オプション'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
-  },
 ]
 
 const faqs = [
-  { question: '難波で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ なんばスカイオ店、Amazones（アマゾネス）難波本店、OUTLINE（アウトライン）なんば・心斎橋店です（2026年6月調査時点）。' },
-  { question: '難波のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、リボーンマイセルフ なんばスカイオ店は月額プラン 8,360円〜35,200円（月2〜8回・税込、入会金22,000円）。Amazones（アマゾネス）難波本店はフィットネス月額9,900円／パーソナルプラン月額22,000円〜。OUTLINE（アウトライン）なんば・心斎橋店はフルサポートコース16回 184,800円（税込・入会金0円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '難波で女性専用のパーソナルジムはどこ？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ なんばスカイオ店、Amazones（アマゾネス）難波本店です（2026年6月調査時点）。' },
+  { question: '難波のパーソナルジムの料金の目安は？', answer: '公式サイト掲載の料金では、リボーンマイセルフ なんばスカイオ店は月額プラン 8,360円〜35,200円（月2〜8回・税込、入会金22,000円）。Amazones（アマゾネス）難波本店はフィットネス月額9,900円／パーソナルプラン月額22,000円〜。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '難波駅から近いジムは？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ なんばスカイオ店（南海なんば駅直結）、Amazones（アマゾネス）難波本店（JR難波駅徒歩2分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられる？', answer: 'リボーンマイセルフ なんばスカイオ店、Amazones（アマゾネス）難波本店、OUTLINE（アウトライン）なんば・心斎橋店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '体験やカウンセリングは無料で受けられる？', answer: 'リボーンマイセルフ なんばスカイオ店、Amazones（アマゾネス）難波本店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えて相談しましょう。' },
 ]
 
@@ -126,7 +114,7 @@ export default function NambaPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ なんばスカイオ店</li><li className="text-brand-muted">・Amazones（アマゾネス）難波本店</li><li className="text-brand-muted">・OUTLINE（アウトライン）なんば・心斎橋店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ なんばスカイオ店</li><li className="text-brand-muted">・Amazones（アマゾネス）難波本店</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
@@ -134,7 +122,7 @@ export default function NambaPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ なんばスカイオ店</li><li className="text-brand-muted">・OUTLINE（アウトライン）なんば・心斎橋店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ なんばスカイオ店</li></ul>
               </div>
             </div>
           </div>
@@ -147,7 +135,7 @@ export default function NambaPage() {
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ なんばスカイオ店</span><span className="text-brand-muted text-sm">月額プラン 8,360円〜35,200円（月2〜8回・税込、入会金22,000円）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Amazones（アマゾネス）難波本店</span><span className="text-brand-muted text-sm">フィットネス月額9,900円／パーソナルプラン月額22,000円〜</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">OUTLINE（アウトライン）なんば・心斎橋店</span><span className="text-brand-muted text-sm">フルサポートコース16回 184,800円（税込・入会金0円）</span></li>
+              
             </ul>
           </div>
         </section>
