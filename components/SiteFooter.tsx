@@ -67,7 +67,7 @@ export function SiteFooter() {
         <div className="border-t border-white/15 mt-12 pt-8 text-center">
           <p className="text-white/45 text-xs">&copy; 2026 G-PersonalGym. All rights reserved.</p>
           <p className="text-white/35 text-[10px] mt-2">
-            ※掲載情報は2026年4月時点のものです。最新情報は各公式サイトでご確認ください。
+            ※掲載情報は各ページに記載した確認時点のものです。最新情報は各公式サイトでご確認ください。
           </p>
         </div>
       </div>

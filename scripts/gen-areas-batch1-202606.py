@@ -548,7 +548,7 @@ def build_faqs(a):
     if near:
         faqs.append({"question": f"{name}駅から近いジムはどこですか？",
                      "answer": "駅徒歩3分以内・直結では、" + "、".join(near) + "があります。"})
-    free = [g_["name"] for g_ in gyms if ("無料" in g_["trial"] or "0円" in g_["trial"])]
+    free = [g_["name"] for g_ in gyms if ("無料" in g_["trial"] or re.search(r"(?<![0-9,])0円", g_["trial"]))]
     if free:
         faqs.append({"question": "体験やカウンセリングは無料で受けられますか？",
                      "answer": "、".join(free) + "は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。"})

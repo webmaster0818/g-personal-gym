@@ -22,7 +22,7 @@ const gyms = [
   {
     name: '女性専門パーソナルトレーニングジムGROW',
     officialUrl: 'https://www.grow-bodymake.com/',
-    price: '60分×16回＋食事サポート 158,000円（税込・2026年6月キャンペーン時）',
+    price: '60分×16回＋食事サポート 通常211,680円（キャンペーン価格は公式サイトでご確認ください）',
     trial: '無料カウンセリング・体験トレーニングあり（LINE/アプリ予約）',
     features: ['女性専門', '食事サポート付き', '女性トレーナー在籍'],
     description: '鹿児島中央駅徒歩3分の女性専門パーソナルジムです。食事サポート付きの16回コースが中心で、月額制サブスクコースもあります。',
@@ -61,7 +61,7 @@ const gyms = [
 
 const faqs = [
   { question: '鹿児島に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、鹿児島駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
-  { question: '鹿児島のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、女性専門パーソナルトレーニングジムGROWは60分×16回＋食事サポート 158,000円です（税込・2026年6月キャンペーン時）。RITA-STYLE 鹿児島天文館店は月額 49,000円〜です（入会金39,800円・キャンペーンで無料の場合あり）。BELLOパーソナルトレーニングジム 天文館店は45分コース 月4回 20,000円／都度払い 5,500円です（入会金0円・縛りなし）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '鹿児島のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、RITA-STYLE 鹿児島天文館店は月額 49,000円〜です（入会金39,800円・キャンペーンで無料の場合あり）。BELLOパーソナルトレーニングジム 天文館店は45分コース 月4回 20,000円／都度払い 5,500円です（入会金0円・縛りなし）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '鹿児島駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、女性専門パーソナルトレーニングジムGROW（鹿児島中央駅 徒歩3分）、RITA-STYLE 鹿児島天文館店（市電 いづろ通電停 徒歩3分）、BELLOパーソナルトレーニングジム 天文館店（市電 高見馬場電停 徒歩3分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: '女性専門パーソナルトレーニングジムGROW、RITA-STYLE 鹿児島天文館店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '子連れで通えるジムはありますか？', answer: 'RITA-STYLE 鹿児島天文館店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
@@ -142,7 +142,7 @@ export default function KagoshimaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">鹿児島の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">女性専門パーソナルトレーニングジムGROW</span><span className="text-brand-muted text-sm">60分×16回＋食事サポート 158,000円（税込・2026年6月キャンペーン時）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">女性専門パーソナルトレーニングジムGROW</span><span className="text-brand-muted text-sm">60分×16回＋食事サポート 通常211,680円（キャンペーン価格は公式サイトでご確認ください）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">RITA-STYLE 鹿児島天文館店</span><span className="text-brand-muted text-sm">月額 49,000円〜（入会金39,800円・キャンペーンで無料の場合あり）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BELLOパーソナルトレーニングジム 天文館店</span><span className="text-brand-muted text-sm">45分コース 月4回 20,000円／都度払い 5,500円（入会金0円・縛りなし）</span></li>
             </ul>

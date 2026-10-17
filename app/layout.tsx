@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     default: `女性専用パーソナルジムを料金・エリアで探す｜全国${AREA_COUNT}エリア・主要${BRAND_COUNT}ブランドを掲載 | G-PersonalGym`,
     template: '%s | G-PersonalGym',
   },
-  description: `女性専用パーソナルジムを、お住まいのエリアと料金から探せます。全国${AREA_COUNT}エリア・主要${BRAND_COUNT}ブランド（ビーコンセプト、リボーンマイセルフ、かたぎり塾ほか）の料金・入会金・体験の有無を独自調査でまとめました。ランキングで比較したい方は「おすすめランキング」をご覧ください。【2026年8月時点】`,
+  description: `女性専用パーソナルジムを、お住まいのエリアと料金から探せます。全国${AREA_COUNT}エリア・主要${BRAND_COUNT}ブランド（ビーコンセプト、リボーンマイセルフ、かたぎり塾ほか）の料金・入会金・体験の有無を独自調査でまとめました。ランキングで比較したい方は「おすすめランキング」をご覧ください。`,
   keywords: ['女性専用パーソナルジム', 'パーソナルジム', '比較', 'おすすめ', 'ランキング', '料金', '口コミ', '2026'],
   authors: [{ name: 'G-PersonalGym編集部' }],
   // 2026-10-06 url・title・description を外した。固定値だと全135ページの og:url が TOP、og:title が共通になる。
