@@ -278,6 +278,7 @@ export default function Home() {
                 { href: '/articles/josei-gym-data/', label: '独自調査（546ジム）' },
                 { href: '/articles/diet/', label: 'ダイエット目的で選ぶ' },
                 { href: '/articles/bodymake/', label: 'ボディメイクで選ぶ' },
+                { href: '/brands/b-concept/', label: 'ビーコンセプトの口コミ・評判' },
                 { href: '/articles/', label: '記事をすべて見る →' },
               ].map((c) => (
                 <Link
