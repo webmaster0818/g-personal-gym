@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/akihabara/'),
-  title: '秋葉原の女性専用パーソナルジムおすすめ3選｜料金比較',
-  description: '秋葉原のおすすめ女性専用パーソナルジム3選を比較しています。OUTLINE・Bodies・24/7 Workoutなど人気ジムの料金・口コミ・特徴を掲載しています。',
+  title: '秋葉原の女性専用パーソナルジムおすすめ2選｜料金比較',
+  description: '秋葉原のおすすめ女性専用パーソナルジム2選を比較しています。Bodies・24/7 Workoutの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,秋葉原,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'OUTLINE 秋葉原店',
-    officialUrl: 'https://www.outline-gym.com/',
-    price: '16回 184,800円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
-    description: '生涯無料アフターサポートが最大の特徴です。秋葉原駅から徒歩圏内で、完全個室・女性専用マシンを完備しています。コスパ重視の方にも人気のジムです。',
-    access: 'JR「秋葉原駅」徒歩5分',
-    address: '東京都千代田区外神田（秋葉原駅徒歩5分）',
-    popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニングです。卒業後も生涯無料のアフターサポートを受けられます。', price: '16回 184,800円〜（税込）' },
-    options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
-  },
   {
     name: 'Bodies 丸の内店',
     price: '月会費 5,970円〜（税込）',
@@ -63,8 +49,8 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '秋葉原で女性専用のパーソナルジムはありますか？', answer: 'はい、秋葉原エリアにはOUTLINE、Bodiesなどの女性専用ジムがあります。24/7 Workoutも女性専用プランを用意しています。' },
-  { question: '秋葉原のパーソナルジムの料金相場はいくらですか？', answer: '秋葉原エリアの料金はBodies（月5,970円〜）からOUTLINE（184,800円〜）まで幅広い選択肢があります。' },
+  { question: '秋葉原で女性専用のパーソナルジムはありますか？', answer: 'はい、当サイトでは秋葉原エリアの女性専用ジムとしてBodiesを掲載しています。24/7 Workoutも女性専用プランを用意しています。' },
+  { question: '秋葉原のパーソナルジムの料金相場はいくらですか？', answer: '当サイト掲載の料金は、Bodiesが月会費5,970円〜、24/7 Workoutが2ヶ月16回 257,400円〜です（いずれも税込）。最新の料金は各公式サイトでご確認ください。' },
   { question: '秋葉原で深夜まで営業しているジムはどこですか？', answer: '24/7 Workout秋葉原・神田店は深夜24時まで営業しています。' },
   { question: '秋葉原で初心者でも通えるジムはどこですか？', answer: 'Bodiesは1回30分のサーキットトレーニングで、初心者の方に向いています。どのジムもマンツーマン指導なので初心者歓迎です。' },
 ]
@@ -126,7 +112,7 @@ export default function AkihabaraPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">秋葉原エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">コスパと生涯サポートならOUTLINE、手軽に始めるならBodies、本格的にダイエットするなら24/7 Workoutがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">手軽に始めるならBodies、本格的にダイエットするなら24/7 Workoutがおすすめです。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>
