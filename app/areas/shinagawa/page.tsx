@@ -2,43 +2,28 @@ import Link from 'next/link'
 import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
 import { IntentGuideLinks } from '@/components/IntentGuideLinks'
-import { GymCard } from '@/components/GymCard'
-import { PriceComparisonTable } from '@/components/PriceComparisonTable'
 import { FAQSchema } from '@/components/FAQSchema'
 import { RelatedAreas } from '@/components/RelatedAreas'
 import { AreaContext } from '@/components/AreaContext'
-import { WhyWomenOnly } from '@/components/WhyWomenOnly'
 import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 
+// 2026-10-18: 掲載していた24/7 Workout 品川店が公式の東京店舗一覧・予約フォームの店舗リストに無く、店舗ページも404のため掲載を終了。現在の掲載ジムは0件。
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/shinagawa/'),
-  title: '品川の女性専用パーソナルジムおすすめ1選｜料金比較',
-  description: '品川のおすすめ女性専用パーソナルジム1選を比較しています。24/7 Workoutの料金・口コミ・特徴を掲載しています。',
-  keywords: '女性専用パーソナルジム,品川,おすすめ,料金,比較,ダイエット,ボディメイク',
+  title: '品川の女性専用パーソナルジム｜現在の掲載ジムなし',
+  description: '品川エリアには、現在当サイトで掲載している女性向けパーソナルジムはありません。大井町・目黒エリアの掲載ジムをご覧ください。',
+  keywords: '女性専用パーソナルジム,品川,料金,比較',
 }
 
-const gyms = [
-  {
-    name: '24/7 Workout 品川店',
-    price: '2ヶ月16回 257,400円〜（税込）',
-    trial: '無料カウンセリング',
-    features: ['女性専用プランあり', '完全個室', '深夜営業', '3食食べるダイエット', '全額返金保証'],
-    description: '「3食食べて痩せる」がコンセプトの大手パーソナルジムです。深夜24時まで営業しており、品川エリアのビジネスパーソンに人気です。全額返金保証付きで安心です。',
-    access: 'JR「品川駅」徒歩5分',
-    address: '東京都港区港南（品川駅徒歩5分）',
-    popularPlan: { name: '2ヶ月コース', description: '3食食べながら理想の体型を目指します。マンツーマン指導16回です。', price: '2ヶ月16回 257,400円〜（税込）' },
-    options: ['全額返金保証', 'ウェアレンタル無料', '深夜24時まで営業', '食事指導付き'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体力向上', '健康維持'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
-  },
+const nearby = [
+  { slug: 'oimachi', name: '大井町', note: '当サイト掲載 3店' },
+  { slug: 'meguro', name: '目黒', note: '当サイト掲載 2店' },
 ]
 
 const faqs = [
-  { question: '品川で女性専用のパーソナルジムはありますか？', answer: '当サイトで品川エリアに掲載しているのは24/7 Workout 品川店です。' },
-  { question: '品川のパーソナルジムの料金相場はどれくらいですか？', answer: '当サイト掲載の24/7 Workout 品川店は2ヶ月16回 257,400円〜（税込）です。最新の料金は公式サイトでご確認ください。' },
-  { question: '品川駅から近いパーソナルジムはどこですか？', answer: '24/7 Workout（徒歩5分）が品川駅から近いジムです。' },
-  { question: '品川で仕事帰りに通えるジムはどこですか？', answer: '24/7 Workoutは深夜24時まで営業しており、品川で働くビジネスパーソンに最適です。' },
+  { question: '品川で女性専用のパーソナルジムはありますか？', answer: '当サイトでは、現在品川エリアに掲載しているジムはありません。以前掲載していた24/7 Workout 品川店は、2026年10月時点で24/7 Workout公式サイトの東京の店舗一覧に掲載がないため、掲載を終了しました。' },
+  { question: '品川から通いやすい近隣エリアはどこですか？', answer: '当サイトでは大井町・目黒エリアのジムを掲載しています。各エリアのページで料金・アクセスをご確認ください。' },
 ]
 
 export default function ShinagawaPage() {
@@ -49,9 +34,9 @@ export default function ShinagawaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年04月29日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年10月19日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              品川の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
+              品川の女性専用パーソナルジム<br className="hidden md:block" />（現在の掲載ジムなし）
             </h1>
           </div>
         </section>
@@ -68,38 +53,27 @@ export default function ShinagawaPage() {
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
-            <p className="text-brand-muted leading-relaxed mb-6">「品川で女性専用のパーソナルジムを探している」「駅近で仕事帰りに通いやすいジムが知りたい」という方のために、品川エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
-              <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
-              <ul className="space-y-2 text-brand-muted">
-                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>品川で女性専用パーソナルジムを探している</span></li>
-                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>仕事帰りに通いやすいジムが良い</span></li>
-                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>料金を比較して選びたい</span></li>
-                <li className="flex items-start"><span className="text-accent mr-2">✓</span><span>食事指導も受けたい</span></li>
-              </ul>
+              <h2 className="text-lg font-bold text-brand-text mb-4">掲載ジムなし</h2>
+              <p className="text-brand-muted leading-relaxed mb-4">品川エリアには、現在当サイトで掲載している女性向けパーソナルジムはありません。</p>
+              <p className="text-brand-muted leading-relaxed">以前掲載していた24/7 Workout 品川店は、2026年10月時点で24/7 Workout公式サイトの東京の店舗一覧に掲載がないため、掲載を終了しました。公式サイトで店舗を確認できたジムが見つかり次第、本ページに掲載します。</p>
             </div>
           </div>
         </section>
 
         <AreaContext slug="shinagawa" />
 
-        <WhyWomenOnly area="品川" />
-
-        <PriceComparisonTable gyms={gyms} areaName="品川" />
-
-        <section className="py-16 bg-ivory" id="gyms">
-          <div className="max-w-6xl mx-auto px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">品川のおすすめ女性向けパーソナルジム{gyms.length}選</h2>
-            <div className="space-y-8">{gyms.map((gym, index) => (<GymCard key={index} gym={gym} index={index} />))}</div>
-          </div>
-        </section>
-
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-ivory">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
-            <p className="text-brand-muted leading-relaxed mb-4">品川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">掲載ジムの料金・特徴を比較して選んでください。</p>
-            <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">近隣エリアの掲載ジム</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {nearby.map((a) => (
+                <Link key={a.slug} href={`/areas/${a.slug}/`} className="block bg-white rounded-xl p-6 border border-line hover:shadow-lg transition">
+                  <h3 className="font-bold text-brand-text mb-2">{a.name}の女性向けパーソナルジム</h3>
+                  <p className="text-sm text-brand-muted">{a.note}</p>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -124,8 +98,8 @@ export default function ShinagawaPage() {
 
         <section className="py-16 bg-gradient-to-r from-accent to-accent-dark text-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">まずは無料カウンセリングから</h2>
-            <p className="text-white/80 mb-8">複数のジムを比較し、ご自身に合ったジムをお選びください。</p>
+            <h2 className="text-2xl font-bold mb-4">ほかのエリアから探す</h2>
+            <p className="text-white/80 mb-8">通勤・通学の動線上にあるエリアもあわせてご確認ください。</p>
             <Link href="/ranking/" className="inline-block bg-white text-accent px-10 py-4 text-sm font-bold rounded-full hover:bg-accent-tint transition-all">おすすめランキングを見る</Link>
           </div>
         </section>

@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/tennoji/'),
-  title: '天王寺の女性向けパーソナルジムおすすめ3選｜料金比較',
-  description: '天王寺のおすすめ女性向けパーソナルジム3選を比較しています。UNDEUX・OUTLINE・トトヤセなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '天王寺の女性向けパーソナルジムおすすめ2選｜料金比較',
+  description: '天王寺のおすすめ女性向けパーソナルジム2選を比較しています。UNDEUX・トトヤセなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,天王寺,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -33,19 +33,6 @@ const gyms = [
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
   },
   {
-    name: 'OUTLINE（アウトライン）天王寺店',
-    officialUrl: 'https://www.outline-gym.com/gym/tennouji',
-    price: '16回 184,800円（税込・入会金0円）',
-    trial: '体験トレーニング無料・無料カウンセリング',
-    features: ['女性専用', '完全個室', '生涯リバウンドサポート'],
-    description: '女性専用・完全個室のパーソナルジムです。生涯リバウンドサポートと遺伝子検査オーダーメイドプログラムが特徴です。朝7時から23時まで営業しています。',
-    access: '天王寺駅徒歩7分',
-    address: '大阪市天王寺区大道1-2-28 サンプラザ四天王寺802',
-    options: ['24回264,000円／32回334,400円', '学生・モニター15%OFF'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'リバウンド防止'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
-  },
-  {
     name: 'トトヤセ 天王寺店',
     officialUrl: 'https://www.totoyase.com/tennoji/',
     price: '月2回 22,000円〜月8回69,800円（60分・月額、入会金33,000円）',
@@ -61,10 +48,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '天王寺で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 天王寺スタジオ、OUTLINE（アウトライン）天王寺店、トトヤセ 天王寺店です（2026年6月調査時点）。' },
-  { question: '天王寺のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 天王寺スタジオはスタンダードプラン月2回 20,500円〜です（税込）。OUTLINE（アウトライン）天王寺店は16回 184,800円です（税込・入会金0円）。トトヤセ 天王寺店は月2回 22,000円〜月8回69,800円です（60分・月額、入会金33,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '天王寺で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 天王寺スタジオ、トトヤセ 天王寺店です（2026年6月調査時点）。' },
+  { question: '天王寺のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 天王寺スタジオはスタンダードプラン月2回 20,500円〜です（税込）。トトヤセ 天王寺店は月2回 22,000円〜月8回69,800円です（60分・月額、入会金33,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '天王寺駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 天王寺スタジオ（御堂筋線・JR「天王寺駅」徒歩1分）、トトヤセ 天王寺店（JR天王寺駅徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 天王寺スタジオ、OUTLINE（アウトライン）天王寺店、トトヤセ 天王寺店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 天王寺スタジオ、トトヤセ 天王寺店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -124,18 +111,14 @@ export default function TennojiPage() {
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別の選び方</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY 天王寺スタジオ</li><li className="text-brand-muted">・OUTLINE（アウトライン）天王寺店</li><li className="text-brand-muted">・トトヤセ 天王寺店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY 天王寺スタジオ</li><li className="text-brand-muted">・トトヤセ 天王寺店</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY 天王寺スタジオ</li><li className="text-brand-muted">・トトヤセ 天王寺店</li></ul>
-              </div>
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（アウトライン）天王寺店</li></ul>
               </div>
             </div>
           </div>
@@ -147,7 +130,6 @@ export default function TennojiPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 天王寺スタジオ</span><span className="text-brand-muted text-sm">スタンダードプラン月2回 20,500円〜（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">OUTLINE（アウトライン）天王寺店</span><span className="text-brand-muted text-sm">16回 184,800円（税込・入会金0円）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">トトヤセ 天王寺店</span><span className="text-brand-muted text-sm">月2回 22,000円〜月8回69,800円（60分・月額、入会金33,000円）</span></li>
             </ul>
           </div>

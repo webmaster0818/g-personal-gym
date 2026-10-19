@@ -24,7 +24,7 @@ out = defaultdict(list)
 for f in sorted(glob.glob(str(ROOT / "app/areas/*/page.tsx"))):
     area_slug = pathlib.Path(f).parent.name
     src = pathlib.Path(f).read_text()
-    m = re.search(r"title:\s*'【[^】]*】([^のは]+?)の", src)
+    m = re.search(r"title:\s*'(?:【[^】]*】)?([^のは｜]+?)の", src)
     area_name = m.group(1) if m else area_slug
     for blk in re.finditer(r"\{\s*name:\s*'([^']+)'[\s\S]{0,1800}?\n  \},", src):
         b, name = blk.group(0), blk.group(1)
