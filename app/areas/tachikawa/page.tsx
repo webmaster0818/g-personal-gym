@@ -50,13 +50,13 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY LIFE 立川スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    price: '月8回 59,400円〜（税込）',
+    price: 'スタンダードプラン月2回 20,500円〜（税込）',
     trial: '体験レッスンあり',
     features: ['女性専用', '月額制', '継続割あり', 'マンツーマン', '立川駅近'],
-    description: '月額制の女性専用パーソナルジムです。月8回59,400円〜で通え、継続割で長く通うほどお得です。プロのトレーナーがマンツーマンで指導します。',
+    description: '月額制の女性専用パーソナルジムです。月2回 20,500円（税込）から通え、継続割で2ヶ月目から月額が割引されます（最大10%）。プロのトレーナーがマンツーマンで指導します。',
     access: 'JR「立川駅」徒歩4分',
     address: '東京都立川市（立川駅徒歩4分）',
-    popularPlan: { name: '月8回プラン', description: '月額制のマンツーマンパーソナルトレーニングです。1回50分です。', price: '月8回 59,400円〜（税込）' },
+    popularPlan: { name: '月8回プラン', description: '月額制のマンツーマンパーソナルトレーニングです。', price: '月8回 66,800円（終日）／平日9〜18時のDAYプランは58,200円（税込）' },
     options: ['継続割あり', '月2回〜8回から選択', 'ウェアレンタル', 'シャワー完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体型維持', '健康管理'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['トレーニングルーム', 'シャワー', 'ロッカー'] },
@@ -83,7 +83,7 @@ const faqs = [
   { question: '立川駅から最も近いジムはどこですか？', answer: 'ビーコンセプトとUNDEUX SUPERBODY LIFEが徒歩4分です。リボーンマイセルフは徒歩7分です。' },
   { question: '子連れで通えるジムはどこですか？', answer: 'ビーコンセプトには託児所費用の補助制度があります。立川は子育て世帯も多く、対応ジムがあります。' },
   { question: '体験は無料ですか？', answer: 'ビーコンセプト・リボーンマイセルフ・エクササイズコーチは無料カウンセリングです。UNDEUX SUPERBODY LIFEは体験レッスンがあります。' },
-  { question: '月額制で通えるジムはどこですか？', answer: 'UNDEUX SUPERBODY LIFEは月額制で月2回〜8回から選べます。月8回59,400円〜です。継続割で長く通うほどお得になります。' },
+  { question: '月額制で通えるジムはどこですか？', answer: 'UNDEUX SUPERBODY LIFEは月額制で月2回〜8回から選べます。月2回 20,500円〜、月8回は66,800円（平日日中のDAYプランは58,200円・税込）です。継続割で長く通うほどお得になります。' },
   { question: '立川と八王子、どちらがジムの選択肢が多いですか？', answer: '立川のほうが女性専用ジムの選択肢が豊富です。JR中央線・南武線・多摩モノレールが交差するターミナル駅なのでアクセスも良好です。' },
   { question: '食事指導が充実しているジムはどこですか？', answer: 'エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。ビーコンセプトは医師監修の食事指導を行っています。UNDEUX SUPERBODY LIFEもプロの食事アドバイスが受けられます。' },
   { question: '最も安いプランはどれですか？', answer: 'リボーンマイセルフの8回コース（92,400円〜）が最安です。短期間で試したい方におすすめです。月額制ならUNDEUX SUPERBODY LIFEの月2回プランです。' },
@@ -136,7 +136,7 @@ export default function TachikawaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（8回 92,400円〜）</li><li className="text-brand-muted">・ビーコンセプト（16回 199,650円〜）</li></ul></div>
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">月額制で継続</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX LIFE（月8回 59,400円〜）</li><li className="text-brand-muted">・継続割でお得に</li></ul></div>
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">月額制で継続</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX LIFE（月2回 20,500円〜）</li><li className="text-brand-muted">・継続割でお得に</li></ul></div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul></div>
             </div>
           </div>

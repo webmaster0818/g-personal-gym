@@ -24,12 +24,12 @@ const gyms = [
     officialUrl: 'https://www.diet-undeux.jp/',
     price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験レッスン0円',
-    features: ['女性専用', '駅徒歩3分', '宅配食無料', '管理栄養士指導', 'パウダールーム完備'],
-    description: '二子玉川駅徒歩3分の女性専用パーソナルジムです。糖質オフ宅配食プランと管理栄養士の毎食指導の2つから選択可能です。女性ダイエットのプロ集団が在籍しています。',
+    features: ['女性専用', '駅徒歩3分', '初月宅配食30食無料（コミット）', '管理栄養士指導', 'パウダールーム完備'],
+    description: '二子玉川駅徒歩3分の女性専用パーソナルジムです。スタンダードプラン（食事指導と簡易相談）とコミットプラン（栄養士による毎日の食事管理・初月は宅配食30食無料）から選べます。女性ダイエットのプロ集団が在籍しています。',
     access: '東急「二子玉川駅」徒歩3分',
     address: '東京都世田谷区玉川（二子玉川駅徒歩3分）',
     popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
-    options: ['糖質オフ宅配食無料', '管理栄養士の毎食指導', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
+    options: ['コミットプランは初月宅配食30食無料（スタンダードは会員優待価格のオプション）', '管理栄養士の毎食指導', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム'] },
   },
@@ -56,7 +56,7 @@ const faqs = [
   { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。エクササイズコーチは無料カウンセリングです。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので運動経験がなくても安心です。' },
   { question: '二子玉川ライズでのショッピングと両立できますか？', answer: 'ほとんどのジムが二子玉川駅から徒歩5分圏内です。ショッピング前後にトレーニングを組み込めます。ウェアのレンタルがあるジムなら、手ぶらで通えます。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択できます。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは、スタンダードプランで食事指導と簡易相談、コミットプランで栄養士による毎日の食事管理（初月は宅配食30食無料）が受けられます。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。' },
 ]
 
 export default function FutakotamagawaPage() {
@@ -118,7 +118,7 @@ export default function FutakotamagawaPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul>
               </div>
             </div>
           </div>

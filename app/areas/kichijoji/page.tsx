@@ -38,12 +38,12 @@ const gyms = [
     officialUrl: 'https://www.diet-undeux.jp/',
     price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験レッスン0円',
-    features: ['女性専用', '宅配食無料', 'パウダールーム完備', '目的別トレーニング', '手ぶらOK'],
-    description: '女性専用パーソナルジムです。美尻・脚痩せ・産後ダイエットなど目的に合わせたトレーニングが可能です。管理栄養士監修の糖質オフ宅配食20食が追加料金なしで付いています。',
+    features: ['女性専用', '初月宅配食30食無料（コミット）', 'パウダールーム完備', '目的別トレーニング', '手ぶらOK'],
+    description: '女性専用パーソナルジムです。美尻・脚痩せ・産後ダイエットなど目的に合わせたトレーニングが可能です。コミットプランでは初月に宅配食30食が無料で付きます。',
     access: 'JR「吉祥寺駅」徒歩4分',
     address: '東京都武蔵野市吉祥寺（吉祥寺駅徒歩4分）',
     popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
-    options: ['糖質オフ宅配食20食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
+    options: ['コミットプランは初月宅配食30食無料（スタンダードは会員優待価格のオプション）', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '美尻', '脚痩せ', '産後ダイエット'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム'] },
   },
@@ -85,7 +85,7 @@ const faqs = [
   { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。ビーコンセプト、リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので運動経験がなくても安心です。吉祥寺には、アットホームな雰囲気のジムが多くあります。' },
   { question: '吉祥寺は都心のジムと比べてどうですか？', answer: '吉祥寺は都心に比べてやや落ち着いた雰囲気です。料金は都心とほぼ同等ですが、混雑が少なく予約が取りやすい傾向があります。JR中央線で新宿から約15分と好アクセスです。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは宅配食20食が無料です。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。吉祥寺はグルメの街なので食事指導重視がおすすめです。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。吉祥寺はグルメの街なので食事指導重視がおすすめです。' },
   { question: '仕事帰りでも通えますか？', answer: 'ほとんどのジムが22:00まで営業しています。ウェアレンタルやシャワー完備のジムが多いので、仕事帰りでも手ぶらで通えます。' },
 ]
 
@@ -153,7 +153,7 @@ export default function KichijojiPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3>

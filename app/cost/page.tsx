@@ -213,7 +213,7 @@ export default function CostPage() {
               {[
                 { name: 'ウェア・タオルレンタル', desc: 'ほとんどのジムで無料です。手ぶらで通えます。' },
                 { name: '食事指導', desc: '多くのジムでコース料金に含まれています。LINEでの日々のサポートが一般的です。' },
-                { name: 'プロテイン', desc: 'トレーニング後のプロテイン提供があるジムもあります。UNDEUX SUPERBODYは宅配食も無料です。' },
+                { name: 'プロテイン', desc: 'トレーニング後のプロテイン提供があるジムもあります。UNDEUX SUPERBODYはコミットプランの初月に宅配食30食が無料です。' },
                 { name: 'アフターフォロー', desc: 'OUTLINEは生涯無料です。他ジムも1〜3ヶ月のフォローが一般的です。' },
               ].map((item, i) => (
                 <div key={i} className="bg-white border border-line rounded-xl p-5">

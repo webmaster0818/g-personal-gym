@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-  { question: '女性専用パーソナルジムのおすすめはどこですか？', answer: '総合的なバランスではOUTLINE（完全個室・生涯サポート）、下半身痩せならビーコンセプト、食事も任せたいならUNDEUX SUPERBODY（宅配食無料）が人気です。重視する条件（料金・目的・通いやすさ）によって最適なジムは変わるため、気になる2〜3社の無料カウンセリングで比較するのがおすすめです。' },
+  { question: '女性専用パーソナルジムのおすすめはどこですか？', answer: '総合的なバランスではOUTLINE（完全個室・生涯サポート）、下半身痩せならビーコンセプト、食事も任せたいならUNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）が人気です。重視する条件（料金・目的・通いやすさ）によって最適なジムは変わるため、気になる2〜3社の無料カウンセリングで比較するのがおすすめです。' },
   { question: 'ランキングは何を基準に決めていますか？', answer: '「女性向けの環境（女性専用・個室・女性トレーナー）」「料金の分かりやすさ・総額」「サポート（食事指導・アフターフォロー）」「通いやすさ（店舗数・立地）」「実績・口コミ」の5軸を総合して評価しています。料金や店舗情報は各社の公開情報をもとにした目安です。' },
   { question: '安い女性専用パーソナルジムはどこですか？', answer: '月額制ならエクササイズコーチ（月4回12,000円〜）やかたぎり塾（月4回30,800円〜）が始めやすい価格帯です。2ヶ月コースではLastyle（158,400円〜）が比較的リーズナブルです。入会金無料キャンペーンを併用するとさらに抑えられます。' },
   { question: '産後ダイエットに対応したジムはありますか？', answer: 'ビーコンセプト（託児所費用を最大1,000円/回補助）、OUTLINE（全店ベビーサークル完備）、リボーンマイセルフ（産後ダイエットコース）などが産後ママ向けの環境を整えています。産後は体の回復を最優先に、医師の許可を得てから始めてください。' },
@@ -46,7 +46,7 @@ const rankings = [
     name: 'UNDEUX SUPERBODY',
     tagline: '食事管理・宅配食付きの女性専用ジム',
     price: 'スタンダードプラン月2回 月額18,200円〜（税込）／コミットプラン月額79,200円',
-    features: ['女性専用', '食事管理付き', '糖質オフ宅配食無料', 'パウダールーム完備', '全国40店舗以上'],
+    features: ['女性専用', '食事管理付き', 'コミットプランは初月宅配食30食無料（スタンダードは会員優待価格のオプション）', 'パウダールーム完備', '全国40店舗以上'],
     description: '全国40店舗以上展開の女性専用パーソナルジムです。トレーニングに加え、食事管理を組み合わせたダイエットサポートが特徴です（コミットプランは初月に宅配食30食を無料提供）。シャワー・パウダールーム・基礎化粧品を完備しており、仕事帰りにも手ぶらで通えます。料金は月額制で、スタンダードプラン（月2回）は月額18,200円〜、コミットプランは月額79,200円です（2026年10月時点の公式料金表）。',
     points: ['食事管理もお任せしたい方に', '手ぶらで通いたい方に', '月額制プランもあり'],
   },
@@ -182,7 +182,7 @@ export default function RankingPage() {
                 <tbody>
                   <tr className="bg-white"><td className="px-4 py-3 border-b border-line font-medium">1位 OUTLINE</td><td className="px-4 py-3 border-b border-line">完全個室・生涯サポート</td><td className="px-4 py-3 border-b border-line">16回 184,800円〜</td><td className="px-4 py-3 border-b border-line">リバウンド防止・子連れ</td></tr>
                   <tr className="bg-ivory/50"><td className="px-4 py-3 border-b border-line font-medium">2位 ビーコンセプト</td><td className="px-4 py-3 border-b border-line">下半身・脚やせ特化</td><td className="px-4 py-3 border-b border-line">2ヶ月 179,685円〜</td><td className="px-4 py-3 border-b border-line">下半身痩せ・産後</td></tr>
-                  <tr className="bg-white"><td className="px-4 py-3 font-medium">3位 UNDEUX SUPERBODY</td><td className="px-4 py-3">食事管理・宅配食無料</td><td className="px-4 py-3">月額18,200円〜</td><td className="px-4 py-3">食事も任せたい</td></tr>
+                  <tr className="bg-white"><td className="px-4 py-3 font-medium">3位 UNDEUX SUPERBODY</td><td className="px-4 py-3">食事管理・初月宅配食30食無料（コミット）</td><td className="px-4 py-3">月額18,200円〜</td><td className="px-4 py-3">食事も任せたい</td></tr>
                 </tbody>
               </table>
             </div>
