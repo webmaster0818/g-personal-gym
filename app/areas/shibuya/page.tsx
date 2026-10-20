@@ -24,12 +24,12 @@ const gyms = [
     officialUrl: 'https://www.diet-undeux.jp/',
     price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験レッスン0円',
-    features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '渋谷駅近'],
-    description: '全国40店舗以上展開の女性専用パーソナルジムです。トレーニングに加え糖質オフ宅配食を無料提供する総合的なダイエットサポートが特徴です。シャワー・パウダールーム・基礎化粧品を完備しており、手ぶらで通えます。渋谷駅から好アクセスです。',
+    features: ['女性専用', '食事管理付き', '初月宅配食30食無料（コミット）', 'パウダールーム完備', '渋谷駅近'],
+    description: '全国40店舗以上展開の女性専用パーソナルジムです。トレーニングに加え、栄養士による食事管理を組み合わせたダイエットサポートが特徴です（コミットプランは初月に宅配食30食を無料提供）。シャワー・パウダールーム・基礎化粧品を完備しており、手ぶらで通えます。渋谷駅から好アクセスです。',
     access: 'JR「渋谷駅」徒歩5分',
     address: '東京都渋谷区（渋谷駅徒歩5分）',
     popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
-    options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
+    options: ['コミットプランは初月宅配食30食無料（スタンダードは会員優待価格のオプション）', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
   },
@@ -41,7 +41,7 @@ const faqs = [
   { question: '渋谷駅から近いパーソナルジムはどこですか？', answer: 'UNDEUX SUPERBODY 渋谷スタジオは渋谷駅から徒歩5分です。' },
   { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験0円です。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは糖質オフ宅配食を無料で提供しています。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。' },
 ]
 
 export default function ShibuyaPage() {
@@ -103,7 +103,7 @@ export default function ShibuyaPage() {
             <div className="grid grid-cols-1 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li></ul>
               </div>
             </div>
           </div>

@@ -22,12 +22,12 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 武蔵小杉スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/studio/musashikosugi/',
-    price: '月4回 30,300円〜（税込）',
+    price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '無料体験あり（0円）',
     features: ['女性専用', '女性トレーナー在籍', 'ピラティス対応', '手ぶらOK', '食事相談無料'],
     description: '女性専用パーソナルジムです。ダイエット・ボディメイク・ピラティスに対応し、食事相談は無料です。手ぶらで通えます。',
     access: '各線「武蔵小杉駅」徒歩1分',
-    popularPlan: { name: 'スタンダードプラン', description: '月額制のマンツーマントレーニングです。', price: '月2回21,300円／月4回30,300円〜／月8回60,600円〜（税込）' },
+    popularPlan: { name: 'スタンダードプラン', description: '月額制のマンツーマントレーニングです。', price: '月2回21,300円／月4回34,800円（平日9〜18時のDAYは30,300円）／月8回69,600円（DAYは60,600円）（税込）' },
     options: ['コミットプラン月6回79,200円', 'ウェア・シューズ・タオル無料レンタル'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'ピラティス'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
@@ -71,7 +71,7 @@ const gyms = [
 
 const faqs = [
   { question: '武蔵小杉で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 武蔵小杉スタジオ、ファディー（FURDI）武蔵小杉医大通り店です（2026年6月調査時点）。' },
-  { question: '武蔵小杉のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 武蔵小杉スタジオは月4回 30,300円〜です（税込）。ファディー（FURDI）武蔵小杉医大通り店は月額8,778円です（税込・通い放題）。かたぎり塾 武蔵小杉店は月4回 33,000円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '武蔵小杉のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 武蔵小杉スタジオはスタンダードプラン月2回 21,300円〜です（税込）。ファディー（FURDI）武蔵小杉医大通り店は月額8,778円です（税込・通い放題）。かたぎり塾 武蔵小杉店は月4回 33,000円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '武蔵小杉駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 武蔵小杉スタジオ（各線「武蔵小杉駅」徒歩1分）、ファディー（FURDI）武蔵小杉医大通り店（JR南武線 武蔵小杉駅徒歩5分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 武蔵小杉スタジオ、ファディー（FURDI）武蔵小杉医大通り店、かたぎり塾 武蔵小杉店、BEYOND 武蔵小杉店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '子連れで通えるジムはありますか？', answer: 'かたぎり塾 武蔵小杉店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
@@ -156,7 +156,7 @@ export default function MusashikosugiPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">武蔵小杉の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 武蔵小杉スタジオ</span><span className="text-brand-muted text-sm">月4回 30,300円〜（税込）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 武蔵小杉スタジオ</span><span className="text-brand-muted text-sm">スタンダードプラン月2回 21,300円〜（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ファディー（FURDI）武蔵小杉医大通り店</span><span className="text-brand-muted text-sm">月額8,778円（税込・通い放題）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">かたぎり塾 武蔵小杉店</span><span className="text-brand-muted text-sm">月4回 33,000円（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 武蔵小杉店</span><span className="text-brand-muted text-sm">料金は公式サイトでご確認ください（分割で月々4,300円〜・入会金無料）</span></li>

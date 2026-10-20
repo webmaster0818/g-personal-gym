@@ -24,12 +24,12 @@ const gyms = [
     officialUrl: 'https://www.diet-undeux.jp/',
     price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験レッスン0円',
-    features: ['女性専用', '駅徒歩1分', '宅配食無料', '管理栄養士監修', '目標達成率96%'],
-    description: '自由が丘駅徒歩1分の好立地です。集中コース終了後の目標体重達成率96%を誇る女性専用パーソナルジムです。管理栄養士監修の糖質オフ宅配食20食が追加料金なしで付きます。',
+    features: ['女性専用', '駅徒歩1分', '初月宅配食30食無料（コミット）', '管理栄養士監修', '目標達成率96%'],
+    description: '自由が丘駅徒歩1分の好立地です。集中コース終了後の目標体重達成率96%を誇る女性専用パーソナルジムです。コミットプランでは初月に宅配食30食が無料で付きます。',
     access: '東急「自由が丘駅」徒歩1分',
     address: '東京都目黒区自由が丘（自由が丘駅徒歩1分）',
     popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
-    options: ['糖質オフ宅配食20食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
+    options: ['コミットプランは初月宅配食30食無料（スタンダードは会員優待価格のオプション）', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
   },
@@ -84,7 +84,7 @@ const faqs = [
   { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施しています。NICOも体験レッスンがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても安心です。自由が丘にはアットホームな雰囲気のジムが多く、初めての方も通いやすい環境です。' },
   { question: '自由が丘はどんな雰囲気のエリアですか？', answer: '自由が丘はおしゃれなカフェやスイーツ店が並ぶ落ち着いた街です。30〜40代の女性に人気のエリアで、トレーニング前後にカフェでリフレッシュするのもおすすめです。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは管理栄養士監修の宅配食20食が無料です。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。リボーンマイセルフも食事指導が充実しています。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。リボーンマイセルフも食事指導が充実しています。' },
   { question: 'ピラティスも受けたい場合はどうすればよいですか？', answer: 'NICOは加圧トレーニングとピラティスを組み合わせたプログラムを提供しています。筋トレとピラティスの両方を受けたい方におすすめです。' },
   { question: 'リバウンド防止のサポートがあるジムはどこですか？', answer: 'エクササイズコーチは食習慣の改善を重視しておりリバウンドしにくい体質づくりをサポートします。' },
 ]
@@ -157,7 +157,7 @@ export default function JiyugaokaPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・リボーンマイセルフ（食事指導充実）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・リボーンマイセルフ（食事指導充実）</li></ul>
               </div>
             </div>
           </div>

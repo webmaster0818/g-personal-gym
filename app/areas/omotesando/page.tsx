@@ -24,12 +24,12 @@ const gyms = [
     officialUrl: 'https://www.diet-undeux.jp/',
     price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験レッスン0円',
-    features: ['女性専用', '駅徒歩1分', '宅配食無料', 'チーム担当制', 'パウダールーム完備'],
-    description: '表参道駅徒歩1分の最高立地です。トレーナーと管理栄養士のチーム担当制で総合的にサポートしています。宅配食と管理栄養士による毎食指導の2つのプランから選択可能です。',
+    features: ['女性専用', '駅徒歩1分', '初月宅配食30食無料（コミット）', 'チーム担当制', 'パウダールーム完備'],
+    description: '表参道駅徒歩1分の最高立地です。トレーナーと管理栄養士のチーム担当制で総合的にサポートしています。スタンダードプラン（食事指導と簡易相談）とコミットプラン（栄養士による毎日の食事管理・初月は宅配食30食無料）から選べます。',
     access: '東京メトロ「表参道駅」徒歩1分',
     address: '東京都港区南青山（表参道駅徒歩1分）',
     popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
-    options: ['糖質オフ宅配食無料', '管理栄養士の毎食指導', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
+    options: ['コミットプランは初月宅配食30食無料（スタンダードは会員優待価格のオプション）', '管理栄養士の毎食指導', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', 'ボディメイク', '美容'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
   },
@@ -84,7 +84,7 @@ const faqs = [
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。AGLAIAは会員の80%がトレーニング未経験者で、特に初心者フレンドリーです。' },
   { question: '表参道と青山のジムは同じエリアですか？', answer: '表参道駅は港区南青山に位置しており、「表参道」「青山」は基本的に同じエリアです。ジムの所在地は「南青山」となっている場合が多いものの、いずれも表参道駅から徒歩圏内です。' },
   { question: 'バストアップしながらダイエットできるジムはどこですか？', answer: 'MMM（トリプルエム）の「バストアッププラン」は、バストを維持しつつ余分な脂肪だけを落とすことが可能です。他にはない独自のプランです。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは宅配食と管理栄養士の毎食指導の2プランから選択可能です。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドが好評です。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは、スタンダードプランで食事指導と簡易相談、コミットプランで栄養士による毎日の食事管理（初月は宅配食30食無料）が受けられます。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドが好評です。' },
 ]
 
 export default function OmotesandoPage() {
@@ -155,7 +155,7 @@ export default function OmotesandoPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul>
               </div>
             </div>
           </div>

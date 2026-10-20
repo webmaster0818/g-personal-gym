@@ -24,12 +24,12 @@ const gyms = [
     officialUrl: 'https://www.diet-undeux.jp/',
     price: 'スタンダードプラン月2回 20,500円〜（税込）',
     trial: '体験レッスン0円',
-    features: ['女性専用', '川崎駅すぐ', '宅配食無料', 'パウダールーム完備', '手ぶらOK'],
-    description: '川崎駅すぐの女性専用パーソナルジムです。糖質オフ宅配食を無料で提供しています。シャワー・パウダールーム・基礎化粧品を完備しており、手ぶらで通えます。女性ダイエットのプロが在籍しています。',
+    features: ['女性専用', '川崎駅すぐ', '初月宅配食30食無料（コミット）', 'パウダールーム完備', '手ぶらOK'],
+    description: '川崎駅すぐの女性専用パーソナルジムです。コミットプランでは初月に宅配食30食を無料で提供しています。シャワー・パウダールーム・基礎化粧品を完備しており、手ぶらで通えます。女性ダイエットのプロが在籍しています。',
     access: 'JR「川崎駅」徒歩3分',
     address: '神奈川県川崎市川崎区（川崎駅徒歩3分）',
     popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
-    options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
+    options: ['コミットプランは初月宅配食30食無料（スタンダードは会員優待価格のオプション）', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム'] },
   },
@@ -70,7 +70,7 @@ const faqs = [
   { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。リボーンマイセルフ・エクササイズコーチは無料カウンセリングです。' },
   { question: '川崎と横浜、どちらがおすすめですか？', answer: '川崎は横浜に比べてエリアがコンパクトで、駅近のジムが多いのが特長です。横浜は選択肢が多い一方、川崎はアクセスのしやすさに優れる傾向があります。通勤ルートに合わせて選ぶのがおすすめです。' },
   { question: '京急川崎駅からも通えますか？', answer: 'はい、多くのジムがJR川崎駅と京急川崎駅の間に位置しています。どちらの駅からもアクセス可能です。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは宅配食無料です。エクササイズコーチは「食べて痩せる」メソッドです。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。エクササイズコーチは「食べて痩せる」メソッドです。' },
   { question: '仕事帰りに通いやすいジムはどこですか？', answer: 'ほとんどのジムが22:00まで営業しています。川崎駅はJR・京急の主要ターミナルなので、品川・横浜方面からの帰宅途中にも立ち寄りやすい立地です。' },
 ]
 
@@ -89,7 +89,7 @@ export default function KawasakiPage() {
 
         <PriceComparisonTable gyms={gyms} areaName="川崎" />
         <section className="py-16 bg-ivory" id="gyms"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">川崎のおすすめ女性向けパーソナルジム{gyms.length}選</h2><div className="space-y-8">{gyms.map((gym, index) => (<GymCard key={index} gym={gym} index={index} />))}</div></div></section>
-        <section className="py-16 bg-white"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2><div className="grid grid-cols-1 md:grid-cols-2 gap-8"><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（宅配食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul></div></div></div></section>
+        <section className="py-16 bg-white"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2><div className="grid grid-cols-1 md:grid-cols-2 gap-8"><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul></div></div></div></section>
         <section className="py-16 bg-ivory"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">川崎の料金相場</h2><div className="grid grid-cols-1 md:grid-cols-2 gap-6"><div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3><p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p><p className="text-sm text-brand-muted">横浜と同等の価格帯です。</p></div><div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">入会金</h3><p className="text-3xl font-bold text-accent mb-2">0〜5万円</p><p className="text-sm text-brand-muted">キャンペーンで入会金が無料になる場合もあります。体験時にご確認ください。</p></div></div></div></section>
         <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">川崎で選ぶ際の注意点</h2><div className="space-y-6"><div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">JR川崎駅と京急川崎駅は徒歩5分離れている</h3><p className="text-brand-muted leading-relaxed">JR川崎駅と京急川崎駅は約400m離れています。通いたいジムがどちらの駅に近いか事前にご確認ください。多くのジムはJR川崎駅西口〜ラゾーナ方面に集中しています。</p></div><div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">品川・横浜の中間で通勤途中に最適</h3><p className="text-brand-muted leading-relaxed">川崎はJR東海道線・京急本線で品川と横浜の中間に位置です。通勤途中に立ち寄れるため、仕事帰りにジムに通いたい方には最適の立地です。</p></div></div></div></section>
         <section className="py-16 bg-ivory"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">よくある質問</h2><div className="space-y-4">{faqs.map((faq, index) => (<div key={index} className="border border-line rounded-xl overflow-hidden"><details className="group"><summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-accent-tint transition"><h3 className="font-bold text-brand-text pr-4 text-sm">Q{index + 1}. {faq.question}</h3><svg className="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg></summary><div className="px-5 pb-5 text-brand-muted leading-relaxed text-sm">{faq.answer}</div></details></div>))}</div></div></section>
