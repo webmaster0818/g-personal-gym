@@ -35,7 +35,7 @@ const gyms = [
   {
     name: 'Paw women\'s fitness 富山店',
     officialUrl: 'https://paw-fit.jp/toyama/lp/',
-    price: 'デイタイム月6,380円／24時間レギュラー月9,680円／パーソナル1回5,500円（税込）',
+    price: 'デイタイム月6,380円／24時間レギュラー月9,680円（2026年10月20日時点で公式はキャンセル待ち）／パーソナル1回5,500円（税込）',
     trial: 'パーソナルの各コースに初回カウンセリング（15〜20分）付き（体験の有無は公式サイトでご確認ください）',
     features: ['女性専用', '24時間営業', '完全個室ピラティスルーム', '無料駐車場'],
     description: '富山初の女性専用24時間ジムです。月額制のジム利用に加え、パーソナルトレーニング（1回5,500円〜）と完全個室のピラティスルームがあります。',
@@ -71,7 +71,7 @@ const gyms = [
 
 const faqs = [
   { question: '富山で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Paw women\'s fitness 富山店、subrina（サブリナ）です（2026年6月調査時点）。' },
-  { question: '富山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BEYOND 富山店は回数券10回 102,300円〜（税込）／コース終了後の継続プラン マンスリー月2回 17,600円〜です（税込）。Paw women\'s fitness 富山店はデイタイム月6,380円／24時間レギュラー月9,680円／パーソナル1回5,500円です（税込）。ゆめたかトレーニングジムは2ヶ月ダイエット全16回 48,000円／パーソナル15分3,850円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '富山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BEYOND 富山店は回数券10回 102,300円〜（税込）／コース終了後の継続プラン マンスリー月2回 17,600円〜です（税込）。Paw women\'s fitness 富山店はデイタイム月6,380円／24時間レギュラー月9,680円（2026年10月20日時点で公式はキャンセル待ち）／パーソナル1回5,500円です（税込）。ゆめたかトレーニングジムは2ヶ月ダイエット全16回 48,000円／パーソナル15分3,850円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'BEYOND 富山店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
@@ -158,7 +158,7 @@ export default function ToyamaPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 富山店</span><span className="text-brand-muted text-sm">回数券10回 102,300円〜（税込）／コース終了後の継続プラン マンスリー月2回 17,600円〜（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Paw women's fitness 富山店</span><span className="text-brand-muted text-sm">デイタイム月6,380円／24時間レギュラー月9,680円／パーソナル1回5,500円（税込）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Paw women's fitness 富山店</span><span className="text-brand-muted text-sm">デイタイム月6,380円／24時間レギュラー月9,680円（2026年10月20日時点で公式はキャンセル待ち）／パーソナル1回5,500円（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">subrina（サブリナ）</span><span className="text-brand-muted text-sm">料金は公式サイトでご確認ください</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ゆめたかトレーニングジム</span><span className="text-brand-muted text-sm">2ヶ月ダイエット全16回 48,000円／パーソナル15分3,850円〜</span></li>
             </ul>

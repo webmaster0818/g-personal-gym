@@ -241,7 +241,7 @@ export default function CostPage() {
                 <li className="flex items-start"><span className="text-accent mr-2 font-bold">1.</span><span><strong>入会金無料キャンペーンを狙う</strong> - 多くのジムが定期的に入会金無料キャンペーンを実施しています。</span></li>
                 <li className="flex items-start"><span className="text-accent mr-2 font-bold">2.</span><span><strong>モニター割引を活用</strong> - ビフォーアフター写真の提供で割引になるケースがあります。</span></li>
                 <li className="flex items-start"><span className="text-accent mr-2 font-bold">3.</span><span><strong>友達紹介割引</strong> - 紹介で双方にキャッシュバックがあるジムもあります。</span></li>
-                <li className="flex items-start"><span className="text-accent mr-2 font-bold">4.</span><span><strong>分割払いの活用</strong> - ビーコンセプトは月々5,545円〜の分割払いに対応しています。</span></li>
+                <li className="flex items-start"><span className="text-accent mr-2 font-bold">4.</span><span><strong>分割払いの活用</strong> - ビーコンセプトは月々4,991円〜の分割払いに対応しています。</span></li>
                 <li className="flex items-start"><span className="text-accent mr-2 font-bold">5.</span><span><strong>月額制ジムから始める</strong> - いきなり高額コースが不安な方は月額制のジムから試すのもおすすめです。</span></li>
               </ul>
             </div>
