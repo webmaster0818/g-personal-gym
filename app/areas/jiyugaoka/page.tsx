@@ -22,13 +22,13 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 自由が丘スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    price: '2ヶ月16回 220,000円〜（税込）',
+    price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '駅徒歩1分', '宅配食無料', '管理栄養士監修', '目標達成率96%'],
     description: '自由が丘駅徒歩1分の好立地です。集中コース終了後の目標体重達成率96%を誇る女性専用パーソナルジムです。管理栄養士監修の糖質オフ宅配食20食が追加料金なしで付きます。',
     access: '東急「自由が丘駅」徒歩1分',
     address: '東京都目黒区自由が丘（自由が丘駅徒歩1分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
     options: ['糖質オフ宅配食20食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
@@ -170,7 +170,7 @@ export default function JiyugaokaPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">UNDEUX 220,000円〜が最高です。都心より若干落ち着いた価格帯です。</p>
+                <p className="text-sm text-brand-muted">UNDEUXは月額制で、スタンダードプラン月2回 21,300円〜（税込）です。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>

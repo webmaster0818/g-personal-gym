@@ -45,9 +45,9 @@ const rankings = [
     rank: 3,
     name: 'UNDEUX SUPERBODY',
     tagline: '食事管理・宅配食付きの女性専用ジム',
-    price: '2ヶ月16回 220,000円〜（税込）',
+    price: 'スタンダードプラン月2回 月額18,200円〜（税込）／コミットプラン月額79,200円',
     features: ['女性専用', '食事管理付き', '糖質オフ宅配食無料', 'パウダールーム完備', '全国40店舗以上'],
-    description: '全国40店舗以上展開の女性専用パーソナルジムです。トレーニングに加え、高品質な糖質オフの宅配食を無料提供する総合的なダイエットサポートが特徴です。シャワー・パウダールーム・基礎化粧品を完備しており、仕事帰りにも手ぶらで通えます。月額制のLIFEプランは月17,600円〜です。',
+    description: '全国40店舗以上展開の女性専用パーソナルジムです。トレーニングに加え、食事管理を組み合わせたダイエットサポートが特徴です（コミットプランは初月に宅配食30食を無料提供）。シャワー・パウダールーム・基礎化粧品を完備しており、仕事帰りにも手ぶらで通えます。料金は月額制で、スタンダードプラン（月2回）は月額18,200円〜、コミットプランは月額79,200円です（2026年10月時点の公式料金表）。',
     points: ['食事管理もお任せしたい方に', '手ぶらで通いたい方に', '月額制プランもあり'],
   },
   {
@@ -90,7 +90,7 @@ const rankings = [
     rank: 8,
     name: 'BEYOND（ビヨンド）',
     tagline: 'コンテスト入賞者多数の高品質ジム',
-    price: '16回 281,600円〜（税込）',
+    price: '回数券10回 102,300円〜／ライフプランニング16回 290,400円（税込）',
     features: ['ハイクオリティ', 'コンテスト入賞トレーナー', '完全個室', '食事指導あり', '全国展開'],
     description: '倍率50倍以上の厳しい選考を突破したトレーナーのみが在籍しています。全トレーナーがフィジーク大会やボディコンテストの受賞経験を持つハイクオリティなパーソナルジムです。女性利用者も多く、本格的なボディメイクを目指す方に人気です。',
     points: ['トレーナーの質にこだわりたい方に', '本格的なボディメイクに', '全国に店舗あり'],
@@ -182,7 +182,7 @@ export default function RankingPage() {
                 <tbody>
                   <tr className="bg-white"><td className="px-4 py-3 border-b border-line font-medium">1位 OUTLINE</td><td className="px-4 py-3 border-b border-line">完全個室・生涯サポート</td><td className="px-4 py-3 border-b border-line">16回 184,800円〜</td><td className="px-4 py-3 border-b border-line">リバウンド防止・子連れ</td></tr>
                   <tr className="bg-ivory/50"><td className="px-4 py-3 border-b border-line font-medium">2位 ビーコンセプト</td><td className="px-4 py-3 border-b border-line">下半身・脚やせ特化</td><td className="px-4 py-3 border-b border-line">2ヶ月 179,685円〜</td><td className="px-4 py-3 border-b border-line">下半身痩せ・産後</td></tr>
-                  <tr className="bg-white"><td className="px-4 py-3 font-medium">3位 UNDEUX SUPERBODY</td><td className="px-4 py-3">食事管理・宅配食無料</td><td className="px-4 py-3">2ヶ月 220,000円〜</td><td className="px-4 py-3">食事も任せたい</td></tr>
+                  <tr className="bg-white"><td className="px-4 py-3 font-medium">3位 UNDEUX SUPERBODY</td><td className="px-4 py-3">食事管理・宅配食無料</td><td className="px-4 py-3">月額18,200円〜</td><td className="px-4 py-3">食事も任せたい</td></tr>
                 </tbody>
               </table>
             </div>

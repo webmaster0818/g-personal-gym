@@ -22,13 +22,13 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 渋谷スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    price: '2ヶ月16回 220,000円〜（税込）',
+    price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '宅配食無料', 'パウダールーム完備', '渋谷駅近'],
     description: '全国40店舗以上展開の女性専用パーソナルジムです。トレーニングに加え糖質オフ宅配食を無料提供する総合的なダイエットサポートが特徴です。シャワー・パウダールーム・基礎化粧品を完備しており、手ぶらで通えます。渋谷駅から好アクセスです。',
     access: 'JR「渋谷駅」徒歩5分',
     address: '東京都渋谷区（渋谷駅徒歩5分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
     options: ['糖質オフ宅配食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備', '月額制LIFEプランあり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム', '基礎化粧品'] },
@@ -51,7 +51,7 @@ const gyms = [
 
 const faqs = [
   { question: '渋谷で女性専用のパーソナルジムはどこがおすすめですか？', answer: '当サイトでは渋谷エリアのジムとしてUNDEUX SUPERBODY、エクササイズコーチを掲載しています。食事管理重視ならUNDEUX、短時間で通いたい場合はエクササイズコーチが候補です。' },
-  { question: '渋谷のパーソナルジムの料金相場はいくらですか？', answer: '当サイト掲載では、2ヶ月コースはUNDEUX SUPERBODYの220,000円〜（16回・税込）です。月額制なら月12,000円〜30,800円程度です。エクササイズコーチは月4回12,000円〜と最安クラスです。' },
+  { question: '渋谷のパーソナルジムの料金相場はいくらですか？', answer: '当サイト掲載では、UNDEUX SUPERBODYは月額制で、スタンダードプラン月2回 21,300円〜（税込）、コミットプラン月額79,200円です。月額制なら月12,000円〜30,800円程度です。エクササイズコーチは月4回12,000円〜と最安クラスです。' },
   { question: '渋谷駅から近いパーソナルジムはどこですか？', answer: 'エクササイズコーチ渋谷店（徒歩3分）、UNDEUX SUPERBODY（徒歩5分）が渋谷駅から特に近いジムです。' },
   { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験0円、エクササイズコーチも無料体験があります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
@@ -134,9 +134,9 @@ export default function ShibuyaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">渋谷の料金相場</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-line">
-                <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
-                <p className="text-3xl font-bold text-accent mb-2">22万円〜</p>
-                <p className="text-sm text-brand-muted">当サイト掲載ではUNDEUX 220,000円〜です（16回・税込）。</p>
+                <h3 className="font-bold text-brand-text mb-3">集中プラン（月額制）</h3>
+                <p className="text-3xl font-bold text-accent mb-2">79,200円/月</p>
+                <p className="text-sm text-brand-muted">UNDEUX SUPERBODYのコミットプラン（トレーニング月6回＋毎日の食事管理・全店共通価格）です。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
