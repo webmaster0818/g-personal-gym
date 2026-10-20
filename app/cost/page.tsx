@@ -102,7 +102,6 @@ export default function CostPage() {
                   <li>・ビーコンセプト: 179,685円〜</li>
                   <li>・OUTLINE: 184,800円〜</li>
                   <li>・Bodyke: 215,600円〜</li>
-                  <li>・UNDEUX: 220,000円〜</li>
                 </ul>
               </div>
               <div className="bg-ivory border border-line rounded-xl p-6">

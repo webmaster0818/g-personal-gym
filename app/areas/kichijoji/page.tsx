@@ -36,13 +36,13 @@ const gyms = [
   {
     name: 'UNDEUX SUPERBODY 吉祥寺スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/',
-    price: '2ヶ月16回 220,000円〜（税込）',
+    price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '宅配食無料', 'パウダールーム完備', '目的別トレーニング', '手ぶらOK'],
     description: '女性専用パーソナルジムです。美尻・脚痩せ・産後ダイエットなど目的に合わせたトレーニングが可能です。管理栄養士監修の糖質オフ宅配食20食が追加料金なしで付いています。',
     access: 'JR「吉祥寺駅」徒歩4分',
     address: '東京都武蔵野市吉祥寺（吉祥寺駅徒歩4分）',
-    popularPlan: { name: '2ヶ月集中コース', description: 'マンツーマントレーニング16回＋食事指導＋宅配食の総合サポートプランです。', price: '2ヶ月16回 220,000円〜（税込）' },
+    popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
     options: ['糖質オフ宅配食20食無料', 'ウェア・タオルレンタル無料', 'シャワー・パウダールーム完備', '基礎化粧品完備'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '美尻', '脚痩せ', '産後ダイエット'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム'] },
@@ -170,7 +170,7 @@ export default function KichijojiPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安です。UNDEUX 220,000円〜が最高です。都心部とほぼ同等の価格帯です。</p>
+                <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安です。UNDEUXは月額制で、スタンダードプラン月2回 21,300円〜（税込）です。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">入会金</h3>
