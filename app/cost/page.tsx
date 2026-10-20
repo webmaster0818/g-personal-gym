@@ -110,9 +110,8 @@ export default function CostPage() {
                 <p className="text-ink-faint text-xs mb-4">月4〜8回</p>
                 <ul className="space-y-2 text-sm text-ink-soft">
                   <li>・エクササイズコーチ: 12,000円〜/月4回</li>
-                  <li>・UNDEUX LIFE: 17,600円〜/月</li>
                   <li>・かたぎり塾: 30,800円〜/月4回</li>
-                  <li>・UNDEUX: 59,400円〜/月8回</li>
+                  <li>・UNDEUX: 18,200円〜/月2回</li>
                 </ul>
               </div>
               <div className="bg-ivory border border-line rounded-xl p-6">
