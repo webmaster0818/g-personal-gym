@@ -312,3 +312,9 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - ⚠️ deploy 6474050d は Cloudflare Pages が push を拾わず（15分 check-run なし）→空コミット a9187027 で再ビルドして反映。確認は `gh api repos/webmaster0818/g-personal-gym-deploy/commits/<sha>/check-runs`（admin トークンを GH_TOKEN で）。
 - BEYOND「倍率50倍以上の選考」「全トレーナーが受賞経験」（/ranking/ 1か所）: 公式トップ・/trainers/・店舗ページでは「美ボディコンテスト入賞者が多数在籍」のみで確認できず＝未変更・件数報告。
 - wip/remove-ec-shibuya-1022 に main を再マージ（5dfdedd・渋谷 FAQ の衝突解決）。
+
+### 2026-10-21 /ranking/ BEYOND の「倍率50倍以上」「全トレーナーが受賞経験」を公式表記に ✅本番（source ba35627 / deploy 0678e2b1）
+- 公式（10/21 確認）: beyond-gym.com トップの meta description「“採用倍率50倍”から厳選されたトレーナー」（本文には無い・「以上」は無い）、/trainers/「BEYONDには増減量を繰り返す美ボディコンテスト入賞者が多数在籍しています」。「全トレーナーが受賞経験」「フィジーク大会」は公式に無い。
+- サイト内の同記述は /ranking/ の BEYOND 説明1か所のみ（out で「倍率50倍以上」「受賞経験を持つ」各2＝HTML＋RSC）。→「公式サイトでは「採用倍率50倍」から厳選したトレーナーと案内しており、美ボディコンテスト入賞者が多数在籍しています。」に。tagline「コンテスト入賞者多数」・features「コンテスト入賞トレーナー」は公式どおりで据え置き。sitemap lastmod /ranking/ = 2026-10-21。build EXIT0・precheck 全項目OK・計測リンク（A8）前後とも3（b-concept html2＋txt1）。
+- wip/remove-ec-shibuya-1022 に main(ba35627) をマージ（76b33f8・衝突なし・origin push 済み）。build EXIT0・precheck 全項目OK・エクササイズコーチ渋谷 0。out/ は main で再ビルド済み。
+- 類似表現の確認: 仙台 ワンネス「トレーナーは全員コンテスト優勝・ファイナリスト経験者」は公式トップ（10/21）に「トレーナーは全員コンテスト優勝者またはファイナリスト経験者」とあり公式どおり＝据え置き。
