@@ -21,17 +21,17 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'OUTLINE 横浜店',
-    officialUrl: 'https://www.outline-gym.com/',
+    officialUrl: 'https://www.outline-gym.com/gym/yokohama',
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備'],
-    description: '横浜に6店舗展開する女性専用パーソナルジムです。生涯無料のアフターサポートが付いています。',
-    access: 'JR「横浜駅」徒歩5分',
-    address: 'JR「横浜駅」徒歩5分',
-    popularPlan: { name: '人気プラン', description: '横浜に6店舗展開する女性専用パーソナルジムです。生涯無料のアフターサポートが付いています。', price: '16回 184,800円〜（税込）' },
+    description: '横浜駅西口側にある女性専用パーソナルジムです（公式の店舗名は「OUTLINE横浜西口新店」）。生涯無料のアフターサポートが付いています。',
+    access: '「横浜駅」徒歩7分',
+    address: '神奈川県横浜市西区岡野1-9-6 岡野町ビル602',
+    popularPlan: { name: '人気プラン', description: '横浜駅西口側にある女性専用パーソナルジムです（公式の店舗名は「OUTLINE横浜西口新店」）。生涯無料のアフターサポートが付いています。', price: '16回 184,800円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'UNDEUX SUPERBODY 横浜スタジオ',
