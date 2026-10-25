@@ -109,7 +109,7 @@ export default function CostPage() {
                 <p className="text-3xl font-bold text-accent-dark mb-2">1.2万〜6万円/月</p>
                 <p className="text-ink-faint text-xs mb-4">月4〜8回</p>
                 <ul className="space-y-2 text-sm text-ink-soft">
-                  <li>・エクササイズコーチ: 12,000円〜/月4回</li>
+                  <li>・エクササイズコーチ: 17,600円/月4回（平日日中のデイプランは14,960円）</li>
                   <li>・かたぎり塾: 30,800円〜/月4回</li>
                   <li>・UNDEUX: 18,200円〜/月2回</li>
                 </ul>
