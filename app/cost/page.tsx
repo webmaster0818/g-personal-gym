@@ -101,7 +101,6 @@ export default function CostPage() {
                 <ul className="space-y-2 text-sm text-ink-soft">
                   <li>・ビーコンセプト: 179,685円〜</li>
                   <li>・OUTLINE: 184,800円〜</li>
-                  <li>・Bodyke: 215,600円〜</li>
                 </ul>
               </div>
               <div className="bg-ivory border border-line rounded-xl p-6">
@@ -180,8 +179,7 @@ export default function CostPage() {
                     <tr className="bg-white"><td className="px-4 py-2 border-b border-line">OUTLINE</td><td className="px-4 py-2 border-b border-line">15,000円〜33,000円</td></tr>
                     <tr className="bg-ivory/50"><td className="px-4 py-2 border-b border-line">ビーコンセプト</td><td className="px-4 py-2 border-b border-line">38,500円</td></tr>
                     <tr className="bg-white"><td className="px-4 py-2 border-b border-line">リボーンマイセルフ</td><td className="px-4 py-2 border-b border-line">22,000円（公式に税込・税抜の記載なし）</td></tr>
-                    <tr className="bg-ivory/50"><td className="px-4 py-2 border-b border-line">Bodyke</td><td className="px-4 py-2 border-b border-line">41,800円</td></tr>
-                    <tr className="bg-white"><td className="px-4 py-2 border-b border-line">UNDEUX SUPERBODY</td><td className="px-4 py-2 border-b border-line">22,000円</td></tr>
+                    <tr className="bg-ivory/50"><td className="px-4 py-2 border-b border-line">UNDEUX SUPERBODY</td><td className="px-4 py-2 border-b border-line">22,000円</td></tr>
                   </tbody>
                 </table>
               </div>

@@ -10,8 +10,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/ranking/'),
-  title: '女性専用パーソナルジムおすすめランキングTOP9｜料金・特徴を比較',
-  description: '女性専用パーソナルジムのおすすめランキングTOP9です。OUTLINE・ビーコンセプト・UNDEUX SUPERBODY・リボーンマイセルフなど人気ジムの料金・特徴・選び方を、目的別に比較しています。',
+  title: '女性専用パーソナルジムおすすめランキングTOP8｜料金・特徴を比較',
+  description: '女性専用パーソナルジムのおすすめランキングTOP8です。OUTLINE・ビーコンセプト・UNDEUX SUPERBODY・リボーンマイセルフなど人気ジムの料金・特徴・選び方を、目的別に比較しています。',
 }
 
 const faqs = [
@@ -61,15 +61,6 @@ const rankings = [
   },
   {
     rank: 5,
-    name: 'Bodyke（ボディーク）',
-    tagline: '糖質制限なしのボディメイク特化ジム',
-    price: '2ヶ月16回 215,600円〜（税込）',
-    features: ['ボディメイク特化', '糖質制限なし', '完全個室', '食事指導あり', '東京7店舗'],
-    description: '「好きなものを食べながら痩せる」をコンセプトにした個性的なパーソナルジムです。糖質制限なしで食事指導を行い、筋トレをメインにしたトレーニングでボディメイクを目指します。苦しい有酸素運動がないのも特徴です。東京を中心に7店舗展開しています。',
-    points: ['食事制限が苦手な方に', '筋トレメインでボディメイクしたい方に', '東京中心に展開'],
-  },
-  {
-    rank: 6,
     name: 'かたぎり塾',
     tagline: '女性専門店あり・月額制で通いやすい',
     price: '月4回 30,800円〜（税込）',
@@ -78,7 +69,7 @@ const rankings = [
     points: ['月額制で始めやすい', '女性専門店なら安心', 'AI食事指導が便利'],
   },
   {
-    rank: 7,
+    rank: 6,
     name: 'Lastyle（ラスタイル）',
     tagline: '筋トレ×ボクシング×有酸素×ピラティス',
     price: '2ヶ月16回 158,400円〜（税込）',
@@ -87,7 +78,7 @@ const rankings = [
     points: ['バリエーション豊富なトレーニング', '飽きっぽい方に最適', '女性から高い支持'],
   },
   {
-    rank: 8,
+    rank: 7,
     name: 'BEYOND（ビヨンド）',
     tagline: 'コンテスト入賞者多数の高品質ジム',
     price: '回数券10回 102,300円〜／ライフプランニング16回 290,400円（税込）',
@@ -96,7 +87,7 @@ const rankings = [
     points: ['トレーナーの質にこだわりたい方に', '本格的なボディメイクに', '全国に店舗あり'],
   },
   {
-    rank: 9,
+    rank: 8,
     name: 'エクササイズコーチ',
     tagline: 'AI主導の短時間トレーニング',
     price: '月4回 17,600円（税込・スタンダード）／平日日中のデイプランは14,960円',
@@ -136,7 +127,7 @@ export default function RankingPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="eyebrow mb-3">Ranking</p>
             <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">
-              女性専用パーソナルジムおすすめランキングTOP9
+              女性専用パーソナルジムおすすめランキングTOP8
             </h1>
             <p className="text-ink-soft text-sm md:text-base leading-relaxed">
               女性専用パーソナルジムを「環境・料金・サポート・通いやすさ・実績」の5軸で総合評価し、おすすめ順に掲載しています。目的に合ったジムを比較する際の参考にしてください。
@@ -186,7 +177,7 @@ export default function RankingPage() {
                 </tbody>
               </table>
             </div>
-            <p className="text-ink-faint text-xs mt-3">※詳細は各社の無料カウンセリングでご確認ください。以下で全9社を詳しく解説します。</p>
+            <p className="text-ink-faint text-xs mt-3">※詳細は各社の無料カウンセリングでご確認ください。以下で全8社を詳しく解説します。</p>
           </div>
         </section>
 
