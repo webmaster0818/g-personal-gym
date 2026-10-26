@@ -346,3 +346,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - aggregate-brands.py を再実行 → brandStores.json は 10/24 の OUTLINE 横浜店修正（公式URL・徒歩7分・住所）が反映されただけ（池袋・銀座のエクササイズコーチは配列末尾のため既知バグで未収録のまま）。
 - sitemap lastmod 銀座・池袋・/cost/・/ranking/ = 2026-10-25。build EXIT0・precheck（out／deploy）全項目OK。本番（?cb=）: 4URL とも旧値0・17,600 あり・14,960 あり、robots 200。
 - 未変更（件数のみ）: エクササイズコーチ名の無い汎用相場「月額制なら月12,000円〜30,000円程度」FAQ が 六本木・福岡・大阪・札幌・新宿 の5ページ、「1.2万〜3万円/月」カードが9ページ（銀座・池袋・横浜・名古屋 含む）、/faq/・/cost/ の「月1.2万〜6万円」。12,000円は元々エクササイズコーチ由来とみられるが、レナトス長崎（月3回12,000円・公式）もあり、ブランド名が無いので今回は触らず。
+
+### 2026-10-26 Bodyke（→Woot!）の掲載を外す（10/25 宣言の既定案A）／aggregate-brands.py の末尾読み飛ばし修正 ✅本番（source c45f1de・f91fd8f / deploy 186df6e9）
+- 実行前の公式再確認（10/26）: bodyke.jp は woot.fit へ 301（utm_campaign=site_migration）、woot.fit に「旧：パーソナルジムBodyke 六本木店」「旧：パーソナルジムBodyke 池袋店」。
+- Bodyke の掲載はエリアページのカードには無く、TOP（比較表・FAQ）・/ranking/（第5位）・/faq/（食事制限 FAQ）・/cost/（2ヶ月コース例・入会金表）の4ページ。→ TOP 比較表 5→4社（リード文「5社」→「4社」）、/ranking/ TOP9→TOP8（title・description・h1・「全8社」・TOP のリンク文言、第6〜9位を5〜8位に繰り上げ、ItemList numberOfItems 8）、FAQ 2か所の Bodyke 文を削除、/cost/ の2ヶ月コース例と入会金表から削除。sitemap lastmod（/・/ranking/・/faq/・/cost/）= 2026-10-26。out で Bodyke/ボディーク 0。
+- aggregate-brands.py: 正規表現 `\n  \},` 終端が配列末尾のジム（`}\n]`）を拾わなかった→ `const gyms = [` 直下のオブジェクトを波括弧の深さで切り出す方式に。差分（前→後）: exercise-coach 11→14（+銀座・池袋・横浜）、katagirijuku 16→17（+西新宿女性専門店）、他ブランドは件数・内容とも不変。増えた4店は全てエリアページに同名・同公式URLで実在。/brands/ の title「掲載N店」はデータから算出（14・17）。sitemap lastmod /brands/exercise-coach/・/brands/katagirijuku/ = 2026-10-26。
+- 検証: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・エリア101ページの title/h1/description の N選＝カード数 NG 0・0店ページは従来どおり品川/五反田の2のみ・計測リンク（A8）前後とも3・`__next*` 0。
+- 未変更（範囲外・件数のみ）: エクササイズコーチを「16回 215,600円〜」とする料金相場リスト（二子玉川・吉祥寺・恵比寿・表参道）＝公式のエクササイズコーチは月額制で 215,600 は確認できず。恵比寿 LIM の 215,600円も未照合。表参道の2件（エクササイズコーチ・MMM）は 10/27 実行予定のため触らず。
