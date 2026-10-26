@@ -231,6 +231,22 @@
    ]
   },
   {
+   "name": "かたぎり塾 西新宿女性専門店",
+   "areaSlug": "shinjuku",
+   "areaName": "新宿",
+   "officialUrl": "https://katagirijuku.jp/",
+   "price": "月4回 30,800円〜（税込）",
+   "trial": "体験レッスンあり",
+   "access": "都営大江戸線「都庁前駅」徒歩3分",
+   "address": "都営大江戸線「都庁前駅」徒歩3分",
+   "features": [
+    "女性専用",
+    "女性トレーナーのみ",
+    "AI食事指導",
+    "月額制"
+   ]
+  },
+  {
    "name": "かたぎり塾 静岡店",
    "areaSlug": "shizuoka",
    "areaName": "静岡",
@@ -1794,6 +1810,36 @@
    ]
   },
   {
+   "name": "エクササイズコーチ 銀座店",
+   "areaSlug": "ginza",
+   "areaName": "銀座",
+   "officialUrl": "https://exercisecoach.co.jp/store/ginza/",
+   "price": "月4回 17,600円（税込・スタンダード）／平日12〜17時のデイプランは14,960円",
+   "trial": "無料体験あり",
+   "access": "東京メトロ「銀座駅」C5・C7出口直結（徒歩1分）",
+   "address": "東京メトロ「銀座駅」C5・C7出口直結（徒歩1分）",
+   "features": [
+    "AI主導",
+    "1回20分",
+    "低価格"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 池袋店",
+   "areaSlug": "ikebukuro",
+   "areaName": "池袋",
+   "officialUrl": "https://exercisecoach.co.jp/store/",
+   "price": "月4回 17,600円（税込・スタンダード）／平日10〜17時のデイプランは14,960円",
+   "trial": "無料体験あり",
+   "access": "JR「池袋駅」徒歩3分",
+   "address": "JR「池袋駅」徒歩3分",
+   "features": [
+    "AI主導",
+    "1回20分",
+    "低価格"
+   ]
+  },
+  {
    "name": "エクササイズコーチ 自由が丘",
    "areaSlug": "jiyugaoka",
    "areaName": "自由が丘",
@@ -1925,6 +1971,21 @@
     "AIマシン活用",
     "女性利用者が多い",
     "続けやすい"
+   ]
+  },
+  {
+   "name": "エクササイズコーチ 横浜店",
+   "areaSlug": "yokohama",
+   "areaName": "横浜",
+   "officialUrl": "https://exercisecoach.co.jp/store/yokohama/",
+   "price": "月4回 17,600円（税込・スタンダード）／平日10〜17時（月曜は12時〜）のデイプランは14,960円",
+   "trial": "無料体験あり",
+   "access": "「横浜駅」出口9 徒歩6分",
+   "address": "神奈川県横浜市西区北幸2-10-50 北幸山田ビル5階",
+   "features": [
+    "AI主導",
+    "1回20分",
+    "低価格"
    ]
   }
  ]

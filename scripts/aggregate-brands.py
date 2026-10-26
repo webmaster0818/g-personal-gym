@@ -20,14 +20,48 @@ DOM2SLUG = {d: s for s, ds in BRANDS.items() for d in ds}
 def domain(url: str) -> str:
     return re.sub(r"https?://(?:www\.)?([^/]+).*", r"\1", url)
 
+def gym_objects(src: str) -> list:
+    """`const gyms = [ ... ]` の直下のオブジェクトを波括弧の深さで切り出す。
+    旧実装の正規表現（`\\n  \\},` 終端）は配列末尾のジム（`}\\n]`）を読み飛ばしていた（2026-10-26 修正）。"""
+    i = src.find("const gyms = [")
+    if i < 0:
+        return []
+    k = src.index("[", i) + 1
+    objs, depth, start, quote = [], 0, None, None
+    while k < len(src):
+        c = src[k]
+        if quote:
+            if c == "\\":
+                k += 2
+                continue
+            if c == quote:
+                quote = None
+        elif c in "'\"`":
+            quote = c
+        elif c == "{":
+            if depth == 0:
+                start = k
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                objs.append(src[start:k + 1])
+        elif c == "]" and depth == 0:
+            break
+        k += 1
+    return objs
+
 out = defaultdict(list)
 for f in sorted(glob.glob(str(ROOT / "app/areas/*/page.tsx"))):
     area_slug = pathlib.Path(f).parent.name
     src = pathlib.Path(f).read_text()
     m = re.search(r"title:\s*'(?:【[^】]*】)?([^のは｜]+?)の", src)
     area_name = m.group(1) if m else area_slug
-    for blk in re.finditer(r"\{\s*name:\s*'([^']+)'[\s\S]{0,1800}?\n  \},", src):
-        b, name = blk.group(0), blk.group(1)
+    for b in gym_objects(src):
+        nm = re.match(r"\{\s*name:\s*'([^']+)'", b)
+        if not nm:
+            continue
+        name = nm.group(1)
         um = re.search(r"officialUrl:\s*'([^']+)'", b)
         if not um:
             continue
