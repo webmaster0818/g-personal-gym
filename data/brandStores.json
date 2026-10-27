@@ -1940,23 +1940,6 @@
    ]
   },
   {
-   "name": "エクササイズコーチ 表参道",
-   "areaSlug": "omotesando",
-   "areaName": "表参道",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「表参道」駅周辺",
-   "address": "表参道エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
    "name": "エクササイズコーチ 立川",
    "areaSlug": "tachikawa",
    "areaName": "立川",

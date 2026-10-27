@@ -63,13 +63,13 @@ const gyms = [
   },
   {
     name: 'LIM 恵比寿店',
-    price: '2ヶ月16回 215,600円〜（税込）',
+    price: '公式サイトでご確認ください',
     trial: '無料カウンセリング',
     features: ['女性専用', '卒業後月1回無料', '完全マンツーマン', '女性向け設備', '恵比寿駅近'],
     description: '女性専用のパーソナルジムです。ジム内の設備も女性にとって使いやすいように設計されています。コース終了後も毎月1回無料でパーソナルトレーニングが受けられるアフターフォローが魅力です。',
     access: 'JR「恵比寿駅」徒歩5分',
     address: '東京都渋谷区恵比寿（恵比寿駅徒歩5分）',
-    popularPlan: { name: '2ヶ月集中コース', description: '完全マンツーマンのパーソナルトレーニングです。卒業後も月1回の無料セッションが付いています。', price: '2ヶ月16回 215,600円〜（税込）' },
+    popularPlan: { name: '2ヶ月集中コース', description: '完全マンツーマンのパーソナルトレーニングです。卒業後も月1回の無料セッションが付いています。', price: '公式サイトでご確認ください' },
     options: ['卒業後月1回無料トレーニング', 'ウェアレンタル', '食事指導付き'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体型維持', '健康管理'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー'] },
@@ -163,7 +163,7 @@ export default function EbisuPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（月4回 17,600円〜・税込）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>

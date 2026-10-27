@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/omotesando/'),
-  title: '表参道の女性専用パーソナルジムおすすめ4選｜料金比較',
-  description: '表参道・青山のおすすめ女性専用パーソナルジム4選を比較しています。UNDEUX SUPERBODY・AGLAIA・MMMなど人気ジムの料金・口コミ・特徴を掲載しています。',
+  title: '表参道の女性専用パーソナルジムおすすめ2選｜料金比較',
+  description: '表参道・青山のおすすめ女性専用パーソナルジム2選を比較しています。UNDEUX SUPERBODY・AGLAIAの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,表参道,青山,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -46,46 +46,17 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['美尻', 'ヒップアップ', '姿勢改善', 'ボディメイク'] },
     basicInfo: { hours: '10:00〜21:00', closed: '不定休', facilities: ['完全個室', '美尻専用マシン', 'ロッカー'] },
   },
-  {
-    name: 'MMM（トリプルエム）表参道',
-    officialUrl: 'https://www.triple-m.jp/',
-    price: '60分 月3回 33,000円〜（税込）',
-    trial: '体験90分 9,900円（入会で全額返金）',
-    features: ['女性専用', 'バストアッププラン', '駅徒歩2分', 'オーダーメイド', '表参道'],
-    description: '表参道駅徒歩2分（B1出口から徒歩1分）の女性専用パーソナルジムです。バストアッププランならバストを維持しつつ余分な脂肪のみを落とすことが可能です。一人ひとりに合わせたオーダーメイドダイエットです。',
-    access: '東京メトロ各線「表参道駅」徒歩2分（B1出口から徒歩1分）',
-    address: '東京都港区南青山5-9-1 玉川屋ビル2F',
-    popularPlan: { name: 'バストアッププラン', description: 'バストを維持しつつ余分な脂肪を落とすオーダーメイドプランです。', price: '公式サイトでご確認ください' },
-    options: ['バストアッププラン', 'オーダーメイドメニュー', '食事指導', 'ウェアレンタル'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'バストアップ', 'ボディメイク', '部分痩せ'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ロッカー'] },
-  },
-  {
-    name: 'エクササイズコーチ 表参道',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月額制（プラン・店舗により異なる）',
-    trial: '無料体験あり',
-    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
-    description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
-    access: '「表参道」駅周辺',
-    address: '表参道エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制のため、無理なく続けやすい料金体系です。', price: '月額制（プラン・店舗により異なる）' },
-    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
-    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
-  { question: '表参道で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、AGLAIA、MMMが表参道で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、美尻特化ならAGLAIA、バストアップならMMMがおすすめです。' },
+  { question: '表参道で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、AGLAIAを掲載しています。食事管理重視ならUNDEUX、美尻特化ならAGLAIAがおすすめです。' },
   { question: '表参道のパーソナルジムの料金相場はいくらですか？', answer: '表参道の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円です。表参道は高級エリアですが、郊外と大きな差はありません。' },
-  { question: '表参道駅から最も近いジムはどこですか？', answer: 'UNDEUX SUPERBODYが表参道駅から徒歩1分で最も近く、MMM（トリプルエム）は徒歩2分（B1出口から徒歩1分）です。' },
+  { question: '表参道駅から最も近いジムはどこですか？', answer: 'UNDEUX SUPERBODYが表参道駅から徒歩1分で最も近く、AGLAIAは徒歩6分です。' },
   { question: '美尻・ヒップアップに特化したジムはどこですか？', answer: 'AGLAIA（アグライア）は美尻専用マシン「グルーツビルダー」を完備し、ゼロから美尻を作るオリジナルメソッドを提供しています。' },
-  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。AGLAIA、エクササイズコーチは無料カウンセリングを実施しています。MMM（トリプルエム）の体験（90分）は9,900円で、入会した場合は全額返金されます。' },
+  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。AGLAIAは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。AGLAIAは会員の80%がトレーニング未経験者で、特に初心者フレンドリーです。' },
   { question: '表参道と青山のジムは同じエリアですか？', answer: '表参道駅は港区南青山に位置しており、「表参道」「青山」は基本的に同じエリアです。ジムの所在地は「南青山」となっている場合が多いものの、いずれも表参道駅から徒歩圏内です。' },
-  { question: 'バストアップしながらダイエットできるジムはどこですか？', answer: 'MMM（トリプルエム）の「バストアッププラン」は、バストを維持しつつ余分な脂肪だけを落とすことが可能です。他にはない独自のプランです。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは、スタンダードプランで食事指導と簡易相談、コミットプランで栄養士による毎日の食事管理（初月は宅配食30食無料）が受けられます。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドが好評です。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは、スタンダードプランで食事指導と簡易相談、コミットプランで栄養士による毎日の食事管理（初月は宅配食30食無料）が受けられます。' },
 ]
 
 export default function OmotesandoPage() {
@@ -148,15 +119,15 @@ export default function OmotesandoPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（16回 215,600円〜）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（スタンダードプラン月2回 21,300円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">美尻・美脚特化</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・AGLAIA（美尻専用マシン）</li><li className="text-brand-muted">・MMM（バストアッププラン）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・AGLAIA（美尻専用マシン）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li></ul>
               </div>
             </div>
           </div>
@@ -190,7 +161,7 @@ export default function OmotesandoPage() {
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="text-lg font-bold text-brand-text mb-3">美容・ボディメイク特化のジムが多い</h3>
-                <p className="text-brand-muted leading-relaxed">表参道エリアは美尻・美脚・バストアップなど美容特化のジムが多いのが特徴です。ダイエットだけでなくボディラインの美しさを追求したい方に最適です。</p>
+                <p className="text-brand-muted leading-relaxed">表参道エリアは美尻・美脚など美容特化のジムが多いのが特徴です。ダイエットだけでなくボディラインの美しさを追求したい方に最適です。</p>
               </div>
             </div>
           </div>
