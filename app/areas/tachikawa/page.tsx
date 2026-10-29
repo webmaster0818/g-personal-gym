@@ -22,13 +22,13 @@ const gyms = [
   {
     name: 'ビーコンセプト 立川店',
     officialUrl: 'https://b-concept.tokyo/clublist/tachikawa/',
-    price: '2ヶ月16回 199,650円〜（税込）',
+    price: '2ヶ月18回 179,685円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
     description: '医師とトレーナーが共同開発した脚やせメソッドです。立川エリアで下半身太りに悩む女性に特化しています。完全個室で、託児所費用の補助があります。',
     access: 'JR「立川駅」徒歩4分',
     address: '東京都立川市（立川駅徒歩4分）',
-    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッドです。60分×16回の集中プログラムです。', price: '2ヶ月16回 199,650円〜（税込）' },
+    popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッドです。1回60分のトレーニングを2ヶ月で行う集中プログラムです。', price: '2ヶ月18回 179,685円〜（税込）' },
     options: ['託児所費用補助（最大1,000円/回）', 'ウェア・タオル無料レンタル', '食事指導付き', '分割払い対応'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
@@ -135,7 +135,7 @@ export default function TachikawaPage() {
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（8回 92,400円〜）</li><li className="text-brand-muted">・ビーコンセプト（16回 199,650円〜）</li></ul></div>
+              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（8回 92,400円〜）</li><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li></ul></div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">月額制で継続</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX LIFE（月2回 20,500円〜）</li><li className="text-brand-muted">・継続割でお得に</li></ul></div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul></div>
             </div>
