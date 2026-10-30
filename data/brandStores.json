@@ -1759,23 +1759,6 @@
  ],
  "exercise-coach": [
   {
-   "name": "エクササイズコーチ 恵比寿",
-   "areaSlug": "ebisu",
-   "areaName": "恵比寿",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「恵比寿」駅周辺",
-   "address": "恵比寿エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
    "name": "エクササイズコーチ 藤沢",
    "areaSlug": "fujisawa",
    "areaName": "藤沢",
@@ -1784,23 +1767,6 @@
    "trial": "無料体験あり",
    "access": "「藤沢」駅周辺",
    "address": "藤沢エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 二子玉川",
-   "areaSlug": "futakotamagawa",
-   "areaName": "二子玉川",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「二子玉川」駅周辺",
-   "address": "二子玉川エリア（最寄り店舗は公式サイトでご確認ください）",
    "features": [
     "1回約20分",
     "月額制",
@@ -1874,23 +1840,6 @@
    ]
   },
   {
-   "name": "エクササイズコーチ 吉祥寺",
-   "areaSlug": "kichijoji",
-   "areaName": "吉祥寺",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「吉祥寺」駅周辺",
-   "address": "吉祥寺エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
-   ]
-  },
-  {
    "name": "エクササイズコーチ 町田",
    "areaSlug": "machida",
    "areaName": "町田",
@@ -1920,23 +1869,6 @@
     "AI主導",
     "1回20分",
     "低価格"
-   ]
-  },
-  {
-   "name": "エクササイズコーチ 大宮",
-   "areaSlug": "omiya",
-   "areaName": "大宮",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
-   "trial": "無料体験あり",
-   "access": "「大宮」駅周辺",
-   "address": "大宮エリア（最寄り店舗は公式サイトでご確認ください）",
-   "features": [
-    "1回約20分",
-    "月額制",
-    "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
    ]
   },
   {

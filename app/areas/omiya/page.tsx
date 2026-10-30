@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/omiya/'),
-  title: '大宮の女性専用パーソナルジムおすすめ3選｜料金比較',
-  description: '大宮のおすすめ女性専用パーソナルジム3選を比較しています。ビーコンセプト・UNDEUX SUPERBODY・エクササイズコーチの料金・口コミ・特徴を掲載しています。',
+  title: '大宮の女性専用パーソナルジムおすすめ2選｜料金比較',
+  description: '大宮のおすすめ女性専用パーソナルジム2選を比較しています。ビーコンセプト・UNDEUX SUPERBODYの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,大宮,埼玉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -47,20 +47,6 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム'] },
   },
-  {
-    name: 'エクササイズコーチ 大宮',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月額制（プラン・店舗により異なる）',
-    trial: '無料体験あり',
-    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
-    description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
-    access: '「大宮」駅周辺',
-    address: '大宮エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制のため、無理なく続けやすい料金体系です。', price: '月額制（プラン・店舗により異なる）' },
-    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
-    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
@@ -68,10 +54,10 @@ const faqs = [
   { question: '大宮のパーソナルジムの料金相場はいくらですか？', answer: '大宮の2ヶ月コースは約18万〜22万円です。都心部より若干リーズナブルな傾向があります。' },
   { question: '大宮駅から最も近いジムはどこですか？', answer: 'UNDEUX SUPERBODYが徒歩4分で最寄りです。ビーコンセプトは東口から徒歩6分です。' },
   { question: '子連れで通えるジムはどこですか？', answer: 'ビーコンセプトには託児所費用の補助制度があります。大宮はファミリー層も多いエリアです。' },
-  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。ビーコンセプト・エクササイズコーチは無料カウンセリングです。' },
+  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。ビーコンセプトは無料カウンセリングです。' },
   { question: '大宮と浦和、どちらがおすすめですか？', answer: '大宮のほうが女性専用パーソナルジムの選択肢が豊富です。JR各線・東武線・ニューシャトルが交差するターミナル駅でアクセスも良好です。' },
   { question: '埼玉県内から通いやすいですか？', answer: '大宮はJR宇都宮線・高崎線・京浜東北線・埼京線・東武野田線・ニューシャトルが乗り入れるターミナル駅です。埼玉県内各地からのアクセスに優れています。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。エクササイズコーチは「食べて痩せる」メソッドです。ビーコンセプトは医師監修の食事指導を行っています。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。ビーコンセプトは医師監修の食事指導を行っています。' },
 ]
 
 export default function OmiyaPage() {
@@ -89,7 +75,7 @@ export default function OmiyaPage() {
 
         <PriceComparisonTable gyms={gyms} areaName="大宮" />
         <section className="py-16 bg-ivory" id="gyms"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">大宮のおすすめ女性向けパーソナルジム{gyms.length}選</h2><div className="space-y-8">{gyms.map((gym, index) => (<GymCard key={index} gym={gym} index={index} />))}</div></div></section>
-        <section className="py-16 bg-white"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2><div className="grid grid-cols-1 md:grid-cols-3 gap-8"><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・エクササイズコーチ（月4回 17,600円〜・税込）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul></div></div></div></section>
+        <section className="py-16 bg-white"><div className="max-w-6xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2><div className="grid grid-cols-1 md:grid-cols-3 gap-8"><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul></div><div className="border border-line rounded-xl p-6 hover:shadow-lg transition"><h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3><ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（託児所費用補助）</li></ul></div></div></div></section>
         <section className="py-16 bg-ivory"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">大宮の料金相場</h2><div className="grid grid-cols-1 md:grid-cols-2 gap-6"><div className="bg-white rounded-xl p-6 border border-line"><h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3><p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p><p className="text-sm text-brand-muted">ビーコンセプト179,685円〜です。都心部より若干リーズナブルな傾向です。</p></div></div></div></section>
         <section className="py-16 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">大宮で選ぶ際の注意点</h2><div className="space-y-6"><div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">埼玉最大のターミナル駅で県内各地からアクセス良好</h3><p className="text-brand-muted leading-relaxed">大宮はJR各線・東武線・ニューシャトルが乗り入れる埼玉最大のターミナル駅です。浦和・上尾・春日部・川越方面からも通いやすく、都心まで行かずに高品質なパーソナルジムに通えます。</p></div><div className="bg-white rounded-xl p-6 border border-line"><h3 className="text-lg font-bold text-brand-text mb-3">東口と西口でジムの場所が異なる</h3><p className="text-brand-muted leading-relaxed">大宮駅は東口がルミネ・そごう方面、西口がソニックシティ方面です。ジムがどちら側にあるか事前にご確認ください。東口周辺にジムが多い傾向があります。</p></div></div></div></section>
         <section className="py-16 bg-ivory"><div className="max-w-4xl mx-auto px-6 lg:px-8"><h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">よくある質問</h2><div className="space-y-4">{faqs.map((faq, index) => (<div key={index} className="border border-line rounded-xl overflow-hidden"><details className="group"><summary className="flex items-center justify-between p-5 cursor-pointer hover:bg-accent-tint transition"><h3 className="font-bold text-brand-text pr-4 text-sm">Q{index + 1}. {faq.question}</h3><svg className="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg></summary><div className="px-5 pb-5 text-brand-muted leading-relaxed text-sm">{faq.answer}</div></details></div>))}</div></div></section>

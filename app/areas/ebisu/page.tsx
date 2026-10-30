@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/ebisu/'),
-  title: '恵比寿の女性専用パーソナルジムおすすめ5選｜料金比較',
-  description: '恵比寿のおすすめ女性専用パーソナルジム5選を比較しています。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトなど人気ジムの料金・口コミ・特徴を掲載しています。',
+  title: '恵比寿の女性専用パーソナルジムおすすめ3選｜料金比較',
+  description: '恵比寿のおすすめ女性専用パーソナルジム3選を比較しています。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,恵比寿,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -61,46 +61,19 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['太もも痩せ', 'ヒップアップ', '産後ダイエット', '美脚'] },
     basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー', 'シャワー'] },
   },
-  {
-    name: 'LIM 恵比寿店',
-    price: '公式サイトでご確認ください',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '卒業後月1回無料', '完全マンツーマン', '女性向け設備', '恵比寿駅近'],
-    description: '女性専用のパーソナルジムです。ジム内の設備も女性にとって使いやすいように設計されています。コース終了後も毎月1回無料でパーソナルトレーニングが受けられるアフターフォローが魅力です。',
-    access: 'JR「恵比寿駅」徒歩5分',
-    address: '東京都渋谷区恵比寿（恵比寿駅徒歩5分）',
-    popularPlan: { name: '2ヶ月集中コース', description: '完全マンツーマンのパーソナルトレーニングです。卒業後も月1回の無料セッションが付いています。', price: '公式サイトでご確認ください' },
-    options: ['卒業後月1回無料トレーニング', 'ウェアレンタル', '食事指導付き'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '体型維持', '健康管理'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ロッカー'] },
-  },
-  {
-    name: 'エクササイズコーチ 恵比寿',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月額制（プラン・店舗により異なる）',
-    trial: '無料体験あり',
-    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
-    description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
-    access: '「恵比寿」駅周辺',
-    address: '恵比寿エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制のため、無理なく続けやすい料金体系です。', price: '月額制（プラン・店舗により異なる）' },
-    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
-    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
-  { question: '恵比寿で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプト、LIMが恵比寿で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプトがおすすめです。' },
+  { question: '恵比寿で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプトが恵比寿で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプトがおすすめです。' },
   { question: '恵比寿のパーソナルジムの料金相場はいくらですか？', answer: '恵比寿エリアの女性向けパーソナルジムの2ヶ月コース料金は約18万〜22万円です。ビーコンセプトが179,685円〜と比較的リーズナブルです。OUTLINEは生涯サポート付きで184,800円〜です。' },
-  { question: '恵比寿駅から最も近いパーソナルジムはどこですか？', answer: 'ビーコンセプト恵比寿店が徒歩2分で最も駅近です。UNDEUX SUPERBODYは徒歩4分、LIMは徒歩5分です。' },
+  { question: '恵比寿駅から最も近いパーソナルジムはどこですか？', answer: 'ビーコンセプト恵比寿店が徒歩2分で最も駅近です。UNDEUX SUPERBODYは徒歩4分です。' },
   { question: '子連れで通えるジムはありますか？', answer: 'OUTLINE恵比寿・広尾店はベビーサークルを完備しており、お子様連れでも利用できます。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
-  { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。OUTLINE、ビーコンセプト、LIMは無料カウンセリングを実施しています。' },
+  { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。OUTLINE、ビーコンセプトは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
   { question: '恵比寿で最も安いパーソナルジムはどこですか？', answer: 'ビーコンセプト（2ヶ月18回 179,685円〜）が最安クラスです。OUTLINE（16回 184,800円〜）もコスパ良好です。分割払いなら月々4,991円〜で始められます。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。エクササイズコーチは「食べて痩せる」メソッドで糖質制限なしの食事指導が好評です。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。' },
   { question: '恵比寿と渋谷のジム、どちらがおすすめですか？', answer: '恵比寿は落ち着いた雰囲気で大人の女性に人気です。渋谷は選択肢が多く低価格帯のジムもあります。どちらも駅近のジムが多いので、通いやすさで選ぶのがおすすめです。' },
-  { question: 'リバウンドが心配な場合はどうすればよいですか？', answer: 'OUTLINEは「生涯無料アフターサポート」で卒業後もずっとサポートしています。LIMは卒業後も毎月1回無料セッションが受けられます。' },
+  { question: 'リバウンドが心配な場合はどうすればよいですか？', answer: 'OUTLINEは「生涯無料アフターサポート」で卒業後もずっとサポートしています。' },
 ]
 
 export default function EbisuPage() {
@@ -163,15 +136,15 @@ export default function EbisuPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li><li className="text-brand-muted">・エクササイズコーチ（月4回 17,600円〜・税込）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・OUTLINE（16回 184,800円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">アフターサポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（生涯無料サポート）</li><li className="text-brand-muted">・LIM（卒業後月1回無料）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・OUTLINE（生涯無料サポート）</li></ul>
               </div>
             </div>
           </div>
