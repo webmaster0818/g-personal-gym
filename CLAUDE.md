@@ -387,3 +387,9 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - N選: 恵比寿 5→3（LIM・EC）・吉祥寺 4→3・大宮 3→2・二子玉川 2→1。0店になるページなし。title/description の N選・店名、FAQ（おすすめ・最寄り・体験・食事指導・リバウンド）、目的別（二子玉川は「コスパ重視」枠が空になるため削除し1列に）、まとめを整理。二子玉川の FAQ「ほとんどのジムが徒歩5分圏内」「全ジムで初心者歓迎」も1店の書き方に。
 - brandStores exercise-coach 13→9。sitemap lastmod 4エリア＋/brands/exercise-coach/ = 2026-10-31。main（abab70f）をマージ済み（sitemap の衝突を解消）。build EXIT0（prebuild 101）・precheck 全項目OK・計測リンク2・`__next*` 0・out の該当5店名 0。
 - 範囲外の発見（未変更）: 二子玉川は1店（UNDEUX＝月額制）になるが料金相場カード「2ヶ月集中コース 18万〜22万円」は残る（9ページの判断待ち案件）。藤沢ページにもエクササイズコーチの記載あり（公式 /store/ に藤沢なし・未照合）。
+
+### 2026-10-31 LIM 恵比寿・エクササイズコーチ 二子玉川/吉祥寺/恵比寿/大宮を外す（10/30 宣言の既定案を実行） ✅本番（source 5fe325d / deploy b2a1e8b3）
+- 実行前の公式再確認（10/31）: exercisecoach.co.jp /store/ の店舗リンク24件（feed・links 除く）に5店なし・本文に二子玉川/吉祥寺/恵比寿/藤沢 0、/store/futakotamagawa|kichijoji|ebisu|omiya|fujisawa/ すべて 404（末尾スラッシュなしは 301→404）。LIM: lim-gym.jp /studio/ 本文は心斎橋店1店のみ・「恵比寿」0、/ebisu/ はトップへ 301。⚠️ /studio/ の CSS に「恵比寿LP(ID:6903)」のコメントがあるが ?page_id=6903 は 404・REST は 401（非公開）＝公開店舗ではないため外す判断は維持。復活店なし。
+- wip/remove-lim-ec-1030（4be370f）を main（fc49035）に --no-ff マージ（衝突なし）。aggregate-brands.py 再生成は差分なし（exercise-coach 9店）。build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・計測リンク前後とも2・`__next*` 0。rsync --delete は旧 chunk 2件のみ削除（robots.txt・_redirects 維持）。
+- 本番（?cb=・09:21）: 恵比寿3選・二子玉川1選・吉祥寺3選・大宮2選（title/description とカード数一致）、4ページとも「エクササイズコーチ」「LIM」0、/brands/exercise-coach/「掲載9店」、robots 200。
+- 🚨 EC 藤沢（判断待ち・未変更）: 10/31 も公式 /store/ に無く /store/fujisawa/ 404。当サイトは officialUrl がトップ・住所「藤沢エリア（最寄り店舗は公式サイトでご確認ください）」。外すと藤沢 2→1。
