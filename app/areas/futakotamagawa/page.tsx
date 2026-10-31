@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/futakotamagawa/'),
-  title: '二子玉川の女性専用パーソナルジムおすすめ2選｜料金比較',
-  description: '二子玉川のおすすめ女性専用パーソナルジム2選を比較しています。UNDEUX SUPERBODY・エクササイズコーチの料金・口コミ・特徴を掲載しています。',
+  title: '二子玉川の女性専用パーソナルジムおすすめ1選｜料金比較',
+  description: '二子玉川のおすすめ女性専用パーソナルジム1選を紹介しています。UNDEUX SUPERBODYの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,二子玉川,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -33,30 +33,16 @@ const gyms = [
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', '脚痩せ', '産後ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'パウダールーム'] },
   },
-  {
-    name: 'エクササイズコーチ 二子玉川',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月額制（プラン・店舗により異なる）',
-    trial: '無料体験あり',
-    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
-    description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
-    access: '「二子玉川」駅周辺',
-    address: '二子玉川エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制のため、無理なく続けやすい料金体系です。', price: '月額制（プラン・店舗により異なる）' },
-    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
-    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
-  { question: '二子玉川で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、エクササイズコーチを掲載しています。食事管理ならUNDEUXがおすすめです。' },
+  { question: '二子玉川で女性専用のパーソナルジムはどこがおすすめですか？', answer: '当サイトでは二子玉川エリアのジムとしてUNDEUX SUPERBODYを掲載しています。食事管理を重視する方の候補です。' },
   { question: '二子玉川のパーソナルジムの料金相場はいくらですか？', answer: '2ヶ月コースは約18万〜22万円です。都心部と同等かやや割安な傾向があります。' },
   { question: '二子玉川駅から最も近いジムはどこですか？', answer: 'UNDEUX SUPERBODYが徒歩3分です。' },
-  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。エクササイズコーチは無料カウンセリングです。' },
-  { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので運動経験がなくても安心です。' },
-  { question: '二子玉川ライズでのショッピングと両立できますか？', answer: 'ほとんどのジムが二子玉川駅から徒歩5分圏内です。ショッピング前後にトレーニングを組み込めます。ウェアのレンタルがあるジムなら、手ぶらで通えます。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは、スタンダードプランで食事指導と簡易相談、コミットプランで栄養士による毎日の食事管理（初月は宅配食30食無料）が受けられます。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。' },
+  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。' },
+  { question: '初心者でも大丈夫ですか？', answer: 'はい。マンツーマン指導のため、運動経験がない方でも始めやすいです。' },
+  { question: '二子玉川ライズでのショッピングと両立できますか？', answer: 'UNDEUX SUPERBODY 二子玉川スタジオは二子玉川駅から徒歩3分です。ショッピングの前後にトレーニングを組み込めます。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは、スタンダードプランで食事指導と簡易相談、コミットプランで栄養士による毎日の食事管理（初月は宅配食30食無料）が受けられます。' },
 ]
 
 export default function FutakotamagawaPage() {
@@ -111,14 +97,10 @@ export default function FutakotamagawaPage() {
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別おすすめ</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・エクササイズコーチ（月4回 17,600円〜・税込）</li></ul>
-              </div>
+            <div className="grid grid-cols-1 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li></ul>
               </div>
             </div>
           </div>
@@ -177,7 +159,7 @@ export default function FutakotamagawaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
             <p className="text-brand-muted leading-relaxed mb-4">二子玉川エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。</p>
-            <p className="text-brand-muted leading-relaxed mb-4">食事管理重視ならUNDEUX SUPERBODYがおすすめです。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">食事管理を重視する方には、UNDEUX SUPERBODYが候補です。</p>
             <p className="text-brand-muted leading-relaxed">まずは気になるジムの体験レッスンをご利用ください。</p>
           </div>
         </section>

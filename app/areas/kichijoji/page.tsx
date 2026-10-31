@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kichijoji/'),
-  title: '吉祥寺の女性専用パーソナルジムおすすめ4選｜料金比較',
-  description: '吉祥寺のおすすめ女性専用パーソナルジム4選を比較しています。ビーコンセプト・UNDEUX SUPERBODY・リボーンマイセルフなど人気ジムの料金・口コミ・特徴を掲載しています。',
+  title: '吉祥寺の女性専用パーソナルジムおすすめ3選｜料金比較',
+  description: '吉祥寺のおすすめ女性専用パーソナルジム3選を比較しています。ビーコンセプト・UNDEUX SUPERBODY・リボーンマイセルフの料金・口コミ・特徴を掲載しています。',
   keywords: '女性専用パーソナルジム,吉祥寺,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -61,20 +61,6 @@ const gyms = [
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', '産後ダイエット', 'ブライダル', '部分痩せ'] },
     basicInfo: { hours: '平日10:00〜22:00／土日祝9:00〜19:00', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'ウェアレンタル'] },
   },
-  {
-    name: 'エクササイズコーチ 吉祥寺',
-    officialUrl: 'https://exercisecoach.co.jp/',
-    price: '月額制（プラン・店舗により異なる）',
-    trial: '無料体験あり',
-    features: ['1回約20分', '月額制', 'AIマシン活用', '女性利用者が多い', '続けやすい'],
-    description: '米国発のAIパーソナルジムです。1回約20分・月額制で、AIマシンが一人ひとりに最適な負荷を算出します。短時間で続けやすく、女性の利用者も多いのが特徴です。',
-    access: '「吉祥寺」駅周辺',
-    address: '吉祥寺エリア（最寄り店舗は公式サイトでご確認ください）',
-    popularPlan: { name: '月額トレーニングプラン', description: 'AIマシンを活用した1回約20分のマンツーマントレーニングです。月額制のため、無理なく続けやすい料金体系です。', price: '月額制（プラン・店舗により異なる）' },
-    options: ['ウェアレンタル', '手ぶらで通える', '女性スタッフ在籍店舗あり', '無料体験'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性が多数', purpose: ['ダイエット', 'ボディメイク', '運動習慣', '健康管理'] },
-    basicInfo: { hours: '店舗により異なる', closed: '店舗により異なる', facilities: ['AIマシン', '個別ブース', 'ロッカー'] },
-  },
 ]
 
 const faqs = [
@@ -82,10 +68,10 @@ const faqs = [
   { question: '吉祥寺のパーソナルジムの料金相場はいくらですか？', answer: '吉祥寺の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円です。ビーコンセプトが179,685円〜と最安です。都心部より若干リーズナブルな傾向があります。' },
   { question: '吉祥寺駅から最も近いジムはどこですか？', answer: 'ビーコンセプト吉祥寺店が徒歩1分で最も駅近です。UNDEUX SUPERBODYは徒歩4分、リボーンマイセルフは徒歩5分です。' },
   { question: '子連れで通えるジムはどこですか？', answer: 'ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
-  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。ビーコンセプト、リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施しています。' },
+  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。ビーコンセプト、リボーンマイセルフは無料カウンセリングを実施しています。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので運動経験がなくても安心です。吉祥寺には、アットホームな雰囲気のジムが多くあります。' },
   { question: '吉祥寺は都心のジムと比べてどうですか？', answer: '吉祥寺は都心に比べてやや落ち着いた雰囲気です。料金は都心とほぼ同等ですが、混雑が少なく予約が取りやすい傾向があります。JR中央線で新宿から約15分と好アクセスです。' },
-  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。エクササイズコーチは糖質制限なしの「食べて痩せる」メソッドです。吉祥寺はグルメの街なので食事指導重視がおすすめです。' },
+  { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。吉祥寺はグルメの街なので食事指導重視がおすすめです。' },
   { question: '仕事帰りでも通えますか？', answer: 'ほとんどのジムが22:00まで営業しています。ウェアレンタルやシャワー完備のジムが多いので、仕事帰りでも手ぶらで通えます。' },
 ]
 
@@ -149,11 +135,11 @@ export default function KichijojiPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">コスパ重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li><li className="text-brand-muted">・エクササイズコーチ（月4回 17,600円〜・税込）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・ビーコンセプト（18回 179,685円〜）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・エクササイズコーチ（食べて痩せるメソッド）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY（コミットプランは初月宅配食30食無料）</li><li className="text-brand-muted">・ビーコンセプト（医師監修指導）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3>
