@@ -52,9 +52,10 @@ const gyms = [
     features: ['月額制', '完全個室', '手ぶらOK', '子連れOK'],
     description: '月額制の完全個室マンツーマンジムです。女性専用ではありませんが女性利用に強く、手ぶらOK・子連れOKです。',
     access: '武蔵小杉駅徒歩5分',
+    address: '神奈川県川崎市中原区小杉御殿町2-35-9 BENCH-BLD 2階',
     options: ['月8プラン59,400円', 'チケット8,800円/回', '体験当日入会で入会金11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性利用多数）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '平日10:00〜22:00／土9:00〜21:00／日9:00〜20:00', closed: '月・金', facilities: ['完全個室'] },
   },
   {
     name: 'BEYOND 武蔵小杉店',

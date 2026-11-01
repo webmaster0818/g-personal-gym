@@ -66,10 +66,10 @@ const gyms = [
     features: ['月額制', '完全個室', '産後ダイエット対応', '乳幼児連れOK'],
     description: '浦和駅徒歩1分の完全個室マンツーマンジムです。月額制で、産後ダイエット対応・乳幼児連れOKです。',
     access: '京浜東北線 浦和駅 徒歩1分',
-    address: 'さいたま市浦和区東仲町1-21 小島ビル3F',
+    address: '埼玉県さいたま市浦和区東仲町1-21 小島ビル3F',
     options: ['月8回59,400円', '無期限チケット8,800円/回'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性利用多数）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '平日10:00〜22:00／土日9:00〜20:00', closed: '月・木', facilities: ['完全個室'] },
   },
 ]
 

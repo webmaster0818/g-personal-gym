@@ -42,7 +42,7 @@ const gyms = [
     address: '東京都品川区東大井5-1-9 1階',
     options: ['月8回59,400円', '無期限チケット8,800円/回', 'LINE食事サポート2週間11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性利用多数）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '火〜金10:00〜22:00／土日9:00〜20:00', closed: '月', facilities: ['完全個室'] },
   },
   {
     name: 'UBTY（ユービティ）大井町店',

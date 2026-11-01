@@ -51,9 +51,10 @@ const gyms = [
     features: ['月額制', '完全個室', 'AI食事指導', '手ぶらOK'],
     description: '本八幡駅徒歩1分の完全個室マンツーマンジムです。月額制で、医師・理学療法士監修メソッドとAI食事指導が無料です。',
     access: 'JR総武線・都営新宿線 本八幡駅 徒歩1分',
+    address: '千葉県市川市南八幡5-10-1 ピエール本八幡601',
     options: ['月8回59,400円', 'チケット1回8,800円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性利用多数）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '平日10:00〜22:00／土日9:00〜20:00', closed: '月・木', facilities: ['完全個室'] },
   },
 ]
 
