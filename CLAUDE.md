@@ -393,3 +393,7 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - wip/remove-lim-ec-1030（4be370f）を main（fc49035）に --no-ff マージ（衝突なし）。aggregate-brands.py 再生成は差分なし（exercise-coach 9店）。build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・計測リンク前後とも2・`__next*` 0。rsync --delete は旧 chunk 2件のみ削除（robots.txt・_redirects 維持）。
 - 本番（?cb=・09:21）: 恵比寿3選・二子玉川1選・吉祥寺3選・大宮2選（title/description とカード数一致）、4ページとも「エクササイズコーチ」「LIM」0、/brands/exercise-coach/「掲載9店」、robots 200。
 - 🚨 EC 藤沢（判断待ち・未変更）: 10/31 も公式 /store/ に無く /store/fujisawa/ 404。当サイトは officialUrl がトップ・住所「藤沢エリア（最寄り店舗は公式サイトでご確認ください）」。外すと藤沢 2→1。
+
+### 2026-11-01 かたぎり塾17店の店舗カードを公式店舗ページで照合／EC藤沢・OUTLINE横浜の再確認 ✅本番（source 7d6b3f8 / deploy 9fd5b0af）
+- 公式（11/1 生HTML・コメント/script除外）: katagirijuku.jp/gyms 一覧に掲載17店すべて実在。各 /gyms/<店>/ の基本情報・料金表どおりに、営業時間・定休日（14店は「公式サイトでご確認ください」→公式値。荻窪・高津・中目黒は定休日の記載なしで据え置き）、住所（10店追加・調布「鈴木ビル1階」→103号室）を反映。北千住・中目黒・西新宿女性専門店は 月4回「30,800円〜」→33,000円（税込）・公式URL を店舗ページに・住所/アクセス（中目黒 徒歩4→2分、西新宿「都庁前駅徒歩3分」→丸ノ内線 西新宿駅徒歩1分）、北千住の営業 土日→日のみ・定休 月・木→月・木・土。飯田橋の「入会金無料」→当日入会で22,000円（税込）割引（公式）、練馬「体験約60分」は公式に無く削除。生成スクリプト batch1/2/4 も同値（再生成72頁一致・栄はFAQ自動文のアクセス表記が変わる分を反映）。sitemap lastmod 17エリア＋/brands/katagirijuku/ = 2026-11-01。build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・計測リンク前後とも2。
+- 再確認のみ（未変更・判断待ち）: EC 藤沢＝/store/ 24店に無し・本文「藤沢」0・/store/fujisawa/ 404・sitemap 317URL に無し。OUTLINE 横浜店＝/gym/yokohama のタイトル「OUTLINE 横浜西口新店」・/gym 一覧と /counseling の店舗選択とも「横浜西口新店」（住所・徒歩7分・9:00〜23:00は当サイトと一致）。⚠️ 同店の料金は公式「1ヶ月4回17,000円〜」、当サイトは「16回 184,800円〜」（未照合）。
