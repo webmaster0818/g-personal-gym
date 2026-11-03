@@ -1,10 +1,13 @@
 import { AREA_CONTEXT } from './areaContextData'
 import { BreadcrumbSchema } from './BreadcrumbSchema'
+import { AreaQuickPrices } from './AreaQuickPrices'
 
 export function AreaContext({ slug }: { slug: string }) {
   const a = AREA_CONTEXT[slug]
   if (!a) return null
   return (
+    <>
+    <AreaQuickPrices slug={slug} />
     <section className="py-12 bg-white">
       <BreadcrumbSchema
         items={[
@@ -28,5 +31,6 @@ export function AreaContext({ slug }: { slug: string }) {
         </div>
       </div>
     </section>
+    </>
   )
 }

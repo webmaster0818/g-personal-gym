@@ -30,7 +30,7 @@ const gyms = [
     address: '大阪市中央区難波5-1-60 なんばスカイオ6F',
     options: ['ピラティスオプション月2,000円', '食事説明オプション5,000円/回', 'ウェア・タオル無料'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'ピラティス'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '平日10:00〜21:00／土日祝9:00〜20:00', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
   },
   {
     name: 'Amazones（アマゾネス）難波本店',
