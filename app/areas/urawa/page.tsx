@@ -35,7 +35,7 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 浦和店',
     officialUrl: 'https://www.shapes-international.co.jp/store/urawa/',
-    price: 'ショートコース（2ヶ月16回）184,000円〜（入会金22,000円）',
+    price: 'ショートコース（2ヶ月16回）202,400円（税込・入会金22,000円）',
     trial: 'カウンセリング・体験トレーニングとも無料',
     features: ['女性専用', 'トレーナー全員女性', '食事指導あり', 'パウダールーム'],
     description: '女性専用・トレーナーも全員女性のジムです。食事指導付きで、個室カウンセリングルーム・パウダールームがあります。',
@@ -75,7 +75,7 @@ const gyms = [
 
 const faqs = [
   { question: '浦和で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 浦和スタジオ、リボーンマイセルフ 浦和店、Rprecious（リプレシャス）浦和店です（2026年6月調査時点）。' },
-  { question: '浦和のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 浦和スタジオはスタンダードプラン月額 20,500円〜です（税込）。リボーンマイセルフ 浦和店はショートコース（2ヶ月16回）184,000円〜です（入会金22,000円）。Rprecious（リプレシャス）浦和店はダイエットコース16回 174,240円です（50分制・入会金15,000円別途）。かたぎり塾 浦和店は月4回 33,000円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '浦和のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 浦和スタジオはスタンダードプラン月額 20,500円〜です（税込）。リボーンマイセルフ 浦和店はショートコース（2ヶ月16回）202,400円です（税込・入会金22,000円）。Rprecious（リプレシャス）浦和店はダイエットコース16回 174,240円です（50分制・入会金15,000円別途）。かたぎり塾 浦和店は月4回 33,000円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '浦和駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、かたぎり塾 浦和店（京浜東北線 浦和駅 徒歩1分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 浦和スタジオ、リボーンマイセルフ 浦和店、Rprecious（リプレシャス）浦和店、かたぎり塾 浦和店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '子連れで通えるジムはありますか？', answer: 'Rprecious（リプレシャス）浦和店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
@@ -161,7 +161,7 @@ export default function UrawaPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 浦和スタジオ</span><span className="text-brand-muted text-sm">スタンダードプラン月額 20,500円〜（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 浦和店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）184,000円〜（入会金22,000円）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 浦和店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）202,400円（税込・入会金22,000円）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Rprecious（リプレシャス）浦和店</span><span className="text-brand-muted text-sm">ダイエットコース16回 174,240円（50分制・入会金15,000円別途）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">かたぎり塾 浦和店</span><span className="text-brand-muted text-sm">月4回 33,000円（税込）</span></li>
             </ul>

@@ -35,7 +35,7 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 梅田店',
     officialUrl: 'https://www.shapes-international.co.jp/store/umeda/',
-    price: 'ショートコース（2ヶ月16回）168,000円（入会金22,000円）',
+    price: 'ショートコース（2ヶ月16回）184,800円（税込・入会金22,000円）',
     trial: 'カウンセリング・体験トレーニングとも無料',
     features: ['女性専用', 'トレーナー全員女性', '食事指導付き', 'パウダールーム完備'],
     description: '女性専用・トレーナーも全員女性のジムです。食事指導付きで、ウェア・タオル無料貸出、個室パウダールーム・シャワー完備です。',
@@ -73,7 +73,7 @@ const gyms = [
 
 const faqs = [
   { question: '梅田で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 梅田スタジオ、リボーンマイセルフ 梅田店、ビーコンセプト 北新地・堂島店です（2026年6月調査時点）。' },
-  { question: '梅田のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 梅田スタジオはスタンダードプラン月4回 29,100円〜です（税込）。リボーンマイセルフ 梅田店はショートコース（2ヶ月16回）168,000円です（入会金22,000円）。ビーコンセプト 北新地・堂島店は太ももダイエットプログラム 89,842円×2ヶ月です（18回）。Deat-workout 梅田店【初心者女性専門】は月々6,000円〜のプランがあります。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '梅田のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 梅田スタジオはスタンダードプラン月4回 29,100円〜です（税込）。リボーンマイセルフ 梅田店はショートコース（2ヶ月16回）184,800円です（税込・入会金22,000円）。ビーコンセプト 北新地・堂島店は太ももダイエットプログラム 89,842円×2ヶ月です（18回）。Deat-workout 梅田店【初心者女性専門】は月々6,000円〜のプランがあります。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '梅田駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 梅田スタジオ（阪急「大阪梅田駅」徒歩2分）、ビーコンセプト 北新地・堂島店（北新地駅徒歩2分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 梅田スタジオ、リボーンマイセルフ 梅田店、ビーコンセプト 北新地・堂島店、Deat-workout 梅田店【初心者女性専門】は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
@@ -158,7 +158,7 @@ export default function UmedaPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 梅田スタジオ</span><span className="text-brand-muted text-sm">スタンダードプラン月4回 29,100円〜（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 梅田店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）168,000円（入会金22,000円）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 梅田店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）184,800円（税込・入会金22,000円）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ビーコンセプト 北新地・堂島店</span><span className="text-brand-muted text-sm">太ももダイエットプログラム 89,842円×2ヶ月（18回）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Deat-workout 梅田店【初心者女性専門】</span><span className="text-brand-muted text-sm">月々6,000円〜のプランあり</span></li>
             </ul>

@@ -22,7 +22,7 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 金沢店',
     officialUrl: 'https://www.shapes-international.co.jp/store/kanazawa/',
-    price: 'ショートコース（2ヶ月16回）168,000円（入会金22,000円）',
+    price: 'ショートコース（2ヶ月16回）184,800円（税込・入会金22,000円）',
     trial: 'カウンセリング0円・体験トレーニング0円',
     features: ['女性専用', 'トレーナー全員女性', '食事指導付き', 'パウダールーム'],
     description: '女性専門・トレーナー全員女性のジムです。食事指導付きで、個室カウンセリングルーム・パウダールームがあります。',
@@ -58,7 +58,7 @@ const gyms = [
 
 const faqs = [
   { question: '金沢で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、リボーンマイセルフ 金沢店、女性専用パーソナルスタジオ Infinity∞です（2026年6月調査時点）。' },
-  { question: '金沢のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 金沢店はショートコース（2ヶ月16回）168,000円です（入会金22,000円）。PrivateGym KONFiDO（コンフィード）は2ヶ月16回（80分・食事サポート付）198,000円です（入会金5,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '金沢のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、リボーンマイセルフ 金沢店はショートコース（2ヶ月16回）184,800円です（税込・入会金22,000円）。PrivateGym KONFiDO（コンフィード）は2ヶ月16回（80分・食事サポート付）198,000円です（入会金5,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '金沢駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、リボーンマイセルフ 金沢店（香林坊バス停 徒歩3分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'リボーンマイセルフ 金沢店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
@@ -141,7 +141,7 @@ export default function KanazawaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">金沢の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 金沢店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）168,000円（入会金22,000円）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 金沢店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）184,800円（税込・入会金22,000円）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">女性専用パーソナルスタジオ Infinity∞</span><span className="text-brand-muted text-sm">料金は公式サイトでご確認ください</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">PrivateGym KONFiDO（コンフィード）</span><span className="text-brand-muted text-sm">2ヶ月16回（80分・食事サポート付）198,000円（入会金5,000円）</span></li>
             </ul>

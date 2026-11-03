@@ -34,7 +34,7 @@ const gyms = [
   {
     name: 'リボーンマイセルフ 京都駅店',
     officialUrl: 'https://www.shapes-international.co.jp/store/kyoto-ekimae/',
-    price: 'ショートコース（2ヶ月16回）184,000円（入会金22,000円・無料キャンペーンの場合あり）',
+    price: 'ショートコース（2ヶ月16回）202,400円（税込・入会金22,000円・無料キャンペーンの場合あり）',
     trial: '体験・カウンセリングともに無料',
     features: ['女性専用', 'トレーナー全員女性', '食事指導付き', 'パウダールーム完備'],
     description: '女性専用・トレーナー全員女性のジムです。食事指導付きで、ウェア・タオル無料、シャワー・個室パウダールームを完備しています。四条烏丸からは地下鉄烏丸線で2駅です。',
@@ -47,7 +47,7 @@ const gyms = [
 
 const faqs = [
   { question: '京都で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 京都・四条・烏丸スタジオ、リボーンマイセルフ 京都駅店です（2026年6月調査時点）。' },
-  { question: '京都のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 京都・四条・烏丸スタジオはスタンダードプラン月2回 20,500円〜です（税込）。リボーンマイセルフ 京都駅店はショートコース（2ヶ月16回）184,000円です（入会金22,000円・無料キャンペーンの場合あり）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '京都のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 京都・四条・烏丸スタジオはスタンダードプラン月2回 20,500円〜です（税込）。リボーンマイセルフ 京都駅店はショートコース（2ヶ月16回）202,400円です（税込・入会金22,000円・無料キャンペーンの場合あり）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '京都駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 京都・四条・烏丸スタジオ（阪急烏丸駅徒歩1分・地下鉄四条駅徒歩2分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 京都・四条・烏丸スタジオ、リボーンマイセルフ 京都駅店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
@@ -131,7 +131,7 @@ export default function KyotoPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 京都・四条・烏丸スタジオ</span><span className="text-brand-muted text-sm">スタンダードプラン月2回 20,500円〜（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 京都駅店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）184,000円（入会金22,000円・無料キャンペーンの場合あり）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 京都駅店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）202,400円（税込・入会金22,000円・無料キャンペーンの場合あり）</span></li>
             </ul>
           </div>
         </section>
