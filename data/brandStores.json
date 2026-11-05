@@ -495,8 +495,8 @@
    "areaSlug": "nagoya",
    "areaName": "名古屋",
    "officialUrl": "https://www.shapes-international.co.jp/store/nagoya-ekimae/",
-   "price": "入会金22,000円＋コース料金",
-   "trial": "無料カウンセリング",
+   "price": "ショートコース（2ヶ月16回）220,000円（税込・入会金22,000円）",
+   "trial": "無料カウンセリング＋無料体験トレーニング",
    "access": "名古屋駅ユニモール12・14番出口 徒歩2分",
    "address": "愛知県名古屋市中村区名駅3-22-4 名駅前みどりビル8階",
    "features": [
@@ -1158,18 +1158,18 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY LIFE 名古屋",
+   "name": "UNDEUX SUPERBODY 名古屋スタジオ",
    "areaSlug": "nagoya",
    "areaName": "名古屋",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/nagoya/",
    "price": "スタンダードプラン月2回 20,500円〜（税込）",
-   "trial": "体験レッスンあり",
-   "access": "JR「名古屋駅」徒歩5分",
-   "address": "JR「名古屋駅」徒歩5分",
+   "trial": "無料体験あり",
+   "access": "「名古屋駅」徒歩5分",
+   "address": "愛知県名古屋市中村区名駅3丁目23-6 第二千福ビル8階",
    "features": [
     "女性専用",
     "月額制",
-    "食事管理付き"
+    "食事相談付き"
    ]
   },
   {

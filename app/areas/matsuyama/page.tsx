@@ -27,38 +27,41 @@ const gyms = [
     features: ['女性専用', 'セミパーソナル（最大3名）', 'マシンピラティスあり', '低価格'],
     description: '女性会員限定のセミパーソナルジムです（最大3名・1回50分）。マシンピラティスがあり、低価格で続けやすい月額制です。',
     access: '伊予鉄 松山市駅 徒歩4分',
+    address: '愛媛県松山市千舟町6-2-16 イイオビル2階',
     options: ['月6回18,900円', '食事指導オプション11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '11:00〜21:00', closed: '公式サイトでご確認ください', facilities: ['シャワーなし（公式FAQ）', 'レンタルシューズ'] },
   },
   {
     name: 'BIPLUS BEAUTY 松山店',
     officialUrl: 'https://www.biplus-beauty.jp/store/',
-    price: '料金は公式サイトでご確認ください',
-    trial: '初回加圧トレーニング体験 3,300円',
+    price: '加圧パーソナル 5,335円〜／加圧マンスリー会員 16,500円〜（公式は税込と表記）',
+    trial: '初回加圧トレーニング体験 3,300円（税込）',
     features: ['女性専用', '加圧パーソナル', '完全予約制'],
     description: '女性専用の加圧パーソナルトレーニングスタジオです。マンツーマンの完全予約制です（金曜定休）。',
-    access: '松山市千舟町5-2-6（市駅・大街道徒歩圏／徒歩分数は公式サイトでご確認ください）',
+    access: '松山市千舟町5丁目2-6（最寄り駅・徒歩分数は公式に記載なし）',
+    address: '松山市千舟町5丁目2-6 共栄興産千舟町第3ビル 8F',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '平日10:00〜22:00（最終受付20:45）／土日祝10:00〜18:30（最終受付17:45）・完全予約制', closed: '毎週金曜日', facilities: ['公式サイトでご確認ください'] },
   },
   {
     name: 'マシンピラティススタジオ シルエット',
     officialUrl: 'https://silhouettegym.com/',
-    price: 'サブスク月2回 20,000円／チケット10回 100,000円',
-    trial: '初回体験 11,000円（口コミ投稿で無料）',
+    price: 'サブスク月2回 17,600円／チケット10回 98,000円（シングル）',
+    trial: '初回体験 シングル10,000円（口コミ投稿で無料）',
     features: ['マシンピラティス×筋トレ', 'マンツーマン', '食事指導（希望者）'],
     description: 'マシンピラティスとレジスタンストレーニングを組み合わせたマンツーマンスタジオです。希望者には食事指導もあります（女性専用の明記はありません）。',
     access: '伊予鉄 松山市駅 徒歩1分',
     address: '松山市湊町6-5-6 BO&CO 2F',
+    options: ['サブスク月4回 35,200円（シングル）', '入会金・事務手数料11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '公式サイトでご確認ください（女性向け中心の訴求）', purpose: ['ピラティス', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '9:00〜22:30（公式の別の表記では9:30〜22:30）', closed: '年中無休（年末年始・GW・お盆を除く）', facilities: ['駐車場3台'] },
   },
 ]
 
 const faqs = [
   { question: '松山で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、プリッツジム 愛媛松山店、BIPLUS BEAUTY 松山店です（2026年6月調査時点）。' },
-  { question: '松山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、プリッツジム 愛媛松山店は月4回 14,300円／月8回 24,000円です（税込・入会金22,000円）。マシンピラティススタジオ シルエットはサブスク月2回 20,000円／チケット10回 100,000円です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '松山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、プリッツジム 愛媛松山店は月4回 14,300円／月8回 24,000円です（税込・入会金22,000円）。BIPLUS BEAUTY 松山店は加圧パーソナル 5,335円〜／加圧マンスリー会員 16,500円〜です（公式は税込と表記）。マシンピラティススタジオ シルエットはサブスク月2回 17,600円／チケット10回 98,000円です（シングル）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '松山駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、マシンピラティススタジオ シルエット（伊予鉄 松山市駅 徒歩1分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'マシンピラティススタジオ シルエットは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
@@ -139,8 +142,8 @@ export default function MatsuyamaPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">プリッツジム 愛媛松山店</span><span className="text-brand-muted text-sm">月4回 14,300円／月8回 24,000円（税込・入会金22,000円）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BIPLUS BEAUTY 松山店</span><span className="text-brand-muted text-sm">料金は公式サイトでご確認ください</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">マシンピラティススタジオ シルエット</span><span className="text-brand-muted text-sm">サブスク月2回 20,000円／チケット10回 100,000円</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BIPLUS BEAUTY 松山店</span><span className="text-brand-muted text-sm">加圧パーソナル 5,335円〜／加圧マンスリー会員 16,500円〜（公式は税込と表記）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">マシンピラティススタジオ シルエット</span><span className="text-brand-muted text-sm">サブスク月2回 17,600円／チケット10回 98,000円（シングル）</span></li>
             </ul>
           </div>
         </section>

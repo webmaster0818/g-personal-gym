@@ -22,44 +22,47 @@ const gyms = [
   {
     name: 'Amazones（アマゾネス）和歌山駅前店',
     officialUrl: 'https://amazones.fit/storelist/wakayama/',
-    price: 'スタンダード会員 月額9,900円／パーソナル1回 4,400円（税込）',
+    price: 'スタンダード会員 月額9,900円／パーソナルプラン（ライト・月4回）月額22,000円／パーソナル1回（30分）4,400円',
     trial: '無料体験受付中（入会時カウンセリング＋パーソナル4回無料）',
     features: ['女性専用', '24時間営業', 'トレーナー全員女性'],
     description: 'JR和歌山駅徒歩1分の女性専用24時間ジムです（年中無休）。トレーナーは全員女性で、プロテイン・水素水のオプションもあります。',
     access: 'JR和歌山駅中央口から徒歩1分',
-    options: ['学生・シニア月7,700円'],
+    address: '和歌山市美園町5-12-2 3F',
+    options: ['学生・シニア月7,700円', '入会金・事務手数料11,000円＋セキュリティ登録料5,500円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['運動習慣', 'ダイエット'] },
     basicInfo: { hours: '24時間（スタッフ在籍：月・火・木・金・土 11:00〜20:00）', closed: '年中無休', facilities: ['公式サイトでご確認ください'] },
   },
   {
     name: 'MoveLab（ムーブラボ）',
     officialUrl: 'https://movelab.wakayama.jp/',
-    price: 'ダイエットベーシック3ヶ月12回 158,400円（税込/税抜は公式サイトでご確認ください）',
+    price: 'ダイエットベーシック3ヶ月12回 158,400円／ファーストクラス6ヶ月24回 264,000円（税込）',
     trial: '体験90分 5,500円（カウンセリング・体質分析・姿勢分析込み）',
     features: ['女性専用', '女性トレーナー専属', 'マット&マシンピラティス', '美容整体併用'],
     description: '女性専用のピラティス×美容整体×ダイエット専門スタジオです。女性トレーナーが専属で担当し、週1回の食事指導が付いています。体験は体質分析・姿勢分析込みの90分です。',
-    access: '和歌山市屋形町（アクセスは公式サイトでご確認ください）',
+    access: '和歌山城の近く・関西電力和歌山支店向かい（最寄り駅・徒歩分数は公式に記載なし）',
+    address: '和歌山市屋形町4丁目14-1 グランセオ屋形',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', '姿勢改善'] },
-    basicInfo: { hours: '9:00〜20:00（完全予約制）', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '9:00〜20:00（完全予約制）', closed: '年末年始', facilities: ['完全個室', '隣にコインパーキング', 'お子様連れ可（公式FAQ）'] },
   },
   {
     name: 'BEYOND 和歌山店',
     officialUrl: 'https://beyond-gym.com/gym/gym-wakayama/',
-    price: '回数券10回 102,300円／マンスリー月2回 17,600円（税込）',
+    price: '回数券10回 102,300円／ライフプランニング16回 290,400円（税込）',
     trial: '無料カウンセリング＋初回限定無料体験（手ぶらOK）',
     features: ['女性会員6〜7割を公式明記', '食事指導コースあり'],
     description: '会員の6〜7割が女性と公式に明記するボディメイクジムです。糖質コントロール式の食事管理込みコースがあります（トレーナーは調査時点で男性のみ）。',
-    access: '高松バス停 徒歩1分（駅徒歩圏外・車10分）',
-    options: ['ライフプランニング16回290,400円'],
+    access: '紀勢本線 宮前駅 徒歩30分（車10分）',
+    address: '和歌山市西高松1丁目5-40 MKビル1階（高松バス停から徒歩1分）',
+    options: ['コース終了後の継続プラン：マンスリー月2回17,600円（税込）'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性6〜7割と公式明記）', purpose: ['ボディメイク', 'ダイエット'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '10:00〜21:00', closed: '年中無休', facilities: ['シャワールーム', 'ロッカースペース', '駐車場あり', 'レンタルウェア・シューズ'] },
   },
 ]
 
 const faqs = [
   { question: '和歌山で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Amazones（アマゾネス）和歌山駅前店、MoveLab（ムーブラボ）です（2026年6月調査時点）。' },
-  { question: '和歌山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、Amazones（アマゾネス）和歌山駅前店はスタンダード会員 月額9,900円／パーソナル1回 4,400円です（税込）。BEYOND 和歌山店は回数券10回 102,300円／マンスリー月2回 17,600円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '和歌山駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、Amazones（アマゾネス）和歌山駅前店（JR和歌山駅中央口から徒歩1分）、BEYOND 和歌山店（高松バス停 徒歩1分）があります。' },
+  { question: '和歌山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、Amazones（アマゾネス）和歌山駅前店はスタンダード会員 月額9,900円／パーソナルプラン（ライト・月4回）月額22,000円／パーソナル1回（30分）4,400円です。MoveLab（ムーブラボ）はダイエットベーシック3ヶ月12回 158,400円／ファーストクラス6ヶ月24回 264,000円です（税込）。BEYOND 和歌山店は回数券10回 102,300円／ライフプランニング16回 290,400円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '和歌山駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、Amazones（アマゾネス）和歌山駅前店（JR和歌山駅中央口から徒歩1分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'Amazones（アマゾネス）和歌山駅前店、BEYOND 和歌山店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
@@ -127,7 +130,7 @@ export default function WakayamaPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・Amazones（アマゾネス）和歌山駅前店</li><li className="text-brand-muted">・MoveLab（ムーブラボ）</li><li className="text-brand-muted">・BEYOND 和歌山店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・Amazones（アマゾネス）和歌山駅前店</li><li className="text-brand-muted">・MoveLab（ムーブラボ）</li></ul>
               </div>
             </div>
           </div>
@@ -138,9 +141,9 @@ export default function WakayamaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">和歌山の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Amazones（アマゾネス）和歌山駅前店</span><span className="text-brand-muted text-sm">スタンダード会員 月額9,900円／パーソナル1回 4,400円（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">MoveLab（ムーブラボ）</span><span className="text-brand-muted text-sm">ダイエットベーシック3ヶ月12回 158,400円（税込/税抜は公式サイトでご確認ください）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 和歌山店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／マンスリー月2回 17,600円（税込）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Amazones（アマゾネス）和歌山駅前店</span><span className="text-brand-muted text-sm">スタンダード会員 月額9,900円／パーソナルプラン（ライト・月4回）月額22,000円／パーソナル1回（30分）4,400円</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">MoveLab（ムーブラボ）</span><span className="text-brand-muted text-sm">ダイエットベーシック3ヶ月12回 158,400円／ファーストクラス6ヶ月24回 264,000円（税込）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 和歌山店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／ライフプランニング16回 290,400円（税込）</span></li>
             </ul>
           </div>
         </section>
