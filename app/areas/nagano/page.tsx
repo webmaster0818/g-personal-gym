@@ -13,7 +13,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nagano/'),
-  title: '長野の女性向けパーソナルジムおすすめ3選｜料金比較・無料体験',
+  title: '長野市の女性向けパーソナルジムおすすめ3選｜公式料金の早見表',
   description: '長野のおすすめ女性向けパーソナルジム3選を比較しています。E9th・HPER・フィットネスサロンなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,長野,長野,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
@@ -22,46 +22,48 @@ const gyms = [
   {
     name: 'E9th PRIVATE GYM 長野駅前店',
     officialUrl: 'https://e9thprivategym.work/',
-    price: '回数券10回 60,000円／各種コース2ヶ月 76,000円〜（入会金10,000円）',
+    price: '回数券10回 70,000円／各種コース2ヶ月 76,000円〜（税込・コースは入会金10,000円）',
     trial: '無料カウンセリングあり／体験トレーニング4,500円（60分・税込）',
     features: ['完全個室', '全店舗に女性トレーナー在籍', '産後ダイエットコースあり', '全コース食事指導付き'],
     description: '駅徒歩3分の完全個室パーソナルジムです。全店舗に女性トレーナーが在籍し、産後ダイエットコースがあります。ピラティス・ヨガクラスは女性限定です。',
     access: '長野駅善光寺口から徒歩3分（提携駐車場あり）',
+    address: '長野市南長野北石堂町1414-1 孝義ビル4F',
     options: ['産後ダイエットコース208,500円〜'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性トレーナー在籍・女性限定クラスあり）', purpose: ['ダイエット', '産後ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '8:30〜22:30', closed: '年中無休（年末年始を除く）', facilities: ['完全個室', '提携駐車場あり'] },
   },
   {
     name: 'HPER（ハイパー）長野七瀬店',
     officialUrl: 'https://hper-gym.com/location/naganonanase/',
-    price: 'スタンダード2ヶ月16回 78,000円（入会金10,000円）',
+    price: 'スタンダード2ヶ月16回 85,800円（税込・入会金11,000円）',
     trial: '無料カウンセリングあり・1日体験コースあり',
     features: ['完全個室', 'ダイエット専門', '低価格', '毎日の食事サポート'],
-    description: 'ダイエット専門の完全個室マンツーマンジムです。2ヶ月16回78,000円と相場より抑えた価格で、毎日の食事改善サポートが付いています。回数券に有効期限がないのも特徴です。',
+    description: 'ダイエット専門の完全個室マンツーマンジムです。2ヶ月16回85,800円（税込）で、毎日の食事改善サポートが付いています。回数券に有効期限がないのも特徴です。',
     access: '長野駅東口から徒歩10分',
-    options: ['モニター2ヶ月16回68,000円', '回数券3回23,000円〜'],
+    address: '長野市鶴賀420-2 第一荒井ビル2階',
+    options: ['モニター2ヶ月16回74,800円（税込・定員あり）', '回数券3回25,300円〜（税込）'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室'] },
   },
   {
     name: 'フィットネスサロン CLUB-J',
     officialUrl: 'https://clubjfit.com/',
-    price: 'プレミアム（50分×18回/2ヶ月）168,000円（税込/税抜は公式サイトでご確認ください）',
-    trial: '無料相談＆体験トレーニングあり（無料）',
+    price: 'プレミアム（50分×18回/2ヶ月）207,000円（税込・入会金33,000円）',
+    trial: '体験トレーニング90分 5,000円（毎月先着5名は1,980円）',
     features: ['美容エステ併設', '食事コントロール指導', 'サロン型'],
     description: 'パーソナルトレーニングと美容エステを併設した「フィットネスサロン」業態です。女性向けの色が強いサロン型ジムです。',
-    access: '長野市稲葉（車アクセス前提・アクセスは公式サイトでご確認ください）',
-    options: ['ライト（25分×16回/2ヶ月）105,600円'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '公式サイトでご確認ください（女性向けサロン型）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    access: '長野市稲葉中千田沖2187-1（最寄り駅の記載なし）',
+    options: ['3ヶ月26回286,000円', '6ヶ月50回525,000円', '25分のライトプランあり（料金は公式でご確認ください）'],
+    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '公式に女性専用の記載なし（美容エステ併設）', purpose: ['ダイエット', 'ボディメイク'] },
+    basicInfo: { hours: '平日10:00〜20:00／土日祝10:00〜18:00', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
   },
 ]
 
 const faqs = [
   { question: '長野に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、長野駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
-  { question: '長野のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、E9th PRIVATE GYM 長野駅前店は回数券10回 60,000円／各種コース2ヶ月 76,000円〜です（入会金10,000円）。HPER（ハイパー）長野七瀬店はスタンダード2ヶ月16回 78,000円です（入会金10,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '長野のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、E9th PRIVATE GYM 長野駅前店は回数券10回 70,000円／各種コース2ヶ月 76,000円〜です（税込・コースは入会金10,000円）。HPER（ハイパー）長野七瀬店はスタンダード2ヶ月16回 85,800円です（税込・入会金11,000円）。フィットネスサロン CLUB-Jはプレミアム（50分×18回/2ヶ月）207,000円です（税込・入会金33,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '長野駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、E9th PRIVATE GYM 長野駅前店（長野駅善光寺口から徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'E9th PRIVATE GYM 長野駅前店、HPER（ハイパー）長野七瀬店、フィットネスサロン CLUB-Jは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'E9th PRIVATE GYM 長野駅前店、HPER（ハイパー）長野七瀬店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -142,9 +144,9 @@ export default function NaganoPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">長野の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">E9th PRIVATE GYM 長野駅前店</span><span className="text-brand-muted text-sm">回数券10回 60,000円／各種コース2ヶ月 76,000円〜（入会金10,000円）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">HPER（ハイパー）長野七瀬店</span><span className="text-brand-muted text-sm">スタンダード2ヶ月16回 78,000円（入会金10,000円）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">フィットネスサロン CLUB-J</span><span className="text-brand-muted text-sm">プレミアム（50分×18回/2ヶ月）168,000円（税込/税抜は公式サイトでご確認ください）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">E9th PRIVATE GYM 長野駅前店</span><span className="text-brand-muted text-sm">回数券10回 70,000円／各種コース2ヶ月 76,000円〜（税込・コースは入会金10,000円）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">HPER（ハイパー）長野七瀬店</span><span className="text-brand-muted text-sm">スタンダード2ヶ月16回 85,800円（税込・入会金11,000円）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">フィットネスサロン CLUB-J</span><span className="text-brand-muted text-sm">プレミアム（50分×18回/2ヶ月）207,000円（税込・入会金33,000円）</span></li>
             </ul>
           </div>
         </section>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'UNDEUX SUPERBODY 仙台スタジオ',
-    officialUrl: 'https://www.diet-undeux.jp/life/sendai/',
+    officialUrl: 'https://www.diet-undeux.jp/studio/sendai/',
     price: 'スタンダードプラン月額18,200円〜（税込）',
     trial: '無料カウンセリング・無料体験トレーニングあり',
     features: ['女性専用', '管理栄養士の食事サポート', '手ぶらOK'],
@@ -30,7 +30,7 @@ const gyms = [
     address: '仙台市青葉区中央1-7-2 アールアイ名掛丁2号館3F',
     options: ['コミットプラン月額79,200円（トレーニング6回＋LINE食事指導＋宅配食30食）'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', '食事改善'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '8:00〜22:00（平日を中心に9:00開店の日あり）', closed: '不定休', facilities: ['駐車サービスあり', 'レンタルシューズ・ウェア（手ぶらOK）'] },
   },
   {
     name: 'リボーンマイセルフ 仙台店',
@@ -43,38 +43,38 @@ const gyms = [
     address: '仙台市青葉区一番町2-8-46 青葉通りOSビル6階',
     options: ['ベーシックコース（3ヶ月24回）303,600円', 'チケット1回7,700円〜'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'ブライダル'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['シャワー・パウダールーム完備'] },
+    basicInfo: { hours: '平日10:00〜22:00／土日祝9:00〜19:00', closed: '公式サイトでご確認ください', facilities: ['シャワー・パウダールーム完備'] },
   },
   {
     name: 'パーソナルトレーニングジム ワンネス 仙台駅前店',
     officialUrl: 'https://female-oneness.com/',
-    price: '月謝コース月2回 13,000円〜（加圧・60分）',
+    price: '月謝コース月2回 13,000円〜（60分・税込・入会金22,000円）／加圧は月2回15,000円〜',
     trial: '無料カウンセリングあり／体験トレーニング8,800円（当日入会で3,300円）',
     features: ['女性専用', '東北最大級', '完全マンツーマン', '子連れOK'],
     description: '東北最大級の女性専用トレーニング施設です。完全マンツーマンで、トレーナーは全員コンテスト優勝・ファイナリスト経験者です。子連れOKです。',
     access: '地下鉄仙台駅 北6出口直結',
     address: '仙台市青葉区中央2-1-30 須田ビルディング4階',
-    options: ['回数券コースは入会金無料', '加圧トレーニング対応'],
+    options: ['回数券コースは入会金無料（8回98,000円〜）', '加圧トレーニング対応'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', '体力向上'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '10:00〜21:00', closed: '金曜', facilities: ['公式サイトでご確認ください'] },
   },
   {
     name: 'BARE FITNESS studio（ベアフィットネススタジオ）',
     officialUrl: 'https://barefitnessstudio.com/',
-    price: '月2回 10,780円〜月8回48,000円（入会金不要）',
+    price: 'ライト（30分）月2回10,780円〜／ベーシック（50分）月2回15,400円〜月8回48,000円（税込・入会金不要）',
     trial: '事前無料カウンセリングあり／体験トレーニング（50分）3,000円',
     features: ['女性専用', '女性トレーナー', '骨盤底筋トレーニング対応', '子連れOK'],
     description: '女性トレーナーによる地域独立系の女性専用パーソナルジムです。骨盤底筋トレーニングなど女性特有の悩みに対応し、完全予約制マンツーマン・子連れOKです。',
     access: '地下鉄北四番丁駅徒歩3分',
     address: '仙台市青葉区二日町11-5 第二梅原ビル4-A',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '骨盤ケア', '産後ダイエット'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '9:00〜21:30', closed: '第5週目にあたる曜日', facilities: ['シャワーなし（公式）', '駐車場なし'] },
   },
 ]
 
 const faqs = [
   { question: '仙台で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 仙台スタジオ、リボーンマイセルフ 仙台店、パーソナルトレーニングジム ワンネス 仙台駅前店、BARE FITNESS studio（ベアフィットネススタジオ）です（2026年6月調査時点）。' },
-  { question: '仙台のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 仙台スタジオはスタンダードプラン月額18,200円〜です（税込）。リボーンマイセルフ 仙台店はショートコース（2ヶ月16回）220,000円です（税込・入会金22,000円）。パーソナルトレーニングジム ワンネス 仙台駅前店は月謝コース月2回 13,000円〜です（加圧・60分）。BARE FITNESS studio（ベアフィットネススタジオ）は月2回 10,780円〜月8回48,000円です（入会金不要）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '仙台のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 仙台スタジオはスタンダードプラン月額18,200円〜です（税込）。リボーンマイセルフ 仙台店はショートコース（2ヶ月16回）220,000円です（税込・入会金22,000円）。パーソナルトレーニングジム ワンネス 仙台駅前店は月謝コース月2回 13,000円〜（60分・税込・入会金22,000円）／加圧は月2回15,000円〜です。BARE FITNESS studio（ベアフィットネススタジオ）はライト（30分）月2回10,780円〜／ベーシック（50分）月2回15,400円〜月8回48,000円です（税込・入会金不要）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '仙台駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、UNDEUX SUPERBODY 仙台スタジオ（JR仙台駅徒歩3分）、リボーンマイセルフ 仙台店（地下鉄東西線 青葉通一番町駅 南1出口徒歩2分）、パーソナルトレーニングジム ワンネス 仙台駅前店（地下鉄仙台駅 北6出口直結）、BARE FITNESS studio（ベアフィットネススタジオ）（地下鉄北四番丁駅徒歩3分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 仙台スタジオ、リボーンマイセルフ 仙台店、パーソナルトレーニングジム ワンネス 仙台駅前店、BARE FITNESS studio（ベアフィットネススタジオ）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '子連れで通えるジムはありますか？', answer: 'パーソナルトレーニングジム ワンネス 仙台駅前店、BARE FITNESS studio（ベアフィットネススタジオ）が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
@@ -157,8 +157,8 @@ export default function SendaiPage() {
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 仙台スタジオ</span><span className="text-brand-muted text-sm">スタンダードプラン月額18,200円〜（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">リボーンマイセルフ 仙台店</span><span className="text-brand-muted text-sm">ショートコース（2ヶ月16回）220,000円（税込・入会金22,000円）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">パーソナルトレーニングジム ワンネス 仙台駅前店</span><span className="text-brand-muted text-sm">月謝コース月2回 13,000円〜（加圧・60分）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BARE FITNESS studio（ベアフィットネススタジオ）</span><span className="text-brand-muted text-sm">月2回 10,780円〜月8回48,000円（入会金不要）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">パーソナルトレーニングジム ワンネス 仙台駅前店</span><span className="text-brand-muted text-sm">月謝コース月2回 13,000円〜（60分・税込・入会金22,000円）／加圧は月2回15,000円〜</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BARE FITNESS studio（ベアフィットネススタジオ）</span><span className="text-brand-muted text-sm">ライト（30分）月2回10,780円〜／ベーシック（50分）月2回15,400円〜月8回48,000円（税込・入会金不要）</span></li>
             </ul>
           </div>
         </section>

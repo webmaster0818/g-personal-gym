@@ -21,17 +21,17 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'UNDEUX SUPERBODY 銀座スタジオ',
-    officialUrl: 'https://www.diet-undeux.jp/',
+    officialUrl: 'https://www.diet-undeux.jp/studio/ginza/',
     price: 'スタンダードプラン月2回 21,300円〜（税込）',
     trial: '体験レッスン0円',
     features: ['女性専用', '食事管理付き', '初月宅配食30食無料（コミット）', '銀座一丁目駅徒歩1分'],
     description: '銀座一丁目駅から徒歩1分です。食事管理付きの女性専用パーソナルジムです（コミットプランは初月に宅配食30食無料）。',
-    access: '東京メトロ「銀座一丁目駅」徒歩1分',
-    address: '東京メトロ「銀座一丁目駅」徒歩1分',
+    access: '有楽町線「銀座一丁目駅」徒歩1分・各線「銀座駅」徒歩3分',
+    address: '東京都中央区銀座2-8-19 FPG links 3F',
     popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['シャワールーム', 'レンタルシューズ・ウェア（手ぶらOK）'] },
   },
   {
     name: 'リボーンマイセルフ 東京店',
@@ -55,11 +55,11 @@ const gyms = [
     features: ['AI主導', '1回20分', '低価格'],
     description: 'AI主導20分トレーニングです。銀座駅C5・C7出口直結です。',
     access: '東京メトロ「銀座駅」C5・C7出口直結（徒歩1分）',
-    address: '東京メトロ「銀座駅」C5・C7出口直結（徒歩1分）',
+    address: '東京都中央区銀座4-1 西銀座B2階',
     popularPlan: { name: '人気プラン', description: 'AI主導20分トレーニングです。銀座駅C5・C7出口直結です。', price: '月4回 17,600円（税込・スタンダード）／平日12〜17時のデイプランは14,960円' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '男女利用可（比率は公式サイトでご確認ください）', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '平日10:00〜22:00／土日祝10:00〜20:00', closed: '年中無休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '平日10:00〜22:00／土日祝10:00〜20:00', closed: '年中無休', facilities: ['シャワーなし（公式FAQ）', 'ウェア・タオル無料レンタル'] },
   }
 ]
 
@@ -72,8 +72,7 @@ const faqs = [
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
   { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが大半を占めます。' },
   { question: '銀座駅から近いジムはどこですか？', answer: 'UNDEUX SUPERBODY 銀座スタジオ（銀座一丁目駅 徒歩1分）、エクササイズコーチ 銀座店（銀座駅 C5・C7出口直結）が駅から近いジムです。' },
-  { question: 'リバウンドを防ぐサポートはありますか？', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」があります。多くのジムでは卒業後のフォロープログラムが含まれています。' },
-  { question: '子連れで通えるジムはどこですか？', answer: 'OUTLINEはベビーサークル全店完備です。事前に各ジムにお問い合わせください。' },
+  { question: '子連れで通えるジムはどこですか？', answer: 'UNDEUX SUPERBODYは公式FAQで「お子様の同伴可能」と案内しています（トレーニングブースは完全個室ではなく、一人ずつのスペースを確保。2026年11月5日確認）。ほかのジムは事前にお問い合わせください。' },
 ]
 
 export default function GinzaPage() {
