@@ -452,3 +452,4 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 🚫 aggregate-brands.py は再実行していない（/brands/undeux・reborn-myself は 11/5 変更で据え置き）。brandStores.json の UNDEUX 池袋/横浜・OUTLINE 池袋の徒歩分数は旧値のまま＝11/15 以降に再生成する。
 - 除外: 荻窪（11/1 変更）。/cost/ は冒頭に相場の答えがあり変更なし（相場文言は判断待ち）。/ranking/ はパンくず・ナビからトップへのリンクあり＝変更なし。
 - 未変更（件数のみ）: UNDEUX カードの「完全個室」残り13ページ（chiba・ebisu・fukuoka・futakotamagawa・jiyugaoka・kawasaki・kichijoji・meguro・omiya・omotesando・osaka・shibuya・shinjuku）。「2ヶ月で平均5〜8kg」FAQ 出典未確認。長野 FAQ「有料体験でも当日入会で無料になるジムがあります」は掲載3店で確認できず（生成テンプレ文）。
+- ✅本番（source 34b722c / deploy 50b6f05a）: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・計測リンク前後とも2・HTML本文の差分は6ページのみ（137中）。本番 ?cb= で6URLとも早見表あり・旧値0（158,400／女性人気No／利用者の8割／168,000円（税込/／回数券10回 60,000／life/sendai／業界初〈銀座・六本木〉）、robots 200、sitemap lastmod 11/5。Indexing は親が処理。
