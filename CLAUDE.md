@@ -453,3 +453,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 除外: 荻窪（11/1 変更）。/cost/ は冒頭に相場の答えがあり変更なし（相場文言は判断待ち）。/ranking/ はパンくず・ナビからトップへのリンクあり＝変更なし。
 - 未変更（件数のみ）: UNDEUX カードの「完全個室」残り13ページ（chiba・ebisu・fukuoka・futakotamagawa・jiyugaoka・kawasaki・kichijoji・meguro・omiya・omotesando・osaka・shibuya・shinjuku）。「2ヶ月で平均5〜8kg」FAQ 出典未確認。長野 FAQ「有料体験でも当日入会で無料になるジムがあります」は掲載3店で確認できず（生成テンプレ文）。
 - ✅本番（source 34b722c / deploy 50b6f05a）: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・計測リンク前後とも2・HTML本文の差分は6ページのみ（137中）。本番 ?cb= で6URLとも早見表あり・旧値0（158,400／女性人気No／利用者の8割／168,000円（税込/／回数券10回 60,000／life/sendai／業界初〈銀座・六本木〉）、robots 200、sitemap lastmod 11/5。Indexing は親が処理。
+
+### 2026-11-06 朝：レントラックス「ゆるダイエット【Lime Personal Gym】」終了（11/6 00:00）の確認＋飯田橋 LiME を公式どおりに ✅本番（source d7a004f / deploy 9773bfe7）
+- 当該案件の計測リンク・lp_yuru・「ゆるダイエット」はリポ／deploy／本番とも 0（rentracks の計測リンクも 0）。LiME は tre-labo.com への直リンクのみで飯田橋ページ 1 枚だけ。LP・計測リンクは開いていない。
+- 公式（11/6 /access/iidabashi/・/price/ 料金画像 0324_price.jpg・TOP FAQ）: 店舗は実在。市ヶ谷駅徒歩約4分／飯田橋駅徒歩約8分、9:00〜24:00（年中無休）、完全個室、無料体験あり＝一致。
+- 訂正: 料金「公式サイトでご確認ください（「大手の半額以下」と公式記載）」→サブスク4コース 月36,000円（税込）・入会金39,800円（税込）＋他コースを options に（公式の文言は「某Rジムの1/2以下」）。無料体験「姿勢チェック・最大2時間」→公式どおり。「女性利用が多いと公式記載」は公式の主要8ページに記載なし→外した（gender は「公式のお客様の声に男女とも掲載」）。batch2 も同値（一時ディレクトリで再生成→差分なし）。sitemap lastmod は飯田橋のみ 11/6。
+- 未変更: 公式の店舗ページには「月々6,900円〜」もあり料金画像（最安の月額 36,000円）と食い違う（内訳の記載なし）ので載せていない。officialUrl はトップのまま（店舗ページは /access/iidabashi/）。住所 東京都新宿区市谷田町2丁目20-1 は未掲載。
+- 件数のみ: UNDEUX 公式 FAQ（11/6）「トレーニングブースは完全個室ではありません」に対し、カードの facilities「完全個室」は 13 ページ 13 件のまま（chiba・ebisu・fukuoka・futakotamagawa・jiyugaoka・kawasaki・kichijoji・meguro・omiya・omotesando・osaka・shibuya・shinjuku）。
