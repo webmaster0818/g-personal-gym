@@ -45,7 +45,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '月額制の女性専用パーソナルジムです。福岡エリアで展開しています。', price: 'スタンダードプラン月2回 18,900円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['シャワー', 'ロッカー'] },
   },
   {
     name: 'with U（ウィズユー）',

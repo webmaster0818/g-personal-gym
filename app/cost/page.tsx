@@ -3,6 +3,7 @@ import { Navigation } from '@/components/Navigation'
 import { SiteFooter } from '@/components/SiteFooter'
 import { IntentGuideLinks } from '@/components/IntentGuideLinks'
 import { SurveyHighlight } from '@/components/SurveyHighlight'
+import { CostMarketTable } from '@/components/CostMarketTable'
 import { FAQSchema } from '@/components/FAQSchema'
 import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
   ...pageUrlMeta('/cost/'),
   title: '女性専用パーソナルジムの料金相場｜相場・入会金・体験無料60%を独自調査',
   description:
-    '女性専用パーソナルジムの料金相場を、2ヶ月集中コース・月額制・都度払い別に解説します。入会金や食事指導などの追加費用、総額の目安、安く抑えるコツ、他の運動施設との料金比較まで、公開情報ベースでまとめました。',
+    '女性専用パーソナルジムの料金相場を掲載ジムの公式料金で計算。2ヶ月コースは8社で85,800〜290,400円（中央値193,600円）、月4回の月額は7社で17,600〜50,000円（中央値29,700円）。入会金や追加費用も解説（2026年11月6日確認）。',
 }
 
 const faqs = [
-  { question: '女性専用パーソナルジムの料金相場はいくらですか？', answer: '主流の2ヶ月集中コース（16回）は約18万〜25万円（税込）が相場です。これに入会金2万〜5万円程度が加わります。月額制なら月1.2万〜6万円、都度払いは1回6千〜1.5万円が目安です。キャンペーンで入会金無料になるケースも多く、実際の総額は各ジムの無料カウンセリングで確認するのが確実です。' },
+  { question: '女性専用パーソナルジムの料金相場はいくらですか？', answer: '主流の2ヶ月集中コース（16回）は約18万〜25万円（税込）が相場です。入会金は掲載ジムの公式で0円〜55,000円です。月額制なら月1.2万〜6万円、都度払いは1回6千〜1.5万円が目安です。キャンペーンで入会金無料になるケースも多く、実際の総額は各ジムの無料カウンセリングで確認するのが確実です。' },
   { question: '2ヶ月コースと月額制はどちらがお得ですか？', answer: '短期間で集中的に結果を出したいなら2ヶ月コース、無理なく長く続けたい・初期費用を抑えたいなら月額制が向きます。週2回を3ヶ月以上続ける想定なら、月額制のほうが総額を抑えられる場合があります。一方、食事指導や宅配食などの手厚いサポートは2ヶ月コースに含まれることが多い点も比較材料です。' },
-  { question: 'コース料金以外にかかる費用はありますか？', answer: '入会金（2万〜5万円程度）が代表的です。ウェア・タオル・シューズのレンタルは無料のジムがほとんどで、食事指導もコースに含まれているケースが一般的です。プロテインや一部のオプション（部分痩せ集中など）が別料金のことがあるため、カウンセリング時に「総額でいくらか」を必ずご確認ください。' },
+  { question: 'コース料金以外にかかる費用はありますか？', answer: '入会金（掲載ジムの公式で0円〜55,000円）が代表的です。ウェア・タオル・シューズのレンタルは無料のジムがほとんどで、食事指導もコースに含まれているケースが一般的です。プロテインや一部のオプション（部分痩せ集中など）が別料金のことがあるため、カウンセリング時に「総額でいくらか」を必ずご確認ください。' },
   { question: '分割払いやローンは使えますか？', answer: '多くの女性専用パーソナルジムが分割払い（提携ローン・クレジットカード）に対応しています。たとえば月々5,000円台からの分割に対応するジムもあります。分割は手数料が上乗せされるため、総支払額と回数を確認したうえで利用するのがおすすめです。' },
   { question: '料金を安く抑える方法はありますか？', answer: '「入会金無料キャンペーン」「モニター割引（ビフォーアフター提供）」「友達紹介割引」「年度替わり・季節のキャンペーン」を狙うのが効果的です。高額コースが不安な場合は、まず月額制や都度払いのジムで相性を確かめてから本格的なコースに移行する方法もあります。' },
   { question: '一般的なジムより高いのはなぜですか？', answer: 'トレーナーがマンツーマンで指導し、一人ひとりに合わせたトレーニング・食事プログラムを設計するためです。フォーム指導や食事サポートまで含むため、自己流になりがちな一般ジム（月数千円〜）より単価は高くなりますが、短期間で結果が出やすく挫折しにくいのが特徴です。' },
@@ -35,9 +36,11 @@ export default function CostPage() {
             <p className="eyebrow mb-3">Price Guide</p>
             <h1 className="text-2xl md:text-4xl font-bold text-ink mb-4 leading-snug">女性専用パーソナルジムの料金相場</h1>
             <p className="text-ink-soft text-sm md:text-base leading-relaxed">2ヶ月集中コース・月額制・都度払いの料金に加え、入会金や追加費用、総額の目安と費用を抑えるコツについて解説します。</p>
-            <p className="text-ink-faint text-xs mt-3">更新日 2026年4月13日</p>
+            <p className="text-ink-faint text-xs mt-3">更新日 2026年11月6日</p>
           </div>
         </section>
+
+        <CostMarketTable />
 
         <section className="py-12 bg-ivory">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
@@ -71,7 +74,7 @@ export default function CostPage() {
             <div className="bg-accent-tint border border-accent-soft rounded-xl p-6 mb-10">
               <p className="font-bold text-ink mb-2">料金相場の目安</p>
               <ul className="text-sm text-ink-soft leading-relaxed space-y-1">
-                <li>・<strong>2ヶ月集中コース（16回）</strong>：約18万〜25万円（税込）＋入会金2万〜5万円</li>
+                <li>・<strong>2ヶ月集中コース（16回）</strong>：約18万〜25万円（税込）＋入会金0円〜5.5万円</li>
                 <li>・<strong>月額制</strong>：月1.2万〜6万円（月4〜8回）／初期費用を抑えやすい</li>
                 <li>・<strong>都度払い</strong>：1回6千〜1.5万円／自分のペースで通える</li>
               </ul>
@@ -99,7 +102,7 @@ export default function CostPage() {
                 <p className="text-3xl font-bold text-accent mb-2">18万〜25万円</p>
                 <p className="text-ink-faint text-xs mb-4">16回（週2回×2ヶ月）</p>
                 <ul className="space-y-2 text-sm text-ink-soft">
-                  <li>・ビーコンセプト: 179,685円〜</li>
+                  <li>・ビーコンセプト: 179,685円（18回）</li>
                   <li>・OUTLINE: 184,800円〜</li>
                 </ul>
               </div>
@@ -166,7 +169,7 @@ export default function CostPage() {
 
             <h2 id="nyukai" className="text-xl md:text-2xl font-bold text-ink mb-6">入会金の相場</h2>
             <div className="bg-white border border-line rounded-xl p-6 mb-12">
-              <p className="text-ink-soft leading-relaxed mb-4">入会金は2万〜5万円が一般的です。キャンペーンで入会金無料になるジムも多いので、各ジムの最新キャンペーン情報をご確認ください。</p>
+              <p className="text-ink-soft leading-relaxed mb-4">掲載ジムの公式では0円〜55,000円で、OUTLINE・BEYOND・ビーコンセプトの2ヶ月コースのように0円のジムもあります（2026年11月6日確認）。同じジムでもプランや店舗で変わるので、契約前にご確認ください。</p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse">
                   <thead>
@@ -176,10 +179,11 @@ export default function CostPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-white"><td className="px-4 py-2 border-b border-line">OUTLINE</td><td className="px-4 py-2 border-b border-line">15,000円〜33,000円</td></tr>
-                    <tr className="bg-ivory/50"><td className="px-4 py-2 border-b border-line">ビーコンセプト</td><td className="px-4 py-2 border-b border-line">38,500円</td></tr>
-                    <tr className="bg-white"><td className="px-4 py-2 border-b border-line">リボーンマイセルフ</td><td className="px-4 py-2 border-b border-line">22,000円（公式に税込・税抜の記載なし）</td></tr>
-                    <tr className="bg-ivory/50"><td className="px-4 py-2 border-b border-line">UNDEUX SUPERBODY</td><td className="px-4 py-2 border-b border-line">22,000円</td></tr>
+                    <tr className="bg-white"><td className="px-4 py-2 border-b border-line">OUTLINE</td><td className="px-4 py-2 border-b border-line">0円（公式の料金ページ）</td></tr>
+                    <tr className="bg-ivory/50"><td className="px-4 py-2 border-b border-line">ビーコンセプト</td><td className="px-4 py-2 border-b border-line">太ももダイエット 0円／リバウンド防止付 22,000円／トライアル 38,500円（当日入会で0円）</td></tr>
+                    <tr className="bg-white"><td className="px-4 py-2 border-b border-line">リボーンマイセルフ</td><td className="px-4 py-2 border-b border-line">22,000円（西日本の公式サイトは税込と表記）</td></tr>
+                    <tr className="bg-ivory/50"><td className="px-4 py-2 border-b border-line">UNDEUX SUPERBODY</td><td className="px-4 py-2 border-b border-line">公式の料金ページ・FAQに記載なし</td></tr>
+                    <tr className="bg-ivory/50"><td className="px-4 py-2 border-b border-line">かたぎり塾</td><td className="px-4 py-2 border-b border-line">0円〜55,000円（店舗で差）</td></tr>
                   </tbody>
                 </table>
               </div>
