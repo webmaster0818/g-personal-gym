@@ -21,6 +21,33 @@ export type AreaQuickPrice = {
 }
 
 export const AREA_QUICK_PRICES: Record<string, AreaQuickPrice> = {
+  himeji: {
+    checked: '2026年11月6日',
+    rows: [
+      { name: 'Amazones（アマゾネス）姫路店', sourceUrl: 'https://amazones.fit/storelist/himeji/',
+        plan: 'パーソナルプラン ライト（パーソナル月4回）月額22,000円／通い放題 月額44,000円／プレミアム（通い放題・食事管理）月額55,000円（税区分の記載なし・人数限定）',
+        joinFee: '入会金・事務手数料11,000円＋セキュリティ登録料5,500円（税区分の記載なし・割引キャンペーンの場合あり）', trial: '無料体験・見学あり',
+        access: 'JR姫路駅北口から徒歩6分（450m）', women: '女性専用・トレーナー全員女性', facilities: '24時間・年中無休（スタッフ在籍は月・火・木・金・土 11:00〜20:00）／ロッカー完備（無料鍵つき）' },
+      { name: 'BEYOND 姫路店', sourceUrl: 'https://beyond-gym.com/gym/gym-himeji/',
+        plan: '回数券10回102,300円／20回187,000円／30回264,000円、ライフプランニング16回（2ヶ月・食事管理付き）290,400円（税込）／コース終了後の継続プラン マンスリー月4回35,200円（税込）',
+        joinFee: '無料（公式の料金ページ「全コース入会金無料」）', trial: 'カウンセリング無料／体験トレーニング初回0円',
+        access: 'JR姫路駅から北へ徒歩4分', women: '男女共用・女性トレーナー1名在籍（公式FAQ：2026年5月13日現在）', facilities: 'シャワールーム／レンタルウェア・シューズ／10:00〜22:00・年中無休' },
+      { name: 'OKADA Training Studio', sourceUrl: 'https://training.main.jp/menu.html',
+        plan: 'パーフェクトトレーニング（大人）30分5,000円／60分8,000円、ヨガパーソナル 60分6,000円（税区分の記載なし）',
+        joinFee: '料金ページに記載なし', trial: 'お試しトレーニング30分3,000円／無料カウンセリング',
+        access: '姫路駅から徒歩1分（姫路駅前第一ビル3階）', women: '女性専用の記載なし（骨盤矯正・マタニティヨガあり）', facilities: '完全個室／9:00〜21:00（最終受付20:00）' },
+    ],
+    note: 'OKADA Training Studio の公式サイトは新着情報の最終更新が2019年6月です。料金は予約時にご確認ください。',
+  },
+  fujisawa: {
+    checked: '2026年11月6日',
+    rows: [
+      { name: 'UNDEUX SUPERBODY 藤沢スタジオ', sourceUrl: 'https://www.diet-undeux.jp/studio/fujisawa/',
+        plan: 'スタンダード月2回18,900円／月4回32,000円（DAY会員 平日9〜18時は27,500円）／月8回64,000円（DAY会員は55,000円）／コミット月6回79,200円（税込）',
+        joinFee: '店舗ページに記載なし', trial: '無料体験トレーニング（約60分・初めての方）', access: '各線藤沢駅から徒歩4分',
+        women: '女性専用・女性トレーナー在籍', facilities: 'レンタルシューズ・ウェア・タオル／マシンピラティス／シャワーは店舗ページの設備欄に記載なし／完全個室ではない（公式FAQ）' },
+    ],
+  },
   ginza: {
     checked: '2026年11月5日',
     rows: [
