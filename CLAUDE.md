@@ -460,3 +460,12 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 訂正: 料金「公式サイトでご確認ください（「大手の半額以下」と公式記載）」→サブスク4コース 月36,000円（税込）・入会金39,800円（税込）＋他コースを options に（公式の文言は「某Rジムの1/2以下」）。無料体験「姿勢チェック・最大2時間」→公式どおり。「女性利用が多いと公式記載」は公式の主要8ページに記載なし→外した（gender は「公式のお客様の声に男女とも掲載」）。batch2 も同値（一時ディレクトリで再生成→差分なし）。sitemap lastmod は飯田橋のみ 11/6。
 - 未変更: 公式の店舗ページには「月々6,900円〜」もあり料金画像（最安の月額 36,000円）と食い違う（内訳の記載なし）ので載せていない。officialUrl はトップのまま（店舗ページは /access/iidabashi/）。住所 東京都新宿区市谷田町2丁目20-1 は未掲載。
 - 件数のみ: UNDEUX 公式 FAQ（11/6）「トレーニングブースは完全個室ではありません」に対し、カードの facilities「完全個室」は 13 ページ 13 件のまま（chiba・ebisu・fukuoka・futakotamagawa・jiyugaoka・kawasaki・kichijoji・meguro・omiya・omotesando・osaka・shibuya・shinjuku）。
+
+### 2026-11-06 12:00 成長ルーチン：/cost/ 冒頭に公式料金から計算した相場＋UNDEUX「完全個室」12ページ＋Lastyle 訂正 ✅本番（source a645201 / deploy fdee3057）
+- /cost/: `data/costMarket.ts`＋`components/CostMarketTable.tsx` を新設し h1 直下に表示。幅と中央値は配列から計算（手書きしない）。2ヶ月コース 8社（HPER・E9th・ビーコンセプト・OUTLINE・リボーン・CLUB-J・Lastyle・BEYOND）85,800〜290,400円・中央値 193,600円（入会金込み 204,600円）。女性専用と公式にある3社 179,685〜220,000円。月4回 7社（EC・リボーン30分制・BARE・UNDEUX・かたぎり塾・eviGym・AGLAIA）17,600〜50,000円・中央値 29,700円。全て 11/6 に公式生HTML・料金画像で確認。全ジムの平均ではないと明記。
+- /cost/ の訂正: 入会金「2万〜5万円」→公式で 0〜55,000円（4か所）、表の OUTLINE 15,000〜33,000円→0円、ビーコンセプト 38,500円→プラン別（太もも 0円）、UNDEUX 22,000円→公式の料金ページ・FAQに記載なし、かたぎり塾行を追加。更新日を 11/6 に。title は変更なし。かたぎり塾 30,800円〜は静岡店で公式どおり＝据え置き。
+- /ranking/: Lastyle「2ヶ月16回 158,400円〜」→公式の 1回13,200円（16回で211,200円）。FAQ「安いジム」の Lastyle 文をビーコンセプト・OUTLINE（継続条件つき）に。/cost/ への導線は既存2か所で変更なし。
+- UNDEUX 公式FAQ（11/6）「トレーニングブースは完全個室ではありません」→カードの facilities から「完全個室」を外した：chiba・fukuoka・futakotamagawa・jiyugaoka・kawasaki・kichijoji・meguro・omiya・omotesando・osaka・shibuya・shinjuku の12ページ（カードの設備タブなのでHTMLはRSCペイロード内で1件ずつ減）。
+- 🚨 ebisu だけ未修正（11/9 以降＝触らない指定を優先）。11/9 以降に同じ修正を入れる。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク px.a8.net 前後とも2・`__next*` 0。本番（?cb=・12:18）: /cost/ 新セクションあり・旧入会金値0、/ranking/ 158,400 0、12ページとも完全個室が新ビルドと同数、robots 200、sitemap lastmod 11/6。
+- 未変更（件数のみ）: /cost/ の「18万〜25万円」「1.2万〜6万円」（相場文言は判断待ち）＝計算の中央付近とは合うが HPER 85,800円等は幅の外。TOP・/faq/ の「2万〜5万」。data/gymSurvey の個室28%（6月集計）。/cost/「OUTLINEは生涯無料」は /service に「生涯」の語なし（未照合）。/ranking/ Lastyle の「完全個室」「GetFit」タグ等は未照合。
