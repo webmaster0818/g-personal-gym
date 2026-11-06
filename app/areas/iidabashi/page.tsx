@@ -35,19 +35,20 @@ const gyms = [
   {
     name: 'LiMEパーソナルジム 飯田橋・市ヶ谷店',
     officialUrl: 'https://tre-labo.com/',
-    price: '料金は公式サイトでご確認ください（「大手の半額以下」と公式記載）',
-    trial: '無料体験あり（カウンセリング＋姿勢チェック＋トレーニング、最大2時間）',
-    features: ['完全個室', '管理栄養士監修のLINE食事指導', '女性利用が多いと公式記載', '年中無休9〜24時'],
-    description: '完全個室のパーソナルジムです。管理栄養士監修のLINE食事指導付きで、無理な食事制限はありません。女性利用が多いと公式に記載されています。神楽坂店もあります。',
+    price: 'サブスク4コース 月36,000円（税込）・入会金39,800円（税込）',
+    trial: '無料体験あり（カウンセリング＋姿勢評価＋体験トレーニング＋アフターカウンセリング、最長2時間）',
+    features: ['完全個室', '管理栄養士監修のLINE食事指導', '年中無休9〜24時'],
+    description: '完全個室のパーソナルジムです。管理栄養士監修のLINE食事指導付きで、無理な食事制限はありません。神楽坂店もあります。',
     access: '市ヶ谷駅 徒歩約4分／飯田橋駅 徒歩約8分',
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性利用が多いと公式記載）', purpose: ['ダイエット', '姿勢改善', 'ボディメイク'] },
+    options: ['サブスク6コース 月51,000円（税込）', 'サブスク8コース 月64,000円（税込）', 'トライアルコース 16回 132,800円（税込）', 'スタンダードコース 16回 217,800円（税込）', 'コミットコース 24回 326,700円（税込）', 'メンテナンスコース 8回 70,400円（税込）', '料金は2026年11月6日 公式確認'],
+    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（公式のお客様の声に男女とも掲載）', purpose: ['ダイエット', '姿勢改善', 'ボディメイク'] },
     basicInfo: { hours: '9:00〜24:00（年中無休）', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
   },
 ]
 
 const faqs = [
   { question: '飯田橋で女性専用のパーソナルジムはどこですか？', answer: '当サイト掲載のジムのうち、公式サイトで女性専用と確認できたジムはありません（2026年10月時点）。掲載中の2ジムはいずれも完全個室のマンツーマン指導です。' },
-  { question: '飯田橋のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、かたぎり塾 飯田橋店は月4プラン 33,000円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '飯田橋のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、かたぎり塾 飯田橋店は月4プラン 33,000円、LiMEパーソナルジム 飯田橋・市ヶ谷店はサブスク4コース 月36,000円（別途入会金39,800円）です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '飯田橋駅から近いジムはどこですか？', answer: '当サイト掲載のジムに駅徒歩3分以内・直結のジムはありません。最寄りはかたぎり塾 飯田橋店（東西線 飯田橋駅B3出口 徒歩4分）です。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'かたぎり塾 飯田橋店、LiMEパーソナルジム 飯田橋・市ヶ谷店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '子連れで通えるジムはありますか？', answer: 'かたぎり塾 飯田橋店は乳幼児同伴可と案内しています。条件は各公式サイトでご確認ください。' },
@@ -125,7 +126,7 @@ export default function IidabashiPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">かたぎり塾 飯田橋店</span><span className="text-brand-muted text-sm">月4プラン 33,000円（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">LiMEパーソナルジム 飯田橋・市ヶ谷店</span><span className="text-brand-muted text-sm">料金は公式サイトでご確認ください（「大手の半額以下」と公式記載）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">LiMEパーソナルジム 飯田橋・市ヶ谷店</span><span className="text-brand-muted text-sm">サブスク4コース 月36,000円（税込）・入会金39,800円（税込）</span></li>
             </ul>
           </div>
         </section>
