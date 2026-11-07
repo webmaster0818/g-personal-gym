@@ -489,3 +489,4 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - UNDEUX「完全個室」: 13ページのうち12は 11/6 に解消済み。ソースのカードに残るのは /areas/ebisu/ の1件のみ（11/9 以降）。
 - /articles/iryo-renkei/ C3（監修者）は読者向けチェック項目で誤検知。ただし同ページ冒頭に「監修 woman-gym編集部」の表示あり（判断対象として報告）。
 - 未変更（件数のみ）: エリア9ページの「入会金は別途2〜5万円程度」（六本木・福岡・銀座・大阪・札幌・池袋・新宿・横浜・名古屋）。
+- ✅本番（source 3b521af / deploy f5e1cbc0・反映 約10分）: build EXIT0・precheck（out／deploy）全項目OK・px.a8.net 前後とも3（HTML/txt）・HTML本文の差分は8ページのみ。本番 ?cb= で8URLとも旧値0・新値あり、robots 200、sitemap lastmod 8URL=11/7。
