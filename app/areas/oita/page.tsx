@@ -22,14 +22,14 @@ const gyms = [
   {
     name: 'BEYOND 大分店',
     officialUrl: 'https://beyond-gym.com/gym/gym-oita/',
-    price: '回数券10回 102,300円／月額マンスリー月2回 17,600円〜',
+    price: '回数券10回 102,300円／ライフプランニング16回 290,400円（税込）',
     trial: '無料カウンセリング＋体験トレーニング（初回限定無料）',
-    features: ['女性トレーナー在籍', '女性向けプログラム対応', '食事指導コースあり'],
-    description: '男女共用ですが女性トレーナーが在籍し、女性利用が多いボディメイクジムです。食事指導付きコース（ライフプランニング）があります。',
+    features: ['女性トレーナー在籍', '食事指導コースあり'],
+    description: '男女共用ですが女性トレーナーが在籍するボディメイクジムです（公式FAQ：男性1名・女性1名、2026年6月29日現在）。食事指導付きコース（ライフプランニング）があります。',
     access: 'JR大分駅北口 徒歩8分',
     address: '大分市府内町3-3-8 府内トレス1階',
-    options: ['ACHIEVE20回187,000円'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性利用多数）', purpose: ['ボディメイク', 'ダイエット'] },
+    options: ['ACHIEVE20回187,000円', 'コース終了後の継続プラン マンスリー月2回17,600円'],
+    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性トレーナー在籍）', purpose: ['ボディメイク', 'ダイエット'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
   },
   {
@@ -58,7 +58,7 @@ const gyms = [
 
 const faqs = [
   { question: '大分で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、rare integrate（レアインテグレート）、養生salon 古き良きです（2026年6月調査時点）。' },
-  { question: '大分のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BEYOND 大分店は回数券10回 102,300円／月額マンスリー月2回 17,600円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '大分のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BEYOND 大分店は回数券10回 102,300円／ライフプランニング16回 290,400円です（税込）。月2回17,600円のマンスリーはコース終了後の継続プランです。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'BEYOND 大分店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
@@ -122,14 +122,10 @@ export default function OitaPage() {
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別の選び方</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・rare integrate（レアインテグレート）</li><li className="text-brand-muted">・養生salon 古き良き</li></ul>
-              </div>
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・BEYOND 大分店</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
@@ -144,7 +140,7 @@ export default function OitaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">大分の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 大分店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／月額マンスリー月2回 17,600円〜</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 大分店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／ライフプランニング16回 290,400円（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">rare integrate（レアインテグレート）</span><span className="text-brand-muted text-sm">料金は公式サイトでご確認ください</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">養生salon 古き良き</span><span className="text-brand-muted text-sm">パーソナルは8回/12回の1クール制（金額は公式サイトでご確認ください）</span></li>
             </ul>

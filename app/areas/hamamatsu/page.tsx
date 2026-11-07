@@ -22,13 +22,13 @@ const gyms = [
   {
     name: 'BEYOND 浜松店',
     officialUrl: 'https://beyond-gym.com/gym/gym-hamamatsu/',
-    price: '回数券10回 102,300円（1回あたり10,230円）／マンスリープラン月2回 17,600円',
+    price: '回数券10回 102,300円（1回あたり10,230円）／ライフプランニング16回 290,400円（税込）',
     trial: '初回限定の無料カウンセリング・体験トレーニングあり',
     features: ['女性会員6〜7割を公式明記', '個室あり', '食事管理あり', '手ぶらOK', '無料駐車場'],
     description: '会員の6〜7割が女性と公式に明記するボディメイクジムです。食事管理付きのコースがあり、ウェア・シューズ・タオルが無料のため手ぶらで通えます。無料駐車場・シャワーがあります（女性トレーナーは調査時点で未配置と公式記載）。',
     access: '浜松駅南口から徒歩10分',
     address: '浜松市中央区龍禅寺町74-1 フジビル101&2F',
-    options: ['ACHIEVE20回187,000円', '食事管理付きライフプランニング16（2ヶ月）290,400円'],
+    options: ['ACHIEVE20回187,000円', '食事管理付きライフプランニング16（2ヶ月）290,400円', 'コース終了後の継続プラン マンスリー月2回17,600円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性6〜7割と公式明記）', purpose: ['ボディメイク', 'ダイエット'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['個室あり', '無料駐車場'] },
   },
@@ -59,7 +59,7 @@ const gyms = [
 
 const faqs = [
   { question: '浜松に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、浜松駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
-  { question: '浜松のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BEYOND 浜松店は回数券10回 102,300円（1回あたり10,230円）／マンスリープラン月2回 17,600円です。STUDIO AYAKO（スタジオ・アヤコ）はパーソナルトレーニング50分 7,700円です（入会手数料15,000円＋月会費5,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '浜松のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BEYOND 浜松店は回数券10回 102,300円（1回あたり10,230円）／ライフプランニング16回 290,400円です（税込）。月2回17,600円のマンスリーはコース終了後の継続プランです。STUDIO AYAKO（スタジオ・アヤコ）はパーソナルトレーニング50分 7,700円です（入会手数料15,000円＋月会費5,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'BEYOND 浜松店、パーソナルトレーニングジムNINE（浜松高林店ほか市内4店舗）は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
@@ -123,11 +123,7 @@ export default function HamamatsuPage() {
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別の選び方</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・BEYOND 浜松店</li></ul>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・パーソナルトレーニングジムNINE（浜松高林店ほか市内4店舗）</li></ul>
@@ -141,7 +137,7 @@ export default function HamamatsuPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">浜松の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 浜松店</span><span className="text-brand-muted text-sm">回数券10回 102,300円（1回あたり10,230円）／マンスリープラン月2回 17,600円</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 浜松店</span><span className="text-brand-muted text-sm">回数券10回 102,300円（1回あたり10,230円）／ライフプランニング16回 290,400円（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">パーソナルトレーニングジムNINE（浜松高林店ほか市内4店舗）</span><span className="text-brand-muted text-sm">月18,000円〜継続可能（コース詳細は公式サイトでご確認ください）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">STUDIO AYAKO（スタジオ・アヤコ）</span><span className="text-brand-muted text-sm">パーソナルトレーニング50分 7,700円（入会手数料15,000円＋月会費5,000円）</span></li>
             </ul>

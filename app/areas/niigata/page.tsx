@@ -46,13 +46,13 @@ const gyms = [
   {
     name: 'BEYOND 新潟店',
     officialUrl: 'https://beyond-gym.com/gym/gym-niigata/',
-    price: '回数券10回 102,300円／月額マンスリー月2回 17,600円〜（税込）',
+    price: '回数券10回 102,300円／ライフプランニング16回 290,400円（税込）',
     trial: '体験トレーニング・カウンセリングとも初回無料',
     features: ['女性会員6〜7割を公式明記', '食事管理サポート', '手ぶらOK'],
     description: '会員の6〜7割が女性と公式に明記するボディメイクジムです。食事管理サポート付きコースがあります（女性トレーナーは調査時点で不在と公式記載）。',
     access: '新潟駅南口から徒歩10分',
     address: '新潟市中央区南笹口1-15-7 Flat南笹口 INT2F',
-    options: ['20回187,000円／30回264,000円', '月4回35,200円／月8回69,300円'],
+    options: ['20回187,000円／30回264,000円', 'コース終了後の継続プラン マンスリー月2回17,600円／月4回35,200円／月8回69,300円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性6〜7割と公式明記）', purpose: ['ボディメイク', 'ダイエット'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
   },
@@ -73,7 +73,7 @@ const gyms = [
 
 const faqs = [
   { question: '新潟で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、エマ（EMMA）、24/7ピラティス 新潟店です（2026年6月調査時点）。' },
-  { question: '新潟のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、24/7ピラティス 新潟店は月2回 14,500円〜／月8回 52,000円〜です（税込）。BEYOND 新潟店は回数券10回 102,300円／月額マンスリー月2回 17,600円〜です（税込）。パーソナルジムASPI（アスピ）新潟本町はマンスリー月2回 8,840円〜／シェイプアップ30（7回＋30日食事指導）109,000円です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '新潟のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、24/7ピラティス 新潟店は月2回 14,500円〜／月8回 52,000円〜です（税込）。BEYOND 新潟店は回数券10回 102,300円／ライフプランニング16回 290,400円です（税込）。月2回17,600円のマンスリーはコース終了後の継続プランです。パーソナルジムASPI（アスピ）新潟本町はマンスリー月2回 8,840円〜／シェイプアップ30（7回＋30日食事指導）109,000円です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '新潟駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、24/7ピラティス 新潟店（礎町バス停から徒歩3分）、パーソナルジムASPI（アスピ）新潟本町（バス停「本町」徒歩1分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: '24/7ピラティス 新潟店、BEYOND 新潟店、パーソナルジムASPI（アスピ）新潟本町は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
@@ -145,7 +145,7 @@ export default function NiigataPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・24/7ピラティス 新潟店</li><li className="text-brand-muted">・BEYOND 新潟店</li><li className="text-brand-muted">・パーソナルジムASPI（アスピ）新潟本町</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・24/7ピラティス 新潟店</li><li className="text-brand-muted">・パーソナルジムASPI（アスピ）新潟本町</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
@@ -162,7 +162,7 @@ export default function NiigataPage() {
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">エマ（EMMA）</span><span className="text-brand-muted text-sm">料金は公式サイト・問い合わせでご確認ください</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">24/7ピラティス 新潟店</span><span className="text-brand-muted text-sm">月2回 14,500円〜／月8回 52,000円〜（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 新潟店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／月額マンスリー月2回 17,600円〜（税込）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 新潟店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／ライフプランニング16回 290,400円（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">パーソナルジムASPI（アスピ）新潟本町</span><span className="text-brand-muted text-sm">マンスリー月2回 8,840円〜／シェイプアップ30（7回＋30日食事指導）109,000円</span></li>
             </ul>
           </div>

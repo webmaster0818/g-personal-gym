@@ -47,13 +47,13 @@ const gyms = [
   {
     name: 'BEYOND 熊本店',
     officialUrl: 'https://beyond-gym.com/gym/gym-kumamoto/',
-    price: '回数券10回 102,300円／月額マンスリー月2回 17,600円〜（税込）',
+    price: '回数券10回 102,300円／ライフプランニング16回 290,400円（税込）',
     trial: '初回限定の無料カウンセリング・体験トレーニングあり',
-    features: ['女性会員60〜70%を公式明記', '食事指導あり（糖質制限なし）', '手ぶら可'],
-    description: '会員の60〜70%が女性と公式に明記するボディメイクジムです。糖質制限なし・3食を推奨する食事指導が付いています。シャワー・ロッカー・レンタルウェア完備で手ぶら可です（トレーナーは調査時点で男性のみと公式記載）。',
+    features: ['女性会員60〜70%を公式明記', '食事指導あり（厳しい糖質制限なし）', '手ぶら可'],
+    description: '会員の60〜70%が女性と公式に明記するボディメイクジムです。厳しい糖質制限を行わない食事指導が付いています（公式の案内）。シャワー・ロッカー・レンタルウェア完備で手ぶら可です（トレーナーは調査時点で男性のみと公式記載）。',
     access: '市電 通町筋電停から徒歩1分',
     address: '熊本市中央区城東町2-12 アンピールパーキング上通り2F',
-    options: ['20回187,000円／30回264,000円', '月4回35,200円／月8回69,300円'],
+    options: ['20回187,000円／30回264,000円', 'コース終了後の継続プラン マンスリー月2回17,600円／月4回35,200円／月8回69,300円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性60〜70%と公式明記）', purpose: ['ボディメイク', 'ダイエット'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
   },
@@ -61,7 +61,7 @@ const gyms = [
 
 const faqs = [
   { question: '熊本で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）です（2026年6月調査時点）。' },
-  { question: '熊本のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）は月4回 14,300円／月8回 24,000円です（税込・入会金22,000円）。RITA-STYLE 熊本上通店は短期集中コース1ヶ月 総額97,680円（入会金込・税込）〜です。BEYOND 熊本店は回数券10回 102,300円／月額マンスリー月2回 17,600円〜です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '熊本のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）は月4回 14,300円／月8回 24,000円です（税込・入会金22,000円）。RITA-STYLE 熊本上通店は短期集中コース1ヶ月 総額97,680円（入会金込・税込）〜です。BEYOND 熊本店は回数券10回 102,300円／ライフプランニング16回 290,400円です（税込）。月2回17,600円のマンスリーはコース終了後の継続プランです。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '熊本駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、RITA-STYLE 熊本上通店（市電 通町筋電停から徒歩3分）、BEYOND 熊本店（市電 通町筋電停から徒歩1分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'RITA-STYLE 熊本上通店、BEYOND 熊本店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
@@ -130,7 +130,7 @@ export default function KumamotoPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）</li><li className="text-brand-muted">・BEYOND 熊本店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
@@ -147,7 +147,7 @@ export default function KumamotoPage() {
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">プリッツジム熊本店（女性専用セミパーソナルジム＆ピラティス）</span><span className="text-brand-muted text-sm">月4回 14,300円／月8回 24,000円（税込・入会金22,000円）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">RITA-STYLE 熊本上通店</span><span className="text-brand-muted text-sm">短期集中コース1ヶ月 総額97,680円（入会金込・税込）〜</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 熊本店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／月額マンスリー月2回 17,600円〜（税込）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 熊本店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／ライフプランニング16回 290,400円（税込）</span></li>
             </ul>
           </div>
         </section>

@@ -58,11 +58,12 @@ const gyms = [
   {
     name: 'BEYOND 四日市店',
     officialUrl: 'https://beyond-gym.com/gym/gym-yokkaichi/',
-    price: '回数券10回 102,300円／マンスリー 17,600円〜（税込）',
+    price: '回数券10回 102,300円／ライフプランニング16回 290,400円（税込）',
     trial: '無料体験あり（初回限定）',
     features: ['女性会員6〜7割を公式明記', '食事指導あり', '手ぶらOK'],
     description: '会員の6〜7割が女性と公式に明記するボディメイクジムです。食事指導付きのコースがあり、手ぶらで通えるほか無料駐車場もあります（女性トレーナーは不在と公式FAQに明記）。',
     access: '新正駅 徒歩4分（近鉄四日市駅から徒歩15分・無料駐車場あり）',
+    options: ['コース終了後の継続プラン マンスリー月2回17,600円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性6〜7割と公式明記）', purpose: ['ボディメイク', 'ダイエット'] },
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
   },
@@ -70,7 +71,7 @@ const gyms = [
 
 const faqs = [
   { question: '四日市で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、CACHIE（カチエ）三重四日市店です（2026年6月調査時点）。' },
-  { question: '四日市のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、CACHIE（カチエ）三重四日市店は月会費ベーシック 16,280円〜／プレミアム 50,600円です（パーソナル月4回付・税込）。Private & Personal GYM SILHOUETTE（シルエット）は月4回 29,000円／月8回 48,000円です（入会金10,000円）。アレスコ（ALESCO）四日市店はボディメイク50分×16回 176,000円です（税込）。BEYOND 四日市店は回数券10回 102,300円／マンスリー 17,600円〜です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '四日市のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、CACHIE（カチエ）三重四日市店は月会費ベーシック 16,280円〜／プレミアム 50,600円です（パーソナル月4回付・税込）。Private & Personal GYM SILHOUETTE（シルエット）は月4回 29,000円／月8回 48,000円です（入会金10,000円）。アレスコ（ALESCO）四日市店はボディメイク50分×16回 176,000円です（税込）。BEYOND 四日市店は回数券10回 102,300円／ライフプランニング16回 290,400円です（税込）。月2回17,600円のマンスリーはコース終了後の継続プランです。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'CACHIE（カチエ）三重四日市店、Private & Personal GYM SILHOUETTE（シルエット）、アレスコ（ALESCO）四日市店、BEYOND 四日市店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
@@ -152,7 +153,7 @@ export default function YokkaichiPage() {
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">CACHIE（カチエ）三重四日市店</span><span className="text-brand-muted text-sm">月会費ベーシック 16,280円〜／プレミアム 50,600円（パーソナル月4回付・税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Private & Personal GYM SILHOUETTE（シルエット）</span><span className="text-brand-muted text-sm">月4回 29,000円／月8回 48,000円（入会金10,000円）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">アレスコ（ALESCO）四日市店</span><span className="text-brand-muted text-sm">ボディメイク50分×16回 176,000円（税込）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 四日市店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／マンスリー 17,600円〜（税込）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BEYOND 四日市店</span><span className="text-brand-muted text-sm">回数券10回 102,300円／ライフプランニング16回 290,400円（税込）</span></li>
             </ul>
           </div>
         </section>
