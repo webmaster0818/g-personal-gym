@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/urawa/'),
-  title: '浦和の女性向けパーソナルジムおすすめ4選｜料金比較',
-  description: '浦和のおすすめ女性向けパーソナルジム4選を比較しています。UNDEUX・リボーンマイセルフ・Rpreciousなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '浦和の女性専用パーソナルジム3店ほか4選｜料金比較',
+  description: '浦和の女性専用パーソナルジム3店（UNDEUX 月2回20,500円・リボーンマイセルフ 2ヶ月16回202,400円・Rprecious 16回174,240円）と、かたぎり塾 月4回33,000円を公式料金で比較。入会金・体験・アクセスも掲載（2026年11月確認）。',
   keywords: '女性専用パーソナルジム,浦和,埼玉,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -28,9 +28,9 @@ const gyms = [
     description: '女性専用パーソナルジムです。管理栄養士監修の食事指導付きマンツーマン指導です。',
     access: '浦和駅 徒歩4分',
     address: 'さいたま市浦和区高砂2-8-16 浦和ガーデンビル3階',
-    options: ['月8回58,200円', 'コミットプラン79,200円'],
+    options: ['月4回33,400円（平日9〜18時のDAY会員 29,100円）', '月8回66,800円（DAY会員 58,200円）', 'コミットプラン月6回79,200円（宅配食30食付き・送料別途）'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['シャワールーム', 'レンタルシューズ・ウェア・タオル'] },
   },
   {
     name: 'リボーンマイセルフ 浦和店',
@@ -43,12 +43,12 @@ const gyms = [
     address: 'さいたま市浦和区高砂2-14-17 浦和マルゼンビル4階',
     options: ['入会金無料キャンペーンの時期あり'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'ブライダル'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['パウダールーム'] },
+    basicInfo: { hours: '平日10:00〜22:00／土祝9:00〜20:00', closed: '日曜日', facilities: ['シャワールーム', '個室のパウダールーム'] },
   },
   {
     name: 'Rprecious（リプレシャス）浦和店',
     officialUrl: 'https://personalgym-urawa-rprecious.com/',
-    price: 'ダイエットコース16回 174,240円（50分制・入会金15,000円別途）',
+    price: 'ダイエットコース16回 174,240円（税込・50分制・入会金15,000円別途）',
     trial: '無料カウンセリング約1時間（体験トレーニング付きは5,500円・当日入会で無料）',
     features: ['女性専用', '毎日LINE食事指導', '子連れOK', '3ヶ月リバウンドサポート'],
     description: '女性専用パーソナルジムです。栄養スペシャリストによる毎日のLINE食事指導と、卒業後3ヶ月のリバウンドサポートが特徴です。子連れOKです。',
@@ -56,7 +56,7 @@ const gyms = [
     address: 'さいたま市浦和区仲町1-15-7 リベリエ浦和仲町401',
     options: ['クイック8回87,120円', 'ボディメイク24回251,240円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['シャワー（アメニティあり）'] },
   },
   {
     name: 'かたぎり塾 浦和店',
@@ -68,17 +68,17 @@ const gyms = [
     access: '京浜東北線 浦和駅 徒歩1分',
     address: '埼玉県さいたま市浦和区東仲町1-21 小島ビル3F',
     options: ['月8回59,400円', '無期限チケット8,800円/回'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性利用多数）', purpose: ['ダイエット', 'ボディメイク'] },
+    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女利用可（女性専用ではありません）', purpose: ['ダイエット', 'ボディメイク'] },
     basicInfo: { hours: '平日10:00〜22:00／土日9:00〜20:00', closed: '月・木', facilities: ['完全個室'] },
   },
 ]
 
 const faqs = [
-  { question: '浦和で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 浦和スタジオ、リボーンマイセルフ 浦和店、Rprecious（リプレシャス）浦和店です（2026年6月調査時点）。' },
+  { question: '浦和で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、UNDEUX SUPERBODY 浦和スタジオ、リボーンマイセルフ 浦和店、Rprecious（リプレシャス）浦和店の3店です（2026年11月8日に公式サイトで再確認）。かたぎり塾 浦和店は男女とも利用できます。' },
   { question: '浦和のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、UNDEUX SUPERBODY 浦和スタジオはスタンダードプラン月額 20,500円〜です（税込）。リボーンマイセルフ 浦和店はショートコース（2ヶ月16回）202,400円です（税込・入会金22,000円）。Rprecious（リプレシャス）浦和店はダイエットコース16回 174,240円です（50分制・入会金15,000円別途）。かたぎり塾 浦和店は月4回 33,000円です（税込）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '浦和駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、かたぎり塾 浦和店（京浜東北線 浦和駅 徒歩1分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 浦和スタジオ、リボーンマイセルフ 浦和店、Rprecious（リプレシャス）浦和店、かたぎり塾 浦和店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはありますか？', answer: 'Rprecious（リプレシャス）浦和店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '子連れで通えるジムはありますか？', answer: 'Rprecious（リプレシャス）浦和店は公式FAQで「お子様とご一緒でも問題ありません」と案内しています。かたぎり塾 浦和店は「乳幼児をお連れ頂いても大丈夫」とし、お子様用のスペースを用意しています（いずれも2026年11月8日に公式サイトで確認）。条件は予約時にご確認ください。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -90,7 +90,7 @@ export default function UrawaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月08日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               浦和の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
