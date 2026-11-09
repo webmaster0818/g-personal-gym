@@ -508,3 +508,9 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 判断待ちのため未変更: リボーン立川「10年以上の実績」タグ、FAQ・相場カードの「18万〜22万円」。ビーコンセプト立川の個別シャワー室は公式記載どおり（Google 口コミに「シャワーはない」投稿あり＝表に注記）。
 - 未変更（件数のみ）: data/brandStores.json の UNDEUX 立川は旧名「SUPERBODY LIFE 立川スタジオ」（11/15 以降の再生成で）。かたぎり塾 浦和の「無期限チケット8,800円/回」は今日の店舗ページで単独料金が見えず未照合。立川 FAQ「立川のほうが八王子より女性専用ジムの選択肢が豊富」は根拠未確認。
 - 検証: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・px.a8.net 前後とも3・表示テキストの差分は2ページのみ。本番 ?cb= で新値あり（101,200円・柴崎町3-10-6・新title）、旧値（92,400円〜・SUPERBODY LIFE・女性利用多数・キッズスペース…）0、robots 200、sitemap lastmod 2URL=11/8。
+
+### 2026-11-09 朝：/areas/ebisu/ の UNDEUX「完全個室」を外す（13ページの最後）＋恵比寿スタジオの徒歩・住所 ✅本番（source efc98f6・8d7a0e4 / deploy 0d1a1495・a55aa0bf・反映 約12分）
+- 公式FAQ（diet-undeux.jp/faq/・11/9 生HTML）「当ジムのトレーニングブースは完全個室ではありませんが、お一人ずつのスペースが確保されている」→ 恵比寿カードの facilities から「完全個室」を外した（11/6 の12ページと同じ型・RSCペイロード内のみの変更）。店舗ページ /studio/ebisu/ の設備欄にシャワールーム・パウダールーム・基礎化粧品あり＝残す。他ブランドの「完全個室」は触っていない。
+- 同カードの公式と食い違う値（/studio/ebisu/ 店舗情報）: 徒歩4分→「恵比寿駅 西口より徒歩2分」、住所→恵比寿南1-11-2 ダイニングイノベーションビルB1、officialUrl→/studio/ebisu/。FAQ「最も近いジム」→ビーコンセプト（公式 /clublist/ebisu/ 東口徒歩2分）と UNDEUX がともに徒歩2分（確認日つき）。営業 8:00〜22:00・不定休は公式どおり（「平日中心に9:00開店の場合あり」の注記は未記載）。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK・px.a8.net 前後とも3・表示テキストの差分は ebisu のみ。本番 ?cb=: UNDEUX カード 39件（deploy 全体）／本番16ページで UNDEUX カードの「完全個室」0（修正前の ebisu は1）、恵比寿南1-11-2 あり・徒歩4分 0、robots 200、sitemap lastmod ebisu=11/9。Indexing は親が処理。
+- 未変更（件数のみ）: UNDEUX カードの option「月額制LIFEプランあり」4ページ（chiba・meguro・ebisu・shibuya。公式の料金はスタンダード／コミットの2つ・恵比寿の店舗ページに LIFE の語なし）。data/brandStores.json の UNDEUX 恵比寿は旧値（徒歩4分・トップURL）＝11/15 以降の再生成で。
