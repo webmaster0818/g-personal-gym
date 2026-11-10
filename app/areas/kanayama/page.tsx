@@ -43,7 +43,7 @@ const gyms = [
     address: '名古屋市熱田区新尾頭1-10-6 ヴィラフローラ302',
     options: ['トライアルプラン4回44,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['太もも痩せ', '下半身痩せ', 'ダイエット'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
   },
   {
     name: 'ピラティス&ジム1to1 金山店',

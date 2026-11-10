@@ -51,10 +51,10 @@ const gyms = [
     features: ['女性専用', '完全個室', '太もも・下半身痩せ特化'],
     description: '女性専用・完全個室のパーソナルジムです。太もも・下半身痩せに特化したプログラムが特徴です。',
     access: 'JR名古屋駅太閤通口徒歩3分',
-    address: '名古屋市中村区椿町1-3',
+    address: '愛知県名古屋市中村区椿町1-3 チサンマンション名古屋第一ビル8F',
     options: ['トライアルプラン4回44,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['太もも痩せ', '下半身痩せ', 'ダイエット'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
   },
   {
     name: 'メルメイク 名古屋駅店',

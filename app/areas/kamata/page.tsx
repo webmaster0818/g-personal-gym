@@ -22,14 +22,15 @@ const gyms = [
   {
     name: 'ビーコンセプト 蒲田店',
     officialUrl: 'https://b-concept.tokyo/clublist/kamata/',
-    price: '太ももダイエットプログラム 2ヶ月16回 89,842円〜（税込・分割 月々4,991円〜）',
+    price: '太ももダイエットプログラム 89,842円×2ヶ月（18回・総額179,685円・税込・分割 月々4,991円〜）',
     trial: '無料カウンセリングあり（当日入会で入会金免除）',
     features: ['女性専用', '完全個室', '脚やせ・下半身特化', '手ぶらOK', '託児費補助'],
     description: '女性専用・完全個室です。医師×トレーナー共同開発の下半身（脚やせ）特化メソッドと、3食食べる食事指導が特徴です。託児費補助もあります。',
     access: 'JR京浜東北線「蒲田駅」徒歩2分（東急蒲田徒歩4分・京急蒲田徒歩10分）',
+    address: '東京都大田区西蒲田7-4-3 カーサ蒲田609',
     options: ['託児費補助', 'トライアル4回44,000円', '分割払い対応'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['太もも痩せ', '下半身痩せ', '産後ダイエット'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '7:00〜23:00', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
   },
   {
     name: 'かたぎり塾 京急蒲田店',
@@ -72,7 +73,7 @@ const gyms = [
 
 const faqs = [
   { question: '蒲田で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、ビーコンセプト 蒲田店、OUTLINE（アウトライン）蒲田店です（2026年6月調査時点）。' },
-  { question: '蒲田のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、ビーコンセプト 蒲田店は太ももダイエットプログラム 2ヶ月16回 89,842円〜です（税込・分割 月々4,991円〜）。かたぎり塾 京急蒲田店は月4回 33,000円です（税込）。ピラティス&ジム1to1 蒲田店は都度払い 60分9,900円です（税込・入会金無料）。OUTLINE（アウトライン）蒲田店は16回 184,800円〜です（税込・入会金0円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '蒲田のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、ビーコンセプト 蒲田店は太ももダイエットプログラム 89,842円×2ヶ月（18回・総額179,685円）です（税込・分割 月々4,991円〜）。かたぎり塾 京急蒲田店は月4回 33,000円です（税込）。ピラティス&ジム1to1 蒲田店は都度払い 60分9,900円です（税込・入会金無料）。OUTLINE（アウトライン）蒲田店は16回 184,800円〜です（税込・入会金0円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '蒲田駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、ビーコンセプト 蒲田店（JR京浜東北線「蒲田駅」徒歩2分）、かたぎり塾 京急蒲田店（京急本線「京急蒲田駅」西口徒歩1分）、ピラティス&ジム1to1 蒲田店（JR京浜東北線「蒲田駅」徒歩2分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'ビーコンセプト 蒲田店、かたぎり塾 京急蒲田店、ピラティス&ジム1to1 蒲田店、OUTLINE（アウトライン）蒲田店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '子連れで通えるジムはありますか？', answer: 'ビーコンセプト 蒲田店、かたぎり塾 京急蒲田店、OUTLINE（アウトライン）蒲田店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
@@ -157,7 +158,7 @@ export default function KamataPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">蒲田の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ビーコンセプト 蒲田店</span><span className="text-brand-muted text-sm">太ももダイエットプログラム 2ヶ月16回 89,842円〜（税込・分割 月々4,991円〜）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ビーコンセプト 蒲田店</span><span className="text-brand-muted text-sm">太ももダイエットプログラム 89,842円×2ヶ月（18回・総額179,685円・税込・分割 月々4,991円〜）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">かたぎり塾 京急蒲田店</span><span className="text-brand-muted text-sm">月4回 33,000円（税込）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ピラティス&ジム1to1 蒲田店</span><span className="text-brand-muted text-sm">都度払い 60分9,900円（税込・入会金無料）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">OUTLINE（アウトライン）蒲田店</span><span className="text-brand-muted text-sm">16回 184,800円〜（税込・入会金0円）</span></li>
