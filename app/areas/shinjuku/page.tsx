@@ -21,17 +21,17 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'OUTLINE 新宿店',
-    officialUrl: 'https://www.outline-gym.com/',
+    officialUrl: 'https://www.outline-gym.com/gym/shinjuku',
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備'],
-    description: '業界初の生涯無料アフターサポート付き女性専用パーソナルジムです。完全個室でベビーサークルを完備しています。新宿駅から好アクセスです。',
-    access: 'JR「新宿駅」徒歩5分',
-    address: 'JR「新宿駅」徒歩5分',
+    description: '業界初の生涯無料アフターサポート付き女性専用パーソナルジムです。完全個室でベビーサークルを完備しています。JR総武線の大久保駅から徒歩4分、新宿駅から徒歩10分です。',
+    access: 'JR総武線「大久保駅」徒歩4分・新宿駅徒歩10分',
+    address: '東京都新宿区西新宿7-22-31 柏木MURA206',
     popularPlan: { name: '人気プラン', description: '業界初の生涯無料アフターサポート付き女性専用パーソナルジムです。完全個室でベビーサー', price: '16回 184,800円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
   },
   {
     name: 'UNDEUX SUPERBODY 新宿スタジオ',
@@ -99,7 +99,7 @@ const faqs = [
   { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は、1ヶ月目から感じ始める方が多い傾向にあります。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
   { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが大半を占めます。' },
-  { question: '新宿駅から近いジムはどこですか？', answer: 'OUTLINE 新宿店、UNDEUX SUPERBODY 新宿スタジオ、ビーコンセプト 新宿店が駅から近いジムです。' },
+  { question: '新宿駅から近いジムはどこですか？', answer: 'UNDEUX SUPERBODY 新宿スタジオ、ビーコンセプト 新宿店が駅から近いジムです。OUTLINE 新宿店は大久保駅から徒歩4分、新宿駅からは徒歩10分です（公式サイト・2026年11月11日確認）。' },
   { question: 'リバウンドを防ぐサポートはありますか？', answer: 'OUTLINEは業界初の「生涯無料アフターサポート」があります。多くのジムでは卒業後のフォロープログラムが含まれています。' },
   { question: '子連れで通えるジムはどこですか？', answer: 'OUTLINEはベビーサークル全店完備、ビーコンセプトは託児所費用補助があります。事前に各ジムにお問い合わせください。' },
 ]

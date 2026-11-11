@@ -34,7 +34,7 @@ const gyms = [
   },
   {
     name: 'OUTLINE（アウトライン）船橋店',
-    officialUrl: 'https://www.outline-gym.com/store/funabashi',
+    officialUrl: 'https://www.outline-gym.com/gym/funabashi',
     price: 'フルサポート16回 184,800円（税込・入会金0円）',
     trial: '無料カウンセリング（LINE・メール予約可）',
     features: ['女性専用', '完全個室', '食事指導あり', 'ベビーサークル完備'],
@@ -43,7 +43,7 @@ const gyms = [
     address: '船橋市本町5-3-3 杉川ビル501',
     options: ['24回264,000円／32回334,400円', 'ウェア・アミノ酸ドリンク等無料'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル完備'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル完備'] },
   },
 ]
 

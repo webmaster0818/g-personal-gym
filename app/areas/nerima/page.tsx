@@ -53,10 +53,11 @@ const gyms = [
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '食事指導付き', '生涯リバウンドサポート'],
     description: '女性専用・完全個室のパーソナルジムです。食事指導と生涯のアフターフォローが付いています。ウェア・タオル・プロテイン・遺伝子検査・よもぎ蒸し・ベビーサークルがあります。',
-    access: '練馬駅徒歩6分',
+    access: '練馬駅徒歩4分',
+    address: '東京都練馬区豊玉北4-25-12 Stretzia101号室',
     options: ['よもぎ蒸し', '遺伝子検査', 'ベビーサークル', 'ウェア・タオル無料'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', 'リバウンド防止'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室'] },
   },
   {
     name: 'UNDEUX SUPERBODY LIFE 練馬スタジオ',

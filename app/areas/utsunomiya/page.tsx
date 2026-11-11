@@ -30,7 +30,7 @@ const gyms = [
     address: '宇都宮市元今泉4-13-23 シャンポールミヤ3F',
     options: ['24回264,000円／32回334,400円', '学生・モニター15%OFF'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'ベビーサークル完備', '駐車場あり'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル完備', '駐車場あり'] },
   },
   {
     name: 'FURDI（ファディー）宇都宮中今泉店',

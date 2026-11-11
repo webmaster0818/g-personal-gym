@@ -21,17 +21,17 @@ export const metadata: Metadata = {
 const gyms = [
   {
     name: 'OUTLINE 千葉店',
-    officialUrl: 'https://www.outline-gym.com/',
+    officialUrl: 'https://www.outline-gym.com/gym/chiba',
     price: '16回 184,800円〜（税込）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備', '女性特化マシン'],
     description: '生涯無料アフターサポートが最大の特徴です。千葉駅から徒歩圏内の好立地です。完全個室・ベビーサークル完備で産後ママも安心です。千葉エリアでコスパ重視なら最有力候補です。',
     access: 'JR「千葉駅」徒歩5分',
-    address: '千葉県千葉市中央区（千葉駅徒歩5分）',
+    address: '千葉県千葉市中央区新田町4-25 パルサンライト605号室',
     popularPlan: { name: '16回コース', description: '完全個室でのマンツーマントレーニングです。卒業後も生涯無料のアフターサポートを受けられます。', price: '16回 184,800円〜（税込）' },
     options: ['生涯無料アフターサポート', 'ベビーサークル完備', 'ウェアレンタル無料', 'よもぎ蒸し', '高級アミノ酸提供'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '産後ダイエット', 'リバウンド防止'] },
-    basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室', 'ベビーサークル', '女性専用マシン'] },
   },
   {
     name: 'UNDEUX SUPERBODY 千葉スタジオ',
