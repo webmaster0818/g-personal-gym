@@ -529,3 +529,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 生成スクリプト batch1（練馬・蒲田）/batch2（船橋）/batch3（宇都宮）も同値。再生成で OUTLINE 部分は一致（⚠️ kamata・nerima ほか17ページの差分はビーコンセプト 11/10 訂正が生成スクリプトに未反映の分＝既存・未対応）。data/brandStores.json は outline だけ再生成値に差し替え。sitemap lastmod 8エリア＋/brands/outline/ = 2026-11-11。
 - 検証: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・px.a8.net 前後とも2（deploy HTML）。本番 ?cb=: 8ページで新住所・9:00〜23:00 あり、旧値（恵比寿・広尾店／北千住駅徒歩6分／蒲田駅徒歩10分／練馬駅徒歩6分／store/funabashi／新宿駅から好アクセス）0、robots 200。Indexing は tomomi-2 の枠 0/55 で送れず→sitemap 再送信。
 - 範囲外（未変更・件数のみ）: 「業界初の生涯無料アフターサポート」は公式に「業界初」の記載なし（公式は「卒業後の『生涯サポート』」「アフターフォローを『一生』」）＝OUTLINE 文脈7か所（ebisu・shinjuku・ikebukuro・yokohama・osaka・fukuoka ほか）。「ベビーサークル全店完備」6ページは店舗ページで確認できず（公式は「お子さま連れOK」）。
+
+### 2026-11-12 朝：OUTLINE「業界初」「ベビーサークル全店完備」を公式表記に＋生成スクリプトを本番と一致（source a85b17e / deploy e0225b66）
+- 公式（11/12 outline-gym.com の生HTML・コメント/script除外：トップ・/service・/faq・/gym・店舗10ページ）: 「業界初」の記載なし。トップの比較表「卒業後の『生涯サポート』無料（コース修了後もLINEで相談可）」、FAQ「卒業後のアフターフォローを『一生』」。子連れは店舗9ページ（池袋以外）とトップの帯「手ぶらOK・お子さま連れOK」、/faq「子供連れですが可能ですか？ はい、ベビーサークルなどを準備させて頂いております」。「全店完備」の表記なし。
+- 変更（9ページ・掲載件数の変更なし）: 「業界初の（生涯無料アフターサポート）」12か所（TOP・/faq/・/ranking/・ebisu・shinjuku×3・fukuoka・osaka・ikebukuro・yokohama）→卒業後の「生涯サポート」（無料）。「全店にベビーサークル完備」「ベビーサークル全店完備」9か所（TOP・/faq/・/ranking/×2・fukuoka・osaka・ikebukuro・shinjuku・yokohama）→公式表記「お子さま連れOK」（FAQ のベビーサークルなどを準備）。sitemap lastmod 9URL=2026-11-12。
+- 生成スクリプト: 再生成で戻っていた17ページを 0 に。ビーコンセプト7店（市川・蒲田・金山・小倉・名駅・練馬・梅田）の営業時間 7:00〜23:00・住所5店・蒲田の料金（11/10 訂正値）をデータに。g() に `faq_price`（FAQ 料金文の固定）・`monthly`（月額制の枠）・`faq_note`（料金文の後の一文）を追加（ページのデータには出ない）。BEYOND 6エリア（浜松・枚方・熊本・新潟・大分・四日市）に継続プランの一文。11/6〜11/8 に手で整えた4ページ（八王子・荻窪・浦和・姫路：早見表・title/description・FAQ・更新日）は area に `frozen=True`＝上書きしない（カードのデータは一致）。一時ディレクトリで batch1〜4 再生成→101ページ・areaContextData・RelatedAreas・sitemap とも差分0。
+- 未変更（件数のみ）: 店舗単位の「ベビーサークル完備」（chiba・ebisu・kitasenju・funabashi・utsunomiya・kamata・nerima のカード、data/brandStores.json 8件）は公式 FAQ の範囲内で据え置き。osaka・fukuoka の FAQ は OUTLINE に触れているが公式の店舗一覧（10店）に大阪・福岡なし（なんば店はコメントアウト）。
+- 検証: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・px.a8.net 前後とも3・表示テキストの差分は8ページ（TOP は FAQ の JSON-LD のみ）。
