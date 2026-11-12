@@ -13,8 +13,11 @@ UPDATED = "2026年06月12日"
 MONTH_TAG = ""  # 10/9「最新」表記撤去・title年月は7月で据え置き
 
 def g(name, url, access, price, trial, features, desc, gender, address=None,
-      plan=None, options=None, purpose=None, hours=None, facilities=None, age=None, closed=None):
+      plan=None, options=None, purpose=None, hours=None, facilities=None, age=None, closed=None,
+      faq_price=None, monthly=False, faq_note=None):
+    # faq_price: FAQ「料金の目安」の文を手で整えた場合の固定文（です・ます済み）／monthly: 「月額制で始めやすい」に入れる（公式の月額表記がある場合）。どちらもページのデータには出ない
     return {
+        "_faqPrice": faq_price, "_monthly": monthly, "_faqNote": faq_note,  # faq_note: FAQ「料金の目安」でその店の料金文の後に足す一文
         "name": name, "officialUrl": url, "access": access, "price": price,
         "trial": trial, "features": features, "description": desc,
         "address": address,
@@ -53,7 +56,7 @@ AREAS = [
      "男女共用（女性約80%）", options=["LINE食事指導無料", "ウェア・シューズ・水 無料", "入会金0円キャンペーンあり"],
      purpose=["ダイエット", "ボディメイク", "運動習慣"]),
   ]),
- dict(slug="ogikubo", name="荻窪", pref="東京", note=None,
+ dict(slug="ogikubo", frozen=True, name="荻窪", pref="東京", note=None,
   ctx=["荻窪はJR中央線・総武線と東京メトロ丸ノ内線の始発駅で、新宿方面への通勤に便利な住宅街です。駅前に商業施設が集まり、落ち着いた暮らしやすさで知られます。",
        "地元在住の女性が生活動線の中で通えるジムへの需要が高いエリアです。"],
   tips=["丸ノ内線始発を使う人は駅直結・駅近が続けやすい", "月額制と回数券で総額を比較する", "無料体験で指導の相性を確認する"],
@@ -118,7 +121,7 @@ AREAS = [
      "太ももダイエットプログラム 2ヶ月18回 89,842円/月×2ヶ月（税込）", "無料カウンセリング・体験トレーニングあり",
      ["女性専用", "完全個室", "下半身・脚やせ特化", "託児サポート", "手ぶらOK"],
      "医師×トレーナー共同開発の脚やせ・下半身痩せメソッドが特徴の女性専用ジムです。3食を食べながら取り組む食事指導が付いています。近隣託児費を最大1,000円/回負担する託児サポートがあります。",
-     W, plan={"name": "太ももダイエットプログラム", "description": "医師×トレーナー共同開発の脚やせメソッドです。2ヶ月18回です。", "price": "89,842円/月×2ヶ月（税込）"},
+     W, hours="7:00〜23:00", address="東京都練馬区豊玉北5-18-10 プリマヴェーラ602", plan={"name": "太ももダイエットプログラム", "description": "医師×トレーナー共同開発の脚やせメソッドです。2ヶ月18回です。", "price": "89,842円/月×2ヶ月（税込）"},
      options=["託児費補助（最大1,000円/回）", "トライアル4回44,000円", "分割 月々4,991円〜", "当日入会で入会金無料"],
      purpose=["太もも痩せ", "下半身痩せ", "産後ダイエット"]),
    g("OUTLINE（アウトライン）練馬店", "https://www.outline-gym.com/gym/nerima", "練馬駅徒歩4分",
@@ -140,10 +143,12 @@ AREAS = [
   tips=["JR蒲田か京急蒲田か、自分の動線に合う駅の店舗を選ぶ", "完全個室・女性専用の有無を公式で確認", "体験を2〜3店受けて比較する"],
   gyms=[
    g("ビーコンセプト 蒲田店", "https://b-concept.tokyo/clublist/kamata/", "JR京浜東北線「蒲田駅」徒歩2分（東急蒲田徒歩4分・京急蒲田徒歩10分）",
-     "太ももダイエットプログラム 2ヶ月16回 89,842円〜（税込・分割 月々4,991円〜）", "無料カウンセリングあり（当日入会で入会金免除）",
+     "太ももダイエットプログラム 89,842円×2ヶ月（18回・総額179,685円・税込・分割 月々4,991円〜）", "無料カウンセリングあり（当日入会で入会金免除）",
      ["女性専用", "完全個室", "脚やせ・下半身特化", "手ぶらOK", "託児費補助"],
      "女性専用・完全個室です。医師×トレーナー共同開発の下半身（脚やせ）特化メソッドと、3食食べる食事指導が特徴です。託児費補助もあります。",
-     W, options=["託児費補助", "トライアル4回44,000円", "分割払い対応"],
+     W, hours="7:00〜23:00", address="東京都大田区西蒲田7-4-3 カーサ蒲田609",
+     faq_price="太ももダイエットプログラム 89,842円×2ヶ月（18回・総額179,685円）です（税込・分割 月々4,991円〜）", monthly=True,  # 公式「月額89,842円(税込)×2ヶ月」（11/10 確認）
+     options=["託児費補助", "トライアル4回44,000円", "分割払い対応"],
      purpose=["太もも痩せ", "下半身痩せ", "産後ダイエット"]),
    g("かたぎり塾 京急蒲田店", "https://katagirijuku.jp/gyms/keikyukamata", "京急本線「京急蒲田駅」西口徒歩1分",
      "月4回 33,000円（税込）", "無料体験あり（カウンセリング＋20分トレーニング）",
@@ -189,7 +194,7 @@ AREAS = [
      "男女共用（産後・子連れ対応に強み）", options=["ベビーサークル完備", "食事指導付き", "入会金・体験0円キャンペーンの実績あり"],
      purpose=["産後ダイエット", "骨盤矯正", "ダイエット"]),
   ]),
- dict(slug="hachioji", name="八王子", pref="東京", note=None,
+ dict(slug="hachioji", frozen=True, name="八王子", pref="東京", note=None,
   ctx=["八王子はJR中央線・横浜線・八高線と京王線が集まる多摩地域最大級の都市です。学生も多く、駅周辺に商業施設が充実しています。",
        "車移動も多い地域のため、駐車場の有無も選ぶポイントになります。"],
   tips=["車利用なら駐車場の有無を確認", "南口・北口どちらが生活動線かで選ぶ", "料金体系（月額制/回数券）の違いを比較"],
@@ -301,7 +306,7 @@ AREAS = [
      "太ももダイエットプログラム 89,842円×2ヶ月（18回）", "無料カウンセリング＆体験トレーニングあり",
      ["女性専用", "完全個室", "脚やせ・下半身特化", "医師×トレーナー共同開発"],
      "医師×トレーナー共同開発の脚やせ・下半身痩せメソッドの女性専用ジムです。完全個室で、シューズなど無料レンタルがあります。",
-     W, options=["トライアルプラン4回44,000円", "当日入会で入会金無料"],
+     W, hours="7:00〜23:00", address="大阪府大阪市北区曽根崎新地2-1", options=["トライアルプラン4回44,000円", "当日入会で入会金無料"],
      purpose=["太もも痩せ", "下半身痩せ", "ダイエット"]),
    g("Deat-workout 梅田店【初心者女性専門】", "https://deatworkout.com/", "各線梅田駅徒歩8分／中崎町駅徒歩5分",
      "月々6,000円〜のプランあり", "体験2,980円（通常6,000円）／カウンセリング無料（期間限定）",
@@ -406,7 +411,7 @@ AREAS = [
      "太ももダイエットプログラム 89,842円×2ヶ月（税込）", "無料カウンセリング・体験あり（当日入会で入会金38,500円無料）",
      ["女性専用", "完全個室", "太もも・下半身痩せ特化"],
      "女性専用・完全個室のパーソナルジムです。太もも・下半身痩せに特化したプログラムが特徴です。",
-     W, address="名古屋市中村区椿町1-3",
+     W, hours="7:00〜23:00", address="愛知県名古屋市中村区椿町1-3 チサンマンション名古屋第一ビル8F",
      options=["トライアルプラン4回44,000円"],
      purpose=["太もも痩せ", "下半身痩せ", "ダイエット"]),
    g("メルメイク 名古屋駅店", "https://mermake.co.jp/n-f-nagoya/", "名古屋駅徒歩4分",
@@ -533,7 +538,7 @@ def build_faqs(a):
         m_ = re.search(r"（[^（）]*）$", p)
         if m_: return p[:m_.start()] + "です" + m_.group(0)
         return (p[:-2] + "があります") if p.endswith("あり") else (p + "です")
-    priced = [f"{g_['name']}は{_polite_price(g_['price'])}" for g_ in gyms if "ご確認ください" not in g_["price"]]
+    priced = [f"{g_['name']}は{g_.get('_faqPrice') or _polite_price(g_['price'])}" + (f"。{g_['_faqNote']}" if g_.get('_faqNote') else '') for g_ in gyms if "ご確認ください" not in g_["price"]]
     if priced:
         faqs.append({"question": f"{name}のパーソナルジムの料金の目安はいくらですか？",
                      "answer": "公式サイト掲載の料金では、" + "。".join(priced[:4]) + "。キャンペーン等で変動するため最新は各公式サイトでご確認ください。"})
@@ -560,7 +565,7 @@ def build_buckets(a):
     if w:
         buckets.append(("女性専用にこだわる", [f"・{g_['name']}" for g_ in w[:3]]))
     m = [g_ for g_ in gyms if "月額" in g_["price"] or "月" in g_["price"].split("円")[0][-6:]]
-    m = [g_ for g_ in gyms if re.search(r"月額|月\d+回|月2回|月4回", g_["price"])]
+    m = [g_ for g_ in gyms if g_.get("_monthly") or re.search(r"月額|月\d+回|月2回|月4回", g_["price"])]
     if m:
         m_sorted = m[:3]
         buckets.append(("月額制で始めやすい", [f"・{g_['name']}" for g_ in m_sorted]))
@@ -787,6 +792,11 @@ def main():
     # 1) pages
     for a in AREAS:
         d = os.path.join(ROOT, "app", "areas", a["slug"])
+        if a.get("frozen"):
+            # 手で整えたページ（冒頭の料金早見表・title/description・FAQ・更新日を 11/6〜11/8 に手修正）は上書きしない。
+            # カードのデータはこのスクリプトと一致させておくこと（2026-11-12 確認：差分は手修正部分のみ）
+            print(f"page: {a['slug']} (frozen・上書きしない)")
+            continue
         os.makedirs(d, exist_ok=True)
         with open(os.path.join(d, "page.tsx"), "w", encoding="utf-8") as f:
             f.write(page_tsx(a))
