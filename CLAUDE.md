@@ -542,3 +542,11 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 追加の1件（判断不要・公式と食い違う値）：福岡カードの店名「UNDEUX SUPERBODY LIFE 福岡」→公式 /studio/tenjin/ の店舗情報「UNDEUX SUPERBODY 福岡・天神スタジオ」（カード・FAQ 2か所・data/brandStores.json）。住所・営業 8:00〜22:00・不定休・天神駅徒歩5分・月額 18,900円〜・シャワールームは公式と一致（変更なし）。sitemap lastmod fukuoka=2026-11-13。
 - 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・px.a8.net 前後とも2（deploy HTML）・表示テキストの差分は fukuoka・/brands/undeux/ のみ。CF Pages のビルドが約20分 in_progress のまま→完了後に本番 ?cb=：新店名 fukuoka 13・undeux 2、旧名 0、robots 200。Indexing /areas/fukuoka/ 200（残り 6/55）。
 - 未変更（件数のみ）：他の「UNDEUX SUPERBODY LIFE ○○スタジオ」表記（練馬・柏・心斎橋・広島・所沢）は今日は未照合。
+
+### 2026-11-13 12:00 成長ルーチン：札幌・富山・難波の料金早見表を公式で再照合＋料金の目安の一文・description を料金の答えに ✅本番（source 23a1d6c / deploy 13bd01d6・反映 約3分）
+- 公式（11/13 生HTML・コメント/script除外・subrina は料金画像 menu/menu01〜06）で9店すべて再照合。11/3 の値と食い違いは0。追加: 住所・営業時間（BC札幌大通 7-23時／BEYOND 10-22時 年中無休／NANA 平日11-21・土日祝11-20／ゆめたか 月水木10-22・土日祝10-18 火金休／リボーンなんば 平日10-21・土日祝9-20／Amazones スタッフ在籍 月火木金土11-20）、BEYOND札幌 20回187,000円、subrina 24時間サポートトレーニング会員 月18,700円（パーソナル1回付き）・ビジター3,300円、Amazones 人数限定サポートプラン（パーソナル月2回）11,000円・通い放題44,000円、リボーンなんば キャンペーン「入会金無料＋全コース10％OFF」。
+- 🚨 BEYOND富山（/gym/gym-toyama/）: FAQ「女性トレーナーは所属しておりません」（男性4名・2025-12-16）と、同ページ設備タグ「女性トレーナー在籍」が公式内で食い違い → 早見表に両方を記載。カード本文「トレーナーは調査時点で男性のみ」は据え置き（未変更）。
+- 各エリアに note（料金の目安の一文＝上表の公式値のみ）。description 3本を料金の答えに（141〜145字）・更新日 11/13。title 不変。
+- namba（batch1）・toyama（batch3）を `frozen=True` に（description・更新日の手修正を保持）。一時ディレクトリで batch1〜4 再生成 → app・components・sitemap とも差分0。sitemap lastmod 3URL=2026-11-13。
+- 検証: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK（134頁）・計測リンク px.a8.net 等 前後とも HTML2／全体3・表示テキスト差分は3ページのみ。本番 ?cb=: 3ページとも新値あり・旧 description／旧確認日 0、robots 200。
+- 競合（WebSearch US版・日本語結果は返る）: ekitan・fitmap・OCEANS・smartlog がエリア別まとめ。札幌は A+dietgym・札幌北24条パーソナルジム、難波はビーコンセプト なんば店（西心斎橋）が当サイト未掲載（掲載追加は新規カード＝今回は見送り）。
