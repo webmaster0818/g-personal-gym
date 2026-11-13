@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/naha/'),
   title: '那覇の女性向けパーソナルジムおすすめ4選｜料金比較・無料体験',
-  description: '那覇のおすすめ女性向けパーソナルジム4選を比較しています。REMパーソナルトレーニングジム・パーソナルジム・プリッツジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '那覇の女性専用パーソナルジム4選を公式料金で比較。プリッツジムは月4回14,300円、フレイムは月2回15,000円（税別）、REMは通い放題月29,800円・初回体験500円、ShapesGirlは月4回30,000円（税別）。入会金・体験・駐車場も掲載（2026年11月確認）。',
   keywords: '女性専用パーソナルジム,那覇,沖縄,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -22,41 +22,41 @@ const gyms = [
   {
     name: 'REMパーソナルトレーニングジム（那覇美栄橋店）',
     officialUrl: 'https://rem-personalgym.jp/',
-    price: '回数券 1回あたり約2,500円〜（入会金実質無料・詳細は公式サイトでご確認ください）',
-    trial: '体験・カウンセリングは公式サイトでご確認ください',
+    price: '通い放題 月19,800円〜（25分スタンダード29,800円＝月10回で1回2,980円）／回数券 25分4回19,800円〜（税込・入会金20,000円は体験当日の入会で0円）',
+    trial: '初回ワンコイン体験500円',
     features: ['女性専用', 'トレーニング×ピラティス×整体', '医療系国家資格保有トレーナー', '無料駐車場'],
     description: '女性専用のパーソナルジムです。トレーニング・ピラティス・整体を組み合わせ、医療系国家資格を持つトレーナーが指導します。食事改善プログラム付きで手ぶらOK・無料駐車場ありです。',
-    access: 'ゆいレール美栄橋駅 徒歩5分（若狭店は県庁前駅徒歩11分）',
+    access: 'ゆいレール美栄橋駅 徒歩5分（若狭スタジオは県庁前駅徒歩11分）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', '姿勢改善'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['無料駐車場'] },
+    basicInfo: { hours: '9:00〜21:00', closed: '不定休', facilities: ['無料駐車場'] },
   },
   {
     name: 'パーソナルジム フレイム 那覇店',
     officialUrl: 'https://flame.okinawa/naha/',
-    price: 'コース料金は公式サイトでご確認ください（入会金0円キャンペーン中）',
+    price: '月額制（食事管理込み）月2回15,000円／週1回30,000円／週2回48,000円（税別・入会金0円キャンペーン）',
     trial: '無料体験レッスンあり（カウンセリング＋トレーニング体験）',
     features: ['女性専用', '女性トレーナー', '完全個室', '毎日の食事指導'],
-    description: '女性専用・完全個室のパーソナルジムです。女性トレーナーによる指導と毎日の食事指導付きで、「痩せるまで追加料金なし」の定額制を掲げています。',
+    description: '女性専用・完全個室のパーソナルジムです。女性トレーナーが指導し、毎日のLINEお食事サポート付きの月額制で、期間の縛りはありません（公式）。',
     access: 'ゆいレールおもろまち駅 徒歩7分（専用無料駐車場3台）',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    basicInfo: { hours: '10:00〜24:00', closed: '無休', facilities: ['完全個室', '専用無料駐車場3台'] },
   },
   {
     name: 'プリッツジム 那覇店',
     officialUrl: 'https://plizgym.co.jp/okinawa/naha/',
     price: '月4回 14,300円／月8回 24,000円（税込・入会金22,000円）',
-    trial: '体験は公式サイトでご確認ください',
+    trial: '無料カウンセリング・初回体験あり（体験の料金は公式に記載なし）',
     features: ['女性専用', 'セミパーソナル（最大3名）', 'マシンピラティス', '縛り・解約金なし'],
     description: '女性専用のセミパーソナルジムです（最大3名・1回50分・完全予約制）。マシンピラティス導入で、契約の縛りや解約金がありません。',
-    access: '那覇市樋川（専有無料駐車場3台・アクセスは公式サイトでご確認ください）',
+    access: 'ゆいレール安里駅 徒歩22分・壺川駅 徒歩20分（那覇市樋川・専有無料駐車場3台）',
     options: ['月6回18,900円', '食事指導オプション11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ピラティス', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '11:00〜21:00', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
   },
   {
     name: 'ShapesGirl 那覇店',
     officialUrl: 'https://www.shapesgirl.com/naha.html',
-    price: '料金は公式サイトでご確認ください',
+    price: 'ヘルシーボディメイク 月4回 月30,000円（入会金35,000円）／モデルダイエット70日間20回 335,000円（入会金無料）（税別）',
     trial: '無料プチ体験＆ジム見学あり',
     features: ['女性専用', '女性トレーナー', '完全個室', '食事指導'],
     description: '女性専用・完全個室のボディメイクジムです。女性トレーナーによる指導と食事指導付きです。',
@@ -67,9 +67,9 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '那覇で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、REMパーソナルトレーニングジム（那覇美栄橋店）、パーソナルジム フレイム 那覇店、プリッツジム 那覇店、ShapesGirl 那覇店です（2026年6月調査時点）。' },
-  { question: '那覇のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、プリッツジム 那覇店は月4回 14,300円／月8回 24,000円です（税込・入会金22,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'パーソナルジム フレイム 那覇店、ShapesGirl 那覇店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '那覇で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、REMパーソナルトレーニングジム（那覇美栄橋店）、パーソナルジム フレイム 那覇店、プリッツジム 那覇店、ShapesGirl 那覇店です（2026年11月13日に公式サイトで再確認）。' },
+  { question: '那覇のパーソナルジムの料金の目安はいくらですか？', answer: '2026年11月13日に公式サイトで確認した料金では、プリッツジム 那覇店は月4回 14,300円（税込・入会金22,000円）、フレイム 那覇店は月2回 15,000円・週1回 30,000円（税別）、REMは25分の通い放題が月29,800円（税込）、ShapesGirl 那覇店は月4回 月30,000円（税別）です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'パーソナルジム フレイム 那覇店は無料体験レッスン、ShapesGirl 那覇店は無料プチ体験、プリッツジム 那覇店は無料カウンセリングを案内しています。REMパーソナルトレーニングジムの初回体験は500円で、体験当日に入会すると入会金20,000円が0円になります（2026年11月13日に各公式サイトで確認）。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -81,7 +81,7 @@ export default function NahaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               那覇の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -100,7 +100,7 @@ export default function NahaPage() {
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
-            <p className="text-brand-muted leading-relaxed mb-6">「那覇で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、那覇エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">「那覇で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、那覇エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年11月13日に再確認）。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
@@ -136,7 +136,7 @@ export default function NahaPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・プリッツジム 那覇店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・プリッツジム 那覇店</li><li className="text-brand-muted">・パーソナルジム フレイム 那覇店</li><li className="text-brand-muted">・REMパーソナルトレーニングジム（那覇美栄橋店）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
@@ -148,13 +148,13 @@ export default function NahaPage() {
 
         <section className="py-16 bg-ivory">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">那覇の料金一覧【2026年6月・公式サイト調べ】</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">那覇の料金一覧【2026年11月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">REMパーソナルトレーニングジム（那覇美栄橋店）</span><span className="text-brand-muted text-sm">回数券 1回あたり約2,500円〜（入会金実質無料・詳細は公式サイトでご確認ください）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">パーソナルジム フレイム 那覇店</span><span className="text-brand-muted text-sm">コース料金は公式サイトでご確認ください（入会金0円キャンペーン中）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">REMパーソナルトレーニングジム（那覇美栄橋店）</span><span className="text-brand-muted text-sm">通い放題 月19,800円〜（25分スタンダード29,800円）／回数券 25分4回19,800円〜（税込）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">パーソナルジム フレイム 那覇店</span><span className="text-brand-muted text-sm">月2回15,000円／週1回30,000円／週2回48,000円（税別・食事管理込み）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">プリッツジム 那覇店</span><span className="text-brand-muted text-sm">月4回 14,300円／月8回 24,000円（税込・入会金22,000円）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ShapesGirl 那覇店</span><span className="text-brand-muted text-sm">料金は公式サイトでご確認ください</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">ShapesGirl 那覇店</span><span className="text-brand-muted text-sm">月4回 月30,000円（税別・入会金35,000円）／70日間20回 335,000円（税別）</span></li>
             </ul>
           </div>
         </section>
@@ -224,7 +224,7 @@ export default function NahaPage() {
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-brand-text mb-6 text-center">まとめ</h2>
-            <p className="text-brand-muted leading-relaxed mb-4">那覇エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。掲載内容はすべて各ジムの公式サイトで確認した情報です（2026年6月時点）。</p>
+            <p className="text-brand-muted leading-relaxed mb-4">那覇エリアの女性向けパーソナルジム{gyms.length}選をご紹介しました。掲載内容はすべて各ジムの公式サイトで確認した情報です（2026年11月13日に再確認）。</p>
             <p className="text-brand-muted leading-relaxed">料金やキャンペーンは変動するため、気になるジムが見つかったら公式サイトで最新情報を確認し、まずは体験・カウンセリングを受けてみてください。</p>
           </div>
         </section>

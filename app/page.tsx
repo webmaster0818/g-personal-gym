@@ -7,6 +7,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { AREA_COUNT, BRAND_COUNT } from '@/lib/site'
+import { COST_MARKET_CHECKED, COURSE_ROWS, MONTHLY_ROWS, median, yen } from '@/data/costMarket'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/'),
@@ -89,6 +90,47 @@ const faqs = [
   { question: '産後ダイエットにも対応していますか？', answer: 'はい。ビーコンセプト、リボーンマイセルフ、UNDEUX SUPERBODYなど多くの女性専用ジムが産後ダイエットコースを用意しています。産後の体の回復に配慮したプログラムで、骨盤矯正や体型戻しをサポートします。' },
 ]
 
+// TOP 冒頭の答え（2026-11-13）。料金は /cost/ と同じ data/costMarket.ts から計算（手で数字を書かない）。
+// 役割分担：TOP＝入口と答え（相場・選び方の要点）、/ranking/＝比較一覧、/cost/＝相場の詳細
+function TopAnswer() {
+  const courseLows = COURSE_ROWS.map((r) => r.low)
+  const courseAll = COURSE_ROWS.map((r) => r.high ?? r.low)
+  const courseWomen = COURSE_ROWS.filter((r) => r.women)
+  const monthlyLows = MONTHLY_ROWS.map((r) => r.low)
+  return (
+    <section className="py-14 md:py-16 bg-white border-b border-line" id="answer">
+      <div className="max-w-4xl mx-auto px-6 lg:px-8">
+        <h2 className="font-serif text-2xl md:text-[1.75rem] leading-snug text-ink mb-6">女性向けパーソナルジムの料金相場と選び方の要点</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-ivory border border-line rounded-2xl p-6">
+            <p className="text-xs font-semibold tracking-widest text-accent mb-3">料金相場（公式料金から計算）</p>
+            <ul className="space-y-2 text-sm text-ink leading-relaxed">
+              <li>■ 2ヶ月コース：<strong>{yen(Math.min(...courseLows))}〜{yen(Math.max(...courseAll))}、中央値 {yen(median(courseLows))}</strong>（{COURSE_ROWS.length}社・入会金別）</li>
+              <li>■ 女性専用と公式にある{courseWomen.length}社の2ヶ月コース：<strong>{yen(Math.min(...courseWomen.map((r) => r.low)))}〜{yen(Math.max(...courseWomen.map((r) => r.high ?? r.low)))}</strong></li>
+              <li>■ 月4回の月額制：<strong>{yen(Math.min(...monthlyLows))}〜{yen(Math.max(...monthlyLows))}、中央値 {yen(median(monthlyLows))}</strong>（{MONTHLY_ROWS.length}社）</li>
+            </ul>
+            <p className="text-ink-faint text-xs mt-3 leading-relaxed">当サイト掲載ジムのうち、{COST_MARKET_CHECKED}に公式サイトで料金を確認できた社の下限（税込）で計算した幅と中央値です。各社の内訳は<Link href="/cost/" className="text-accent underline underline-offset-2">料金相場ガイド</Link>に掲載しています。</p>
+          </div>
+          <div className="bg-ivory border border-line rounded-2xl p-6">
+            <p className="text-xs font-semibold tracking-widest text-accent mb-3">選び方の要点</p>
+            <ol className="space-y-2 text-sm text-ink leading-relaxed list-decimal pl-5">
+              <li><strong>女性専用か</strong>を公式の記載で確かめる（男女利用可のジムもあります）</li>
+              <li><strong>入会金を含めた総額</strong>で比べる（2ヶ月コースか月額制か）</li>
+              <li><strong>体験・カウンセリングの料金</strong>と当日入会の条件を確認する</li>
+              <li><strong>駅からの距離・営業時間</strong>など、通い続けられる条件で選ぶ</li>
+            </ol>
+            <p className="text-ink-faint text-xs mt-3 leading-relaxed">詳しくは<Link href="/guide/" className="text-accent underline underline-offset-2">選び方ガイド</Link>をご覧ください。</p>
+          </div>
+        </div>
+        <div className="mt-6 flex flex-col sm:flex-row gap-3 text-sm">
+          <Link href="/ranking/" className="flex-1 block border border-accent/40 rounded-xl px-5 py-4 text-ink hover:border-accent transition"><strong className="text-accent">ジムを比べたい方</strong>：女性専用パーソナルジムの比較一覧（おすすめランキング）へ →</Link>
+          <Link href="/areas/" className="flex-1 block border border-accent/40 rounded-xl px-5 py-4 text-ink hover:border-accent transition"><strong className="text-accent">近くで探したい方</strong>：全国{AREA_COUNT}エリアの店舗・料金へ →</Link>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function SectionHeading({ en, title, lead }: { en: string; title: string; lead?: string }) {
   return (
     <div className="text-center max-w-2xl mx-auto mb-12 fade-up">
@@ -151,6 +193,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <TopAnswer />
 
         {/* Strengths */}
         <section className="py-20 md:py-24 bg-ivory">
