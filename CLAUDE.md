@@ -536,3 +536,9 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 生成スクリプト: 再生成で戻っていた17ページを 0 に。ビーコンセプト7店（市川・蒲田・金山・小倉・名駅・練馬・梅田）の営業時間 7:00〜23:00・住所5店・蒲田の料金（11/10 訂正値）をデータに。g() に `faq_price`（FAQ 料金文の固定）・`monthly`（月額制の枠）・`faq_note`（料金文の後の一文）を追加（ページのデータには出ない）。BEYOND 6エリア（浜松・枚方・熊本・新潟・大分・四日市）に継続プランの一文。11/6〜11/8 に手で整えた4ページ（八王子・荻窪・浦和・姫路：早見表・title/description・FAQ・更新日）は area に `frozen=True`＝上書きしない（カードのデータは一致）。一時ディレクトリで batch1〜4 再生成→101ページ・areaContextData・RelatedAreas・sitemap とも差分0。
 - 未変更（件数のみ）: 店舗単位の「ベビーサークル完備」（chiba・ebisu・kitasenju・funabashi・utsunomiya・kamata・nerima のカード、data/brandStores.json 8件）は公式 FAQ の範囲内で据え置き。osaka・fukuoka の FAQ は OUTLINE に触れているが公式の店舗一覧（10店）に大阪・福岡なし（なんば店はコメントアウト）。
 - 検証: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK・px.a8.net 前後とも3・表示テキストの差分は8ページ（TOP は FAQ の JSON-LD のみ）。
+
+### 2026-11-13 朝：OUTLINE「業界初」「全店完備」・生成スクリプト一致の再確認（変更なし）＋福岡の UNDEUX 店名を公式どおりに ✅本番（source d919880 / deploy 07921ff0・反映 約20分）
+- 担当2項目は 11/12（a85b17e / e0225b66）で実施済み。今日の再確認：公式 outline-gym.com（トップ・/service・/faq・/gym の生HTML）に「業界初」0・「全店」0、トップ「生涯サポート」1・「お子さま連れOK」3、/faq「ベビーサークル」1＝11/12 と同じ。本番 sitemap 134URL で「業界初」「ベビーサークル全店完備」「全店にベビーサークル完備」の合計 0。ソース（app・components・data・lib・scripts）も 0。一時ディレクトリで batch1〜4 を再生成 → app・areaContextData・RelatedAreas・sitemap とも差分 0（変更後も 0）。
+- 追加の1件（判断不要・公式と食い違う値）：福岡カードの店名「UNDEUX SUPERBODY LIFE 福岡」→公式 /studio/tenjin/ の店舗情報「UNDEUX SUPERBODY 福岡・天神スタジオ」（カード・FAQ 2か所・data/brandStores.json）。住所・営業 8:00〜22:00・不定休・天神駅徒歩5分・月額 18,900円〜・シャワールームは公式と一致（変更なし）。sitemap lastmod fukuoka=2026-11-13。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・px.a8.net 前後とも2（deploy HTML）・表示テキストの差分は fukuoka・/brands/undeux/ のみ。CF Pages のビルドが約20分 in_progress のまま→完了後に本番 ?cb=：新店名 fukuoka 13・undeux 2、旧名 0、robots 200。Indexing /areas/fukuoka/ 200（残り 6/55）。
+- 未変更（件数のみ）：他の「UNDEUX SUPERBODY LIFE ○○スタジオ」表記（練馬・柏・心斎橋・広島・所沢）は今日は未照合。
