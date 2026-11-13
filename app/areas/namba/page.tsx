@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/namba/'),
   title: '難波の女性向けパーソナルジムおすすめ2選｜料金比較',
-  description: '難波のおすすめ女性向けパーソナルジム2選を比較しています。リボーンマイセルフ・Amazonesの料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '難波の女性専用ジム2選を公式料金で比較。リボーンマイセルフ なんばスカイオ店は30分制の月2回10,450円〜（入会金22,000円・キャンペーンで無料）、Amazones難波本店は月額9,900円・パーソナル月4回付き22,000円。体験・アクセスも掲載（2026年11月確認）。',
   keywords: '女性専用パーソナルジム,難波,大阪,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -63,7 +63,7 @@ export default function NambaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               難波の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>

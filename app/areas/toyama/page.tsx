@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/toyama/'),
   title: '富山の女性向けパーソナルジムおすすめ4選｜料金比較・無料体験',
-  description: '富山のおすすめ女性向けパーソナルジム4選を比較しています。BEYOND・Paw・subrinaなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '富山の女性向けジム4選を公式料金で比較。女性専用24時間のPawは月6,380円〜、女性専用のsubrinaはパーソナル月4回33,000円、BEYOND富山は回数券10回102,300円、ゆめたかは2か月16回48,000円。入会金・体験・アクセスも掲載（2026年11月確認）。',
   keywords: '女性専用パーソナルジム,富山,富山,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -85,7 +85,7 @@ export default function ToyamaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月13日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               富山の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
