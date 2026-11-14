@@ -33,23 +33,24 @@ const gyms = [
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
   },
   {
-    name: 'UNDEUX SUPERBODY LIFE 心斎橋スタジオ',
-    officialUrl: 'https://www.diet-undeux.jp/life/shinsaibashi/',
+    name: 'UNDEUX SUPERBODY 心斎橋スタジオ',
+    officialUrl: 'https://www.diet-undeux.jp/studio/shinsaibashi/',
     price: '月額制（金額は公式サイトでご確認ください）',
     trial: '初回体験0円・無料カウンセリングあり',
     features: ['女性専用', '月額制', '食事改善サポート'],
     description: 'UNDEUXの月額制ライン「LIFE」の心斎橋スタジオです。女性専用で、パーソナルトレーニング＋食事改善のサポートが受けられます。',
-    access: '心斎橋エリア（所在地詳細は公式サイトでご確認ください）',
+    access: '地下鉄御堂筋線「心斎橋駅」徒歩5分・地下鉄四つ橋線「四ツ橋駅」徒歩1分',
+    address: '大阪府大阪市西区北堀江1丁目5-8 4F',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '食事改善'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
+    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['公式サイトでご確認ください'] },
   },
 ]
 
 const faqs = [
-  { question: '心斎橋で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、BODY SALVATION（ボディサーベーション）、UNDEUX SUPERBODY LIFE 心斎橋スタジオです（2026年6月調査時点）。' },
+  { question: '心斎橋で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、BODY SALVATION（ボディサーベーション）、UNDEUX SUPERBODY 心斎橋スタジオです（2026年6月調査時点）。' },
   { question: '心斎橋のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BODY SALVATION（ボディサーベーション）はスターターコース4回 18,000円です（30分・新規限定・入会金無料）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '心斎橋駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、BODY SALVATION（ボディサーベーション）（御堂筋線心斎橋駅徒歩4分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY LIFE 心斎橋スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '心斎橋駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、BODY SALVATION（ボディサーベーション）（御堂筋線心斎橋駅徒歩4分）、UNDEUX SUPERBODY 心斎橋スタジオ（地下鉄御堂筋線「心斎橋駅」徒歩5分・地下鉄四つ橋線「四ツ橋駅」徒歩1分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'UNDEUX SUPERBODY 心斎橋スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -112,11 +113,11 @@ export default function ShinsaibashiPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・BODY SALVATION（ボディサーベーション）</li><li className="text-brand-muted">・UNDEUX SUPERBODY LIFE 心斎橋スタジオ</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・BODY SALVATION（ボディサーベーション）</li><li className="text-brand-muted">・UNDEUX SUPERBODY 心斎橋スタジオ</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY LIFE 心斎橋スタジオ</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・UNDEUX SUPERBODY 心斎橋スタジオ</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
@@ -132,7 +133,7 @@ export default function ShinsaibashiPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BODY SALVATION（ボディサーベーション）</span><span className="text-brand-muted text-sm">スターターコース4回 18,000円（30分・新規限定・入会金無料）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY LIFE 心斎橋スタジオ</span><span className="text-brand-muted text-sm">月額制（金額は公式サイトでご確認ください）</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">UNDEUX SUPERBODY 心斎橋スタジオ</span><span className="text-brand-muted text-sm">月額制（金額は公式サイトでご確認ください）</span></li>
             </ul>
           </div>
         </section>

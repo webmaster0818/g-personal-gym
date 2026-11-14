@@ -977,10 +977,10 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY LIFE 広島スタジオ",
+   "name": "UNDEUX SUPERBODY 広島スタジオ",
    "areaSlug": "hiroshima",
    "areaName": "広島",
-   "officialUrl": "https://www.diet-undeux.jp/life/hiroshima/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/hiroshima/",
    "price": "月額制（金額は公式サイトでご確認ください）",
    "trial": "初回体験0円（電話・LINE・Web予約）",
    "access": "本通駅徒歩1分・紙屋町東駅徒歩5分",
@@ -1024,10 +1024,10 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY LIFE 柏スタジオ",
+   "name": "UNDEUX SUPERBODY 柏スタジオ",
    "areaSlug": "kashiwa",
    "areaName": "柏",
-   "officialUrl": "https://www.diet-undeux.jp/life/kashiwa/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/kashiwa/",
    "price": "月額制（金額は公式料金ページでご確認ください）",
    "trial": "初回体験0円",
    "access": "各線「柏駅」徒歩2分",
@@ -1173,14 +1173,14 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY LIFE 練馬スタジオ",
+   "name": "UNDEUX SUPERBODY 練馬スタジオ",
    "areaSlug": "nerima",
    "areaName": "練馬",
-   "officialUrl": "https://www.diet-undeux.jp/life/nerima/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/nerima/",
    "price": "月額制（金額は公式サイトでご確認ください）",
    "trial": "初回体験0円・無料カウンセリングあり",
-   "access": "練馬駅最寄り（徒歩分数は公式サイトでご確認ください）",
-   "address": "",
+   "access": "「練馬駅」より徒歩2分",
+   "address": "東京都練馬区豊玉北5-19-9 ラ・フロレゾン 8階",
    "features": [
     "女性専用",
     "月額制",
@@ -1365,14 +1365,14 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY LIFE 心斎橋スタジオ",
+   "name": "UNDEUX SUPERBODY 心斎橋スタジオ",
    "areaSlug": "shinsaibashi",
    "areaName": "心斎橋",
-   "officialUrl": "https://www.diet-undeux.jp/life/shinsaibashi/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/shinsaibashi/",
    "price": "月額制（金額は公式サイトでご確認ください）",
    "trial": "初回体験0円・無料カウンセリングあり",
-   "access": "心斎橋エリア（所在地詳細は公式サイトでご確認ください）",
-   "address": "",
+   "access": "地下鉄御堂筋線「心斎橋駅」徒歩5分・地下鉄四つ橋線「四ツ橋駅」徒歩1分",
+   "address": "大阪府大阪市西区北堀江1丁目5-8 4F",
    "features": [
     "女性専用",
     "月額制",
@@ -1412,14 +1412,14 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY LIFE 所沢スタジオ",
+   "name": "UNDEUX SUPERBODY 所沢スタジオ",
    "areaSlug": "tokorozawa",
    "areaName": "所沢",
-   "officialUrl": "https://www.diet-undeux.jp/life/tokorozawa/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/tokorozawa/",
    "price": "月額制（金額は公式サイトでご確認ください）",
    "trial": "初回体験0円（電話・WEB予約）",
-   "access": "所沢エリア（所在地・徒歩分数は公式サイトでご確認ください）",
-   "address": "",
+   "access": "「所沢駅」より徒歩3分",
+   "address": "埼玉県所沢市日吉町8-2 プロペ所沢ビルII 2階 200号",
    "features": [
     "女性専用",
     "月額制",
