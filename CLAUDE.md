@@ -558,3 +558,12 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 他の落ちたページ: kanazawa・shizuoka・toyonaka・/brands/katagirijuku/ は indexed＝偶然の範囲。⚠️ takasaki は「Crawled - currently not indexed」（10/20）。
 - 検証: build EXIT0・precheck（out）全項目OK（134頁）・計測リンク前後とも3・表示テキスト差分は naha・TOP の2ページのみ。本番 ?cb=: 新値あり・旧値（約2,500円／痩せるまで追加料金なし／2026年06月12日 等）0、robots 200、sitemap lastmod 2URL=11/13。
 - 未変更（件数のみ）: TOP hero の「102 エリア対応」は固定文字（AREA_COUNT は 101）。ShapesGirl 公式は「全店舗1階」と那覇店住所「3階西側」が食い違う（カードの「完全個室」も未照合）。
+
+### 2026-11-14 朝：UNDEUX 練馬・柏・心斎橋・広島・所沢の店名・所在地を公式店舗ページで照合✅本番（source 992402d / deploy 1697d975・反映 約17分）
+- 公式（11/14 diet-undeux.jp/studio/ 一覧と /studio/<slug>/ の店舗情報欄・生HTML・コメント/script除外）: 5店とも店舗名は「UNDEUX SUPERBODY ○○スタジオ」（LIFE の語なし。柏・広島ページ内の口コミウィジェットの名称だけ「LIFE」が残る）。/life/<slug>/ は5つともトップへ転送。営業 8:00〜22:00・不定休（5店共通）。
+- 変更: 店名「UNDEUX SUPERBODY LIFE ○○スタジオ」→「UNDEUX SUPERBODY ○○スタジオ」（カード・FAQ・目的別リスト・料金一覧）、officialUrl /life/→/studio/、営業時間・定休を追加。練馬「練馬駅最寄り（…）」→「練馬駅」より徒歩2分・豊玉北5-19-9 ラ・フロレゾン 8階、心斎橋「心斎橋エリア（…）」→御堂筋線「心斎橋駅」徒歩5分・四つ橋線「四ツ橋駅」徒歩1分・西区北堀江1丁目5-8 4F、所沢「所沢エリア（…）」→「所沢駅」より徒歩3分・日吉町8-2 プロペ所沢ビルII 2階 200号。柏（末広町7-2 柏プラザビル5F・徒歩2分）・広島（紙屋町2-3-4 広中ビル6階・本通駅徒歩1分／紙屋町東駅徒歩5分）は一致。駅徒歩3分以内の FAQ に練馬・心斎橋・所沢の UNDEUX が自動で加わった（生成ロジックどおり）。
+- 生成スクリプト batch1（練馬・心斎橋・広島）/batch2（柏・所沢）を同値に→一時ディレクトリで batch1〜4 再生成し、差分は5ページのみ＝それを採用。data/brandStores.json は5件だけ手で更新。sitemap lastmod 5エリア＋/brands/undeux/ = 2026-11-14。
+- 触っていない: description の「UNDEUXの月額制ライン『LIFE』の…」・price「月額制（…）」・features「月額制」（LIFE プランの既定案＝11/15 実行分と一緒に判断）。osaka・fukuoka FAQ の OUTLINE 案内（判断待ち）。
+- 検証: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK（134頁）・計測リンク px.a8.net 前後とも HTML2／全体3・表示テキスト差分は5エリア＋/brands/undeux/ のみ。本番 ?cb=: 5ページとも新店名あり（22〜24件）・「SUPERBODY LIFE」0・/life/ 0・/studio/<slug>/ 2・旧「エリア（所在地…」「練馬駅最寄り」0、robots 200、sitemap lastmod 5URL=11/14。Indexing /areas/nerima・shinsaibashi・tokorozawa 3/3 200（残り 7/55）。
+- 未変更（件数のみ）: 「UNDEUX SUPERBODY LIFE」表記は machida（ページ内 27件・カード/FAQ）と brandStores の町田・立川・藤沢（/brands/undeux/ に3店×2）に残る＝未照合。
+- 点検 C3 /articles/iryo-renkei/「監修者」: 読者向けチェック項目（「公式サイトに監修者の資格・体制が明記されているか」）で誤検知・変更なし（11/3・11/7・11/12 と同じ）。ArticleShell の「監修 woman-gym編集部」は 11/7 から判断待ち。
