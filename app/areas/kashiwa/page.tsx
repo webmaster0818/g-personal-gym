@@ -38,7 +38,7 @@ const gyms = [
     price: '月額制（金額は公式料金ページでご確認ください）',
     trial: '初回体験0円',
     features: ['女性専用', '月額制', '管理栄養士の食事サポート', '手ぶらOK'],
-    description: 'UNDEUXの月額制ライン「LIFE」の柏スタジオです。女性専用で、管理栄養士の食事改善サポート＋ヘルシー宅配食があります。',
+    description: 'UNDEUX SUPERBODY（全店で月額制プラン）の柏スタジオです。女性専用で、管理栄養士の食事改善サポート＋ヘルシー宅配食があります。',
     access: '各線「柏駅」徒歩2分',
     address: '柏市末広町7-2 柏プラザビル5F',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '食事改善'] },

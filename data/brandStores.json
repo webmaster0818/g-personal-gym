@@ -38,7 +38,7 @@
    "areaSlug": "hachioji",
    "areaName": "八王子",
    "officialUrl": "https://katagirijuku.jp/gyms/hachioji",
-   "price": "月4回 33,000円（税込）",
+   "price": "月4回 33,000円／月8回 59,400円（税込）",
    "trial": "無料体験トレーニングあり（手ぶらOK）",
    "access": "JR八王子駅徒歩4分",
    "address": "東京都八王子市中町2-15 H・Kビル3階",
@@ -585,8 +585,8 @@
    "areaSlug": "tachikawa",
    "areaName": "立川",
    "officialUrl": "https://www.shapes-international.co.jp/store/tachikawa/",
-   "price": "8回 92,400円〜（税込）",
-   "trial": "無料カウンセリング",
+   "price": "チケット8回 101,200円（税込）／平日12〜16時のデイタイム 92,400円（税込）",
+   "trial": "カウンセリング・体験トレーニングとも無料",
    "access": "JR「立川駅」徒歩7分",
    "address": "東京都立川市錦町2-1-26 Nビルディング501号室",
    "features": [
@@ -865,11 +865,11 @@
    "name": "UNDEUX SUPERBODY 恵比寿スタジオ",
    "areaSlug": "ebisu",
    "areaName": "恵比寿",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/ebisu/",
    "price": "スタンダードプラン月2回 21,300円〜（税込）",
    "trial": "体験レッスン0円",
-   "access": "JR「恵比寿駅」徒歩4分",
-   "address": "東京都渋谷区恵比寿（恵比寿駅徒歩4分）",
+   "access": "JR・東京メトロ日比谷線「恵比寿駅」西口 徒歩2分",
+   "address": "東京都渋谷区恵比寿南1-11-2 ダイニングイノベーションビルB1",
    "features": [
     "女性専用",
     "食事管理付き",
@@ -895,19 +895,19 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY LIFE 藤沢店",
+   "name": "UNDEUX SUPERBODY 藤沢スタジオ",
    "areaSlug": "fujisawa",
    "areaName": "藤沢",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/fujisawa/",
    "price": "スタンダードプラン月2回 18,900円〜（税込）",
-   "trial": "体験レッスンあり",
-   "access": "JR「藤沢駅」徒歩2分",
-   "address": "神奈川県藤沢市（藤沢駅徒歩2分）",
+   "trial": "無料体験トレーニングあり（約60分・初めての方）",
+   "access": "各線「藤沢駅」徒歩4分",
+   "address": "神奈川県藤沢市鵠沼石上1丁目8-1 Tsビル2F",
    "features": [
     "女性専用",
     "月額制",
     "マシンピラティス",
-    "駅徒歩2分",
+    "駅徒歩4分",
     "月2回18",
     "900円〜"
    ]
@@ -964,11 +964,11 @@
    "name": "UNDEUX SUPERBODY 銀座スタジオ",
    "areaSlug": "ginza",
    "areaName": "銀座",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/ginza/",
    "price": "スタンダードプラン月2回 21,300円〜（税込）",
    "trial": "体験レッスン0円",
-   "access": "東京メトロ「銀座一丁目駅」徒歩1分",
-   "address": "東京メトロ「銀座一丁目駅」徒歩1分",
+   "access": "有楽町線「銀座一丁目駅」徒歩1分・各線「銀座駅」徒歩3分",
+   "address": "東京都中央区銀座2-8-19 FPG links 3F",
    "features": [
     "女性専用",
     "食事管理付き",
@@ -995,11 +995,11 @@
    "name": "UNDEUX SUPERBODY 池袋スタジオ",
    "areaSlug": "ikebukuro",
    "areaName": "池袋",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/ikebukuro/",
    "price": "スタンダードプラン月2回 21,300円〜（税込）",
    "trial": "体験レッスン0円",
-   "access": "JR「池袋駅」徒歩5分",
-   "address": "JR「池袋駅」徒歩5分",
+   "access": "「池袋駅」徒歩3分",
+   "address": "東京都豊島区東池袋1-21-1 ラグーン池袋ビル4階",
    "features": [
     "女性専用",
     "食事管理付き",
@@ -1090,14 +1090,14 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY LIFE 町田スタジオ",
+   "name": "UNDEUX SUPERBODY 町田スタジオ",
    "areaSlug": "machida",
    "areaName": "町田",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/machida/",
    "price": "スタンダードプラン月2回 20,500円〜（税込）",
    "trial": "体験レッスンあり",
-   "access": "JR「町田駅」徒歩2分",
-   "address": "東京都町田市（町田駅徒歩2分）",
+   "access": "「町田駅」より徒歩2分",
+   "address": "東京都町田市原町田6丁目13番21号 町田アミックスビル4階",
    "features": [
     "女性専用",
     "月額制",
@@ -1304,7 +1304,7 @@
    "name": "UNDEUX SUPERBODY 仙台スタジオ",
    "areaSlug": "sendai",
    "areaName": "仙台",
-   "officialUrl": "https://www.diet-undeux.jp/life/sendai/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/sendai/",
    "price": "スタンダードプラン月額18,200円〜（税込）",
    "trial": "無料カウンセリング・無料体験トレーニングあり",
    "access": "JR仙台駅徒歩3分",
@@ -1380,20 +1380,20 @@
    ]
   },
   {
-   "name": "UNDEUX SUPERBODY LIFE 立川スタジオ",
+   "name": "UNDEUX SUPERBODY 立川スタジオ",
    "areaSlug": "tachikawa",
    "areaName": "立川",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/tachikawa/",
    "price": "スタンダードプラン月2回 20,500円〜（税込）",
-   "trial": "体験レッスンあり",
-   "access": "JR「立川駅」徒歩4分",
-   "address": "東京都立川市（立川駅徒歩4分）",
+   "trial": "体験トレーニング0円",
+   "access": "JR「立川駅」徒歩5分・多摩モノレール「立川南駅」徒歩3分",
+   "address": "東京都立川市柴崎町3-10-6 市川ビル4F",
    "features": [
     "女性専用",
     "月額制",
     "継続割あり",
     "マンツーマン",
-    "立川駅近"
+    "立川南駅徒歩3分"
    ]
   },
   {
@@ -1461,16 +1461,16 @@
    "name": "UNDEUX SUPERBODY 横浜スタジオ",
    "areaSlug": "yokohama",
    "areaName": "横浜",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/yokohama/",
    "price": "スタンダードプラン月2回 21,300円〜（税込）",
    "trial": "体験レッスン0円",
-   "access": "JR「横浜駅」徒歩3分",
-   "address": "JR「横浜駅」徒歩3分",
+   "access": "各線「横浜駅」徒歩2分",
+   "address": "神奈川県横浜市西区北幸1-5-4 四谷学院第2ビル 2F",
    "features": [
     "女性専用",
     "食事管理付き",
     "初月宅配食30食無料（コミット）",
-    "横浜駅徒歩3分"
+    "横浜駅徒歩2分"
    ]
   }
  ],
@@ -1782,7 +1782,7 @@
    "price": "月4回 17,600円（税込・スタンダード）／平日12〜17時のデイプランは14,960円",
    "trial": "無料体験あり",
    "access": "東京メトロ「銀座駅」C5・C7出口直結（徒歩1分）",
-   "address": "東京メトロ「銀座駅」C5・C7出口直結（徒歩1分）",
+   "address": "東京都中央区銀座4-1 西銀座B2階",
    "features": [
     "AI主導",
     "1回20分",
@@ -1871,19 +1871,19 @@
    ]
   },
   {
-   "name": "エクササイズコーチ 立川",
+   "name": "エクササイズコーチ 立川店",
    "areaSlug": "tachikawa",
    "areaName": "立川",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
+   "officialUrl": "https://exercisecoach.co.jp/store/tachikawa/",
+   "price": "月4回 17,600円（税込）〜",
    "trial": "無料体験あり",
-   "access": "「立川」駅周辺",
-   "address": "立川エリア（最寄り店舗は公式サイトでご確認ください）",
+   "access": "多摩モノレール「立川南駅」徒歩1分・JR「立川駅」南口徒歩2分",
+   "address": "東京都立川市柴崎町3-8-2 ビルドはなさい3階",
    "features": [
     "1回約20分",
     "月額制",
     "AIマシン活用",
-    "女性利用者が多い",
+    "男女利用可",
     "続けやすい"
    ]
   },

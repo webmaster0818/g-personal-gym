@@ -25,7 +25,7 @@ const gyms = [
     price: '月額制（金額は公式サイトでご確認ください）',
     trial: '初回体験0円（電話・LINE・Web予約）',
     features: ['女性専用', '月額制', '手ぶらOK'],
-    description: 'UNDEUXの月額制ライン「LIFE」の広島スタジオです。女性専用で手ぶらOKです。',
+    description: 'UNDEUX SUPERBODY（全店で月額制プラン）の広島スタジオです。女性専用で手ぶらOKです。',
     access: '本通駅徒歩1分・紙屋町東駅徒歩5分',
     address: '広島市中区紙屋町2-3-4 広中ビル6階',
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', 'ボディメイク'] },
