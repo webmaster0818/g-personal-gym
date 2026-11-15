@@ -567,3 +567,12 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 検証: build EXIT0（prebuild 101）・precheck（out／deploy）全項目OK（134頁）・計測リンク px.a8.net 前後とも HTML2／全体3・表示テキスト差分は5エリア＋/brands/undeux/ のみ。本番 ?cb=: 5ページとも新店名あり（22〜24件）・「SUPERBODY LIFE」0・/life/ 0・/studio/<slug>/ 2・旧「エリア（所在地…」「練馬駅最寄り」0、robots 200、sitemap lastmod 5URL=11/14。Indexing /areas/nerima・shinsaibashi・tokorozawa 3/3 200（残り 7/55）。
 - 未変更（件数のみ）: 「UNDEUX SUPERBODY LIFE」表記は machida（ページ内 27件・カード/FAQ）と brandStores の町田・立川・藤沢（/brands/undeux/ に3店×2）に残る＝未照合。
 - 点検 C3 /articles/iryo-renkei/「監修者」: 読者向けチェック項目（「公式サイトに監修者の資格・体制が明記されているか」）で誤検知・変更なし（11/3・11/7・11/12 と同じ）。ArticleShell の「監修 woman-gym編集部」は 11/7 から判断待ち。
+
+### 2026-11-15 朝：UNDEUX「月額制LIFEプランあり」4頁を外す（既定案A）＋町田の旧「LIFE」・brandStores 再生成 ✅（source c402ad2 / deploy 1e380672）
+- 公式（11/15 diet-undeux.jp/price/・/studio/<slug>/ 生HTML・コメント/script除外）: 料金はスタンダード／コミットの2プラン（「全店で月額制プランをご用意」）。LIFE の語は料金ページ・FAQ・トップに0（千葉店ページの口コミウィジェット名だけ残る）。
+- 既定案A: chiba・meguro・ebisu・shibuya のカード options「月額制LIFEプランあり」を外した（ソース 4→0・RSCペイロード内のみ）。
+- 町田: 店名「UNDEUX SUPERBODY LIFE 町田スタジオ」→公式「UNDEUX SUPERBODY 町田スタジオ」、FAQ・目的別・料金相場の「SUPERBODY LIFE」「UNDEUX LIFE」→「UNDEUX SUPERBODY」、officialUrl トップ→/studio/machida/、住所「原町田6丁目13番21号 町田アミックスビル4階」、アクセス「町田駅」より徒歩2分。料金（ALL 月2回 20,500円・月4回 33,400／DAY 29,100円）は公式と一致。build 出力の LIFE 32→0。
+- 練馬・柏・心斎橋・広島・所沢 description「UNDEUXの月額制ライン『LIFE』の」→「UNDEUX SUPERBODY（全店で月額制プラン）の」（5店の店舗名を 11/15 公式で再確認）。生成スクリプト batch1/batch2 も同値・一時ディレクトリで batch1〜4 再生成し差分0。
+- data/brandStores.json を aggregate-brands.py で全体再生成（11/15 各店公式で照合: UNDEUX 町田・立川・藤沢の旧名→スタジオ名、恵比寿・銀座・池袋・横浜・仙台・藤沢・立川の住所/URL/徒歩、かたぎり塾 八王子 月8回 59,400円、リボーン立川 101,200円/デイタイム92,400円、エクササイズコーチ銀座・立川の住所等）。/brands/undeux/ の「SUPERBODY LIFE」6→0。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク deploy 全体 前後とも3・表示テキスト差分は machida・5エリア・/brands/undeux・exercise-coach・katagirijuku のみ。sitemap lastmod 10エリア＋/brands/ 4 = 2026-11-15。
+- ⚠️ deploy リポは RSC の index.txt を追跡している（rsync で *.txt を除外すると古い RSC が残る）。除外は .git と _redirects だけでよい（robots.txt・Google確認txt は out にもある）。
