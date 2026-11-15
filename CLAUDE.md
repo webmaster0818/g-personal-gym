@@ -576,3 +576,11 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - data/brandStores.json を aggregate-brands.py で全体再生成（11/15 各店公式で照合: UNDEUX 町田・立川・藤沢の旧名→スタジオ名、恵比寿・銀座・池袋・横浜・仙台・藤沢・立川の住所/URL/徒歩、かたぎり塾 八王子 月8回 59,400円、リボーン立川 101,200円/デイタイム92,400円、エクササイズコーチ銀座・立川の住所等）。/brands/undeux/ の「SUPERBODY LIFE」6→0。
 - 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク deploy 全体 前後とも3・表示テキスト差分は machida・5エリア・/brands/undeux・exercise-coach・katagirijuku のみ。sitemap lastmod 10エリア＋/brands/ 4 = 2026-11-15。
 - ⚠️ deploy リポは RSC の index.txt を追跡している（rsync で *.txt を除外すると古い RSC が残る）。除外は .git と _redirects だけでよい（robots.txt・Google確認txt は out にもある）。
+
+### 2026-11-15 12:00 成長ルーチン：和歌山・名古屋・松山・仙台・銀座の料金早見表を公式で再照合＋料金の目安・description ✅本番（source 8038ed5 / deploy 934ec853）
+- 11/15 公式（生HTML・コメント/script除外）で5エリア18店を全行再照合 → 11/5 の値との食い違い 0（UNDEUX 3店・リボーン 3店・EC 2店・BC名古屋・ASPI・プリッツ・BIPLUS・シルエット・Amazones・MoveLab・BEYOND和歌山・ワンネス・BARE）。checked を 2026年11月15日 に。
+- 追加: UNDEUX 銀座・仙台・名古屋の住所・8:00〜22:00 不定休（仙台は駐車サービス＝タイムズエスパル仙台東口）、UNDEUX 銀座の月8回、リボーン東京店・仙台店の住所・営業時間、リボーン名古屋駅店のデイタイム先着5名 50%OFF。各エリアに note「料金の目安（上表の公式値）」の一文（競合 ekitan 等はエリア平均料金を出している＝うちに無かった要約）。
+- description 5本を料金の答えに（127〜145字）・更新日 11/15。title 不変。名古屋（全国語「女性専用パーソナルジム」の着地）に /ranking/・/areas/ への導線1行。
+- sendai（batch1）・matsuyama（batch3）・wakayama（batch4）を frozen=True＋description を生成スクリプトにも記載。一時ディレクトリで batch1〜4 再生成 → app・components・data・sitemap とも差分0。sitemap lastmod 5URL=11/15。
+- 検証: build EXIT0・precheck（out）全項目OK（134頁）・計測リンク deploy 全体 前後とも3・表示テキスト/title/description の差分は5ページのみ。本番 ?cb=: 5ページとも新値あり（料金の目安2・11/15 12）・旧 description 0・旧確認日 0（銀座 FAQ の UNDEUX 11/5 確認の記述は別物で据え置き）、robots 200。
+- 競合（WebSearch US版・日本語結果は返る）: oceans・smartlog・fitmap・ekitan・aumo のまとめ（11〜17選）。oceans の仙台 UNDEUX は「17,600〜55,000円・入会金33,000円」と旧値。名古屋はアレスコ（4店舗）・リボーン金山店、銀座は OUTLINE 銀座・eviGym・ASPI 銀座、松山は StudioA・RIZAP が当サイト未掲載（新規カード＝今回は見送り）。
