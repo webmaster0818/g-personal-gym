@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/sendai/'),
   title: '仙台の女性向けパーソナルジムおすすめ4選｜料金比較',
-  description: '仙台のおすすめ女性向けパーソナルジム4選を比較しています。UNDEUX・リボーンマイセルフ・パーソナルトレーニングジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '仙台の女性向けパーソナルジム4選の料金を2026年11月15日に公式で確認。UNDEUX SUPERBODY 仙台スタジオは月2回18,200円・仙台駅徒歩3分・体験無料、リボーンマイセルフは2ヶ月16回220,000円（税込）。住所・営業時間も掲載しています。',
   keywords: '女性専用パーソナルジム,仙台,宮城,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -89,7 +89,7 @@ export default function SendaiPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月15日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               仙台の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>

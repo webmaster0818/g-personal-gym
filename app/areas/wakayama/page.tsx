@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/wakayama/'),
   title: '和歌山の女性向けパーソナルジムおすすめ3選｜料金比較・無料体験',
-  description: '和歌山のおすすめ女性向けパーソナルジム3選を比較しています。Amazones・MoveLab・BEYONDなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '和歌山の女性向けパーソナルジム3選の料金を2026年11月15日に公式で確認。Amazones 和歌山駅前店は月額9,900円・パーソナル月4回22,000円、MoveLabは3ヶ月12回158,400円、BEYONDは回数券10回102,300円（税込）。体験・アクセスも比較しています。',
   keywords: '女性専用パーソナルジム,和歌山,和歌山,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -75,7 +75,7 @@ export default function WakayamaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月15日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               和歌山の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>

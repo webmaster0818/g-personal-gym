@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nagoya/'),
   title: '名古屋の女性専用パーソナルジムおすすめ5選｜料金比較',
-  description: '名古屋のおすすめ女性専用・女性向けパーソナルジム5選を比較しています。料金・口コミ・特徴を掲載しています。',
+  description: '名古屋の女性専用パーソナルジム5選の料金を2026年11月15日に公式で確認。UNDEUX 名古屋スタジオは月2回20,500円、ビーコンセプトは2ヶ月179,685円、リボーンマイセルフは2ヶ月16回220,000円（税込）。体験・アクセスも比較しています。',
   keywords: '女性専用パーソナルジム,名古屋,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -112,7 +112,7 @@ export default function NagoyaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月15日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               名古屋の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -127,6 +127,7 @@ export default function NagoyaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「名古屋で女性専用のパーソナルジムを探している」という方のために、名古屋エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">名古屋に限らず女性専用パーソナルジムを比べたい方は、<Link href="/ranking/" className="text-accent underline">全国の女性専用パーソナルジム比較（ランキング）</Link>と<Link href="/areas/" className="text-accent underline">エリア一覧</Link>をご覧ください。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
