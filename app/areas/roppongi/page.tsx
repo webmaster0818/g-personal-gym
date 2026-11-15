@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/roppongi/'),
-  title: '六本木の女性専用パーソナルジムおすすめ2選｜料金比較',
-  description: '六本木のおすすめ女性専用・女性向けパーソナルジム2選を比較しています。料金・口コミ・特徴を掲載しています。',
+  title: '六本木の女性向けパーソナルジム2選｜女性トレーナーの有無・料金比較',
+  description: '六本木の女性向けパーソナルジム2選を2026年11月15日に公式で確認。女性トレーナーはBEYONDに所属なし・eviGymは記載なし。料金はeviGym月2回20,000円、BEYOND10回券102,300円（税込・入会金0円）。',
   keywords: '女性専用パーソナルジム,六本木,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -40,7 +40,7 @@ const gyms = [
     trial: '初回体験60分 0円（公式の11月限定キャンペーン表記）',
     features: ['入会金0円', '7:30から営業', '余った回数は繰り越し可'],
     description: '30代女性の仕事帰り・仕事前の利用が多いと公式に案内している店舗です（女性専用の記載はありません）。7:30から22:00まで営業し、シャワー設備はありません。',
-    access: '六本木駅A8出口 徒歩4分／乃木坂駅 徒歩7分',
+    access: '六本木駅8番出口 徒歩4分／乃木坂駅 徒歩7分',
     address: '東京都港区赤坂9丁目6-19 A-Ninth BUILDING 1F',
     popularPlan: { name: '月4回プラン', description: '週1回ペースの定番プランです。余った回数は在籍中なら繰り越せます。', price: '月額38,000円（税込）' },
     options: ['ウェアは初回体験のみ無料レンタル（通常有料）', 'シューズ置き場', '無料ウォーターサーバー'],
@@ -50,15 +50,15 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '六本木で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'BEYOND 六本木店、eviGym 六本木店が六本木で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
-  { question: '六本木のパーソナルジムの料金相場はいくらですか？', answer: '六本木エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制なら月12,000円〜30,000円程度から通えます。' },
+  { question: '六本木で女性専用のパーソナルジムはどこがおすすめですか？', answer: '掲載しているBEYOND 六本木店・eviGym 六本木店は、どちらも公式に女性専用の記載はありません（BEYONDは会員の6〜7割が女性、eviGym 六本木店は会員の女性66%と公式に記載）。女性専用・女性トレーナーにこだわる場合は、銀座エリアの掲載店（UNDEUX 銀座スタジオ＝女性トレーナー在籍、リボーンマイセルフ 東京店＝女性トレーナーのみ）もご覧ください（各公式サイト・2026年11月15日確認）。' },
+  { question: '六本木のパーソナルジムの料金相場はいくらですか？', answer: '掲載2店の公式料金（税込）では、eviGym 六本木店が月1回11,000円・月2回20,000円・月4回38,000円、BEYOND 六本木店が回数券10回102,300円・2ヶ月16回の食事管理付きコース290,400円です。どちらも入会金は0円です（各公式サイト・2026年11月15日確認）。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
   { question: '体験レッスンは無料で受けられますか？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずはお気軽にお問い合わせください。' },
   { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は、1ヶ月目から感じ始める方が多い傾向にあります。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
   { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが大半を占めます。' },
   { question: '六本木駅から近いジムはどこですか？', answer: 'BEYOND 六本木店（六本木駅 徒歩3分）、eviGym 六本木店（六本木駅 徒歩4分）が駅から近いジムです。' },
-  { question: '六本木で女性トレーナーがいるジムはありますか？', answer: 'BEYOND 六本木店は公式FAQで女性トレーナーは所属していないと案内しています（男性トレーナー1名・2025年11月20日現在の公式記載。会員の6〜7割は女性）。eviGym 六本木店の店舗ページにはトレーナーの性別の記載がありません。女性トレーナーを希望する場合は予約前に各店へご確認ください（2026年11月5日確認）。' },
+  { question: '六本木で女性トレーナーがいるジムはありますか？', answer: 'BEYOND 六本木店は公式FAQで女性トレーナーは所属していないと案内しています（男性トレーナー1名・2025年11月20日現在の公式記載。会員の6〜7割は女性）。eviGym 六本木店の店舗ページにはトレーナーの性別の記載がありません。女性トレーナーを希望する場合は予約前に各店へご確認ください（2026年11月15日確認）。' },
 ]
 
 export default function RoppongiPage() {
@@ -69,9 +69,9 @@ export default function RoppongiPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月15日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
-              六本木の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
+              六本木の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
           </div>
         </section>
@@ -84,6 +84,7 @@ export default function RoppongiPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「六本木で女性専用のパーソナルジムを探している」という方のために、六本木エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">女性トレーナーを希望する方へ：掲載2店は、どちらも女性トレーナーの在籍を公式で確認できません（BEYOND 六本木店は公式FAQで「所属しておりません」、eviGym 六本木店は店舗ページにトレーナーの性別の記載なし・2026年11月15日確認）。女性トレーナーが在籍する店舗は<Link href="/areas/ginza/" className="text-accent underline">銀座エリアの掲載店</Link>（UNDEUX 銀座スタジオ・リボーンマイセルフ 東京店）をご覧ください。料金はすぐ下の早見表で比べられます。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">

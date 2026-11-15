@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/yokohama/'),
   title: '横浜の女性専用パーソナルジムおすすめ4選｜料金比較',
-  description: '横浜のおすすめ女性専用・女性向けパーソナルジム4選を比較しています。料金・口コミ・特徴を掲載しています。',
+  description: '横浜の女性専用パーソナルジム4選の料金を2026年11月15日に公式で確認。UNDEUXは月2回21,300円、OUTLINEは16回184,800円、リボーンマイセルフは2ヶ月16回202,400円（税込）。女性トレーナー在籍・体験も比較しています。',
   keywords: '女性専用パーソナルジム,横浜,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -98,7 +98,7 @@ export default function YokohamaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月15日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               横浜の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -113,6 +113,7 @@ export default function YokohamaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「横浜で女性専用のパーソナルジムを探している」という方のために、横浜エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">横浜駅周辺で女性専用と公式に記載があるのは UNDEUX SUPERBODY 横浜スタジオ（徒歩2分・女性トレーナー在籍）、OUTLINE 横浜店（徒歩7分・完全個室）、リボーンマイセルフ 横浜店（徒歩7分・トレーナーも全員女性）の3店です（各公式サイト・2026年11月15日確認）。料金はすぐ下の早見表で比べられます。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">

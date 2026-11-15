@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nagano/'),
   title: '長野市の女性向けパーソナルジムおすすめ3選｜公式料金の早見表',
-  description: '長野のおすすめ女性向けパーソナルジム3選を比較しています。E9th・HPER・フィットネスサロンなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '長野市の女性向けパーソナルジム3選の料金を2026年11月15日に公式で確認。HPERは2ヶ月16回85,800円、E9thは2ヶ月76,000円〜（全店舗に女性トレーナー在籍）、CLUB-Jは2ヶ月18回207,000円（税込）。体験料金も比較しています。',
   keywords: '女性専用パーソナルジム,長野,長野,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -63,7 +63,7 @@ const faqs = [
   { question: '長野に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、長野駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
   { question: '長野のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、E9th PRIVATE GYM 長野駅前店は回数券10回 70,000円／各種コース2ヶ月 76,000円〜です（税込・コースは入会金10,000円）。HPER（ハイパー）長野七瀬店はスタンダード2ヶ月16回 85,800円です（税込・入会金11,000円）。フィットネスサロン CLUB-Jはプレミアム（50分×18回/2ヶ月）207,000円です（税込・入会金33,000円）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '長野駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、E9th PRIVATE GYM 長野駅前店（長野駅善光寺口から徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'E9th PRIVATE GYM 長野駅前店、HPER（ハイパー）長野七瀬店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'E9th PRIVATE GYM 長野駅前店とHPER（ハイパー）長野七瀬店は無料カウンセリングを実施しています。体験トレーニングは E9th が60分4,500円、CLUB-J が90分5,000円（毎月先着5名は1,980円）です（いずれも税込・各公式サイト・2026年11月15日確認）。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -75,7 +75,7 @@ export default function NaganoPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年06月12日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月15日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               長野の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -95,6 +95,7 @@ export default function NaganoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「長野で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、長野エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">女性トレーナーに教わりたい方へ：掲載3店のうち、公式に女性トレーナーの在籍を明記しているのは E9th PRIVATE GYM（全店舗に在籍・予約時に希望を伝える）です（公式FAQ・2026年11月15日確認）。料金はすぐ下の早見表で比べられます。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、長野駅周辺に「完全女性専用」を公式に確認できるパーソナルジムは見つかりませんでした。本ページでは女性トレーナー在籍・産後コースなど女性向けに強いジムを掲載しています。</p>
             </div>

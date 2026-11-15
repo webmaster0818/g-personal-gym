@@ -796,6 +796,7 @@ def main():
             # 手で整えたページ（冒頭の料金早見表・title/description・FAQ・更新日を 11/6〜11/8 に手修正）は上書きしない。
             # 2026-11-13: namba（batch1）・toyama（batch3）も description・更新日を手修正したため frozen。
             # 2026-11-15: sendai（batch1）・matsuyama（batch3）・wakayama（batch4）も description・更新日を手修正したため frozen。
+            # 2026-11-15 16時: nagano（batch4）も description・更新日・冒頭・体験FAQを手修正したため frozen。
             # カードのデータはこのスクリプトと一致させておくこと（2026-11-12 確認：差分は手修正部分のみ）
             print(f"page: {a['slug']} (frozen・上書きしない)")
             continue

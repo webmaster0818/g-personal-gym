@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/ikebukuro/'),
   title: '池袋の女性専用パーソナルジムおすすめ5選｜料金比較',
-  description: '池袋のおすすめ女性専用・女性向けパーソナルジム5選を比較しています。料金・口コミ・特徴を掲載しています。',
+  description: '池袋の女性専用ジムは掲載5店のうち OUTLINE・UNDEUX・ビーコンセプトの3店（2026年11月15日公式確認）。UNDEUXは月2回21,300円、ビーコンセプトは2ヶ月179,685円（税込）。女性トレーナー・体験も比較しています。',
   keywords: '女性専用パーソナルジム,池袋,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -22,13 +22,13 @@ const gyms = [
   {
     name: 'OUTLINE 池袋店',
     officialUrl: 'https://www.outline-gym.com/gym/ikebukuro',
-    price: '16回 184,800円〜（税込）',
+    price: '16回 184,800円〜（税込・公式の料金ページの表示。池袋店の料金は店舗へ問い合わせ）',
     trial: '無料カウンセリング',
     features: ['女性専用', '完全個室', '生涯サポート無料', 'ベビーサークル完備'],
     description: '生涯無料アフターサポート付き女性専用パーソナルジムです。池袋駅から好アクセスです。',
     access: 'JR「池袋駅」徒歩4分',
     address: '東京都豊島区西池袋3-4-3 エクセレンス西池袋101',
-    popularPlan: { name: '人気プラン', description: '生涯無料アフターサポート付き女性専用パーソナルジムです。池袋駅から好アクセスです。', price: '16回 184,800円〜（税込）' },
+    popularPlan: { name: '人気プラン', description: '生涯無料アフターサポート付き女性専用パーソナルジムです。池袋駅から好アクセスです。', price: '16回 184,800円〜（税込・公式の料金ページの表示。池袋店の料金は店舗へ問い合わせ）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
     basicInfo: { hours: '7:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
@@ -112,7 +112,7 @@ export default function IkebukuroPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月15日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               池袋の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -127,6 +127,7 @@ export default function IkebukuroPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「池袋で女性専用のパーソナルジムを探している」という方のために、池袋エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">池袋で女性専用のジムを探している方へ：掲載5店のうち、公式に「女性専用」と記載があるのは OUTLINE 池袋店（徒歩4分）、UNDEUX SUPERBODY 池袋スタジオ（徒歩3分・女性トレーナー在籍）、ビーコンセプト 池袋店（徒歩4分・脚やせプログラム）の3店です。Lastyle 池袋東口本店は女性に特化したプログラム、エクササイズコーチは男女利用可です（各公式サイト・2026年11月15日確認）。料金はすぐ下の早見表で比べられます。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
