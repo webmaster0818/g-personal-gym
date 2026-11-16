@@ -594,3 +594,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - /brands/outline/: brandStores の池袋1件の price を更新した結果、代表プラン集計「16回 184,800円〜（税込）」の店舗数が 6→5 に（表示の変化はそれだけ）。sitemap lastmod 4エリア＋/brands/outline/ = 2026-11-15。
 - 検証: 一時ディレクトリで batch1〜4 再生成→app・components・data・sitemap 差分0。build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク out/deploy 前後とも3・表示テキスト差分は4エリア＋/brands/outline/ のみ。本番 ?cb=: 4ページとも 11/15・料金の目安あり、旧 description／旧更新日／旧確認日（11/5）0、六本木「A8」「約15万〜22万」0、長野「有料体験でも当日入会」0、robots 200。
 - 競合（WebSearch US版・日本語結果は返る）: 横浜は ekitan・aumo・smartlog（OUTLINE・UNDEUX・リボーン・BEYOND）、池袋は gyym（CALDO 女性専用ホットヨガ）・aumo（OUTLINE・BOSTY・CREBIQ）・fitmap（RIZAP WOMAN 池袋西口店）・ekitan（エリア平均 入会金33,230円・16回147,963円）。うちに無かった「料金の目安」は note で対応。BOSTY・RIZAP WOMAN・UNDEUX 麻布十番（六本木近隣・女性トレーナー在籍）は新規カード＝判断待ち。
+
+### 2026-11-16 朝：/brands/undeux/ の旧名点検（変更なし）＋エリア6頁「入会金は別途2〜5万円程度」を公式値に（source bf65a95 / deploy c22e6487）
+- /brands/undeux/ 本番（?cb=）: 店舗一覧39件すべて「UNDEUX SUPERBODY ○○スタジオ」。「SUPERBODY LIFE」「UNDEUX LIFE」「LIFE」0。公式 /studio/ 一覧の51スラッグを各店舗ページ「店舗名」欄（11/16 生HTML）で取得し照合→39/39一致（福岡・天神／京都・四条・烏丸／神戸・三宮／青山・表参道も公式の店舗名どおり。title の「天神店」等は略称）。名古屋・梅田の2回出現は別エリアページ（meieki/nagoya、osaka/umeda）に同じ店を掲載しているため。変更なし。
+- 入会金（11/16 公式生HTML・コメント/script除外）: BEYOND /price/ 全コース0円・eviGym 六本木 0円・OUTLINE /service 0円（池袋店ページは「店舗へお問い合わせ」）・ビーコンセプト 天神/池袋/新宿/名古屋 店舗ページ 太もも 無料／トライアル 38,500円→当日入会で無料・リボーン 新宿/横浜/名古屋駅/梅田/東京 22,000円（キャンペーンで無料）・EC /program/ 19,800円（/campaign/ 紹介で0円）・Lastyle 池袋 50,000円（税抜）→半額25,000円（税抜）・かたぎり塾 西新宿 55,000円（当日入会で22,000円）・ASPI 名古屋栄 55,000円（当日入会で0円の条件あり）・UNDEUX /price/・/faq/ に記載なし。
+- 六本木・福岡・池袋・新宿・横浜・名古屋の「入会金は別途2〜5万円程度です。」→各ページ掲載店の公式値（範囲＋内訳＋確認日）。銀座（EC 19,800・リボーン 22,000）・大阪（リボーン 22,000・BURNS 未確認）は範囲と食い違わず据え置き。札幌は 11/15 判定（可）どおり据え置き。with U（福岡）・BURNS（大阪）は公式URL未登録で未照合。生成スクリプトにこの文は無い。sitemap lastmod 6URL=11/16。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク deploy 全体 px.a8.net 前後とも3（HTML 2）・表示テキスト差分は6ページのみ。CF Pages 反映 約19分（push 09:23→09:42）。本番 ?cb=: 6頁とも新文あり・旧文0（銀座・大阪・札幌は据え置きで旧文あり）、robots 200、sitemap lastmod 6URL=11/16。Indexing は枠 55/55 使用済み→sitemap 再送（成功1）。
+- 点検 C3 /articles/iryo-renkei/「監修者」: 11/14 と同じ。読者向けチェック項目で誤検知・変更なし。ArticleShell の「監修 woman-gym編集部」は判断待ちのまま。
