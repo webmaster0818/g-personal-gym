@@ -412,8 +412,8 @@
    "areaSlug": "kawasaki",
    "areaName": "川崎",
    "officialUrl": "https://www.shapes-international.co.jp/store/kawasaki/",
-   "price": "入会金22,000円＋コース料金",
-   "trial": "無料カウンセリング",
+   "price": "ショートコース2ヶ月16回 202,400円（税込・入会金22,000円）",
+   "trial": "無料カウンセリング・無料体験トレーニング（0円）",
    "access": "JR「川崎駅」北改札 徒歩5分",
    "address": "神奈川県川崎市川崎区砂子1-1-14 JTB川崎共同ビル3階",
    "features": [
@@ -524,11 +524,11 @@
    "name": "リボーンマイセルフ 梅田店",
    "areaSlug": "osaka",
    "areaName": "大阪（梅田・心斎橋）",
-   "officialUrl": "https://reborn-myself.com/",
-   "price": "入会金22,000円＋コース料金",
-   "trial": "無料カウンセリング",
-   "access": "JR「大阪駅」徒歩5分",
-   "address": "JR「大阪駅」徒歩5分",
+   "officialUrl": "https://www.shapes-international.co.jp/store/umeda/",
+   "price": "ショートコース2ヶ月16回 184,800円（税込・入会金22,000円）",
+   "trial": "無料カウンセリング・無料体験トレーニング（0円）",
+   "access": "阪急「梅田駅」茶屋町口徒歩4分・JR「大阪駅」徒歩5分",
+   "address": "大阪府大阪市北区芝田1-10-8 山中ビル2階",
    "features": [
     "女性専用",
     "女性トレーナーのみ"
@@ -905,11 +905,10 @@
    "address": "神奈川県藤沢市鵠沼石上1丁目8-1 Tsビル2F",
    "features": [
     "女性専用",
+    "女性トレーナー在籍",
     "月額制",
     "マシンピラティス",
-    "駅徒歩4分",
-    "月2回18",
-    "900円〜"
+    "駅徒歩4分"
    ]
   },
   {
@@ -1043,16 +1042,16 @@
    "name": "UNDEUX SUPERBODY 川崎スタジオ",
    "areaSlug": "kawasaki",
    "areaName": "川崎",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/kawasaki/",
    "price": "スタンダードプラン月2回 20,500円〜（税込）",
-   "trial": "体験レッスン0円",
-   "access": "JR「川崎駅」徒歩3分",
-   "address": "神奈川県川崎市川崎区（川崎駅徒歩3分）",
+   "trial": "無料体験トレーニング",
+   "access": "JR「川崎駅」徒歩2分・「京急川崎駅」徒歩1分",
+   "address": "神奈川県川崎市川崎区駅前本町10-1 MEFULL川崎10F",
    "features": [
     "女性専用",
-    "川崎駅すぐ",
-    "初月宅配食30食無料（コミット）",
-    "パウダールーム完備",
+    "女性トレーナー在籍",
+    "京急川崎駅徒歩1分",
+    "宅配食30食付き（コミット）",
     "手ぶらOK"
    ]
   },
@@ -1225,16 +1224,16 @@
    "name": "UNDEUX SUPERBODY 梅田スタジオ",
    "areaSlug": "osaka",
    "areaName": "大阪（梅田・心斎橋）",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/umeda/",
    "price": "スタンダードプラン月2回 20,500円〜（税込）",
-   "trial": "体験レッスン0円",
-   "access": "JR「大阪駅」徒歩5分",
-   "address": "JR「大阪駅」徒歩5分",
+   "trial": "無料体験トレーニング",
+   "access": "阪急「大阪梅田駅」徒歩2分",
+   "address": "大阪府大阪市北区茶屋町4-4 茶屋町ガーデンビル2階",
    "features": [
     "女性専用",
-    "食事管理付き",
-    "初月宅配食30食無料（コミット）",
-    "梅田駅近"
+    "女性トレーナー在籍",
+    "宅配食30食付き（コミット）",
+    "大阪梅田駅徒歩2分"
    ]
   },
   {
@@ -1764,8 +1763,8 @@
    "officialUrl": "https://exercisecoach.co.jp/",
    "price": "月額制（プラン・店舗により異なる）",
    "trial": "無料体験あり",
-   "access": "「藤沢」駅周辺",
-   "address": "藤沢エリア（最寄り店舗は公式サイトでご確認ください）",
+   "access": "藤沢駅周辺に店舗なし（公式の店舗一覧・2026年11月16日確認。神奈川県内は横浜・川崎ダイス・溝の口）",
+   "address": "藤沢市内の店舗は公式の店舗一覧に記載なし",
    "features": [
     "1回約20分",
     "月額制",
@@ -1822,20 +1821,20 @@
    ]
   },
   {
-   "name": "エクササイズコーチ 川崎",
+   "name": "エクササイズコーチ 川崎ダイス店",
    "areaSlug": "kawasaki",
    "areaName": "川崎",
-   "officialUrl": "https://exercisecoach.co.jp/",
-   "price": "月額制（プラン・店舗により異なる）",
+   "officialUrl": "https://exercisecoach.co.jp/store/kawasaki/",
+   "price": "スタンダード月4回 17,600円〜（税込）",
    "trial": "無料体験あり",
-   "access": "「川崎」駅周辺",
-   "address": "川崎エリア（最寄り店舗は公式サイトでご確認ください）",
+   "access": "京急川崎駅 徒歩2分・JR川崎駅東口 徒歩3分",
+   "address": "神奈川県川崎市川崎区駅前本町8 川崎DICEビル5階",
    "features": [
     "1回約20分",
     "月額制",
     "AIマシン活用",
-    "女性利用者が多い",
-    "続けやすい"
+    "男女利用可",
+    "駅から地下直結"
    ]
   },
   {

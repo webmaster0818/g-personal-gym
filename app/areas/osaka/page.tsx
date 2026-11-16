@@ -14,38 +14,38 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/osaka/'),
   title: '大阪（梅田・心斎橋）の女性専用パーソナルジムおすすめ3選｜料金比較',
-  description: '大阪（梅田・心斎橋）のおすすめ女性専用・女性向けパーソナルジム3選を比較しています。料金・口コミ・特徴を掲載しています。',
+  description: '大阪（梅田・心斎橋）の女性専用パーソナルジムの料金を2026年11月16日に公式で確認。梅田はUNDEUX 月2回20,500円（大阪梅田駅徒歩2分）、リボーンマイセルフ 2ヶ月16回184,800円（トレーナー全員女性・税込）。住所・営業時間も掲載。',
   keywords: '女性専用パーソナルジム,大阪（梅田・心斎橋）,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
   {
     name: 'UNDEUX SUPERBODY 梅田スタジオ',
-    officialUrl: 'https://www.diet-undeux.jp/',
+    officialUrl: 'https://www.diet-undeux.jp/studio/umeda/',
     price: 'スタンダードプラン月2回 20,500円〜（税込）',
-    trial: '体験レッスン0円',
-    features: ['女性専用', '食事管理付き', '初月宅配食30食無料（コミット）', '梅田駅近'],
-    description: '梅田エリアの女性専用パーソナルジムです。食事管理を組み合わせたダイエットサポートを行っています（コミットプランは初月に宅配食30食無料）。',
-    access: 'JR「大阪駅」徒歩5分',
-    address: 'JR「大阪駅」徒歩5分',
+    trial: '無料体験トレーニング',
+    features: ['女性専用', '女性トレーナー在籍', '宅配食30食付き（コミット）', '大阪梅田駅徒歩2分'],
+    description: '梅田エリアの女性専用パーソナルジムです。食事管理を組み合わせたダイエットサポートを行っています（コミットプランは栄養士サポートと宅配食30食付き・送料別途）。',
+    access: '阪急「大阪梅田駅」徒歩2分',
+    address: '大阪府大阪市北区茶屋町4-4 茶屋町ガーデンビル2階',
     popularPlan: { name: 'コミットプラン', description: 'トレーニング月6回と栄養士による毎日の食事管理を組み合わせた月額制プランです（全店共通価格）。', price: '月額79,200円' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '8:00〜22:00', closed: '不定休', facilities: ['シャワー', 'ロッカー'] },
+    basicInfo: { hours: '8:00〜22:00（平日を中心に9:00開店の場合あり）', closed: '不定休', facilities: ['シャワールーム', 'パウダールーム'] },
   },
   {
     name: 'リボーンマイセルフ 梅田店',
-    officialUrl: 'https://reborn-myself.com/',
-    price: '入会金22,000円＋コース料金',
-    trial: '無料カウンセリング',
+    officialUrl: 'https://www.shapes-international.co.jp/store/umeda/',
+    price: 'ショートコース2ヶ月16回 184,800円（税込・入会金22,000円）',
+    trial: '無料カウンセリング・無料体験トレーニング（0円）',
     features: ['女性専用', '女性トレーナーのみ'],
     description: '女性トレーナーのみ在籍しています。梅田エリアの女性専用ジムです。',
-    access: 'JR「大阪駅」徒歩5分',
-    address: 'JR「大阪駅」徒歩5分',
-    popularPlan: { name: '人気プラン', description: '女性トレーナーのみ在籍しています。梅田エリアの女性専用ジムです。', price: '入会金22,000円＋コース料金' },
+    access: '阪急「梅田駅」茶屋町口徒歩4分・JR「大阪駅」徒歩5分',
+    address: '大阪府大阪市北区芝田1-10-8 山中ビル2階',
+    popularPlan: { name: 'ショートコース（2ヶ月16回）', description: '女性トレーナーのみ在籍しています。梅田エリアの女性専用ジムです。', price: '184,800円（税込）。入会金22,000円（店舗ページのキャンペーンで入会金無料＋全コース10％OFF）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '平日・祝日10:00〜22:00／土日10:00〜19:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '平日10:00〜22:00／土日祝10:00〜19:00', closed: '公式サイトでご確認ください', facilities: ['シャワールーム', '個室のパウダールーム', 'パーソナルピラティスルーム'] },
   },
   {
     name: 'BURNS 本町店',
@@ -64,13 +64,13 @@ const gyms = [
 
 const faqs = [
   { question: '大阪（梅田・心斎橋）で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY 梅田スタジオ、リボーンマイセルフ 梅田店が大阪（梅田・心斎橋）で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
-  { question: '大阪（梅田・心斎橋）のパーソナルジムの料金相場はいくらですか？', answer: '大阪（梅田・心斎橋）エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制なら月12,000円〜30,000円程度から通えます。' },
+  { question: '大阪（梅田・心斎橋）のパーソナルジムの料金相場はいくらですか？', answer: '当サイト掲載店の公式料金（2026年11月16日確認・税込）は、リボーンマイセルフ 梅田店のショートコース2ヶ月16回184,800円、UNDEUX SUPERBODY 梅田スタジオの月2回20,500円・月4回33,400円です。BURNS 本町店の料金は公式サイトを確認できていません。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
   { question: '体験レッスンは無料で受けられますか？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずはお気軽にお問い合わせください。' },
   { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は、1ヶ月目から感じ始める方が多い傾向にあります。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
   { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが大半を占めます。' },
-  { question: '大阪（梅田・心斎橋）駅から近いジムはどこですか？', answer: 'UNDEUX SUPERBODY 梅田スタジオ、リボーンマイセルフ 梅田店が駅から近いジムです。' },
+  { question: '大阪（梅田・心斎橋）駅から近いジムはどこですか？', answer: 'UNDEUX SUPERBODY 梅田スタジオは阪急 大阪梅田駅から徒歩2分、リボーンマイセルフ 梅田店は阪急 梅田駅 茶屋町口から徒歩4分・JR大阪駅から徒歩5分です（各公式・2026年11月16日確認）。' },
   { question: 'リバウンドを防ぐサポートはありますか？', answer: 'OUTLINEは卒業後の「生涯サポート」（無料・コース修了後もLINEで相談可）を公式に案内しています。多くのジムでは卒業後のフォロープログラムが含まれています。' },
   { question: '子連れで通えるジムはどこですか？', answer: 'OUTLINEは公式で「お子さま連れOK」とし、ベビーサークルなどを準備していると案内しています。事前に各ジムにお問い合わせください。' },
 ]
@@ -83,7 +83,7 @@ export default function OsakaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月16日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               大阪（梅田・心斎橋）の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -98,6 +98,7 @@ export default function OsakaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「大阪（梅田・心斎橋）で女性専用のパーソナルジムを探している」という方のために、大阪（梅田・心斎橋）エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">梅田で女性専用と公式に記載があるのは、UNDEUX SUPERBODY 梅田スタジオ（阪急 大阪梅田駅徒歩2分・女性トレーナー在籍・月2回20,500円〜）とリボーンマイセルフ 梅田店（JR大阪駅徒歩5分・トレーナーも全員女性・2ヶ月16回184,800円）です（各公式サイト・2026年11月16日確認・税込）。心斎橋駅周辺の女性向けジム（UNDEUX SUPERBODY 心斎橋スタジオ・BODY SALVATION）は<Link href="/areas/shinsaibashi/" className="text-accent underline">心斎橋のページ</Link>で比べられます。料金はすぐ下の早見表をご覧ください。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
@@ -126,13 +127,13 @@ export default function OsakaPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
-                <p className="text-3xl font-bold text-accent mb-2">15万〜22万円</p>
-                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は別途2〜5万円程度です。</p>
+                <p className="text-3xl font-bold text-accent mb-2">184,800円</p>
+                <p className="text-sm text-brand-muted">リボーンマイセルフ 梅田店のショートコース（2ヶ月16回・税込）です。入会金は22,000円（店舗ページのキャンペーンで無料）です（公式・2026年11月16日確認）。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
-                <p className="text-3xl font-bold text-accent mb-2">1.2万〜3万円/月</p>
-                <p className="text-sm text-brand-muted">月4〜8回のプランです。継続しやすい料金設定です。</p>
+                <p className="text-3xl font-bold text-accent mb-2">20,500円〜/月</p>
+                <p className="text-sm text-brand-muted">UNDEUX SUPERBODY 梅田スタジオの月2回20,500円・月4回33,400円・月8回66,800円（税込・公式・2026年11月16日確認）です。</p>
               </div>
             </div>
           </div>
