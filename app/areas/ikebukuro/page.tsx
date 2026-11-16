@@ -157,7 +157,7 @@ export default function IkebukuroPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">15万〜22万円</p>
-                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は別途2〜5万円程度です。</p>
+                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は掲載店の公式で0円〜50,000円（税抜）です。ビーコンセプト0円（太ももダイエットプログラム）〜38,500円、エクササイズコーチ19,800円、Lastyle 50,000円（税抜・キャンペーンで25,000円）。OUTLINE池袋店は店舗へ問い合わせ（2026年11月16日確認）。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
