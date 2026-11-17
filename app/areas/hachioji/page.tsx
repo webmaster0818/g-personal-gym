@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/hachioji/'),
   title: '八王子の女性向けパーソナルジムおすすめ3選｜料金比較',
-  description: '八王子の女性向けパーソナルジム3選を公式料金で比較。女性専用のM\'S FIELDは16回128,000円・入会金10,000円、BAILESは月8回（30分）35,200円、かたぎり塾は月4回33,000円。体験・アクセスも掲載しています（2026年11月確認）。',
+  description: '八王子の女性向けパーソナルジム3選の料金を2026年11月17日に公式で確認。女性限定・女性トレーナーのM\'S FIELDは16回128,000円・入会金10,000円、BAILESは月4回35,200円、かたぎり塾は月4回33,000円（税込）。',
   keywords: '女性専用パーソナルジム,八王子,東京,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -61,7 +61,7 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '八王子で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用と確認できたのは、M\'S FIELD（エムズフィールド）です（入会は16歳以上の女性・2026年11月確認）。' },
+  { question: '八王子で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用と確認できたのは、M\'S FIELD（エムズフィールド）です（入会は16歳以上の女性・女性トレーナーがマンツーマンで指導・2026年11月17日確認）。BAILES（ベール）は専属の女性トレーナーが担当しますが、男女問わず利用できます。' },
   { question: '八王子のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、M\'S FIELDは4回 35,000円・16回 128,000円（1回50分）、パーソナルジムBAILESは月4回（50分）35,200円・月8回（30分）35,200円（いずれも税区分の記載なし）、かたぎり塾 八王子店は月4回 33,000円（税込）です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '八王子駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、パーソナルジムBAILES（ベール）八王子店（八王子駅南口徒歩1分）があります。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'パーソナルジムBAILES（ベール）八王子店（通常5,500円→無料を実施中）とかたぎり塾 八王子店は無料の体験を実施しています。M\'S FIELDの初回体験は1回 5,000円・2回 9,000円です（公式サイト記載・2026年11月確認）。' },
@@ -77,7 +77,7 @@ export default function HachiojiPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年11月07日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月17日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               八王子の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -97,6 +97,7 @@ export default function HachiojiPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「八王子で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、八王子エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年11月時点）。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">八王子で女性限定（女性専用）かつ女性トレーナーが担当するのは、M'S FIELD（エムズフィールド・八王子駅南口徒歩5分・入会は16歳以上の女性）です。駅徒歩1分のBAILES（ベール）も専属の女性トレーナーが担当しますが、男女とも利用できます（各公式サイト・2026年11月17日確認）。料金はすぐ下の早見表で比べられます。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
