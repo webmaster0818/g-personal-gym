@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/himeji/'),
   title: '姫路の女性向けパーソナルジムおすすめ3選｜料金比較',
-  description: '姫路のおすすめ女性向けパーソナルジム3選を比較しています。Amazones・BEYOND・OKADAなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  description: '姫路の女性向けパーソナルジム3選の料金を2026年11月17日に公式で確認。女性専用・トレーナー全員女性のAmazonesはパーソナル月4回 月額22,000円、BEYOND（女性トレーナー1名）は10回102,300円（税込）。',
   keywords: '女性専用パーソナルジム,姫路,兵庫,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -60,7 +60,7 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '姫路で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Amazones（アマゾネス）姫路店です（2026年11月調査時点）。' },
+  { question: '姫路で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Amazones（アマゾネス）姫路店です。トレーナーも全員女性です（2026年11月17日確認）。' },
   { question: '姫路のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、Amazones（アマゾネス）姫路店はパーソナルプラン ライト月額22,000円／通い放題 月額44,000円です。BEYOND 姫路店は回数券10回 102,300円／ライフプランニング16回 290,400円です（税込）。月4回35,200円のマンスリーはコース終了後の継続プランです。OKADA Training Studioはパーフェクトトレーニング 30分5,000円／60分8,000円です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
   { question: '体験やカウンセリングは無料で受けられますか？', answer: 'Amazones（アマゾネス）姫路店、BEYOND 姫路店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年11月時点）。OKADA Training Studioのお試しトレーニングは30分3,000円です。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
@@ -74,7 +74,7 @@ export default function HimejiPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年11月06日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月17日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               姫路の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -94,6 +94,7 @@ export default function HimejiPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「姫路で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、姫路エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年11月時点）。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">姫路で女性専用かつトレーナーが全員女性なのは、Amazones（アマゾネス）姫路店（JR姫路駅北口から徒歩6分）です。BEYOND 姫路店は男女共用ですが、女性トレーナーが1名在籍しています（各公式サイト・2026年11月17日確認、BEYOND は公式FAQの2026年5月13日現在の人数）。料金はすぐ下の早見表で比べられます。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、姫路駅徒歩圏に「完全女性専用のマンツーマン型パーソナルジム」は公式に確認できませんでした。本ページでは女性専用24時間型（パーソナルプランあり）と、女性向けに強いジムを掲載しています。</p>
             </div>
