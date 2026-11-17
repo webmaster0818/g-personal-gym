@@ -611,3 +611,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク out/deploy 前後とも3（HTML 2）・表示テキスト差分は6ページのみ。本番 ?cb=: 3ページとも早見表・11/16 あり、旧値（15万〜22万・18万〜22万・初月・平日・祝日10:00・湘南で最も・JR川崎駅徒歩3分）0、robots 200。
 - 触っていない: 福岡（11/13・11/16 朝に個別変更あり）。osaka/fukuoka FAQ の OUTLINE 案内（判断待ち）、汎用 FAQ「2ヶ月で平均5〜8kg」（根拠未確認・他ページ共通）、リボーン川崎「10年以上の実績」（未照合）。
 - 競合（WebSearch US版・日本語結果）: 梅田＝ekitan・oceans・fitmap（Feliz 西梅田・EMANN・BEYOND 梅田など未掲載店）、藤沢＝aumo・fitmap・ekitan・oricon（OUTLINE 藤沢・リボーン藤沢は公式で閉鎖を確認、BEYOND・24/7・ASPI・RIZAP・EXE 藤沢は未掲載＝新規カードは判断待ち）。
+
+### 2026-11-17 15時（朝ルーチン再実行）：銀座・札幌の「入会金は別途2〜5万円程度」を公式値に＋BEYOND 3エリア早見表の入会金（source 184a11c / deploy 20acb9e1）
+- 入会金（11/17 公式生HTML・コメント/script除外）: EC /program/ 19,800円（銀座店ページに記載なし）・リボーン 東京店 22,000円・UNDEUX /price/・/faq/・銀座スタジオに記載なし・ビーコンセプト 札幌大通 太もも 無料／トライアル 38,500円→当日入会で無料・BEYOND /price/「全コースにて入会金無料」・NANA トップ/faq/flow に記載なし（/price.html 404）。🚨リボーン札幌 /store/sapporo/ は 404・公式 /store/ 一覧（24店）に札幌なし（カードは判断待ち A/B のまま触っていない）。
+- 銀座→「掲載店の公式で19,800円〜22,000円（内訳・UNDEUX 記載なし）」、札幌→「0円〜38,500円（BEYOND・ビーコンセプト内訳、リボーン札幌店とNANAは確認できていない）」。これでエリアの「入会金は別途2〜5万円程度」は0件。
+- data/areaQuickPrices.ts の BEYOND 札幌ANNEX・和歌山・富山 の joinFee「公式に記載なし」→「0円（公式の料金ページ「全コースにて入会金無料」・2026年11月17日確認）」。sitemap lastmod 4URL=11/17。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク deploy HTML 前後とも2・`__next*` 0・表示テキスト差分は4ページのみ。
+- TOP・/faq/ の入会金は 11/7 に公式値へ修正済み（sites.md の「未照合」は古い記載）。BEYOND 0円・リボーン 22,000円は 11/17 も一致。
