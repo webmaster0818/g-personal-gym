@@ -649,3 +649,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 内部リンク: /articles/ 一覧に5件、kyakuyase・diet・40dai-50dai・bridal-diet の related に追加。sitemap 134→139・lastmod 11/19（/articles/ も）。
 - skip: インナーマッスル 鍛え方・ヒップスラスト（官公庁・学会の一次情報に記載なし）、水ダイエット（減量の公的根拠なし）。
 - 検証: build EXIT0・precheck（out／deploy）全項目OK（139頁）・heading-lint 新規指摘0・本番5URL 200＋h1 一致・robots 200・trust-audit（--dry --site woman-gym.com）new 5・指摘0。
+
+### 2026-11-20 0:00 受け皿強化：/brands/b-concept/（ビーコンセプト 口コミ・評判）✅本番（source 8cda706 / deploy 7c990726）
+- 競合（11/20 curl）: body-make（大宮店2か月の体験談）・raji-nn（おすすめな人・3プラン表・「痩せない？」・旧25店一覧）・personalgym 横浜店（閉店表示のまま）・kozure-gym 恵比寿。minhyo は 403（未読）。差分表 = workspace growth/ukezara-serp/2026-11-20/b-concept.md
+- 公式（11/20 生HTML・コメント除外）: /clublist/ 19店（東京8・埼玉1・千葉1・大阪1・愛知3・北海道2・福岡3）。🚨蒲田店が一覧から外れ /clublist/kamata/ 404（REST club 23→22）。大宮店は一覧・店舗ページに「新規会員様募集停止中」。/course/ 3プラン（179,685円・入会金0・月々4,991円〜／221,760円・入会金22,000円・月々8,125円〜／月額44,000円・入会金38,500円→当日0円・月々1,833円〜）。トリプルキャンペーン画像（体験無料・10%OFF・2週間分無料、各店毎月先着15名）は期間「2025.12.1〜2026.10.31」のまま掲示。
+- 変更: BrandInfo に任意の summary／plans／campaignNote／flow／storeNotes を追加（BrandPage が持つブランドだけ表示＝他ブランドは表示変化なし）。b-concept: 要約5項目・公式料金表と注記・キャンペーン・入会の流れ・FAQ2問（痩せない？／店舗は？）・officialStores 20→19（11/20）・unlistedStores に蒲田（checked 11/20）・大宮 storeNotes・updated/titleMonth 11月。sitemap lastmod /brands/・/brands/b-concept/ = 11/20。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK・計測リンク deploy 全体 前後とも3（ページ内2）・表示テキスト差分は /brands/b-concept/・/brands/ のみ。本番 ?cb=: 新要素あり・robots 200。
+- 判断待ち: /areas/kamata/ のビーコンセプト蒲田店カード（公式一覧外・404）の掲載終了（生成スクリプト batch1 も対象）。
