@@ -656,3 +656,11 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 変更: BrandInfo に任意の summary／plans／campaignNote／flow／storeNotes を追加（BrandPage が持つブランドだけ表示＝他ブランドは表示変化なし）。b-concept: 要約5項目・公式料金表と注記・キャンペーン・入会の流れ・FAQ2問（痩せない？／店舗は？）・officialStores 20→19（11/20）・unlistedStores に蒲田（checked 11/20）・大宮 storeNotes・updated/titleMonth 11月。sitemap lastmod /brands/・/brands/b-concept/ = 11/20。
 - 検証: build EXIT0・precheck（out／deploy）全項目OK・計測リンク deploy 全体 前後とも3（ページ内2）・表示テキスト差分は /brands/b-concept/・/brands/ のみ。本番 ?cb=: 新要素あり・robots 200。
 - 判断待ち: /areas/kamata/ のビーコンセプト蒲田店カード（公式一覧外・404）の掲載終了（生成スクリプト batch1 も対象）。
+
+### 2026-11-20 深夜02時 kwexp（競合 body-make.jp）：記事5本を新設 ✅本番（source 1025835 / deploy 8cea8eb3・反映 約1分）
+- 新設: `/articles/kintore-yaseru/`（筋トレ 痩せる 月4,320）・`/articles/yusanso-musanso/`（有酸素運動 無酸素運動 2,320）・`/articles/diet-tabemono/`（ダイエット 食べ物 1,920）・`/articles/diet-calorie/`（ダイエット 摂取カロリー 1,520）・`/articles/diet-tsuzukanai/`（ダイエット 続かない 1,520）。ArticleShell 型・updated 2026年11月20日・末尾に出典節。
+- 出典（11/20 確認）: 厚労省ガイド2023 https://www.mhlw.go.jp/content/001194020.pdf（INFORMATION 5 有酸素性/無酸素性の定義・INFORMATION 8 体脂肪1kg≒7,000kcal と減量計画の式・たんぱく質0.1g/kg→筋量0.39kg・メッツ表・健康日本21 目標＝運動習慣者 女性20〜64歳16.9%・歩数・Q&A「最短持続時間なし」・プラス・テン・COM-B・職場事例2）／食事摂取基準2020年版 https://www.mhlw.go.jp/content/10904750/000586553.pdf（参考表2 推定エネルギー必要量・表6 PAL・目標BMI。pdftotext で読める。2025年版は CID 化けのため不使用、ページに2020年版と明記）／農水省 食事バランスガイド（about_b_guide.html・bg_kaitei.pdf 図2・check_chart.pdf）。
+- 一次の独自項目＝当サイト計算（page.tsx 内で式から計算）: 筋トレ4種目の30分消費（安静分除く）と体脂肪1kgまでの週数（スクワット週3で約22週）、有酸素/筋トレ9種目の30分消費と週4メッツ・時に要する時間、SV→グラム換算（主食 炭水化物160〜200g 等）、減らす量の表（1〜3kg×1/3/6か月）と目標BMIの体重範囲（150〜165cm）、歩行10分×365日＝約8,030kcal≒1.1kg。
+- 内部リンク: /articles/ 一覧に5件、kiso-taisha・jijuu-training・toushitsu-seigen・diet の related に追加。sitemap 139→144・lastmod 11/20（/articles/ と related 追加4頁も）。
+- skip: 内もも 痩せ・背中 筋トレ 女性・ふくらはぎ 細くする（官公庁・学会の一次情報に種目・方法の記載なし。内ももは部分やせで ninoude-diet と重複）。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK（144頁。初回 diet-calorie の description 168字で不合格→152字に短縮）・heading-lint 新規指摘0・計測リンク deploy HTML 前後とも2・本番5URL 200＋h1 一致・robots 200・trust-audit（--dry --site woman-gym.com）new 5・指摘0。
