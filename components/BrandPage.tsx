@@ -61,6 +61,17 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
             </p>
           )}
 
+          {brand.summary && (
+            <dl className="mt-6 rounded-2xl border border-accent/30 bg-white p-6 space-y-3">
+              {brand.summary.map((s) => (
+                <div key={s.label} className="md:flex md:gap-4">
+                  <dt className="shrink-0 text-xs font-bold text-accent md:w-24 md:pt-0.5">{s.label}</dt>
+                  <dd className="mt-1 md:mt-0 text-sm leading-relaxed text-ink-soft">{s.text}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
+
           <div className="mt-8 rounded-2xl border border-line bg-white p-6">
             <p className="text-xs font-medium tracking-[0.15em] text-ink-faint uppercase mb-4">概要</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -113,6 +124,49 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-serif text-xl md:text-2xl text-ink border-b border-line pb-3 mb-6">{brand.name}の料金</h2>
           <p className="text-sm leading-relaxed text-ink-soft mb-5">{brand.pricingNote}</p>
+          {brand.plans && (
+            <div className="mb-8">
+              <div className="overflow-x-auto rounded-xl border border-line bg-white">
+                <table className="w-full text-sm">
+                  <caption className="px-4 pt-3 text-left text-xs text-ink-faint">
+                    公式のコース・料金（<a href={brand.plans.source} target="_blank" rel="noopener noreferrer" className="underline">出典</a>・{brand.plans.checked}確認・税込）
+                  </caption>
+                  <thead>
+                    <tr className="border-b border-line text-left text-xs text-ink-faint">
+                      <th className="px-4 py-3">プラン</th>
+                      <th className="px-4 py-3">内容</th>
+                      <th className="px-4 py-3">入会金</th>
+                      <th className="px-4 py-3">料金</th>
+                      <th className="px-4 py-3">分割</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {brand.plans.rows.map((r) => (
+                      <tr key={r.name} className="border-b border-line/60 last:border-0 align-top">
+                        <td className="px-4 py-3 text-ink font-medium whitespace-nowrap">{r.name}</td>
+                        <td className="px-4 py-3 text-ink-soft min-w-[10rem]">{r.content}</td>
+                        <td className="px-4 py-3 text-ink-soft min-w-[8rem]">{r.fee}</td>
+                        <td className="px-4 py-3 text-ink whitespace-nowrap">{r.price}</td>
+                        <td className="px-4 py-3 text-ink-soft whitespace-nowrap">{r.installment}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <ul className="mt-3 space-y-1.5 text-[12px] leading-relaxed text-ink-faint list-disc pl-5">
+                {brand.plans.notes.map((n) => <li key={n}>{n}</li>)}
+              </ul>
+              {brand.campaignNote && (
+                <div className="mt-5 rounded-xl border border-line bg-white p-5">
+                  <p className="text-sm font-bold text-ink mb-2">キャンペーンの掲示内容</p>
+                  <p className="text-sm leading-relaxed text-ink-soft">{brand.campaignNote}</p>
+                </div>
+              )}
+              <p className="mt-4 text-sm text-ink-soft">
+                他の女性向けジムとの料金の比較は<Link href="/cost/" className="text-accent hover:underline">料金相場のページ</Link>に掲載しています。
+              </p>
+            </div>
+          )}
           {prices.length > 0 && (
             <div className="overflow-x-auto rounded-xl border border-line bg-white">
               <table className="w-full text-sm">
@@ -144,6 +198,14 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-serif text-xl md:text-2xl text-ink border-b border-line pb-3 mb-6">体験・カウンセリング</h2>
           <p className="text-sm leading-relaxed text-ink-soft">{brand.trialNote}</p>
+          {brand.flow && (
+            <>
+              <h3 className="mt-8 mb-3 text-base font-bold text-ink">入会までの流れ（公式の案内）</h3>
+              <ol className="space-y-2 text-sm leading-relaxed text-ink-soft list-decimal pl-5">
+                {brand.flow.map((f) => <li key={f}>{f}</li>)}
+              </ol>
+            </>
+          )}
         </div>
       </section>
 
@@ -168,6 +230,7 @@ export function BrandPage({ brand }: { brand: BrandInfo }) {
                     <td className="px-4 py-3 text-ink">
                       {s.name}
                       {unlisted[s.name] && <span className="block mt-1 text-[11px] text-ink-faint">※{unlisted[s.name]}（{brand.unlistedStores?.checked}確認）</span>}
+                      {brand.storeNotes?.[s.name] && <span className="block mt-1 text-[11px] text-ink-faint">※{brand.storeNotes[s.name]}</span>}
                     </td>
                     <td className="px-4 py-3">
                       <Link href={`/areas/${s.areaSlug}/`} className="text-accent hover:underline">{s.areaName}</Link>
