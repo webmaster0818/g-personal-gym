@@ -22,7 +22,7 @@ const REGIONS: { label: string; slugs: string[] }[] = [
   { label: '関西', slugs: ['osaka', 'umeda', 'namba', 'shinsaibashi', 'tennoji', 'kyobashi', 'esaka', 'sakai', 'toyonaka', 'takatsuki', 'hirakata', 'kyoto', 'sannomiya', 'himeji', 'nishinomiya', 'amagasaki', 'nara', 'wakayama'] },
   { label: '中部・北陸', slugs: ['nagoya', 'meieki', 'sakae', 'kanayama', 'gifu', 'hamamatsu', 'shizuoka', 'yokkaichi', 'toyama', 'kanazawa', 'fukui', 'niigata', 'nagano', 'matsumoto'] },
   { label: '中国・四国', slugs: ['hiroshima', 'okayama', 'takamatsu', 'matsuyama'] },
-  { label: '九州・沖縄', slugs: ['fukuoka', 'kokura', 'kurume', 'kumamoto', 'nagasaki', 'saga', 'oita', 'miyazaki', 'kagoshima', 'naha'] },
+  { label: '九州・沖縄', slugs: ['fukuoka', 'hakata', 'kokura', 'kurume', 'kumamoto', 'nagasaki', 'saga', 'oita', 'miyazaki', 'kagoshima', 'naha'] },
   { label: '北海道・東北', slugs: ['sapporo', 'asahikawa', 'sendai', 'koriyama'] },
 ]
 

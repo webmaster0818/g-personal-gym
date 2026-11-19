@@ -61,6 +61,7 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/60dai-diet/', label: '60代女性のダイエット（目標BMIと運動）' },
   { href: '/articles/diet-tabemono/', label: 'ダイエット中の食べ物の選び方' },
   { href: '/articles/kiso-taisha/', label: '基礎代謝を上げるには' },
   { href: '/articles/kintore-yaseru/', label: '筋トレで痩せる？体脂肪1kgまでの週数' },

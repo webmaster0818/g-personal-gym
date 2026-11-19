@@ -72,6 +72,7 @@ const allAreas = [
   { name: '堺', slug: 'sakai' },
   { name: '西宮北口', slug: 'nishinomiya' },
   { name: '姫路', slug: 'himeji' },
+  { name: '博多', slug: 'hakata' },
   { name: '小倉', slug: 'kokura' },
   { name: '鹿児島', slug: 'kagoshima' },
   { name: '大分', slug: 'oita' },

@@ -20,6 +20,7 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/personal-training/', label: 'パーソナルトレーニングとは' },
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査（体験無料60%の根拠）' },
   { href: '/articles/joseisenyo-vs-kyoyo/', label: '女性専用と男女共用どっち？' },
   { href: '/guide/', label: '女性専用パーソナルジムの選び方' },

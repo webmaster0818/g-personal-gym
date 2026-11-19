@@ -976,6 +976,23 @@
    ]
   },
   {
+   "name": "UNDEUX SUPERBODY 博多スタジオ",
+   "areaSlug": "hakata",
+   "areaName": "博多",
+   "officialUrl": "https://www.diet-undeux.jp/studio/hakata",
+   "price": "スタンダードプラン ALL会員 月2回18,900円／月4回32,000円／月8回64,000円（税込）",
+   "trial": "無料体験0円（公式の店舗ページに記載）",
+   "access": "「博多駅」徒歩6分（駐車サービスあり：Seiwa Park 博多駅前）",
+   "address": "福岡県福岡市博多区博多駅前3-30-1 タイセイ第1ビル B1",
+   "features": [
+    "女性専用",
+    "月額制",
+    "女性トレーナー在籍",
+    "マシンピラティス",
+    "手ぶらOK"
+   ]
+  },
+  {
    "name": "UNDEUX SUPERBODY 広島スタジオ",
    "areaSlug": "hiroshima",
    "areaName": "広島",
@@ -1207,15 +1224,16 @@
    "name": "UNDEUX SUPERBODY 青山・表参道スタジオ",
    "areaSlug": "omotesando",
    "areaName": "表参道",
-   "officialUrl": "https://www.diet-undeux.jp/",
+   "officialUrl": "https://www.diet-undeux.jp/studio/aoyama/",
    "price": "スタンダードプラン月2回 21,300円〜（税込）",
-   "trial": "体験レッスン0円",
+   "trial": "体験トレーニング0円",
    "access": "東京メトロ「表参道駅」徒歩1分",
-   "address": "東京都港区南青山（表参道駅徒歩1分）",
+   "address": "東京都港区南青山3丁目18-17 青山十八番館6F",
    "features": [
     "女性専用",
+    "女性トレーナー在籍",
     "駅徒歩1分",
-    "初月宅配食30食無料（コミット）",
+    "宅配食30食付き（コミット・送料別途）",
     "チーム担当制",
     "パウダールーム完備"
    ]
@@ -1505,6 +1523,23 @@
     "下半身特化",
     "完全個室",
     "医師監修"
+   ]
+  },
+  {
+   "name": "ビーコンセプト 博多店",
+   "areaSlug": "hakata",
+   "areaName": "博多",
+   "officialUrl": "https://b-concept.tokyo/clublist/hakata/",
+   "price": "太ももダイエットプログラム 89,842円×2ヶ月（18回・税込・入会金無料）",
+   "trial": "無料カウンセリング・体験トレーニングあり（公式の店舗ページに記載）",
+   "access": "福岡市地下鉄七隈線「博多駅」徒歩5分／JR鹿児島本線「博多駅」徒歩7分",
+   "address": "福岡市博多区博多駅前3-10-2 ウーブル博多701",
+   "features": [
+    "女性専用",
+    "完全個室",
+    "脚やせ・下半身特化",
+    "託児所費用補助",
+    "手ぶらOK"
    ]
   },
   {

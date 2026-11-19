@@ -17,6 +17,7 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/60dai-diet/', label: '60代女性のダイエット' },
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
   { href: '/articles/sango-diet/', label: '産後ダイエットの選び方' },
   { href: '/articles/20dai/', label: '20代の選び方' },
