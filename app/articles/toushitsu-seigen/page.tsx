@@ -40,6 +40,8 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/diet-tabemono/', label: 'ダイエット中の食べ物の選び方' },
+  { href: '/articles/diet-calorie/', label: 'ダイエット中の摂取カロリーの目安' },
   { href: '/articles/diet/', label: 'ダイエット目的のジムの選び方' },
   { href: '/articles/kiso-taisha/', label: '基礎代謝を上げる方法と数字の目安' },
   { href: '/articles/jijuu-training/', label: '自重トレーニングの頻度と消費エネルギー' },

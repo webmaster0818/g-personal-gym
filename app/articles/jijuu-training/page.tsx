@@ -41,6 +41,7 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/yusanso-musanso/', label: '有酸素運動と無酸素運動の違い' },
   { href: '/articles/kahanshin-kintore/', label: '下半身の筋トレ（スクワット・ロコトレ）' },
   { href: '/articles/kiso-taisha/', label: '基礎代謝を上げる方法と数字の目安' },
   { href: '/articles/ninoude-diet/', label: '二の腕ダイエットの考え方' },

@@ -50,6 +50,7 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/kintore-yaseru/', label: '筋トレで痩せる？体脂肪1kgまでの週数' },
   { href: '/articles/jijuu-training/', label: '自重トレーニングの頻度と消費エネルギー' },
   { href: '/articles/kahanshin-kintore/', label: '下半身の筋トレ（スクワット・ロコトレ）' },
   { href: '/articles/40dai-50dai/', label: '40代・50代女性のジムの選び方' },

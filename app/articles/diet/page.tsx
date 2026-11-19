@@ -39,6 +39,8 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/diet-calorie/', label: 'ダイエット中の摂取カロリーの目安' },
+  { href: '/articles/diet-tsuzukanai/', label: 'ダイエットが続かないときの考え方' },
   { href: '/articles/kouka-itsukara/', label: '効果はいつから出る？' },
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
   { href: '/articles/taiken-nagare/', label: '無料体験の流れ' },
