@@ -640,3 +640,12 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 再生成で戻らないこと: osaka・fukuoka は初期30エリア（手書きページ）で gen-areas-batch1〜4 の対象外。areaContextData の osaka/fukuoka、brandStores.json の outline（大阪・福岡の店なし）にも OUTLINE の大阪・福岡の記述なし。
 - 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク deploy HTML 前後とも2（全体3）・`__next*` 0・表示テキスト/JSON-LD の差分は2ページのみ。本番 ?cb=: 両ページ OUTLINE 8→0・「生涯サポート」4→0・「お子さま連れOK」4→0、新文あり、robots 200、sitemap lastmod 11/19。Indexing は tomomi-2 枠 55/55 使用済み（太平洋時間 11/18 分）→ 11/18 の3頁（musashikosugi・shizuoka・nerima）も送れず sitemap 再送（成功1）。
 - UNDEUX 町田・/brands/undeux/: 本番の「LIFE」0件（生HTML）。公式 /studio/machida/（11/19）と店名・住所・営業 8-22時・不定休・徒歩2分・月2回 20,500円・月4回 33,400／DAY 29,100円が一致＝変更なし（公式ページ内の「LIFE」1件は Google 口コミ欄の旧店名表示）。
+
+### 2026-11-19 20:00 kwexp（競合 body-make.jp・作成初日）：記事5本を新設 ✅本番（source a8518bf / deploy c4da57e7・反映 約1〜2分）
+- 新設: `/articles/jijuu-training/`（自重トレーニング 月39,600）・`/articles/kahanshin-kintore/`（下半身 筋トレ 39,600）・`/articles/ninoude-diet/`（二の腕 ダイエット 9,680）・`/articles/toushitsu-seigen/`（糖質制限ダイエット 9,680）・`/articles/kiso-taisha/`（基礎代謝 上げる 5,280）。ArticleShell 型・updated 2026年11月19日・末尾に出典節。
+- 出典（11/19 確認）: 厚労省「健康づくりのための身体活動・運動ガイド2023」https://www.mhlw.go.jp/content/001194020.pdf（p.15 推奨一覧・p.17-18 筋トレ・p.39-40 メッツ表）／e-ヘルスネット（現 kennet.mhlw.go.jp。旧 e-healthnet ドメインは名前解決不可）ys-058 レジスタンス運動・s-04-005 足腰・s-04-002 QOLの筋肉・e-07-002 加齢とエネルギー代謝（基礎代謝基準値・参照体重＝食事摂取基準2015、臓器別代謝量 骨格筋13/脂肪4.5 kcal/kg/日）・s-00-012（体脂肪1kg≒7,000kcal）・ye-018 炭水化物（食事摂取基準2025 目標量50〜65%）／私のアクティブプラン解説書（kcal＝メッツ・時×体重）／日本整形外科学会ロコトレ（スクワット5〜6回×3セット・片脚立ち1分×3・30分×週2回）／日本糖尿病学会 診療GL2024 3章 CQ3-3。
+- 一次の独自項目＝当サイト計算: 自重種目×女性参照体重の30分消費kcal表、腕立て伏せで7,000kcalに要する回数（安静分込み約69回／除くと約94回）、炭水化物50〜65%のグラム換算と130gの占める割合、筋肉+1kg＝+13kcal/日（7,000kcalまで約538日）・同体重53kgで年代差74kcal/日。数値はすべて page.tsx 内で式から計算（手入力しない）。
+- ⚠️ 食事摂取基準2025 の PDF（001316461 等）は pdftotext/pypdf とも文字化け（CID フォント）→ 2025 年版の数値は e-ヘルスネット経由のもの（炭水化物）だけを使用。参照体重は2015年版と明記。
+- 内部リンク: /articles/ 一覧に5件、kyakuyase・diet・40dai-50dai・bridal-diet の related に追加。sitemap 134→139・lastmod 11/19（/articles/ も）。
+- skip: インナーマッスル 鍛え方・ヒップスラスト（官公庁・学会の一次情報に記載なし）、水ダイエット（減量の公的根拠なし）。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK（139頁）・heading-lint 新規指摘0・本番5URL 200＋h1 一致・robots 200・trust-audit（--dry --site woman-gym.com）new 5・指摘0。
