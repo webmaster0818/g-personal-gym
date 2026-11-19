@@ -20,6 +20,7 @@ const related = [
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
   { href: '/articles/40dai-50dai/', label: '40代・50代の選び方' },
   { href: '/articles/shisei/', label: '姿勢改善・反り腰・猫背の選び方' },
+  { href: '/articles/kahanshin-kintore/', label: '下半身の筋トレ（スクワット・ロコトレ）' },
   { href: '/guide/', label: '女性専用パーソナルジムの選び方' },
   { href: '/ranking/', label: 'おすすめランキング' },
 ]

@@ -20,6 +20,8 @@ const related = [
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
   { href: '/articles/sango-diet/', label: '産後ダイエットの選び方' },
   { href: '/articles/20dai/', label: '20代の選び方' },
+  { href: '/articles/kiso-taisha/', label: '基礎代謝を上げるには' },
+  { href: '/articles/jijuu-training/', label: '自重トレーニングとは' },
   { href: '/guide/', label: '女性専用パーソナルジムの選び方' },
   { href: '/ranking/', label: 'おすすめランキング' },
 ]

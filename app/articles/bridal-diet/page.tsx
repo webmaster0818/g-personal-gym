@@ -19,6 +19,7 @@ const faqs = [
 const related = [
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
   { href: '/articles/sango-diet/', label: '産後ダイエットの選び方' },
+  { href: '/articles/ninoude-diet/', label: '二の腕ダイエットの考え方' },
   { href: '/cost/', label: '料金相場を見る' },
   { href: '/ranking/', label: 'おすすめランキング' },
 ]
