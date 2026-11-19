@@ -633,3 +633,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 公式（11/18 生HTML /gyms/<店>/・コメント/script除外）: 17店とも住所・営業時間・定休日・月4/月8プラン（33,000円／高津・静岡・栄 30,800円、月8 59,400円）が当サイトと一致。🚨食い違い3件＝武蔵小杉「体験当日入会で入会金11,000円」・静岡「22,000円」→公式は当日入会で 0円（通常55,000円）、練馬「ペアプラン月4回49,500円（1人あたり）」→公式は 2人合計49,500円（1人あたり24,750円）。生成スクリプト batch1/2 も同値に。sitemap lastmod 3エリア=11/18。
 - 点検 C3 /articles/iryo-renkei/「監修者」＝読者向けチェック項目「公式サイトに監修者の資格・体制が明記されているかを確認します」で当サイトの主張ではない（11/3 と同じ誤検知）。「監修 woman-gym編集部」は判断待ちのため未変更。
 - 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク deploy HTML 前後とも2・`__next*` 0。
+
+### 2026-11-19 朝：大阪・福岡 FAQ から OUTLINE の案内を外す（既定案A・11/18 宣言／11/13 質問）✅本番（source aa8554e / deploy b53abcaa・反映 約4分）
+- 公式（11/19 outline-gym.com/gym/ 生HTML・コメント/script除外）: 店舗10店（千葉・恵比寿・船橋・池袋・蒲田・北千住・練馬・新宿・宇都宮・横浜）に大阪・梅田・なんば・福岡・天神・博多なし。
+- 変更: osaka・fukuoka の FAQ「リバウンドを防ぐサポート」から OUTLINE の生涯サポートの一文を削除（残りは既存の一般文のまま）、「子連れで通えるジム」から OUTLINE のお子さま連れOKの一文を削除（osaka→「掲載店の子連れ可否は、事前に各ジムにお問い合わせください。」、fukuoka→ビーコンセプトの託児所費用補助の文は既存のまま）。両ページの残る OUTLINE 言及 0。sitemap lastmod 2URL=11/19。
+- 再生成で戻らないこと: osaka・fukuoka は初期30エリア（手書きページ）で gen-areas-batch1〜4 の対象外。areaContextData の osaka/fukuoka、brandStores.json の outline（大阪・福岡の店なし）にも OUTLINE の大阪・福岡の記述なし。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK（134頁）・計測リンク deploy HTML 前後とも2（全体3）・`__next*` 0・表示テキスト/JSON-LD の差分は2ページのみ。本番 ?cb=: 両ページ OUTLINE 8→0・「生涯サポート」4→0・「お子さま連れOK」4→0、新文あり、robots 200、sitemap lastmod 11/19。Indexing は tomomi-2 枠 55/55 使用済み（太平洋時間 11/18 分）→ 11/18 の3頁（musashikosugi・shizuoka・nerima）も送れず sitemap 再送（成功1）。
+- UNDEUX 町田・/brands/undeux/: 本番の「LIFE」0件（生HTML）。公式 /studio/machida/（11/19）と店名・住所・営業 8-22時・不定休・徒歩2分・月2回 20,500円・月4回 33,400／DAY 29,100円が一致＝変更なし（公式ページ内の「LIFE」1件は Google 口コミ欄の旧店名表示）。
