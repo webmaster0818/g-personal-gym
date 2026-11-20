@@ -47,6 +47,7 @@ const related = [
   { href: '/articles/bridal-diet/', label: 'ブライダルダイエットの期間別プラン' },
   { href: '/articles/jijuu-training/', label: '自重トレーニングの頻度と消費エネルギー' },
   { href: '/articles/kiso-taisha/', label: '基礎代謝を上げる方法と数字の目安' },
+  { href: '/articles/onaka-shibou/', label: 'お腹の脂肪を落とす方法（腹囲1cm＝約7,000kcal）' },
   { href: '/articles/diet/', label: 'ダイエット目的のジムの選び方' },
   { href: '/articles/bodymake/', label: 'ボディメイクに強いジムの選び方' },
 ]

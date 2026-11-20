@@ -5,6 +5,7 @@ const allAreas = [
   { name: '新宿', slug: 'shinjuku' },
   { name: '池袋', slug: 'ikebukuro' },
   { name: '銀座', slug: 'ginza' },
+  { name: '日本橋', slug: 'nihonbashi' },
   { name: '六本木', slug: 'roppongi' },
   { name: '恵比寿', slug: 'ebisu' },
   { name: '品川', slug: 'shinagawa' },

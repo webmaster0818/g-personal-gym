@@ -20,6 +20,8 @@ const related = [
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026' },
   { href: '/articles/joseisenyo-vs-kyoyo/', label: '女性専用と男女共用どっち？' },
   { href: '/cost/', label: '料金相場を見る' },
+  { href: '/articles/taiju-heranai/', label: '体重が減らない原因（減り方が鈍る仕組み）' },
+  { href: '/articles/1kagetsu-5kg/', label: '1ヶ月で5キロ痩せるには' },
   { href: '/ranking/', label: 'おすすめランキング' },
 ]
 
