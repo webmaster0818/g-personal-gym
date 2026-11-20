@@ -57,6 +57,7 @@ const faqs = [
 const related = [
   { href: '/articles/jijuu-training/', label: '自重トレーニングの頻度と消費エネルギー' },
   { href: '/articles/kiso-taisha/', label: '基礎代謝を上げるには（筋肉1kgの増加量）' },
+  { href: '/articles/kinniku-iji/', label: '減量中に筋肉を維持するには' },
   { href: '/articles/yusanso-musanso/', label: '有酸素運動と無酸素運動の違い' },
   { href: '/articles/diet-calorie/', label: 'ダイエット中の摂取カロリーの目安' },
   { href: '/articles/diet/', label: 'ダイエット目的のジムの選び方' },
