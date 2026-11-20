@@ -698,3 +698,12 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 内部リンク: /articles/ 一覧に4件、diet-calorie（1kagetsu・taiju）・kouka-itsukara（taiju・1kagetsu）・ninoude-diet（onaka）・ryokin-osaeru（tsudobarai）の related、nihonbashi→tsudobarai・ginza。sitemap 147→152・lastmod 11/20（related 追加4頁・/brands/reborn-myself/・b-concept も）。
 - skip（queue に理由記載）: 麻布十番（UNDEUX 1店のみ＝要判断）・美尻 作り方／背中 贅肉／体幹（一次情報なし）・足立区（kitasenju と重複）・世田谷区／埼玉／港区／中央区（区・県ハブ＝東京と同じく要判断）・筋トレ ランニング どっち（yusanso-musanso と重複）・痩せ体質（kiso-taisha と重複）。
 - 検証: build EXIT0・precheck（out／deploy）全項目OK（152頁）・heading-lint 新規指摘0・計測リンク（A8）deploy HTML 前後とも1（全体2）・本番5URL 200＋h1 一致・NaN/undefined 0・robots 200・trust-audit（--dry --site woman-gym.com）new 5・指摘0。
+
+### 2026-11-21 深夜02時 kwexp（競合 body-make.jp）：記事2本を新設 ✅本番（source 88c1315 / deploy c6b3fba3・反映 1分以内）
+- 新設: `/articles/fukusou/`（パーソナルトレーニング 服装 月56）・`/articles/kinniku-iji/`（筋肉 維持 減量 32）。ArticleShell 型・updated 2026年11月21日・末尾に出典節。
+- 出典（11/21 確認）: ガイド2023（INFORMATION 4「運動時の服装や靴は快適で安全に運動できる適切なもの」・筋力トレーニング 週2〜3日／大きな筋群／漸進性過負荷・INFORMATION 4 減量時は食事も含めた注意・筋力増強目的は摂取エネルギー増・INFORMATION 8 たんぱく質0.1g/kg→0.39kg・1.3g/kg超で効率低下）／生活習慣見直しノート（男性編）解説書 2025年9月一部改変 kennet.mhlw.go.jp/tools/pdf/guide-bmi-male.pdf（過度な食事制限による減量は筋肉量の減少も伴う・骨格筋は30代から毎年1〜2％減）／食事摂取基準2020 たんぱく質 女性18〜49歳 推奨量50g・目標量13〜20%／公式 FAQ 等: UNDEUX /faq/（体験の用意＝ウェア・シューズ・靴下・水・タオル、無料レンタルあり・サイズを申込時に）、ビーコンセプト /faq/（ウエア上下は初回持参品を預かり洗濯保管・ソックス/シューズ/タオル無料）・/course/、OUTLINE /service（ウェア・タオル各回無料・シューズは記載なし）、リボーン /faq・トップ（ウェア・シューズ・タオル無料・水のみ持参）、かたぎり塾 トップ・/first-time（持ち物不要）、EC /faq/（ウェア・ズボン・靴下・タオル無料・靴22.5〜30.0cm・ウェア男女共有S〜3L・持参可・シャワーなし）。
+- 一次の独自項目＝当サイト集計・計算: 6ブランドの貸出品の横並び（ウェア貸出5＋預かり1・シューズ明記5）、摂取カロリー1,400/1,600/1,800/2,050kcal別のたんぱく質目標量のグラム数（1,400kcal は下限46g＜推奨量50g）、53.1kg での 0.1g/kg・1.3g/kg 換算。
+- 内部リンク: /articles/ 一覧に2件、taiken-nagare（fukusou）・kintore-yaseru／kiso-taisha（kinniku-iji）の related。sitemap 152→154・lastmod 11/21（/articles/・related 追加3頁）。
+- skip（queue に理由記載）: 神奈川・千代田区（県・区ハブ＝判断待ち）、エクスリム・エススリー・ナイアジム（公式サイトを確認できず）、リタスタイル・Dr.トレーニング・メルメイク・アレスコ（男女共用）、BOSTY・ASPI・eviGym（公式に女性専用・女性向けの記載なし）、ラスタイル（池袋頁と重複・女性専用の記載なし）、ダイエット 胸 維持（一次情報なし）。🚨queue の空欄は0になった＝次回は手順1（次の競合3案）。
+- 気づき（未変更・判断対象）: RITA-STYLE は公式に男性の事例があり女性専用の記載なし。長崎・小倉・岡山・鹿児島・熊本のエリア頁（女性専用パーソナルジムの頁）に掲載中。
+- 検証: build EXIT0（prebuild pages=103）・precheck（out／deploy）全項目OK（154頁）・heading-lint 新規指摘0（既存「まとめ」のみ）・計測リンク（A8）deploy HTML 前後とも1（全体2）・本番2URL 200＋h1 一致・NaN/undefined 0・robots 200・sitemap に2URL・trust-audit（--dry --site woman-gym.com）通知0。
