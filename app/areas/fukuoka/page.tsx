@@ -14,7 +14,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/fukuoka/'),
   title: '福岡の女性専用パーソナルジムおすすめ3選｜料金比較',
-  description: '福岡のおすすめ女性専用・女性向けパーソナルジム3選を比較しています。料金・口コミ・特徴を掲載しています。',
+  description: '福岡の女性専用パーソナルジム3選の料金を2026年11月20日に公式で確認。UNDEUX天神は月2回18,900円、ビーコンセプト天神大名は2ヶ月総額179,685円（税込）、with U（高宮）はスタッフ全員女性。',
   keywords: '女性専用パーソナルジム,福岡,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -37,7 +37,7 @@ const gyms = [
     name: 'UNDEUX SUPERBODY 福岡・天神スタジオ',
     officialUrl: 'https://www.diet-undeux.jp/studio/tenjin',
     price: 'スタンダードプラン月2回 18,900円〜（税込）',
-    trial: '体験レッスンあり',
+    trial: '体験トレーニング（約60分）0円',
     features: ['女性専用', '月額制', '食事管理付き'],
     description: '月額制の女性専用パーソナルジムです。福岡エリアで展開しています。',
     access: '地下鉄「天神駅」徒歩5分',
@@ -49,12 +49,13 @@ const gyms = [
   },
   {
     name: 'with U（ウィズユー）',
-    price: '要問合せ',
+    officialUrl: 'https://withu-bodymake.com/',
+    price: '月10回＋年間契約で1回あたり2,980円（税区分の記載なし）',
     trial: '体験レッスンあり',
     features: ['女性専門', '女性スタッフのみ', '子連れOK'],
     description: '福岡の女性専門パーソナルジムです。スタッフ全員女性で産前・産後にも対応しています。',
-    access: '福岡市内',
-    address: '福岡市内',
+    access: '高宮駅 徒歩4分（無料駐車場2台）',
+    address: '福岡県福岡市南区大楠3丁目7-18',
     popularPlan: { name: '人気プラン', description: '福岡の女性専門パーソナルジムです。スタッフ全員女性で産前・産後にも対応しています。', price: '要問合せ' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
@@ -64,13 +65,13 @@ const gyms = [
 
 const faqs = [
   { question: '福岡で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'ビーコンセプト 福岡天神大名店、UNDEUX SUPERBODY 福岡・天神スタジオが福岡で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
-  { question: '福岡のパーソナルジムの料金相場はいくらですか？', answer: '福岡エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制なら月12,000円〜30,000円程度から通えます。' },
+  { question: '福岡のパーソナルジムの料金相場はいくらですか？', answer: '掲載店の公式料金（税込・2026年11月20日確認）では、2ヶ月の短期コースがビーコンセプト 福岡天神大名店の総額179,685円（入会金無料）、月額制が UNDEUX SUPERBODY 福岡・天神スタジオの月2回18,900円・月4回32,000円・月8回64,000円です。with U は月10回＋年間契約で1回あたり2,980円（税区分の記載なし）です。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
   { question: '体験レッスンは無料で受けられますか？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずはお気軽にお問い合わせください。' },
   { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は、1ヶ月目から感じ始める方が多い傾向にあります。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
   { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが大半を占めます。' },
-  { question: '福岡駅から近いジムはどこですか？', answer: 'ビーコンセプト 福岡天神大名店、UNDEUX SUPERBODY 福岡・天神スタジオが駅から近いジムです。' },
+  { question: '駅から近いジムはどこですか？', answer: '各公式サイトの表記では、UNDEUX SUPERBODY 福岡・天神スタジオが天神駅から徒歩5分、ビーコンセプト 福岡天神大名店が地下鉄空港線 赤坂駅から徒歩5分、with U が高宮駅から徒歩4分です（2026年11月20日確認）。' },
   { question: 'リバウンドを防ぐサポートはありますか？', answer: '多くのジムでは卒業後のフォロープログラムが含まれています。' },
   { question: '子連れで通えるジムはどこですか？', answer: 'ビーコンセプトは託児所費用補助があります。事前に各ジムにお問い合わせください。' },
 ]
@@ -83,7 +84,7 @@ export default function FukuokaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月20日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               福岡の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -98,6 +99,7 @@ export default function FukuokaPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「福岡で女性専用のパーソナルジムを探している」という方のために、福岡エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">掲載3店はどれも女性専用です。トレーナーを含むスタッフ全員が女性なのは with U（南区大楠・高宮駅徒歩4分）、女性トレーナー在籍と公式に記載があるのは UNDEUX SUPERBODY 福岡・天神スタジオです。料金は、月額制なら UNDEUX の月2回18,900円（天神駅徒歩5分）、2ヶ月の短期コースならビーコンセプト 福岡天神大名店の総額179,685円（入会金無料）です（税込・各公式サイト・2026年11月20日確認）。すぐ下の早見表で比べられます。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
@@ -126,13 +128,13 @@ export default function FukuokaPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
-                <p className="text-3xl font-bold text-accent mb-2">15万〜22万円</p>
-                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は公式でビーコンセプトが0円（太ももダイエットプログラム）〜38,500円（トライアルプラン・カウンセリング当日入会で0円）、UNDEUX SUPERBODYは料金ページ・FAQに記載がありません（2026年11月16日確認）。</p>
+                <p className="text-3xl font-bold text-accent mb-2">179,685円</p>
+                <p className="text-sm text-brand-muted">掲載店で2ヶ月の短期コースがあるのはビーコンセプト（太ももダイエットプログラム・総額179,685円・税込・2026年11月20日確認）です。入会金は公式でビーコンセプトが0円（太ももダイエットプログラム）〜38,500円（トライアルプラン・カウンセリング当日入会で0円）、UNDEUX SUPERBODYは料金ページ・FAQに記載がありません（2026年11月16日確認）。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
-                <p className="text-3xl font-bold text-accent mb-2">1.2万〜3万円/月</p>
-                <p className="text-sm text-brand-muted">月4〜8回のプランです。継続しやすい料金設定です。</p>
+                <p className="text-3xl font-bold text-accent mb-2">18,900円〜/月</p>
+                <p className="text-sm text-brand-muted">UNDEUX SUPERBODY 福岡・天神スタジオのスタンダードプランは月2回18,900円・月4回32,000円・月8回64,000円です（平日9〜18時のDAY会員は月4回27,500円・税込・2026年11月20日確認）。</p>
               </div>
             </div>
           </div>

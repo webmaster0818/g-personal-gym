@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/ebisu/'),
-  title: '恵比寿の女性専用パーソナルジムおすすめ3選｜料金比較',
-  description: '恵比寿のおすすめ女性専用パーソナルジム3選を比較しています。UNDEUX SUPERBODY・OUTLINE・ビーコンセプトの料金・口コミ・特徴を掲載しています。',
+  title: '恵比寿の女性専用パーソナルジム3選｜UNDEUX・OUTLINE・ビーコンセプトの料金比較',
+  description: '恵比寿の女性専用パーソナルジム3選の料金を2026年11月20日に公式で確認。UNDEUXは月2回21,300円・西口徒歩2分、ビーコンセプトは2ヶ月総額179,685円・東口徒歩2分、OUTLINEは16回184,800円（税込）。',
   keywords: '女性専用パーソナルジム,恵比寿,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -65,10 +65,10 @@ const gyms = [
 
 const faqs = [
   { question: '恵比寿で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、OUTLINE、ビーコンセプトが恵比寿で人気の女性専用パーソナルジムです。食事管理重視ならUNDEUX、コスパと生涯サポートならOUTLINE、下半身痩せならビーコンセプトがおすすめです。' },
-  { question: '恵比寿のパーソナルジムの料金相場はいくらですか？', answer: '恵比寿エリアの女性向けパーソナルジムの2ヶ月コース料金は約18万〜22万円です。ビーコンセプトが179,685円〜と比較的リーズナブルです。OUTLINEは生涯サポート付きで184,800円〜です。' },
+  { question: '恵比寿のパーソナルジムの料金相場はいくらですか？', answer: '掲載3店の公式料金（税込・2026年11月20日確認）では、2ヶ月の短期コースがビーコンセプトの総額179,685円（入会金無料）、OUTLINE の16回184,800円（フルサポート・入会金0円。終了後は月2回以上のクラブメンバー）です。月額制の UNDEUX SUPERBODY は月2回21,300円・月4回34,800円・月8回69,600円です。' },
   { question: '恵比寿駅から最も近いパーソナルジムはどこですか？', answer: '各公式サイトの表記では、ビーコンセプト恵比寿店（JR恵比寿駅東口）とUNDEUX SUPERBODY 恵比寿スタジオ（恵比寿駅西口）がともに徒歩2分です（2026年11月9日確認）。' },
   { question: '子連れで通えるジムはありますか？', answer: 'OUTLINE恵比寿店はベビーサークルを完備しており、お子様連れでも利用できます。ビーコンセプトは託児所費用を最大1,000円/回補助してくれます。' },
-  { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。OUTLINE、ビーコンセプトは無料カウンセリングを実施しています。' },
+  { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験トレーニング（約60分）0円です。OUTLINE恵比寿店は無料カウンセリング（店舗ページでは「カウンセリング・体験料金3,300円分が無料」）、ビーコンセプトは無料カウンセリング・体験トレーニングを案内しています（2026年11月20日確認）。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても一人ひとりのレベルに合わせたメニューを組んでもらえます。' },
   { question: '恵比寿で最も安いパーソナルジムはどこですか？', answer: 'ビーコンセプト（2ヶ月18回 179,685円〜）が最安クラスです。OUTLINE（16回 184,800円〜）もコスパ良好です。分割払いなら月々4,991円〜で始められます。' },
   { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。' },
@@ -84,7 +84,7 @@ export default function EbisuPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年04月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月20日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               恵比寿の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -104,6 +104,7 @@ export default function EbisuPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「恵比寿で女性専用のパーソナルジムを探している」「おしゃれな街で通いやすいジムが知りたい」という方のために、恵比寿エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">掲載3店はどれも女性専用で、女性トレーナー在籍と公式に記載があるのは UNDEUX SUPERBODY 恵比寿スタジオです。月額制なら UNDEUX の月2回21,300円（恵比寿駅西口徒歩2分）、2ヶ月の短期コースならビーコンセプトの総額179,685円（東口徒歩2分・入会金無料）や OUTLINE の16回184,800円（徒歩8分・入会金0円）です（税込・各公式サイト・2026年11月20日確認）。料金・入会金・最寄り出口はすぐ下の早見表で比べられます。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
@@ -156,13 +157,13 @@ export default function EbisuPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
-                <p className="text-3xl font-bold text-accent mb-2">18万〜22万円</p>
-                <p className="text-sm text-brand-muted">ビーコンセプト179,685円〜が最安です。UNDEUXは月額制で、スタンダードプラン月2回 21,300円〜（税込）です。</p>
+                <p className="text-3xl font-bold text-accent mb-2">179,685円〜184,800円</p>
+                <p className="text-sm text-brand-muted">掲載店の公式料金（税込・2026年11月20日確認）です。ビーコンセプトは2ヶ月総額179,685円、OUTLINEは16回184,800円（フルサポート）です。UNDEUXは月額制で、スタンダードプラン月2回 21,300円〜です。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">入会金</h3>
-                <p className="text-3xl font-bold text-accent mb-2">0〜5万円</p>
-                <p className="text-sm text-brand-muted">キャンペーンで入会金無料のジムもあります。体験時にご確認ください。</p>
+                <p className="text-3xl font-bold text-accent mb-2">0円〜38,500円</p>
+                <p className="text-sm text-brand-muted">OUTLINEは0円、ビーコンセプトは太ももダイエットプログラムが無料・トライアルプランが38,500円（カウンセリング当日入会で無料）です。UNDEUXは店舗ページに入会金の記載がありません（各公式・2026年11月20日確認）。</p>
               </div>
             </div>
           </div>
