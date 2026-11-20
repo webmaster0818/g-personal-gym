@@ -38,14 +38,14 @@ const gyms = [
     officialUrl: 'https://www.shapes-international.co.jp/store/jiyugaoka/',
     price: '入会金22,000円＋コース料金',
     trial: '無料カウンセリング',
-    features: ['女性専用', '女性トレーナーのみ', 'キッズスペース', '産後ダイエット', '自由が丘駅近'],
-    description: '女性専用のダイエットジムです。トレーナーも全員女性で、キッズスペース（託児所）併設しています。産後ママも安心して通える環境です。自由が丘駅から徒歩4分です。',
+    features: ['女性専用', '女性トレーナーのみ', '託児所と提携', '産後ダイエット', '自由が丘駅近'],
+    description: '女性専用のダイエットジムです。トレーナーも全員女性で、公式の店舗ページに「託児所と提携」と記載があります（2026年11月20日確認）。産後ママも安心して通える環境です。自由が丘駅から徒歩4分です。',
     access: '東急「自由が丘駅」南口 徒歩4分',
     address: '東京都世田谷区奥沢6-33-14 第一大塚ビル1階',
     popularPlan: { name: 'ダイエットコース', description: '女性トレーナーによるマンツーマン指導します。産後ダイエットコースも用意しています。', price: '入会金22,000円＋コース料金' },
-    options: ['ウェアレンタル無料', 'キッズスペース完備', '産後ダイエットコース', 'ブライダルダイエットコース'],
+    options: ['ウェアレンタル無料', '託児所と提携（公式店舗ページ）', '産後ダイエットコース', 'ブライダルダイエットコース'],
     userProfile: { ageRange: '20代〜50代', genderRatio: '女性100%', purpose: ['ダイエット', '産後ダイエット', 'ブライダル', '部分痩せ'] },
-    basicInfo: { hours: '平日10:00〜22:00／土日祝9:00〜20:00', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'キッズスペース', 'ウェアレンタル'] },
+    basicInfo: { hours: '平日10:00〜22:00／土日祝9:00〜20:00', closed: '公式サイトでご確認ください', facilities: ['ロッカー', 'シャワールーム・個室のパウダールーム', 'ウェアレンタル'] },
   },
   {
     name: 'パーソナルジムNICO 自由が丘',
@@ -77,10 +77,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '自由が丘で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、リボーンマイセルフが自由が丘で人気の女性専用パーソナルジムです。駅近ならUNDEUX（徒歩1分）、産後ママならリボーンマイセルフ（キッズスペース完備）がおすすめです。' },
+  { question: '自由が丘で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'UNDEUX SUPERBODY、リボーンマイセルフが自由が丘で人気の女性専用パーソナルジムです。駅近ならUNDEUX（徒歩1分）、産後ママならリボーンマイセルフ（託児所と提携・公式店舗ページ）がおすすめです。' },
   { question: '自由が丘のパーソナルジムの料金相場はいくらですか？', answer: '自由が丘の女性向けパーソナルジムの2ヶ月コースは約18万〜22万円です。月額制ならNICOの月4回35,200円〜も人気です。' },
   { question: '自由が丘駅から最も近いジムはどこですか？', answer: 'UNDEUX SUPERBODY自由が丘スタジオが徒歩1分で最も駅近です。NICO自由が丘は徒歩3分、リボーンマイセルフは徒歩4分です。' },
-  { question: '子連れで通えるジムはどこですか？', answer: 'リボーンマイセルフ自由が丘店はキッズスペース併設しています。NICOもお子様連れで利用できます。自由が丘は子連れ対応のジムが充実しています。' },
+  { question: '子連れで通えるジムはどこですか？', answer: 'リボーンマイセルフ自由が丘店は託児所と提携していると公式の店舗ページに記載があります（2026年11月20日確認・店内のキッズスペースの記載はありません）。NICOもお子様連れで利用できます。自由が丘は子連れ対応のジムが充実しています。' },
   { question: '体験レッスンは無料で受けられますか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。リボーンマイセルフ、エクササイズコーチは無料カウンセリングを実施しています。NICOも体験レッスンがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。マンツーマン指導なので、運動経験がなくても安心です。自由が丘にはアットホームな雰囲気のジムが多く、初めての方も通いやすい環境です。' },
   { question: '自由が丘はどんな雰囲気のエリアですか？', answer: '自由が丘はおしゃれなカフェやスイーツ店が並ぶ落ち着いた街です。30〜40代の女性に人気のエリアで、トレーニング前後にカフェでリフレッシュするのもおすすめです。' },
@@ -153,7 +153,7 @@ export default function JiyugaokaPage() {
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">子連れ対応</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（キッズスペース）</li><li className="text-brand-muted">・NICO（お子様連れOK）</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・リボーンマイセルフ（託児所と提携）</li><li className="text-brand-muted">・NICO（お子様連れOK）</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">食事サポート重視</h3>

@@ -289,11 +289,11 @@ export const BRANDS: BrandInfo[] = [
     ],
     officialUrl: 'https://www.shapes-international.co.jp/',
     officialStores: {
-      count: 27,
+      count: 24,
       kind: '一覧実数',
       caveat: '公式サイトには「全国30店舗以上」との記載もありますが、検証可能な店舗一覧ページの掲載数を採用しています。',
       sourceUrl: 'https://www.shapes-international.co.jp/store/',
-      asOf: '2026年8月',
+      asOf: '2026年11月20日',
     },
   },
   {
