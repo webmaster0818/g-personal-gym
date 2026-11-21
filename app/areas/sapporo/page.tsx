@@ -13,26 +13,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/sapporo/'),
-  title: '札幌の女性専用パーソナルジムおすすめ4選｜料金比較',
-  description: '札幌の女性向けパーソナルジム4選を公式料金で比較。女性専用のビーコンセプト札幌大通は2ヶ月総額179,685円（トライアル4回44,000円）、BEYOND札幌ANNEXは回数券10回102,300円、NANAは分割月々6,700円〜。入会金・体験・アクセスも掲載（2026年11月確認）。',
+  title: '札幌の女性専用パーソナルジムおすすめ3選｜料金比較',
+  description: '札幌の女性向けパーソナルジム3選を公式料金で比較。女性専用のビーコンセプト札幌大通は2ヶ月総額179,685円（トライアル4回44,000円）、BEYOND札幌ANNEXは回数券10回102,300円、NANAは分割月々6,700円〜。入会金・体験・アクセスも掲載（2026年11月確認）。',
   keywords: '女性専用パーソナルジム,札幌,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
 const gyms = [
-  {
-    name: 'リボーンマイセルフ 札幌店',
-    officialUrl: 'https://www.shapes-international.co.jp/store/sapporo/',
-    price: '入会金22,000円＋コース料金',
-    trial: '無料カウンセリング',
-    features: ['女性専用', '女性トレーナーのみ', '大通駅徒歩1分'],
-    description: '大通駅36番出口から徒歩1分の好立地です。女性トレーナーのみ在籍の女性専用ジムです。',
-    access: '地下鉄「大通駅」36番出口 徒歩1分',
-    address: '北海道札幌市中央区南1条西2-1-1 らんたんビルB2階',
-    popularPlan: { name: '人気プラン', description: '大通駅36番出口から徒歩1分の好立地です。女性トレーナーのみ在籍の女性専用ジムです。', price: '入会金22,000円＋コース料金' },
-    options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
-    userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '平日11:00〜22:00／土日祝10:00〜19:00', closed: '公式サイトでご確認ください', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
-  },
   {
     name: 'ビーコンセプト 札幌大通店',
     officialUrl: 'https://b-concept.tokyo/clublist/sapporo-odori/',
@@ -78,14 +64,14 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '札幌で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'リボーンマイセルフ 札幌店、ビーコンセプト 札幌大通店、BEYOND 札幌ANNEX店が札幌で人気の女性向けパーソナルジムです。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。' },
+  { question: '札幌で女性専用のパーソナルジムはどこがおすすめですか？', answer: '本ページでは、女性専用のビーコンセプト 札幌大通店と骨格調整パーソナルジムNANA 札幌店、会員の6〜7割が女性と公式に明記するBEYOND 札幌ANNEX店（男女共用）の3店を掲載しています。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。なお、リボーンマイセルフ 札幌店は公式の店舗一覧（2026年11月21日確認・24店）に無いため掲載していません。' },
   { question: '札幌のパーソナルジムの料金相場はいくらですか？', answer: '札幌エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制なら月12,000円〜30,000円程度から通えます。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
   { question: '体験レッスンは無料で受けられますか？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずはお気軽にお問い合わせください。' },
   { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は、1ヶ月目から感じ始める方が多い傾向にあります。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
   { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが大半を占めます。' },
-  { question: '札幌駅から近いジムはどこですか？', answer: '本ページの掲載ジムでは、リボーンマイセルフ 札幌店（大通駅36番出口 徒歩1分）とビーコンセプト 札幌大通店（大通駅 徒歩5分）が大通駅から近いジムです。BEYOND 札幌ANNEX店は西11丁目駅から徒歩5分です。' },
+  { question: '札幌駅から近いジムはどこですか？', answer: '本ページの掲載ジムでは、ビーコンセプト 札幌大通店（大通駅 徒歩5分）が大通駅から近いジムです。BEYOND 札幌ANNEX店は西11丁目駅から徒歩5分です。' },
   { question: 'リバウンドを防ぐサポートはありますか？', answer: 'ビーコンセプト 札幌大通店は、卒業後に毎月1回のセッションを半年間（計6回）続けるアフターフォロープランを用意しています。BEYOND 札幌ANNEX店は、回数券・ライフプランニング終了後に月額制のマンスリープランで継続できます。その他のジムは公式サイトでご確認ください。' },
   { question: '子連れで通えるジムはどこですか？', answer: 'ビーコンセプト 札幌大通店は完全個室のため、お子様連れで通えます（ベビーカーごと入店可）。託児所は併設されていませんが、近くの託児施設を利用した場合は1回1,000円を上限に託児所費用を補助しています。その他のジムは事前に各ジムにお問い合わせください。' },
 ]
@@ -98,7 +84,7 @@ export default function SapporoPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年11月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月21日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               札幌の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -142,7 +128,7 @@ export default function SapporoPage() {
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
                 <p className="text-3xl font-bold text-accent mb-2">15万〜22万円</p>
-                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は掲載店の公式で0円〜38,500円です。BEYOND 0円（全コース）、ビーコンセプト0円（太ももダイエットプログラム）〜38,500円（トライアルプラン・カウンセリング当日入会で0円）。リボーンマイセルフ札幌店とNANAは公式で入会金を確認できていません（2026年11月17日確認）。</p>
+                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は掲載店の公式で0円〜38,500円です。BEYOND 0円（全コース）、ビーコンセプト0円（太ももダイエットプログラム）〜38,500円（トライアルプラン・カウンセリング当日入会で0円）。NANAは公式で入会金を確認できていません（2026年11月17日確認）。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
