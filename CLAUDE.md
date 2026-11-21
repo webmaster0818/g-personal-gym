@@ -707,3 +707,10 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - skip（queue に理由記載）: 神奈川・千代田区（県・区ハブ＝判断待ち）、エクスリム・エススリー・ナイアジム（公式サイトを確認できず）、リタスタイル・Dr.トレーニング・メルメイク・アレスコ（男女共用）、BOSTY・ASPI・eviGym（公式に女性専用・女性向けの記載なし）、ラスタイル（池袋頁と重複・女性専用の記載なし）、ダイエット 胸 維持（一次情報なし）。🚨queue の空欄は0になった＝次回は手順1（次の競合3案）。
 - 気づき（未変更・判断対象）: RITA-STYLE は公式に男性の事例があり女性専用の記載なし。長崎・小倉・岡山・鹿児島・熊本のエリア頁（女性専用パーソナルジムの頁）に掲載中。
 - 検証: build EXIT0（prebuild pages=103）・precheck（out／deploy）全項目OK（154頁）・heading-lint 新規指摘0（既存「まとめ」のみ）・計測リンク（A8）deploy HTML 前後とも1（全体2）・本番2URL 200＋h1 一致・NaN/undefined 0・robots 200・sitemap に2URL・trust-audit（--dry --site woman-gym.com）通知0。
+
+### 2026-11-21 朝：リボーンマイセルフ 札幌店を外す（既定案A・11/20 宣言／回答なし）✅本番（source 532dc14 / deploy 9bea7381・7f3d4c91・反映 約16分）
+- 11/21 公式再確認: www.shapes-international.co.jp/store/sapporo/ 404、/store/ 一覧と REST /wp-json/wp/v2/store とも24店で札幌なし → 実行。
+- /areas/sapporo/: カード削除（4→3選・title/description も3選）、FAQ「おすすめ」「大通駅から近い」からリボーン札幌を削除（おすすめの答えは掲載3店の公式事実＋「札幌店は公式一覧に無いため掲載していません」）、入会金注記から「リボーンマイセルフ札幌店と」を削除、更新日 11/21。gymReviews の札幌店（リボーン唯一の口コミ要約・ブランド頁は3店未満で非表示だった）を削除。brandStores 再生成（reborn 26→25・/brands/ 一覧 26→25）。sitemap lastmod 2URL=11/21。
+- 検証: build EXIT0・precheck（out／deploy）全項目OK（154頁）・計測リンク deploy 全体 前後とも3・`__next*` 0・表示テキスト差分は sapporo・/brands/・/brands/reborn-myself/ のみ。本番 ?cb=: 3選・新title・note 4（本文/JSON-LD/RSC）・らんたんビル/36番出口/store/sapporo/4選 0、ブランド頁 札幌店0・掲載25店、robots 200。Indexing 枠 0/55 → sitemap 再送（成功1）。
+- ⚠️ deploy で `git add -u` は新しい _next チャンクを拾わない（2コミット目で追加）。deploy は変更一覧を見て未追跡の _next/static も add する。
+- RITA-STYLE（11/21 公式）: 公式 /gym/ 一覧は博多・天神・小倉魚町・熊本上通の4店。長崎浜町・岡山駅前・鹿児島天文館の店舗ページは 404（/gym/nagasaki/ 等は 404 へ転送）＝掲載3店は判断待ち（未変更）。小倉は女性1名・男性1名、熊本は男性3名（いずれも2025/4/9現在・公式）。当サイトのカードは5店とも「男女共用」表記で「女性専用」とは書いていない（岡山の比較表の女性専用欄も「-」）。
