@@ -23,9 +23,9 @@ const gyms = [
     name: 'ビーコンセプト 大宮店',
     officialUrl: 'https://b-concept.tokyo/clublist/omiya/',
     price: '2ヶ月18回 179,685円〜（税込）',
-    trial: '無料カウンセリング',
+    trial: '新規会員様募集停止中（公式の店舗一覧・店舗ページ／2026年11月22日確認）',
     features: ['女性専用', '下半身特化', '医師×トレーナー共同開発', '託児所費用補助', '完全個室'],
-    description: '医師とトレーナーが共同開発した脚やせメソッドです。大宮エリアで下半身痩せに特化しています。完全個室で、1回60分のトレーニングを2ヶ月で行う集中プログラムです。託児所費用の補助があります。',
+    description: '医師とトレーナーが共同開発した脚やせメソッドです。大宮エリアで下半身痩せに特化しています。完全個室で、1回60分のトレーニングを2ヶ月で行う集中プログラムです。託児所費用の補助があります。⚠️ 公式の店舗一覧・大宮店ページには「新規会員様募集停止中」と表示されています（2026年11月22日確認）。',
     access: 'JR「大宮駅」東口徒歩6分',
     address: '埼玉県さいたま市大宮区宮町2-141 コスモプレイス一の宮503',
     popularPlan: { name: '太ももダイエットプログラム', description: '医師×トレーナー共同開発の脚やせメソッドです。1回60分のトレーニングを2ヶ月で行う集中プログラムです。', price: '2ヶ月18回 179,685円〜（税込）' },
@@ -50,11 +50,11 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '大宮で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'ビーコンセプト、UNDEUX SUPERBODYが大宮で人気です。脚やせならビーコンセプト、食事管理ならUNDEUXがおすすめです。' },
+  { question: '大宮で女性専用のパーソナルジムはどこがおすすめですか？', answer: 'ビーコンセプト、UNDEUX SUPERBODYが大宮で人気です。脚やせならビーコンセプト、食事管理ならUNDEUXがおすすめです。ただしビーコンセプト大宮店は公式に「新規会員様募集停止中」と表示されています（2026年11月22日確認）。' },
   { question: '大宮のパーソナルジムの料金相場はいくらですか？', answer: '大宮の2ヶ月コースは約18万〜22万円です。都心部より若干リーズナブルな傾向があります。' },
   { question: '大宮駅から最も近いジムはどこですか？', answer: 'UNDEUX SUPERBODYが徒歩4分で最寄りです。ビーコンセプトは東口から徒歩6分です。' },
   { question: '子連れで通えるジムはどこですか？', answer: 'ビーコンセプトには託児所費用の補助制度があります。大宮はファミリー層も多いエリアです。' },
-  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。ビーコンセプトは無料カウンセリングです。' },
+  { question: '体験は無料ですか？', answer: 'UNDEUX SUPERBODYは体験レッスン0円です。ビーコンセプト大宮店は公式の店舗一覧・店舗ページに「新規会員様募集停止中」と表示されています（2026年11月22日確認）。' },
   { question: '大宮と浦和、どちらがおすすめですか？', answer: '大宮のほうが女性専用パーソナルジムの選択肢が豊富です。JR各線・東武線・ニューシャトルが交差するターミナル駅でアクセスも良好です。' },
   { question: '埼玉県内から通いやすいですか？', answer: '大宮はJR宇都宮線・高崎線・京浜東北線・埼京線・東武野田線・ニューシャトルが乗り入れるターミナル駅です。埼玉県内各地からのアクセスに優れています。' },
   { question: '食事指導が充実しているジムはどこですか？', answer: 'UNDEUX SUPERBODYは栄養士による食事管理があり、コミットプランでは初月に宅配食30食が無料です。ビーコンセプトは医師監修の食事指導を行っています。' },
@@ -66,7 +66,7 @@ export default function OmiyaPage() {
       <FAQSchema faqs={faqs} />
       <Navigation />
       <main data-reveal className="pt-16 bg-white">
-        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16"><div className="max-w-4xl mx-auto px-6 lg:px-8"><p className="text-accent text-xs mb-2">更新日 2026年04月13日</p><h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">大宮の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較</h1></div></section>
+        <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16"><div className="max-w-4xl mx-auto px-6 lg:px-8"><p className="text-accent text-xs mb-2">更新日 2026年11月22日</p><h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">大宮の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較</h1></div></section>
         <section className="bg-white py-3 border-b border-line"><div className="max-w-6xl mx-auto px-6 lg:px-8"><nav className="text-sm text-brand-light"><Link href="/" className="hover:text-accent transition">ホーム</Link>{' > '}<span className="text-brand-muted">大宮</span></nav></div></section>
         <section className="py-12 bg-white"><div className="max-w-4xl mx-auto px-6 lg:px-8"><p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p><p className="text-brand-muted leading-relaxed mb-6">「大宮・埼玉エリアで女性専用のパーソナルジムを探している」「都心まで行かずに地元で通いたい」という方のために、大宮エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p><div className="bg-ivory border-l-4 border-accent p-6 mb-8"><h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2><ul className="space-y-2 text-brand-muted"><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>大宮・埼玉エリアで女性専用ジムを探している</span></li><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>都心まで行かずに通いたい</span></li><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>料金を比較して選びたい</span></li><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>下半身痩せしたい</span></li><li className="flex items-start"><span className="text-accent mr-2">✓</span><span>子連れで通いたい</span></li></ul></div></div></section>
         <AreaContext slug="omiya" />
