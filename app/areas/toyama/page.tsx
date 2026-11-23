@@ -36,7 +36,7 @@ const gyms = [
     name: 'Paw women\'s fitness 富山店',
     officialUrl: 'https://paw-fit.jp/toyama/lp/',
     price: 'デイタイム月6,380円／24時間レギュラー月9,680円（2026年10月20日時点で公式はキャンセル待ち）／パーソナル1回5,500円（税込）',
-    trial: 'パーソナルの各コースに初回カウンセリング（15〜20分）付き（体験の有無は公式サイトでご確認ください）',
+    trial: 'パーソナルの各コースに初回カウンセリング（15〜20分）付き（公式LPに体験の記載なし）',
     features: ['女性専用', '24時間営業', '完全個室ピラティスルーム', '無料駐車場'],
     description: '富山初の女性専用24時間ジムです。月額制のジム利用に加え、パーソナルトレーニング（1回5,500円〜）と完全個室のピラティスルームがあります。',
     access: '富山市鍋田23-47（無料駐車場15台・駅徒歩圏外）',
@@ -71,9 +71,10 @@ const gyms = [
 ]
 
 const faqs = [
-  { question: '富山で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、Paw women\'s fitness 富山店、subrina（サブリナ）です（2026年6月調査時点）。' },
+  { question: '富山で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用と確認できたのは、Paw women\'s fitness 富山店（女性専用24時間ジム・富山市鍋田）と subrina（サブリナ・女性トレーナーによる女性専用パーソナル・富山市二口町）です（2026年11月23日に各公式サイトで確認）。' },
   { question: '富山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BEYOND 富山店は回数券10回 102,300円〜（税込）／コース終了後の継続プラン マンスリー月2回 17,600円〜です（税込）。Paw women\'s fitness 富山店はデイタイム月6,380円／24時間レギュラー月9,680円（2026年10月20日時点で公式はキャンセル待ち）／パーソナル1回5,500円です（税込）。subrina（サブリナ）はパーソナル月4回 33,000円／月8回 61,600円／1回券 8,800円です（税込）。ゆめたかトレーニングジムは2ヶ月ダイエット全16回 48,000円／パーソナル15分3,850円〜です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'BEYOND 富山店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: '2026年11月23日の各公式サイトでは、BEYOND 富山店はカウンセリングと体験トレーニングが初回限定で無料（ウェア・タオルの用意があり手ぶらで可）です。ゆめたかトレーニングジムはWebで体験レッスンを申し込む形で、カウンセリングからトレーニングまで約1時間です（料金の記載なし）。Paw women\'s fitness 富山店はパーソナルの各コースに15〜20分の初回カウンセリングが付きますが、体験の記載はありません。subrina（サブリナ）はWeb・LINEで予約・相談でき、体験の記載はありません。' },
+  { question: '車で通える（駐車場がある）ジムはどこですか？', answer: '公式サイトに駐車場の記載があるのは、Paw women\'s fitness 富山店（無料駐車場15台・駐輪場あり）と、ゆめたかトレーニングジム（ジム正面と裏手に駐車スペース）です。BEYOND 富山店（富山駅南口から徒歩5分）と subrina（サブリナ）は駐車場の記載がありません（2026年11月23日確認）。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -85,7 +86,7 @@ export default function ToyamaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年11月13日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月23日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               富山の女性向けパーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -104,7 +105,7 @@ export default function ToyamaPage() {
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
-            <p className="text-brand-muted leading-relaxed mb-6">「富山で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、富山エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">「富山で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、富山エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（冒頭の料金早見表は2026年11月23日に確認）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
               <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、富山駅徒歩圏に「完全女性専用」のパーソナルジムは公式に確認できませんでした。本ページでは駅徒歩圏で女性比率の高いジムと、市内の女性専用ジム（車アクセス）を掲載しています。</p>
             </div>
