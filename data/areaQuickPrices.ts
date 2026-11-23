@@ -241,7 +241,7 @@ export const AREA_QUICK_PRICES: Record<string, AreaQuickPrice> = {
       { name: 'OUTLINE 池袋店', sourceUrl: 'https://www.outline-gym.com/gym/ikebukuro',
         plan: '池袋店の料金・入会金・コース内容は「店舗へお問い合わせください」（池袋店ページの記載）。公式の料金・サービスページ（全店の表示）は16回 フルサポート184,800円／通常220,000円（税込）',
         joinFee: '料金・サービスページでは0円（池袋店ページは店舗へ問い合わせ）', trial: '無料カウンセリング',
-        access: 'JR池袋駅から徒歩4分（豊島区西池袋3-4-3 エクセレンス西池袋101）', women: '女性専用', facilities: '7:00〜23:00・不定休' },
+        access: 'JR池袋駅から徒歩4分（豊島区西池袋3-4-3 エクセレンス西池袋101）', women: '女性専用', facilities: '9:00〜23:00・不定休' },
       { name: 'UNDEUX SUPERBODY 池袋スタジオ', sourceUrl: 'https://www.diet-undeux.jp/studio/ikebukuro/',
         plan: 'スタンダード月2回21,300円／月4回34,800円（DAY会員 平日9〜18時は30,300円）／月8回69,600円（DAY会員60,600円）／コミット月6回79,200円（税込）',
         joinFee: '店舗ページに記載なし', trial: '体験トレーニング（約60分）0円', access: '池袋駅から徒歩3分（豊島区東池袋1-21-1 ラグーン池袋ビル4階）',
