@@ -63,7 +63,7 @@ const gyms = [
     access: '郡山市希望ヶ丘（郡山駅から車約16分・バス「希望ヶ丘入口」徒歩2分・無料駐車場あり）',
     options: ['月6回18,900円', '食事指導オプション11,000円'],
     userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '女性100%（女性専用）', purpose: ['ダイエット', '運動習慣'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['無料駐車場'] },
+    basicInfo: { hours: '11:00〜21:00', closed: '公式サイトでご確認ください', facilities: ['無料駐車場'] },
   },
 ]
 
