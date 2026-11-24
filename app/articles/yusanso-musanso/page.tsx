@@ -65,6 +65,7 @@ const related = [
   { href: '/articles/kiso-taisha/', label: '基礎代謝を上げるには' },
   { href: '/articles/diet-tsuzukanai/', label: 'ダイエットが続かないときの考え方' },
   { href: '/articles/diet/', label: 'ダイエット目的のジムの選び方' },
+  { href: '/articles/walking-diet/', label: 'ウォーキングダイエットの目安' },
 ]
 
 const Row = ({ name, mets }: { name: string; mets: number }) => (

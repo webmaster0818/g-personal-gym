@@ -47,6 +47,7 @@ const related = [
   { href: '/articles/jijuu-training/', label: '自重トレーニングの頻度と消費エネルギー' },
   { href: '/articles/kouka-itsukara/', label: 'パーソナルジムの効果はいつから' },
   { href: '/cost/', label: '料金相場ガイド' },
+  { href: '/articles/pfc-balance/', label: 'PFCバランスとは（女性の目標量をグラムに換算）' },
 ]
 
 const intakes = [1400, 1600, 1800, 2000]

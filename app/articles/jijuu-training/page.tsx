@@ -47,6 +47,7 @@ const related = [
   { href: '/articles/ninoude-diet/', label: '二の腕ダイエットの考え方' },
   { href: '/articles/kouka-itsukara/', label: 'パーソナルジムの効果はいつから' },
   { href: '/guide/', label: '女性専用パーソナルジムの選び方' },
+  { href: '/articles/kintore-mainichi/', label: '筋トレは毎日やるべき？' },
 ]
 
 const mets = [
