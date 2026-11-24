@@ -65,9 +65,11 @@ const gyms = [
 
 const faqs = [
   { question: '札幌で女性専用のパーソナルジムはどこがおすすめですか？', answer: '本ページでは、女性専用のビーコンセプト 札幌大通店と骨格調整パーソナルジムNANA 札幌店、会員の6〜7割が女性と公式に明記するBEYOND 札幌ANNEX店（男女共用）の3店を掲載しています。それぞれ特徴が異なるので、体験レッスンで比較するのがおすすめです。なお、リボーンマイセルフ 札幌店は公式の店舗一覧（2026年11月21日確認・24店）に無いため掲載していません。' },
-  { question: '札幌のパーソナルジムの料金相場はいくらですか？', answer: '札幌エリアの女性向けパーソナルジムの2ヶ月コース料金は約15万〜22万円です。月額制なら月12,000円〜30,000円程度から通えます。' },
+  { question: '札幌のパーソナルジムの料金相場はいくらですか？', answer: '掲載3店の公式料金（2026年11月24日確認・税込）では、2ヶ月の短期コースはビーコンセプト 札幌大通店が総額179,685円、食事管理付きのBEYOND 札幌ANNEX店 ライフプランニング16回が290,400円です。回数券ならBEYONDの10回102,300円（1回10,230円）から、月額制はBEYONDのコース終了後のマンスリープランが月2回17,600円〜月8回69,300円です。NANA 札幌店はコース料金を公開していません。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい、全ジムで初心者歓迎です。パーソナルジムはマンツーマン指導なので、運動経験がなくても安心して始められます。' },
-  { question: '体験レッスンは無料で受けられますか？', answer: 'ジムによって異なります。無料カウンセリングや無料体験を実施しているジムも多いので、まずはお気軽にお問い合わせください。' },
+  { question: '体験レッスンは無料で受けられますか？', answer: '掲載3店の公式の案内（2026年11月24日確認）では、BEYOND 札幌ANNEX店はカウンセリング・体験トレーニングとも初回限定無料、NANA 札幌店は公式サイトからの初回カウンセリング・体験（80分）が0円です。ビーコンセプト 札幌大通店は無料カウンセリングと体験トレーニングを案内していますが、店舗ページに体験トレーニングの料金の記載はありません。' },
+  { question: '女性トレーナーを指名できますか？', answer: 'BEYOND 札幌ANNEX店は、公式FAQで女性のパーソナルトレーナーは所属していないと明記しています（在籍は男性2名・2025年11月12日現在と公式に記載）。ビーコンセプト 札幌大通店とNANA 札幌店は、店舗のトレーナーの性別や指名の可否を公式サイトに記載していません（2026年11月24日確認）。女性トレーナーを希望する場合は、カウンセリングの予約時に各店へご確認ください。' },
+  { question: '車で通えるジムはありますか？', answer: 'BEYOND 札幌ANNEX店は公式の設備情報に「提携駐車場あり」「無料駐輪場あり」と記載しています。ビーコンセプト 札幌大通店とNANA 札幌店の公式サイトには駐車場の記載がありません（2026年11月24日確認）。' },
   { question: 'どのくらいで効果が出ますか？', answer: '個人差はありますが、2ヶ月（16回）で平均5〜8kgの減量効果が期待できます。見た目の変化は、1ヶ月目から感じ始める方が多い傾向にあります。' },
   { question: '食事指導はありますか？', answer: 'ほとんどのパーソナルジムで食事指導が含まれています。LINEでの日々のサポートが一般的です。' },
   { question: 'ウェアは必要ですか？', answer: 'ほとんどのジムでウェア・タオルの無料レンタルがあります。手ぶらで通えるジムが大半を占めます。' },
@@ -84,7 +86,7 @@ export default function SapporoPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年11月21日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月24日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               札幌の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
@@ -99,6 +101,7 @@ export default function SapporoPage() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「札幌で女性専用のパーソナルジムを探している」という方のために、札幌エリアでおすすめの女性向けパーソナルジム{gyms.length}選をまとめました。</p>
+            <p className="text-brand-muted leading-relaxed mb-6">掲載3店のうち女性専用はビーコンセプト 札幌大通店（大通駅 徒歩5分）と骨格調整パーソナルジムNANA 札幌店（中央区南2条西1丁目）の2店です。女性トレーナーについては、BEYOND 札幌ANNEX店（男女共用・会員の6〜7割が女性）は公式FAQで女性トレーナーは所属していないと明記しており、ビーコンセプトとNANAは店舗のトレーナーの性別を公式に記載していません。料金はビーコンセプトの2ヶ月コースが総額179,685円（入会金無料）、お試しのトライアル4回が44,000円、BEYONDは回数券10回102,300円（入会金0円・西11丁目駅 徒歩5分）、NANAはコース料金非公開（分割 月々6,700円〜）です。体験はBEYONDが初回限定無料、NANAが公式サイトからの申し込みで0円、ビーコンセプトは無料カウンセリングを案内しています（税込・各公式サイト・2026年11月24日確認）。料金・入会金・最寄り駅はすぐ下の早見表で比べられます。</p>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
               <ul className="space-y-2 text-brand-muted">
@@ -127,13 +130,13 @@ export default function SapporoPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">2ヶ月集中コース</h3>
-                <p className="text-3xl font-bold text-accent mb-2">15万〜22万円</p>
-                <p className="text-sm text-brand-muted">16回（週2回×2ヶ月）の一般的なコース料金です。入会金は掲載店の公式で0円〜38,500円です。BEYOND 0円（全コース）、ビーコンセプト0円（太ももダイエットプログラム）〜38,500円（トライアルプラン・カウンセリング当日入会で0円）。NANAは公式で入会金を確認できていません（2026年11月17日確認）。</p>
+                <p className="text-3xl font-bold text-accent mb-2">179,685円〜290,400円</p>
+                <p className="text-sm text-brand-muted">掲載店の公式の2ヶ月コースは、ビーコンセプトの太ももダイエットプログラム総額179,685円から、BEYONDの食事管理付きライフプランニング16回290,400円まで（税込・2026年11月24日確認）。入会金は掲載店の公式で0円〜38,500円です。BEYOND 0円（全コース）、ビーコンセプト0円（太ももダイエットプログラム）〜38,500円（トライアルプラン・カウンセリング当日入会で0円）。NANAは公式で入会金を確認できていません（2026年11月17日確認）。</p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-line">
                 <h3 className="font-bold text-brand-text mb-3">月額制</h3>
-                <p className="text-3xl font-bold text-accent mb-2">1.2万〜3万円/月</p>
-                <p className="text-sm text-brand-muted">月4〜8回のプランです。継続しやすい料金設定です。</p>
+                <p className="text-3xl font-bold text-accent mb-2">17,600円〜69,300円/月</p>
+                <p className="text-sm text-brand-muted">BEYOND 札幌ANNEX店のマンスリープラン（回数券・ライフプランニング終了後の継続コース）は月2回17,600円・月4回35,200円・月8回69,300円です（税込・2026年11月24日確認）。ビーコンセプトとNANAの公式サイトには月額制の料金の記載がありません。</p>
               </div>
             </div>
           </div>
