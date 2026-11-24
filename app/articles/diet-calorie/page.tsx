@@ -62,6 +62,7 @@ const faqs = [
 
 const related = [
   { href: '/articles/60dai-diet/', label: '60代女性のダイエット（目標BMIと運動）' },
+  { href: '/articles/riso-taikei/', label: '女性の理想の体型（目標BMIとやせの現状）' },
   { href: '/articles/1kagetsu-5kg/', label: '1ヶ月で5キロ痩せるには' },
   { href: '/articles/taiju-heranai/', label: '体重が減らない原因' },
   { href: '/articles/diet-tabemono/', label: 'ダイエット中の食べ物の選び方' },

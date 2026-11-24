@@ -59,6 +59,7 @@ const related = [
   { href: '/articles/taiken-nagare/', label: '無料体験・カウンセリングの流れ' },
   { href: '/articles/joseisenyo-vs-kyoyo/', label: '女性専用と男女共用の違い' },
   { href: '/articles/jijuu-training/', label: '自重トレーニングとは' },
+  { href: '/articles/shokuji-shidou/', label: 'パーソナルジムの食事指導はどこまで？' },
 ]
 
 export default function Page() {

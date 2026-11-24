@@ -55,6 +55,7 @@ const related = [
   { href: '/articles/kintore-yaseru/', label: '筋トレで痩せる？体脂肪1kgまでの週数' },
   { href: '/articles/diet-tsuzukanai/', label: 'ダイエットが続かないときの考え方' },
   { href: '/articles/diet/', label: 'ダイエット目的のジムの選び方' },
+  { href: '/articles/jinko-kanmiryo/', label: '人工甘味料はダイエットに効果がある？' },
 ]
 
 export default function Page() {

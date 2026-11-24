@@ -63,6 +63,7 @@ const related = [
   { href: '/articles/diet-calorie/', label: 'ダイエット中の摂取カロリーの目安' },
   { href: '/articles/diet-tsuzukanai/', label: 'ダイエットが続かないときの考え方' },
   { href: '/articles/kintore-mainichi/', label: '筋トレは毎日やるべき？' },
+  { href: '/articles/undou-busoku/', label: '運動不足で起こりやすい病気' },
 ]
 
 export default function Page() {
