@@ -54,6 +54,7 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/futsu-gym-chigai/', label: 'パーソナルジムと普通のジムの違い' },
   { href: '/guide/', label: '女性専用パーソナルジムの選び方' },
   { href: '/cost/', label: '女性専用パーソナルジムの料金相場' },
   { href: '/articles/taiken-nagare/', label: '無料体験・カウンセリングの流れ' },

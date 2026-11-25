@@ -51,6 +51,7 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/yameru-timing/', label: 'パーソナルジムを辞めるタイミング' },
   { href: '/articles/shijo-kibo/', label: 'パーソナルジムの市場規模' },
   { href: '/articles/tsudobarai/', label: 'パーソナルジムの都度払い' },
   { href: '/articles/ryokin-osaeru/', label: 'パーソナルジムの料金を抑える方法' },

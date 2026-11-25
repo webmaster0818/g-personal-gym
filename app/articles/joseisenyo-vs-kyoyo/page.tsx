@@ -20,6 +20,7 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/futsu-gym-chigai/', label: 'パーソナルジムと普通のジムの違い' },
   { href: '/articles/josei-gym-data/', label: '女性向けジム実態調査2026（女性専用46%の根拠）' },
   { href: '/guide/', label: '女性専用パーソナルジムの選び方' },
   { href: '/cost/', label: '料金相場を見る' },

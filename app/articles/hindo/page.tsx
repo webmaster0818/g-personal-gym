@@ -62,6 +62,7 @@ const faqs = [
 ]
 
 const related = [
+  { href: '/articles/yameru-timing/', label: 'パーソナルジムを辞めるタイミング' },
   { href: '/articles/kintore-mainichi/', label: '筋トレは毎日やってもいい？' },
   { href: '/articles/personal-training/', label: 'パーソナルトレーニングとは' },
   { href: '/articles/kouka-itsukara/', label: 'パーソナルジムの効果はいつから' },
