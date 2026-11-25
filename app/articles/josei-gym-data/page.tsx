@@ -24,6 +24,7 @@ const related = [
   { href: '/guide/', label: '女性専用パーソナルジムの選び方' },
   { href: '/cost/', label: '料金相場を見る' },
   { href: '/ranking/', label: 'おすすめランキング' },
+  { href: '/articles/shijo-kibo/', label: 'パーソナルジムの市場規模' },
 ]
 
 export default function Page() {

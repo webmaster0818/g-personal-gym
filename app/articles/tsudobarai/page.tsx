@@ -66,6 +66,7 @@ const related = [
   { href: '/cost/', label: '女性専用パーソナルジムの料金相場' },
   { href: '/articles/taiken-nagare/', label: '無料体験・カウンセリングの流れ' },
   { href: '/articles/shippai/', label: '失敗しないための注意点' },
+  { href: '/articles/heiten/', label: 'パーソナルジムが閉店したら？' },
   { href: '/areas/nihonbashi/', label: '日本橋の女性専用パーソナルジム' },
 ]
 

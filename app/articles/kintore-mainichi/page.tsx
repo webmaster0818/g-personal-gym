@@ -72,6 +72,7 @@ const related = [
   { href: '/articles/kinniku-iji/', label: '減量中に筋肉を維持するには' },
   { href: '/articles/yusanso-musanso/', label: '有酸素運動と無酸素運動の違い' },
   { href: '/articles/personal-training/', label: 'パーソナルトレーニングとは' },
+  { href: '/articles/hindo/', label: 'パーソナルジムは週何回通う？' },
 ]
 
 export default function Page() {
