@@ -796,3 +796,7 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 内部リンク: /articles/ 一覧に2件、heiten・hindo（yameru）・personal-training・joseisenyo-vs-kyoyo（futsu）の related。sitemap 164→166・lastmod 11/26（一覧・related 4頁も）。
 - skip（queue に理由）: 初期費用（/cost/ と重複）・リバウンド（kouka-itsukara と重複）、ブランド口コミ7語（HPER・THE PERSONAL GYM＝女性専用の記載なし/男女比4:6、NEXUS・ELEMENT・スペースジム・ハビット・レクサー＝公式サイトを特定できず）、エリア10語（台東区＝リボーン上野の1店のみ＝判断待ち、大津・甲府・青森・鳥取・四ツ谷・四谷三丁目・浜松町・北浜・堺筋本町＝女性専用を公式で確認できず）。主要女性専用ブランド（UNDEUX・OUTLINE・リボーン・ビーコンセプト・プリッツ・fis・かたぎり塾女性専門店）の公式店舗一覧と照合し、残りのエリア語は該当0〜1店（かたぎり塾 豪徳寺/取手/藤が丘〔横浜〕女性専門店のみ）。WebSearch 上限を避けるため、帯広・鶴岡ほか57語は未評価のまま空欄（queue 空欄 78→57）。
 - 検証: build EXIT0（prebuild 103）・precheck（out／deploy）全項目OK（166頁）・trust-audit check_page（ローカル out）新規2頁 指摘0・NaN/undefined 0・本番2URL 200＋h1 一致・robots 200・sitemap に2URL・/articles/ 一覧にリンク。
+
+### 2026-11-26 深夜04時 kwexp（競合 the-personal-gym・pas0na・salugia）：新設0本（作れる語なし）
+- 残り queue 空欄57語は全てエリア語（小さめの市・駅）。主要女性専用ブランドの公式店舗一覧は 02時の回で照合済み（該当0〜1店）。今回 WebSearch 8回で帯広・豪徳寺・取手・藤が丘・御徒町・森ノ宮・八千代/勝田台・西院を確認 → 女性専用パーソナルを2店以上公式で確かめられた地域0。
+- skip（queue に理由）: 帯広・八千代・勝田台・森ノ宮・西院（候補はカーブス/LAVA 等パーソナル以外のみ）。1店のみ（取手・豪徳寺・藤が丘＝かたぎり塾女性専門店、御徒町＝リボーン上野＝台東区と同じ）は判断待ちのため空欄のまま。queue 空欄 57→52。ビルド・デプロイなし。
