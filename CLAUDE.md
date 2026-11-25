@@ -788,3 +788,11 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - 内部リンク: /articles/ 一覧に3件、kintore-mainichi（hindo）・josei-gym-data（shijo-kibo）・tsudobarai（heiten）の related。sitemap 161→164・lastmod 11/25。
 - skip（queue に理由・192語評価）: エリア語は検索＋主要女性専用ブランドの公式店舗一覧で、女性専用パーソナルが0の地域は skip、1店のみ（学芸大学・綱島・野々市・門前仲町・千歳烏山・湘南台・薬院・駒込・南越谷・姪浜・清澄白河・福島・大橋・桐生・六本松・名取・西新・飯塚・守口）は判断待ちで skip、区・県ハブは判断待ち、既存重複（服装・痩せない・筋トレ・本八幡・人形町）、ブランド口コミ語（リアルワークアウト・GOODLIFE GYM・レビナ・駅前筋肉留学GO＝女性専用の記載なし、プリッツジム＝出典つき口コミなし）。⚠️ WebSearch の回の上限に達し、鶴岡（queue 466行）以降は未評価のまま空欄（queue 空欄 273→78）。
 - 検証: build EXIT0（prebuild 103）・precheck（out）全項目OK（164頁）・trust-audit check_page（ローカル out）新規3頁 指摘0・NaN/undefined は script 内のみ・本番3URL 200＋h1 一致・robots 200・sitemap に3URL・/articles/ 一覧に3リンク。
+
+### 2026-11-26 深夜02時 kwexp（競合 the-personal-gym・pas0na・salugia）：記事2本を新設 ✅本番（source d067287 / deploy e506c62c・反映 1分以内）
+- 新設: `/articles/yameru-timing/`（パーソナルジム 辞めるタイミング 月24）・`/articles/futsu-gym-chigai/`（パーソナルジム 普通のジム 違い 16）。ArticleShell 型・updated 2026年11月26日・末尾に出典節。
+- 出典（11/26 公式生HTML・コメント/script除外）: OUTLINE /service（フルサポートは終了後クラブメンバーへ自動移行・月2回以上・最低3ヶ月継続／通常は希望で移行、16/24/32回 184,800/264,000/334,400・220,000/316,800/404,800、クラブ月2回 20,900/19,800/18,700、繰越1ヶ月）、リボーン /program/（メンテナンス週1回・1〜48回チケット・返金保証）、かたぎり塾 /price（「当月の24日までに…翌月からすぐに可能」・月8 59,400・無期限チケット 8,800）、カーブス /price/（女性専用・入会金16,500・月会費7,150〜8,360（税込）・通い放題・1回30分・女性コーチ）、エニタイム /faq/（初期費用＝セキュリティキー発行手数料＋当月・翌月会費、オリエンテーション無料・マンツーマンは有料セッション）、ガイド2023（筋トレ週2〜3日・個別性の原則）。chocoZAP は RIZAP グループのため比較に使っていない。
+- 一次の独自項目＝当サイト計算: OUTLINE フルサポート＋月2回×3ヶ月と通常コースの総額差（16回 +27,500・24回 +6,600・32回 −14,300）／カーブス週2回の1回あたり約894〜1,045円・2ヶ月総額・OUTLINE 1回＝カーブス月会費約1.6か月分。
+- 内部リンク: /articles/ 一覧に2件、heiten・hindo（yameru）・personal-training・joseisenyo-vs-kyoyo（futsu）の related。sitemap 164→166・lastmod 11/26（一覧・related 4頁も）。
+- skip（queue に理由）: 初期費用（/cost/ と重複）・リバウンド（kouka-itsukara と重複）、ブランド口コミ7語（HPER・THE PERSONAL GYM＝女性専用の記載なし/男女比4:6、NEXUS・ELEMENT・スペースジム・ハビット・レクサー＝公式サイトを特定できず）、エリア10語（台東区＝リボーン上野の1店のみ＝判断待ち、大津・甲府・青森・鳥取・四ツ谷・四谷三丁目・浜松町・北浜・堺筋本町＝女性専用を公式で確認できず）。主要女性専用ブランド（UNDEUX・OUTLINE・リボーン・ビーコンセプト・プリッツ・fis・かたぎり塾女性専門店）の公式店舗一覧と照合し、残りのエリア語は該当0〜1店（かたぎり塾 豪徳寺/取手/藤が丘〔横浜〕女性専門店のみ）。WebSearch 上限を避けるため、帯広・鶴岡ほか57語は未評価のまま空欄（queue 空欄 78→57）。
+- 検証: build EXIT0（prebuild 103）・precheck（out／deploy）全項目OK（166頁）・trust-audit check_page（ローカル out）新規2頁 指摘0・NaN/undefined 0・本番2URL 200＋h1 一致・robots 200・sitemap に2URL・/articles/ 一覧にリンク。
