@@ -39,6 +39,7 @@ const allAreas = [
   { name: '豊洲', slug: 'toyosu' },
   { name: '八王子', slug: 'hachioji' },
   { name: '武蔵小杉', slug: 'musashikosugi' },
+  { name: '綱島', slug: 'tsunashima' },
   { name: '仙台', slug: 'sendai' },
   { name: '梅田', slug: 'umeda' },
   { name: '心斎橋', slug: 'shinsaibashi' },
