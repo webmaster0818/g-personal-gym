@@ -20,25 +20,24 @@ export const metadata: Metadata = {
 
 const gyms = [
   {
-    name: 'FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店',
+    name: 'FIRE FITNESS（ファイアフィットネス）岡山 島田本町店',
     officialUrl: 'https://www.firefitness-okayama.com/',
-    price: 'パーソナルセッション1回 6,000円〜／Hard Plan12回 78,000円',
-    trial: '体験セッション約60分 2,500円（LINE登録で無料）',
-    features: ['女性約6割', '女性トレーナー在籍', '完全個室', '子連れOK'],
-    description: '会員の約6割が女性で、女性トレーナーが在籍する完全個室マンツーマンジムです。LINEでの食事サポートが付いており、お子様連れでも利用できます。岡山駅西口エリアに2店舗あります。',
-    access: '岡山駅西口から徒歩5分（島田本町店）',
+    price: 'Hard Plan 12回 93,000円（税込）／36回プランは1回あたり7,250円（税込・2026年11月26日 公式サイトで確認）',
+    trial: '初回体験60分 無料・入会金0円（2026年11月26日 公式サイトで確認）',
+    features: ['完全個室', '完全予約制', '入会金0円', '専用駐車場1台'],
+    description: '岡山駅西口から徒歩5分の完全個室パーソナルジムです。姿勢・食事・続け方の3つを確認してトレーニングを組み立てます。入会金0円で、初回60分の体験は無料です（2026年11月26日 公式サイトで確認）。',
+    access: 'JR岡山駅西口から徒歩5分',
     address: '岡山市北区島田本町1-1-47 テクノ技研ビル2F',
-    options: ['食事管理プラン月6,600円〜'],
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性約6割）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
+    options: ['食事サポート 月額6,600円〜（税込）'],
+    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '公式サイトでご確認ください', purpose: ['ダイエット', 'ボディメイク'] },
+    basicInfo: { hours: '毎日 8:00〜24:00（完全予約制）', closed: '公式サイトでご確認ください', facilities: ['完全個室', '専用駐車場1台'] },
   },
 ]
 
 const faqs = [
-  { question: '岡山に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、岡山駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
-  { question: '岡山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店はパーソナルセッション1回 6,000円〜／Hard Plan12回 78,000円です。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはありますか？', answer: 'FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '岡山に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、岡山駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは、完全個室でマンツーマン指導を受けられるジムを掲載しています。' },
+  { question: '岡山のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、FIRE FITNESS（ファイアフィットネス）岡山 島田本町店はHard Plan 12回 93,000円（税込）／36回プランは1回あたり7,250円です（税込・2026年11月26日 公式サイトで確認）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'FIRE FITNESS（ファイアフィットネス）岡山 島田本町店は、初回60分の体験が無料です（入会金0円・2026年11月26日 公式サイトで確認）。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -71,7 +70,7 @@ export default function OkayamaPage() {
             <p className="text-brand-muted leading-relaxed mb-6">本ページはG-PersonalGym編集部が作成しています。</p>
             <p className="text-brand-muted leading-relaxed mb-6">「岡山で女性が通いやすいパーソナルジムを探している」「駅近で通いやすいジムが知りたい」という方のために、岡山エリアの女性向けパーソナルジム{gyms.length}選をまとめました。掲載情報はすべて各ジムの公式サイトで確認したものです（2026年6月時点）。</p>
             <div className="bg-accent-tint border border-line rounded-xl p-5 mb-8">
-              <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、岡山駅徒歩圏に「完全女性専用」を公式に確認できるパーソナルジムは見つかりませんでした（女性専用とされる店舗はあるものの公式サイトの接続不可等で確認できず）。本ページでは女性会員比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。</p>
+              <p className="text-brand-muted text-sm leading-relaxed">※調査時点で、岡山駅徒歩圏に「完全女性専用」を公式に確認できるパーソナルジムは見つかりませんでした（女性専用とされる店舗はあるものの公式サイトの接続不可等で確認できず）。本ページでは、完全個室でマンツーマン指導を受けられるジムを掲載しています。</p>
             </div>
             <div className="bg-ivory border-l-4 border-accent p-6 mb-8">
               <h2 className="text-lg font-bold text-brand-text mb-4">こんな人におすすめ</h2>
@@ -104,7 +103,7 @@ export default function OkayamaPage() {
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・FIRE FITNESS（ファイアフィットネス）岡山 島田本町店</li></ul>
               </div>
             </div>
           </div>
@@ -115,7 +114,7 @@ export default function OkayamaPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-4 text-center">岡山の料金一覧【2026年6月・公式サイト調べ】</h2>
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">FIRE FITNESS（ファイアフィットネス）岡山 島田本町店・伊福町店</span><span className="text-brand-muted text-sm">パーソナルセッション1回 6,000円〜／Hard Plan12回 78,000円</span></li>
+              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">FIRE FITNESS（ファイアフィットネス）岡山 島田本町店</span><span className="text-brand-muted text-sm">Hard Plan 12回 93,000円（税込）／36回プランは1回あたり7,250円（税込・2026年11月26日 公式サイトで確認）</span></li>
             </ul>
           </div>
         </section>
