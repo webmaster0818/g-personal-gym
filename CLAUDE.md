@@ -829,3 +829,8 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - エリア追加に伴う変更: areaContextData・RelatedAreas（武蔵小杉の次）・/areas/ 一覧（神奈川・横浜の次）に tsunashima、aggregate-brands.py 再生成（katagirijuku 17→18）。prebuild: pages=104 AREA_CONTEXT=104 sitemap=104。sitemap lastmod 11/27（/areas/・tsunashima・/brands/katagirijuku/）。
 - skip（queue に理由）: 千歳烏山・湘南台・門前仲町・薬院（女性専用パーソナル無し）。1店のみ＝学芸大学（かたぎり塾 学芸大学女性専門店）・守口（Remake＝比較サイト情報のみ）・駒込（NEXT GYM TOKYO＝比較サイト情報のみ）は A/B 待ちで空欄のまま。queue 空欄 68→63。
 - 検証: build EXIT0（prebuild 104）・precheck（out／deploy）全項目OK（167頁）・heading-lint 新規指摘0・trust-audit check_page（ローカル out）指摘0・計測リンク px.a8.net deploy HTML 前後とも1・本番 200＋h1 一致・robots 200・sitemap と /areas/ 一覧にリンク。
+
+### 2026-11-27 深夜04時 kwexp（競合 the-personal-gym・pas0na・salugia）：新設0本（作れる語なし）
+- 残り queue 空欄63語のうち、未評価の小さめの市・駅31語を確認。公式店舗一覧（11/27 生HTML）: かたぎり塾 /gyms の女性専門店（会津若松・取手・塚本・大塚・大森・学芸大学・武蔵小山・綱島・荏原町・藤が丘・西新宿・豪徳寺・赤羽・阿佐ヶ谷）、TOKIEL トップの「女性専用」4店（本所吾妻橋・綱島・元住吉・岐阜）に該当地域なし（TOKIEL 伊勢佐木は女性専用表記なし）。WebSearch 15回。
+- skip:女性専用パーソナル無し（17）: 阪東橋・南行徳・妙典・上北沢・永福町・緑橋・四街道・おゆみ野・東大宮・池田・津島・可児・桂・蒲郡・緑地公園・住道・酒田（候補はカーブス等パーソナル以外・男女共用のみ）。
+- 松原＝ONESTOPGYM 松原店の1店のみ（比較サイト情報のみ・公式未照合）→1店エリアのため空欄のまま（A/B 待ち）。北本・桶川・白岡・君津・東金・碧南・関市・高山・福知山・野洲・鯖江・行橋・大崎は検索で店舗情報が取れず未確定＝空欄のまま。判断待ち（1店・区/県ハブ・取手/豪徳寺/藤が丘/御徒町/阿波座/学芸大学/守口/駒込）は作らず空欄。queue 空欄 63→46。ビルド・デプロイなし。
