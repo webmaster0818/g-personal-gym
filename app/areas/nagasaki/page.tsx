@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/nagasaki/'),
-  title: '長崎の女性向けパーソナルジムおすすめ3選｜料金比較',
-  description: '長崎のおすすめ女性向けパーソナルジム3選を比較しています。女性専用パーソナルジム・RITA-STYLE・Ru!Ru!など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '長崎の女性向けパーソナルジムおすすめ2選｜料金比較',
+  description: '長崎のおすすめ女性向けパーソナルジム2選を比較しています。女性専用パーソナルジム・Ru!Ru!など、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,長崎,長崎,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -32,18 +32,6 @@ const gyms = [
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
   },
   {
-    name: 'RITA-STYLE 長崎浜町店',
-    officialUrl: 'https://rita-style.co.jp/gym/nagasaki/hamamachi/',
-    price: '8回 98,000円〜（1回60分・入会金39,800円、無料キャンペーンの場合あり）',
-    trial: '無料カウンセリング60分／体験90分 3,980円（当日入会で0円）',
-    features: ['女性会員約8割', '完全個室', '永久お食事サポート'],
-    description: '会員の約8割が女性のダイエット専門ジムです。完全個室マンツーマンで、卒業後も続く「永久お食事サポート」つきです（トレーナーは調査時点で男性のみ在籍）。',
-    access: '思案橋電停 徒歩1分',
-    address: '長崎市浜町10-11 稲垣屋ビル3F',
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性約8割）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
-  },
-  {
     name: 'Ru!Ru!（ルールー）長崎浜町スタジオ',
     officialUrl: 'https://ruru.life/',
     price: '入会費8,000円＋事務手数料5,500円（月額・パーソナル料金は公式サイトでご確認ください）',
@@ -58,9 +46,8 @@ const gyms = [
 
 const faqs = [
   { question: '長崎で女性専用のパーソナルジムはどこですか？', answer: '公式サイトで女性専用（または女性専門）と確認できたのは、女性専用パーソナルジム レナトス 長崎店、Ru!Ru!（ルールー）長崎浜町スタジオです（2026年6月調査時点）。' },
-  { question: '長崎のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、女性専用パーソナルジム レナトス 長崎店は月3回 12,000円です（1回30分マンツーマン）。RITA-STYLE 長崎浜町店は8回 98,000円〜です（1回60分・入会金39,800円、無料キャンペーンの場合あり）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '長崎駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、RITA-STYLE 長崎浜町店（思案橋電停 徒歩1分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'RITA-STYLE 長崎浜町店、Ru!Ru!（ルールー）長崎浜町スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
+  { question: '長崎のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、女性専用パーソナルジム レナトス 長崎店は月3回 12,000円です（1回30分マンツーマン）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: 'Ru!Ru!（ルールー）長崎浜町スタジオは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -120,7 +107,7 @@ export default function NagasakiPage() {
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-8 text-center">目的別の選び方</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">女性専用にこだわる</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・女性専用パーソナルジム レナトス 長崎店</li><li className="text-brand-muted">・Ru!Ru!（ルールー）長崎浜町スタジオ</li></ul>
@@ -128,10 +115,6 @@ export default function NagasakiPage() {
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
                 <ul className="space-y-2 text-sm"><li className="text-brand-muted">・女性専用パーソナルジム レナトス 長崎店</li><li className="text-brand-muted">・Ru!Ru!（ルールー）長崎浜町スタジオ</li></ul>
-              </div>
-              <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・RITA-STYLE 長崎浜町店</li></ul>
               </div>
             </div>
           </div>
@@ -143,7 +126,6 @@ export default function NagasakiPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">女性専用パーソナルジム レナトス 長崎店</span><span className="text-brand-muted text-sm">月3回 12,000円（1回30分マンツーマン）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">RITA-STYLE 長崎浜町店</span><span className="text-brand-muted text-sm">8回 98,000円〜（1回60分・入会金39,800円、無料キャンペーンの場合あり）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">Ru!Ru!（ルールー）長崎浜町スタジオ</span><span className="text-brand-muted text-sm">入会費8,000円＋事務手数料5,500円（月額・パーソナル料金は公式サイトでご確認ください）</span></li>
             </ul>
           </div>

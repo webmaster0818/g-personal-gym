@@ -13,8 +13,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   ...pageUrlMeta('/areas/kagoshima/'),
-  title: '鹿児島の女性向けパーソナルジムおすすめ3選｜料金比較',
-  description: '鹿児島のおすすめ女性向けパーソナルジム3選を比較しています。女性専門パーソナルトレーニングジムGROW・RITA-STYLE・BELLOパーソナルトレーニングジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
+  title: '鹿児島の女性向けパーソナルジムおすすめ2選｜料金比較',
+  description: '鹿児島のおすすめ女性向けパーソナルジム2選を比較しています。女性専門パーソナルトレーニングジムGROW・BELLOパーソナルトレーニングジムなど、料金・体験・特徴を各公式サイトで確認のうえ掲載しています。',
   keywords: '女性専用パーソナルジム,鹿児島,鹿児島,おすすめ,料金,比較,ダイエット,ボディメイク',
 }
 
@@ -33,18 +33,6 @@ const gyms = [
     basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['公式サイトでご確認ください'] },
   },
   {
-    name: 'RITA-STYLE 鹿児島天文館店',
-    officialUrl: 'https://rita-style.co.jp/gym/kagoshima/tenmonkan/',
-    price: '月額 49,000円〜（入会金39,800円・キャンペーンで無料の場合あり）',
-    trial: '無料カウンセリング0円・体験トレーニング3,980円（当日入会で無料）',
-    features: ['女性会員約8割', '完全個室', '永久お食事サポート', '全額返金制度', '子連れ可'],
-    description: '女性専用ではありませんが会員の約8割が女性のダイエット専門ジムです。完全個室マンツーマン60分で、永久お食事サポートと全額返金制度（条件あり）が付いています。手ぶらOK・子連れ可です。',
-    access: '市電 いづろ通電停 徒歩3分',
-    address: '鹿児島市中町7-9 重野ビル2F',
-    userProfile: { ageRange: '公式サイトでご確認ください', genderRatio: '男女共用（女性約8割）', purpose: ['ダイエット', 'ボディメイク'] },
-    basicInfo: { hours: '公式サイトでご確認ください', closed: '公式サイトでご確認ください', facilities: ['完全個室'] },
-  },
-  {
     name: 'BELLOパーソナルトレーニングジム 天文館店',
     officialUrl: 'https://www.bello-fitness.com/',
     price: '45分コース 月4回 20,000円／都度払い 5,500円（入会金0円・縛りなし）',
@@ -61,10 +49,9 @@ const gyms = [
 
 const faqs = [
   { question: '鹿児島に女性専用のパーソナルジムはありますか？', answer: '2026年6月の調査時点では、鹿児島駅徒歩圏で「完全女性専用」を公式に掲げるジムは確認できませんでした。本ページでは女性比率が高い・女性トレーナー在籍など、女性が通いやすいジムを掲載しています。' },
-  { question: '鹿児島のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、RITA-STYLE 鹿児島天文館店は月額 49,000円〜です（入会金39,800円・キャンペーンで無料の場合あり）。BELLOパーソナルトレーニングジム 天文館店は45分コース 月4回 20,000円／都度払い 5,500円です（入会金0円・縛りなし）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
-  { question: '鹿児島駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、女性専門パーソナルトレーニングジムGROW（鹿児島中央駅 徒歩3分）、RITA-STYLE 鹿児島天文館店（市電 いづろ通電停 徒歩3分）、BELLOパーソナルトレーニングジム 天文館店（市電 高見馬場電停 徒歩3分）があります。' },
-  { question: '体験やカウンセリングは無料で受けられますか？', answer: '女性専門パーソナルトレーニングジムGROW、RITA-STYLE 鹿児島天文館店は無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
-  { question: '子連れで通えるジムはありますか？', answer: 'RITA-STYLE 鹿児島天文館店が子連れ対応（キッズスペース・ベビーサークル・託児補助など）を公式に案内しています。条件は各公式サイトでご確認ください。' },
+  { question: '鹿児島のパーソナルジムの料金の目安はいくらですか？', answer: '公式サイト掲載の料金では、BELLOパーソナルトレーニングジム 天文館店は45分コース 月4回 20,000円／都度払い 5,500円です（入会金0円・縛りなし）。キャンペーン等で変動するため最新は各公式サイトでご確認ください。' },
+  { question: '鹿児島駅から近いジムはどこですか？', answer: '駅徒歩3分以内・直結では、女性専門パーソナルトレーニングジムGROW（鹿児島中央駅 徒歩3分）、BELLOパーソナルトレーニングジム 天文館店（市電 高見馬場電停 徒歩3分）があります。' },
+  { question: '体験やカウンセリングは無料で受けられますか？', answer: '女性専門パーソナルトレーニングジムGROWは無料の体験またはカウンセリングを実施しています（公式サイト記載・2026年6月時点）。有料体験でも当日入会で無料になるジムがあります。' },
   { question: '初心者でも大丈夫ですか？', answer: 'はい。パーソナルジムはマンツーマン指導が基本のため、運動経験がなくても一人ひとりのレベルに合わせてメニューを組んでもらえます。不安な場合は体験時に運動歴を伝えてご相談ください。' },
 ]
 
@@ -127,11 +114,11 @@ export default function KagoshimaPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">月額制で始めやすい</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・RITA-STYLE 鹿児島天文館店</li><li className="text-brand-muted">・BELLOパーソナルトレーニングジム 天文館店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・BELLOパーソナルトレーニングジム 天文館店</li></ul>
               </div>
               <div className="border border-line rounded-xl p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-bold text-brand-text mb-4">完全個室でマンツーマン</h3>
-                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・RITA-STYLE 鹿児島天文館店</li><li className="text-brand-muted">・BELLOパーソナルトレーニングジム 天文館店</li></ul>
+                <ul className="space-y-2 text-sm"><li className="text-brand-muted">・BELLOパーソナルトレーニングジム 天文館店</li></ul>
               </div>
             </div>
           </div>
@@ -143,7 +130,6 @@ export default function KagoshimaPage() {
             <p className="text-brand-light text-xs text-center mb-8">キャンペーン等により変動します。最新の料金は必ず各公式サイトでご確認ください。</p>
             <ul className="bg-white rounded-xl p-6 md:p-8 border border-line space-y-3">
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">女性専門パーソナルトレーニングジムGROW</span><span className="text-brand-muted text-sm">60分×16回＋食事サポート 通常211,680円（キャンペーン価格は公式サイトでご確認ください）</span></li>
-              <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">RITA-STYLE 鹿児島天文館店</span><span className="text-brand-muted text-sm">月額 49,000円〜（入会金39,800円・キャンペーンで無料の場合あり）</span></li>
               <li className="flex flex-col md:flex-row md:items-baseline md:gap-3 border-b border-line pb-3"><span className="font-bold text-brand-text text-sm">BELLOパーソナルトレーニングジム 天文館店</span><span className="text-brand-muted text-sm">45分コース 月4回 20,000円／都度払い 5,500円（入会金0円・縛りなし）</span></li>
             </ul>
           </div>
