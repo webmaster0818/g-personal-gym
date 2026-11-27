@@ -839,3 +839,8 @@ goレイヤー（ブランド指名クエリ）の受け皿をゼロから構築
 - UNDEUX 町田: ソース・本番 /areas/machida/・/brands/undeux/ とも「LIFE」0（11/15 c402ad2 で修正済み・「27件」は 11/14 時点の記録）。公式 /studio/machida/（11/27 生HTML）の店名・住所・8:00〜22:00・不定休・徒歩2分・月2回 20,500／月4回 33,400・DAY 29,100円と一致（公式内の「LIFE」は Google 口コミ欄の旧店名のみ）。
 - 11/26 拡張の照合（11/27 公式生HTML）: /articles/yameru-timing/（OUTLINE /service・リボーン /program/・かたぎり塾 /price・厚労省ガイド2023）、/articles/futsu-gym-chigai/（カーブス /price/・エニタイム /faq/・OUTLINE・かたぎり塾・ガイド2023）、/areas/tsunashima/（かたぎり塾 /gyms/tsunashima-women・TOKIEL /shop/tsunashima/・/price）＝全値一致・変更なし。
 - 着手可1件: 町田のエクササイズコーチを公式トップの店舗情報（町田店）どおりに＝住所「町田エリア（…）」→森野1-39-1 グランドゥールビル7階、アクセス「「町田」駅周辺」→小田急線北口 徒歩1分／JR北口 徒歩3分、営業 平日10-22・土日祝8-19。FAQ「最も近いジム」の「UNDEUX 2分で最寄り・EC 徒歩5分」→EC 1分（JR 3分）が最寄り。リボーン町田の定休=日曜日（公式店舗ページ）。brandStores 再生成（EC 町田のみ）。sitemap lastmod machida・/brands/exercise-coach/ 11/27。build EXIT0・precheck（out／deploy）全項目OK・計測リンク deploy HTML 前後とも2。本番 ?cb=: 新FAQ・新住所あり、「徒歩5分」「駅周辺」0、robots 200。Indexing /areas/machida/ 1/1 200。
+
+### 2026-11-27 20:00 kwexp（競合 the-personal-gym・pas0na・salugia）：新設0本（作れる語なし）
+- 未確定・再確認のエリア語を WebSearch 15回＋公式直接取得で確認（OUTLINE /gym/・ビーコンセプト /clublist/・イロアス /shop/morishita-kiyosumishirakawa/）→ 女性専用パーソナルを2店以上公式で確かめられた地域0。
+- skip:女性専用パーソナル無し（12）: 清澄白河（イロアス森下・清澄白河店は公式に女性専用の記載なし＝現在マシンピラティス×整体）・野々市・生野区・大橋・姪浜・六本松・名取・北本・桶川・君津・高山・東金（候補はカーブス/ヨガ/総合クラブ/女性専用の記載なしのみ）。
+- 1店のみ＝空欄のまま（A/B 待ち）: 南越谷（OUTLINE 越谷店のみ・ビーコンセプト公式一覧に越谷なし）・飯塚（ヘルスデザイン21＝比較サイト情報のみ）・桐生（T☆SHAPE＝比較サイト情報のみ）・鯖江（ATRAS＝紹介記事のみ）。福知山は店舗情報取れず空欄。区/県ハブ（江東区・墨田区・大田区・杉並区・茨城・北海道・愛知・兵庫・宮城・福島・香川・三重）と既知の1店エリアは作らず空欄。queue 空欄 46→34。ビルド・デプロイなし。
