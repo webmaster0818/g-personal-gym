@@ -2,7 +2,7 @@ import { pageUrlMeta } from '@/lib/seo'
 import type { Metadata } from 'next'
 import { ArticleShell } from '@/components/ArticleShell'
 
-// 出典（2026年11月20日確認）
+// 出典（2026年11月20日確認・C-7／運動指針2006の腹囲1cm＝体重約1kgの原文は11月28日に再確認）
 // - 厚生労働省 標準的な健診・保健指導プログラム 学習教材 C-7「無理なく内臓脂肪を減らすために」 https://www.mhlw.go.jp/bunya/kenkou/seikatsu/pdf/03-c-07.pdf
 //   腹囲 男性85cm・女性90cm以上が対象、腹囲1cm減＝体重1kg減＝約7,000kcal、1日あたり240kcal、減らせる腹囲は1か月で1cm程度（じっくり1cm/月・急ぐ2cm/月）、身体活動と食事の両方が不可欠
 // - 厚生労働省「健康づくりのための運動指針2006（エクササイズガイド2006）」【参考】内臓脂肪減少のための身体活動量 https://www.mhlw.go.jp/shingi/2006/07/dl/s0725-9f-7.pdf
@@ -14,7 +14,7 @@ import { ArticleShell } from '@/components/ArticleShell'
 export const metadata: Metadata = {
   title: 'お腹の脂肪を落とす方法｜厚労省の目安「腹囲1cm＝体重1kg＝約7,000kcal」で計算する期間と1日の量',
   description:
-    'お腹の脂肪（内臓脂肪）を減らす方法として、厚生労働省は運動と食事の併用を示し、腹囲1cmの減少を体重約1kg（約7,000kcal）として、1か月1cm程度を目安にしています。減らしたい腹囲ごとの期間と1日に減らす量、速歩の時間を計算しました。',
+    '腹囲が1cm減ると体重は約1kg減る（大部分が脂肪・約7,000kcal）というのが厚生労働省の目安です。減らせる腹囲は1か月1cm程度、1日約230〜240kcal。運動と食事の併用が前提で、減らしたい腹囲ごとの期間・1日の量・速歩の時間を計算しました。',
   ...pageUrlMeta('/articles/onaka-shibou/'),
 }
 
@@ -25,6 +25,16 @@ const perDay = (cm: number, months: number) => Math.round((cm * 7000) / months /
 const walkMin = (kcal: number) => Math.round((kcal / ((4.3 - 1) * W)) * 60)
 
 const faqs = [
+  {
+    question: '腹囲が1cm減少すると、体重は何kg減少しますか？',
+    answer:
+      '厚生労働省の資料では、腹囲1cmの減少は約1kgの体重減少に相当するとしています（2006年の運動指針は「大部分が脂肪」と注記）。保健指導の教材も「腹囲1cmを減らす（＝体重1kgを減らす）のに、約7,000kcalが必要」としています。',
+  },
+  {
+    question: '体重1kgは腹囲1cmに相当しますか？',
+    answer:
+      '厚生労働省の保健指導の目安では、体重約1kgの減少が腹囲約1cmの減少に相当するとされています。ただし減り方には個人差があり、筋肉や水分の増減でも体重は変わるため、腹囲はへその高さで定期的に測って確認するのが確実です。',
+  },
   {
     question: 'お腹の脂肪だけを落とす方法はありますか？',
     answer:
@@ -61,12 +71,38 @@ export default function Page() {
     <ArticleShell
       eyebrow="Belly Fat"
       title="お腹の脂肪を落とす方法｜腹囲1cmに必要な量と期間の目安"
-      updated="2026年11月20日"
+      updated="2026年11月28日"
       lead="お腹の脂肪（内臓脂肪）を減らす方法として、厚生労働省の保健指導の教材は、運動で消費を増やすことと食事で摂取を減らすことの両方が欠かせないとしています。腹囲1cmの減少は体重約1kg（約7,000kcal）に相当し、減らす目安は1か月で1cm程度、1日あたり約240kcalです。お腹だけを狙って脂肪を落とす方法は、当サイトが確認した厚生労働省の資料には示されていません。"
       breadcrumb="お腹の脂肪を落とす方法"
       faqs={faqs}
       related={related}
     >
+      <h2>腹囲が1cm減ると体重は何kg減る？</h2>
+      <p>
+        <strong>約1kgです。</strong>厚生労働省の「健康づくりのための運動指針2006」は「腹囲の1cm減少は、約1kgの体重（大部分が脂肪）の減少に相当」とし、保健指導の教材（学習教材C-7）も「腹囲1cmを減らす（＝体重1kgを減らす）のに、約7,000kcalが必要」としています。逆に言えば、体重を1kg落とすと腹囲は約1cm減る、という目安です。
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>腹囲の減少</th>
+            <th>体重の減少の目安</th>
+            <th>必要なエネルギー</th>
+          </tr>
+        </thead>
+        <tbody>
+          {cms.map((c) => (
+            <tr key={`kg-${c}`}>
+              <td>{c}cm</td>
+              <td>約{c}kg</td>
+              <td>約{(c * 7000).toLocaleString('ja-JP')}kcal</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p>
+        どちらも腹囲の基準（女性90cm以上）を超える方を対象にした資料の目安で、減り方には個人差があります（2026年11月28日に原文を確認）。
+      </p>
+
       <h2>厚生労働省の資料に示されている内容</h2>
       <ul>
         <li><strong>腹囲1cm＝体重約1kg＝約7,000kcal</strong>：保健指導の教材（学習教材C-7）は、腹囲1cmを減らすには体重1kgの減量、すなわち約7,000kcalが必要としています。</li>
