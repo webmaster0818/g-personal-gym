@@ -31,7 +31,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '生涯無料アフターサポート付き女性専用パーソナルジムです。池袋駅から好アクセスです。', price: '16回 184,800円〜（税込・公式の料金ページの表示。池袋店の料金は店舗へ問い合わせ）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー'] },
   },
   {
     name: 'UNDEUX SUPERBODY 池袋スタジオ',
@@ -112,7 +112,7 @@ export default function IkebukuroPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年11月23日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月28日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               池袋の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>

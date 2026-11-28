@@ -31,7 +31,7 @@ const gyms = [
     popularPlan: { name: '人気プラン', description: '横浜駅西口側にある女性専用パーソナルジムです（公式の店舗名は「OUTLINE横浜西口新店」）。生涯無料のアフターサポートが付いています。', price: '16回 184,800円〜（税込）' },
     options: ['ウェアレンタル無料', 'タオル完備', '食事指導あり'],
     userProfile: { ageRange: '20代〜40代が中心', genderRatio: '女性100%', purpose: ['ダイエット', 'ボディメイク', '姿勢改善'] },
-    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室', 'シャワー', 'ロッカー'] },
+    basicInfo: { hours: '9:00〜23:00', closed: '不定休', facilities: ['完全個室'] },
   },
   {
     name: 'UNDEUX SUPERBODY 横浜スタジオ',
@@ -98,7 +98,7 @@ export default function YokohamaPage() {
       <main data-reveal className="pt-16 bg-white">
         <section className="bg-gradient-to-br from-ivory via-ivory to-sand py-12 md:py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <p className="text-accent text-xs mb-2">更新日 2026年11月15日</p>
+            <p className="text-accent text-xs mb-2">更新日 2026年11月28日</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-text mb-4">
               横浜の女性専用パーソナルジム<br className="hidden md:block" />おすすめ{gyms.length}選・料金比較
             </h1>
